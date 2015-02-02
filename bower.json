@@ -1,18 +1,14 @@
 {
-    "dependencies": {
-        "almond": "latest",
-        "bootstrap": "latest",
-        "font-awesome": "latest",
-        "jquery": "latest",
-        "json2": "latest",
-        "less": "latest",
-        "typeahead.js": "latest",
-        "typeahead.js-bootstrap3.less": "0.2.3",
-        "open-sans-fontface": "latest"
-    },
-    "name": "invenio_software",
-    "resolutions": {
-        "bootstrap": "latest",
-        "jquery": "latest"
-    }
+  "dependencies": {
+    "almond": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "jquery": "latest",
+    "json2": "latest",
+    "less": "latest",
+    "typeahead.js": "latest",
+    "typeahead.js-bootstrap3.less": "0.2.3",
+    "open-sans-fontface": "latest"
+  },
+  "name": "invenio_software"
 }
