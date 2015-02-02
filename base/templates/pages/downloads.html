@@ -1,0 +1,79 @@
+{% extends 'page.html' %}
+
+{% block body %}
+	<section class="basic-page intro">
+		{% include 'header.html' %}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Downloads</h3>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+				</div>
+			</div>
+		</div>
+		<div class="intro-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h5>Ready to start building your own Invenio instance! Go to our <a href="{{url_for('invenio_web.show', page = 'documentation')}}">Documentation & Guides</a> page.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-content">
+		<div class="container">
+			<div class="row">
+				<div id="left-sidebar" class="col-md-3">
+					<ul data-spy="affix" data-offset-top="60" data-offset-bottom="600">
+						<li>
+							<span>Downloads</span>
+							<ul class="nav" role="tablist">
+								<li >Latest Stable Releases</li>
+								<li>Source Code Repository</li>
+							</ul>							
+						</li>
+					</ul>
+				</div>
+				<div id="content-box" class="col-md-9" data-spy="scroll" data-target="#left-sidebar">
+					<h2 class="title-box">Downloads</h2>
+					<div id="latest">
+						<h4>Latest Stable Releases</h4>
+						<ul>
+							<li>
+								Invenio v1.1 release series: (recommended)<br>
+								<p><a href="">invenio-1.1.4.tar.gz</a> - 2014-08-31 - 10004166 bytes - <a href="">md5</a> - <a href="">sig</a></p>
+							</li>
+							<li>
+								Invenio v1.0 release series: (old stable)<br>
+								<p><a href="">invenio-1.0.7.tar.gz</a> - 2014-08-31 - 8384886 bytes - <a href="">md5</a> - <a href="">sig</a></p>
+							</li>
+							<li>
+								Invenio v0.99 release series: (very old stable)<br>
+								<p><a href="">invenio-0.99.9.tar.gz</a> - 2014-01-31 - 5917427 bytes - <a href="">md5</a> - <a href="">sig</a></p>
+							</li>
+						</ul>
+					</div>
+					<div id="repo">
+						<h4>Source Code Repository</h4>
+						<p>The development sources can be accessed via Git:</p>
+						<pre class="wiki"><span class="newline">$</span> git clone http://invenio-software.org/repo/invenio<br><span class="newline">$</span> git checkout master # or maint-M.N, or next, or pu...
+						</pre>
+						<p>
+							You can also browse Invenio source code repository via our
+							<a href="http://invenio-software.org/repo/invenio">git web interface</a>
+							and read the source code documentation and snippets via our
+							<a href="http://invenio-software.org/code-browser/">code browser</a>.
+						</p>
+						<p>If you are testing development sources instead of using regular tarball releases, we advise you to run autotools like this:</p>
+						<pre class="wiki"><span class="newline">$</span> rm -rf autom4te.cache/<br><span class="newline">$</span> aclocal-1.11<br><span class="newline">$</span> automake-1.11 -a<br><span class="newline">$</span> autoconf
+						</pre>
+						<p>and proceed with the installation as usual (<tt>./configure</tt>, etc). This will generate you a proper "development snapshot" version number of the form <tt>0.99.1.1457-19fb4</tt> meaning that you are running a development snapshot that started off from 0.99.1 on a branch that is currently at its 1457th commit after 0.99.1 and that the latest commit in this branch is SHA1 19fb4.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include "footer.html" %}
+{% endblock %}

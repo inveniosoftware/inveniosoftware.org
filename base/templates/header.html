@@ -1,0 +1,28 @@
+<header>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="{{url_for('invenio_web.home')}}" class="navbar-brand">
+					<img src="{{ url_for('static', filename='img/invenio.png')}}" alt="">
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="{{url_for('invenio_web.show', page = 'getting-started')}}">Getting Started</a></li>
+					<li><a href="{{url_for('invenio_web.show', page = 'documentation')}}">Docs</a></li>
+					<li><a href="{{url_for('invenio_web.show', page = 'showcase')}}">Showcase</a></li>
+					<li><a href="{{url_for('invenio_web.show', page = 'news')}}">News</a></li>
+					<li><a href="{{url_for('invenio_web.show', page = 'support')}}">Support</a></li>
+					<li><a href="https://forum.invenio-software.org/">Forum</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
