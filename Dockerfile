@@ -1,11 +1,10 @@
 FROM ubuntu:trusty
 ADD . /code
 WORKDIR /code
-RUN apt-get update
-RUN apt-get install -y git software-properties-common python python-dev python-pip
-RUN add-apt-repository -y ppa:chris-lea/node.js
-RUN apt-get update
-RUN apt-get install -y nodejs
-RUN npm install bower
-RUN pip install -r requirements.txt
+ENV DEBIAN_FRONTEND noninteractive
+RUN add-apt-repository -y ppa:chris-lea/node.js && \
+    apt-get update && \
+    apt-get install -y git software-properties-common python python-dev python-pip nodejs && \
+    npm install bower && \
+    pip install -r requirements.txt --exists-action s
 # RUN CI=true bower install
