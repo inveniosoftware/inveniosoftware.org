@@ -1,7 +1,7 @@
 web:
   build: .
-  command: python app.py
   ports:
-   - "5000:5000"
+    - "80:80"
   volumes:
-   - .:/code
+    - ./html:/usr/share/nginx/html
+    - ./conf:/etc/nginx/conf.d
