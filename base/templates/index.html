@@ -1,6 +1,14 @@
 {% extends 'page.html' %}
 
 {% block body %}
+  <script>
+    $.getJSON( "https://api.github.com/repos/inveniosoftware/invenio", function( data ) {
+      $("#forks_count").text(data.forks_count);
+    });
+    $.getJSON( "http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20from%20html%20where%20url=%22http://twitter.com/inveniosoftware%22%20AND%20xpath=%22//li[contains(@class,%27ProfileNav-item--followers%27)]/a/span[@class=%27ProfileNav-value%27]|//li[contains(@class,%27ProfileNav-item--following%27)]/a/span[@class=%27ProfileNav-value%27]%22&format=json", function( data ) {
+      $("#followers_count").text(data.query.results.span.content);
+    });
+  </script>
   <section class="intro-section">
     <div class="cover-image">
       {% include 'header.html' %}
@@ -33,8 +41,8 @@
           <div class="row">
             <div>
               <ul class="col-md-6">
-                <li><a href="http://github.com/inveniosoftware/invenio"><span class="fa fa-code-fork"></span>108 forks</a></li>
-                <li><a href="https://twitter.com/inveniosoftware"><span class="fa fa-twitter"></span>100 followers</a></li>
+                <li><a href="http://github.com/inveniosoftware/invenio"><span class="fa fa-code-fork"></span><span id="forks_count">164</span> forks</a></li>
+                <li><a href="https://twitter.com/inveniosoftware"><span class="fa fa-twitter"></span><span id="followers_count">100</span> followers</a></li>
               </ul>
             </div>
             <div class="col-md-6">
