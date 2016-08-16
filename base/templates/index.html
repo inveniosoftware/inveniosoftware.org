@@ -1,0 +1,266 @@
+{% extends 'page.html' %}
+
+{% block body %}
+  <section class="intro-section">
+    <div class="cover-image">
+      {% include 'header.html' %}
+      <div class="vertical-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="headline col-md-8 col-md-offset-2"">
+                  <div class="welcome">
+                    <h3>A Digital Repository Framework</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero harum minus repellat laborum cum aut placeat illum.</h6>
+                  </div>
+                  <div class="actions">
+                    <form action="https://github.com/inveniosoftware/invenio/releases" target="_blank">
+                      <button class="btn white">Download</button>
+                    </form>
+                    <form action="{{url_for('invenio_web.show', page='gettingstarted')}}">
+                      <button class="btn">Getting Started</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-bar">
+        <div class="container">
+          <div class="row">
+            <div>
+              <ul class="col-md-6">
+                <li><a href="http://github.com/inveniosoftware/invenio"><span class="fa fa-code-fork"></span>108 forks</a></li>
+                <li><a href="https://twitter.com/inveniosoftware"><span class="fa fa-twitter"></span>100 followers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <form class="newsletter form-group pull-right" action="">
+                <div class="form-newsletter-inner">
+                  <input class="form-control" type="email" placeholder="Enter your email for the latest Invenio news">
+                  <input class="" type="submit" value="Subscribe">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="description-section section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <span class="section-title-light-bg">Run your own digital library or document repository on the web</span>
+          <p>
+            Invenio is a <a href="">​free software</a> suite enabling you to run your own <a href="">​digital library</a> or document repository on the web. The technology offered by the software covers all aspects of digital library management from document ingestion through classification, indexing, and curation to dissemination. Invenio complies with standards such as the <a href="">​Open Archives Initiative</a> metadata harvesting protocol (OAI-PMH) and uses ​MARC 21 as its underlying bibliographic format. The flexibility and performance of Invenio make it a comprehensive solution for management of document repositories of moderate to large sizes (several millions of records).
+          </p>
+          <p>
+            Invenio has been originally developed at <a href="">​CERN</a> to run the <a href="">​CERN document server</a>, managing over 1,000,000 bibliographic records in high-energy physics since 2002, covering articles, books, journals, photos, videos, and more. Invenio is being co-developed by an international collaboration comprising institutes such as <a href="">​CERN</a>, <a href="">​DESY</a>, <a href="">​EPFL</a>, <a href="">​FNAL</a>, <a href="">​SLAC</a> and is being used by about thirty scientific institutions worldwide (see <a href="">demo</a>).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <span class="section-title-dark-bg">Who uses Invenio?</span>
+          <div id="carousel-partners" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-partners" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-partners" data-slide-to="1"></li>
+              <li data-target="#carousel-partners" data-slide-to="2"></li>
+              <li data-target="#carousel-partners" data-slide-to="3"></li>
+              <li data-target="#carousel-partners" data-slide-to="4"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-9 block-center">
+                            <div class="partner-carousel-item-img">
+                                <h2><a href="https://cds.cern.ch" target="_blank">CERN Document Server</a></h2>
+                            </div>
+                            <div class="partner-carousel-item-text">
+                                <p>CDS is used every day at CERN to search among more than 1.000.000 documents of different types: pre-prints, papers, photos, videos. CDS has been adopted by all major LHC experiments as their tool of choice for document handling.</p>
+
+                                <p>CERN - “The European Organization for Nuclear Research is located at the heart of Europe, astride the Franco-Swiss border. It is known not only for its flagship project (The LHC - <em>Large Hadron Collider</em>), but as well for being the place where Sir Tim Berners-Lee created the World Wide Web in 1989.”</p>
+
+                                <p>The Large Hadron Collider - “believed to be the most complex machine ever built by mankind, the LHC brings together thousands of physicists and engineers from all over the world with the aim of studying the Higgs boson, Supersymmetry and Dark Matter, among others.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-9 block-center">
+                            <div class="partner-carousel-item-img">
+                                <a href="https://zenodo.org" target="_blank"><img src="/static/img/logo-zenodo.svg"></a>
+                            </div>
+                            <div class="partner-carousel-item-text">
+                                <p>Zenodo builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share, preserve and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                      <div class="col-sm-8 col-xs-9 block-center">
+                          <div class="partner-carousel-item-img">
+                              <a href="https://inspirehep.net" target="_blank"><img src="/static/img/logo-inspire.png" class="img-white-bg"></a>
+                          </div>
+                          <div class="partner-carousel-item-text">
+                              <p> CERN, DESY, Fermilab and SLAC have built the next-generation High Energy Physics (HEP) information system, <a href="http://www.inspirehep.net/">INSPIRE</a>. It&nbsp;combines the successful <a href="http://en.wikipedia.org/wiki/SPIRES">SPIRES database content</a>, curated at <a href="http://www.desy.de/">DESY</a>, <a href="http://www.fnal.gov/">Fermilab</a> and <a href="http://www.slac.stanford.edu/">SLAC</a>, with the <a href="http://invenio-software.org/">Invenio</a> digital library technology developed at <a href="http://www.cern.ch/">CERN</a>. INSPIRE is run by a collaboration of CERN, DESY, Fermilab, IHEP, and SLAC, and interacts closely with HEP publishers, <a href="http://arxiv.org/">arXiv.org</a>, <a href="http://adswww.harvard.edu/">NASA-ADS</a>, <a href="http://pdg.lbl.gov/">PDG</a>, <a href="http://durpdg.dur.ac.uk/">HEPDATA </a>and other information resources.</p>
+
+                              <p>INSPIRE represents a natural evolution of scholarly communication, built on successful community-based information systems, and provides a vision for information management in other fields of science.</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                      <div class="col-sm-8 col-xs-9 block-center">
+                          <div class="partner-carousel-item-img">
+                              <a href="https://tind.io" target="_blank"><img src="/static/img/logo-tind.png" class="img-white-bg"></a>
+                          </div>
+                          <div class="partner-carousel-item-text">
+                              <p> Since Invenio’s birth in 2002, CERN has helped many organizations with configuring and customizing the software. However, this privilege has been reserved for institutions with extensive in-house IT resources.</p>
+
+                              <p>In the past few years, more and more institutions, organizations and even enterprises have been approaching CERN to receive a quote for Invenio services. With the growing demand, the decision was made to create an official spin-off that provides professional Invenio services.</p>
+                              <p>TIND enjoys an exclusive license agreement with CERN, gaining unique access to Invenio know-how. We work closely with the Invenio team, thus always staying up-to-date on new releases, patches on ongoing developments. We are headquartered in Trondheim, Norway and have a branch office in Geneva, Switzerland.</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                      <div class="col-sm-8 col-xs-9 block-center">
+                          <div class="partner-carousel-item-img">
+                              <a href="https://opendata.cern.ch" target="_blank"><img src="/static/img/logo-cod.svg" class="img-white-bg"></a>
+                          </div>
+                          <div class="partner-carousel-item-text">
+                              <p>The CERN Open Data portal is the access point to a growing range of data produced through the research performed at CERN. It disseminates the preserved output from various research activities, including accompanying software and documentation which is needed to understand and analyse the data being shared.The portal adheres to established global standards in data preservation and Open Science: the products are shared under open licenses; they are issued with a digital object identifier (DOI) to make them citable objects in the scientific discourse (see details below on how to do this).</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-partners" role="button" data-slide="prev">
+                <span class="fa fa-angle-left fa-2x"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-partners" role="button" data-slide="next">
+                <span class="fa fa-angle-right fa-2x"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title-light-bg">Main features</span>
+      <div class="row features-section-row">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/static/img/icon-multiple-inputs.svg"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Deposition and Ingestion</h6>
+              <p>Invenio handles flexible deposition through a modern Angular UI. Thanks to a powerfull API, many ingestions mechanisms are available.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/static/img/icon-search.svg"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Powerful search engine</h6>
+              <p>Specially designed indexes to provide fast search speed for repositories of up to 2,000,000 records. Customizable simple and advanced search interfaces. Combined metadata, fulltext and citation search in one go. Results clustering by collection. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row features-section-row">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/static/img/icon-metadata.svg"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Flexible metadata</h6>
+              <p>Standard metadata format (MARC). Handling articles, books, theses, photos, videos, museum objects and more. Customizable display and linking rules</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/static/img/icon-personalisation.svg"/>
+            </div>
+            <div class="col-md-9">
+              <h6>User personalization</h6>
+              <p>user-defined document baskets. User-defined automated email notification alerts. Basket-sharing within user groups. Amazon-like user comments for documents in repository and shared baskets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row features-section-row">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/static/img/icon-formats.svg"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Multiple output formats</h6>
+              <p>HTML, XML, MARC, OAI</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/static/img/icon-api.svg"/>
+            </div>
+            <div class="col-md-9">
+              <h6>API</h6>
+              <p>yada yada yada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="next-section">
+    <div class="container">
+      <div class="row">
+        <a href="http://invenio.readthedocs.org/">
+          <div class="col-md-6 linkme a">
+            <h5>Getting started<span class="fa fa-long-arrow-right"></span></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos beatae neque ratione doloremque ex quasi, dolorum distinctio. Sed, molestiae labo.</p>
+          </div>
+        </a>
+        <a href="https://github.com/inveniosoftware/invenio" target="_blank">
+          <div class="col-md-6 linkme b">
+            <h5>Open Source Software<span class="fa fa-long-arrow-right"></span></h5>
+            <p>Invenio is Open Source software. It's free to use and easy to modify!</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  {% include "footer.html" %}
+{% endblock %}

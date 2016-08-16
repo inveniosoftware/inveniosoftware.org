@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "almond": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "jquery": "latest",
+    "open-sans-fontface": "latest"
+  },
+  "name": "invenio_software"
+}
