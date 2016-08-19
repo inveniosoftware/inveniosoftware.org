@@ -1,33 +1,19 @@
 {% extends 'page.html' %}
 
 {% block body %}
-  <section>
-    {% include 'header.html' %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Title goes here</h3>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="container">
+  <section class="top-section">
+    <div class="cover-image">
+      {% include 'header.html' %}
+      <div class="container top-section-title">
         <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-            </div>
+          <div class="col-md-12 col-md-offset-4">
+            <h3>{% block page_title %}{% endblock %}</h3>
+            <h6>{% block page_subtitle %}{% endblock %}</h6>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <div class="row">
-      </div>
-    </div>
-  </section>
+  {% block page_body %}{% endblock %}
   {% include "footer.html" %}
 {% endblock %}

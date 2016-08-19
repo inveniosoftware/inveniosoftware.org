@@ -4,38 +4,52 @@ html,body{
     font-family: Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #fff;
 }
-a,
-a:hover,
-a:focus {
-    color: #fff;
-}
 .block-center {
     margin: auto;
     float: none;
 }
-.section-content-dark-bg, .section-content-light-bg {
+.section-content-dark-bg, .section-content-white-bg, .section-content-light-bg {
     padding-top: calc(3 * 30px);
     padding-bottom: calc(3 * 30px);
 }
-.section-content-light-bg {
-    background-color: #fff;
+.section-content-dark-bg a {
+    color: white;
+    text-decoration: none;
+}
+.section-content-dark-bg a:hover,
+.section-content-dark-bg a:focus {
+    color: rgba(255, 255, 255, 0.58);
+}
+.section-content-white-bg, .section-content-light-bg {
     color: #333;
     width: 100%;
     text-align: justify;
+    font-size: 1.2em;
+    font-weight: 300;
 }
-.section-content-light-bg a {
+.section-content-white-bg {
+    background-color: #fff;
+}
+.section-content-light-bg {
+    background-color: rgba(173, 206, 224, 0.52);
+}
+.section-content-white-bg a, .section-content-light-bg a{
     color: #3D9FD2;
     text-decoration: none;
 }
+.section-content-white-bg a:hover,
+.section-content-white-bg a:focus,
 .section-content-light-bg a:hover,
 .section-content-light-bg a:focus {
     color: #297DA9;
 }
-.section-content-light-bg {
-    font-size: 1.2em;
-    font-weight: 300;
+.section-content-white-bg h6, .section-content-light-bg h6 {
+    font-weight: 200;
+    font-size: 1.4em;
+    color: rgba(61, 104, 125, 1);
+    padding-bottom: 10px;
 }
-.section-title-dark-bg, .section-title-light-bg {
+.section-title-dark-bg, .section-title-white-bg, .section-title-light-bg {
     font-size: 1.8em;
     width: 100%;
     text-align: center;
@@ -47,7 +61,7 @@ a:focus {
     color: rgba(173, 206, 224, 0.7);
     border-bottom: 2px solid rgba(61, 104, 125, 1);
 }
-.section-title-light-bg {
+.section-title-white-bg, .section-title-light-bg {
     margin-bottom: 45px;
     color: rgba(61, 104, 125, 1);
     font-weight: 500;
@@ -69,7 +83,7 @@ a:focus {
     color: rgba(255, 255, 255, 0.58);
     border-top: 3px solid transparent;
 }
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+.invenio-navbar > .container .navbar-brand, .invenio-navbar > .container-fluid .navbar-brand {
     margin-left: 0;
 }
 .navbar-toggle, .icon-bar {
@@ -97,15 +111,13 @@ a:focus {
     height: 80%;
     width: 100%;
     position: relative;
-    background: #3EA1D4;
     background-image: url("/static/img/library.jpg");
-    background-position-y: -60px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 100;
     font-size: 14px;
-    padding-bottom: 7px;
 }
 .cover-image {
     background-color: rgba(13,95,137,0.8);
@@ -285,12 +297,6 @@ a:focus {
     margin: 5px;
     padding: 5px;
 }
-.features-section h6 {
-    font-weight: 200;
-    font-size: 1.4em;
-    color: rgba(61, 104, 125, 1);
-    padding-bottom: 10px;
-}
 .features-section img {
     height: 60px;
 }
@@ -337,6 +343,12 @@ a:focus {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.footer-top a,
+.footer-top a:hover,
+.footer-top a:focus {
+    color: white;
+    text-decoration: none;
+}
 .footer-bottom {
     background-color: rgba(6, 41, 59, 1);
     padding-top: 15px;
@@ -360,4 +372,75 @@ footer nav li {
 footer nav li.title {
     font-weight: 400;
     margin-bottom: 15px;
+}
+
+/* base.html */
+.top-section {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-image: url("/static/img/iugw.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+    font-size: 14px;
+}
+.top-section h3 {
+    color: white;
+    font-size: 2.4em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+.top-section h6 {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.top-section-title {
+    margin-top: 65px;
+}
+
+/* gettingstarted.html */
+.code {
+    background-color: #e4eef3;
+    border: 1px solid #6ba1bb;
+    border-radius: 7px;
+    font-family: Source Code Pro;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1A4A61;
+    padding: 10px;
+}
+.goto-button {
+    text-align: center;
+    padding: 20px;
+}
+.goto-button a {
+    text-decoration: none;
+    border-radius: 4px;
+    line-height: 25px;
+    padding: 15px 60px;
+    background-color: rgba(13,95,137,0.8);
+    color: rgb(212, 229, 239);
+    height: 50px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.goto-button a:hover,
+.goto-button a:active {
+    color: white;
+}
+.mega {
+    vertical-align: bottom;
+    padding-left: 10px;
+}
+/* community.html */
+.shield {
+    text-align: center;
+    padding: 20px;
+}
+
+.shield img {
+    height: 30px;
 }
