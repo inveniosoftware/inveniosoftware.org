@@ -1,0 +1,19 @@
+notifications:
+  email: false
+
+matrix:
+  fast_finish: true
+
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+install:
+  - docker-compose build
+  - docker-compose up -d
+
+script:
+  - curl -s http://127.0.0.1/ | grep -q Invenio
