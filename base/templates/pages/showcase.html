@@ -1,28 +1,128 @@
-{% extends 'page.html' %}
+{% extends 'pages/base.html' %}
 
-{% block body %}
-  <section>
-    {% include 'header.html' %}
+{% block page_title %}Invenio instances around the world{% endblock %}
+{% block page_subtitle %}More than 60 installations world wide{% endblock %}
+{% block page_body %}
+  <section class="section-content-white-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Demo & Example Sites</h3>
-          <h5>Here are listed several Invenio installations that you can have a look, in order to see it in action</h5>
-        </div>
+
+      <div class="centered">
+        <p>Invenio is being used in more than 60 installations around the whole. Here you can find a subset of them.</p>
       </div>
-    </div>
-    <div>
-      <div class="container">
+      <br>
+
+      <div class="centered">
         <div class="row">
-          <div class="col-md-12">
-            <h5>Ready to build your own Invenio instance. Jump to our Getting Started page</h5>
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default btn-filter">
+              <input type="checkbox" value=".research-data">Research Data
+            </label>
+            <label class="btn btn-default btn-filter">
+              <input type="checkbox" value=".library">Library
+            </label>
+            <label class="btn btn-default btn-filter">
+              <input type="checkbox" value=".multimedia">Multimedia
+            </label>
+            <label class="btn btn-default btn-filter">
+              <input type="checkbox" value=".institutional-repository">Institutional Repository
+            </label>
           </div>
         </div>
       </div>
+      <br>
+
+      <div class="grid">
+
+          <div class="thumbnail research-data">
+            <img src="/static/img/ss-cap.png" alt="CERN Analysis Preservation"/>
+            <div class="caption">
+              <h3><a class="name" href="https://analysis-preservation.cern.ch" target="_blank">Analysis Preservation</a></h3>
+              <p>Capture the knowledge associated with an LHC analysis to be able to reproduce it later. Audience: restricted to ALICE, ATLAS, CMS, LHCb collaboration members.</p>
+              <span class="label label-primary">Research data</span>
+            </div>
+          </div>
+
+          <div class="thumbnail research-data library multimedia institutional-repository">
+            <img src="/static/img/ss-cds.png" alt="CDS"/>
+            <div class="caption">
+              <h3><a class="name" href="https://cds.cern.ch" target="_blank">CDS</a></a></h3>
+              <p>CERN official repository for publications, articles, reports and multimedia content in HEP.</p>
+              <span class="label label-primary">Library</span>
+              <span class="label label-primary">Research data</span>
+              <span class="label label-primary">Multimedia</span>
+              <span class="label label-primary" title="Institutional Repository">IR</span>
+            </div>
+          </div>
+
+          <div class="thumbnail research-data">
+            <img src="/static/img/ss-cod.png" alt="CERN Open Data"/>
+            <div class="caption">
+              <h3><a class="name" href="https://opendata.cern.ch" target="_blank">CERN Open Data</a></h3>
+              <p>Discover open Research datasets and software of LHC experiments. Visualise events and run and your own analysis.</p>
+              <span class="label label-primary">Research data</span>
+            </div>
+          </div>
+
+          <div class="thumbnail research-data">
+            <img src="/static/img/ss-claimstore.png" alt="ClaimStore"/>
+            <div class="caption">
+              <h3><a class="name" href="https://claimstore.cern.ch" target="_blank">ClaimStore</a></h3>
+              <p>Exchange information about persistent identifiers and related claims in astrophysics and particle physics. Audience: information systems (ADS, arXiv, INSPIRE, CERN (data), Zenodo).</p>
+              <span class="label label-primary">Research data</span>
+            </div>
+          </div>
+
+          <div class="thumbnail research-data">
+            <img src="/static/img/ss-zenodo.png" alt="Zenodo"/>
+            <div class="caption">
+              <h3><a class="name" href="https://zenodo.org" target="_blank">Zenodo</a></h3>
+              <p>Zenodo is an open home for the long-tail of science, enabling researchers to share and preserve any research outputs.</p>
+              <span class="label label-primary">Research data</span>
+            </div>
+          </div>
+
+          <div class="thumbnail research-data">
+            <img src="/static/img/ss-inspire.png" alt="INSPIRE"/>
+            <div class="caption">
+              <h3><a class="name" href="https://inspire.org" target="_blank">INSPIRE</a></h3>
+              <p>Run by a collaboration of CERN, DESY, Fermilab, IHEP, and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA-ADS, PDG, HEPDATA and others.</p>
+              <span class="label label-primary">Research data</span>
+            </div>
+          </div>
+
+
+
+
+      </div>
+
     </div>
-  </section>
-  <section>
 
   </section>
-  {% include "footer.html" %}
+
+  <script>
+    $(document).ready(function () {
+      var $grid = $('.grid').isotope({
+        itemSelector: '.thumbnail',
+        getSortData: {
+          name: '.name'
+        }
+      });
+
+      var $checkboxes = $('.btn-group input');
+
+      $checkboxes.change(function() {
+        var inclusives = [];
+        $checkboxes.each(function(i, elem) {
+          if (elem.checked) {
+            inclusives.push(elem.value);
+          }
+        });
+
+        var filterValue = inclusives.length ? inclusives.join(', ') : '*';
+        $grid.isotope({filter: filterValue});
+      });
+
+    });
+  </script>
+
 {% endblock %}

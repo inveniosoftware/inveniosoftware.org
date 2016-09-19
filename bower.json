@@ -4,7 +4,8 @@
     "bootstrap": "latest",
     "font-awesome": "latest",
     "jquery": "latest",
-    "open-sans-fontface": "latest"
+    "open-sans-fontface": "latest",
+    "isotope": "^3.0.1"
   },
   "name": "invenio_software"
 }

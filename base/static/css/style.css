@@ -8,6 +8,10 @@ html,body{
     margin: auto;
     float: none;
 }
+.centered {
+  margin: auto;
+  text-align: center;
+}
 .section-content-dark-bg, .section-content-white-bg, .section-content-light-bg {
     padding-top: calc(3 * 30px);
     padding-bottom: calc(3 * 30px);
@@ -399,6 +403,7 @@ footer nav li.title {
 }
 .top-section-title {
     margin-top: 65px;
+    text-align: center;
 }
 
 /* gettingstarted.html */
@@ -443,4 +448,15 @@ footer nav li.title {
 
 .shield img {
     height: 30px;
+}
+
+/* showcase.html */
+.thumbnail {
+  max-width: 360px;
+  margin: 10px;
+}
+.thumbnail img {
+  height: 300px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
