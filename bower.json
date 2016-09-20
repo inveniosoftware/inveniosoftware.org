@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "almond": "latest",
     "bootstrap": "latest",
     "font-awesome": "latest",
     "jquery": "latest",

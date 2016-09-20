@@ -1,0 +1,7 @@
+{
+  "name": "ClaimStore",
+  "description": "Exchange information about persistent identifiers and related claims in astrophysics and particle physics. Audience: information systems (ADS, arXiv, INSPIRE, CERN (data), Zenodo).",
+  "url": "https://claimstore.cern.ch",
+  "screenshot_filename": "claimstore.png",
+  "types": ["research-data"]
+}

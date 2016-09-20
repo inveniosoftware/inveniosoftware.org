@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Site data",
+  "description": "Description of a site using Invenio",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the site",
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "description": "Description of the site",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "description": "Full HTTP URL addressing the site home page",
+      "type": "string",
+      "minLength": 1
+    },
+    "screenshot_filename": {
+        "description": "Filename of the site screenshot (must be in /base/static/img/screenshots/)",
+        "type": "string",
+        "minLength": 1
+      },
+    "types": {
+      "description": "List of types (use cases) fulfilled by the site.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["research-data", "library", "multimedia", "institutional-repository"]
+        }
+      }
+    },
+    "required": ["name", "description", "url", "screenshot_filename" "types"],
+    "additionalProperties": false
+  },
+}

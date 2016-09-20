@@ -1,0 +1,7 @@
+{
+  "name": "Analysis Preservation",
+  "description": "Capture the knowledge associated with an LHC analysis to be able to reproduce it later. Audience: restricted to ALICE, ATLAS, CMS, LHCb collaboration members.",
+  "url": "https://analysis-preservation.cern.ch/",
+  "screenshot_filename": "cap.png",
+  "types": ["research-data"]
+}

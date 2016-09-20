@@ -1,0 +1,7 @@
+{
+  "name": "CDS",
+  "description": "CERN official repository for publications, articles, reports and multimedia content in HEP.",
+  "url": "https://cds.cern.ch",
+  "screenshot_filename": "cds.png",
+  "types": ["research-data", "library", "multimedia", "institutional-repository"]
+}
