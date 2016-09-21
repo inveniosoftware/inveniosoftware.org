@@ -58,18 +58,44 @@
       </div>
     </div>
   </section>
-  <section class="description-section section-content-white-bg">
+  <section class="flavour-section section-content-white-bg">
     <div class="container">
+      <span class="section-title-white-bg">Invenio comes with many flavours!</span>
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <span class="section-title-white-bg">Run your own digital library or document repository on the web</span>
+        <div class="col-md-6">
+          <img class="flavour" src="/static/img/icon-library.svg"/>
+          <h6>Integrated Library System</h6>
           <p>
-            Invenio is a <a href="">​free software</a> suite enabling you to run your own <a href="">​digital library</a> or document repository on the web. The technology offered by the software covers all aspects of digital library management from document ingestion through classification, indexing, and curation to dissemination. Invenio complies with standards such as the <a href="">​Open Archives Initiative</a> metadata harvesting protocol (OAI-PMH) and uses ​MARC 21 as its underlying bibliographic format. The flexibility and performance of Invenio make it a comprehensive solution for management of document repositories of moderate to large sizes (several millions of records).
-          </p>
-          <p>
-            Invenio has been originally developed at <a href="">​CERN</a> to run the <a href="">​CERN document server</a>, managing over 1,000,000 bibliographic records in high-energy physics since 2002, covering articles, books, journals, photos, videos, and more. Invenio is being co-developed by an international collaboration comprising institutes such as <a href="">​CERN</a>, <a href="">​DESY</a>, <a href="">​EPFL</a>, <a href="">​FNAL</a>, <a href="">​SLAC</a> and is being used by about thirty scientific institutions worldwide.
+            Manage circulation and your whole library process.
           </p>
         </div>
+        <div class="col-md-6">
+          <img class="flavour" src="/static/img/icon-biotech.svg"/>
+          <h6>Research Data</h6>
+          <p>
+            Manage circulation and your whole library process.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="flavour" src="/static/img/icon-film-reel.svg"/>
+          <h6>Multimedia Archive</h6>
+          <p>
+            Manage circulation and your whole library process.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class="flavour" src="/static/img/icon-filing-cabinet.svg"/>
+          <h6>Institutional Repository</h6>
+          <p>
+            Manage circulation and your whole library process.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="goto-button">
+          <a href="{{url_for('invenio_web.show', page = 'showcase')}}">See some showcases!</a></div>
       </div>
     </div>
   </section>
