@@ -321,7 +321,27 @@ html,body{
 }
 .partners-section {
     min-height: 450px;
-    background-color: rgba(10, 73, 105, 0.91);
+}
+.contact-section {
+  text-align: center;
+}
+.contact-title {
+  font-size: 3em;
+  padding-bottom: 30px;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+}
+.contact-list {
+  text-align: left;
+}
+.contact-list td {
+  padding: 5px 30px 5px 0px;
+}
+.contact-list-header {
+  color: rgba(255, 255, 255, 0.58);
+}
+.icon-contact {
+  height: 23em;
 }
 .next-section {
     background-color: rgba(173, 206, 224, 0.52);
@@ -417,7 +437,6 @@ footer nav li.title {
     margin-top: 65px;
     text-align: center;
 }
-
 /* gettingstarted.html */
 .code {
     background-color: #e4eef3;
@@ -453,13 +472,8 @@ footer nav li.title {
     padding-left: 10px;
 }
 /* community.html */
-.shield {
-    text-align: center;
-    padding: 20px;
-}
-
 .shield img {
-    height: 30px;
+    height: 20px;
 }
 
 /* showcase.html */
