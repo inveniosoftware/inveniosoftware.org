@@ -23,8 +23,8 @@
                     <h6>Run your own fully-customisable ​digital library or flexible document repository on the web.</h6>
                   </div>
                   <div class="actions">
-                    <form action="https://github.com/inveniosoftware/invenio/releases" target="_blank">
-                      <button class="btn white">Download</button>
+                    <form action="{{url_for('invenio_web.show', page = 'showcase')}}" target="_blank">
+                      <button class="btn white">Showcase</button>
                     </form>
                     <form action="{{url_for('invenio_web.show', page='gettingstarted')}}">
                       <button class="btn">Getting Started</button>
@@ -75,36 +75,31 @@
       </div>
       <div class="row">
         <div class="goto-button">
-          <a href="{{url_for('invenio_web.show', page = 'showcase')}}">See some showcases!</a></div>
+          <a href="{{url_for('invenio_web.show', page = 'showcase')}}">See showcase gallery!</a></div>
       </div>
     </div>
   </section>
-  <section class="partners-section section-content-dark-bg">
+  <section class="carousel-section section-content-dark-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-          <span class="section-title-dark-bg">Who uses Invenio?</span>
-          <div id="carousel-partners" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div id="invenio-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-partners" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-partners" data-slide-to="1"></li>
-              <li data-target="#carousel-partners" data-slide-to="2"></li>
-              <li data-target="#carousel-partners" data-slide-to="3"></li>
-              <li data-target="#carousel-partners" data-slide-to="4"></li>
+              <li data-target="#invenio-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#invenio-carousel" data-slide-to="1"></li>
+              <li data-target="#invenio-carousel" data-slide-to="2"></li>
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="row">
                         <div class="col-sm-8 col-xs-9 block-center">
-                            <div class="partner-carousel-item-img">
-                                <h2><a href="https://cds.cern.ch" target="_blank">CERN Document Server</a></h2>
+                            <div class="carousel-item-img">
+                                <img src="/static/img/logo-cern-white.svg">
                             </div>
-                            <div class="partner-carousel-item-text">
-                                <p>CDS is used every day at CERN to search among more than 1.000.000 documents of different types: pre-prints, papers, photos, videos. CDS has been adopted by all major LHC experiments as their tool of choice for document handling.</p>
-
-                                <p>CERN - “The European Organization for Nuclear Research is located at the heart of Europe, astride the Franco-Swiss border. It is known not only for its flagship project - <em>The Large Hadron Collider</em> -, but as well for being the place where Sir Tim Berners-Lee created the World Wide Web in 1989.”</p>
+                            <div class="carousel-item-text">
+                                <p>Invenio has been originally developed at <a href="https://home.cern">CERN</a> to run the <a href="https://cds.cern.ch">CERN document server</a>, managing over 1,000,000 bibliographic records in high-energy physics since 2002, covering articles, books, journals, photos, videos, and more.</p>
                             </div>
                         </div>
                     </div>
@@ -112,11 +107,11 @@
                 <div class="item">
                     <div class="row">
                         <div class="col-sm-8 col-xs-9 block-center">
-                            <div class="partner-carousel-item-img">
-                                <a href="https://zenodo.org" target="_blank"><img src="/static/img/logo-zenodo.svg"></a>
+                            <div class="carousel-item-img">
+                                <img src="/static/img/icon-collaboration.svg">
                             </div>
-                            <div class="partner-carousel-item-text">
-                                <p>Zenodo builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share, preserve and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.</p>
+                            <div class="carousel-item-text">
+                                <p>Invenio is nowadays co-developed by an international collaboration comprising institutes such as CERN, DESY, EPFL, FNAL, SLAC, Harvard, RERO, UAB, GSI, Jülich, Aristotle University of Thessaloniki, and is being used by many more scientific institutions worldwide.</p>
                             </div>
                         </div>
                     </div>
@@ -124,50 +119,21 @@
                 <div class="item">
                   <div class="row">
                       <div class="col-sm-8 col-xs-9 block-center">
-                          <div class="partner-carousel-item-img">
-                              <a href="https://inspirehep.net" target="_blank"><img src="/static/img/logo-inspire.png" class="img-white-bg"></a>
+                          <div class="carousel-item-img">
+                              <img src="/static/img/icon-open-source.svg">
                           </div>
-                          <div class="partner-carousel-item-text">
-                              <p> CERN, DESY, Fermilab and SLAC have built the next-generation High Energy Physics (HEP) information system, <a href="http://www.inspirehep.net/">INSPIRE</a>. It&nbsp;combines the successful <a href="http://en.wikipedia.org/wiki/SPIRES">SPIRES database content</a>, curated at <a href="http://www.desy.de/">DESY</a>, <a href="http://www.fnal.gov/">Fermilab</a> and <a href="http://www.slac.stanford.edu/">SLAC</a>, with the <a href="http://invenio-software.org/">Invenio</a> digital library technology developed at <a href="http://www.cern.ch/">CERN</a>. INSPIRE is run by a collaboration of CERN, DESY, Fermilab, IHEP, and SLAC, and interacts closely with HEP publishers, <a href="http://arxiv.org/">arXiv.org</a>, <a href="http://adswww.harvard.edu/">NASA-ADS</a>, <a href="http://pdg.lbl.gov/">PDG</a>, <a href="http://durpdg.dur.ac.uk/">HEPDATA </a>and other information resources.</p>
-
-                              <p>INSPIRE represents a natural evolution of scholarly communication, built on successful community-based information systems, and provides a vision for information management in other fields of science.</p>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                      <div class="col-sm-8 col-xs-9 block-center">
-                          <div class="partner-carousel-item-img">
-                              <a href="https://tind.io" target="_blank"><img src="/static/img/logo-tind.png" class="img-white-bg"></a>
-                          </div>
-                          <div class="partner-carousel-item-text">
-                              <p> Since Invenio’s birth in 2002, CERN has helped many organizations with configuring and customizing the software. However, this privilege has been reserved for institutions with extensive in-house IT resources.</p>
-
-                              <p>In the past few years, more and more institutions, organizations and even enterprises have been approaching CERN to receive a quote for Invenio services. With the growing demand, the decision was made to create an official spin-off that provides professional Invenio services.</p>
-                              <p>TIND enjoys an exclusive license agreement with CERN, gaining unique access to Invenio know-how. We work closely with the Invenio team, thus always staying up-to-date on new releases, patches on ongoing developments. We are headquartered in Trondheim, Norway and have a branch office in Geneva, Switzerland.</p>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                      <div class="col-sm-8 col-xs-9 block-center">
-                          <div class="partner-carousel-item-img">
-                              <a href="https://opendata.cern.ch" target="_blank"><img src="/static/img/logo-cod.svg" class="img-white-bg"></a>
-                          </div>
-                          <div class="partner-carousel-item-text">
-                              <p>The CERN Open Data portal is the access point to a growing range of data produced through the research performed at CERN. It disseminates the preserved output from various research activities, including accompanying software and documentation which is needed to understand and analyse the data being shared.The portal adheres to established global standards in data preservation and Open Science: the products are shared under open licenses; they are issued with a digital object identifier (DOI) to make them citable objects in the scientific discourse (see details below on how to do this).</p>
+                          <div class="carousel-item-text">
+                              <p>Invenio is a free software suite that complies with standards such as the Open Archives Initiative and uses MARC 21 as its underlying bibliographic format. The flexibility and performance of Invenio make it a comprehensive solution for management of document repositories of moderate to large sizes.</p>
                           </div>
                       </div>
                   </div>
                 </div>
             </div>
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-partners" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#invenio-carousel" role="button" data-slide="prev">
                 <span class="fa fa-angle-left fa-2x"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-partners" role="button" data-slide="next">
+            <a class="right carousel-control" href="#invenio-carousel" role="button" data-slide="next">
                 <span class="fa fa-angle-right fa-2x"></span>
             </a>
           </div>
@@ -252,28 +218,6 @@
               <p>yada yada yada</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="contact-section section-content-dark-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="icon-contact" src="/static/img/icon-contact.svg"/>
-        </div>
-        <div class="col-md-6">
-          <h3 class="contact-title">Keep in touch!</h3>
-          <table class="contact-list">
-            <tbody>
-              <tr><td class="contact-list-header">Twitter</td><td><a href="https://twitter.com/inveniosoftware"><span class="fa fa-twitter"></span><span id="followers_count">100</span> followers</a> / <a href="https://twitter.com/inveniosoftware">@inveniosoftware</a></td></tr>
-              <tr><td class="contact-list-header">GitHub</td><td><a href="http://github.com/inveniosoftware/invenio"><span class="fa fa-code-fork"></span><span id="forks_count">164</span> forks</a></td></tr>
-              <tr><td class="contact-list-header">Gitter</td><td><a href="https://gitter.im/inveniosoftware"><img id="copyImg" src="https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000"></a></td></tr>
-              <tr><td class="contact-list-header">Documentation</td><td><a href="https://invenio.readthedocs.io/en/latest/">Read the Docs</a></td></tr>
-              <tr><td class="contact-list-header">Weekly Meeting</td><td><a href="https://indico.cern.ch/category/6046/">Developer Forum</a></td></tr>
-              <tr><td class="contact-list-header">User Group Events</td><td><a href="https://indico.cern.ch/category/6240/">All IUGW</a></td></tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>

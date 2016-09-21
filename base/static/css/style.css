@@ -261,51 +261,56 @@ html,body{
 .flavour-section .row {
   padding: 30px 0px;
 }
-.partners-section .partner-carousel {
+.carousel-section {
     font-weight: 400;
     font-size: 14px;
     color: #FFFFFF;
     line-height: 24px;
 }
+.carousel-section a {
+    color: rgba(255, 255, 255, 0.58);
+    text-decoration: none;
+}
+.carousel-section a:hover,
+.carousel-section a:focus {
+    color: rgba(255, 255, 255, 0.28);
+}
 @media (min-width: 768px) {
-    .partners-section .partner-carousel {
+    .carousel-section {
         font-size: 18px;
     }
 }
-#carousel-partners .item {
+#invenio-carousel .item {
     min-height: calc(12 * 30px);
     text-align: center;
 }
 @media (min-width: 768px) {
-    #carousel-partners .item {
+    #invenio-carousel .item {
         min-height: calc(10 * 30px);
     }
 }
-#carousel-partners .carousel-control {
+#invenio-carousel .carousel-control {
     background: none;
 }
-#carousel-partners .carousel-control span {
+#invenio-carousel .carousel-control span {
     position: absolute;
     top: 50%;
     right: 50%;
 }
-#carousel-partners .carousel-indicators {
+#invenio-carousel .carousel-indicators {
     bottom: -30px;
     margin-bottom: 0;
 }
-.partner-carousel-item .partner-carousel-item-text {
+.carousel-item .carousel-item-text {
     padding-top: 40px;
 }
-.partner-carousel-item-img {
+.carousel-item-img {
     text-align: center;
     padding: 20px;
 }
-.partner-carousel-item-img img {
-    max-height: 60px;
+.carousel-item-img img {
+    max-height: 9em;
     vertical-align: middle;
-}
-.partner-carousel-item-text {
-    font-size: 1.2em;
 }
 .img-white-bg {
     background-color: white;
@@ -314,16 +319,20 @@ html,body{
     padding: 5px;
 }
 .features-section img {
-    height: 60px;
+    max-height: 60px;
 }
 .features-section-row  {
     padding-bottom: 30px;
 }
-.partners-section {
+.carousel-section {
     min-height: 450px;
 }
 .contact-section {
   text-align: center;
+}
+.contact-section .row {
+  display: flex;
+  align-items: center;
 }
 .contact-title {
   font-size: 3em;
@@ -341,49 +350,15 @@ html,body{
   color: rgba(255, 255, 255, 0.58);
 }
 .icon-contact {
-  height: 23em;
+  height: 6em;
 }
-.next-section {
-    background-color: rgba(173, 206, 224, 0.52);
-    padding-top: 30px;
-    padding-bottom: 30px;
+@media (max-width: 700px) {
+    .icon-contact {
+        height: 3em;
+    }
 }
-.next-section a,
-.next-section a:hover {
-    text-decoration: none;
-    color: #707070;
-}
-.next-section .linkme.a{
-    padding-right: 55px;
-    border-right: 1px solid #ACACAC;
-}
-.next-section .linkme.b{
-    padding-left: 70px;
-}
-
-.next-section .linkme h5{
-    font-size: 18px;
-    font-weight: 400;
-}
-.next-section .linkme h5 span{
-    font-size: 16px;
-    font-weight: 300;
-    margin-left: 10px;
-}
-.next-section .linkme p{
-    font-size: 16px;
-    font-weight: 100;
-}
-.footer-top {
-    background-color: rgba(9, 63, 91, 1);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.footer-top a,
-.footer-top a:hover,
-.footer-top a:focus {
-    color: white;
-    text-decoration: none;
+.shield img {
+  height: 30px;
 }
 .footer-bottom {
     background-color: rgba(6, 41, 59, 1);
@@ -411,7 +386,7 @@ footer nav li.title {
 }
 
 /* base.html */
-.top-section {
+.header-section {
     height: 300px;
     width: 100%;
     position: relative;
@@ -423,17 +398,17 @@ footer nav li.title {
     font-weight: 100;
     font-size: 14px;
 }
-.top-section h3 {
+.header-section h3 {
     color: white;
     font-size: 2.4em;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
 }
-.top-section h6 {
+.header-section h6 {
     font-size: 1.4em;
     font-weight: 300;
 }
-.top-section-title {
+.header-section-title {
     margin-top: 65px;
     text-align: center;
 }
@@ -472,8 +447,13 @@ footer nav li.title {
     padding-left: 10px;
 }
 /* community.html */
-.shield img {
-    height: 20px;
+.shield-big {
+  text-align:center;
+  padding: 20px;
+
+}
+.shield-big img {
+  height: 30px;
 }
 
 /* showcase.html */
@@ -485,4 +465,24 @@ footer nav li.title {
   height: 300px;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+}
+
+/* Error page */
+.error-page {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.error-page .row {
+  display: flex;
+  align-items: center;
+}
+.error-page-title {
+  font-size: 2em;
+  padding: 90px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.error-page-title a {
+  text-decoration: underline;
 }
