@@ -16,6 +16,9 @@ html,body{
     padding-top: calc(3 * 30px);
     padding-bottom: calc(3 * 30px);
 }
+.section-content-dark-bg {
+  background-color: rgba(10, 73, 105, 0.91);
+}
 .section-content-dark-bg a {
     color: white;
     text-decoration: none;
