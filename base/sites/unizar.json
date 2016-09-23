@@ -1,0 +1,7 @@
+{
+  "name": "ZAGUAN",
+  "description": "Repositorio Digital de la Universidad de Zaragoza (ZAGUAN) is a project aimed to handle all digital content at UZ in a single platform, so it can be found with a single search, but structured in smaller collections. The initial project, started in 2008, includes a collection of digital copies of rare books and manuscripts. Further developments: doctoral dissertations, e-books, pre-prints, articles, proceedings...",
+  "url": "https://zaguan.unizar.es",
+  "screenshot_filename": "unizar.png",
+  "types": ["research-data", "library", "institutional-repository"]
+}

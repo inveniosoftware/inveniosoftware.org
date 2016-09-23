@@ -1,0 +1,7 @@
+{
+  "name": "RERO DOC",
+  "description": "Digital library of RERO, the Library Network of Western Switzerland. Created to promote, preserve and provide public access to the grey literature (e-theses, dissertations, e-prints) of institutions participating in the project, as well as to the digitalized collections of RERO libraries.",
+  "url": "https://doc.rero.ch",
+  "screenshot_filename": "rero.png",
+  "types": ["research-data", "library"]
+}

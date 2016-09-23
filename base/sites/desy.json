@@ -1,0 +1,7 @@
+{
+  "name": "DESY PUBDB",
+  "description": "The DESY Publication database (Pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts. DESY is one of the world’s leading accelerator centres.",
+  "url": "https://pubdb.desy.de",
+  "screenshot_filename": "desy.png",
+  "types": ["research-data", "institutional-repository"]
+}
