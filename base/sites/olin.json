@@ -1,0 +1,7 @@
+{
+  "name": "Olin College of Engineering",
+  "description": "Olin was founded to radically change engineering education with the goal of fueling the technical innovation needed to solve the world’s complex future challenges.",
+  "url": "http://olin.tind.io",
+  "screenshot_filename": "olin.png",
+  "types": ["library"]
+}

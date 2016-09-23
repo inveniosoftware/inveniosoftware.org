@@ -1,0 +1,7 @@
+{
+  "name": "International Telecommunication Union",
+  "description": "The ITU Library collections include all ITU publications and documents: journals and newsletters, brochures and booklets, council and conference documents, recommendations, reports, workshop and seminar reports, news bulletins and notifications, manuals, handbooks and directories, etc. Please note that most of these publications are not yet included in this online catalogue.",
+  "url": "http://itu.tind.io",
+  "screenshot_filename": "itu.png",
+  "types": ["library"]
+}

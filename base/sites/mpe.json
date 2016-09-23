@@ -1,0 +1,7 @@
+{
+  "name": "MPE",
+  "description": "Max-Planck-Institut für extraterrestrische Physik.",
+  "url": "http://mpe.tind.io",
+  "screenshot_filename": "mpe.png",
+  "types": ["multimedia"]
+}

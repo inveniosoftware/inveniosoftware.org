@@ -1,7 +1,7 @@
 {
   "name": "Zenodo",
   "description": "Zenodo is an open home for the long-tail of science, enabling researchers to share and preserve any research outputs.",
-  "url": "https://zenodo.org",
+  "url": "http://zenodo.org",
   "screenshot_filename": "zenodo.png",
   "types": ["research-data"]
 }
