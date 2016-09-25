@@ -1,7 +1,14 @@
 web:
+  restart: "always"
   build: .
+  command: flask run -h 0.0.0.0
+  environment:
+    - FLASK_APP=/code/app.py
+
+nginx:
+  restart: "always"
+  build: ./nginx
   ports:
     - "80:80"
-  volumes:
-    - ./html:/usr/share/nginx/html
-    - ./conf:/etc/nginx/conf.d
+  links:
+    - web
