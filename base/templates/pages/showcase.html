@@ -13,7 +13,7 @@
 
       <div class="centered">
         <div class="row">
-          <div class="btn-group" data-toggle="buttons">
+          <div class="btn-group{% if request.MOBILE %}-vertical{% endif %}" data-toggle="buttons">
             <label class="btn btn-default btn-filter active">
               <input type="radio" name="filters" data-value="*" checked>All
             </label>

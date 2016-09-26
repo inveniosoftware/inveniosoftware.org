@@ -93,15 +93,16 @@ html,body{
 .invenio-navbar > .container .navbar-brand, .invenio-navbar > .container-fluid .navbar-brand {
     margin-left: 0;
 }
-.invenio-navbar > .container .navbar-brand img {
-  margin-top: 10px;
+.navbar-toggle {
+    background-color: rgba(61, 121, 156, 0.87);
 }
-.navbar-toggle, .icon-bar {
-    background-color: rgba(173, 206, 224, 0.7);
+.icon-bar {
+    background-color: rgba(173, 206, 224, 1);
 }
 .navbar-brand img {
     width: auto;
     height: 50px;
+    margin-top: 10px;
 }
 .navbar-brand,
 .navbar-nav li a {
@@ -114,6 +115,17 @@ html,body{
     background-color: transparent;
     border-top: 3px solid rgba(255, 255, 255, 0.58);
     color: #fff;
+}
+@media (max-width: 768px) {
+  .navbar-brand,
+  .navbar-nav li a {
+      line-height: normal;
+      height: auto;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+      border-top: none;
+  }
 }
 .intro-section {
     min-height: 600px;
@@ -142,8 +154,16 @@ html,body{
 .headline h6{
     font-weight: 100;
     color: rgba(255, 255, 255, 0.58);
-    font-size: 24px;
+    font-size: 1.8em;
     padding-top: 5%;
+}
+@media (max-width: 768px) {
+  .headline h3{
+      font-size: 3em;
+  }
+  .headline h6{
+      font-size: 1.5em;
+  }
 }
 .headline .actions{
     padding-top: 5%;
@@ -151,7 +171,7 @@ html,body{
 }
 .headline .btn.white{
     background-color: rgba(255, 255, 255, 0.95);
-    color: #3EA1D4;
+    color: #467f9c;
 }
 .headline .btn.white:hover {
     color: #3EA1D4;
@@ -175,6 +195,11 @@ html,body{
     height: 50px;
     font-size: 20px;
     font-weight: 200;
+}
+@media (max-width: 768px) {
+  .headline .btn {
+    font-size: 15px;
+  }
 }
 .social-bar{
     position: absolute;
@@ -357,7 +382,7 @@ html,body{
 }
 @media (max-width: 700px) {
     .icon-contact {
-        height: 3em;
+        display: none;
     }
 }
 .shield img {
@@ -449,7 +474,7 @@ footer nav li.title {
     background-color: rgba(13,95,137,0.8);
     color: rgb(212, 229, 239);
     height: 50px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 200;
 }
 .goto-button a:hover,
@@ -465,7 +490,7 @@ i.large-icon, i.large-icon {
   color: #245e79;
 }
 .develop-section i {
-  color: #294552;
+  color: #245e79;
 }
 /* community.html */
 .shield-big {
@@ -490,7 +515,16 @@ i.large-icon, i.large-icon {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
+@media only screen and (max-device-width: 768px) {
+  .thumbnail h3 {
+    font-size: 1em;
+    color: red;
+  }
+  .thumbnail .caption p {
+    font-size: 0.6em;
+  }
 
+}
 /* Error page */
 .error-page {
   height: 100%;
