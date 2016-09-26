@@ -2,53 +2,68 @@
 
 {% block page_title %}Getting started with Invenio{% endblock %}
 {% block page_body %}
-  <section class="section-content-white-bg">
+  <section class="install-section section-content-white-bg">
     <div class="container">
+      <span class="section-title-light-bg">Installing Invenio</span>
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <span class="section-title-light-bg">Installing Invenio</span>
-            <p>Installing Invenio is a simple task, you only need to use <a href="https://pip.pypa.io/en/stable/">pip</a> from your command line and...a few configuration settings:</p>
-            <p class="code">$ pip install invenio</p>
-            <br>
-            <p>If you already have the source code, you can easily start a demo with Docker:</p>
-            <p class="code">
-              $ docker-compose build<br>
-              $ docker-compose up
-            </p>
-            <br>
-            <p>You can find both source code and Python packages on <a href="https://github.com/inveniosoftware/invenio/releases/latest">GitHub</a> and <a href="https://pypi.python.org/pypi?%3Aaction=search&term=invenio-&submit=search">pypi</a>.</p>
-            <br>
-            <div class="goto-button"><a href="http://invenio.readthedocs.io/en/latest/installation/index.html">View detailed installation instructions</a></div>
+        <div class="col-md-6">
+          <h6>Invenio 1.2</h6>
+          <p>Install latest stable release</p>
+          <p class="code">$ <span class="command">wget</span> foo
+            $ <span class="command">docker</span> pull
+            $ <span class="command">docker-compose</span> up -d
+            $ <span class="command">firefox</span> 127.0.0.1</p>
+            <div class="goto-button"><a href="http://invenio.readthedocs.io/en/stable/">Detailed instructions</a></div>
         </div>
-      </div>
-  </section>
-  <section class="section-content-light-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <span class="section-title-light-bg">Developing for Invenio</span>
-          <p>Invenio 3 is a multi-modular framework. You can find all of Invenio's modules on <a href="https://github.com/inveniosoftware">GitHub</a>. We do keep a "Build status" list on our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Build-Status">GitHub Wiki</a> as well!</p>
-          <br>
-          <p>We encourage you to have a look at the code and if you feel like hacking, go ahead and <a href="http://invenio.readthedocs.io/en/latest/processes/developing.html">contribute</a>. Feel free to clone our repo:</p>
-          <p class="code">$ git clone git@github.com:inveniosoftware/invenio.git</p>
-          <div class="shield-big"><a class="github-button" href="https://github.com/inveniosoftware/invenio/fork" data-style="mega" data-count-href="/inveniosoftware/invenio/network" data-count-api="/repos/inveniosoftware/invenio#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork inveniosoftware/invenio on GitHub">Fork</a></div>
-          <br>
-          <div class="goto-button"><a href="https://github.com/inveniosoftware/invenio">View project on GitHub</a></div>
+        <div class="col-md-6">
+          <h6>Invenio 3.0</h6>
+          <p>Install latest developer preview</p>
+          <p class="code">$ <span class="command">wget</span> foo
+            $ <span class="command">docker</span> pull
+            $ <span class="command">docker-compose</span> up -d
+            $ <span class="command">firefox</span> 127.0.0.1</p>
+            <div class="goto-button"><a href="http://invenio.readthedocs.io/en/latest/">Detailed instructions</a></div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section-content-white-bg">
+  <section class="develop-section section-content-light-bg">
     <div class="container">
+      <span class="section-title-light-bg">Developing for Invenio</span>
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <span class="section-title-light-bg">Invenio Documentation</span>
-          <p>All Invenio Documentation can be found on <a href="http://invenio.readthedocs.org/en/latest/installation/" title="Invenio latest release">Read the Docs</a>.</p>
-          <p>We also keep some project management related information on <a href="https://github.com/inveniosoftware/invenio/wiki">GitHub</a>.</p>
+        <div class="col-md-3">
+          <i class="large-icon fa fa-github" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-9">
+          <p>Invenio 3 is a multi-modular framework. You can find all of Invenio's modules on <a href="https://github.com/inveniosoftware">GitHub</a>. We do keep a "Build status" list on our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Build-Status">GitHub Wiki</a> as well! You should know that we explit our modules in three organistations:</p>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check"></i><a href="https://github.com/inveniosoftware">inveniosoftware</a>: yada yada</li>
+            <li><i class="fa-li fa fa-users"></i><a href="https://github.com/inveniosoftware-contrib">inveniosoftware-contrib</a>: yada yada</li>
+            <li><i class="fa-li fa fa-archive"></i><a href="https://github.com/inveniosoftware-attic">inveniosoftware-attic</a>: yada yada</li>
+          </ul>
           <br>
-          <div class="goto-button"><a href="https://invenio.readthedocs.io">View documentation on Read The Docs</a></div>
+          <p>We encourage you to have a look at the code and if you feel like hacking, go ahead and <a href="http://invenio.readthedocs.io/en/latest/processes/developing.html">contribute</a>. Feel free to clone any of our modules:</p>
+          <p class="code">$ git clone git@github.com:inveniosoftware[-contrib|-attic]/module_name.git</p>
         </div>
       </div>
+      <br>
+      <div class="goto-button"><a href="https://github.com/inveniosoftware/invenio">View project on GitHub</a></div>
+    </div>
+  </section>
+  <section class="documentation-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title-light-bg">Invenio Documentation</span>
+      <div class="row">
+        <div class="col-md-3">
+          <i class="large-icon fa fa-book" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-9">
+          <p>All Invenio Documentation can be found on <a href="http://invenio.readthedocs.org/en/latest/installation/" title="Invenio latest release">Read the Docs</a>. There you should be able to find all what you need to install, configure and develop for Invenio. As well, we include introductions to the architecture, modules and technology that is used.</p>
+          <p>We also keep some project management related information on <a href="https://github.com/inveniosoftware/invenio/wiki">GitHub</a>.</p>
+        </div>
+      </div>
+      <br>
+      <div class="goto-button"><a href="https://invenio.readthedocs.io">View documentation on Read The Docs</a></div>
     </div>
   </section>
 

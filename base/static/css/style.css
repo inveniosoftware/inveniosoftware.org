@@ -416,6 +416,9 @@ footer nav li.title {
     text-align: center;
 }
 /* gettingstarted.html */
+.install-section {
+  text-align: center;
+}
 .code {
     background-color: #e4eef3;
     border: 1px solid #6ba1bb;
@@ -423,8 +426,16 @@ footer nav li.title {
     font-family: Source Code Pro;
     font-weight: 400;
     font-size: 14px;
-    color: #1A4A61;
+    color: #245e79;
     padding: 10px;
+    white-space: pre-line;
+    line-height: 30px;
+    padding-left: 30px;
+    margin: 30px 0;
+    text-align: left;
+}
+.command {
+  font-weight: 600;
 }
 .goto-button {
     text-align: center;
@@ -448,6 +459,13 @@ footer nav li.title {
 .mega {
     vertical-align: bottom;
     padding-left: 10px;
+}
+i.large-icon, i.large-icon {
+  font-size: 12em !important;
+  color: #245e79;
+}
+.develop-section i {
+  color: #294552;
 }
 /* community.html */
 .shield-big {
