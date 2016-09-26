@@ -3,5 +3,6 @@
   "description": "Discover open Research datasets and software of LHC experiments. Visualise events and run and your own analysis.",
   "url": "http://opendata.cern.ch/",
   "screenshot_filename": "cod.png",
-  "types": ["research-data"]
+  "types": ["research-data"],
+  "featured": true
 }

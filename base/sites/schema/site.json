@@ -32,6 +32,10 @@
         "type": "string",
         "enum": ["research-data", "library", "multimedia", "institutional-repository"]
         }
+      },
+      "featured": {
+        "description": "Its value must be true if a featured site",
+        "type": "boolean"
       }
     },
     "required": ["name", "description", "url", "screenshot_filename" "types"],

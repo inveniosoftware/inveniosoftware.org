@@ -37,7 +37,7 @@
       <div class="grid">
 
         {% for site in sites %}
-          <div class="thumbnail {{' '.join(site.types)}}">
+          <div class="thumbnail {{' '.join(site.types)}} {{'featured' if site.featured else ''}}">
             <img src="/static/img/screenshots/{{site.screenshot_filename}}" alt="{{site.name}}"/>
             <div class="caption">
               <h3><a class="name" href="{{site.url}}" target="_blank">{{site.name}}</a></h3>
@@ -60,7 +60,14 @@
       var $grid = $('.grid').isotope({
         itemSelector: '.thumbnail',
         getSortData: {
-          name: '.name'
+          name: function(itemElem) {
+            var name = $(itemElem).find('.name').text().toLowerCase();
+            if ($(itemElem).hasClass('featured')) {
+              return "_" + name;
+            } else {
+              return name;
+            }
+          }
         },
         sortBy: 'name'
       });
