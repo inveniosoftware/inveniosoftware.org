@@ -14,17 +14,20 @@
       <div class="centered">
         <div class="row">
           <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-default btn-filter">
-              <input type="checkbox" value=".research-data">Research Data
+            <label class="btn btn-default btn-filter active">
+              <input type="radio" name="filters" data-value="*" checked>All
             </label>
             <label class="btn btn-default btn-filter">
-              <input type="checkbox" value=".library">Library
+              <input type="radio" name="filters" data-value=".research-data">Research Data
             </label>
             <label class="btn btn-default btn-filter">
-              <input type="checkbox" value=".multimedia">Multimedia
+              <input type="radio" name="filters" data-value=".library">Library
             </label>
             <label class="btn btn-default btn-filter">
-              <input type="checkbox" value=".institutional-repository">Institutional Repository
+              <input type="radio" name="filters" data-value=".multimedia">Multimedia
+            </label>
+            <label class="btn btn-default btn-filter">
+              <input type="radio" name="filters" data-value=".institutional-repository">Institutional Repository
             </label>
           </div>
         </div>
@@ -61,18 +64,8 @@
         }
       });
 
-      var $checkboxes = $('.btn-group input');
-
-      $checkboxes.change(function() {
-        var inclusives = [];
-        $checkboxes.each(function(i, elem) {
-          if (elem.checked) {
-            inclusives.push(elem.value);
-          }
-        });
-
-        var filterValue = inclusives.length ? inclusives.join(', ') : '*';
-        $grid.isotope({filter: filterValue});
+      $('input:radio').change(function() {
+        $grid.isotope({filter: $(this).data('value')});
       });
 
     });

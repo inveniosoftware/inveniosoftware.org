@@ -93,6 +93,9 @@ html,body{
 .invenio-navbar > .container .navbar-brand, .invenio-navbar > .container-fluid .navbar-brand {
     margin-left: 0;
 }
+.invenio-navbar > .container .navbar-brand img {
+  margin-top: 10px;
+}
 .navbar-toggle, .icon-bar {
     background-color: rgba(173, 206, 224, 0.7);
 }
@@ -361,7 +364,7 @@ html,body{
   height: 30px;
 }
 .footer-bottom {
-    background-color: rgba(6, 41, 59, 1);
+    background-color: rgb(10, 73, 105);
     padding-top: 15px;
     padding-bottom: 15px;
     color: rgba(255, 255, 255, 0.7);
