@@ -462,6 +462,9 @@ footer nav li.title {
 .command {
   font-weight: 600;
 }
+.json {
+  color: #777;
+}
 .goto-button {
     text-align: center;
     padding: 20px;
@@ -528,7 +531,24 @@ i.large-icon, i.large-icon {
   .thumbnail .caption p {
     font-size: 0.6em;
   }
+}
 
+/* New site documentation */
+.numbering {
+  font-weight: 200;
+  font-size: 4em;
+  color: rgba(61, 104, 125, 1);
+  border: 3px solid rgba(61, 104, 125, 1);
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.new-site-section {
+  text-align: center;
+}
+.pull-request {
+  max-width: 620px;
 }
 /* Error page */
 .error-page {
