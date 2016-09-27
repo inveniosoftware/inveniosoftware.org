@@ -57,14 +57,14 @@
   </section>
 
   <script>
-    $(document).ready(function () {
+    $(window).on('load', function () {
       var $grid = $('.grid').isotope({
         itemSelector: '.thumbnail',
         getSortData: {
           name: function(itemElem) {
             var name = $(itemElem).find('.name').text().toLowerCase();
             if ($(itemElem).hasClass('featured')) {
-              return "_" + name;
+              return '_' + name;
             } else {
               return name;
             }
