@@ -510,6 +510,9 @@ i.large-icon, i.large-icon {
 }
 
 /* showcase.html */
+.hidden {
+  display: none;
+}
 .thumbnail {
   max-width: 360px;
   margin: 10px;

@@ -35,7 +35,10 @@
       </div>
       <br>
 
-      <div class="grid">
+      <div class="centered" id="loading" >
+        <i class="fa fa-spinner fa-lg fa-spin" aria-hidden="true"></i>
+      </div>
+      <div class="grid hidden">
 
         {% for site in sites %}
           <div class="thumbnail {{' '.join(site.types)}} {{'featured' if site.featured else ''}}">
@@ -58,6 +61,8 @@
 
   <script>
     $(window).on('load', function () {
+      $('#loading').addClass('hidden');
+      $('.grid').removeClass('hidden');
       var $grid = $('.grid').isotope({
         itemSelector: '.thumbnail',
         getSortData: {
