@@ -501,6 +501,10 @@ i.large-icon, i.large-icon {
 .shield-big img {
   height: 30px;
 }
+.support-section img {
+  max-height: 6em;
+  margin-bottom: 30px;
+}
 
 /* showcase.html */
 .showcase-section {
