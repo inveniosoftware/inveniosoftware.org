@@ -1,6 +1,6 @@
 from flask import Flask
 from base.views import blueprint as main_blueprint
-from flask.ext.mobility import Mobility
+from flask_mobility import Mobility
 
 app = Flask(__name__)
 app._static_folder = 'base/static'
