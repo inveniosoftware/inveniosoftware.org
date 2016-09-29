@@ -143,6 +143,7 @@ html,body{
 }
 .cover-image {
     background-color: rgba(13,95,137,0.8);
+    min-height: 300px;
     height: 100%;
     width: 100%;
 }
@@ -415,7 +416,7 @@ footer nav li.title {
 
 /* base.html */
 .header-section {
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     position: relative;
     background-image: url("/static/img/iugw.png");
