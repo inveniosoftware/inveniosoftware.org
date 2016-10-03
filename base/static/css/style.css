@@ -74,7 +74,7 @@ html,body{
     font-weight: 500;
 }
 .vertical-center {
-  height: 75%;
+  height: 600px;
   display: flex;
   align-items: center;
 }
@@ -126,9 +126,6 @@ html,body{
   }
 }
 .intro-section {
-    min-height: 600px;
-    max-height: 800px;
-    height: 80%;
     width: 100%;
     position: relative;
     background-image: url("/static/img/library.jpg");
@@ -268,6 +265,7 @@ html,body{
 }
 .features-section img {
     max-height: 60px;
+    max-width: 100%;
 }
 .features-section-row  {
     padding-bottom: 30px;
@@ -334,8 +332,20 @@ footer nav li.title {
 }
 
 /* base.html */
+@media only screen and (max-device-width: 768px) {
+  .vertical-center {
+    height: auto!important;
+  }
+  .intro-section .cover-image {
+    min-height: auto!important;
+    padding-bottom: 50px;
+  }
+  .intro-section {
+    height: auto!important;
+  }
+}
+
 .header-section {
-    min-height: 300px;
     width: 100%;
     position: relative;
     background-image: url("/static/img/iugw.png");
@@ -346,6 +356,11 @@ footer nav li.title {
     font-weight: 300;
     font-size: 14px;
 }
+
+.intro-section .cover-image {
+  min-height: 800px;
+}
+
 .header-section h3 {
     color: white;
     font-size: 2.4em;
