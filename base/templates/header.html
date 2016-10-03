@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           {% for page_id, caption, href in navigation_bar %}
-            <li><a{% if page_id == active_page %} class="active"{% endif %} href="{{href|e}}">{{caption|e}}</a></li>
+            <li><a{% if page_id == active_page %} class="active-menu"{% endif %} href="{{href|e}}">{{caption|e}}</a></li>
           {% endfor %}
         </ul>
       </div>

@@ -99,14 +99,14 @@ html,body{
     margin-top: 10px;
 }
 .navbar-brand,
-.navbar-nav li a:not(.active) {
+.navbar-nav li a:not(.active-menu) {
     line-height: 50px;
     height: 50px;
     padding-top: 0;
     color: white;
     border-top: 3px solid transparent;
 }
-.active,
+.active-menu,
 .nav > li > a:hover,
 .nav > li > a:focus {
     background-color: transparent;
@@ -119,7 +119,7 @@ html,body{
       line-height: normal;
       height: auto;
   }
-  .active,
+  .active-menu,
   .nav > li > a:hover,
   .nav > li > a:focus {
       border-top: none;
