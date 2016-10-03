@@ -106,6 +106,7 @@ html,body{
     color: white;
     border-top: 3px solid transparent;
 }
+.active,
 .nav > li > a:hover,
 .nav > li > a:focus {
     background-color: transparent;
