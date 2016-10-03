@@ -84,12 +84,6 @@ html,body{
     font-weight: 100;
     border: 0;
 }
-.invenio-navbar a,
-.invenio-navbar a:hover,
-.invenio-navbar a:focus {
-    color: rgba(255, 255, 255, 0.58);
-    border-top: 3px solid transparent;
-}
 .invenio-navbar > .container .navbar-brand, .invenio-navbar > .container-fluid .navbar-brand {
     margin-left: 0;
 }
@@ -101,20 +95,22 @@ html,body{
 }
 .navbar-brand img {
     width: auto;
-    height: 50px;
+    height: 40px;
     margin-top: 10px;
 }
 .navbar-brand,
-.navbar-nav li a {
-    line-height: 68px;
-    height: 68px;
+.navbar-nav li a:not(.active) {
+    line-height: 50px;
+    height: 50px;
     padding-top: 0;
+    color: white;
+    border-top: 3px solid transparent;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
     background-color: transparent;
     border-top: 3px solid rgba(255, 255, 255, 0.58);
-    color: #fff;
+    color: rgba(255, 255, 255, 0.58);;
 }
 @media (max-width: 768px) {
   .navbar-brand,
