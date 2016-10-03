@@ -119,6 +119,7 @@ html,body{
       line-height: normal;
       height: auto;
   }
+  .active,
   .nav > li > a:hover,
   .nav > li > a:focus {
       border-top: none;
