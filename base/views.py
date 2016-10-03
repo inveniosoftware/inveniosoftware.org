@@ -38,9 +38,17 @@ def showcase():
     except TemplateNotFound:
         abort(404)
 
+
 @blueprint.route('/<page>')
 def show(page):
     try:
-        return render_template('pages/%s.html' % page)
+        return render_template('pages/{}.html'.format(page))
+    except TemplateNotFound:
+        abort(404)
+
+@blueprint.route('/<page>/<subpage>')
+def show_subpage(page, subpage):
+    try:
+        return render_template('pages/{}_{}.html'.format(page, subpage))
     except TemplateNotFound:
         abort(404)
