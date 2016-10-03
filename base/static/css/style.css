@@ -51,7 +51,7 @@ html,body{
     color: #297DA9;
 }
 .section-content-white-bg h6, .section-content-light-bg h6 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.4em;
     color: rgba(61, 104, 125, 1);
     padding-bottom: 10px;
@@ -81,7 +81,7 @@ html,body{
 .invenio-navbar {
     border-radius: 0;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
     border: 0;
 }
 .invenio-navbar > .container .navbar-brand, .invenio-navbar > .container-fluid .navbar-brand {
@@ -136,7 +136,7 @@ html,body{
     background-size: cover;
     background-repeat: no-repeat;
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
 }
 .cover-image {
@@ -151,7 +151,7 @@ html,body{
     color: white;
 }
 .headline h6{
-    font-weight: 100;
+    font-weight: 300;
     color: rgba(255, 255, 255, 0.58);
     font-size: 1.8em;
     padding-top: 5%;
@@ -199,85 +199,6 @@ html,body{
   .headline .btn {
     font-size: 15px;
   }
-}
-.social-bar{
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-    background-color: rgba(10, 73, 105, 0.91);
-    width: 100%;
-    color: rgba(255, 255, 255, 0.58);
-}
-.social-bar ul {
-    margin-bottom: 0;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    list-style-type: none;
-}
-.social-bar li {
-    float: left;
-    font-size: 15px;
-    font-weight: 100px;
-    padding-right: 25px;
-}
-.social-bar li a{
-    color: rgba(255, 255, 255, 0.58);
-    text-decoration: none;
-    font-weight: 100;
-}
-.social-bar li a:hover,
-.social-bar li a:focus {
-    color: #fff;
-}
-.social-bar li span{
-    margin-right: 5px;
-    font-size: 15px;
-}
-.newsletter {
-    width: 100%;
-    float: right;
-}
-
-.newsletter input{
-    border-radius: 2px;
-    height: 36px;
-    float: left;
-    border: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-.newsletter input[type="email"]{
-    width: 70%;
-    background-color: rgba(61, 104, 125, 1);
-    color: rgba(255, 255, 255, 0.58);
-    font-weight: 100;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-.newsletter input[type="submit"]{
-    width: 30%;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    background-color: rgba(173, 206, 224, 0.7);
-    color: #fff;
-}
-.newsletter > div {
-    padding-left: 10%;
-}
-
-.newsletter ::-webkit-input-placeholder { /* WebKit browsers */
-    color: rgba(255, 255, 255, 0.58);
-}
-.newsletter :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: rgba(255, 255, 255, 0.58);
-    opacity: 1;
-}
-.newsletter ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: rgba(255, 255, 255, 0.58);
-    opacity: 1;
-}
-.newsletter :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: rgba(255, 255, 255, 0.58);
 }
 .flavour-section {
   text-align: center;
@@ -392,7 +313,7 @@ html,body{
     padding-top: 15px;
     padding-bottom: 15px;
     color: rgba(255, 255, 255, 0.7);
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
 }
 footer nav ul {
@@ -403,7 +324,7 @@ footer nav ul {
 }
 footer nav li {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 7px;
 }
@@ -422,7 +343,7 @@ footer nav li.title {
     background-size: cover;
     background-repeat: no-repeat;
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
 }
 .header-section h3 {
