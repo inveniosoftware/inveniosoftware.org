@@ -49,4 +49,5 @@ docs/_build/
 **/static/components/**
 **/static/vendors/**
 **/static/gen/**
-
+# macOS
+.DS_Store

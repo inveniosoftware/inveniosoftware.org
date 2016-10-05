@@ -3,16 +3,45 @@
 
 {% block page_title %}How to add my site to the showcase?{% endblock %}
 {% block page_subtitle %}Anyone can do it in 4 simple steps{% endblock %}
+
+{% block javascript %}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Bootstrap col-md is > 992px (is what we use on the template bellow)
+      var bootstrapMD = 992;
+      function resizeNumbers() {
+        // Reset the sizes
+        $('.flex-center-vertically').height('auto');
+        // Only resize if the screen is bigger that 992px
+        if ($(window).width() > bootstrapMD) {
+          $('.flex-center-vertically').each(function() {
+            var _height = $(this).parent().parent().height();
+            // Set the size of the parent
+            $(this).height(
+              _height > 1100 ? 1100 : _height
+            );
+          });
+        }
+      };
+      // Initialize sizes
+      resizeNumbers();
+      // Bind on window resize event to calculate again the sizes
+      $(window).resize(resizeNumbers);
+    });
+  </script>
+{% endblock %}
 {% block page_body %}
   <section class="new-site-section section-content-white-bg">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
           <div class="row">
             <div class="col-md-2">
-              <div class="numbering">1</div>
+                <div class="flex-center-vertically">
+                  <div class="numbering">1</div>
+                </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-9 col-md-offset-1">
               <h6>Clone and Create Branch</h6>
               <p>Download the website code and create a new git branch like this:</p>
               <p class="code">$ <span class="command">git</span> clone git@github.com:inveniosoftware/inveniosoftware.org.git
@@ -27,12 +56,14 @@
   <section class="new-site-section section-content-light-bg">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
           <div class="row">
             <div class="col-md-2">
-              <div class="numbering">2</div>
+              <div class="flex-center-vertically">
+                <div class="numbering">2</div>
+              </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-9 col-md-offset-1">
               <h6>Beatiful Screenshot</h6>
               <p>Take the best screenshot you can for your site and place it in the right folder. Name the image after your site, as in the following example:</p>
               <p class="code">$ <span class="command">mv</span> mysite.png base/static/img/screenshots/</p>
@@ -45,12 +76,14 @@
   <section class="new-site-section section-content-white-bg">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
           <div class="row">
             <div class="col-md-2">
-              <div class="numbering">3</div>
+              <div class="flex-center-vertically">
+                <div class="numbering">3</div>
+              </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-9 col-md-offset-1">
               <h6>JSON file with your site's data</h6>
               <p>Create a JSON file containing your site's data as in the example:</p>
               <p class="code">$ <span class="command">echo</span> '<span class="json">{
@@ -69,12 +102,14 @@
   <section class="new-site-section section-content-light-bg">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
           <div class="row">
             <div class="col-md-2">
-              <div class="numbering">4</div>
+                <div class="flex-center-vertically">
+                  <div class="numbering">4</div>
+                </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-9 col-md-offset-1">
               <h6>Back to GitHub</h6>
               <p>Now you are all done, you only need to commit your changes, push them to your repo and do a pull request so we can integrate it!</p>
               <p>You will need first to do:</p>
