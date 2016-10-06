@@ -12,6 +12,9 @@ html,body{
   margin: auto;
   text-align: center;
 }
+.justified {
+  text-align: justify;
+}
 .section-content-dark-bg, .section-content-white-bg, .section-content-light-bg {
     padding-top: calc(3 * 30px);
     padding-bottom: calc(3 * 30px);
@@ -417,6 +420,38 @@ footer nav li.title {
 .goto-button a:active {
     color: white;
 }
+.goto-icon-button {
+  display: inline-block;
+  max-width: 300px;
+  margin: 18px;
+  display: inline-flex;
+}
+.goto-icon-button-a:hover i,
+.goto-icon-button-a:active i {
+    color: white !important;
+    background-color: rgba(13,95,137,0.8);
+}
+.goto-icon-button i {
+  background-color: rgba(13, 95, 137, 0.61);
+  border: 1px solid #b6d0e0;
+  max-width: 260px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 100%;
+  vertical-align: middle;
+  padding: 5px 10px;
+  font-size: 1.4em;
+  color: #d9edf7;
+}
+.goto-icon-button span {
+  border: 1px solid #b6d0e0;
+  border-left: 0;
+  text-align: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 5px 10px;
+  height: 100%;
+}
 .mega {
     vertical-align: bottom;
     padding-left: 10px;
@@ -429,6 +464,9 @@ i.large-icon, i.large-icon {
   color: #245e79;
 }
 /* community.html */
+.findus-section {
+  text-align: center;
+}
 .shield-big {
   text-align:center;
   padding: 20px;
