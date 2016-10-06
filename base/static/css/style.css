@@ -76,6 +76,23 @@ html,body{
     color: rgba(61, 104, 125, 1);
     font-weight: 500;
 }
+.section-subtitle-dark-bg, .section-subtitle-white-bg, .section-subtitle-light-bg {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.section-subtitle-dark-bg {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: rgba(173, 206, 224, 0.7);
+    border-bottom: 2px solid rgba(61, 104, 125, 1);
+}
+.section-subtitle-white-bg, .section-subtitle-light-bg {
+    margin-bottom: 45px;
+    color: rgba(61, 104, 125, 1);
+    font-weight: 500;
+}
 .vertical-center {
   height: 600px;
   display: flex;

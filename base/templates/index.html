@@ -17,17 +17,17 @@
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <div class="headline col-md-8 col-md-offset-2">
+                <div class="headline col-md-10 col-md-offset-1">
                   <div class="welcome">
-                    <h3>A Digital Repository Framework</h3>
-                    <h6>Run your own fully-customisable ​digital library or flexible document repository on the web.</h6>
+                    <h3>Invenio Digital Library Framework</h3>
+                    <h6>Build your own fully customised digital library, institutional repository, multimedia archive, or research data repository on the web.</h6>
                   </div>
                   <div class="actions">
                     <form action="{{url_for('invenio_web.show', page = 'showcase')}}">
-                      <button class="btn white">Showcase</button>
+                      <button class="btn white">See showcase</button>
                     </form>
                     <form action="{{url_for('invenio_web.show', page='gettingstarted')}}">
-                      <button class="btn">Getting Started</button>
+                      <button class="btn">Get Started</button>
                     </form>
                   </div>
                 </div>
@@ -40,20 +40,26 @@
   </section>
   <section class="flavour-section section-content-white-bg">
     <div class="container">
-      <span class="section-title-white-bg">Invenio comes with many flavours!</span>
+      <span class="section-title-white-bg">What is Invenio?</span>
       <div class="row">
         <div class="col-md-6">
           <img class="flavour" src="/static/img/icon-library.svg"/>
           <h6>Integrated Library System</h6>
           <p>
-            Manage circulation and your whole library process.
+            Manage MARC21 authority and bibliographic records. Curate records
+            and run automated quality checks. Use circulation module with
+            customisable borrower, item acquisition and interlibrary loan
+            workflows.
           </p>
         </div>
         <div class="col-md-6">
           <img class="flavour" src="/static/img/icon-biotech.svg"/>
           <h6>Research Data</h6>
           <p>
-            Manage circulation and your whole library process.
+            Capture and preserve research output. Harvest datasets, analysis
+            code, virtual machine environment, configuration and knowledge
+            information. Visualise data in the browser. Rerun preserved code on
+            the cloud.
           </p>
         </div>
       </div>
@@ -62,20 +68,26 @@
           <img class="flavour" src="/static/img/icon-film-reel.svg"/>
           <h6>Multimedia Archive</h6>
           <p>
-            Manage circulation and your whole library process.
+            Manage audio, photo and video material. Create thumbnails and
+            derived formats. Customise portfolio search outputs. Create albums
+            and playlists. Configure related material discovery. Tag multimedia
+            content.
           </p>
         </div>
         <div class="col-md-6">
           <img class="flavour" src="/static/img/icon-filing-cabinet.svg"/>
           <h6>Institutional Repository</h6>
           <p>
-            Manage circulation and your whole library process.
+            Publish articles, reports or theses of your institute. Organise
+            content in collections. Configure ingestion workflows and approvals.
+            Mint material with permanent identifiers. Disseminate material via
+            OAI-PMH.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="goto-button">
-          <a href="{{url_for('invenio_web.show', page = 'showcase')}}">See showcase gallery!</a></div>
+          <a href="{{url_for('invenio_web.show', page = 'showcase')}}">See showcase gallery</a></div>
       </div>
     </div>
   </section>
@@ -99,7 +111,12 @@
                                 <img src="/static/img/logo-cern-white.svg">
                             </div>
                             <div class="carousel-item-text">
-                                <p>Invenio has been originally developed at <a href="https://home.cern">CERN</a> to run the <a href="https://cds.cern.ch">CERN document server</a>, managing over 1,000,000 bibliographic records in high-energy physics since 2002, covering articles, books, journals, photos, videos, and more.</p>
+                                <p>Invenio has been originally developed at <a href="https://home.cern">CERN</a>
+                                   to run the <a href="https://cds.cern.ch">CERN document server</a>,
+                                   managing over 1,000,000 bibliographic records
+                                   in high-energy physics since 2002, covering
+                                   articles, books, journals, photos, videos,
+                                   and more.</p>
                             </div>
                         </div>
                     </div>
@@ -111,7 +128,12 @@
                                 <img src="/static/img/icon-collaboration.svg">
                             </div>
                             <div class="carousel-item-text">
-                                <p>Invenio is nowadays co-developed by an international collaboration comprising institutes such as CERN, DESY, EPFL, FNAL, SLAC, Harvard, RERO, UAB, GSI, Jülich, Aristotle University of Thessaloniki, and is being used by many more scientific institutions worldwide.</p>
+                                <p>Invenio is nowadays co-developed by an
+                                   international collaboration comprising
+                                   institutes such as AUTH, CfA, CERN, DESY,
+                                   EPFL, FNAL, FZJ, GSI, RERO, SLAC, UAB and is
+                                   being used by many scientific institutes and
+                                   library networks worldwide.</p>
                             </div>
                         </div>
                     </div>
@@ -123,7 +145,12 @@
                               <img src="/static/img/icon-open-source.svg">
                           </div>
                           <div class="carousel-item-text">
-                              <p>Invenio is a free software suite that complies with standards such as the Open Archives Initiative and uses MARC 21 as its underlying bibliographic format. The flexibility and performance of Invenio make it a comprehensive solution for management of document repositories of moderate to large sizes.</p>
+                              <p>Invenio is a free software suite that consists
+                                 of more than a hundred independent packages
+                                 that collaborate via strong REST API. The
+                                 flexibility and performance of Invenio make it
+                                 a comprehensive solution for document
+                                 repositories of moderate to large sizes.</p>
                           </div>
                       </div>
                   </div>
@@ -152,7 +179,10 @@
             </div>
             <div class="col-md-9">
               <h6>Flexible data model</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu lectus ipsum. Quisque justo erat, pellentesque eu imperdiet.</p>
+              <p>Use JSON Schema to describe articles, books, photos, videos,
+              data, and software. Several popular master metadata formats are
+              supported, such as MARC21 with BibTeX, DataCite, Dublin Core,
+              EndNote, RefWorks.</p>
             </div>
           </div>
         </div>
@@ -164,7 +194,10 @@
             </div>
             <div class="col-md-9">
               <h6>Powerful search engine</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu lectus ipsum. Quisque justo erat, pellentesque eu imperdiet.</p>
+              <p>Very fast response for repositories of up to several million
+              records. Customisable query language and second-order search
+              operators. Configurable UI and facets. Combined metadata, fulltext
+              and reference search in one go. Citation networks.</p>
             </div>
           </div>
         </div>
@@ -177,7 +210,9 @@
             </div>
             <div class="col-md-9">
               <h6>Configurable workflows</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu lectus ipsum. Quisque justo erat, pellentesque eu imperdiet.</p>
+              <p>Organise document corpus in community collections. Configure
+              user and robot ingestion workflows. Attribute community
+              moderators.</p>
             </div>
           </div>
         </div>
@@ -189,7 +224,9 @@
             </div>
             <div class="col-md-9">
               <h6>Collaborative communities</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu lectus ipsum. Quisque justo erat, pellentesque eu imperdiet.</p>
+              <p>Organise users in groups and teams. Share documents of interest
+                 in annotable baskets. Configure automated email and RSS
+                 notification alerts.</p>
             </div>
           </div>
         </div>
@@ -202,7 +239,10 @@
             </div>
             <div class="col-md-9">
               <h6>Extensible packages</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu lectus ipsum. Quisque justo erat, pellentesque eu imperdiet.</p>
+              <p>Invenio is composed of hundreds of independent pluggable
+              packages that collaborate via rich APIs. Pick the packages you
+              need and use the full power of Python to extend their
+              capabilities.</p>
               </ul>
             </div>
           </div>
@@ -215,7 +255,9 @@
             </div>
             <div class="col-md-9">
               <h6>Open standards</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu lectus ipsum. Quisque justo erat, pellentesque eu imperdiet.</p>
+              <p>We love open access, open source, and open standards. DOI, JSON
+              Schema, Memento, OAI-PMH, ORCID, OpenAIRE, REST, XML... you name
+              it.</p>
             </div>
           </div>
         </div>
