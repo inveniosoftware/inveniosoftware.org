@@ -4,23 +4,7 @@
 {% block body %}
     <div class="container section-content-dark-bg error-page">
       <h3 class="error-page-title">Oops! The requested resource does not exist. You may want to go to the <a href="{{url_for('invenio_web.home')}}">home page</a>.</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <a href="{{url_for('invenio_web.home')}}"><img class="icon-contact" src="/static/img/logo-invenio-white.png"/></a>
-        </div>
-        <div class="col-md-6">
-          <table class="contact-list">
-            <tbody>
-              <tr><td class="contact-list-header">Twitter</td><td><a href="https://twitter.com/inveniosoftware"><span class="fa fa-twitter"></span><span id="followers_count">100</span> followers</a> / <a href="https://twitter.com/inveniosoftware">@inveniosoftware</a></td></tr>
-              <tr><td class="contact-list-header">GitHub</td><td><a href="http://github.com/inveniosoftware/invenio"><span class="fa fa-code-fork"></span><span id="forks_count">164</span> forks</a></td></tr>
-              <tr><td class="contact-list-header">Gitter</td><td><a href="https://gitter.im/inveniosoftware"><img id="copyImg" src="https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000"></a></td></tr>
-              <tr><td class="contact-list-header">Documentation</td><td><a href="https://invenio.readthedocs.io/en/latest/">Read the Docs</a></td></tr>
-              <tr><td class="contact-list-header">Weekly Meeting</td><td><a href="https://indico.cern.ch/category/6046/">Developer Forum</a></td></tr>
-              <tr><td class="contact-list-header">User Group Events</td><td><a href="https://indico.cern.ch/category/6240/">All IUGW</a></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      {% include 'footer_contact.html' %}
     </div>
   </section>
 
