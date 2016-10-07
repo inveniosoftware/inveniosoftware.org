@@ -12,9 +12,6 @@ html,body{
   margin: auto;
   text-align: center;
 }
-.justified {
-  text-align: justify;
-}
 .section-content-dark-bg, .section-content-white-bg, .section-content-light-bg {
     padding-top: calc(3 * 30px);
     padding-bottom: calc(3 * 30px);
@@ -72,23 +69,6 @@ html,body{
     border-bottom: 2px solid rgba(61, 104, 125, 1);
 }
 .section-title-white-bg, .section-title-light-bg {
-    margin-bottom: 45px;
-    color: rgba(61, 104, 125, 1);
-    font-weight: 500;
-}
-.section-subtitle-dark-bg, .section-subtitle-white-bg, .section-subtitle-light-bg {
-    font-size: 1.2em;
-    width: 100%;
-    text-align: center;
-    display: block;
-}
-.section-subtitle-dark-bg {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    color: rgba(173, 206, 224, 0.7);
-    border-bottom: 2px solid rgba(61, 104, 125, 1);
-}
-.section-subtitle-white-bg, .section-subtitle-light-bg {
     margin-bottom: 45px;
     color: rgba(61, 104, 125, 1);
     font-weight: 500;
@@ -238,6 +218,9 @@ html,body{
 .flavour-section img {
   height: 10em;
 }
+.flavour-section p {
+  text-align: justify;
+}
 .flavour-section .row {
   padding: 30px 0px;
 }
@@ -348,6 +331,14 @@ html,body{
     color: rgba(255, 255, 255, 0.7);
     font-weight: 300;
     font-size: 14px;
+}
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+    color: rgba(255, 255, 255, 0.58);
 }
 footer nav ul {
     list-style-type: none;
