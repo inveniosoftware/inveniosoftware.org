@@ -1,8 +1,8 @@
 {% extends 'pages/base.html' %}
 {% set active_page = "showcase" %}
 
-{% block page_title %}How to add my site to the showcase?{% endblock %}
-{% block page_subtitle %}Anyone can do it in 4 simple steps{% endblock %}
+{% block page_title %}How to add an Invenio installation to the showcase{% endblock %}
+{% block page_subtitle %}Follow four easy steps to make a pull request{% endblock %}
 
 {% block javascript %}
   <script type="text/javascript">
@@ -42,11 +42,11 @@
               </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
-              <h6>Clone and Create Branch</h6>
-              <p>Download the website code and create a new git branch like this:</p>
-              <p class="code">$ <span class="command">git</span> clone git@github.com:inveniosoftware/inveniosoftware.org.git
+                <h6>Fork our source code</h6>
+                <p>Fork <a href="https://github.com/inveniosoftware/inveniosoftware.org">inveniosoftware.org</a> source code repository using your GitHub account (e.g. <code>johndoe</code>) and create a new local branch (e.g. <code>johndoelibrary</code>):</p>
+              <p class="code">$ <span class="command">git</span> clone git@github.com:johndoe/inveniosoftware.org
                 $ <span class="command">cd</span> inveniosoftware.org
-                $ <span class="command">git</span> checkout -b new-site</p>
+                $ <span class="command">git</span> checkout -b johndoelibrary</p>
             </div>
           </div>
         </div>
@@ -64,9 +64,10 @@
               </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
-              <h6>Beatiful Screenshot</h6>
-              <p>Take the best screenshot you can for your site and place it in the right folder. Name the image after your site, as in the following example:</p>
-              <p class="code">$ <span class="command">mv</span> mysite.png base/static/img/screenshots/</p>
+              <h6>Take beautiful screenshot</h6>
+              <p>Take a representative screenshot of your site and place it in the <code>base/static/img/screenshots</code> directory. Name the image after your site.</p>
+              <p class="code"># take screenshot
+                              $ <span class="command">mv</span> ~/Screenshots/johndoelibrary.png base/static/img/screenshots/</p>
             </div>
           </div>
         </div>
@@ -84,15 +85,15 @@
               </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
-              <h6>JSON file with your site's data</h6>
-              <p>Create a JSON file containing your site's data as in the example:</p>
+              <h6>Describe your site</h6>
+              <p>Create a JSON file containing description of your site, such as its full name, the description, the canonical URL, and the type of managed data. Look inside <code>base/sites</code> directory for inspiration.</p>
               <p class="code">$ <span class="command">echo</span> '<span class="json">{
-                "name": "CERN Document Server",
-                "description": "CERN official repository for publications, articles, reports and multimedia content in HEP.",
-                "url": "http://cds.cern.ch",
-                "screenshot_filename": "mysite.png",
+                "name": "John Doe Library",
+                "description": "John Doe's Library.",
+                "url": "http://example.org/johndoelibrary",
+                "screenshot_filename": "johndoelibrary.png",
                 "types": ["research-data", "library", "multimedia", "institutional-repository"]
-              }</span>' <span class="command">> base/sites/mysite.json</span></p>
+              }</span>' <span class="command">> base/sites/johndoelibrary.json</span></p>
             </div>
           </div>
         </div>
@@ -110,14 +111,13 @@
               </div>
             </div>
             <div class="col-md-9 col-md-offset-1">
-              <h6>Back to GitHub</h6>
-              <p>Now you are all done, you only need to commit your changes, push them to your repo and do a pull request so we can integrate it!</p>
-              <p>You will need first to do:</p>
-              <p class="code">$ <span class="command">git</span> add base/static/img/screenshots/mysite.png
-                $ <span class="command">git</span> add base/sites/mysite.json
-                $ <span class="command">git</span> commit -a -m "added my site foo to showcase"
-                $ <span class="command">git</span> push origin new-site</p>
-              <p>Once this is done, go to your github repo and do a <a href="https://help.github.com/articles/creating-a-pull-request/" target="_blank">Pull Request</a>.</p>
+              <h6>Make a pull request</h6>
+              <p>Commit your changes and publish your branch.</p>
+              <p class="code">$ <span class="command">git</span> add base/static/img/screenshots/johndoelibrary.png
+                $ <span class="command">git</span> add base/sites/johndoelibrary.json
+                $ <span class="command">git</span> commit -s -m "sites: John Doe Library"
+                $ <span class="command">git</span> push origin johndoelibrary</p>
+              <p>Make a <a href="https://help.github.com/articles/creating-a-pull-request/" target="_blank">pull request</a> so that we can add your site.</p>
               <img class="pull-request" src="/static/img/pull-request.png"/>
             </div>
           </div>
