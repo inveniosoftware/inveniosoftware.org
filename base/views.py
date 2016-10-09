@@ -29,10 +29,10 @@ def showcase():
             'pages/showcase.html',
             sites=sites,
             site_types={
-                "research-data": "Research Data",
+                "research-data": "Data",
                 "library": "Library",
                 "multimedia": "Multimedia",
-                "institutional-repository": "IR"
+                "institutional-repository": "Repository"
             }
         )
     except TemplateNotFound:
