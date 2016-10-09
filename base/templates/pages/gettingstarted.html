@@ -2,69 +2,71 @@
 {% set active_page = "gettingstarted" %}
 
 {% block page_title %}Getting started with Invenio{% endblock %}
+{% block page_subtitle %}Installation and first steps{% endblock %}
 {% block page_body %}
   <section class="install-section section-content-white-bg">
     <div class="container">
-      <span class="section-title-light-bg">Installing Invenio</span>
+      <span class="section-title-light-bg">Installation</span>
       <div class="row">
         <div class="col-md-6">
           <h6>Invenio 1.2</h6>
-          <p>Install latest stable release</p>
-          <p class="code">$ <span class="command">wget</span> foo
-            $ <span class="command">docker</span> pull
-            $ <span class="command">docker-compose</span> up -d
-            $ <span class="command">firefox</span> 127.0.0.1</p>
-            <div class="goto-button"><a href="http://invenio.readthedocs.io/en/stable/">Detailed instructions</a></div>
+          <p>Install latest stable release in a virtual machine using <a href="https://www.vagrantup.com/">vagrant</a>:</p>
+          <p class="code">$ <span class="command">git</span> clone git@github.com:inveniosoftware/invenio -b maint-1.2
+            $ <span class="command">cd</span> invenio
+            $ <span class="command">vagrant</span> up && <span class="command">vagrant</span> ssh web
+              web> <span class="command">source .inveniorc</span>
+              web> <span class="command">/vagrant/scripts/create-instance.sh</span>
+              web> <span class="command">/vagrant/scripts/populate-instance.sh</span>
+            $ <span class="command">firefox</span> http://192.168.50.10/record/1</p>
+            <div class="goto-button"><a href="https://raw.githubusercontent.com/inveniosoftware/invenio/maint-1.2/INSTALL">See detailed instructions for Invenio 1.2</a></div>
         </div>
         <div class="col-md-6">
           <h6>Invenio 3.0</h6>
-          <p>Install latest developer preview</p>
-          <p class="code">$ <span class="command">wget</span> foo
-            $ <span class="command">docker</span> pull
+          <p>Install latest developer preview using <a href="http://www.docker.com/">docker</a>:</p>
+          <p class="code">$ <span class="command">git</span> clone git@github.com:inveniosoftware/invenio master
+            $ <span class="command">cd</span> invenio
+            $ <span class="command">docker-compose</span> build
             $ <span class="command">docker-compose</span> up -d
-            $ <span class="command">firefox</span> 127.0.0.1</p>
-            <div class="goto-button"><a href="http://invenio.readthedocs.io/en/latest/">Detailed instructions</a></div>
+            $ <span class="command">docker-compose</span> run --rm web ./scripts/populate-instance.sh
+              $ <span class="command">firefox</span> http://127.0.0.1/
+              $ <span class="command">firefox</span> http://127.0.0.1/records/1</p>
+            <div class="goto-button"><a href="http://invenio.readthedocs.io/en/latest/installation/index.html">See detailed instructions for Invenio 3.0</a></div>
         </div>
       </div>
     </div>
   </section>
   <section class="develop-section section-content-light-bg">
     <div class="container">
-      <span class="section-title-light-bg">Developing for Invenio</span>
+      <span class="section-title-light-bg">Development</span>
       <div class="row">
         <div class="col-md-3 centered">
           <i class="large-icon fa fa-github" aria-hidden="true"></i>
         </div>
         <div class="col-md-9">
-          <p>Invenio 3 is a multi-modular framework. You can find all of Invenio's modules on <a href="https://github.com/inveniosoftware">GitHub</a>. We do keep a "Build status" list on our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Build-Status">GitHub Wiki</a> as well! You should know that we explit our modules in three organistations:</p>
+            <p>Invenio is a modular framework of independent collaborative component packages. You can find a <a href="http://invenio.readthedocs.io/en/latest/modules/index.html">list of available packages</a> in our documentation.  The packages are located in three different GitHub organistations:</p>
           <ul class="fa-ul">
-            <li><i class="fa-li fa fa-check"></i><a href="https://github.com/inveniosoftware">inveniosoftware</a>: yada yada</li>
-            <li><i class="fa-li fa fa-users"></i><a href="https://github.com/inveniosoftware-contrib">inveniosoftware-contrib</a>: yada yada</li>
-            <li><i class="fa-li fa fa-archive"></i><a href="https://github.com/inveniosoftware-attic">inveniosoftware-attic</a>: yada yada</li>
+              <li><i class="fa-li fa fa-check"></i><a href="https://github.com/inveniosoftware">inveniosoftware</a>: A collection of base packages, core packages, and additional feature packages that are maintained in a coherent, homogeneous way by the Invenio project team. The main organisation.</li>
+            <li><i class="fa-li fa fa-users"></i><a href="https://github.com/inveniosoftware-contrib">inveniosoftware-contrib</a>: A collection of third-party packages extending Invenio functionalities. They are maintained by contributing teams and may follow different practices. The packages may also incubate an experimental or unproven feature that can later mature into the main organisation.</li>
+            <li><i class="fa-li fa fa-archive"></i><a href="https://github.com/inveniosoftware-attic">inveniosoftware-attic</a>: A collection of disconinued or retired packages that are no longer maintained.</li>
           </ul>
           <br>
-          <p>We encourage you to have a look at the code and if you feel like hacking, go ahead and <a href="http://invenio.readthedocs.io/en/latest/processes/developing.html">contribute</a>. Feel free to clone any of our modules:</p>
-          <p class="code">$ git clone git@github.com:inveniosoftware[-contrib|-attic]/module_name.git</p>
+          <p>You may be interested in our <a href="http://invenio.readthedocs.io/en/latest/processes/index.html">development practices</a> and <a href="http://invenio.readthedocs.io/en/latest/processes/developing.html">contributing guide</a>.</p>
         </div>
       </div>
-      <br>
-      <div class="goto-button"><a href="https://github.com/inveniosoftware/invenio">View on GitHub</a></div>
     </div>
   </section>
   <section class="documentation-section section-content-white-bg">
     <div class="container">
-      <span class="section-title-light-bg">Invenio Documentation</span>
+      <span class="section-title-light-bg">Documentation</span>
       <div class="row">
         <div class="col-md-3 centered">
           <i class="large-icon fa fa-book" aria-hidden="true"></i>
         </div>
         <div class="col-md-9">
-          <p>All Invenio Documentation can be found on <a href="http://invenio.readthedocs.io/en/latest/installation/" title="Invenio latest release">Read the Docs</a>. There you should be able to find all what you need to install, configure and develop for Invenio. As well, we include introductions to the architecture, modules and technology that is used.</p>
-          <p>We also keep some project management related information on <a href="https://github.com/inveniosoftware/invenio/wiki">GitHub</a>.</p>
+          <p>All the documentation can be found on <a href="http://invenio.readthedocs.io/">Read The Docs</a>. You can read about the installation and customisation of Invenio instances, the architecture and the technology overview, as wel as our development practices.</p>
+          <p>Further project related information such as our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Roadmap">roadmap</a> or our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Build-Status">build status</a> overview can be found on <a href="https://github.com/inveniosoftware/invenio/wiki">GitHub wiki</a> pages.</p>
         </div>
       </div>
-      <br>
-      <div class="goto-button"><a href="https://invenio.readthedocs.io">View on ReadTheDocs</a></div>
     </div>
   </section>
 
