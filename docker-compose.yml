@@ -12,3 +12,5 @@ nginx:
     - "80:80"
   links:
     - web
+  volumes:
+    - /opt/afs/cern.ch/project/cds/invenio/inveniosoftware.org/download:/usr/share/nginx/html/download:ro
