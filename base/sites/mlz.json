@@ -3,5 +3,5 @@
   "description": "The Heinz Maier-Leibnitz Zentrum (MLZ) is a leading centre for cutting-edge research with neutrons and positrons. MLZ PUblications Library SystEm lists scientific publications based on experiments at MLZ and also publications based on other scientific work related to the MLZ or the FRM II. The iMPULSE publications system is organized into a publications database, open-access documents and institute collections.",
   "url": "http://impulse.mlz-garching.de",
   "screenshot_filename": "mlz.png",
-  "types": ["research-data"]
+  "types": ["institutional-repository"]
 }

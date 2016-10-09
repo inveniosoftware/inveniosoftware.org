@@ -3,5 +3,5 @@
   "description": "The DESY Publication database (Pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts. DESY is one of the world’s leading accelerator centres.",
   "url": "http://pubdb.desy.de",
   "screenshot_filename": "desy.png",
-  "types": ["research-data", "institutional-repository"]
+  "types": ["library", "institutional-repository"]
 }

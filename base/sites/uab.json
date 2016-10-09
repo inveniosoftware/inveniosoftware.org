@@ -3,5 +3,5 @@
   "description": "Dipòsit Digital de Documents (DDD) is the project to handle all digital content at UAB libraries in a single platform, so it can be found with a single search, but structured in smaller collections. Growth is constant, but basically we have five types of collections: UAB digital publications, bibliographic databases, personal archives, course materials, and digitised material, either in-house or commercial.",
   "url": "http://ddd.uab.cat",
   "screenshot_filename": "uab.png",
-  "types": ["research-data", "library", "institutional-repository"]
+  "types": ["multimedia", "library", "institutional-repository"]
 }

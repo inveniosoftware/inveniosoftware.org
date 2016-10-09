@@ -3,6 +3,6 @@
   "description": "Run by a collaboration of CERN, DESY, Fermilab, IHEP, and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA-ADS, PDG, HEPDATA and others.",
   "url": "http://inspire.org",
   "screenshot_filename": "inspire.png",
-  "types": ["research-data"],
+  "types": ["institutional-repository"],
   "featured": true
 }
