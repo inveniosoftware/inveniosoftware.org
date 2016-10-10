@@ -425,12 +425,13 @@ footer nav li.title {
 .goto-button {
   text-align: center;
   padding: 20px;
+  white-space: nowrap;
 }
 .goto-button a {
   text-decoration: none;
   border-radius: 4px;
   line-height: 25px;
-  padding: 15px 60px;
+  padding: 15px 30px;
   background-color: rgba(13, 95, 137, 0.8);
   color: rgb(212, 229, 239);
   height: 50px;
