@@ -1,6 +1,6 @@
 {
   "name": "DESY PUBDB",
-  "description": "The DESY Publication database (Pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts. DESY is one of the world’s leading accelerator centres.",
+  "description": "The DESY Publication database (pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts. DESY is one of the world’s leading accelerator centres. Researchers from around the world use the large-scale facilities at DESY to explore the microcosm in all its variety – from the interactions of tiny elementary particles and the behaviour of new types of nanomaterials to biomolecular processes that are essential to life. DESY Library operates pubdb as member of the join² community.",
   "url": "http://pubdb.desy.de",
   "screenshot_filename": "desy.png",
   "types": ["library", "institutional-repository"]
