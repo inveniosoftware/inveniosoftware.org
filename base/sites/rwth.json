@@ -1,0 +1,7 @@
+{
+  "name": "RWTH Publications",
+  "description": "'RWTH Publications' is a central database that documents RWTH Aachen University's scientific performance. It offers all RWTH affiliates the organizational and technical means to electronically publish scientific results and documents any published material. In addition, the database offers to host internal institute documents and data collections (institute collection). RWTH Aachen University is the largest technical university in Germany and one of nine 'German Universities of Excellence' (elite university). The University library Aachen operates RWTH Publications as a member of the join² community.",
+  "url": "http://publications.rwth-aachen.de",
+  "screenshot_filename": "rwth.png",
+  "types": ["institutional-repository"]
+}
