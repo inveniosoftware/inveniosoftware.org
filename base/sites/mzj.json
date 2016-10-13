@@ -1,0 +1,7 @@
+{
+  "name": "Museum Zitatelle Jülich - Bibliothek",
+  "description": "The \"Museum Zitadelle Jülich\" has a specialized library - jointly with the \"Jülicher Geschichtsverein 1923 e.V.\" - which is at the same time the seat of the archive of the \"Deutschen Gesellschaft für Festungsforschung e.V.\". The library currently conteins about 20,000 volumes and is further expanded by buying, exchange and donations.",
+  "url": "http://invenio.museum-zitadelle.de/",
+  "screenshot_filename": "mzj.png",
+  "types": ["library"]
+}
