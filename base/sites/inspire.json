@@ -1,7 +1,7 @@
 {
   "name": "INSPIRE",
   "description": "Run by a collaboration of CERN, DESY, Fermilab, IHEP, and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA-ADS, PDG, HEPDATA and others.",
-  "url": "http://inspire.org",
+  "url": "http://inspirehep.net",
   "screenshot_filename": "inspire.png",
   "types": ["institutional-repository"],
   "featured": true
