@@ -1,0 +1,8 @@
+{
+  "name": "Institutional Digital Repository of NTK",
+  "country": "CZ",
+  "description": "Institutional Digital Repository of the National Library of Technology. Study library for development research.",
+  "url": "http://repozitar.techlib.cz",
+  "screenshot_filename": "nltcz.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

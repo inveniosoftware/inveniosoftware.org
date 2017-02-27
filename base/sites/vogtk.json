@@ -1,0 +1,8 @@
+{
+  "name": "VOGTK",
+  "country": "CZ",
+  "description": "",
+  "url": "http://knihovna.vugtk.cz/",
+  "screenshot_filename": "vogtk.png",
+  "types": ["research-data", "institutional-repository","Library"]
+}

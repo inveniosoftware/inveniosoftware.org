@@ -1,6 +1,6 @@
 {
   "name": "JuSER",
-  "description": "Jülich Shared Electronic Resources (JuSER) lists scientific publications by employees of Forschungszentrum Jülich and provides open access to a many of these publications. Forschungszentrum Jülich is one of Europe's largest interdisciplinary research centres, with special expertise in physics, materials science, nanotechnology, and information technology. The Central Library of Forschungszentrum Jülich operates JuSER member of the join² community.",
+  "description": "Jülich Shared Electronic Resources (JuSER) lists scientific publications by employees of Forschungszentrum Jülich and provides open access to a many of these publications. Forschungszentrum Jülich is one of Europe's largest interdisciplinary research centres, with special expertise in physics, materials science, nanotechnology, and information technology. The Central library of Forschungszentrum Jülich operates JuSER member of the join² community.",
   "url": "http://juser.fz-juelich.de",
   "screenshot_filename": "julich.png",
   "types": ["library", "institutional-repository"]

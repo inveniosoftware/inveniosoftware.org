@@ -1,0 +1,8 @@
+{
+  "name": "CLASSE Document Databse",
+  "country": "US",
+  "description": "CLASSE Electronic Document Management System",
+  "url": "https://edms.classe.cornell.edu/",
+  "screenshot_filename": "classe.png",
+  "types": ["institutional-repository","library"]
+}

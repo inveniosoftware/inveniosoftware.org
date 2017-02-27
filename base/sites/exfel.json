@@ -1,0 +1,8 @@
+{
+  "name": "European XFEL",
+  "country": "DE",
+  "description": "European XFEL publication database",
+  "url": "http://pubdb.xfel.eu",
+  "screenshot_filename": "exfel.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

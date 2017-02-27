@@ -1,0 +1,8 @@
+{
+  "name": "The Institute of Theoretical and Applied Mechanics",
+  "country": "CZ",
+  "description": "The Institute of Theoretical and Applied Mechanics",
+  "url": "https://invenio.itam.cas.cz",
+  "screenshot_filename": "itam.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

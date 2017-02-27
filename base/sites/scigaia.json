@@ -1,0 +1,8 @@
+{
+  "name": "Sci-GaIA",
+  "country": "IT",
+  "description": "Open Access Repository managed and operated by the Sci-GaIA project",
+  "url": "https://oar.sci-gaia.eu/",
+  "screenshot_filename": "scigaia.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

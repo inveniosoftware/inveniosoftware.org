@@ -1,0 +1,8 @@
+{
+  "name": "LERSSE",
+  "country": "CA",
+  "description": "Publications of the Laboratory for Education and Research in Secure Systems Engineering (LERSSE)",
+  "url": "http://lersse-dl.ece.ubc.ca/",
+  "screenshot_filename": "lersse.png",
+  "types": ["research-data", "library"]
+}

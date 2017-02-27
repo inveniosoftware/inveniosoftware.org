@@ -1,0 +1,8 @@
+{
+  "name": "Electrical Engineering Wroclaw University of Technology",
+  "country": "PL",
+  "description": "Repository of Wroclaw University of Technology, Poland - Faculty of Electrical Engineering",
+  "url": "http://zet10.ipee.pwr.wroc.pl",
+  "screenshot_filename": "eewut.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "TRIUMF",
+  "country": "CA",
+  "description": "Invenio at TRIUMF",
+  "url": "http://invenio.triumf.ca/",
+  "screenshot_filename": "triumf.png",
+  "types": ["institutional-repository","library"]
+}
