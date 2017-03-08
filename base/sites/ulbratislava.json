@@ -1,0 +1,8 @@
+{
+  "name": "University Library in Bratislava",
+  "country": "SK",
+  "description": "University Library in Bratislava",
+  "url": "https://issn.issn.sk/",
+  "screenshot_filename": "ulbratislava.png",
+  "types": ["institutional-repository","library"]
+}

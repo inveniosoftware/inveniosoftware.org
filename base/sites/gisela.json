@@ -1,0 +1,8 @@
+{
+  "name": "GISELA Documents",
+  "country": "ES",
+  "description": "The GISELA Documents Server provides, by categories, all the documents produced by the Project",
+  "url": "http://documents.gisela-grid.eu/",
+  "screenshot_filename": "gisela.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

@@ -1,6 +1,7 @@
 {
   "name": "NTNU",
-  "description": "The special collections at the NTNU University Library originate from the library of The Royal Norwegian Society of Sciences and Letters, which was established in 1768. Through almost 250 years, the library has built a collection of regional, national and international importance through donations and purchases.",
+  "country": "NO",
+  "description": "The special collections at the NTNU University library originate from the library of The Royal Norwegian Society of Sciences and Letters, which was established in 1768. Through almost 250 years, the library has built a collection of regional, national and international importance through donations and purchases.",
   "url": "http://ntnu.tind.io",
   "screenshot_filename": "ntnu.png",
   "types": ["multimedia"]

@@ -1,0 +1,8 @@
+{
+  "name": "B2SHARE",
+  "country": "FI",
+  "description": "B2SHARE is a user-friendly, reliable and trustworthy way for researchers, scientific communities and citizen scientists to store and share small-scale research data from diverse contexts.",
+  "url": "https://b2share.eudat.eu/",
+  "screenshot_filename": "b2share.png",
+  "types": ["research-data", "library"]
+}

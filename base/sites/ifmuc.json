@@ -1,0 +1,8 @@
+{
+  "name": "IFMuC: Inventari dels Fons Musicals de Catalunya",
+  "country": "ES",
+  "description": "IFMuC is a new scientific and technical service created to promote and raise awareness of the information contained in the databases of catalogues describing the musical archives of Catalonia that the Chair of Musical Heritage in the Department of Art and Musicology at the UAB has been producing since 2001.",
+  "url": "http://ifmuc.uab.cat",
+  "screenshot_filename": "ifmuc.png",
+  "types": ["library","multimedia"]
+}

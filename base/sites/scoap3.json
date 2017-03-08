@@ -1,0 +1,8 @@
+{
+  "name": "SCOAP3 Repository",
+  "country": "CH",
+  "description": "Open Access articles sponsored by the international SCOAP3 initiative.",
+  "url": "https://repo.scoap3.org/",
+  "screenshot_filename": "scoap3.png",
+  "types": ["research-data", "institutional-repository","Library"]
+}

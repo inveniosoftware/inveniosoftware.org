@@ -1,0 +1,8 @@
+{
+  "name": "RomDoc",
+  "country": "RO",
+  "description": "Part of RomDoc Project, funded by Swiss National Science Foundation, in the frame of the international cooperation programme SCOPES 2005-2008 (Scientific Co-operation between Eastern Europe and Switzerland).  The aim of the project is to implement a publication platform for scientists in Romania for recording and long-term storage of selected digital born and scanned scientific material. ",
+  "url": "http://romdoc.upb.ro/",
+  "screenshot_filename": "romdoc.png",
+  "types": ["research-data", "library"]
+}

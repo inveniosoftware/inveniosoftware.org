@@ -1,0 +1,8 @@
+{
+  "name": "edudoc",
+  "country": "CH",
+  "description": "The Swiss Document Server in Education aims at collecting and providing electronic documents in the fields of education policy, educational administration, educational planning and educational research and development in Switzerland.",
+  "url": "http://edudoc.ch/",
+  "screenshot_filename": "edudoc.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

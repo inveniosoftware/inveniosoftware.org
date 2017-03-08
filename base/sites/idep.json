@@ -1,0 +1,8 @@
+{
+  "name": "IDEP",
+  "country": "SN",
+  "description": "Document server of the African Institute for Economic Development and Planning.",
+  "url": "http://unidep.org/library/",
+  "screenshot_filename": "idep.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

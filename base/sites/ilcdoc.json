@@ -1,0 +1,8 @@
+{
+  "name": "ILC Document Server",
+  "country": "CH",
+  "description": "The document server of the International Linear Collider. Planning and designing the proposed electron-positron collider will require global participation and global organization. ILCDoc serves as a central repository for project documents and information shared among the hundreds of collaborators, scientists and engineers, at university and laboratories around the world.",
+  "url": "http://ilcdoc.linearcollider.org/",
+  "screenshot_filename": "ilcdoc.png",
+  "types": ["research-data", "institutional-repository","library"]
+}

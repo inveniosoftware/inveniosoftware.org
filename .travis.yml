@@ -16,4 +16,5 @@ install:
   - docker-compose up -d
 
 script:
+  - sleep 5
   - curl -s http://127.0.0.1/ | grep -q Invenio

@@ -1,0 +1,8 @@
+{
+  "name": "iKEE",
+  "country": "GR",
+  "description": "iKEE is the Aristotle University Repository server that holds the publications of AUTH faculty members.",
+  "url": "http://ikee.lib.auth.gr/",
+  "screenshot_filename": "ikee.png",
+  "types": ["library", "institutional-repository"]
+}

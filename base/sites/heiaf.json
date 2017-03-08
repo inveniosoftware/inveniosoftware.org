@@ -1,0 +1,8 @@
+{
+  "name": "University of Applied Sciences of Freiburg (Western Switzerland)",
+  "country": "CH",
+  "description": "University of Applied Sciences of Freiburg (Western Switzerland)",
+  "url": "https://multidoc.eia-fr.ch",
+  "screenshot_filename": "heiaf.png",
+  "types": ["institutional-repository","library"]
+}
