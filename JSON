@@ -1,0 +1,7 @@
+$ echo '{
+"name": "MediQATA Library",
+"description": "MediQATA Library.",
+"url": "http://example.org/mediQATAlibrary",
+"screenshot_filename": "images.png",
+"types": ["research-data", "library", "multimedia", "institutional-repository"]
+}' > base/sites/mediQATAlibrary.json
