@@ -1,7 +1,0 @@
-{
-  "name": "TRACES",
-  "description": "TRACES: the bibliographical data base on Catalan language and literature. TRACES project born on 1987 by the Grup d'Estudis de Literatura Catalana Contemporània (GELCC) from the Universitat Autònoma de Barcelona.",
-  "url": "http://traces.uab.cat/",
-  "screenshot_filename": "traces.png",
-  "types": ["Library", "repository"]
-}

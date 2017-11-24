@@ -1,8 +1,0 @@
-{
-  "name": "SUDigital",
-  "country": "BG",
-  "description": "Digital library in the field of humanitarian studies at University of Sophia.",
-  "url": "http://lib.sudigital.org",
-  "screenshot_filename": "sudigital.png",
-  "types": ["Library", "institutional-repository"]
-}

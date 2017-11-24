@@ -1,8 +1,0 @@
-{
-  "name": "Belle II",
-  "country": "DE",
-  "description": "Belle II Document Server",
-  "url": "https://docs.belle2.org/",
-  "screenshot_filename": "belle2.png",
-  "types": ["research-data", "institutional-repository","library"]
-}

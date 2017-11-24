@@ -1,8 +1,0 @@
-{
-  "name": "Solano History Database",
-  "country": "US",
-  "description": "Historical articles, photos, books and other content relating to the history of Solano County, CA",
-  "url": "http://www.solanohistory.org/",
-  "screenshot_filename": "solano.png",
-  "types": ["institutional-repository","library"]
-}

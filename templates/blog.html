@@ -1,0 +1,28 @@
+{% extends "page.html" %}
+{% set active_page = "blog" %}
+
+{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/pagination.html" import render_pagination %}
+{% from "macros/lightbox.html" import include_lightbox %}
+{% block page_title %}Invenio Blog{% endblock %}
+{% block page_subtitle %}Follow news and updates on Invenio world{% endblock %}
+{% block page_body %}
+
+  <section class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+          <div class="blog-post-list">
+            {% for post in this.pagination.items %}
+              {{ render_blog_post(post, from_index=true) }}
+            {% endfor %}
+          </div>
+          {% if this.pagination.pages > 1 %}
+            {{ render_pagination(this.pagination) }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ include_lightbox() }}
+{% endblock %}

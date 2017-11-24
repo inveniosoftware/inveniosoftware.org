@@ -1,0 +1,19 @@
+{% extends "page.html" %}
+{% set active_page = "blog" %}
+
+{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/lightbox.html" import include_lightbox %}
+{% block page_title %}Invenio Blog{% endblock %}
+{% block page_subtitle %}Follow news and updates on Invenio world{% endblock %}
+{% block page_body %}
+  <section class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+            {{ render_blog_post(this) }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ include_lightbox() }}
+{% endblock %}

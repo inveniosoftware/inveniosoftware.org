@@ -1,7 +1,0 @@
-{
-  "name": "GSI Institutional Repository",
-  "description": "The GSI Institutional Repository is the portal to the references of the scientific publications and to the open access full texts of the GSI scientists. GSI operates a unique large-scale accelerator for heavy ions. Researchers from around the world use this facility for experiments. GSI library operates the repository as member of the join² community.",
-  "url": "http://repository.gsi.de",
-  "screenshot_filename": "gsi.png",
-  "types": ["library", "institutional-repository"]
-}

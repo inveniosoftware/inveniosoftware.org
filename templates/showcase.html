@@ -1,0 +1,83 @@
+{% extends 'page.html' %}
+{% set active_page = "showcase" %}
+
+{% set site_types = {
+                "research-data": "Data",
+                "library": "Library",
+                "multimedia": "Multimedia",
+                "institutional-repository": "Repository"
+            }
+%}
+{% block page_title %}Invenio instances around the world{% endblock %}
+{% block page_subtitle %}Numerous installations world wide{% endblock %}
+{% block page_body %}
+  <section class="showcase-section section-content-light-bg">
+    <div class="container">
+
+      <div class="centered">
+          <p>A showcase gallery illustrating some of the Invenio instances. <a href="{{ '/showcase/showcase_add'|url }}">Add yours!</a></p>
+      </div>
+      <br>
+
+      <div class="centered">
+        <div class="row">
+          <div class="btn-group hidden-xs" data-toggle="buttons">
+            {% include 'menu.html' %}
+          </div>
+          <div class="btn-group-vertical visible-xs-inline-block" data-toggle="buttons">
+            {% include 'menu.html' %}
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="centered" id="loading" >
+        <i class="fa fa-spinner fa-lg fa-spin" aria-hidden="true"></i>
+      </div>
+      <div class="grid hidden">
+        {% for site in bag('sites.site_list') %}
+          <div class="thumbnail {{' '.join(site.types)}} {{'featured' if site.featured else ''}}">
+            <a href="{{site.url}}" target="_blank"><img src="/static/img/screenshots/{{site.screenshot_filename}}" alt="{{site.name}}"/></a>
+            <div class="caption">
+              <h3><a class="name" href="{{site.url}}" target="_blank">{{site.name}}</a></h3>
+              <p>{{site.description}}</p>
+              {% for site_type in site.types %}
+                <span class="label label-primary">{{site_types[site_type]}}</span>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script>
+    $(window).on('load', function () {
+      $('#loading').addClass('hidden');
+      $('.grid').removeClass('hidden');
+      var $grid = $('.grid').isotope({
+        itemSelector: '.thumbnail',
+        getSortData: {
+          name: function(itemElem) {
+            var name = $(itemElem).find('.name').text().toLowerCase();
+            if ($(itemElem).hasClass('featured')) {
+              return '_' + name;
+            } else {
+              return name;
+            }
+          }
+        },
+        sortBy: 'name'
+      });
+
+      $('input:radio').change(function() {
+        $grid.isotope({filter: $(this).data('value')});
+      });
+
+    });
+  </script>
+
+{% endblock %}

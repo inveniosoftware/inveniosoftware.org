@@ -1,8 +1,0 @@
-{
-  "name": "Fundación Arte Ciencia y Diálogo",
-  "country": "ES",
-  "description": "Fundación Arte Ciencia y Diálogo",
-  "url": "http://invenio.ardicia.com",
-  "screenshot_filename": "ardicia.png",
-  "types": ["research-data", "institutional-repository","library"]
-}

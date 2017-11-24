@@ -1,7 +1,0 @@
-{
-  "name": "Himalayan Document Centre (HIMALDOC)",
-  "description": "The Himalayan Document Centre (HIMALDOC) of the International Centre for Integrated Mountain Development (ICIMOD) aims to provide resources focused on sustainable mountain development (SMD) issues in various electronic formats. The resources are of several types, and include books, articles, periodicals, theses, multimedia products, and other reference materials include ICIMOD publications.",
-  "url": "http://www.icimod.org/himaldoc",
-  "screenshot_filename": "icimod.png",
-  "types": ["multimedia", "library", "institutional-repository"]
-}

@@ -1,8 +1,0 @@
-{
-  "name": "National Repository of Grey Literature",
-  "country": "CZ",
-  "description": "This digital repository is a part of the National Repository of Grey Literature (NRGL).\n\nNRGL provides central access to information on grey literature produced in the Czech Republic in the fields of science, research and education.",
-  "url": "http://invenio.nusl.cz",
-  "screenshot_filename": "nusl.png",
-  "types": ["research-data", "institutional-repository","library"]
-}

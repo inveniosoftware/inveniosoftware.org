@@ -1,8 +1,0 @@
-{
-  "name": "SYSDOC",
-  "country": "DK",
-  "description": "DTU Fotonik Optical Communication Document Server",
-  "url": "http://sysdoc.com.dtu.dk/",
-  "screenshot_filename": "sysdoc.png",
-  "types": ["research-data","library"]
-}

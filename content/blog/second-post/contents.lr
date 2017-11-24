@@ -1,0 +1,15 @@
+title: This is a post!
+---
+pub_date: 2017-10-01
+---
+author: Jose Benito Gonzalez Lopez
+---
+team: CERN Open Data
+---
+team_url: https://github.com/cernopendata/opendata.cern.ch
+---
+team_colour: cod-team
+---
+body:
+
+This is an example blog post.  Not much here but that's not the point :)
