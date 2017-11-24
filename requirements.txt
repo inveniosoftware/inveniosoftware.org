@@ -1,2 +1,0 @@
-Flask>=0.11.1
-Flask-Mobility==0.1.1

@@ -1,8 +1,0 @@
-{
-  "name": "Open Access Repository",
-  "country": "IT",
-  "description": "Open Access Repository is an initiative supported by the DCH-RP (Digital Cultural Heritage - Roadmap for Preservation) project as it can fulfil the needs of cultural institutions that want to preserve their data and make them accessible in an Open Access way by means of a digital repository that is compliant with OpenAIRE guidelines.",
-  "url": "http://www.openaccessrepository.it/",
-  "screenshot_filename": "openaccess.png",
-  "types": ["research-data", "institutional-repository","library"]
-}

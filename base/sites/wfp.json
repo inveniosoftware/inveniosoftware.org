@@ -1,7 +1,0 @@
-{
-  "name": "World Food Programme",
-  "description": "The World Food Programme is the world's largest humanitarian agency fighting hunger worldwide.",
-  "url": "http://wfp.tind.io",
-  "screenshot_filename": "wfp.png",
-  "types": ["library"]
-}

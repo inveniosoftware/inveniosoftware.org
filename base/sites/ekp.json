@@ -1,8 +1,0 @@
-{
-  "name": "EKP Publications",
-  "country": "DE",
-  "description": "",
-  "url": "https://ekp-invenio.physik.uni-karlsruhe.de",
-  "screenshot_filename": "ekp.png",
-  "types": ["research-data", "institutional-repository","library"]
-}

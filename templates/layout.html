@@ -1,0 +1,21 @@
+<!doctype html>
+<title>{% block title %}Welcome{% endblock %} — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="{{ '/static/img/favicon.ico'|asseturl }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  {% block body %}{% endblock %}
+</body>

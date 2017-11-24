@@ -1,8 +1,0 @@
-{
-  "name": "Kulturarchiv Oberengadin",
-  "country": "CH",
-  "description": "Upper Engadine Cultural Archives, Switzerland",
-  "url": "http://search.kulturarchiv.ch/",
-  "screenshot_filename": "kulturarchiv.png",
-  "types": ["library", "institutional-repository"]
-}

@@ -1,7 +1,0 @@
-{
-  "name": "EPFL Infoscience",
-  "description": "The scientific information portal of the École Polytechnique Fédérale de Lausanne (EPFL). The repository's goal is twofold: (i) to provide a common catalog for the fifty libraries of EPFL; (ii) to be the institutional memory of the scientific production, in terms of research publications and reports, teaching material, and student projects.",
-  "url": "http://infoscience.epfl.ch",
-  "screenshot_filename": "epfl.png",
-  "types": ["research-data", "library", "institutional-repository"]
-}

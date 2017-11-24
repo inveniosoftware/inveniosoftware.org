@@ -1,8 +1,0 @@
-{
-  "name": "Documents Consorzio COMETA",
-  "country": "IT",
-  "description": "Documents consorzio COMETA",
-  "url": "http://documents.ct.infn.it",
-  "screenshot_filename": "cometa.png",
-  "types": ["research-data", "institutional-repository","library"]
-}
