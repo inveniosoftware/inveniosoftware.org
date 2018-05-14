@@ -1,8 +1,0 @@
-{
-  "name": "CaltechDATA",
-  "description": "CaltechDATA is an institutional research data repository that shares and preserves the accomplishments of Caltech researchers.",
-  "url": "https://data.caltech.edu",
-  "screenshot_filename": "caltechdata.png",
-  "types": ["research-data", "repository"],
-  "featured": true
-}
