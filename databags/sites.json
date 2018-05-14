@@ -39,6 +39,13 @@
       "types": ["library"]
     },
     {
+      "name": "CaltechDATA",
+      "description": "CaltechDATA is an institutional research data repository that shares and preserves the accomplishments of Caltech researchers.",
+      "url": "https://data.caltech.edu",
+      "screenshot_filename": "caltechdata.png",
+      "types": ["research-data", "repository"]
+    },
+    {
       "name": "CERN Document Server",
       "description": "CERN official repository for publications, articles, reports and multimedia content in HEP.",
       "url": "http://cds.cern.ch",
