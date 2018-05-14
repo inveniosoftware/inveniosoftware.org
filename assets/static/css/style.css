@@ -150,14 +150,14 @@ body {
 }
 @media only screen and (max-device-width: 768px) {
   .vertical-center {
-    height: auto!important;
+    height: auto !important;
   }
   .intro-section .cover-image {
-    min-height: auto!important;
+    min-height: auto !important;
     padding-bottom: 50px;
   }
   .intro-section {
-    height: auto!important;
+    height: auto !important;
   }
 }
 .intro-section .cover-image {
@@ -565,7 +565,7 @@ only screen and (max-width: 993px) {
     flex-direction: row;
   }
   .new-site-section {
-    text-align: center!important;
+    text-align: center !important;
   }
 }
 .new-site-section {
