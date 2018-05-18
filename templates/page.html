@@ -16,4 +16,9 @@
   </section>
   {% block page_body %}{% endblock %}
   {% include "footer.html" %}
+
+  {%- block trackingcode %}
+  {% include "trackingcode.html" %}
+  {%- endblock %}
+
 {% endblock %}
