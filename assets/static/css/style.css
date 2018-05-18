@@ -24,12 +24,12 @@ body {
   background-color: rgba(10, 73, 105, 0.91);
 }
 .section-content-dark-bg a {
-  color: white;
+  color: rgba(255, 255, 255, 0.58);
   text-decoration: none;
 }
 .section-content-dark-bg a:hover,
 .section-content-dark-bg a:focus {
-  color: rgba(255, 255, 255, 0.58);
+  color: white;
 }
 .section-content-white-bg,
 .section-content-light-bg {
@@ -114,15 +114,15 @@ body {
   line-height: 50px;
   height: 50px;
   padding-top: 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.58);
   border-top: 3px solid transparent;
 }
 .active-menu,
 .nav>li>a:hover,
 .nav>li>a:focus {
   background-color: transparent;
-  border-top: 3px solid rgba(255, 255, 255, 0.58);
-  color: rgba(255, 255, 255, 0.58);
+  border-top: 3px solid white;
+  color: white;
   ;
 }
 @media (max-width: 768px) {
@@ -339,17 +339,17 @@ body {
   background-color: rgb(10, 73, 105);
   padding-top: 15px;
   padding-bottom: 15px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 300;
   font-size: 14px;
 }
 .footer-bottom a {
-  color: white;
+  color: rgba(255, 255, 255, 0.58);
   text-decoration: none;
 }
 .footer-bottom a:hover,
 .footer-bottom a:focus {
-  color: rgba(255, 255, 255, 0.58);
+  color: white;
 }
 footer nav ul {
   list-style-type: none;
