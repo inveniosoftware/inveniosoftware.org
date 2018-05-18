@@ -1,7 +1,8 @@
 {% extends "page.html" %}
 {% set active_page = "blog" %}
 
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog-list-item.html" import render_blog_list_item %}
+{% from "macros/blog-top.html" import render_blog_top %}
 {% from "macros/pagination.html" import render_pagination %}
 {% from "macros/lightbox.html" import include_lightbox %}
 {% block page_title %}Invenio Blog{% endblock %}
@@ -10,16 +11,32 @@
 
   <section class="section-content-light-bg">
     <div class="container">
+      {% if this.pagination.page == 1 %}
       <div class="row">
-        <div class="col-md-8 col-xs-12 block-center">
+        <div class="col-md-12 col-xs-12 block-center">
+          {% set firstpost = this.pagination.items | first %}
+          {{ render_blog_top(firstpost, from_index=true) }}
+        </div>
+      </div>
+      {% endif %}
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
           <div class="blog-post-list">
             {% for post in this.pagination.items %}
-              {{ render_blog_post(post, from_index=true) }}
+              {% if loop.index > 1 %}
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  {{ render_blog_list_item(post, from_index=true) }}
+                </div>
+              {% endif %}
             {% endfor %}
           </div>
-          {% if this.pagination.pages > 1 %}
-            {{ render_pagination(this.pagination) }}
-          {% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+        {% if this.pagination.pages > 1 %}
+          {{ render_pagination(this.pagination) }}
+        {% endif %}
         </div>
       </div>
     </div>
