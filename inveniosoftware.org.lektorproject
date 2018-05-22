@@ -1,5 +1,5 @@
 [project]
 name = inveniosoftware.org
 
-[server.ghpages]
+[servers.ghpages]
 target = ghpages+https://inveniosoftware/inveniosoftware.org
