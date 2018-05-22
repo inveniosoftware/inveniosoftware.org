@@ -1,0 +1,19 @@
+column: future
+---
+body:
+
+- [SWORD3](http://swordapp.org/swordv3/)
+- [ResourceSync](http://www.openarchives.org/rs/toc)
+- [Signposting](http://signposting.org)
+- [COUNTER](https://www.projectcounter.org/about/)
+- [SUSHI](https://www.niso.org/standards-committees/sushi)
+
+See http://ngr.coar-repositories.org/
+
+(with Japan National Institute of Informatics)
+---
+category: Interoperability
+---
+title: COAR Next Generation Repositories (NGR)
+---
+sort: 2
