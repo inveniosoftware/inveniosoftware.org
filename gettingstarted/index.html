@@ -1,0 +1,195 @@
+<!doctype html>
+<title>Getting Started — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="../static/img/favicon.ico?h=981ca02e">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/style.css?h=de0ef8b6">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  <section class="header-section">
+    <div class="cover-image">
+      
+        <header>
+  <nav class="navbar invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+        </button>
+        <a href="../" class="navbar-brand">
+          <img src="../static/img/logo-invenio-white.png?h=8c434384" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li><a href="../showcase/">Showcase</a></li>
+          
+            <li><a class="active-menu" href="../gettingstarted/">Getting Started</a></li>
+          
+            <li><a href="../community/">Community</a></li>
+          
+            <li><a href="../blog/">Blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+      
+      <div class="container header-section-title">
+        <h3>Getting started with Invenio</h3>
+        <h6>Installation and first steps</h6>
+      </div>
+    </div>
+  </section>
+  
+  <section class="install-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title-light-bg">Installation</span>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Invenio 1.2</h6>
+          <p>Install latest stable release in a virtual machine using <a href="https://www.vagrantup.com/">vagrant</a>:</p>
+          <p class="code">$ <span class="command">git</span> clone https://github.com/inveniosoftware/invenio -b maint-1.2
+            $ <span class="command">cd</span> invenio
+            $ <span class="command">vagrant</span> up && <span class="command">vagrant</span> ssh web
+              web> <span class="command">source .inveniorc</span>
+              web> <span class="command">/vagrant/scripts/create-instance.sh</span>
+              web> <span class="command">/vagrant/scripts/populate-instance.sh</span>
+            $ <span class="command">firefox</span> http://192.168.50.10/record/1</p>
+          <p><a href="https://raw.githubusercontent.com/inveniosoftware/invenio/maint-1.2/INSTALL">See detailed instructions for Invenio 1.2</a></p>
+        </div>
+        <div class="col-md-6">
+          <h6>Invenio 3.0</h6>
+          <p>Install latest developer preview using <a href="http://www.docker.com/">docker</a>:</p>
+          <p class="code">$ <span class="command">git</span> clone https://github.com/inveniosoftware/invenio
+            $ <span class="command">cd</span> invenio
+            $ <span class="command">docker-compose</span> build
+            $ <span class="command">docker-compose</span> up -d
+            $ <span class="command">docker-compose</span> run --rm web ./scripts/populate-instance.sh
+            $ <span class="command">firefox</span> http://127.0.0.1/
+            $ <span class="command">firefox</span> http://127.0.0.1/records/1</p>
+          <p><a href="https://invenio.readthedocs.io/en/latest/usersguide/tutorial/install.html">See detailed instructions for Invenio 3.0</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="develop-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title-light-bg">Development</span>
+      <div class="row">
+        <div class="col-md-3 centered">
+          <i class="large-icon fa fa-github" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-9">
+            <p>Invenio is a modular framework of independent collaborative component packages. The packages are located in three different GitHub organisations:</p>
+          <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check"></i><a href="https://github.com/inveniosoftware">inveniosoftware</a>: A collection of base packages, core packages, and additional feature packages that are maintained in a coherent, homogeneous way by the Invenio project team. The main organisation.</li>
+            <li><i class="fa-li fa fa-users"></i><a href="https://github.com/inveniosoftware-contrib">inveniosoftware-contrib</a>: A collection of third-party packages extending Invenio functionalities. They are maintained by contributing teams and may follow different practices. The packages may also incubate an experimental or unproven feature that can later mature into the main organisation.</li>
+            <li><i class="fa-li fa fa-archive"></i><a href="https://github.com/inveniosoftware-attic">inveniosoftware-attic</a>: A collection of discontinued or retired packages that are no longer maintained.</li>
+          </ul>
+          <br>
+          <p>You may be interested in our <a href="https://invenio.readthedocs.io/en/latest/developersguide/index.html">development practices</a> and <a href="https://invenio.readthedocs.io/en/latest/community/contribution-guide.html">contributing guide</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="documentation-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title-light-bg">Documentation</span>
+      <div class="row">
+        <div class="col-md-3 centered">
+          <i class="large-icon fa fa-book" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-9">
+          <p>All the documentation can be found on <a href="http://invenio.readthedocs.io/">Read The Docs</a>. You can read about the installation and customisation of Invenio instances, the architecture and the technology overview, as well as our development practices.</p>
+          <p>Further project related information such as our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Roadmap">roadmap</a> or our <a href="https://github.com/inveniosoftware/invenio/wiki/Invenio-3.0-Build-Status">build status</a> overview can be found on <a href="https://github.com/inveniosoftware/invenio/wiki">GitHub wiki</a> pages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6">
+    <a href="../"><img class="icon-contact" src="../static/img/logo-invenio-white.png?h=8c434384" /></a>
+  </div>
+  <div class="col-md-6">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td class="contact-list-header">Documentation</td>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Read The Docs</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">GitHub</td>
+          <td>
+            <a href="https://github.com/inveniosoftware">main</a> &middot; <a href="https://github.com/inveniosoftware-contrib">contrib</a> &middot; <a href="https://github.com/inveniosoftware-attic">attic</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Chat room</td>
+          <td>
+            <a href="https://gitter.im/inveniosoftware"><img src="../static/img/gitter.svg?h=e497f3c6"></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Twitter</td>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">@inveniosoftware <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Weekly video meetings</td>
+          <td><a href="https://indico.cern.ch/category/6046/">Invenio Developer Forum</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Yearly workshops</td>
+          <td><a href="https://indico.cern.ch/category/6240/">Invenio User Group Workshop</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright © 2016-2018 Invenio. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>

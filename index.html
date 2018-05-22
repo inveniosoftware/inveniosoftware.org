@@ -1,0 +1,390 @@
+<!doctype html>
+<title>Welcome — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="./static/img/favicon.ico?h=981ca02e">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./static/css/style.css?h=de0ef8b6">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  <script>
+    $.getJSON( "https://api.github.com/repos/inveniosoftware/invenio", function( data ) {
+      $("#forks_count").text(data.forks_count);
+    });
+    $.getJSON( "http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20from%20html%20where%20url=%22http://twitter.com/inveniosoftware%22%20AND%20xpath=%22//li[contains(@class,%27ProfileNav-item--followers%27)]/a/span[@class=%27ProfileNav-value%27]|//li[contains(@class,%27ProfileNav-item--following%27)]/a/span[@class=%27ProfileNav-value%27]%22&format=json", function( data ) {
+      $("#followers_count").text(data.query.results.span.content);
+    });
+  </script>
+  <section class="intro-section">
+    <div class="cover-image">
+      <header>
+  <nav class="navbar invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+        </button>
+        <a href="./" class="navbar-brand">
+          <img src="./static/img/logo-invenio-white.png?h=8c434384" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li><a href="./showcase/">Showcase</a></li>
+          
+            <li><a href="./gettingstarted/">Getting Started</a></li>
+          
+            <li><a href="./community/">Community</a></li>
+          
+            <li><a href="./blog/">Blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+      <div class="vertical-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="headline col-md-10 col-md-offset-1">
+                  <div class="welcome">
+                    <h3>Invenio Digital Library Framework</h3>
+                    <h6>Build your own fully customised digital library, institutional repository, multimedia archive, or research data repository on the web.</h6>
+                  </div>
+                  <div class="actions">
+                    <form action="showcase">
+                      <button class="btn white">See showcase</button>
+                    </form>
+                    <form action="gettingstarted">
+                      <button class="btn">Get Started</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="flavour-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title-white-bg">Invenio is a flexible framework</span>
+      <div class="row">
+        <div class="col-md-5">
+          <img class="flavour" src="./static/img/icon-library.svg?h=dca66b1e"/>
+          <h6>Integrated Library System</h6>
+          <p>
+            Manage MARC21 authority and bibliographic records. Curate records
+            and run automated quality checks. Use circulation module with
+            customisable borrower, item acquisition and interlibrary loan
+            workflows.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <img class="flavour" src="./static/img/icon-biotech.svg?h=01dfce2c"/>
+          <h6>Research Data</h6>
+          <p>
+            Capture and preserve research output. Harvest datasets, analysis
+            code, virtual machine environment, configuration and knowledge
+            information. Visualise data in the browser. Rerun preserved code on
+            the cloud.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img class="flavour" src="./static/img/icon-film-reel.svg?h=9ea15731"/>
+          <h6>Multimedia Archive</h6>
+          <p>
+            Manage audio, photo and video material. Create thumbnails and
+            derived formats. Customise portfolio search outputs. Create albums
+            and playlists. Configure related material discovery. Tag multimedia
+            content.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <img class="flavour" src="./static/img/icon-filing-cabinet.svg?h=2b5e0f95"/>
+          <h6>Institutional Repository</h6>
+          <p>
+            Publish articles, reports or theses of your institute. Organise
+            content in collections. Configure ingestion workflows and approvals.
+            Mint material with permanent identifiers. Disseminate material via
+            OAI-PMH.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="goto-button">
+          <a href="./showcase/">See showcase gallery</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="carousel-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div id="invenio-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#invenio-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#invenio-carousel" data-slide-to="1"></li>
+              <li data-target="#invenio-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-9 block-center">
+                            <div class="carousel-item-img">
+                                <img src="./static/img/logo-cern-white.svg?h=a51625b9">
+                            </div>
+                            <div class="carousel-item-text">
+                                <p>Invenio was born at <a href="https://home.cern">CERN</a> as
+                                   a digital library software solution to run the
+                                   <a href="https://cds.cern.ch">CERN document server</a>,
+                                   managing over 1,000,000 bibliographic records
+                                   in high-energy physics since 2002. Covering
+                                   articles, books, journals, photos, videos,
+                                   and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-9 block-center">
+                            <div class="carousel-item-img">
+                                <img src="./static/img/icon-collaboration.svg?h=af98e3e2">
+                            </div>
+                            <div class="carousel-item-text">
+                                <p>Over the years, Invenio has been co-developed by an
+                                   international collaboration with contributions from
+                                   institutes such as
+                                   <a href="http://www.auth.gr/en">AUTH</a>,
+                                   <a href="https://www.cfa.harvard.edu/">CFA</a>,
+                                   <a href="http://home.cern/">CERN</a>,
+                                   <a href="http://www.desy.de/">DESY</a>,
+                                   <a href="http://epfl.ch/">EPFL</a>,
+                                   <a href="http://www.fz-juelich.de/">FZJ</a>,
+                                   <a href="http://gsi.de/">GSI</a>,
+                                   <a href="https://www.rero.ch/">RERO</a>,
+                                   <a href="https://slac.stanford.edu/">SLAC</a>,
+                                   <a href="http://uab.cat/">UAB</a> and more.
+                                   Invenio is being used by many scientific
+                                   institutes and library networks worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                      <div class="col-sm-8 col-xs-9 block-center">
+                          <div class="carousel-item-img">
+                              <img src="./static/img/icon-open-source.svg?h=7487c9e6">
+                          </div>
+                          <div class="carousel-item-text">
+                              <p>Nowadays, Invenio software suite consists
+                                 of more than a hundred independent packages
+                                 that collaborate via strong REST API. The
+                                 flexibility and performance of Invenio make it
+                                 a comprehensive solution for document
+                                 repositories of moderate to large sizes.</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#invenio-carousel" role="button" data-slide="prev">
+                <span class="fa fa-angle-left fa-2x"></span>
+            </a>
+            <a class="right carousel-control" href="#invenio-carousel" role="button" data-slide="next">
+                <span class="fa fa-angle-right fa-2x"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title-white-bg">Main features</span>
+      <div class="row features-section-row">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 centered">
+              <img src="./static/img/icon-data-model.svg?h=9770f1c9"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Flexible data model</h6>
+              <p>Use JSON Schema to describe articles, books, photos, videos,
+              data, and software. Several popular master metadata formats are
+              supported, such as MARC21 with BibTeX, DataCite, Dublin Core,
+              EndNote, RefWorks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 centered">
+              <img src="./static/img/icon-search.svg?h=7d10dafe"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Powerful search engine</h6>
+              <p>Very fast response for repositories of up to several million
+              records. Customisable query language and second-order search
+              operators. Configurable UI and facets. Combined metadata, fulltext
+              and reference search in one go. Citation networks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row features-section-row">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 centered">
+              <img src="./static/img/icon-workflow.svg?h=c5599f38"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Configurable workflows</h6>
+              <p>Organise document corpus in community collections. Configure
+              user and robot ingestion workflows. Attribute community
+              moderators.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 centered">
+              <img src="./static/img/icon-community.svg?h=baba0018"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Collaborative communities</h6>
+              <p>Organise users in groups and teams. Share documents of interest
+                 in annotable baskets. Configure automated email and RSS
+                 notification alerts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row features-section-row">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 centered">
+              <img src="./static/img/icon-extensible.svg?h=48ef78f9"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Extensible packages</h6>
+              <p>Invenio is composed of hundreds of independent pluggable
+              packages that collaborate via rich APIs. Pick the packages you
+              need and use the full power of Python to extend their
+              capabilities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 centered">
+              <img src="./static/img/icon-open-source-blue.svg?h=fc5e259e"/>
+            </div>
+            <div class="col-md-9">
+              <h6>Open standards</h6>
+              <p>We love open access, open source, and open standards. DOI, JSON
+              Schema, Memento, OAI-PMH, ORCID, OpenAIRE, REST, XML... you name
+              it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6">
+    <a href="./"><img class="icon-contact" src="./static/img/logo-invenio-white.png?h=8c434384" /></a>
+  </div>
+  <div class="col-md-6">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td class="contact-list-header">Documentation</td>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Read The Docs</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">GitHub</td>
+          <td>
+            <a href="https://github.com/inveniosoftware">main</a> &middot; <a href="https://github.com/inveniosoftware-contrib">contrib</a> &middot; <a href="https://github.com/inveniosoftware-attic">attic</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Chat room</td>
+          <td>
+            <a href="https://gitter.im/inveniosoftware"><img src="./static/img/gitter.svg?h=e497f3c6"></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Twitter</td>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">@inveniosoftware <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Weekly video meetings</td>
+          <td><a href="https://indico.cern.ch/category/6046/">Invenio Developer Forum</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Yearly workshops</td>
+          <td><a href="https://indico.cern.ch/category/6240/">Invenio User Group Workshop</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright © 2016-2018 Invenio. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
