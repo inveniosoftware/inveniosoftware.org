@@ -1,0 +1,13 @@
+column: current
+---
+body:
+
+- Scripts for semi-automated license change of repositories.
+- Review all non-CERN contributions and ensure correct copyright statements in all file headers.
+- Contributor License Agreement workflow.
+---
+category: Community
+---
+title: License change (from GPL to MIT)
+---
+sort: 2

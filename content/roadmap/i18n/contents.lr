@@ -1,0 +1,12 @@
+column: near-term
+---
+body:
+
+- Translate all v3.0 Invenio modules into at least one other language.
+- Develop translation workflow into package release process.
+---
+category: Development
+---
+title: Internationalization (I18N)
+---
+sort: 2
