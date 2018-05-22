@@ -83,6 +83,9 @@ body {
   color: rgba(61, 104, 125, 1);
   font-weight: 500;
 }
+#open-source-section {
+  margin-bottom: 0px;
+}
 .vertical-center {
   height: 600px;
   display: flex;
@@ -137,6 +140,15 @@ body {
     border-top: none;
   }
 }
+
+.welcome-features-col h2{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.welcome-features-col p{
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .intro-section {
   width: 100%;
   position: relative;
@@ -163,6 +175,10 @@ body {
 .intro-section .cover-image {
   min-height: 800px;
 }
+.welcome-logo {
+  display: block; /*for the img inside your div */ 
+  margin: 0 auto; 
+}
 .cover-image {
   background-color: rgba(13, 95, 137, 0.8);
   min-height: 300px;
@@ -179,6 +195,7 @@ body {
   color: rgba(255, 255, 255, 0.58);
   font-size: 1.8em;
   padding-top: 5%;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .headline h3 {
@@ -189,6 +206,7 @@ body {
   }
 }
 .headline .actions {
+  margin: 0 auto;
   padding-top: 5%;
 }
 .headline .btn.white {
@@ -223,11 +241,25 @@ body {
     font-size: 15px;
   }
 }
+.instances-section {
+  text-align: center;
+}
+.instances-section img {
+  height: 20em;
+}
+.instances-section p {
+  text-align: justify;
+}
+.instances-section .row {
+  padding: 30px 0px;
+}
+
 .flavour-section {
   text-align: center;
 }
 .flavour-section img {
-  height: 10em;
+  height: 9em;
+  padding-left: 10px;
 }
 .flavour-section p {
   text-align: justify;
@@ -235,6 +267,24 @@ body {
 .flavour-section .row {
   padding: 30px 0px;
 }
+
+/* Welcome features section */
+.welcome-features-section {
+  padding: 0 10 0 0;
+}
+.welcome-features-section h3 {
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 20px;
+}
+.welcome-features-section img {
+  height: 35px;
+  padding-left: 3px;
+}
+.fa-heart {
+  color: #fe3336;
+}
+
+
 .carousel-section {
   font-weight: 400;
   font-size: 14px;
