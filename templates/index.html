@@ -182,7 +182,7 @@
   </section>
   <section class="features-section section-content-white-bg">
     <div class="container">
-      <span class="section-title-white-bg">Main features</span>
+      <span class="section-title-white-bg">Features</span>
       <div class="row features-section-row">
         <div class="col-md-5">
           <div class="row">
@@ -191,10 +191,9 @@
             </div>
             <div class="col-md-9">
               <h6>Flexible data model</h6>
-              <p>Use JSON Schema to describe articles, books, photos, videos,
-              data, and software. Several popular master metadata formats are
-              supported, such as MARC21 with BibTeX, DataCite, Dublin Core,
-              EndNote, RefWorks.</p>
+              <p>Use JSON Schema to describes your articles, books, theses,
+              photos, videos, research data and software. Write serialisers to
+              produce BibTeX, CSL, DataCite, Dublin Core, JSON-LD, or MARCXML.</p>
             </div>
           </div>
         </div>
@@ -206,10 +205,9 @@
             </div>
             <div class="col-md-9">
               <h6>Powerful search engine</h6>
-              <p>Very fast response for repositories of up to several million
-              records. Customisable query language and second-order search
-              operators. Configurable UI and facets. Combined metadata, fulltext
-              and reference search in one go. Citation networks.</p>
+              <p>Fast search times for repositories of several million records.
+                 Confurigurable query language and search facets. Citation
+                 networks.</p>
             </div>
           </div>
         </div>
@@ -218,62 +216,85 @@
         <div class="col-md-5">
           <div class="row">
             <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icon-workflow.svg'|asseturl }}"/>
+              <img src="{{ '/static/img/icons8-document-96.png'|asseturl }}"/>
             </div>
             <div class="col-md-9">
-              <h6>Configurable workflows</h6>
-              <p>Organise document corpus in community collections. Configure
-              user and robot ingestion workflows. Attribute community
-              moderators.</p>
+              <h6>Advanced file management</h6>
+              <p>Manage millions of files attached to records. Organise files in
+              buckets. Configure abstract storage layer. HTTP and XRootD access
+              protocols.</p>
             </div>
           </div>
         </div>
         <div class="col-md-2"></div>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-3 centered">
+                    <img src="{{ '/static/img/icons8-filing-cabinet-96.png'|asseturl }}"/>
+                </div>
+                <div class="col-md-9">
+                    <h6>Preservation friendly</h6>
+                    <p>Mint persistent identifiers (DOI) for repository assets.
+                       Create links between versions. Run fixity checks. Export
+                       BagIt archival packages.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row features-section-row">
         <div class="col-md-5">
           <div class="row">
             <div class="col-md-3 centered">
               <img src="{{ '/static/img/icon-community.svg'|asseturl }}"/>
             </div>
             <div class="col-md-9">
-              <h6>Collaborative communities</h6>
-              <p>Organise users in groups and teams. Share documents of interest
-                 in annotable baskets. Configure automated email and RSS
-                 notification alerts.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row features-section-row">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icon-extensible.svg'|asseturl }}"/>
-            </div>
-            <div class="col-md-9">
-              <h6>Extensible packages</h6>
-              <p>Invenio is composed of hundreds of independent pluggable
-              packages that collaborate via rich APIs. Pick the packages you
-              need and use the full power of Python to extend their
-              capabilities.</p>
+              <h6>User communities</h6>
+              <p>Organise your documents in community collections. Set up
+              advanced user authentication (OAuth, SSO). Define fine-grained
+              access rights. Collect usage statistics.</p>
             </div>
           </div>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icon-open-source-blue.svg'|asseturl }}"/>
+            <div class="row">
+                <div class="col-md-3 centered">
+                    <img src="{{ '/static/img/icon-extensible.svg'|asseturl }}"/>
+                </div>
+                <div class="col-md-9">
+                    <h6>REST API</h6>
+                    <p>Use more than one hundred independent packages
+                       collaborating via rich REST APIs. Pick the packages you
+                       want and use the full power of Python to combine and
+                       extend them.</p>
+                </div>
             </div>
-            <div class="col-md-9">
-              <h6>Open standards</h6>
-              <p>We love open access, open source, and open standards. DOI, JSON
-              Schema, Memento, OAI-PMH, ORCID, OpenAIRE, REST, XML... you name
-              it.</p>
-            </div>
-          </div>
+        </div>
         </div>
       </div>
     </div>
+  </section>
+      <section class="open-source-section section-content-white-bg">
+      <div class="container">
+          <span class="section-title-white-bg">Leveraging the power of Open Source</span>
+          <div class="row">
+              <div class="col-md-4 centered">
+                  <a href="https://www.elastic.co/products/elasticsearch"><img src="{{ '/static/img/logo-elastic.svg'| asseturl }}" width="200px" title="Elasticsearch" /></a>
+                  <p>&nbsp;</p>
+                  <a href="https://redis.io/"><img src="{{ '/static/img/logo-redis.jpg'| asseturl }}" width="140px" title="Redis" /></a>
+              </div>
+              <div class="col-md-4 centered">
+                  <a href="https://www.python.org/"><img src="{{ '/static/img/logo-python.jpg'| asseturl }}" width="240px" title="Python" /></a>
+                  <p>&nbsp;</p>
+                  <a href="http://flask.pocoo.org/"><img src="{{ '/static/img/logo-flask.jpg'| asseturl }}" width="140px" title="Flask" /></a>
+              </div>
+              <div class="col-md-4 centered">
+                  <a href="https://www.postgresql.org/"><img src="{{ '/static/img/logo-postgresql.png'| asseturl }}" width="80px" title="PostgreSQL" /></a>
+                  <p>&nbsp;</p>
+                  <a href="http://www.sqlalchemy.org/"><img src="{{ '/static/img/logo-sqlalchemy.jpg'| asseturl }}" width="200px" title="SQLAlchemy" /></a>
+              </div>
+          </div>
+      </div>
   </section>
   {% include "footer.html" %}
 
