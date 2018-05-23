@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="./static/img/favicon.ico?h=981ca02e">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="./static/css/style.css?h=ae6613ce">
+<link rel="stylesheet" href="./static/css/style.css?h=04e0c3b4">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
@@ -45,9 +45,7 @@
             <span class="icon-bar"></span>
           
         </button>
-        <a href="./" class="navbar-brand">
-          <img src="./static/img/logo-invenio-white.png?h=8c434384" alt="">
-        </a>
+        
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">
@@ -72,17 +70,17 @@
             <div class="col-md-12">
               <div class="row">
                 <div class="headline col-md-10 col-md-offset-1">
-                  <div class="welcome">
-                    <h3>Invenio Digital Library Framework</h3>
-                    <h6>Build your own fully customised digital library, institutional repository, multimedia archive, or research data repository on the web.</h6>
-                  </div>
+                  <img class="welcome-logo" src="./static/img/logo-invenio-white.png?h=8c434384"/>
+                  <h6>Open source framework for building <strong>large scale</strong> digital repositories</h6>
                   <div class="actions">
-                    <form action="showcase">
-                      <button class="btn white">See showcase</button>
-                    </form>
-                    <form action="gettingstarted">
-                      <button class="btn">Get Started</button>
-                    </form>
+                    <div class="col-md-12 col-md-offset-1">
+                      <form action="showcase">
+                        <button class="btn white">See showcase</button>
+                      </form>
+                      <form action="gettingstarted">
+                        <button class="btn">Get Started</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -92,24 +90,84 @@
       </div>
     </div>
   </section>
-  <section class="flavour-section section-content-white-bg">
+  <section class="welcome-features-section section-content-dark-bg">
     <div class="container">
-      <span class="section-title-white-bg">Invenio is a flexible framework</span>
       <div class="row">
-        <div class="col-md-5">
-          <img class="flavour" src="./static/img/icon-library.svg?h=dca66b1e"/>
-          <h6>Integrated Library System</h6>
+        <div class="welcome-features-col col-md-3">
+          <h2>Safe</h2>
           <p>
-            Manage MARC21 authority and bibliographic records. Curate records
-            and run automated quality checks. Use circulation module with
-            customisable borrower, item acquisition and interlibrary loan
-            workflows.
+            Security, preservation, Security, preservation, Security, preservation,
+            Security, preservation, Security, preservation, ...
           </p>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <img class="flavour" src="./static/img/icon-biotech.svg?h=01dfce2c"/>
-          <h6>Research Data</h6>
+        <div class="welcome-features-col col-md-3">
+          <h2>Scaleable</h2>
+          <p>
+            Fast, many requests, Fast, many requests, Fast, many requests, Fast, many requests,
+            Fast, many requests, Fast, many requests, ...
+          </p>
+        </div>
+        <div class="welcome-features-col col-md-3">
+          <h2>RESTful</h2>
+          <p>
+            Born for the web, JSON-native, Born for the web, JSON-native, Born for the web, JSON-native, ...
+          </p>
+        </div>
+        <div class="welcome-features-col col-md-3">
+          <h2>Open</h2>
+          <p>Interoperable opensource.</p>
+          <p>Made with <i class="fa fa-heart"></i> at
+          <a href="https://home.cern"><img src="./static/img/logo-cern-white.svg?h=a51625b9" title="CERN" /></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="instances-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title-white-bg">Built on Invenio 3</span>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="instances" src="./static/img/screenshots/zenodo.png?h=2def7dc3"/>
+          <h6>Zenodo</h6>
+          <p>
+            Research Data Management.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="instances" src="./static/img/screenshots/cds-videos.png?h=f8ff40db"/>
+          <h6>CDS Videos</h6>
+          <p>
+            Video encoding.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="instances" src="./static/img/screenshots/opendata.png?h=557c3dde"/>
+          <h6>CERN Open Data</h6>
+          <p>
+            2 PB of data from LHC.
+          </p>
+        </div>
+      </div>
+      <span class="section-title-white-bg">Upcoming</span>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="instances" src="./static/img/icon-biotech.svg?h=01dfce2c"/>
+          <h6>WEKO 3</h6>
+          <p>
+            NII building platform for 500 university NGR
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="instances" src="./static/img/screenshots/inspire-labs.png?h=cdce4cdd"/>
+          <h6>Inspire HEP</h6>
+          <p>
+            Aggregator for all of HEP.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="instances" src="./static/img/screenshots/rero.png?h=ae58f70c"/>
+          <h6>RERO ILS</h6>
           <p>
             Capture and preserve research output. Harvest datasets, analysis
             code, virtual machine environment, configuration and knowledge
@@ -119,118 +177,39 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5">
-          <img class="flavour" src="./static/img/icon-film-reel.svg?h=9ea15731"/>
-          <h6>Multimedia Archive</h6>
-          <p>
-            Manage audio, photo and video material. Create thumbnails and
-            derived formats. Customise portfolio search outputs. Create albums
-            and playlists. Configure related material discovery. Tag multimedia
-            content.
-          </p>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <img class="flavour" src="./static/img/icon-filing-cabinet.svg?h=2b5e0f95"/>
-          <h6>Institutional Repository</h6>
-          <p>
-            Publish articles, reports or theses of your institute. Organise
-            content in collections. Configure ingestion workflows and approvals.
-            Mint material with permanent identifiers. Disseminate material via
-            OAI-PMH.
-          </p>
-        </div>
-      </div>
-      <div class="row">
         <div class="goto-button">
           <a href="./showcase/">See showcase gallery</a></div>
       </div>
     </div>
   </section>
-  <section class="carousel-section section-content-dark-bg">
+  <section class="instances-section section-content-light-bg">
     <div class="container">
+      <span class="section-title-light-bg">Get Started</span>
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div id="invenio-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#invenio-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#invenio-carousel" data-slide-to="1"></li>
-              <li data-target="#invenio-carousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-9 block-center">
-                            <div class="carousel-item-img">
-                                <img src="./static/img/logo-cern-white.svg?h=a51625b9">
-                            </div>
-                            <div class="carousel-item-text">
-                                <p>Invenio was born at <a href="https://home.cern">CERN</a> as
-                                   a digital library software solution to run the
-                                   <a href="https://cds.cern.ch">CERN document server</a>,
-                                   managing over 1,000,000 bibliographic records
-                                   in high-energy physics since 2002. Covering
-                                   articles, books, journals, photos, videos,
-                                   and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-9 block-center">
-                            <div class="carousel-item-img">
-                                <img src="./static/img/icon-collaboration.svg?h=af98e3e2">
-                            </div>
-                            <div class="carousel-item-text">
-                                <p>Over the years, Invenio has been co-developed by an
-                                   international collaboration with contributions from
-                                   institutes such as
-                                   <a href="http://www.auth.gr/en">AUTH</a>,
-                                   <a href="https://www.cfa.harvard.edu/">CFA</a>,
-                                   <a href="http://home.cern/">CERN</a>,
-                                   <a href="http://www.desy.de/">DESY</a>,
-                                   <a href="http://epfl.ch/">EPFL</a>,
-                                   <a href="http://www.fz-juelich.de/">FZJ</a>,
-                                   <a href="http://gsi.de/">GSI</a>,
-                                   <a href="https://www.rero.ch/">RERO</a>,
-                                   <a href="https://slac.stanford.edu/">SLAC</a>,
-                                   <a href="http://uab.cat/">UAB</a> and more.
-                                   Invenio is being used by many scientific
-                                   institutes and library networks worldwide.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                      <div class="col-sm-8 col-xs-9 block-center">
-                          <div class="carousel-item-img">
-                              <img src="./static/img/icon-open-source.svg?h=7487c9e6">
-                          </div>
-                          <div class="carousel-item-text">
-                              <p>Nowadays, Invenio software suite consists
-                                 of more than a hundred independent packages
-                                 that collaborate via strong REST API. The
-                                 flexibility and performance of Invenio make it
-                                 a comprehensive solution for document
-                                 repositories of moderate to large sizes.</p>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#invenio-carousel" role="button" data-slide="prev">
-                <span class="fa fa-angle-left fa-2x"></span>
-            </a>
-            <a class="right carousel-control" href="#invenio-carousel" role="button" data-slide="next">
-                <span class="fa fa-angle-right fa-2x"></span>
-            </a>
-          </div>
+        <div class="col-md-3">
+          <h6>1. Bootstrap</h6>
+          <p>
+            ...
+          </p>
         </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <h6>2. Customize</h6>
+          <p>
+            ....
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <h6>3. Deploy</h6>
+          <p>
+            ...
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="goto-button">
+          <a href="./showcase/">See guide</a></div>
       </div>
     </div>
   </section>
@@ -324,6 +303,36 @@
                 </div>
             </div>
         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="flavour-section section-content-light-bg">
+    <div class="container">
+      <span id="open-source-section" class="section-title-light-bg">The Best of Open Source</span>
+      <h6>Invenio is built on the shoulders of powerful open source platforms</h6>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="flavour" src="./static/img/elasticsearch.svg?h=54e701f8"/>
+          <h6>Elasticsearch</h6>
+          <p>
+            Elasticsearch is an open source distributed, RESTful search and analytics engine capable of solving a growing number of use cases.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="flavour" src="./static/img/flask.svg?h=0076fbd8"/>
+          <h6>Python/Flask</h6>
+          <p>
+            Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed!
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="flavour" src="./static/img/postgresql.svg?h=f84c6a8e"/>
+          <img class="flavour" src="./static/img/mysql-6.svg?h=ed70e657"/>
+          <h6>PostgreSQL/MySQL</h6>
+          <p>
+            PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
+          </p>
         </div>
       </div>
     </div>
