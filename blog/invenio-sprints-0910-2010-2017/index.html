@@ -1,5 +1,5 @@
 <!doctype html>
-<title>This is a post! — inveniosoftware.org</title>
+<title>Invenio Sprints: 09.10-20.10 2017 — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,24 +76,85 @@
     <header class="post-header">
       <h2>
         
-          This is a post!
+          Invenio Sprints: 09.10-20.10 2017
         
       </h2>
       <p class="post-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            Jose Benito Gonzalez Lopez
+            Invenio
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
-        <span>Sep 11, 2017</span>
+        <span>Oct 20, 2017</span>
         <i class='fa fa-users text-muted'></i>
         <span class="label invenio-team"><a class="team-url" href=""></a></span>
       </p>
     </header>
     <article class="post-content">
-      <p>This is an example blog post.  Not much here but that's not the point :)</p>
+      <p>This sprint was focused on:</p>
+<ul>
+<li>Metadata bundle: Finalize Invenio-Records, Invenio-Search, Invenio-JSONSchemas.</li>
+<li>Fixing new bugs in Base/Auth bundles.</li>
+</ul>
+<p>As a result of 40 developer days, 37 commits and 2.8k lines touched (2k additions and 0.8k deletions), the following improvements were implemented:</p>
+<ul>
+<li>Fixed bouncing of search results (sorting of the same query could change depending on which Elasticsearch node your query would be answered by).</li>
+<li>JSONB now being used for record storage (Thanks to Javier for the PR).</li>
+<li>Rendering of JSONSchemas, meaning <code>allOf</code> and <code>$refs</code> can now be resolved on-the-fly to generate an self-contained schema for e.g. deposit forms (Thanks to Pamfilos for the PR).</li>
+<li>Boring fixes that makes sure the Base and Auth bundles are stable.</li>
+</ul>
+<h2>List of changes:</h2>
+<ul>
+<li>Invenio-Records (v1.0.0b4):<ul>
+<li>Beta release (release checklist).</li>
+<li>Changed data storage from JSON to JSONB (requires data migration and PostgreSQL v9.4+) Thanks to Javier for PR.</li>
+<li>Changed signals receiver signatures (<strong>backward-incompatible!</strong>).</li>
+<li>Fixed invalid MARC in demo records causing export errors.</li>
+<li>Fixed CLI for deletion of records.</li>
+<li>Fixed fractional seconds problem in MySQL causing tests to fail.</li>
+</ul>
+</li>
+<li>Invenio-Search (v1.0.0b1):<ul>
+<li>Beta release (release checklist, documentation)</li>
+<li>Fix bouncing search results.</li>
+<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
+</ul>
+</li>
+<li>Invenio-JSONScheams (v1.0.0a7):<ul>
+<li>Fixed double registration of schema endpoint on both UI and API app.</li>
+<li>Added support for resolving allOf and JSONRefs in JSONSchemas (thanks to Pamfilos for PR).</li>
+<li>Fixed some documentation issues.</li>
+</ul>
+</li>
+<li>Invenio-Records-REST (v1.0.0b3):<ul>
+<li>Fix bouncing search results.</li>
+<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
+</ul>
+</li>
+<li>Invenio-OAuth2Server (v1.0.0b2):<ul>
+<li>Improved authorization template design (text alignment, cover page usage and display number of users).</li>
+<li>Broken tests fix due to cryptography package changes.</li>
+</ul>
+</li>
+<li>Invenio-DB (v1.0.0b8):<ul>
+<li>Alembic documentation refactored and integrated in docs.</li>
+</ul>
+</li>
+<li>Invenio-Records-UI:<ul>
+<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
+</ul>
+</li>
+<li>Invenio-OAIServer (v1.0.0a14):<ul>
+<li>Invenio-Records signals signature compatibility.</li>
+</ul>
+</li>
+<li>Invenio-App-ILS:<ul>
+<li>Test for ensuring all records export formats are working.</li>
+</ul>
+</li>
+</ul>
 
     </article>
     
@@ -171,5 +232,20 @@
     </div>
   </div>
 </footer>
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4535);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://piwik.web.cern.ch/piwik.php?idsite=4535" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
 
 </body>

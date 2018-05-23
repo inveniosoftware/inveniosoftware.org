@@ -1,0 +1,346 @@
+<!doctype html>
+<title>Invenio Sprints: 20.11-01.12 2017 — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="../../static/img/favicon.ico?h=981ca02e">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../static/css/style.css?h=ae6613ce">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  <section class="header-section">
+    <div class="cover-image">
+      
+        <header>
+  <nav class="navbar invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+        </button>
+        <a href="../../" class="navbar-brand">
+          <img src="../../static/img/logo-invenio-white.png?h=8c434384" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li><a href="../../showcase/">Showcase</a></li>
+          
+            <li><a href="../../gettingstarted/">Getting Started</a></li>
+          
+            <li><a href="../../community/">Community</a></li>
+          
+            <li><a class="active-menu" href="../../blog/">Blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+      
+      <div class="container header-section-title">
+        <h3>Invenio Blog</h3>
+        <h6>Follow news and updates on Invenio world</h6>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+            
+  <div class="blog-post blog-post-frame">
+    <header class="post-header">
+      <h2>
+        
+          Invenio Sprints: 20.11-01.12 2017
+        
+      </h2>
+      <p class="post-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Invenio
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Dec 1, 2017</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href=""></a></span>
+      </p>
+    </header>
+    <article class="post-content">
+      <p>This sprint was focused on:</p>
+<ul>
+<li>Elasticsearch v5 support</li>
+<li>Preparing to release the metadata bundle.</li>
+<li>Removing remaining Invenio-DB warnings.</li>
+</ul>
+<p>During the sprint 60 developer days were spent, 52 commits were created and 4.3k lines were touched (3.1k additions and 1.2k deletions).</p>
+<h2>List of changes:</h2>
+<ul>
+<li>Cookiecutter-Invenio-Module:<ul>
+<li>Minor various fixes for build issues.</li>
+</ul>
+</li>
+<li>IDUtils (v1.0.0):<ul>
+<li>global: fix DOI Unicode issues</li>
+</ul>
+</li>
+<li>Invenio-Base (v1.0.0b1)<ul>
+<li>Cookiecutter template removal (to be replaced by upcoming cookiecutter-invenio-instance).</li>
+<li>Release checklist, docs build errors, 100% test coverage.</li>
+</ul>
+</li>
+<li>Invenio-DB (v1.0.0b9)<ul>
+<li>Remove annoying warning.</li>
+</ul>
+</li>
+<li>Invenio-I18N (v1.0.0b4)<ul>
+<li>Example app rendering on ReadTheDocs</li>
+</ul>
+</li>
+<li>Invenio-Indexer (v1.0.0b1):<ul>
+<li><strong>New BulkRecordIndexer class with RecordIndexer-compatible API (to be used
+by Invenio-Records-REST).</strong></li>
+<li>Elasticsearch v5 support.</li>
+<li>Release checklist.</li>
+</ul>
+</li>
+<li>Invenio-JSONSchemas (v1.0.0a7)<ul>
+<li>Documentation improvements.</li>
+<li>Release checklist.</li>
+</ul>
+</li>
+<li>Invenio-Mail (v1.0.0b1)<ul>
+<li>Broken docs build fix (related to Celery problem).</li>
+</ul>
+</li>
+<li>Invenio-OAIServer (v1.0.0b1)<ul>
+<li><strong>Description support in Identify verb (eprints, friends etc).</strong></li>
+<li>Elasticsearch v5 support.</li>
+<li>Release checklist + documentation improvements.</li>
+<li>License change PR</li>
+</ul>
+</li>
+<li>Invenio-OAuth2Server (v1.0.0b3)<ul>
+<li>Unpinned oauthlib.</li>
+</ul>
+</li>
+<li>Invenio-PIDStore (v1.0.0b2)<ul>
+<li>Release checklist.</li>
+</ul>
+</li>
+<li>Invenio-Records-REST (v1.0.0b5)<ul>
+<li><strong>Index after create, update and delete record creation (this will later
+impact Invenio-Deposit).</strong></li>
+<li><strong>Serializers refactored to be more easily composable.</strong></li>
+<li><strong>Improved tombstone handling for the REST API (e.g. include removal
+reason).</strong></li>
+<li>Elasticsearch v5 support.</li>
+<li>Improved documentation.</li>
+<li>Dynamic aggregations.</li>
+<li>Release checklist.</li>
+</ul>
+</li>
+<li>Invenio-Records-UI (v1.0.0b2)<ul>
+<li>Release checklist + example app docs fix for RTD.</li>
+</ul>
+</li>
+<li>Invenio-Search (v1.0.0b4)<ul>
+<li><strong>Elasticsearch v5 support (via version-specific mappings).</strong></li>
+<li>Support for creating only specific indexes.</li>
+<li>CLI for listing all indexes and aliases.</li>
+</ul>
+</li>
+<li>Invenio-Search-UI (v1.0.0a9)<ul>
+<li>Release checklist.</li>
+</ul>
+</li>
+<li>Invenio-MARC21 (v1.0.0a6)<ul>
+<li>Elasticsearch v5 support.</li>
+</ul>
+</li>
+</ul>
+<h2>Elasticsearch 5 support</h2>
+<p>Search, Indexer, Records-REST, OAIServer and MARC21 have all been upgraded to
+support Elasticsearch v2 and v5. Elasticsearch v6 is not yet support due to the
+elasticsearch-dsl package not yet supporting v6 (support already merged in master branch but not yet released).</p>
+<p>Other Invenio packages have not yet been upgraded to Elasticsearch v5. E.g.
+Records-Files, OpenAIRE, Stats, Collections, OpenDefinition, Query-Parser have
+not yet been tested with Elasticsearch v5.</p>
+<h3>Choosing version</h3>
+<p>You will need to know at install-time which version of Elasticsearch you'd like
+to use. For instance to use Elasticsearch 5 you need to install Invenio-Search
+like this:</p>
+<pre><code class="lang-console">$ pip install invenio-search[elasticsearch5]
+</code></pre>
+<h3>Mappings</h3>
+<p>Due to the differences between Elasticsearch versions, we have opted for
+<em>version-specific mappings</em>. This means that Invenio modules must provide a
+mapping per Elasticsearch version they wish to support. E.g. today, the mapping
+is placed in a directory like e.g.:</p>
+<pre><code>mappings/records/record-v1.0.0.json
+</code></pre>
+<p>To support Elasticsearch v2 and v5 you now need two mappings:</p>
+<pre><code>mappings/v2/records/record-v1.0.0.json
+mappings/v5/records/record-v1.0.0.json
+</code></pre>
+<p>Note that mappings for Elasticsearch v2 may use either the <code>mappings/v2</code>
+directory or the <code>mappings/</code> directory like previously (for backward
+compatibility).</p>
+<h3>Adding Elasticsearch v5 support to a module</h3>
+<p>In case you have site-specific modules and would like to add Elasticsearch v5
+support here's a rough guide:</p>
+<ul>
+<li>Update <code>travis.yml</code> to test both v2 and v5 (<a href="https://github.com/inveniosoftware/invenio-indexer/pull/75/files#diff-354f30a63fb0907d4ad57269548329e3">example</a>)</li>
+<li>Update <code>setup.py</code> by moving Invenio-Search dependency to <code>extra_require</code> (<a href="https://github.com/inveniosoftware/invenio-records-rest/pull/177/files#diff-2eeaed663bd0d25b7e608891384b7298">example</a>).</li>
+<li>Move existing mappings and add new mappings for v5 (<a href="https://github.com/inveniosoftware/invenio-records-rest/pull/177/files#diff-35e3e3c8ab14c00d11908b83ffa1fc36">example</a>)<ul>
+<li>Most common change from v2 to v5 is the change from <code>string</code> type to either <code>text</code> or <code>keyword</code> type.</li>
+</ul>
+</li>
+<li>Update <code>docs/requirements.txt</code> by adding <code>elasticsearch5</code> as an extra requirement to ensure ReadTheDocs builds will be fine.</li>
+<li>Fix any API specific calls (see below).</li>
+</ul>
+<h3>Canonical way of checking for ES version.</h3>
+<pre><code class="lang-python">from elasticsearch import VERSION as ES_VERSION
+
+if ES_VERSION[0] == 2:
+    # ...
+</code></pre>
+<h3>Completion Suggesters</h3>
+<p>The Completion Suggesters have changed from v2 to v5. In v2, suggesters
+supported an index-time <code>payloads</code> option, which was used to store and
+return metadata with suggestions. In v5, completions are now returned with
+their associated document in the <code>_source</code> field.</p>
+<p>If you have completion suggesters for v2 you will need to make them compatible
+with v5. This involves:</p>
+<ul>
+<li>API clients should read metadata from <code>_source</code> instead of <code>payload</code>. For
+v2 the payload is copied to <code>_source</code> by Records-REST, which allows you to
+already now upgrade API clients to use the new <code>_source</code> field.</li>
+<li>On indexing, you need to add the payload only for v2.</li>
+</ul>
+<h3>Elasticsearch v2 end-of-life</h3>
+<p>Elasticsearch v2 reaches end of life in
+<a href="https://www.elastic.co/support/eol">February 2018</a>. Elasticsearch v2 support in
+Invenio will be removed in Invenio v3.1, thus Invenio v3.0 will be released
+with Elasticsearch v2 support and be maintained until v3.0 end of life
+(currently TBD).</p>
+
+    </article>
+    
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).data('remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    });
+  </script>
+
+
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6">
+    <a href="../../"><img class="icon-contact" src="../../static/img/logo-invenio-white.png?h=8c434384" /></a>
+  </div>
+  <div class="col-md-6">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td class="contact-list-header">Documentation</td>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Read The Docs</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">GitHub</td>
+          <td>
+            <a href="https://github.com/inveniosoftware">main</a> &middot; <a href="https://github.com/inveniosoftware-contrib">contrib</a> &middot; <a href="https://github.com/inveniosoftware-attic">attic</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Chat room</td>
+          <td>
+            <a href="https://gitter.im/inveniosoftware"><img src="../../static/img/gitter.svg?h=e497f3c6"></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Twitter</td>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">@inveniosoftware <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Weekly video meetings</td>
+          <td><a href="https://indico.cern.ch/category/6046/">Invenio Developer Forum</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Yearly workshops</td>
+          <td><a href="https://indico.cern.ch/category/6240/">Invenio User Group Workshop</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright © 2016-2018 Invenio. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4535);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://piwik.web.cern.ch/piwik.php?idsite=4535" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+</body>
