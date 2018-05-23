@@ -19,15 +19,11 @@
               <div class="row">
                 <div class="headline col-md-10 col-md-offset-1">
                   <img class="welcome-logo" src="{{ '/static/img/logo-invenio-white.png'|asseturl }}"/>
-                  <h6>Open source framework for building <strong>large scale</strong> digital repositories</h6>
+                  <h6>Open Source framework for <u><strong>large-scale</strong></u> digital repositories.</h6>
                   <div class="actions">
                     <div class="col-md-12 col-md-offset-1">
-                      <form action="{{ 'showcase' }}">
-                        <button class="btn white">See showcase</button>
-                      </form>
-                      <form action="{{ 'gettingstarted' }}">
-                        <button class="btn">Get Started</button>
-                      </form>
+                      <a href="#examples" class="btn white">See examples</a>
+                      <a href="#getstarted" class="btn">Get started</a>
                     </div>
                   </div>
                 </div>
@@ -73,25 +69,26 @@
   </section>
   <section class="instances-section section-content-white-bg">
     <div class="container">
-      <span class="section-title-white-bg">Built on Invenio 3</span>
+      <a name="examples"></a>
+      <span class="section-title-white-bg">Built on Invenio v3</span>
       <div class="row">
         <div class="col-md-4">
-          <img class="instances" src="{{ '/static/img/screenshots/zenodo.png'|asseturl }}"/>
           <h6>Zenodo</h6>
+          <img class="instances" src="{{ '/static/img/screenshots/zenodo.png'|asseturl }}"/>
           <p>
             Research Data Management.
           </p>
         </div>
         <div class="col-md-4">
-          <img class="instances" src="{{ '/static/img/screenshots/cds-videos.png'|asseturl }}"/>
           <h6>CDS Videos</h6>
+          <img class="instances" src="{{ '/static/img/screenshots/cds-videos.png'|asseturl }}"/>
           <p>
             Video encoding.
           </p>
         </div>
         <div class="col-md-4">
-          <img class="instances" src="{{ '/static/img/screenshots/opendata.png'|asseturl }}"/>
           <h6>CERN Open Data</h6>
+          <img class="instances" src="{{ '/static/img/screenshots/opendata.png'|asseturl }}"/>
           <p>
             2 PB of data from LHC.
           </p>
@@ -100,22 +97,22 @@
       <span class="section-title-white-bg">Upcoming</span>
       <div class="row">
         <div class="col-md-4">
-          <img class="instances" src="{{ '/static/img/icon-biotech.svg'|asseturl }}"/>
           <h6>WEKO 3</h6>
+          <img class="instances" src="{{ '/static/img/icon-biotech.svg'|asseturl }}"/>
           <p>
             NII building platform for 500 university NGR
           </p>
         </div>
         <div class="col-md-4">
+          <h6>INSPIRE-HEP</h6>
           <img class="instances" src="{{ '/static/img/screenshots/inspire-labs.png'|asseturl }}"/>
-          <h6>Inspire HEP</h6>
           <p>
             Aggregator for all of HEP.
           </p>
         </div>
         <div class="col-md-4">
-          <img class="instances" src="{{ '/static/img/screenshots/rero.png'|asseturl }}"/>
           <h6>RERO ILS</h6>
+          <img class="instances" src="{{ '/static/img/screenshots/rero.png'|asseturl }}"/>
           <p>
             Capture and preserve research output. Harvest datasets, analysis
             code, virtual machine environment, configuration and knowledge
@@ -132,6 +129,7 @@
   </section>
   <section class="instances-section section-content-light-bg">
     <div class="container">
+      <a name="getstarted"></a>
       <span class="section-title-light-bg">Get Started</span>
       <div class="row">
         <div class="col-md-3">
@@ -157,12 +155,13 @@
       </div>
       <div class="row">
         <div class="goto-button">
-          <a href="{{ '/showcase'|url }}">See guide</a></div>
+          <a href="{{ '/gettingstarted'|url }}">See guide</a></div>
       </div>
     </div>
   </section>
   <section class="features-section section-content-white-bg">
     <div class="container">
+        <a name="features"></a>
       <span class="section-title-white-bg">Features</span>
       <div class="row features-section-row">
         <div class="col-md-5">
@@ -258,7 +257,7 @@
   <section class="flavour-section section-content-light-bg">
     <div class="container">
       <span id="open-source-section" class="section-title-light-bg">The Best of Open Source</span>
-      <h6>Invenio is built on the shoulders of powerful open source platforms</h6>
+      <h6>Invenio's core is relying on some of the world's top open source products.</h6>
       <div class="row">
         <div class="col-md-4">
           <img class="flavour" src="{{ '/static/img/elasticsearch.svg'|asseturl }}"/>
@@ -284,28 +283,6 @@
         </div>
       </div>
     </div>
-  </section>
-      <section class="open-source-section section-content-white-bg">
-      <div class="container">
-          <span class="section-title-white-bg">Leveraging the power of Open Source</span>
-          <div class="row">
-              <div class="col-md-4 centered">
-                  <a href="https://www.elastic.co/products/elasticsearch"><img src="{{ '/static/img/logo-elastic.svg'| asseturl }}" width="200px" title="Elasticsearch" /></a>
-                  <p>&nbsp;</p>
-                  <a href="https://redis.io/"><img src="{{ '/static/img/logo-redis.jpg'| asseturl }}" width="140px" title="Redis" /></a>
-              </div>
-              <div class="col-md-4 centered">
-                  <a href="https://www.python.org/"><img src="{{ '/static/img/logo-python.jpg'| asseturl }}" width="240px" title="Python" /></a>
-                  <p>&nbsp;</p>
-                  <a href="http://flask.pocoo.org/"><img src="{{ '/static/img/logo-flask.jpg'| asseturl }}" width="140px" title="Flask" /></a>
-              </div>
-              <div class="col-md-4 centered">
-                  <a href="https://www.postgresql.org/"><img src="{{ '/static/img/logo-postgresql.png'| asseturl }}" width="80px" title="PostgreSQL" /></a>
-                  <p>&nbsp;</p>
-                  <a href="http://www.sqlalchemy.org/"><img src="{{ '/static/img/logo-sqlalchemy.jpg'| asseturl }}" width="200px" title="SQLAlchemy" /></a>
-              </div>
-          </div>
-      </div>
   </section>
   {% include "footer.html" %}
 

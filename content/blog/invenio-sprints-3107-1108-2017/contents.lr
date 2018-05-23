@@ -1,6 +1,14 @@
-title: Invenio Sprints: 31.07-11.08 2017
+title: Sprint: Security and annoying warnings
 ---
-author: Invenio
+author: Lars Holm Nielsen
+---
+team: Invenio Framework
+---
+team_url: https://gitter.im/inveniosoftware/invenio
+---
+team_colour: invenio-team
+---
+twitter_handle: lnielsen
 ---
 body:
 
@@ -92,4 +100,4 @@ Next Invenio Sprint will focus on:
 ---
 pub_date: 2017-08-11
 ---
-team_colour: 
+team_colour:
