@@ -685,3 +685,99 @@ a.team-url:hover {
 .cod-team {
   background-color: #283747;
 }
+
+.blog-list-item {
+  position: relative;
+  height: 450px;
+  margin-bottom: 30px;
+}
+.blog-list-item-more-link {
+  width: 100%;
+  padding-right: 40px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+}
+.blog-list-item-frame {
+  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(25, 73, 97, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(25, 73, 97, 0.2);
+  padding: 5px 20px 20px 20px;
+  background-color: white;
+}
+.blog-list-item-content {
+  height: 250px;
+  overflow: hidden;         /*prevent text from being shown outside the border */
+  text-overflow: ellipsis;  /*cut off text with an ellipsis*/
+}
+.blog-list-item-content:before {
+  content:'';
+  width:90%;
+  height:100%;
+  position:absolute;
+  left:5%;
+  top:0;
+  background:linear-gradient(rgba(255, 255, 255, 0) 250px, white);
+}
+
+.blog-list-item-meta {
+  color: #777;
+  font-size: 0.8em;
+}
+.blog-list-item-meta i {
+  color: #ccc;
+  padding-right: 5px;
+}
+.blog-list-item-meta span {
+  margin-right: 5px;
+}
+.blog-list-item-header {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 5px;
+}
+.blog-list-item-header>p {
+  color: #333;
+}
+.blog-list-item-header {
+  margin-bottom: 10px;
+}
+.blog-list-item-header>h2>a,
+.blog-list-item-header>h2 {
+  color: rgb(61, 104, 125);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.blog-top {
+  height: 450px;
+  margin: 0px 15px 30px 15px;
+}
+.blog-top-frame {
+  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(25, 73, 97, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(25, 73, 97, 0.2);
+  padding: 10px 30px 30px 30px;
+  background-color: white;
+}
+.blog-top-content {
+  height: 250px;
+  overflow: hidden;         /*prevent text from being shown outside the border */
+  text-overflow: ellipsis;  /*cut off text with an ellipsis*/
+}
+.blog-top-content:before {
+  content:'';
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:5%;
+  top:0;
+  background:linear-gradient(rgba(255, 255, 255, 0) 250px, white);
+}
+.blog-top-more-link {
+  width: 100%;
+  padding-right: 100px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+}
