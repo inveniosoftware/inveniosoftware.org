@@ -1,8 +1,9 @@
 {% set navigation_bar = [
-    ('showcase', 'Showcase', '/showcase'),
-    ('gettingstarted', 'Getting Started', '/gettingstarted'),
-    ('community', 'Community', '/community'),
-    ('blog', 'Blog', '/blog')
+  ('gettingstarted', 'Get started', '/gettingstarted'),
+  ('features', 'Features', '/#features'),
+  ('showcase', 'Examples', '/showcase'),
+  ('community', 'Community', '/community'),
+  ('blog', 'Blog', '/blog')
 ] -%}
 {% set active_page = active_page|default('home') -%}
 
@@ -17,11 +18,9 @@
             <span class="icon-bar"></span>
           {% endfor %}
         </button>
-        {% if active_page != 'home' %}
         <a href="{{'/'|url}}" class="navbar-brand">
           <img src="{{ '/static/img/logo-invenio-white.png'|asseturl }}" alt="">
         </a>
-        {% endif %}
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">

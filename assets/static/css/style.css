@@ -176,8 +176,8 @@ body {
   min-height: 800px;
 }
 .welcome-logo {
-  display: block; /*for the img inside your div */ 
-  margin: 0 auto; 
+  display: block; /*for the img inside your div */
+  margin: 0 auto;
 }
 .cover-image {
   background-color: rgba(13, 95, 137, 0.8);
@@ -191,9 +191,9 @@ body {
   color: white;
 }
 .headline h6 {
-  font-weight: 300;
+  font-weight: 200;
   color: rgba(255, 255, 255, 0.58);
-  font-size: 1.8em;
+  font-size: 2.4em;
   padding-top: 5%;
   text-align: center;
 }
@@ -207,7 +207,7 @@ body {
 }
 .headline .actions {
   margin: 0 auto;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 .headline .btn.white {
   background-color: rgba(255, 255, 255, 0.95);
@@ -221,7 +221,7 @@ body {
   border-color: #fff;
   color: #fff;
 }
-.headline .actions form {
+.headline .actions a {
   width: 40%;
   margin-right: 4%;
   float: left;
@@ -545,7 +545,7 @@ i.large-icon {
 }
 .shield-big {
   text-align: center;
-  padding: 20px;
+  padding: 2px;
 }
 .shield-big img {
   height: 30px;
@@ -666,7 +666,7 @@ only screen and (max-width: 993px) {
 .post-header>h2 {
   color: rgb(61, 104, 125);
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 2em;
 }
 .post-meta {
   color: #777;
@@ -792,14 +792,21 @@ a.team-url:hover {
 .blog-list-item-header {
   margin-bottom: 10px;
 }
-.blog-top-header>h2,
+.blog-top-header>h,
 .blog-top-header>h2>a,
-.blog-list-item-header>h2>a,
-.blog-list-item-header>h2 {
+.blog-list-item-header>h3>a,
+.blog-list-item-header>h3 {
   color: rgb(61, 104, 125);
   font-weight: 500;
-  font-size: 1.4em;
   text-align: left;
+}
+.blog-top-header>h,
+.blog-top-header>h2>a {
+  font-size: 1.2em;
+}
+.blog-list-item-header>h3>a,
+.blog-list-item-header>h3 {
+  font-size: 1.2em;
 }
 .blog-top {
   height: 450px;
