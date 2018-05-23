@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Sprint: JSONB, bugs &amp; bouncing search — inveniosoftware.org</title>
+<title>Data Citation Roadmap for Scholarly Data Repositories — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,9 +58,9 @@
           
             <li><a href="../../community/">Community</a></li>
           
-            <li><a href="../../roadmap/">Roadmap</a></li>
+            <li><a class="active-menu" href="../../roadmap/">Roadmap</a></li>
           
-            <li><a class="active-menu" href="../../blog/">Blog</a></li>
+            <li><a href="../../blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -69,122 +69,49 @@
 </header>
       
       <div class="container header-section-title">
-        <h3>Invenio Blog</h3>
-        <h6>Follow news and updates on Invenio world</h6>
+        <h3>Roadmap</h3>
+        <h6></h6>
       </div>
     </div>
   </section>
   
-  <section id="blog-post-content-section" class="section-content-light-bg">
+<section class="install-section section-content-white-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-xs-12 block-center">
-            
-  <div class="blog-back-button">
-    <a href="/blog">Back</a>
-  </div>
-  <div class="blog-post blog-post-frame">
-    <header class="post-header">
-      <h2>
-        
-          Sprint: JSONB, bugs &amp; bouncing search
-        
-      </h2>
-      <p class="post-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/lnielsen">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Oct 20, 2017</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://gitter.im/inveniosoftware/invenio">Invenio Framework</a></span>
-      </p>
-    </header>
-    <article class="post-content">
-      <p>This sprint was focused on:</p>
-<ul>
-<li>Metadata bundle: Finalize Invenio-Records, Invenio-Search, Invenio-JSONSchemas.</li>
-<li>Fixing new bugs in Base/Auth bundles.</li>
-</ul>
-<p>As a result of 40 developer days, 37 commits and 2.8k lines touched (2k additions and 0.8k deletions), the following improvements were implemented:</p>
-<ul>
-<li>Fixed bouncing of search results (sorting of the same query could change depending on which Elasticsearch node your query would be answered by).</li>
-<li>JSONB now being used for record storage (Thanks to Javier for the PR).</li>
-<li>Rendering of JSONSchemas, meaning <code>allOf</code> and <code>$refs</code> can now be resolved on-the-fly to generate an self-contained schema for e.g. deposit forms (Thanks to Pamfilos for the PR).</li>
-<li>Boring fixes that makes sure the Base and Auth bundles are stable.</li>
-</ul>
-<h2>List of changes:</h2>
-<ul>
-<li>Invenio-Records (v1.0.0b4):<ul>
-<li>Beta release (release checklist).</li>
-<li>Changed data storage from JSON to JSONB (requires data migration and PostgreSQL v9.4+) Thanks to Javier for PR.</li>
-<li>Changed signals receiver signatures (<strong>backward-incompatible!</strong>).</li>
-<li>Fixed invalid MARC in demo records causing export errors.</li>
-<li>Fixed CLI for deletion of records.</li>
-<li>Fixed fractional seconds problem in MySQL causing tests to fail.</li>
-</ul>
-</li>
-<li>Invenio-Search (v1.0.0b1):<ul>
-<li>Beta release (release checklist, documentation)</li>
-<li>Fix bouncing search results.</li>
-<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
-</ul>
-</li>
-<li>Invenio-JSONScheams (v1.0.0a7):<ul>
-<li>Fixed double registration of schema endpoint on both UI and API app.</li>
-<li>Added support for resolving allOf and JSONRefs in JSONSchemas (thanks to Pamfilos for PR).</li>
-<li>Fixed some documentation issues.</li>
-</ul>
-</li>
-<li>Invenio-Records-REST (v1.0.0b3):<ul>
-<li>Fix bouncing search results.</li>
-<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
-</ul>
-</li>
-<li>Invenio-OAuth2Server (v1.0.0b2):<ul>
-<li>Improved authorization template design (text alignment, cover page usage and display number of users).</li>
-<li>Broken tests fix due to cryptography package changes.</li>
-</ul>
-</li>
-<li>Invenio-DB (v1.0.0b8):<ul>
-<li>Alembic documentation refactored and integrated in docs.</li>
-</ul>
-</li>
-<li>Invenio-Records-UI:<ul>
-<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
-</ul>
-</li>
-<li>Invenio-OAIServer (v1.0.0a14):<ul>
-<li>Invenio-Records signals signature compatibility.</li>
-</ul>
-</li>
-<li>Invenio-App-ILS:<ul>
-<li>Test for ensuring all records export formats are working.</li>
-</ul>
-</li>
-</ul>
-
-    </article>
-    
-  </div>
-
+        <div class="row">
+        <div class="col-sm-4">
+            <span class="section-title-light-bg">Current</span>
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $(document).delegate('*.post-content img', 'click', function(event) {
-            $(this).data('remote', $(this).attr('src'));
-            event.preventDefault(); $(this).ekkoLightbox();
-        });
-    });
-  </script>
+        <div class="col-sm-4">
+            <span class="section-title-light-bg">Near-term</span>
+        </div>
+        <div class="col-sm-4">
+            <span class="section-title-light-bg">Future</span>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                
+<div class="panel panel-default">
+  <div class="panel-heading interoperability">
+    Interoperability
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Data Citation Roadmap for Scholarly Data Repositories</h3>
+    <div class="card-description">
+    <p>Implement recommendations from <a href="https://doi.org/10.1101/097196">https://doi.org/10.1101/097196</a></p>
 
+    </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
   <footer>
   <div class="contact-section section-content-dark-bg">
