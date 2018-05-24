@@ -21,32 +21,24 @@
         <div class="row">
             <div class="col-sm-4 column">
                 <span class="section-title-light-bg">Current</span>
-                <p>What we work on now:</p>
+                <p>What we work on now</p>
+                {%- for card in this.children if card.column == 'current' %}
+                    {{ render_roadmap_card(card) }}
+                {%- endfor %}
             </div>
             <div class="col-sm-4 column">
                 <span class="section-title-light-bg">Near-term</span>
-                <p>What we plan work on next:</p>
+                <p>What we plan work on next</p>
+                {%- for card in this.children if card.column == 'near-term' %}
+                    {{ render_roadmap_card(card) }}
+                {%- endfor %}
             </div>
             <div class="col-sm-4 column">
                 <span class="section-title-light-bg">Future</span>
-                <p>What we investigate:</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-            {%- for card in this.children if card.column == 'current' %}
-                {{ render_roadmap_card(card) }}
-            {%- endfor %}
-            </div>
-            <div class="col-sm-4">
-            {%- for card in this.children if card.column == 'near-term' %}
-                {{ render_roadmap_card(card) }}
-            {%- endfor %}
-            </div>
-            <div class="col-sm-4">
-            {%- for card in this.children if card.column == 'future' %}
-                {{ render_roadmap_card(card) }}
-            {%- endfor %}
+                <p>What we investigate</p>
+                {%- for card in this.children if card.column == 'future' %}
+                    {{ render_roadmap_card(card) }}
+                {%- endfor %}
             </div>
         </div>
     </div>
