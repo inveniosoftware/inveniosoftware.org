@@ -1,3 +1,5 @@
 _model: legacy
 ---
 title: Legacy
+---
+_discoverable: yes

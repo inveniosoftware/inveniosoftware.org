@@ -2,6 +2,7 @@
   ('gettingstarted', 'Get started', '/gettingstarted'),
   ('features', 'Features', '/#features'),
   ('showcase', 'Examples', '/showcase'),
+  ('documentation', 'Documentation', 'http://invenio.readthedocs.io'),
   ('community', 'Community', '/community'),
   ('roadmap', 'Roadmap', '/roadmap'),
   ('blog', 'Blog', '/blog'),
@@ -20,14 +21,14 @@
           {% endfor %}
         </button>
         <a href="{{'/'|url}}" class="navbar-brand">
-          <img src="{{ '/static/img/logo-invenio-white.png'|asseturl }}" alt="">
+          <img src="{{ '/static/img/logo-invenio-white.svg'|asseturl }}" alt="">
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           {% for page_id, caption, href in navigation_bar %}
-            <li><a{% if page_id == active_page %} class="active-menu"{% endif %} href="{{href|url}}">{{caption|e}}</a></li>
+            <li><a{% if page_id == active_page %} class="active-menu"{% endif %} href="{{href|url if not href.startswith('http') else href}}">{{caption|e}}</a></li>
           {% endfor %}
         </ul>
       </div>
