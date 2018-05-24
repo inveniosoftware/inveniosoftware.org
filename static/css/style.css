@@ -66,6 +66,7 @@ body {
 .section-title-dark-bg,
 .section-title-white-bg,
 .section-title-light-bg {
+  -webkit-font-smoothing: antialiased;
   font-size: 1.8em;
   width: 100%;
   text-align: center;
@@ -152,12 +153,34 @@ body {
   }
 }
 
+/* Welcome features section */
+
+.welcome-features-section {
+  padding-bottom: 0;
+}
+.welcome-features-section .row {
+  padding-bottom: 90px;
+}
 .welcome-features-col h2 {
+  -webkit-font-smoothing: antialiased;
   text-align: center;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 10px;
 }
 .welcome-features-col p {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1em;
+  text-align: center;
+}
+.welcome-made-cern {
+  font-size: 1.2em;
+}
+.welcome-made-cern img {
+  height: 60px;
+  padding-left: 5px;
+}
+.fa-heart {
+  color: #fe3336;
 }
 
 .intro-section {
@@ -187,8 +210,8 @@ body {
   min-height: 800px;
 }
 .welcome-logo {
-  display: block;
   /*for the img inside your div */
+  display: block;
   margin: 0 auto;
 }
 .cover-image {
@@ -259,6 +282,7 @@ body {
     font-size: 15px;
   }
 }
+
 .instances-section {
   text-align: center;
 }
@@ -270,6 +294,9 @@ body {
 }
 .instances-section .row {
   padding: 30px 0px;
+}
+.instances-section h6 {
+  padding-top: 20px;
 }
 
 .flavour-section {
@@ -285,24 +312,6 @@ body {
 .flavour-section .row {
   padding: 30px 0px;
 }
-
-/* Welcome features section */
-
-.welcome-features-section {
-  padding: 0 10 0 0;
-}
-.welcome-features-section h3 {
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: 20px;
-}
-.welcome-features-section img {
-  height: 35px;
-  padding-left: 3px;
-}
-.fa-heart {
-  color: #fe3336;
-}
-
 
 .carousel-section {
   font-weight: 400;
