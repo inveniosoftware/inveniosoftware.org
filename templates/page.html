@@ -8,9 +8,15 @@
       {% with active_page=active_page %}
         {% include 'header.html' %}
       {% endwith %}
-      <div class="container header-section-title">
-        <h3>{% block page_title %}{% endblock %}</h3>
-        <h6>{% block page_subtitle %}{% endblock %}</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header-section-title">
+              <h3>{% block page_title %}{% endblock %}</h3>
+              <h6>{% block page_subtitle %}{% endblock %}</h6>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -18,4 +18,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
 <body>
   {% block body %}{% endblock %}
+  <script>
+    //Main navigation scroll spy for shadow
+    $(window).scroll(function() {
+      var y = $(window).scrollTop();
+      if (y > 0) {
+        $(".invenio-navbar").addClass('invenio-navbar-not-top');
+      } else {
+        $(".invenio-navbar").removeClass('invenio-navbar-not-top');
+      }
+    });
+  </script>
 </body>
