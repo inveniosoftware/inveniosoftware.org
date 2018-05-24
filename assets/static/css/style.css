@@ -101,6 +101,17 @@ body {
 .invenio-navbar>.container-fluid .navbar-brand {
   margin-left: 0;
 }
+.invenio-navbar-not-top {
+  z-index: 99;
+  box-shadow: 0 0 30px rgba(20, 78, 109, 0.4);
+  background-color: rgb(40, 104, 138);
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
 .navbar-toggle {
   background-color: rgba(61, 121, 156, 0.87);
 }
@@ -141,11 +152,11 @@ body {
   }
 }
 
-.welcome-features-col h2{
+.welcome-features-col h2 {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
-.welcome-features-col p{
+.welcome-features-col p {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -176,7 +187,8 @@ body {
   min-height: 800px;
 }
 .welcome-logo {
-  display: block; /*for the img inside your div */
+  display: block;
+  /*for the img inside your div */
   margin: 0 auto;
 }
 .cover-image {
@@ -184,6 +196,9 @@ body {
   min-height: 300px;
   height: 100%;
   width: 100%;
+}
+.headline {
+  padding-top: 100px;
 }
 .headline h3 {
   font-weight: 300;
@@ -203,6 +218,9 @@ body {
   }
   .headline h6 {
     font-size: 1.5em;
+  }
+  .welcome-logo {
+    height: 50px;
   }
 }
 .headline .actions {
@@ -269,6 +287,7 @@ body {
 }
 
 /* Welcome features section */
+
 .welcome-features-section {
   padding: 0 10 0 0;
 }
@@ -444,6 +463,7 @@ footer nav li.title {
 .header-section-title {
   margin-top: 65px;
   text-align: center;
+  padding-top: 50px;
 }
 
 /* gettingstarted.html */
@@ -758,16 +778,18 @@ a.team-url:hover {
 }
 .blog-list-item-content {
   height: 250px;
-  overflow: hidden;         /*prevent text from being shown outside the border */
-  text-overflow: ellipsis;  /*cut off text with an ellipsis*/
+  overflow: hidden;
+  /*prevent text from being shown outside the border */
+  text-overflow: ellipsis;
+  /*cut off text with an ellipsis*/
 }
 .blog-list-item-content:before {
-  content:'';
-  width:90%;
-  height:70%;
-  position:absolute;
-  left:5%;
-  bottom:0px;
+  content: '';
+  width: 90%;
+  height: 70%;
+  position: absolute;
+  left: 5%;
+  bottom: 0px;
   background: linear-gradient(rgba(255, 255, 255, 0) 100px, white);
 }
 
@@ -821,17 +843,19 @@ a.team-url:hover {
 }
 .blog-top-content {
   height: 250px;
-  overflow: hidden;         /*prevent text from being shown outside the border */
-  text-overflow: ellipsis;  /*cut off text with an ellipsis*/
+  overflow: hidden;
+  /*prevent text from being shown outside the border */
+  text-overflow: ellipsis;
+  /*cut off text with an ellipsis*/
 }
 .blog-top-content:before {
-  content:'';
-  width:100%;
-  height:100%;
-  position:absolute;
-  left:5%;
-  top:0;
-  background:linear-gradient(rgba(255, 255, 255, 0) 250px, white);
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 5%;
+  top: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0) 250px, white);
 }
 .blog-top-more-link {
   width: 100%;
@@ -852,6 +876,7 @@ a.team-url:hover {
 }
 
 /* Roadmap */
+
 .roadmap-section .panel-heading {
   text-align: left;
   font-size: 14px;
