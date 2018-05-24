@@ -898,8 +898,13 @@ a.team-url:hover {
   vertical-align: baseline;
 }
 
+.roadmap-section .column .section-title-light-bg {
+  margin-bottom: 5px;
+}
+
 .roadmap-section .column>p {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .roadmap-section .intro {
@@ -908,7 +913,7 @@ a.team-url:hover {
 }
 
 .roadmap-section .panel-heading.development {
-  background-color: #337ab7 !important;
+  background-color: #0090e4 !important;
   color: #fff;
 }
 
@@ -918,7 +923,7 @@ a.team-url:hover {
 }
 
 .roadmap-section .panel-heading.interoperability {
-  background-color: rgb(0, 153, 51) !important;
+  background-color: rgb(0, 216, 169) !important;
   color: #fff;
 }
 
