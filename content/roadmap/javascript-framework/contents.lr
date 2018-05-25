@@ -2,8 +2,8 @@ column: current
 ---
 body:
 
-- Select replacement framework for AngularJS v1.x
-- Webpack support (replacing require.js).
+- <i class="fa fa-check text-success"></i> Webpack support (replacing require.js).
+- <i class="fa fa-times text-danger"></i> Select replacement framework for AngularJS v1.x
 ---
 category: Community
 ---
