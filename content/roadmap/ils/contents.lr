@@ -1,6 +1,10 @@
 column: future
 ---
-body: Integrated Library System based on Invenio.
+body:
+
+Integrated Library System based on Invenio.
+
+(with RERO).
 ---
 category: Development
 ---

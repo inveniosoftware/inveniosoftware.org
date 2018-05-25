@@ -1,6 +1,10 @@
 column: future
 ---
-body: Research Data Management system based on Invenio.
+body:
+
+Invenio Research Data Management (RDM) system based Zenodo and B2SHARE code bases.
+
+(with University of Hamburg).
 ---
 category: Development
 ---

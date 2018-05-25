@@ -912,6 +912,10 @@ a.team-url:hover {
   text-align: center;
 }
 
+.roadmap-section .feedback h3 {
+  margin-top: 3em;
+}
+
 .roadmap-section .panel-heading.development {
   background-color: #0090e4 !important;
   color: #fff;
