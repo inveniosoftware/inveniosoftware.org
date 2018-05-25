@@ -946,3 +946,41 @@ a.team-url:hover {
   width: 100%;
   margin-bottom: 8px;
 }
+
+/* command-line */
+
+.command-line {
+    font-family: 'Inconsolata', monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    text-align: left;
+    word-spacing: normal;
+    word-wrap: normal;
+    word-break: normal;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+@media (max-width: 1200px) {
+    .command-line {
+        font-size: 0.5em;
+    }
+}
+.prompt {
+    color: #c57b4b !important;
+    padding-right: 5px;
+}
+.output {
+    padding-left: 15px;
+    color: grey;
+}
+.comment {
+    color: #7fa0a0;
+    font-style: italic;
+}
+.tab {
+    padding-left: 20px;
+}
+.tab-2x {
+    padding-left: 40px;
+}
