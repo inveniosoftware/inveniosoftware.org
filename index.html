@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="./static/img/favicon.ico?h=981ca02e">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="./static/css/style.css?h=45a772f5">
+<link rel="stylesheet" href="./static/css/style.css?h=710d992d">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
@@ -193,26 +193,61 @@
   <a name="getstarted"></a>
   <section class="instances-section section-content-light-bg">
     <div class="container">
-      <span class="section-title-light-bg">Get Started</span>
-      <div class="alert alert-danger">TODO</div>
+      <span class="section-title-light-bg">Get started</span>
       <div class="row">
         <div class="col-md-4">
-          <h6>1. Bootstrap</h6>
-          <p>
-            ...
-          </p>
+          <div class="flex-center-vertically">
+            <div class="numbering">1</div>
+          </div>
+          <h3 class="section-title-light-bg">Bootstrap</h3>
+          <div class="command-line">
+            <div class="line comment"># create my-site instance</div>
+            <div class="line"><span class="prompt">$</span>mkvirtualenv my-site</div>
+            <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+            <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.0</div></div>
+            <div class="line"><span class="prompt">$</span>cd my-site</div>
+            <div class="line comment"># increase virtual memory settings (es)</div>
+            <div class="line"><span class="prompt">$</span>sudo sysctl -w vm.max_map_count=262144</div>
+            <div class="line comment"># start services (db, es, mq, etc)</div>
+            <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
+            <div class="line comment"># bootstap my-site instance</div>
+            <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
+            <div class="line"><span class="prompt">$</span>./scripts/setup</div>
+          </div>
         </div>
         <div class="col-md-4">
-          <h6>2. Customize</h6>
-          <p>
-            ....
-          </p>
+          <div class="flex-center-vertically">
+              <div class="numbering">2</div>
+          </div>
+          <h3 class="section-title-light-bg">Customise</h3>
+          <div class="command-line">
+            <div class="line comment"># select instance</div>
+            <div class="line"><span class="prompt">$</span>workon my-site</div>
+            <div class="line"><span class="prompt">$</span>cd my-site</div>
+            <div class="line comment"># customise data model</div>
+            <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+            <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-datamodel -c v3.0</div></div>
+            <div class="line comment"># install and register data model</div>
+            <div class="line"><span class="prompt">$</span>cd my-datamodel</div>
+            <div class="line"><span class="prompt">$</span>pip install -e .</div>
+          </div>
         </div>
         <div class="col-md-4">
-          <h6>3. Deploy</h6>
-          <p>
-            ...
-          </p>
+          <div class="flex-center-vertically">
+            <div class="numbering">3</div>
+          </div>
+          <h3 class="section-title-light-bg">Run</h3>
+          <div class="command-line">
+            <div class="line comment"># select instance</div>
+            <div class="line"><span class="prompt">$</span>workon my-site</div>
+            <div class="line"><span class="prompt">$</span>cd my-site</div>
+            <div class="line comment"># start worker</div>
+            <div class="line"><span class="prompt">$</span>celery -A invenio_app.celery -l INFO</div>
+            <div class="line comment"># start server</div>
+            <div class="line"><span class="prompt">$</span>./scripts/server</div>
+            <div class="line comment"># your site is running!</div>
+            <div class="line"><span class="prompt">$</span>firefox https://localhost:5000/</div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -336,6 +371,7 @@
           </p>
         </div>
         <div class="col-md-4">
+          <img class="flavour" src="./static/img/logo-python.svg?h=54ef2408"/>
           <img class="flavour" src="./static/img/logo-flask.svg?h=0076fbd8"/>
           <h6>Python/Flask</h6>
           <p>
