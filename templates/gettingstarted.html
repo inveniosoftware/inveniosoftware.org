@@ -4,17 +4,84 @@
 {% block page_title %}Getting started with Invenio{% endblock %}
 {% block page_subtitle %}Installation and first steps{% endblock %}
 {% block page_body %}
-  <section class="install-section section-content-white-bg">
+  <section class="section-content-white-bg">
     <div class="container">
       <span class="section-title-light-bg">Installation</span>
       <div class="row">
-        <div class="col-md-12">
-          <div class="alert alert-danger">TODO</div>
-        </div>
+         <div class="col-md-8 col-md-offset-2">
+            <p>
+              Invenio 3.0 is a digital repository framework that enables you to
+              easily bootstap, customise and run your own digital repository
+              instances.
+            </p>
+            <p>
+               We start by bootstrapping a new instance:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># create my-site instance</div>
+                <div class="line"><span class="prompt">$</span>mkvirtualenv my-site</div>
+                <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.0</div></div>
+                <div class="line"><span class="prompt">$</span>cd my-site</div>
+                <div class="line comment"># increase virtual memory settings (es)</div>
+                <div class="line"><span class="prompt">$</span>sudo sysctl -w vm.max_map_count=262144</div>
+                <div class="line comment"># start services (db, es, mq, etc)</div>
+                <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
+                <div class="line comment"># bootstap my-site instance</div>
+                <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
+                <div class="line"><span class="prompt">$</span>./scripts/setup</div>
+            </div>
+            <p>
+               We follow by registering the record data model:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># select instance</div>
+                <div class="line"><span class="prompt">$</span>workon my-site</div>
+                <div class="line"><span class="prompt">$</span>cd my-site</div>
+                <div class="line comment"># customise data model</div>
+                <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-datamodel -c v3.0</div></div>
+                <div class="line comment"># install and register data model</div>
+                <div class="line"><span class="prompt">$</span>cd my-datamodel</div>
+                <div class="line"><span class="prompt">$</span>pip install -e .</div>
+            </div>
+            <p>
+               We can now run the newly created instance:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># select instance</div>
+                <div class="line"><span class="prompt">$</span>workon my-site</div>
+                <div class="line"><span class="prompt">$</span>cd my-site</div>
+                <div class="line comment"># start worker</div>
+                <div class="line"><span class="prompt">$</span>celery -A invenio_app.celery -l INFO</div>
+                <div class="line comment"># start server</div>
+                <div class="line"><span class="prompt">$</span>./scripts/server</div>
+                <div class="line comment"># your site is running!</div>
+                <div class="line"><span class="prompt">$</span>firefox https://localhost:5000/</div>
+                </div>
+            <p>
+               We can submit and query records:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># create a new record</div>
+                <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
+                <div class="line"><span class="tab">--request POST \</div>
+                <div class="line"><span class="tab">--data '{"title":"Some title", "contributors": [{"name": "Doe, John"}]}' \</div>
+                <div class="line"><span class="tab"></span>https://localhost:5000/api/records/?prettyprint=1</div>
+                <div class="line comment"># view record</div>
+                <div class="line"><span class="prompt">$</span>firefox https://localhost:5000/records/1</div>
+                <div class="line comment"># download record</div>
+                <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
+                <div class="line"><span class="tab"></span>https://localhost:5000/api/records/1?prettyprint=1</div>
+            </div>
+            <p>
+               For more information and comments, please see our <a href="http://invenio.readthedocs.io/en/latest/usersguide/quickstart.html">Quickstart</a> documentation.
+            </p>
+         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          Looking for Invenio v1.x or 2.x? See our <a href="{{'/legacy'|url}}">legacy releases</a>.
+         <div class="col-md-8 col-md-offset-2 alert alert-warning">
+          Looking for Invenio 1.x or 2.x versions? Please see our <a href="{{'/legacy'|url}}">legacy releases</a> documentation.
         </div>
       </div>
     </div>
