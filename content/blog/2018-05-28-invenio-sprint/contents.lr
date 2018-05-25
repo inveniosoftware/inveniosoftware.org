@@ -31,6 +31,15 @@ Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):
 
 ## Releases
 
+- invenio-access v1.0.1
+- invenio-accounts v1.0.1
+- invenio-base v1.0.1
+- invenio-db v1.0.1
+- invenio-formatter v1.0.1
+- invenio-oauth2server v1.0.1
+- invenio-userprofiles v1.0.1
+- pytest-invenio v1.0.2
+
 
 ### List of all changes
 
