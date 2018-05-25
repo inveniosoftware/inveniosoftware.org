@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Sprint: Elasticsearch v5 support — inveniosoftware.org</title>
+<title>Sprint: v3.0.0RC2 + updated website — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +97,7 @@
     <header class="post-header">
       <h2>
         
-          Sprint: Elasticsearch v5 support
+          Sprint: v3.0.0RC2 + updated website
         
       </h2>
       <p class="post-meta">
@@ -108,169 +108,118 @@
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
-        <span>Dec 1, 2017</span>
+        <span>May 28, 2018</span>
         <i class='fa fa-users text-muted'></i>
         <span class="label invenio-team"><a class="team-url" href="https://gitter.im/inveniosoftware/invenio">Invenio Framework</a></span>
       </p>
     </header>
     <article class="post-content">
-      <p>This sprint was focused on:</p>
+      <p>This sprint (May 14-25) was focused on preparing Invenio for the final v3.0.0
+release so it is ready for launch at the Open Repositories 2018 Conference,
+June 4th-7th in Bozeman, Montana.</p>
+<h2>Overview</h2>
+<p>Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):</p>
 <ul>
-<li>Elasticsearch v5 support</li>
-<li>Preparing to release the metadata bundle.</li>
-<li>Removing remaining Invenio-DB warnings.</li>
+<li>inveniosoftware.org now has shiny new <a href="../../blog">blog</a> and <a href="../../roadmap">roadmap</a>.</li>
+<li>inveniosoftware.org was moved to <a href="http://getlektor.com">Lektor</a> static CMS
+and is now also hosted on GitHub Pages.</li>
+<li>Cookiecutter templates for Invenio instances and Invenio data models where
+finalised and made part of the "Getting started" guide.</li>
+<li>Invenio v3.0.0 Release Candidate 2 was released.</li>
+<li>Flask v1.0 support</li>
 </ul>
-<p>During the sprint 60 developer days were spent, 52 commits were created and 4.3k lines were touched (3.1k additions and 1.2k deletions).</p>
-<h2>List of changes:</h2>
+<h2>Releases</h2>
+<h3>List of all changes</h3>
 <ul>
-<li>Cookiecutter-Invenio-Module:<ul>
-<li>Minor various fixes for build issues.</li>
+<li>cookiecutter-invenio-datamodel:<ul>
+<li>Fixing, testing, documenting and cleaning.</li>
 </ul>
 </li>
-<li>IDUtils (v1.0.0):<ul>
-<li>global: fix DOI Unicode issues</li>
+<li>cookiecutter-invenio-instance:<ul>
+<li>Fixing, testing, documenting and cleaning.</li>
+<li>The development server is now by default running SSL thanks to the
+recently release Flask v1.0.</li>
 </ul>
 </li>
-<li>Invenio-Base (v1.0.0b1)<ul>
-<li>Cookiecutter template removal (to be replaced by upcoming cookiecutter-invenio-instance).</li>
-<li>Release checklist, docs build errors, 100% test coverage.</li>
+<li>invenio-access:<ul>
+<li>Fixed annoying warning message.</li>
 </ul>
 </li>
-<li>Invenio-DB (v1.0.0b9)<ul>
-<li>Remove annoying warning.</li>
+<li>invenio-accounts:<ul>
+<li>Fixed build failure due to Flask-CeleryExt version.</li>
 </ul>
 </li>
-<li>Invenio-I18N (v1.0.0b4)<ul>
-<li>Example app rendering on ReadTheDocs</li>
+<li>invenio-base:<ul>
+<li>Added support for blueprint factory functions in the
+<code>invenio_base.blueprints</code>/<code>invenio_base.api_blueprints</code> entry point
+groups. In addition to specifying an import path to an already created
+blueprint, you can now specify an import path of a blueprint factory
+function with the signature
+<code>create_blueprint(app)</code>, that will create and return a blueprint. This
+allows moving dynamic blueprint creation from the extension
+initialization phase to the blueprint registration phase.</li>
 </ul>
 </li>
-<li>Invenio-Indexer (v1.0.0b1):<ul>
-<li><strong>New BulkRecordIndexer class with RecordIndexer-compatible API (to be used
-by Invenio-Records-REST).</strong></li>
-<li>Elasticsearch v5 support.</li>
-<li>Release checklist.</li>
+<li>invenio-formatter:<ul>
+<li>Fixed issue where badges would be cached wrongly.</li>
 </ul>
 </li>
-<li>Invenio-JSONSchemas (v1.0.0a7)<ul>
-<li>Documentation improvements.</li>
-<li>Release checklist.</li>
+<li>invenio-jsonschemas:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-Mail (v1.0.0b1)<ul>
-<li>Broken docs build fix (related to Celery problem).</li>
+<li>invenio-oaiserver:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-OAIServer (v1.0.0b1)<ul>
-<li><strong>Description support in Identify verb (eprints, friends etc).</strong></li>
-<li>Elasticsearch v5 support.</li>
-<li>Release checklist + documentation improvements.</li>
-<li>License change PR</li>
+<li>invenio-oauth2server:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-OAuth2Server (v1.0.0b3)<ul>
-<li>Unpinned oauthlib.</li>
+<li>invenio-oauth2server:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-PIDStore (v1.0.0b2)<ul>
-<li>Release checklist.</li>
+<li>invenio-oauthclient:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-Records-REST (v1.0.0b5)<ul>
-<li><strong>Index after create, update and delete record creation (this will later
-impact Invenio-Deposit).</strong></li>
-<li><strong>Serializers refactored to be more easily composable.</strong></li>
-<li><strong>Improved tombstone handling for the REST API (e.g. include removal
-reason).</strong></li>
-<li>Elasticsearch v5 support.</li>
-<li>Improved documentation.</li>
-<li>Dynamic aggregations.</li>
-<li>Release checklist.</li>
+<li>invenio-records-rest:<ul>
+<li>Added marshmallow fields used for record deserialization.</li>
+<li>Added support for other Invenio extensions to auto-register REST API
+record endpoints.</li>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-Records-UI (v1.0.0b2)<ul>
-<li>Release checklist + example app docs fix for RTD.</li>
+<li>invenio-rest:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-Search (v1.0.0b4)<ul>
-<li><strong>Elasticsearch v5 support (via version-specific mappings).</strong></li>
-<li>Support for creating only specific indexes.</li>
-<li>CLI for listing all indexes and aliases.</li>
+<li>invenio-userprofiles:<ul>
+<li>Fixed build error related to Flask v1.0</li>
 </ul>
 </li>
-<li>Invenio-Search-UI (v1.0.0a9)<ul>
-<li>Release checklist.</li>
+<li>invenio:<ul>
+<li>Documentation updates.</li>
 </ul>
 </li>
-<li>Invenio-MARC21 (v1.0.0a6)<ul>
-<li>Elasticsearch v5 support.</li>
+<li>inveniosoftware.org:<ul>
+<li>Rewritten using Lektor Static CMS system.</li>
+<li>Retargeted website to pass the message that Invenio is now a framework.</li>
+<li>Added a blog.</li>
+<li>Added a roadmap</li>
+<li>Moved all information about legacy releases to separate page.</li>
+<li>Many fixes to design and style.</li>
+<li>Reworked most text sections.</li>
+<li>Moved hosting to GitHub Pages.</li>
+</ul>
+</li>
+<li>pytest-invenio:<ul>
+<li>Fixed problem with the <code>celery_config</code> fixture.</li>
+<li>Fixed issue with elasticsearch import.</li>
 </ul>
 </li>
 </ul>
-<h2>Elasticsearch 5 support</h2>
-<p>Search, Indexer, Records-REST, OAIServer and MARC21 have all been upgraded to
-support Elasticsearch v2 and v5. Elasticsearch v6 is not yet support due to the
-elasticsearch-dsl package not yet supporting v6 (support already merged in master branch but not yet released).</p>
-<p>Other Invenio packages have not yet been upgraded to Elasticsearch v5. E.g.
-Records-Files, OpenAIRE, Stats, Collections, OpenDefinition, Query-Parser have
-not yet been tested with Elasticsearch v5.</p>
-<h3>Choosing version</h3>
-<p>You will need to know at install-time which version of Elasticsearch you'd like
-to use. For instance to use Elasticsearch 5 you need to install Invenio-Search
-like this:</p>
-<pre><code class="lang-console">$ pip install invenio-search[elasticsearch5]
-</code></pre>
-<h3>Mappings</h3>
-<p>Due to the differences between Elasticsearch versions, we have opted for
-<em>version-specific mappings</em>. This means that Invenio modules must provide a
-mapping per Elasticsearch version they wish to support. E.g. today, the mapping
-is placed in a directory like e.g.:</p>
-<pre><code>mappings/records/record-v1.0.0.json
-</code></pre>
-<p>To support Elasticsearch v2 and v5 you now need two mappings:</p>
-<pre><code>mappings/v2/records/record-v1.0.0.json
-mappings/v5/records/record-v1.0.0.json
-</code></pre>
-<p>Note that mappings for Elasticsearch v2 may use either the <code>mappings/v2</code>
-directory or the <code>mappings/</code> directory like previously (for backward
-compatibility).</p>
-<h3>Adding Elasticsearch v5 support to a module</h3>
-<p>In case you have site-specific modules and would like to add Elasticsearch v5
-support here's a rough guide:</p>
-<ul>
-<li>Update <code>travis.yml</code> to test both v2 and v5 (<a href="https://github.com/inveniosoftware/invenio-indexer/pull/75/files#diff-354f30a63fb0907d4ad57269548329e3">example</a>)</li>
-<li>Update <code>setup.py</code> by moving Invenio-Search dependency to <code>extra_require</code> (<a href="https://github.com/inveniosoftware/invenio-records-rest/pull/177/files#diff-2eeaed663bd0d25b7e608891384b7298">example</a>).</li>
-<li>Move existing mappings and add new mappings for v5 (<a href="https://github.com/inveniosoftware/invenio-records-rest/pull/177/files#diff-35e3e3c8ab14c00d11908b83ffa1fc36">example</a>)<ul>
-<li>Most common change from v2 to v5 is the change from <code>string</code> type to either <code>text</code> or <code>keyword</code> type.</li>
-</ul>
-</li>
-<li>Update <code>docs/requirements.txt</code> by adding <code>elasticsearch5</code> as an extra requirement to ensure ReadTheDocs builds will be fine.</li>
-<li>Fix any API specific calls (see below).</li>
-</ul>
-<h3>Canonical way of checking for ES version.</h3>
-<pre><code class="lang-python">from elasticsearch import VERSION as ES_VERSION
-
-if ES_VERSION[0] == 2:
-    # ...
-</code></pre>
-<h3>Completion Suggesters</h3>
-<p>The Completion Suggesters have changed from v2 to v5. In v2, suggesters
-supported an index-time <code>payloads</code> option, which was used to store and
-return metadata with suggestions. In v5, completions are now returned with
-their associated document in the <code>_source</code> field.</p>
-<p>If you have completion suggesters for v2 you will need to make them compatible
-with v5. This involves:</p>
-<ul>
-<li>API clients should read metadata from <code>_source</code> instead of <code>payload</code>. For
-v2 the payload is copied to <code>_source</code> by Records-REST, which allows you to
-already now upgrade API clients to use the new <code>_source</code> field.</li>
-<li>On indexing, you need to add the payload only for v2.</li>
-</ul>
-<h3>Elasticsearch v2 end-of-life</h3>
-<p>Elasticsearch v2 reaches end of life in
-<a href="https://www.elastic.co/support/eol">February 2018</a>. Elasticsearch v2 support in
-Invenio will be removed in Invenio v3.1, thus Invenio v3.0 will be released
-with Elasticsearch v2 support and be maintained until v3.0 end of life
-(currently TBD).</p>
 
     </article>
     

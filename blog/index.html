@@ -97,14 +97,162 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="../blog/2018-03-23-invenio-sprint/">Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license</a>
+          <a href="../blog/2018-05-28-invenio-sprint/">Sprint: v3.0.0RC2 + updated website</a>
         
       </h2>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            <a href="https://twitter.com/lnielsen">Lars Holm Nielsen</a>
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>May 28, 2018</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="https://gitter.im/inveniosoftware/invenio">Invenio Framework</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>This sprint (May 14-25) was focused on preparing Invenio for the final v3.0.0
+release so it is ready for launch at the Open Repositories 2018 Conference,
+June 4th-7th in Bozeman, Montana.</p>
+<h2>Overview</h2>
+<p>Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):</p>
+<ul>
+<li>inveniosoftware.org now has shiny new <a href="../blog">blog</a> and <a href="../roadmap">roadmap</a>.</li>
+<li>inveniosoftware.org was moved to <a href="http://getlektor.com">Lektor</a> static CMS
+and is now also hosted on GitHub Pages.</li>
+<li>Cookiecutter templates for Invenio instances and Invenio data models where
+finalised and made part of the "Getting started" guide.</li>
+<li>Invenio v3.0.0 Release Candidate 2 was released.</li>
+<li>Flask v1.0 support</li>
+</ul>
+<h2>Releases</h2>
+<h3>List of all changes</h3>
+<ul>
+<li>cookiecutter-invenio-datamodel:<ul>
+<li>Fixing, testing, documenting and cleaning.</li>
+</ul>
+</li>
+<li>cookiecutter-invenio-instance:<ul>
+<li>Fixing, testing, documenting and cleaning.</li>
+<li>The development server is now by default running SSL thanks to the
+recently release Flask v1.0.</li>
+</ul>
+</li>
+<li>invenio-access:<ul>
+<li>Fixed annoying warning message.</li>
+</ul>
+</li>
+<li>invenio-accounts:<ul>
+<li>Fixed build failure due to Flask-CeleryExt version.</li>
+</ul>
+</li>
+<li>invenio-base:<ul>
+<li>Added support for blueprint factory functions in the
+<code>invenio_base.blueprints</code>/<code>invenio_base.api_blueprints</code> entry point
+groups. In addition to specifying an import path to an already created
+blueprint, you can now specify an import path of a blueprint factory
+function with the signature
+<code>create_blueprint(app)</code>, that will create and return a blueprint. This
+allows moving dynamic blueprint creation from the extension
+initialization phase to the blueprint registration phase.</li>
+</ul>
+</li>
+<li>invenio-formatter:<ul>
+<li>Fixed issue where badges would be cached wrongly.</li>
+</ul>
+</li>
+<li>invenio-jsonschemas:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oaiserver:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oauth2server:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oauth2server:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oauthclient:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-records-rest:<ul>
+<li>Added marshmallow fields used for record deserialization.</li>
+<li>Added support for other Invenio extensions to auto-register REST API
+record endpoints.</li>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-rest:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-userprofiles:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio:<ul>
+<li>Documentation updates.</li>
+</ul>
+</li>
+<li>inveniosoftware.org:<ul>
+<li>Rewritten using Lektor Static CMS system.</li>
+<li>Retargeted website to pass the message that Invenio is now a framework.</li>
+<li>Added a blog.</li>
+<li>Added a roadmap</li>
+<li>Moved all information about legacy releases to separate page.</li>
+<li>Many fixes to design and style.</li>
+<li>Reworked most text sections.</li>
+<li>Moved hosting to GitHub Pages.</li>
+</ul>
+</li>
+<li>pytest-invenio:<ul>
+<li>Fixed problem with the <code>celery_config</code> fixture.</li>
+<li>Fixed issue with elasticsearch import.</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="../blog/2018-05-28-invenio-sprint/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="../blog/2018-03-23-invenio-sprint/">Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
@@ -271,20 +419,14 @@
 </ul>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="../blog/2018-03-23-invenio-sprint/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -301,7 +443,7 @@
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            <a href="https://twitter.com/lnielsen">Lars Holm Nielsen</a>
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
@@ -494,7 +636,7 @@ with Elasticsearch v2 support and be maintained until v3.0 end of life
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            <a href="https://twitter.com/lnielsen">Lars Holm Nielsen</a>
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
@@ -592,7 +734,7 @@ with Elasticsearch v2 support and be maintained until v3.0 end of life
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            <a href="https://twitter.com/lnielsen">Lars Holm Nielsen</a>
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
