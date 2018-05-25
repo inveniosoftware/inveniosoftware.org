@@ -109,11 +109,11 @@
     <h3 class="panel-title">Invenio v3.0 Final Release</h3>
     <div class="card-description">
     <ul>
-<li>Release all modules in base, auth and metadata bundles.</li>
-<li>Prepare project skeletons (cookiecutter templates) for new instances and data
+<li><i class="fa fa-check text-success"></i> Release all modules in base, auth and metadata bundles.</li>
+<li><i class="fa fa-check text-success"></i> Prepare project skeletons (cookiecutter templates) for new instances and data
 models modules.</li>
-<li>General documentation revamp (invenio.readthedocs.org).</li>
-<li>Launch updated website with blog (inveniosoftware.org).</li>
+<li><i class="fa fa-check text-success"></i> Launch updated website with blog (inveniosoftware.org).</li>
+<li><i class="fa fa-times text-danger"></i> General documentation revamp (invenio.readthedocs.org).</li>
 </ul>
 
     </div>
