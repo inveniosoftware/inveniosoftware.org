@@ -28,7 +28,6 @@ Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):
 - Invenio v3.0.0 Release Candidate 2 was released.
 - Flask v1.0 support
 
-
 ## Releases
 
 - invenio-access v1.0.1
@@ -37,6 +36,7 @@ Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):
 - invenio-db v1.0.1
 - invenio-formatter v1.0.1
 - invenio-oauth2server v1.0.1
+- invenio-records-rest v1.1.0
 - invenio-userprofiles v1.0.1
 - pytest-invenio v1.0.2
 
