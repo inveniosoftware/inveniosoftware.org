@@ -65,9 +65,9 @@
             </div>
             <div class="col-md-9 col-md-offset-1">
               <h6>Take beautiful screenshot</h6>
-              <p>Take a representative screenshot of your site and place it in the <code>base/static/img/screenshots</code> directory. Name the image after your site.</p>
+              <p>Take a representative screenshot of your site and place it in the <code>assets/static/img/screenshots</code> directory. Name the image after your site.</p>
               <p class="code"># take screenshot
-                              $ <span class="command">mv</span> ~/Screenshots/johndoelibrary.png base/static/img/screenshots/</p>
+                              $ <span class="command">mv</span> ~/Screenshots/johndoelibrary.png assets/static/img/screenshots/</p>
             </div>
           </div>
         </div>
@@ -86,14 +86,14 @@
             </div>
             <div class="col-md-9 col-md-offset-1">
               <h6>Describe your site</h6>
-              <p>Create a JSON file containing description of your site, such as its full name, the description, the canonical URL, and the type of managed data. Look inside <code>base/sites</code> directory for inspiration.</p>
-              <p class="code">$ <span class="command">echo</span> '<span class="json">{
+              <p>Add a JSON description of your site, such as its full name, the description, the canonical URL, and the type of managed data, inside the file <code>databags/sites.json</code>.</p>
+              <p class="code"><span class="json">{
                 "name": "John Doe Library",
                 "description": "John Doe's Library.",
                 "url": "http://example.org/johndoelibrary",
                 "screenshot_filename": "johndoelibrary.png",
                 "types": ["research-data", "library", "multimedia", "institutional-repository"]
-              }</span>' <span class="command">> base/sites/johndoelibrary.json</span></p>
+              }</span></p>
             </div>
           </div>
         </div>
@@ -113,8 +113,8 @@
             <div class="col-md-9 col-md-offset-1">
               <h6>Make a pull request</h6>
               <p>Commit your changes and publish your branch.</p>
-              <p class="code">$ <span class="command">git</span> add base/static/img/screenshots/johndoelibrary.png
-                $ <span class="command">git</span> add base/sites/johndoelibrary.json
+              <p class="code">$ <span class="command">git</span> add assets/static/img/screenshots/johndoelibrary.png
+                $ <span class="command">git</span> add databags/sites.json
                 $ <span class="command">git</span> commit -s -m "sites: John Doe Library"
                 $ <span class="command">git</span> push origin johndoelibrary</p>
               <p>Make a <a href="https://help.github.com/articles/creating-a-pull-request/" target="_blank">pull request</a> so that we can add your site.</p>
