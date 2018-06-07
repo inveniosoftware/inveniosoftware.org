@@ -8,7 +8,7 @@ body:
 
 Welcome to Invenio 3!
 
-We are proud to announce the final release of Invenio v3.0.0. Invenio 3 has been completely rewritten from scratch and have changed radically from previous Invenio versions. Invenio 3 is now framework, like a Swiss Army knife, of battle-tested, safe and secure modules providing you will all the features you need to build and run a trusted digital repository.
+We are proud to announce the final release of Invenio v3.0.0. Invenio 3 has been completely rewritten from scratch and have changed radically from previous Invenio versions. Invenio 3 is now a framework, like a Swiss Army knife, of battle-tested, safe and secure modules providing you will all the features you need to build and run a trusted digital repository.
 
 Invenio 3 is officially released today, however, Invenio 3 has already been battle-tested in large-scale production systems for more than 1.5 years on sites such as:
 
@@ -18,7 +18,7 @@ Invenio 3 is officially released today, however, Invenio 3 has already been batt
 
 Others sites are already in process of being built on Invenio 3:
 
-- [INSPIRE HEP](https://qa.inspirehep.net) - an aggregator for High-Energy Physics.
+- INSPIRE HEP - an aggregator for High-Energy Physics.
 - WEKO3 - repository platform for 500+ Japanese universities.
 
 # What's new
@@ -30,14 +30,14 @@ Invenio functionality is being released in **bundles** of modules. Invenio v3 co
 
 The following bundles are being prepared for release in v3.1:
 
-- **Files**: advanced file management with multi-backend support as well as IIIF Image API support.
-- **Statistics**: COUNTER-compliant statistics.
+- **Files**: advanced file management with multi-backend support as well as [IIIF Image API](http://iiif.io/) support.
+- **Statistics**: [COUNTER-compliant](https://www.projectcounter.org/) statistics.
 
-See our [roadmap](https://inveniosoftware.org/roadmap/) for further details.
+See our [roadmap](/roadmap/) for further details.
 
-### Getting started
+# Getting started
 
-In order to get started developing with Invenio v3 follow our [getting started](http://127.0.0.1:5000/gettingstarted/) guide.
+In order to get started developing with Invenio v3 follow our [getting started](/gettingstarted/) guide.
 
 Next, head over https://invenio.readthedocs.io to understand how to develop with Invenio.
 
@@ -79,6 +79,8 @@ In addtion, each Invenio module also has extensive documentation:
 - [invenio-search](http://invenio-search.readthedocs.io)
 - [invenio-search-ui](http://invenio-search-ui.readthedocs.io)
 
+# Compatibilities
+
 ### Python compatibility
 
 Invenio v3.0 supports Python 2.7, 3.5,  3.6. We highly recommend only using the latest official release in each series.
@@ -101,7 +103,7 @@ Invenio v3.0 supports MySQL 5.6+.
 
 # Deprecations
 
-### Webpack
+### AMD/RequireJS
 
 Invenio v3.0's current static assets management system is based on e.g. RequireJS will be replaced with Webpack.
 We expect this work to be ready for Invenio v3.1, and thus we are already deprecating the current support. Specifically this
@@ -126,6 +128,6 @@ as in most cases only new features are added.
 ---
 pub_date: 2018-06-07
 ---
-team:
+team: Invenio
 ---
 twitter_handle: larshankat
