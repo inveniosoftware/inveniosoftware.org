@@ -115,6 +115,8 @@ body {
 }
 .navbar-toggle {
   background-color: rgba(61, 121, 156, 0.87);
+  margin-left: 20px;
+  float: left;
 }
 .icon-bar {
   background-color: rgba(173, 206, 224, 1);
@@ -131,6 +133,12 @@ body {
   padding-top: 0;
   color: rgba(255, 255, 255, 0.58);
   border-top: 3px solid transparent;
+}
+.navbar-collapse {
+  background-color: #29698b;
+}
+.navbar-fixed-top .navbar-collapse {
+  max-height: 370px;
 }
 .active-menu,
 .nav>li>a:hover,
