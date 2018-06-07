@@ -1,0 +1,322 @@
+<!doctype html>
+<title>Invenio v3.0.0 Released — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="/static/img/favicon.ico?h=981ca02e">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/style.css?h=710d992d">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  <section class="header-section">
+    <div class="cover-image">
+      
+        <header>
+  <nav class="navbar navbar-fixed-top invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+            <span class="icon-bar"></span>
+          
+        </button>
+        <a href="/" class="navbar-brand">
+          <img src="/static/img/logo-invenio-white.svg?h=8686b0c0" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li><a href="/gettingstarted/">Get started</a></li>
+          
+            <li><a href="/#features">Features</a></li>
+          
+            <li><a href="/showcase/">Examples</a></li>
+          
+            <li><a href="http://invenio.readthedocs.io">Documentation</a></li>
+          
+            <li><a href="/community/">Community</a></li>
+          
+            <li><a href="/roadmap/">Roadmap</a></li>
+          
+            <li><a class="active-menu" href="/blog/">Blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header-section-title">
+              <h3>Invenio Blog</h3>
+              <h6>Follow news and updates on Invenio world</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="blog-post-content-section" class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+            
+  <div class="blog-back-button">
+    <a href="/blog">Back</a>
+  </div>
+  <div class="blog-post blog-post-frame">
+    <header class="post-header">
+      <h2>
+        
+          Invenio v3.0.0 Released
+        
+      </h2>
+      <p class="post-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jun 7, 2018</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href=""></a></span>
+      </p>
+    </header>
+    <article class="post-content">
+      <p>Welcome to Invenio 3!</p>
+<p>We are proud to announce the final release of Invenio v3.0.0. Invenio 3 has been completely rewritten from scratch and have changed radically from previous Invenio versions. Invenio 3 is now framework, like a Swiss Army knife, of battle-tested, safe and secure modules providing you will all the features you need to build and run a trusted digital repository.</p>
+<p>Invenio 3 is officially released today, however, Invenio 3 has already been battle-tested in large-scale production systems for more than 1.5 years on sites such as:</p>
+<ul>
+<li><a href="https://www.zenodo.org">Zenodo</a></li>
+<li><a href="http://opendata.cern.ch">CERN Open Data</a></li>
+<li><a href="https://videos.cern.ch">CDS Videos</a></li>
+</ul>
+<p>Others sites are already in process of being built on Invenio 3:</p>
+<ul>
+<li><a href="https://qa.inspirehep.net">INSPIRE HEP</a> - an aggregator for High-Energy Physics.</li>
+<li>WEKO3 - repository platform for 500+ Japanese universities.</li>
+</ul>
+<h1>What's new</h1>
+<p>Invenio functionality is being released in <strong>bundles</strong> of modules. Invenio v3 contains the following bundles totaling more than 27 individual Invenio modules:</p>
+<ul>
+<li><strong>Base:</strong> the core application framework with e.g. distributed task queue support.</li>
+<li><strong>Auth:</strong> accounts management, role-based access control, OAuth 2.0 client and provider, user profiles management.</li>
+<li><strong>Metadata:</strong> record and persistent identifier management including indexing, querying and OAI-PMH server.</li>
+</ul>
+<p>The following bundles are being prepared for release in v3.1:</p>
+<ul>
+<li><strong>Files</strong>: advanced file management with multi-backend support as well as IIIF Image API support.</li>
+<li><strong>Statistics</strong>: COUNTER-compliant statistics.</li>
+</ul>
+<p>See our <a href="https://inveniosoftware.org/roadmap/">roadmap</a> for further details.</p>
+<h3>Getting started</h3>
+<p>In order to get started developing with Invenio v3 follow our <a href="http://127.0.0.1:5000/gettingstarted/">getting started</a> guide.</p>
+<p>Next, head over <a href="https://invenio.readthedocs.io">https://invenio.readthedocs.io</a> to understand how to develop with Invenio.</p>
+<p>In addtion, each Invenio module also has extensive documentation:</p>
+<p><strong>Base bundle</strong></p>
+<ul>
+<li><a href="http://invenio-admin.readthedocs.io">invenio-admin</a></li>
+<li><a href="http://invenio-app.readthedocs.io">invenio-app</a></li>
+<li><a href="http://invenio-assets.readthedocs.io">invenio-assets</a></li>
+<li><a href="http://invenio-base.readthedocs.io">invenio-base</a></li>
+<li><a href="http://invenio-celery.readthedocs.io">invenio-celery</a></li>
+<li><a href="http://invenio-config.readthedocs.io">invenio-config</a></li>
+<li><a href="http://invenio-db.readthedocs.io">invenio-db</a></li>
+<li><a href="http://invenio-formatter.readthedocs.io">invenio-formatter</a></li>
+<li><a href="http://invenio-i18n.readthedocs.io">invenio-i18n</a></li>
+<li><a href="http://invenio-logging.readthedocs.io">invenio-logging</a></li>
+<li><a href="http://invenio-mail.readthedocs.io">invenio-mail</a></li>
+<li><a href="http://invenio-rest.readthedocs.io">invenio-rest</a></li>
+<li><a href="http://invenio-theme.readthedocs.io">invenio-theme</a></li>
+</ul>
+<p><strong>Auth bundle</strong></p>
+<ul>
+<li><a href="http://invenio-access.readthedocs.io">invenio-access</a></li>
+<li><a href="http://invenio-accounts.readthedocs.io">invenio-accounts</a></li>
+<li><a href="http://invenio-oauth2server.readthedocs.io">invenio-oauth2server</a></li>
+<li><a href="http://invenio-oauthclient.readthedocs.io">invenio-oauthclient</a></li>
+<li><a href="http://invenio-userprofiles.readthedocs.io">invenio-userprofiles</a></li>
+</ul>
+<p><strong>Metadata bundle</strong></p>
+<ul>
+<li><a href="http://invenio-indexer.readthedocs.io">invenio-indexer</a></li>
+<li><a href="http://invenio-jsonschemas.readthedocs.io">invenio-jsonschemas</a></li>
+<li><a href="http://invenio-oaiserver.readthedocs.io">invenio-oaiserver</a></li>
+<li><a href="http://invenio-pidstore.readthedocs.io">invenio-pidstore</a></li>
+<li><a href="http://invenio-records.readthedocs.io">invenio-records</a></li>
+<li><a href="http://invenio-records-rest.readthedocs.io">invenio-records-rest</a></li>
+<li><a href="http://invenio-records-ui.readthedocs.io">invenio-records-ui</a></li>
+<li><a href="http://invenio-search.readthedocs.io">invenio-search</a></li>
+<li><a href="http://invenio-search-ui.readthedocs.io">invenio-search-ui</a></li>
+</ul>
+<h3>Python compatibility</h3>
+<p>Invenio v3.0 supports Python 2.7, 3.5,  3.6. We highly recommend only using the latest official release in each series.</p>
+<p>Python 2.7 end-of-life is scheduled for April 2020. Invenio will only support Python 2.7 until that date. We highly recommend that all new projects are started latest available Python 3 version.</p>
+<h3>Elasticsearch compatibility</h3>
+<p>Invenio v3.0 supports Elasticsearch 2, 5 and 6.</p>
+<p>Elasticsearch v2 has reach end-of-life (February 2018) and Invenio v3.0 is the last release to support Elasticsearch v2.</p>
+<h3>PostgreSQL compatibility</h3>
+<p>Invenio v3.0 supports PostgreSQL 9.4 and 9.6. We have not yet tested Invenio v3.0 with PostgreSQL 10.</p>
+<h3>MySQL compatibility</h3>
+<p>Invenio v3.0 supports MySQL 5.6+.</p>
+<h1>Deprecations</h1>
+<h3>Webpack</h3>
+<p>Invenio v3.0's current static assets management system is based on e.g. RequireJS will be replaced with Webpack.
+We expect this work to be ready for Invenio v3.1, and thus we are already deprecating the current support. Specifically this
+means that Invenio-Assets and Invenio-Theme will change significantly in Invenio v3.1. We would have liked to
+already have this ready for this v3.0 release, but unfortunately it was time-wise not possible.</p>
+<h3>AngularJS</h3>
+<p>Invenio v3.0 comes with one AngularJS 1.4 application (Invenio-Search-JS). AngularJS is by now already outdated, and we are
+planning a rewrite of the application in another JavaScript framework that is currently in process of being selected.
+Essentially this means that you should not extend Invenio-Search-JS at this point, since it will change significantly.</p>
+<h1>Maintenance policy</h1>
+<p>Invenio v3.0 will be supported with bug and security fixes until the release of
+Invenio v3.2 and minimum one year.</p>
+<p>We aim at one Invenio release with new features every 6 months. We expect
+upgrades between minor versions (e.g. v3.1 to v3.2) to be fairly straight-forward
+as in most cases only new features are added.</p>
+
+    </article>
+    
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).data('remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    });
+  </script>
+
+
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6">
+    <a href="/"><img class="icon-contact" src="/static/img/logo-invenio-white.svg?h=8686b0c0" /></a>
+  </div>
+  <div class="col-md-6">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td class="contact-list-header">Documentation</td>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Read The Docs</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">GitHub</td>
+          <td>
+            <a href="https://github.com/inveniosoftware">@inveniosoftware</a> &middot; <a href="https://github.com/inveniosoftware-contrib">@inveniosoftware-contrib</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Chat room</td>
+          <td>
+            <a href="https://gitter.im/inveniosoftware/invenio"><img src="/static/img/gitter.svg?h=e497f3c6"></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Twitter</td>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">@inveniosoftware <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Weekly video meetings</td>
+          <td><a href="https://indico.cern.ch/category/6046/">Invenio Developer Forum</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Yearly workshops</td>
+          <td><a href="https://indico.cern.ch/category/6240/">Invenio User Group Workshop</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Email<br />
+            <small>(note: no technical support)</small></td>
+          <td>
+            <a href="href=mailto:info@inveniosoftware.org?Subject=Hello">info@inveniosoftware.org</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright &copy; 2016-2018 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
+          <span class="text-muted"><small></small></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4535);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://piwik.web.cern.ch/piwik.php?idsite=4535" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+  <script>
+    //Main navigation scroll spy for shadow
+    $(window).scroll(function() {
+      var y = $(window).scrollTop();
+      if (y > 0) {
+        $(".invenio-navbar").addClass('invenio-navbar-not-top');
+      } else {
+        $(".invenio-navbar").removeClass('invenio-navbar-not-top');
+      }
+    });
+  </script>
+</body>
