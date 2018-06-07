@@ -8,15 +8,15 @@ body:
 
 Welcome to Invenio 3!
 
-We are proud to announce the final release of Invenio v3.0.0. Invenio 3 has been completely rewritten from scratch and have changed radically from previous Invenio versions. Invenio 3 is now a framework, like a Swiss Army knife, of battle-tested, safe and secure modules providing you will all the features you need to build and run a trusted digital repository.
+We are proud to announce the release of Invenio v3.0.0. Invenio has been completely rewritten from scratch with a radically  improved architecture and technical implementation. Invenio 3 is now a framework, like a Swiss Army knife, complete with battle-tested, safe and secure modules providing all the features you need to build and run a trusted digital repository.
 
-Invenio 3 is officially released today, however, Invenio 3 has already been battle-tested in large-scale production systems for more than 1.5 years on sites such as:
+Whilst Invenio 3 is officially released to the world today, in reality it has already been relied upon in large-scale production systems for more than 1.5 years on sites such as:
 
 - [Zenodo](https://www.zenodo.org)
 - [CERN Open Data](http://opendata.cern.ch)
 - [CDS Videos](https://videos.cern.ch)
 
-Others sites are already in process of being built on Invenio 3:
+Also other sites are already in process of being built on Invenio 3:
 
 - INSPIRE HEP - an aggregator for High-Energy Physics.
 - WEKO3 - repository platform for 500+ Japanese universities.
