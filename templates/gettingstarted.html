@@ -27,7 +27,6 @@
                 <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
                 <div class="line comment"># bootstap my-site instance</div>
                 <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
-                <div class="line"><span class="prompt">$</span>./scripts/setup</div>
             </div>
             <p>
                We follow by registering the record data model:
@@ -50,6 +49,9 @@
                 <div class="line comment"># select instance</div>
                 <div class="line"><span class="prompt">$</span>workon my-site</div>
                 <div class="line"><span class="prompt">$</span>cd my-site</div>
+                <div class="line comment"># setup database and indexes</div>
+                <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
+                <div class="line"><span class="prompt">$</span>./scripts/setup</div>
                 <div class="line comment"># start worker</div>
                 <div class="line"><span class="prompt">$</span>celery worker -A invenio_app.celery -l INFO</div>
                 <div class="line comment"># start server</div>
