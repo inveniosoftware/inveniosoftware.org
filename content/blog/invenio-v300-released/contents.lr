@@ -41,7 +41,7 @@ In order to get started developing with Invenio v3 follow our [getting started](
 
 Next, head over https://invenio.readthedocs.io to understand how to develop with Invenio.
 
-In addtion, each Invenio module also has extensive documentation:
+In addition, each Invenio module also has extensive documentation:
 
 **Base bundle**
 
@@ -83,19 +83,19 @@ In addtion, each Invenio module also has extensive documentation:
 
 ### Python compatibility
 
-Invenio v3.0 supports Python 2.7, 3.5,  3.6. We highly recommend only using the latest official release in each series.
+Invenio v3.0 supports Python 2.7, 3.5, 3.6. We highly recommend only using the latest official release in each series.
 
-Python 2.7 end-of-life is scheduled for April 2020. Invenio will only support Python 2.7 until that date. We highly recommend that all new projects are started latest available Python 3 version.
+Python 2.7 end-of-life is scheduled for April 2020. Invenio will only support Python 2.7 until that date. We highly recommend that all new projects are started on the latest available Python 3 version.
 
 ### Elasticsearch compatibility
 
 Invenio v3.0 supports Elasticsearch 2, 5 and 6.
 
-Elasticsearch v2 has reach end-of-life (February 2018) and Invenio v3.0 is the last release to support Elasticsearch v2.
+Elasticsearch v2 has reached end-of-life (February 2018) and Invenio v3.0 is the last release to support Elasticsearch v2.
 
 ### PostgreSQL compatibility
 
-Invenio v3.0 supports PostgreSQL 9.4 and 9.6. We have not yet tested Invenio v3.0 with PostgreSQL 10.
+Invenio v3.0 supports PostgreSQL 9.4, 9.5 and 9.6. We have not yet tested Invenio v3.0 with PostgreSQL 10.
 
 ### MySQL compatibility
 
