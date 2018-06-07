@@ -104,8 +104,6 @@
                 <div class="line"><span class="prompt">$</span>cookiecutter \</div>
                 <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.0</div></div>
                 <div class="line"><span class="prompt">$</span>cd my-site</div>
-                <div class="line comment"># increase virtual memory settings (es)</div>
-                <div class="line"><span class="prompt">$</span>sudo sysctl -w vm.max_map_count=262144</div>
                 <div class="line comment"># start services (db, es, mq, etc)</div>
                 <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
                 <div class="line comment"># bootstap my-site instance</div>
@@ -119,7 +117,7 @@
                 <div class="line comment"># select instance</div>
                 <div class="line"><span class="prompt">$</span>workon my-site</div>
                 <div class="line"><span class="prompt">$</span>cd my-site</div>
-                <div class="line comment"># customise data model</div>
+                <div class="line comment"># scaffold data model</div>
                 <div class="line"><span class="prompt">$</span>cookiecutter \</div>
                 <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-datamodel -c v3.0</div></div>
                 <div class="line comment"># install and register data model</div>
@@ -134,7 +132,7 @@
                 <div class="line"><span class="prompt">$</span>workon my-site</div>
                 <div class="line"><span class="prompt">$</span>cd my-site</div>
                 <div class="line comment"># start worker</div>
-                <div class="line"><span class="prompt">$</span>celery -A invenio_app.celery -l INFO</div>
+                <div class="line"><span class="prompt">$</span>celery worker -A invenio_app.celery -l INFO</div>
                 <div class="line comment"># start server</div>
                 <div class="line"><span class="prompt">$</span>./scripts/server</div>
                 <div class="line comment"># your site is running!</div>
