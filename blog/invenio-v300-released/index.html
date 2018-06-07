@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=981ca02e">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=710d992d">
+<link rel="stylesheet" href="/static/css/style.css?h=a794deb6">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
@@ -110,12 +110,12 @@
         <i class='fa fa-calendar text-muted'></i>
         <span>Jun 7, 2018</span>
         <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href=""></a></span>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
       </p>
     </header>
     <article class="post-content">
       <p>Welcome to Invenio 3!</p>
-<p>We are proud to announce the final release of Invenio v3.0.0. Invenio 3 has been completely rewritten from scratch and have changed radically from previous Invenio versions. Invenio 3 is now framework, like a Swiss Army knife, of battle-tested, safe and secure modules providing you will all the features you need to build and run a trusted digital repository.</p>
+<p>We are proud to announce the final release of Invenio v3.0.0. Invenio 3 has been completely rewritten from scratch and have changed radically from previous Invenio versions. Invenio 3 is now a framework, like a Swiss Army knife, of battle-tested, safe and secure modules providing you will all the features you need to build and run a trusted digital repository.</p>
 <p>Invenio 3 is officially released today, however, Invenio 3 has already been battle-tested in large-scale production systems for more than 1.5 years on sites such as:</p>
 <ul>
 <li><a href="https://www.zenodo.org">Zenodo</a></li>
@@ -124,7 +124,7 @@
 </ul>
 <p>Others sites are already in process of being built on Invenio 3:</p>
 <ul>
-<li><a href="https://qa.inspirehep.net">INSPIRE HEP</a> - an aggregator for High-Energy Physics.</li>
+<li>INSPIRE HEP - an aggregator for High-Energy Physics.</li>
 <li>WEKO3 - repository platform for 500+ Japanese universities.</li>
 </ul>
 <h1>What's new</h1>
@@ -136,12 +136,12 @@
 </ul>
 <p>The following bundles are being prepared for release in v3.1:</p>
 <ul>
-<li><strong>Files</strong>: advanced file management with multi-backend support as well as IIIF Image API support.</li>
-<li><strong>Statistics</strong>: COUNTER-compliant statistics.</li>
+<li><strong>Files</strong>: advanced file management with multi-backend support as well as <a href="http://iiif.io/">IIIF Image API</a> support.</li>
+<li><strong>Statistics</strong>: <a href="https://www.projectcounter.org/">COUNTER-compliant</a> statistics.</li>
 </ul>
-<p>See our <a href="https://inveniosoftware.org/roadmap/">roadmap</a> for further details.</p>
-<h3>Getting started</h3>
-<p>In order to get started developing with Invenio v3 follow our <a href="http://127.0.0.1:5000/gettingstarted/">getting started</a> guide.</p>
+<p>See our <a href="/roadmap/">roadmap</a> for further details.</p>
+<h1>Getting started</h1>
+<p>In order to get started developing with Invenio v3 follow our <a href="/gettingstarted/">getting started</a> guide.</p>
 <p>Next, head over <a href="https://invenio.readthedocs.io">https://invenio.readthedocs.io</a> to understand how to develop with Invenio.</p>
 <p>In addtion, each Invenio module also has extensive documentation:</p>
 <p><strong>Base bundle</strong></p>
@@ -180,6 +180,7 @@
 <li><a href="http://invenio-search.readthedocs.io">invenio-search</a></li>
 <li><a href="http://invenio-search-ui.readthedocs.io">invenio-search-ui</a></li>
 </ul>
+<h1>Compatibilities</h1>
 <h3>Python compatibility</h3>
 <p>Invenio v3.0 supports Python 2.7, 3.5,  3.6. We highly recommend only using the latest official release in each series.</p>
 <p>Python 2.7 end-of-life is scheduled for April 2020. Invenio will only support Python 2.7 until that date. We highly recommend that all new projects are started latest available Python 3 version.</p>
@@ -191,7 +192,7 @@
 <h3>MySQL compatibility</h3>
 <p>Invenio v3.0 supports MySQL 5.6+.</p>
 <h1>Deprecations</h1>
-<h3>Webpack</h3>
+<h3>AMD/RequireJS</h3>
 <p>Invenio v3.0's current static assets management system is based on e.g. RequireJS will be replaced with Webpack.
 We expect this work to be ready for Invenio v3.1, and thus we are already deprecating the current support. Specifically this
 means that Invenio-Assets and Invenio-Theme will change significantly in Invenio v3.1. We would have liked to
