@@ -5,6 +5,8 @@ body:
 Document and prepare final releases of the following modules:
 
 - Invenio-Stats
+- Invenio-Queues
+- COUNTER-Robots
 ---
 category: Development
 ---
