@@ -133,33 +133,25 @@
           <div class="flex-center-vertically">
             <div class="numbering">1</div>
           </div>
-          <h3 class="section-title-light-bg">Bootstrap</h3>
+          <h3 class="section-title-light-bg">Scaffold</h3>
           <div class="command-line">
-            <div class="line comment"># scaffold my-site instance</div>
-            <div class="line"><span class="prompt">$</span>mkvirtualenv my-site</div>
-            <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-            <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.0</div></div>
-            <div class="line"><span class="prompt">$</span>cd my-site</div>
-            <div class="line comment"># start services (db, es, mq, etc)</div>
-            <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
-            <div class="line comment"># bootstap my-site instance</div>
-            <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
+                <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
+                <div class="line comment"># scaffold my-site instance</div>
+                <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="flex-center-vertically">
               <div class="numbering">2</div>
           </div>
-          <h3 class="section-title-light-bg">Customise</h3>
+          <h3 class="section-title-light-bg">Install</h3>
           <div class="command-line">
-            <div class="line comment"># select instance</div>
-            <div class="line"><span class="prompt">$</span>workon my-site</div>
-            <div class="line comment"># scaffold data model</div>
-            <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-            <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-datamodel -c v3.0</div></div>
-            <div class="line comment"># install and register data model</div>
-            <div class="line"><span class="prompt">$</span>cd my-datamodel</div>
-            <div class="line"><span class="prompt">$</span>pip install -e .</div>
+                <div class="line"><span class="prompt">$</span>cd my-site</div>
+                <div class="line comment"># start services (db, es, mq, cache)</div>
+                <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
+                <div class="line comment"># build and install my-site instance</div>
+                <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
           </div>
         </div>
         <div class="col-md-4">
@@ -168,18 +160,12 @@
           </div>
           <h3 class="section-title-light-bg">Run</h3>
           <div class="command-line">
-            <div class="line comment"># select instance</div>
-            <div class="line"><span class="prompt">$</span>workon my-site</div>
-            <div class="line"><span class="prompt">$</span>cd my-site</div>
-            <div class="line comment"># setup database and indexes</div>
-            <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
-            <div class="line"><span class="prompt">$</span>./scripts/setup</div>
-            <div class="line comment"># start worker</div>
-            <div class="line"><span class="prompt">$</span>celery worker -A invenio_app.celery -l INFO</div>
-            <div class="line comment"># start server</div>
-            <div class="line"><span class="prompt">$</span>./scripts/server</div>
-            <div class="line comment"># your site is running!</div>
-            <div class="line"><span class="prompt">$</span>firefox https://localhost:5000/</div>
+                <div class="line comment"># setup database and indexes</div>
+                <div class="line"><span class="prompt">$</span>./scripts/setup</div>
+                <div class="line comment"># start webserver and task queue</div>
+                <div class="line"><span class="prompt">$</span>./scripts/server</div>
+                <div class="line comment"># your site is running!</div>
+                <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/</div>
           </div>
         </div>
       </div>
