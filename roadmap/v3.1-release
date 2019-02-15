@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Invenio v3.1 Release — inveniosoftware.org</title>
+<title>Invenio v3.2 Release — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,9 +96,9 @@
     Development
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Invenio v3.1 Release</h3>
+    <h3 class="panel-title">Invenio v3.2 Release</h3>
     <div class="card-description">
-    <p>Files, I18N and Statistics bundles. Scheduled for release in November 2018.</p>
+    <p>Files, Statistics bundles. Scheduled for release in mid-2019.</p>
 
     </div>
   </div>
