@@ -4,10 +4,11 @@ body:
 
 - <i class="fa fa-check text-success"></i> Scripts for semi-automated license change of repositories.
 - <i class="fa fa-check text-success"></i> Review all non-CERN contributions and ensure correct copyright statements in all file headers.
-- <i class="fa fa-times text-danger"></i> Contributor License Agreement (CLA) workflow.
+- <i class="fa fa-times text-success"></i> Contributor License Agreement (CLA) workflow.
+- <i class="fa fa-times text-danger"></i> Implement license change on all repositories.
 ---
 category: Community
 ---
-title: License change for v3.0 (from GPL to MIT)
+title: License change from GPL to MIT
 ---
 sort: 2

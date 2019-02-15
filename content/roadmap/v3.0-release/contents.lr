@@ -13,3 +13,5 @@ body:
 - <i class="fa fa-check text-success"></i> General documentation revamp (invenio.readthedocs.org).
 ---
 sort: 1
+---
+_hidden: yes

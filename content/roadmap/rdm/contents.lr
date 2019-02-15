@@ -2,9 +2,9 @@ column: future
 ---
 body:
 
-Invenio Research Data Management (RDM) system based Zenodo and B2SHARE code bases.
+Invenio Research Data Management (RDM) system based on Zenodo.
 
-(with University of Hamburg).
+Funded via the CERN Knowledge Transfer Fund and collaborating institutes.
 ---
 category: Development
 ---
@@ -12,4 +12,4 @@ title: Invenio RDM Flavour
 ---
 sort: 4
 ---
-_hidden: yes
+_hidden: no

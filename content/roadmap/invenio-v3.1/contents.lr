@@ -1,0 +1,12 @@
+column: current
+---
+category: Development
+---
+title: Invenio v3.1 Release
+---
+body:
+
+<ul>
+<li> Webpack and improved docker support. </li>
+<li>Scheduled for release in March 2019.</li>
+</ul>
