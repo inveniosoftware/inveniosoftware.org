@@ -75,80 +75,96 @@
   
   <section class="section-content-white-bg">
     <div class="container">
-      <span class="section-title-light-bg">Installation</span>
+      <span class="section-title-light-bg">Get started</span>
       <div class="row">
-         <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">1</div><h3 class="section-title-light-bg">Scaffold</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
             <p>
-              Invenio 3.0 is a digital repository framework that enables you to
-              easily bootstap, customise and run your own digital repository
-              instances.
-            </p>
-            <p>
-               We start by bootstrapping a new instance:
+               First, scaffold the new instance:
             </p>
             <div class="command-line">
-                <div class="line comment"># create my-site instance</div>
-                <div class="line"><span class="prompt">$</span>mkvirtualenv my-site</div>
+                <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
+                <div class="line comment"># scaffold my-site instance</div>
                 <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.0</div></div>
+                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">2</div><h3 class="section-title-light-bg">Install</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+               Next, start the backend services and install the new instance:
+            </p>
+            <div class="command-line">
                 <div class="line"><span class="prompt">$</span>cd my-site</div>
                 <div class="line comment"># start services (db, es, mq, etc)</div>
                 <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
-                <div class="line comment"># bootstap my-site instance</div>
+                <div class="line comment"># bootstrap my-site instance</div>
                 <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
             </div>
-            <p>
-               We follow by registering the record data model:
-            </p>
-            <div class="command-line">
-                <div class="line comment"># select instance</div>
-                <div class="line"><span class="prompt">$</span>workon my-site</div>
-                <div class="line comment"># scaffold data model in the same parent directory</div>
-                <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-datamodel -c v3.0</div></div>
-                <div class="line comment"># install and register data model</div>
-                <div class="line"><span class="prompt">$</span>cd my-datamodel</div>
-                <div class="line"><span class="prompt">$</span>pip install -e .</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">3</div><h3 class="section-title-light-bg">Run</h3>
             </div>
+        </div>
+        <div class="col-md-8">
             <p>
-               We can now run the newly created instance:
+               Setup the database and indexes and run your instance:
             </p>
             <div class="command-line">
-                <div class="line comment"># select instance</div>
-                <div class="line"><span class="prompt">$</span>workon my-site</div>
-                <div class="line"><span class="prompt">$</span>cd my-site</div>
                 <div class="line comment"># setup database and indexes</div>
-                <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
                 <div class="line"><span class="prompt">$</span>./scripts/setup</div>
-                <div class="line comment"># start worker</div>
-                <div class="line"><span class="prompt">$</span>celery worker -A invenio_app.celery -l INFO</div>
-                <div class="line comment"># start server</div>
+                <div class="line comment"># Run your instance</div>
                 <div class="line"><span class="prompt">$</span>./scripts/server</div>
                 <div class="line comment"># your site is running!</div>
-                <div class="line"><span class="prompt">$</span>firefox https://localhost:5000/</div>
-                </div>
+                <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/</div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">4</div><h3 class="section-title-light-bg">Use</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
             <p>
                We can submit and query records:
             </p>
             <div class="command-line">
                 <div class="line comment"># create a new record</div>
                 <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
-                <div class="line"><span class="tab">--request POST \</div>
-                <div class="line"><span class="tab">--data '{"title":"Some title", "contributors": [{"name": "Doe, John"}]}' \</div>
-                <div class="line"><span class="tab"></span>https://localhost:5000/api/records/?prettyprint=1</div>
+                <div class="line"><span class="tab">--request POST \</span></div>
+                <div class="line"><span class="tab">--data '{"title":"Some title", "contributors": [{"name": "Doe, John"}]}' \</span></div>
+                <div class="line"><span class="tab"></span>https://127.0.0.1:5000/api/records/?prettyprint=1</div>
                 <div class="line comment"># view record</div>
-                <div class="line"><span class="prompt">$</span>firefox https://localhost:5000/records/1</div>
+                <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/records/1</div>
                 <div class="line comment"># download record</div>
                 <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
-                <div class="line"><span class="tab"></span>https://localhost:5000/api/records/1?prettyprint=1</div>
+                <div class="line"><span class="tab"></span>https://127.0.0.1:5000/api/records/1?prettyprint=1</div>
+                <div class="line comment"># search for records</div>
+                <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
+                <div class="line"><span class="tab"></span>https://localhost:5000/api/records/?prettyprint=1&q=title:Some</div>
             </div>
             <p>
                For more information and comments, please see our <a href="https://invenio.readthedocs.io/en/latest/quickstart/quickstart.html">Quickstart</a> documentation.
             </p>
-         </div>
+        </div>
       </div>
       <div class="row">
-         <div class="col-md-8 col-md-offset-2 alert alert-warning">
+         <div class="col-md-10 col-md-offset-1 alert alert-warning">
           Looking for Invenio 1.x or 2.x versions? Please see our <a href="/legacy/">legacy releases</a> documentation.
         </div>
       </div>
