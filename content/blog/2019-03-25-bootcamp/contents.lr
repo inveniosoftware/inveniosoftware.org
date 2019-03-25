@@ -1,0 +1,55 @@
+title: Invenio Training Bootcamp 2019
+---
+author: Nicola Tarocco
+---
+body:
+
+![](bootcamp-group-photo.jpg)
+
+The Invenio v3 Bootcamp was held from the 19th to the 21st of March, 2019 at CERN. The event reached the maximum number of 30 participants with attendees from all over the world (Czech Republic, Danmark, Germany, Finland, France, Japan, Norway, Spain, Switzerland, UK and USA).
+The bootcamp was targeting developers wanting to learn more about Invenio and to understand how to create or customize an Invenio repository.
+
+**Format**
+
+The three days of the bootcamp was organised with a succession of talks and practical hands-on sessions, presented by 6 Invenio experts. Participants were able to develop each of the functionality on their laptop with a constant assistant in case of need.
+
+The objective was to discover the Invenio framework and acquire knowledge on how to build a new repository by progressively introducing new concepts.
+
+The main topics included: 
+
+* Getting started with Invenio
+* Tour of functionalities and infrastructure
+* Customizations of data models and look & feel
+* Deposit of new records and references between data models
+* Access control
+* Security
+* Deployment and application architecture
+
+**Try it yourself**
+
+We've made all the material publicly available for all those who couldn't participate in the event, so you can try out the same exercises at home:
+
+- [Training exercises](https://github.com/inveniosoftware/training)
+- [Presentations on the event website](https://indico.cern.ch/event/773969/timetable/#all)
+
+If you run into troubles, we're happy to [answer questions](https://invenio.readthedocs.io/en/latest/general/getting-help.html) you may have.
+
+**Takeaways**
+
+Participants had the opportunity to experience how to work with Invenio thanks to the hands-on sessions and to understand how to apply each of the introduced functionalities to use cases of their organization.
+
+The bootcamp attracted quite a lot of interest for Invenio and participants were very involved and curious: we were very glad to answer to all of the interesting questions that were asked.
+
+We would like to thank everyone for their participation and help to have contributed​ to the success of the event.
+
+**Invenio User Group Workshop 2019 @ Open Repositories 2019, June 10th**
+
+Our next event is the Invenio User Group Workshop (IUGW) at the [Open Repositories 2019](https://or2019.blogs.uni-hamburg.de/workshops/) conference in Hamburg. The workshop will be held on June 10th with presentations from Invenio users from around the world. 
+
+The call for proposals will be announced early April, so stay tuned.
+
+*See you in Hamburg!*
+---
+pub_date: 2019-03-25
+---
+team: Invenio
