@@ -14,16 +14,16 @@ body:
 
 The Invenio RDM project is funded by the [CERN Knowledge Transfer Fund](https://kt.cern), as well as all the participating partners,  including:
 
-- Brookhaven National Laboratory (US)
-- Caltech Library (US)
-- Data Futures (UK)
-- Helmholtz Zentrum Dresden (DE)
-- Northwestern University (US)
-- OpenAIRE (GR)
-- TIND (NO)
-- Tubitak (TK)
-- University of Hamburg (DE)
-- University of Münster (DE)
+- [Brookhaven National Laboratory](http://www.bnl.gov) (US)
+- [Caltech Library](https://www.library.caltech.edu) (US)
+- [Data Futures](https://www.data-futures.org) (UK)
+- [Helmholtz Zentrum Dresden-Rossendorf](https://www.hzdr.de) (DE)
+- [Northwestern University](https://www.northwestern.edu) (US)
+- [OpenAIRE](https://www.openaire.eu) (GR)
+- [TIND](https://tind.io) (NO)
+- [Tubitak](http://www.tubitak.gov.tr) (TK)
+- [University of Hamburg](https://www.uni-hamburg.de) (DE)
+- [University of Münster](https://www.uni-muenster.de/en/) (DE)
 
 The project has an ambitious one year schedule in which it will deliver:
 
@@ -58,7 +58,7 @@ In fact, other institutions have already taken Zenodo source code (which is open
 The real strength of the project is that it brings together a suite of partners from multidisciplinary domains, that each bring unique knowledge and know-how from their specific domains that will be critical to the success of project:
 
 - Institutional partners:
-    - University of HamburgHA
+    - University of Hamburg
     - University of Münster
     - Caltech Library
 - Health and medical science partners:
@@ -71,6 +71,8 @@ The real strength of the project is that it brings together a suite of partners 
     - Data Futures
 - Business partners:
     - TIND Technologies
+- Community partners:
+    - OpenAIRE
 
 # Building Invenio RDM
 
