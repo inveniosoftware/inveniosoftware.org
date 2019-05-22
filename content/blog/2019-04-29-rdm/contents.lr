@@ -1,4 +1,4 @@
-title: Invenio RDM: a turn-key open source research data management platform
+title: InvenioRDM: a turn-key open source research data management platform
 ---
 author: Lars Holm Nielsen
 ---
@@ -10,9 +10,9 @@ twitter_handle: larshankat
 ---
 body:
 
-**CERN has partnered with 10 multidisciplinary institutions and companies to build a turn-key open source research data management platform called Invenio RDM, and grow a diverse community to sustain the platform.**
+**CERN has partnered with 10 multidisciplinary institutions and companies to build a turn-key open source research data management platform called InvenioRDM, and grow a diverse community to sustain the platform.**
 
-The Invenio RDM project is funded by the [CERN Knowledge Transfer Fund](https://kt.cern), as well as all the participating partners,  including:
+The InvenioRDM project is funded by the [CERN Knowledge Transfer Fund](https://kt.cern), as well as all the participating partners,  including:
 
 - [Brookhaven National Laboratory](http://www.bnl.gov) (US)
 - [Caltech Library](https://www.library.caltech.edu) (US)
@@ -27,13 +27,13 @@ The Invenio RDM project is funded by the [CERN Knowledge Transfer Fund](https://
 
 The project has an ambitious one year schedule in which it will deliver:
 
-- Invenio RDM - A research data management platform based on [Zenodo](https://zenodo.org) and [Invenio v3 Framework](https://inveniosoftware.org).
-- A community of public and private institutions to sustain Invenio RDM.
-- Minimum two existing repositories migrated to Invenio RDM, with Zenodo being one of them.
+- InvenioRDM - A research data management platform based on [Zenodo](https://zenodo.org) and [Invenio v3 Framework](https://inveniosoftware.org).
+- A community of public and private institutions to sustain InvenioRDM.
+- Minimum two existing repositories migrated to InvenioRDM, with Zenodo being one of them.
 
-The key to successfully achieving the ambitious schedule is that Invenio RDM will be based on Zenodo that have already been successfully validated over the past 5 years.
+The key to successfully achieving the ambitious schedule is that InvenioRDM will be based on Zenodo that have already been successfully validated over the past 5 years.
 
-Our vision in the next five-years, is to make Invenio RDM a world-leading extensible research data management platform used by research institutions all around the world and with businesses providing services, support and customizations on top of Invenio RDM.
+Our vision in the next five-years, is to make InvenioRDM a world-leading extensible research data management platform used by research institutions all around the world and with businesses providing services, support and customizations on top of InvenioRDM.
 
 # What is a RDM platform?
 
@@ -74,9 +74,9 @@ The real strength of the project is that it brings together a suite of partners 
 - Community partners:
     - OpenAIRE
 
-# Building Invenio RDM
+# Building InvenioRDM
 
-Invenio RDM will include most of the features that Zenodo alreday include today such as e.g. DOI miniting capabilities, versioning support and COUNTER compliant usage statistics to name some few.
+InvenioRDM will include most of the features that Zenodo alreday include today such as e.g. DOI miniting capabilities, versioning support and COUNTER compliant usage statistics to name some few.
 
 The work in transforming Zenodo into a general purpose RDM-platform will involve three key areas:
 
@@ -86,15 +86,15 @@ The repository platform will at its core include an extensible metadata model ba
 
 **Packaging and distribution**
 
-Key for easy adoption of Invenio RDM is to ensure that it is a real turn-key solution requiring minimal experience in installing, operating and administering the platform, or in short getting users started in no time. Thus, a significant part of the efforts will go into simplifing the installation, improving the packaging and distribution, as well as providing excellent end-user documentation.
+Key for easy adoption of InvenioRDM is to ensure that it is a real turn-key solution requiring minimal experience in installing, operating and administering the platform, or in short getting users started in no time. Thus, a significant part of the efforts will go into simplifing the installation, improving the packaging and distribution, as well as providing excellent end-user documentation.
 
 **Customization and extendability**
 
-A key requirement for Invenio RDM is that it can easily be extended and customized just enough to adapt to each particular institution. This includes for instance defining authentication mechanisms (SAML/LDAP/OAuth), integrating with mutliple storage backend system, and most important of all to make these customizations easy.
+A key requirement for InvenioRDM is that it can easily be extended and customized just enough to adapt to each particular institution. This includes for instance defining authentication mechanisms (SAML/LDAP/OAuth), integrating with mutliple storage backend system, and most important of all to make these customizations easy.
 
 ## Contact
 
-For more information about the Invenio RDM project, please contact:
+For more information about the InvenioRDM project, please contact:
 
 Lars Holm Nielsen
 
