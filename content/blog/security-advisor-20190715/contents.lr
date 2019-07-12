@@ -1,0 +1,49 @@
+title: Invenio security releases - XSS and Host header injection
+---
+author: Lars Holm Nielsen
+---
+body:
+
+Two vulnerabilities have been identified in *supported* Invenio modules.
+
+- **Invenio-Records** ([security advisory](https://github.com/inveniosoftware/invenio-records/security/advisories/GHSA-vxh3-mvv7-265j)): A Cross-Site Scripting (XSS) vulnerability has been identified in Invenio-Records in the administration interface.
+- **Invenio-App** ([security advisory](https://github.com/inveniosoftware/invenio-app/security/advisories/GHSA-94mf-xfg5-r247)): A Host header injection vulnerability has been identified in Invenio-App.
+
+In addition, two XSS vulnerabilities have been discovered in *unsupported* Invenio modules:
+
+- **Invenio-Previewer** ([security advisory](https://github.com/inveniosoftware/invenio-previewer/security/advisories/GHSA-j9m2-6hq2-4r3c)): An XSS vulnerability affecting the JSON, Markdown and iPython Notebook previewers.
+- **Invenio-Communities** ([security advisory](https://github.com/inveniosoftware/invenio-communities/security/advisories/GHSA-mfv8-q39f-mgfg)): An XSS vulnerability affecting the Jinja templates.
+
+The vulnerabilities were found after an XSS vulnerability was reported to Zenodo by Ciro Santilli. As a standard measure and after patching Zenodo, we reviewed the Invenio source code for potential similar issues to those identified in the Zenodo source code. This led to the discovery of three additional XSS vulnerabilities. The host header injection vulnerability was discovered after a standard vulnerability scan of another service running at CERN.
+
+### Releases
+
+We have issued two new Invenio releases fixing these issues:
+
+- Invenio v3.0.2 and v3.1.1
+
+The following individual modules fixing the vulnerabilities have been released:
+
+- Invenio-Records v1.0.2, v1.1.1 and v1.2.2
+- Invenio-App v1.0.6 and v1.1.1
+- Invenio-Previewer v1.0.0a12 (unsupported)
+- Invenio-Communities v1.0.0a20 (unsupported)
+
+### New security policy
+
+We have taken the chance during handling of these vulnerabilities to also clearly define and document Invenio's [security policy](https://invenio.readthedocs.io/en/latest/community/security-policy.html). Please have a look and let us know what you think.
+
+Previously, we have sometimes privately notified potentially affected services about a security vulnerability. We have however decided to discontinue this practice, and instead, send out an advance notification to everyone about an upcoming security release including only the severity level of the issue. This allows everyone to plan ahead for the upcoming release and ensure they have staff available to handle the release. This partially smoothens the communication process but also ensures that everyone receives the same information in a scalable approach.
+
+### GitHub security advisors
+
+As a new thing, we have also evaluated the new GitHub [maintainer security advisories](https://help.github.com/en/articles/about-maintainer-security-advisories) to handle the vulnerabilities. These advisories are reviewed by GitHub and should allow a security alert to be sent to affected repositories.
+
+### For more information
+
+If you have any questions or comments about this security release:
+* Email us at [info@inveniosoftware.org](mailto:info@inveniosoftware.org)
+---
+pub_date: 2019-07-15
+---
+team: Invenio
