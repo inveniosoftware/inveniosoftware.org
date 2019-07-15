@@ -118,7 +118,7 @@
 <li>Change Elasticsearch mappings of existing indexes.</li>
 </ul>
 <h2>Near-zero downtime upgrade, migration and reindexing</h2>
-<p>To solve the above use cases, we've built a new Invenio module named <a href="https://github.com/inveniosoftware/invenio-index-migrator">Invenio-Index-Migrator</a>. The module allows you to synchronize two Elasticsearch indexes (in-cluster or cross-cluster) over an extended time period, and when you are ready, you can roll over the new index. Depending on how you have deployed Invenio, the rollover can happen with either zero downtime or near zero downtime (<5 minutes compared to hours)</p>
+<p>To solve the above use cases, we've built a new Invenio module named <a href="https://github.com/inveniosoftware/invenio-index-migrator">Invenio-Index-Migrator</a>. The module allows you to synchronize two Elasticsearch indexes (in-cluster or cross-cluster) over an extended time period, and when you are ready, you can roll over the new index. Depending on how you have deployed Invenio, the rollover can happen with either zero downtime or near zero downtime (&lt;5 minutes compared to hours)</p>
 <p>The new module supports migrating records but also any other index you may have in Elasticsearch such as event logging from usage statistics. The new module works by defining <strong>migration recipes</strong> and managing them via a CLI</p>
 <h4>Demo</h4>
 <p><em>Disclaimer: APIs etc may change slightly before the final release.</em></p>
