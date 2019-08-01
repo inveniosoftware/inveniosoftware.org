@@ -21,7 +21,7 @@
                 <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
                 <div class="line comment"># scaffold my-site instance</div>
                 <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
+                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.2</div></div>
             </div>
         </div>
       </div>
@@ -88,6 +88,9 @@
                 <div class="line comment"># search for records</div>
                 <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
                 <div class="line"><span class="tab"></span>"https://localhost:5000/api/records/?prettyprint=1&q=title:Some"</div>
+                <div class="line comment"># upload a file to the record</div>
+                <div class="line"><span class="prompt">$</span>curl -k -H "Content-Type: application/octet-stream" \</div>
+                <div class="line"><span class="tab"></span>-X PUT --data-binary @myfile.pdf https://127.0.0.1:5000/api/records/1/files/myfile.pdf</div>
             </div>
             <p>
                For more information and comments, please see our <a href="https://invenio.readthedocs.io/en/latest/quickstart/quickstart.html">Quickstart</a> documentation.
