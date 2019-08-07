@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Invenio Training Bootcamp 2019 — inveniosoftware.org</title>
+<title>Invenio v3.1 Release — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,9 +50,9 @@
           
             <li><a href="/community/">Community</a></li>
           
-            <li><a href="/roadmap/">Roadmap</a></li>
+            <li><a class="active-menu" href="/roadmap/">Roadmap</a></li>
           
-            <li><a class="active-menu" href="/blog/">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -64,8 +64,8 @@
         <div class="row">
           <div class="col">
             <div class="header-section-title">
-              <h3>Invenio Blog</h3>
-              <h6>Follow news and updates on Invenio world</h6>
+              <h3>Roadmap</h3>
+              <h6></h6>
             </div>
           </div>
         </div>
@@ -73,85 +73,44 @@
     </div>
   </section>
   
-  <section id="blog-post-content-section" class="section-content-light-bg">
+<section class="install-section section-content-white-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-xs-12 block-center">
-            
-  <div class="blog-back-button">
-    <a href="/blog">Back</a>
-  </div>
-  <div class="blog-post blog-post-frame">
-    <header class="post-header">
-      <h2>
-        
-          Invenio Training Bootcamp 2019
-        
-      </h2>
-      <p class="post-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Nicola Tarocco
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Mar 25, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <article class="post-content">
-      <p><img src="/blog/2019-03-25-bootcamp/bootcamp-group-photo.jpg" alt=""></p>
-<p>The Invenio v3 Bootcamp was held from the 19th to the 21st of March, 2019 at CERN. The event reached the maximum number of 30 participants with attendees from all over the world (Czech Republic, Danmark, Germany, Finland, France, Japan, Norway, Spain, Switzerland, UK and USA).
-The bootcamp was targeting developers wanting to learn more about Invenio and to understand how to create or customize an Invenio repository.</p>
-<p><strong>Format</strong></p>
-<p>The three days of the bootcamp was organised with a succession of talks and practical hands-on sessions, presented by 6 Invenio experts. Participants were able to develop each of the functionality on their laptop with a constant assistant in case of need.</p>
-<p>The objective was to discover the Invenio framework and acquire knowledge on how to build a new repository by progressively introducing new concepts.</p>
-<p>The main topics included:</p>
-<ul>
-<li>Getting started with Invenio</li>
-<li>Tour of functionalities and infrastructure</li>
-<li>Customizations of data models and look & feel</li>
-<li>Deposit of new records and references between data models</li>
-<li>Access control</li>
-<li>Security</li>
-<li>Deployment and application architecture</li>
-</ul>
-<p><strong>Try it yourself</strong></p>
-<p>We've made all the material publicly available for all those who couldn't participate in the event, so you can try out the same exercises at home:</p>
-<ul>
-<li><a href="https://github.com/inveniosoftware/training">Training exercises</a></li>
-<li><a href="https://indico.cern.ch/event/773969/timetable/#all">Presentations on the event website</a></li>
-</ul>
-<p>If you run into troubles, we're happy to <a href="https://invenio.readthedocs.io/en/latest/general/getting-help.html">answer questions</a> you may have.</p>
-<p><strong>Takeaways</strong></p>
-<p>Participants had the opportunity to experience how to work with Invenio thanks to the hands-on sessions and to understand how to apply each of the introduced functionalities to use cases of their organization.</p>
-<p>The bootcamp attracted quite a lot of interest for Invenio and participants were very involved and curious: we were very glad to answer to all of the interesting questions that were asked.</p>
-<p>We would like to thank everyone for their participation and help to have contributed​ to the success of the event.</p>
-<p><strong>Invenio User Group Workshop 2019 @ Open Repositories 2019, June 10th</strong></p>
-<p>Our next event is the Invenio User Group Workshop (IUGW) at the <a href="https://or2019.blogs.uni-hamburg.de/workshops/">Open Repositories 2019</a> conference in Hamburg. The workshop will be held on June 10th with presentations from Invenio users from around the world.</p>
-<p>The call for proposals will be announced early April, so stay tuned.</p>
-<p><em>See you in Hamburg!</em></p>
-
-    </article>
-    
-  </div>
-
+        <div class="row">
+        <div class="col-sm-4">
+            <span class="section-title-light-bg">Current</span>
         </div>
-      </div>
+        <div class="col-sm-4">
+            <span class="section-title-light-bg">Near-term</span>
+        </div>
+        <div class="col-sm-4">
+            <span class="section-title-light-bg">Future</span>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                
+<div class="panel panel-default">
+  <div class="panel-heading development">
+    Development
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Invenio v3.1 Release</h3>
+    <div class="card-description">
+    <ul>
+<li> Webpack and improved docker support. </li>
+<li>Scheduled for release in March 2019.</li></ul>
     </div>
-  </section>
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $(document).delegate('*.post-content img', 'click', function(event) {
-            $(this).data('remote', $(this).attr('src'));
-            event.preventDefault(); $(this).ekkoLightbox();
-        });
-    });
-  </script>
+  </div>
+</div>
 
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+</section>
 
   <footer>
   <div class="contact-section section-content-dark-bg">

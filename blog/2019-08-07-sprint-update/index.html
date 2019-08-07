@@ -1,0 +1,357 @@
+<!doctype html>
+<title>Sprint update — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="/static/img/favicon.ico?h=981ca02e">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/style.css?h=086c99b7">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  <section class="header-section">
+    <div class="cover-image">
+      
+        <header>
+  <nav class="navbar navbar-fixed-top invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#inv-navbar-collapse" aria-controls="inv-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">
+          <img src="/static/img/logo-invenio-white.svg?h=8686b0c0" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li><a href="/gettingstarted/">Get started</a></li>
+          
+            <li><a href="/#features">Features</a></li>
+          
+            <li><a href="/showcase/">Examples</a></li>
+          
+            <li><a href="http://invenio.readthedocs.io">Documentation</a></li>
+          
+            <li><a href="/community/">Community</a></li>
+          
+            <li><a href="/roadmap/">Roadmap</a></li>
+          
+            <li><a class="active-menu" href="/blog/">Blog</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header-section-title">
+              <h3>Invenio Blog</h3>
+              <h6>Follow news and updates on Invenio world</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="blog-post-content-section" class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+            
+  <div class="blog-back-button">
+    <a href="/blog">Back</a>
+  </div>
+  <div class="blog-post blog-post-frame">
+    <header class="post-header">
+      <h2>
+        
+          Sprint update
+        
+      </h2>
+      <p class="post-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Aug 7, 2019</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <article class="post-content">
+      <p>Two CERN sprint teams with a total of 14 developers have just each finished a two-week sprint:</p>
+<ul>
+<li>Sprint team 1: Focused on the Invenio v3.2 release which will include the new  Files bundle.</li>
+<li>Sprint team 2: Focused on adding Elasticsearch 7 support as well prepare  the Invenio v3.3 release which will include the new index migration utilities.</li>
+</ul>
+<h2>Highlights</h2>
+<p>A total of 23 new module releases where made during the sprint.  The highlights from the two sprints include:</p>
+<ul>
+<li>Elasticsearch 7 support.</li>
+<li>Elasticsearch index prefixing and suffixing support for shared clusters (this is needed for the upcoming index migrator utilities).</li>
+<li>Marshmallow v2 and v3 compatibility. Invenio is now able to accept both Marshmallow v2 and v3 schemas. In your Invenio instance you will need to pin the Marshmallow version that matches your schemas, and follow the upgrade guide provided by Marshmallow to upgrade your schemas.</li>
+<li>Sentry support is now using the Sentry-Python library instead of Raven library (you can still switch back to Raven by setting <code>SENTRY_SDK = False</code> in your configuration).</li>
+<li>Rate limiting now differentiates between guests and authenticated users, and allows for external modules to provide per user rate limits.</li>
+<li>Improved HTML sanitisation support in several modules.</li>
+<li>Improved support for client-side infinite scroll in the REST API.</li>
+<li>Housekeeping: we have fixed a significant number of  build failures as well as deprecation warnings from other libraries.</li>
+</ul>
+<p>All of above highlights will be released together with Invenio v3.2. Most of the individual modules have already been released, however you are still on your own if you decide to go head with them prior to the Invenio v3.2 release (if you encounter problems, we are of course very interested in hearing about it, so that we can solve them before the v3.2 release).</p>
+<h2>Future plans</h2>
+<h3>Invenio v3.2 and Files Bundle</h3>
+<p>The primary focus is still to release Invenio v3.2. The  pending issues are limited to final testing and documentation.</p>
+<h3>Elasticsearch v2 and v5 deprecation</h3>
+<p>Invenio v3.3 will add index migration utilities that will allow Invenio users to   upgrade their Elasticsearch clusters to supported Elasticsearch versions. In Invenio v3.4 we plan to then remove support for Elasticsearch v2 and v5.</p>
+<h3>Python v2 support ends January 1st 2020.</h3>
+<p>Python v2.7 will reach end of life on January 1st, 2020. Invenio will only support Python 2.7 until that date. From January 1st, 2020 we will remove Python 2.7 from our test matrixes, and thus new module releases after January 1st 2020 will very likely no longer work on Python 2.7.</p>
+<p>We are already seeing a large number of our dependent Python libraries that have removed Python 2 support, and thus we will not be able to continue Python 2 support beyond January 1st, 2020.</p>
+<h3>Invenio v3.3 - Index migration and usage statistics</h3>
+<p>Invenio v3.3 is planned for release in late 2019 or early 2020.  The primary focus for Invenio v3.3 will be adding support for Elasticsearch index migration as well as releasing the Statistics Bundle (COUNTER-compliant usage statistics). The Statistics Bundle includes the following modules:</p>
+<ul>
+<li>Invenio-Stats</li>
+<li>Invenio-Queues</li>
+<li>COUNTER-Robots</li>
+</ul>
+<p>Invenio v3.3 may also see the release of a new module, Invenio-Records-Permissions, which will significantly simplify the defining and managing access control for records.</p>
+<h2>Releases overview</h2>
+<ul>
+<li>invenio-access: v1.2.0<ul>
+<li>Removed DynamicPermission from Invenio-Access (deprecated since v1.0.0)</li>
+</ul>
+</li>
+<li>invenio-app: v1.2.0<ul>
+<li>Fixed issue with <code>instance_path</code> and <code>static_folder</code> being globals evaluated once which caused problems with fixtures in pytest-invenio.</li>
+<li>Improved the rate limiting to differentiate between guests and authenticated users. </li>
+<li>Added possibility for external modules to provide per user rate limits via the Flask <code>g</code> global request object.</li>
+<li>Fixed deprecation warnings from Werkzeug.</li>
+</ul>
+</li>
+<li>invenio-assets: v1.1.3<ul>
+<li>Changed module to hide webpack warnings (primarily needed for the cookiecutter-invenio-instance to reduce output clutter).</li>
+</ul>
+</li>
+<li>invenio-base: v1.1.0<ul>
+<li>Added support for allowing <code>instance_path</code> and <code>static_folder</code> to be callables which are evaluated before being passed to the Flask application class  (related to invenip-app fix ).</li>
+</ul>
+</li>
+<li>invenio-celery: v1.1.0<ul>
+<li>Fixed missing release on PyPI.</li>
+</ul>
+</li>
+<li>invenio-config: v1.0.2<ul>
+<li>Added <code>ALLOWED_HTML_TAGS</code> and <code>ALLOWED_HTML_ATTRS</code>  default configuration for bleach HTML sanitisation library (values are used by Invenio-Records-REST, Invenio-Formatter and Invenio-Previewer).</li>
+</ul>
+</li>
+<li>invenio-db: v1.0.4<ul>
+<li>Added  PostgreSQL v10 into the test matrix to ensure future compatibility.</li>
+</ul>
+</li>
+<li>invenio-formatter: v1.0.2<ul>
+<li>Added a new Jinja filter <code>sanitize_html</code> that uses the bleach library to sanitise data and to be used in combination with the <code>safe</code> template filter to prevent Cross-Side Scripting (XSS) vulnerabilities.</li>
+</ul>
+</li>
+<li>invenio-indexer: v1.1.0<ul>
+<li>Added Elasticsearch 7 support.</li>
+<li>Added <code>before_record_index.dynamic_connect()</code> signal utility for connecting index receivers directly to specific indexes.</li>
+<li>Fixed Elasticsearch index prefixing support.</li>
+</ul>
+</li>
+<li>invenio-logging: v1.2.0<ul>
+<li>Changed Sentry integration to use the sentry-python module instead of raven library. Raven library is still supported for backward compatibility.</li>
+</ul>
+</li>
+<li>invenio-oaiserver: v1.1.1<ul>
+<li>Added Elasticsearch 7 support.</li>
+<li>Added Marshmallow v3 support  (with v2 backward compatibility).</li>
+<li>Improved documentation on how to configure Elasticsearch (<a href="https://invenio-search.readthedocs.io/en/latest/configuration.html">https://invenio-search.readthedocs.io/en/latest/configuration.html</a>)</li>
+</ul>
+</li>
+<li>invenio-oauthclient: v1.1.3<ul>
+<li>Fixed deprecation warnings from Flask-OAuthlib</li>
+<li>Fixed issue with the ?next parameter not supporting a query string.</li>
+</ul>
+</li>
+<li>invenio-records: v1.3.0<ul>
+<li>Removed the CLI (deprecated since v1.1.0)</li>
+</ul>
+</li>
+<li>invenio-records-rest: v1.5.0 <ul>
+<li>Added Elasticsearch 7 support</li>
+<li>Added CSV serialiser (for allowing CSV exports)</li>
+<li>Added Marshmallow v3 support</li>
+<li>Added “from” and “aggs” query parameters for better supporting client-side infinite scroll use cases.</li>
+<li>Changed SanitizedHTML marshmallow field to use central configuration from Invenio-Config.</li>
+<li>Fixed a deprecation warning.</li>
+<li>Fixed Elasticsearch index prefixing support.</li>
+<li>Fixed bug with browsers not respecting the content type when caching the REST API responses. (PENDING merge)</li>
+</ul>
+</li>
+<li>invenio-rest: v1.1.1 <ul>
+<li>Added compatibility layer for marshmallow v2 and v3</li>
+</ul>
+</li>
+<li>invenio-search: v1.2.1<ul>
+<li>Added Elasticsearch v7 support</li>
+<li>Fixed bug with Elasticsearch index prefixing support.</li>
+<li>Added index suffixing and write aliases.</li>
+<li>Deprecated Elasticsearch v5 support.</li>
+<li>Changed default library used for making request to Elasticsearch from requests to urllib3 (default recommended library). </li>
+</ul>
+</li>
+<li>invenio-theme: v1.1.4<ul>
+<li>Added an error handler for HTTP 429 (rate limiting error).</li>
+</ul>
+</li>
+<li>xrootdpyfs v0.1.6<ul>
+<li>Fixed bug preventing previewing large ZIP files (2GB+).</li>
+</ul>
+</li>
+</ul>
+<h2>Files Bundle</h2>
+<p>The Files Bundle also saw releases of the following modules:</p>
+<ul>
+<li>invenio-files-rest: v1.0.1 </li>
+<li>invenio-records-files: v1.1.1 </li>
+<li>invenio-previewer: v1.0.1</li>
+<li>invenio-iiif: v1.0.1</li>
+<li>pytest-invenio v1.2.0</li>
+</ul>
+<p>We don’t recommend upgrading to these versions until Invenio v3.2 have been released. In particular, we have made breaking changes to Invenio-Records-Files from the v1.0.0a11 to v1.0.0, that are likely to impact you if you depended on the unsupported alpha releases.</p>
+<p>Stay tuned for the Invenio 3.2 release!</p>
+
+    </article>
+    
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).data('remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    });
+  </script>
+
+
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6">
+    <a href="/"><img class="icon-contact" src="/static/img/logo-invenio-white.svg?h=8686b0c0" /></a>
+  </div>
+  <div class="col-md-6">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td class="contact-list-header">Documentation</td>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Read The Docs</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">GitHub</td>
+          <td>
+            <a href="https://github.com/inveniosoftware">@inveniosoftware</a> &middot; <a href="https://github.com/inveniosoftware-contrib">@inveniosoftware-contrib</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Chat room</td>
+          <td>
+            <a href="https://gitter.im/inveniosoftware/invenio"><img src="/static/img/gitter.svg?h=e497f3c6"></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Twitter</td>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">@inveniosoftware <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Weekly video meetings</td>
+          <td><a href="https://indico.cern.ch/category/6046/">Invenio Developer Forum</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Yearly workshops</td>
+          <td><a href="https://indico.cern.ch/category/6240/">Invenio User Group Workshop</a></td>
+        </tr>
+        <tr>
+          <td class="contact-list-header">Email<br />
+            <small>(note: no technical support)</small></td>
+          <td>
+            <a href="href=mailto:info@inveniosoftware.org?Subject=Hello">info @ inveniosoftware.org</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright &copy; 2016-2018 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
+          <span class="text-muted"><small></small></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4535);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://piwik.web.cern.ch/piwik.php?idsite=4535" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+  <script>
+    //Main navigation scroll spy for shadow
+    $(window).scroll(function() {
+      var y = $(window).scrollTop();
+      if (y > 0) {
+        $(".invenio-navbar").addClass('invenio-navbar-not-top');
+      } else {
+        $(".invenio-navbar").removeClass('invenio-navbar-not-top');
+      }
+    });
+  </script>
+</body>
