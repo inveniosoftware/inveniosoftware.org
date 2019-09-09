@@ -1,302 +1,145 @@
 {% extends 'layout.html' %}
 
+{% from "macros/blog-list-item.html" import render_blog_list_item_homepage %}
+
 {% block body %}
-  <script>
-    $.getJSON( "https://api.github.com/repos/inveniosoftware/invenio", function( data ) {
-      $("#forks_count").text(data.forks_count);
-    });
-    $.getJSON( "http://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20from%20html%20where%20url=%22http://twitter.com/inveniosoftware%22%20AND%20xpath=%22//li[contains(@class,%27ProfileNav-item--followers%27)]/a/span[@class=%27ProfileNav-value%27]|//li[contains(@class,%27ProfileNav-item--following%27)]/a/span[@class=%27ProfileNav-value%27]%22&format=json", function( data ) {
-      $("#followers_count").text(data.query.results.span.content);
-    });
-  </script>
   <section class="intro-section">
     <div class="cover-image">
       {% include 'header.html' %}
-      <div class="vertical-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="headline col-md-10 col-md-offset-1">
-                  <img class="welcome-logo" src="{{ '/static/img/logo-invenio-white.svg'|asseturl }}"/>
-                  <h6>Open Source framework for <u><strong>large-scale</strong></u> digital repositories.</h6>
-                  <div class="actions">
-                    <div class="col-md-12 col-md-offset-1">
-                      <a href="#examples" class="btn white">See examples</a>
-                      <a href="#getstarted" class="btn">Get started</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="container">
+        <div class="row centered">
+          <div class="col-12">
+            {% include "logo-invenio-white-headline.svg" %}
+            <div class="born-at-cern centered">
+              <p>Born with <i class="fa fa-heart fa-heart-cern"></i> at <a href="https://home.cern"><img src="{{ '/static/img/logo-cern-white.svg'|asseturl }}" title="CERN" /></a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="welcome-features-section section-content-dark-bg">
+  <section class="hp-blog-section section-content-light-bg">
     <div class="container">
+      <span class="section-title">New on the blog <i class="fa fa-share fa-share-down" style=""></i></span>
       <div class="row">
-        <div class="welcome-features-col col-md-3">
-          <h2>Safe</h2>
-          <p>
-            Invenio has been created with security and long-term preservation in mind. Build your digital repository and focus only on what is important to you, Invenio will do the rest.
-          </p>
-        </div>
-        <div class="welcome-features-col col-md-3">
-          <h2>Scalable</h2>
-          <p>
-            Invenio is fast. We have designed it to manage 100+ million records and petabytes of files. All your research data can now be archived independently of the size.
-          </p>
-        </div>
-        <div class="welcome-features-col col-md-3">
-          <h2>RESTful</h2>
-          <p>
-            Only a modern framework can create modern digital repositories. Invenio was born for the web, is JSON-native and provides RESTful APIs out of the box that will allow to build apps on top of it.
-          </p>
-        </div>
-        <div class="welcome-features-col col-md-3">
-          <h2>Open</h2>
-          <p>Invenio is 100% open source licensed under MIT license. Fork us on <a href="https://github.com/inveniosoftware">GitHub</a> and build your product. Invenio loves open standards for open science.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="welcome-made-cern col centered">
-          <p>Born with <i class="fa fa-heart"></i> at <a href="https://home.cern"><img src="{{ '/static/img/logo-cern-white.svg'|asseturl }}" title="CERN" /></a></p>
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="hp-blog-post-list">
+            {% for post in this.pagination.items %}
+              <div class="hp-blog-list-item col-xs-12 col-md-4">
+                {{ render_blog_list_item_homepage(post) }}
+              </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <a name="examples"></a>
-  <section class="instances-section section-content-white-bg">
+  <section class="trusted-by-section section-content-white-bg">
     <div class="container">
-      <span class="section-title-white-bg">Built on Invenio v3</span>
+      <span class="section-title"><i class="fa fa-heart"></i> Trusted by</span>
+      <div id="invenio-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#invenio-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#invenio-carousel" data-slide-to="1"></li>
+          <li data-target="#invenio-carousel" data-slide-to="2"></li>
+          <li data-target="#invenio-carousel" data-slide-to="3"></li>
+          <li data-target="#invenio-carousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-panel">
+              <a href="http://home.cern"><img src="{{ '/static/img/logo-cern.png'|asseturl }}" title="CERN"></a>
+              <a href="https://www.nii.ac.jp/en/"><img src="{{ '/static/img/logo-nii.png'|asseturl }}" title="NII"></a>
+              <a href="https://www.northwestern.edu/"><img src="{{ '/static/img/logo-northwestern-university.png'|asseturl }}" title="Northwestern University"></a>
+            </div>
+            <div class="carousel-panel">
+              <a href="http://www.bnl.gov/"><img src="{{ '/static/img/logo-bnl.png'|asseturl }}" title="Brookhaven National Laboratory"></a>
+              <a href="http://www.treccani.it/"><img src="{{ '/static/img/logo-treccani.png'|asseturl }}" title="Treccani"></a>
+              <a href="https://www.library.caltech.edu/"><img src="{{ '/static/img/logo-caltechlibrary.png'|asseturl }}" title="Caltech Library"></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-panel">
+              <a href="https://ctsa.ncats.nih.gov/cd2h/"><img src="{{ '/static/img/logo-ctsa.png'|asseturl }}" title="CTSA Program National Center for Data to Health"></a>
+              <a href="https://www.data-futures.org/"><img src="{{ '/static/img/logo-data-futures.png'|asseturl }}" title="Data Futures"></a>
+              <a href="https://www.hzdr.de/"><img src="{{ '/static/img/logo-hzdr.png'|asseturl }}" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
+            </div>
+            <div class="carousel-panel">
+              <a href="https://www.openaire.eu/"><img src="{{ '/static/img/logo-openaire.png'|asseturl }}" title="OpenAIRE"></a>
+              <a href="https://tind.io/"><img src="{{ '/static/img/logo-tind.png'|asseturl }}" title="TIND"></a>
+              <a href="http://www.tubitak.gov.tr/"><img src="{{ '/static/img/logo-tubitak.png'|asseturl }}" title="Tubitak"></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-panel">
+              <a href="https://www.uni-hamburg.de/"><img src="{{ '/static/img/logo-uni-hamburg.png'|asseturl }}" title="University of Hamburg"></a>
+            </div>
+            <div class="carousel-panel">
+              <a href="https://www.uni-muenster.de/en/"><img src="{{ '/static/img/logo-uni-munster.png'|asseturl }}" title="University of Münster"></a>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#invenio-carousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#invenio-carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section>
+  <section class="powering-open-science-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-globe"></i> Powering Open Science</span>
       <div class="row">
         <div class="col-md-4">
-          <a href="https://zenodo.org"><img class="instances" src="{{ '/static/img/screenshots/zenodo.png'|asseturl }}"/></a>
-          <h6><a href="https://zenodo.org">Zenodo</a></h6>
+          {% include 'icon-open-source.svg' %}
+          <h6>Free Open Source Sofware</h6>
+          <p>Invenio is Free Open Source Software supported by a commited community of multidisciplinary institutions.</p>
+        </div>
+        <div class="col-md-4">
+          {% include 'icon-open-source.svg' %}
+          <h6>Friendly and Responsive Community</h6>
+          <p>Although Invenio was born at CERN, its community is every day bigger. You can quickly reach us in our chatroom.</p>
+        </div>
+        <div class="col-md-4">
+          {% include 'icon-open-source.svg' %}
+          <h6>Free Open Source Sofware</h6>
+          <p>Invenio is Free Open Source Software supported by a commited community of multidisciplinary institutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="instances-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-check"></i> Built on Invenio</span>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://zenodo.org"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-zenodo.png'|asseturl }}"/></a>
+          <h6><a href="http://zenodo.org">Zenodo</a></h6>
           <p>
             Interdisciplinary open research data repository service built and operated by <a href="https://home.cern">CERN</a> and <a href="https://www.openaire.eu">OpenAIRE</a>.
           </p>
         </div>
         <div class="col-md-4">
-          <a href="https://videos.cern.ch"><img class="instances" src="{{ '/static/img/screenshots/cds-videos.png'|asseturl }}"/></a>
-          <h6><a href="https://videos.cern.ch">CDS Videos</a></h6>
+          <a href="https://videos.cern.ch"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-cds-videos.png'|asseturl }}"/></a>
+          <h6><a href="http://zenodo.org">CDS Videos</a></h6>
           <p>
             <a href="https://home.cern">CERN</a> institutional repository for videos including trans-coding backend.
           </p>
         </div>
         <div class="col-md-4">
-          <a href="http://opendata.cern.ch"><img class="instances" src="{{ '/static/img/screenshots/opendata.png'|asseturl }}"/></a>
+          <a href="http://opendata.cern.ch"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-cod.png'|asseturl }}"/></a>
           <h6><a href="http://opendata.cern.ch">CERN Open Data</a></h6>
           <p>
             Open Data platform publishing PBs of CERN physics data from LHC and other experiments.
           </p>
         </div>
       </div>
-      <span class="section-title-white-bg">Upcoming</span>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://www.nii.ac.jp/en/"><img class="instances" src="{{ '/static/img/logo-weko3.svg'|asseturl }}"/></a>
-          <h6><a href="https://www.nii.ac.jp/en/">WEKO 3</a></h6>
-          <p>
-            Invenio-based multi-tenancy repository platform that aims to support 500 Japanese universities. It's being developed by <a href="https://www.nii.ac.jp/en/">National Institute of Informatics</a>, Japan.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <a href="http://beta.inspirehep.net"><img class="instances" src="{{ '/static/img/screenshots/inspire-labs.png'|asseturl }}"/></a>
-          <h6><a href="http://beta.inspirehep.net">INSPIRE</a></h6>
-          <p>
-            INSPIRE is the aggregator for all of High-Energy Physics.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <a href="https://ils.test.rero.ch"><img class="instances" src="{{ '/static/img/screenshots/reroils.png'|asseturl }}"/></a>
-          <h6><a href="https://ils.test.rero.ch">RERO ILS</a></h6>
-          <p>
-            The RERO ILS project aims at creating the future RERO Integrated Library System.
-          </p>
-        </div>
-      </div>
       <div class="row">
         <div class="goto-button">
           <a href="{{ '/showcase'|url }}">See showcase gallery</a></div>
-      </div>
-    </div>
-  </section>
-  <a name="getstarted"></a>
-  <section class="instances-section section-content-light-bg">
-    <div class="container">
-      <span class="section-title-light-bg">Get started</span>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="flex-center-vertically">
-            <div class="numbering">1</div>
-          </div>
-          <h3 class="section-title-light-bg">Scaffold</h3>
-          <div class="command-line">
-                <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
-                <div class="line comment"># scaffold my-site instance</div>
-                <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="flex-center-vertically">
-              <div class="numbering">2</div>
-          </div>
-          <h3 class="section-title-light-bg">Install</h3>
-          <div class="command-line">
-                <div class="line"><span class="prompt">$</span>cd my-site</div>
-                <div class="line comment"># start services (db, es, mq, cache)</div>
-                <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
-                <div class="line comment"># build and install my-site instance</div>
-                <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="flex-center-vertically">
-            <div class="numbering">3</div>
-          </div>
-          <h3 class="section-title-light-bg">Run</h3>
-          <div class="command-line">
-                <div class="line comment"># setup database and indexes</div>
-                <div class="line"><span class="prompt">$</span>./scripts/setup</div>
-                <div class="line comment"># start webserver and task queue</div>
-                <div class="line"><span class="prompt">$</span>./scripts/server</div>
-                <div class="line comment"># your site is running!</div>
-                <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/</div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="goto-button">
-          <a href="{{ '/gettingstarted'|url }}">See guide</a></div>
-      </div>
-    </div>
-  </section>
-  <a name="features"></a>
-  <section class="features-section section-content-white-bg">
-    <div class="container">
-      <span class="section-title-white-bg">Features</span>
-      <div class="row features-section-row">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icon-data-model.svg'|asseturl }}"/>
-            </div>
-            <div class="col-md-9">
-              <h6>Flexible data model</h6>
-              <p>Use JSON Schema to describe your articles, books, theses,
-              photos, videos, research data and software. Write serialisers to
-              produce BibTeX, CSL, DataCite, Dublin Core, JSON-LD, or MARCXML.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icon-search.svg'|asseturl }}"/>
-            </div>
-            <div class="col-md-9">
-              <h6>Powerful search engine</h6>
-              <p>Fast search times for repositories of several million records.
-                 Confurigurable query language and search facets. Citation
-                 networks.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row features-section-row">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icons8-document-96.png'|asseturl }}"/>
-            </div>
-            <div class="col-md-9">
-              <h6>Advanced file management</h6>
-              <p>Manage millions of files attached to records. Organise files in
-              buckets. Configure any storage system/protocol.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            <div class="row">
-                <div class="col-md-3 centered">
-                    <img src="{{ '/static/img/icons8-filing-cabinet-96.png'|asseturl }}"/>
-                </div>
-                <div class="col-md-9">
-                    <h6>Preservation friendly</h6>
-                    <p>Mint persistent identifiers (DOI) for repository assets.
-                       Create links between versions. Run fixity checks. Export
-                       BagIt archival packages.</p>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="row features-section-row">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="col-md-3 centered">
-              <img src="{{ '/static/img/icon-community.svg'|asseturl }}"/>
-            </div>
-            <div class="col-md-9">
-              <h6>User communities</h6>
-              <p>Organise your documents in community collections. Set up
-              advanced user authentication (OAuth, SSO). Define fine-grained
-              access rights. Collect usage statistics.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            <div class="row">
-                <div class="col-md-3 centered">
-                    <img src="{{ '/static/img/icon-extensible.svg'|asseturl }}"/>
-                </div>
-                <div class="col-md-9">
-                    <h6>REST API</h6>
-                    <p>Use more than one hundred independent packages
-                       collaborating via rich REST APIs. Pick the packages you
-                       want and use the full power of Python to combine and
-                       extend them.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="flavour-section section-content-light-bg">
-    <div class="container">
-      <span id="open-source-section" class="section-title-light-bg">The Best of Open Source</span>
-      <h6>Invenio's core is relying on some of the world's top open source products.</h6>
-      <div class="row">
-        <div class="col-md-4">
-          <img class="flavour" src="{{ '/static/img/logo-elasticsearch.svg'|asseturl }}"/>
-          <h6>Elasticsearch</h6>
-          <p>
-              <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> is an extremely fast JSON-native distributed search engine supporting anything from full-text to geospatial queries.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img class="flavour" src="{{ '/static/img/logo-postgresql.svg'|asseturl }}"/>
-          <img class="flavour" src="{{ '/static/img/logo-mysql.svg'|asseturl }}"/>
-          <h6>PostgreSQL or MySQL</h6>
-          <p>
-              <a href="https://www.postgresql.org">PostgreSQL</a> and <a href="https://www.mysql.com">MySQL</a> are powerful relational databases with JSON-support as well as a strong reputation for reliability, robustness, and performance.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img class="flavour" src="{{ '/static/img/logo-python.svg'|asseturl }}"/>
-          <img class="flavour" src="{{ '/static/img/logo-flask.svg'|asseturl }}"/>
-          <h6>Python/Flask</h6>
-          <p>
-            Invenio is built using <a href="https://www.python.org">Python 3</a>, the <a href="http://flask.pocoo.org/docs/1.0/">Flask</a> micro webframework and a suite of the best community-built Python libraries.
-          </p>
-          </div>
       </div>
     </div>
   </section>
