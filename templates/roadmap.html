@@ -20,21 +20,21 @@
         </div>
         <div class="row">
             <div class="col-sm-4 column">
-                <span class="section-title-light-bg">Current</span>
+                <span class="section-title">Current</span>
                 <p>What we work on now</p>
                 {%- for card in this.children if card.column == 'current' %}
                     {{ render_roadmap_card(card) }}
                 {%- endfor %}
             </div>
             <div class="col-sm-4 column">
-                <span class="section-title-light-bg">Near-term</span>
+                <span class="section-title">Near-term</span>
                 <p>What we plan work on next</p>
                 {%- for card in this.children if card.column == 'near-term' %}
                     {{ render_roadmap_card(card) }}
                 {%- endfor %}
             </div>
             <div class="col-sm-4 column">
-                <span class="section-title-light-bg">Future</span>
+                <span class="section-title">Future</span>
                 <p>What we investigate</p>
                 {%- for card in this.children if card.column == 'future' %}
                     {{ render_roadmap_card(card) }}
@@ -53,7 +53,7 @@
 </section>
 <section class="roadmap-section section-content-light-bg">
     <div class="container">
-        <span class="section-title-white-bg">Who is implementing the roadmap?</span>
+        <span class="section-title">Who is implementing the roadmap?</span>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <p>Invenio development is being led by CERN with contributions from institutions and individuals from all over the world.
