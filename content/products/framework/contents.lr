@@ -1,0 +1,5 @@
+_model: Products
+---
+_template: products/framework.html
+---
+title: InvenioFramework

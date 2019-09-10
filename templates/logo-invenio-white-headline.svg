@@ -32,9 +32,9 @@
      showgrid="false"
      inkscape:pagecheckerboard="true"
      inkscape:zoom="1.2675439"
-     inkscape:cx="412.21453"
+     inkscape:cx="782.22144"
      inkscape:cy="180.28965"
-     inkscape:window-x="159"
+     inkscape:window-x="49"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
@@ -59,7 +59,7 @@
        inkscape:locked="false" /></sodipodi:namedview><metadata
      id="metadata5011"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs5009" /><pattern
      overflow="visible"
      viewBox="2.125 -70.896 69 69"
@@ -412,7 +412,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" /><a
        id="a9728"
-       xlink:href="http://inveniosoftware.org/product/ils"><g
+       xlink:href="/products/ils/"><g
          transform="translate(1.7274613,2)"
          id="g25604"><g
            id="g20666"
@@ -452,7 +452,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" /><a
        id="a9715"
-       xlink:href="http://inveniosoftware.org/product/rdm"><g
+       xlink:href="/products/rdm/"><g
          transform="translate(0.9420447)"
          id="g20930"><text
            xml:space="preserve"
@@ -518,15 +518,15 @@
              d="m 328.162,4.665 c -18.767,0 -34.032,15.268 -34.032,34.034 0,7.28 2.306,14.028 6.214,19.568 l -30.078,26.432 c -1.881,1.878 0.067,6.867 1.944,8.749 1.879,1.876 6.87,3.822 8.748,1.943 l 26.265,-29.894 c 5.779,4.525 13.047,7.233 20.939,7.233 18.768,0 34.034,-15.267 34.034,-34.032 0,-18.765 -15.266,-34.033 -34.034,-34.033 z m 0,56.722 c -12.51,0 -22.689,-10.177 -22.689,-22.688 0,-12.511 10.18,-22.69 22.689,-22.69 12.513,0 22.688,10.18 22.688,22.69 0,12.51 -10.175,22.688 -22.688,22.688 z"
              id="path25943"
              style="fill:#ffffff" /></g><polygon
-           points="101.318,8.433 113.62,36.814 125.814,8.325 140.814,8.325 113.512,72.427 86.21,8.433 "
+           points="125.814,8.325 140.814,8.325 113.512,72.427 86.21,8.433 101.318,8.433 113.62,36.814 "
            id="polygon25947"
            style="fill:#ffffff"
            transform="translate(358.11441,28.33968)" /><polygon
-           points="218.848,43.075 254.537,74.124 254.537,7.961 239.34,7.961 239.34,36.974 203.65,8.076 203.65,72.318 218.848,72.318 "
+           points="203.65,72.318 218.848,72.318 218.848,43.075 254.537,74.124 254.537,7.961 239.34,7.961 239.34,36.974 203.65,8.076 "
            id="polygon25949"
            style="fill:#ffffff"
            transform="translate(358.11441,28.33968)" /><polygon
-           points="63.34,8.127 63.34,37.14 27.65,8.242 27.65,72.484 42.848,72.484 42.848,43.241 78.537,74.29 78.537,8.127 "
+           points="78.537,74.29 78.537,8.127 63.34,8.127 63.34,37.14 27.65,8.242 27.65,72.484 42.848,72.484 42.848,43.241 "
            id="polygon25951"
            style="fill:#ffffff"
            transform="translate(358.11441,28.33968)" /><rect
@@ -536,7 +536,7 @@
            height="64.242996"
            id="rect25953"
            style="fill:#ffffff" /><polygon
-           points="191.783,32.672 166.976,32.672 166.976,20.927 192.991,20.927 192.991,7.974 149.193,7.974 149.193,72.079 193.649,72.079 193.649,59.346 166.976,59.346 166.976,45.624 191.783,45.624 "
+           points="166.976,20.927 192.991,20.927 192.991,7.974 149.193,7.974 149.193,72.079 193.649,72.079 193.649,59.346 166.976,59.346 166.976,45.624 191.783,45.624 191.783,32.672 166.976,32.672 "
            id="polygon25955"
            style="fill:#ffffff"
            transform="translate(358.11441,28.33968)" /><g
@@ -551,7 +551,7 @@
              id="path25959"
              style="fill:none;stroke:#ffffff" /></g></g></a><a
        id="a9415"
-       xlink:href="http://inveniosoftware.org/product/framework"><g
+       xlink:href="/products/framework/"><g
          transform="translate(16.796644)"
          id="g25592"><text
            transform="scale(0.96419111,1.0371388)"
