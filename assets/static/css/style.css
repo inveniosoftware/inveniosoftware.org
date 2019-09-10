@@ -73,6 +73,7 @@ h6 {
   font-weight: 300;
   font-size: 1.4em;
   padding-bottom: 10px;
+  color: #0377cd;
 }
 .section-title {
   -webkit-font-smoothing: antialiased;
@@ -84,6 +85,11 @@ h6 {
   color: #0377cd;
   margin-bottom: 45px;
   font-weight: 500;
+}
+.section-subtitle {
+  color: #045694 !important;
+  text-align: center;
+  margin-bottom: 40px;
 }
 #open-source-section {
   margin-bottom: 0px;
@@ -280,17 +286,17 @@ h6 {
 .instances-section h6 {
   padding-top: 20px;
 }
-.flavour-section {
+.open-source-section {
   text-align: center;
 }
-.flavour-section img {
+.open-source-section img {
   height: 9em;
   padding-left: 10px;
 }
-.flavour-section p {
+.open-source-section p {
   text-align: justify;
 }
-.flavour-section .row {
+.open-source-section .row {
   padding: 30px 0px;
 }
 
@@ -416,9 +422,18 @@ footer nav li.title {
   font-weight: 300;
 }
 .header-section-title {
-  margin-top: 65px;
   text-align: center;
-  padding-top: 50px;
+}
+
+/* Product pages */
+.product-header-section {
+  font-size: 1.5em;
+}
+.product-header-logo {
+  width: 40%;
+}
+.product-framework-header-section .cover-image {
+  background-image: linear-gradient(12deg, rgba(3, 119, 205, 1), rgba(3, 119, 205, 1) 52.52%, rgba(33, 226, 73, 0.69));
 }
 
 /* gettingstarted.html */
@@ -563,8 +578,8 @@ i.large-icon {
 .numbering {
   font-weight: 200;
   font-size: 4em;
-  color: rgba(61, 104, 125, 1);
-  border: 3px solid rgba(61, 104, 125, 1);
+  color: white;
+  background-color: #0377cd91;
   box-sizing: border-box;
   width: 100px;
   height: 100px;
@@ -576,7 +591,7 @@ i.large-icon {
   justify-content: center;
   text-align: center;
   height: auto;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 @media only screen and (min-device-width: 993px),
 only screen and (min-width: 993px) {
