@@ -160,6 +160,21 @@ h6 {
     border-top: none;
   }
 }
+.nav .open>a,
+.dropdown-menu,
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  background-color: #0377cd !important;
+  color: white !important;
+}
+.caret {
+  margin-left: 4px;
+}
+.dropdown-menu {
+  border: 0;
+  box-shadow: -7px 10px 12px rgba(0, 0, 0, .175);
+  -webkit-box-shadow: -7px 10px 12px rgba(0, 0, 0, .175);
+}
 
 /* Welcome features section */
 
