@@ -30,7 +30,15 @@ h6 {
 .section-content-dark-bg {
   background-color: #0377cd;
 }
-.section-content-dark-bg a,
+.section-content-dark-bg a {
+  text-decoration: none;
+  color: #ffffffd6;
+  font-weight: 600;
+}
+.section-content-dark-bg a:hover,
+.section-content-dark-bg a:focus {
+  color: #ffffff;
+}
 .section-content-white-bg a,
 .section-content-light-bg a,
 .hp-blog-section a {
@@ -38,9 +46,6 @@ h6 {
   color: #0377cdb5;
   font-weight: 600;
 }
-
-.section-content-dark-bg a:hover,
-.section-content-dark-bg a:focus,
 .section-content-white-bg a:hover,
 .section-content-white-bg a:focus,
 .section-content-light-bg a:hover,
