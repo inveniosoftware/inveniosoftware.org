@@ -442,6 +442,11 @@ footer nav li.title {
 .rdm-customisations img {
   max-width: 250px;
 }
+.welcome-features-row {
+  padding-top: calc(3*30px);
+  padding-bottom: calc(3*30px);
+  font-size: 0.7em;
+}
 
 /* gettingstarted.html */
 
