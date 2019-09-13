@@ -1,0 +1,5 @@
+_model: people
+---
+_template: people.html
+---
+title: People
