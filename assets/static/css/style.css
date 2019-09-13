@@ -207,9 +207,10 @@ h6 {
   text-align: center;
 }
 .born-at-cern {
-  padding-top: 100px;
+  padding: 50px;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  color: white;
 }
 .born-at-cern img {
   height: 60px !important;
