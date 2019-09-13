@@ -99,6 +99,12 @@ h6 {
   display: flex;
   align-items: center;
 }
+.product-link {
+  pointer-events: bounding-box;
+}
+.product-link:hover {
+  opacity: 0.8;
+}
 .header-nav {
   height: 150px;
 }
