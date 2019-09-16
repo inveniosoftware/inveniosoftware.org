@@ -346,11 +346,14 @@ h6 {
 }
 .contact-section .row {
   display: flex;
+  flex-direction: row;
+}
+.footer-logo-centered {
+  display: flex;
   align-items: center;
 }
 .contact-title {
-  font-size: 3em;
-  padding-bottom: 30px;
+  font-size: 2em;
   -webkit-font-smoothing: antialiased;
   text-align: left;
 }
@@ -359,9 +362,6 @@ h6 {
 }
 .contact-list td {
   padding: 5px 30px 5px 0px;
-}
-.contact-list-header {
-  color: rgba(255, 255, 255, 0.58);
 }
 .icon-contact {
   height: 6em;
@@ -648,7 +648,8 @@ only screen and (max-width: 993px) {
 }
 .error-page .row {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  margin: calc(4*30px);
 }
 .error-page-title {
   font-size: 2em;
