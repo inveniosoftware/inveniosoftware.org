@@ -254,13 +254,18 @@ h6 {
 .header-section .cover-image {
   background-image: linear-gradient(12deg, rgba(3, 119, 205, 1), rgba(3, 119, 205, 1) 52.52%, rgba(198, 197, 89, 0.64));
 }
+.brought-to-you-section .section-title,
 .trusted-by-section .section-title {
   margin-bottom: 60px;
 }
+.brought-to-you-section img,
 .trusted-by-section img {
   max-height: 150px;
   max-width: 250px;
   margin: 20px;
+}
+.brought-to-you-section img {
+  padding: 20px;
 }
 .powering-open-science-section {
   text-align: center;
@@ -316,6 +321,17 @@ h6 {
     min-height: 450px;
   }
 }
+@media only screen and (max-width: 768px) {
+  #invenio-carousel .carousel-inner {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #invenio-carousel img {
+    max-height: 80px;
+  }
+}
 #invenio-carousel .carousel-control {
   background: none;
   text-align: left;
@@ -364,11 +380,15 @@ h6 {
   padding: 5px 30px 5px 0px;
 }
 .icon-contact {
-  height: 6em;
+  height: 5em;
 }
 @media (max-width: 700px) {
   .icon-contact {
     display: none;
+  }
+  .contact-section .row {
+    display: inline-block;
+    flex-direction: row;
   }
 }
 .shield img {
@@ -439,6 +459,11 @@ footer nav li.title {
 }
 .product-header-logo {
   height: 80px;
+}
+@media only screen and (max-device-width: 768px) {
+  .product-header-logo {
+    height: 40px;
+  }
 }
 .product-framework-header-section .cover-image {
   background-image: linear-gradient(12deg, rgba(3, 119, 205, 1), rgba(3, 119, 205, 1) 52.52%, rgba(33, 226, 73, 0.69));
@@ -797,7 +822,12 @@ a.team-url:hover {
   bottom: 0px;
   background-image: linear-gradient(rgba(255, 255, 255, 0) 100px, white);
 }
-
+@media only screen and (max-width: 768px) {
+  .blog-top .blog-list-item-content:before {
+    width: 80%;
+    left: 10%;
+  }
+}
 .blog-list-item-meta {
   color: #777;
   font-size: 0.8em;
@@ -863,12 +893,10 @@ a.team-url:hover {
   background: linear-gradient(rgba(255, 255, 255, 0) 250px, white);
 }
 .blog-top-more-link {
-  width: 100%;
-  padding-right: 100px;
   text-align: center;
   margin: 0 auto;
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  bottom: -40px;
 }
 .blog-back-button {
   color: rgb(61, 104, 125);
