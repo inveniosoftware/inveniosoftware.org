@@ -130,7 +130,7 @@ h6 {
   }
 }
 .navbar-toggle {
-  background-color: rgba(61, 121, 156, 0.87);
+  background-color: #0376cd;
   margin-left: 20px;
   float: left;
 }
@@ -152,7 +152,7 @@ h6 {
 }
 .navbar-collapse.in,
 .collapsing {
-  background-color: #29698b;
+  background-color: #0376cd;
 }
 .navbar-fixed-top .navbar-collapse {
   max-height: 370px;
