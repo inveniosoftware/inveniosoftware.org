@@ -1,13 +1,13 @@
-  name: Kristi L. Holmes, PhD
+_template: people.html
 ---
-institution: Northwestern University Feinberg School of Medicine
+name: Pablo Panero
+---
+institution: CERN
 ---
 photo:
 ---
-role: Director, Galter Health Sciences Library & Learning Center
+role: Invenio Developer
 ---
-bio: something here
+bio: Leads Invenio RDM development
 ---
 chat:
----
-_hidden: yes

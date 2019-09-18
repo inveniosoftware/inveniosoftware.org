@@ -1,13 +1,13 @@
-name: Jose  Benito Gonzalez Lopez
+_template: people.html
 ---
-institution: CERN
+name: Kristi L. Holmes, PhD
 ---
-photo: jose-benito-gonzalez.jpg
+institution: Northwestern University Feinberg School of Medicine
 ---
-role: CERN Manager, Invenio Architect
+photo:
 ---
-bio: Leads a multi-project team including Invenio, Zenodo, etc
+role: Director, Galter Health Sciences Library & Learning Center
 ---
-chat: https://gitter.im/jbenito3
+bio: something here
 ---
-_hidden: yes
+chat:

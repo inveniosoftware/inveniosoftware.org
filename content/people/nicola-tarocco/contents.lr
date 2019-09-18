@@ -1,3 +1,5 @@
+_template: people.html
+---
 name: Nicola Tarocco
 ---
 institution: CERN
@@ -9,5 +11,3 @@ role: Invenio Architect, CDS Manager
 bio: Leads CERN Document Server team
 ---
 chat: https://gitter.im/ntarocco
----
-_hidden: yes
