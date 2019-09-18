@@ -1,3 +1,5 @@
+_template: people.html
+---
 name: Lars Nielsen
 ---
 institution: CERN
@@ -9,5 +11,3 @@ role: Invenio Product Manager
 bio: Leads Invenio and created Zenodo
 ---
 chat: https://gitter.im/lnielsen
----
-_hidden: yes
