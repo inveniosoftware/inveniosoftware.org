@@ -35,6 +35,7 @@ h6 {
   color: #ffffffd6;
   font-weight: 600;
 }
+
 .section-content-dark-bg a:hover,
 .section-content-dark-bg a:focus {
   color: #ffffff;
@@ -253,6 +254,14 @@ h6 {
 }
 .header-section .cover-image {
   background-image: linear-gradient(12deg, rgba(3, 119, 205, 1), rgba(3, 119, 205, 1) 52.52%, rgba(198, 197, 89, 0.64));
+}
+.header-section a:hover,
+.header-section a:focus {
+  color: rgba(255, 255, 255, 0.77);
+}
+.header-section a {
+  text-decoration: none;
+  color: white;
 }
 .brought-to-you-section .section-title,
 .trusted-by-section .section-title {
