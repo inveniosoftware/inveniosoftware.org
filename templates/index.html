@@ -31,60 +31,7 @@
       </div>
     </div>
   </section>
-  <section class="trusted-by-section section-content-white-bg">
-    <div class="container">
-      <span class="section-title"><i class="fa fa-heart"></i> Trusted by</span>
-      <div id="invenio-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#invenio-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#invenio-carousel" data-slide-to="1"></li>
-          <li data-target="#invenio-carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <div>
-              <a href="http://home.cern"><img src="{{ '/static/img/logo-cern.png'|asseturl }}" title="CERN"></a>
-              <a href="https://www.nii.ac.jp/en/"><img src="{{ '/static/img/logo-nii.png'|asseturl }}" title="NII"></a>
-              <a href="https://www.northwestern.edu/"><img src="{{ '/static/img/logo-northwestern-university.png'|asseturl }}" title="Northwestern University"></a>
-            </div>
-            <div>
-              <a href="http://www.bnl.gov/"><img src="{{ '/static/img/logo-bnl.png'|asseturl }}" title="Brookhaven National Laboratory"></a>
-              <a href="http://www.treccani.it/"><img src="{{ '/static/img/logo-treccani.png'|asseturl }}" title="Treccani"></a>
-              <a href="https://www.library.caltech.edu/"><img src="{{ '/static/img/logo-caltechlibrary.png'|asseturl }}" title="Caltech Library"></a>
-            </div>
-          </div>
-          <div class="item">
-            <div>
-              <a href="https://ctsa.ncats.nih.gov/cd2h/"><img src="{{ '/static/img/logo-ctsa.png'|asseturl }}" title="CTSA Program National Center for Data to Health"></a>
-              <a href="https://www.data-futures.org/"><img src="{{ '/static/img/logo-data-futures.png'|asseturl }}" title="Data Futures"></a>
-            </div>
-            <div>
-              <a href="https://www.hzdr.de/"><img src="{{ '/static/img/logo-hzdr.png'|asseturl }}" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
-              <a href="https://www.openaire.eu/"><img src="{{ '/static/img/logo-openaire.png'|asseturl }}" title="OpenAIRE"></a>
-            </div>
-          </div>
-          <div class="item">
-            <div>
-              <a href="https://tind.io/"><img src="{{ '/static/img/logo-tind.png'|asseturl }}" title="TIND"></a>
-              <a href="http://www.tubitak.gov.tr/"><img src="{{ '/static/img/logo-tubitak.png'|asseturl }}" title="Tubitak"></a>
-            </div>
-            <div>
-              <a href="https://www.uni-hamburg.de/"><img src="{{ '/static/img/logo-uni-hamburg.png'|asseturl }}" title="University of Hamburg"></a>
-              <a href="https://www.uni-muenster.de/en/"><img src="{{ '/static/img/logo-uni-munster.png'|asseturl }}" title="University of Münster"></a>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#invenio-carousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#invenio-carousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-  </section>
-  <section class="powering-open-science-section section-content-light-bg">
+  <section class="powering-open-science-section section-content-white-bg">
     <div class="container">
       <span class="section-title"><i class="fa fa-globe"></i> Powering Open Science</span>
       <div class="row">
@@ -92,21 +39,69 @@
           {% include 'icon-open-source.svg' %}
           <h6>Free Open Source Sofware</h6>
           <p>Invenio is Free Open Source Software supported by a commited community of multidisciplinary institutions.</p>
+          <span><a href="https://github.com/inveniosoftware">Code</a><span class="blue-separator"> | </span><a href="https://invenio.readthedocs.io/en/latest/">Docs</a><span class="blue-separator"> | </span><a href="#instances">Examples</a>
         </div>
         <div class="col-md-4">
-          {% include 'icon-open-source.svg' %}
+          <i class="fa fa-universal-access"></i>
           <h6>Friendly and Responsive Community</h6>
-          <p>Although Invenio was born at CERN, its community is every day bigger. You can quickly reach us in our chatroom.</p>
+          <p>Although Invenio was born at CERN, its community is growing bigger every day. Talk right now to us in our chatroom or forum.</p>
+          <span><a href="https://gitter.im/inveniosoftware/invenio">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a><span class="blue-separator"> | </span><a href="{{ '/getinvolved/'|url}}">Get Involved</a><span class="blue-separator"> | </span><a href="{{ '/events/'|url}}">Events</a>
         </div>
         <div class="col-md-4">
-          {% include 'icon-open-source.svg' %}
-          <h6>Free Open Source Sofware</h6>
-          <p>Invenio is Free Open Source Software supported by a commited community of multidisciplinary institutions.</p>
+          <i class="fa fa-shield"></i>
+          <h6>The "Safe bet"</h6>
+          <p>Invenio community has been around for 20 years. <a href="#instances">Solid services</a> has been built on top of it which ensures long-term confidence.</p>
+          <span><a href="#instances">Life services</a><span class="blue-separator"> | </span><a href="#products">Products</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="instances-section section-content-white-bg">
+  <section id="products" class="products-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-user-plus"></i> Choose your product</span>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="{{ '/products/rdm'|url}}"><img class="products-section-logo" src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl }}"/></a>
+        </div>
+        <div class="col-md-6">
+          <h6>Turn-key research data management repository</h6>
+          <ul>
+            <li>Repository system for institutional repositories, research data management and digital assets management.</li>
+            <li>Free Open Source Product under MIT licence.</li>
+          </ul>
+          <span><a href="{{ '/products/rdm'|url }}">Product info</a><span class="blue-separator"> | </span><a href="https://github.com/inveniosoftware/invenio-app-rdm">Code</a><span class="blue-separator"> | </span><a href="https://gitter.im/inveniosoftware/InvenioRDM">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="{{ '/products/ils'|url}}"><img class="products-section-logo" src="{{ '/static/img/logo-invenio-ils.svg'|asseturl }}"/></a>
+        </div>
+        <div class="col-md-6">
+          <h6>Integrated Library System</h6>
+          <ul>
+            <li>Simple open source ILS system with support for circulation, inter-library loans and patron management.</li>
+            <li>Free Open Source Product under MIT licence.</li>
+          </ul>
+          <span><a href="{{ '/products/ils'|url }}">Product info</a><span class="blue-separator"> | </span><a href="https://github.com/inveniosoftware/invenio-app-ils">Code</a><span class="blue-separator"> | </span><a href="https://gitter.im/inveniosoftware/invenio">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="{{ '/products/framework'|url}}"><img class="products-section-logo" src="{{ '/static/img/logo-invenio-framework.svg'|asseturl }}"/></a>
+        </div>
+        <div class="col-md-6">
+          <h6>The core - a framework for large-scale digital repositories</h6>
+          <ul>
+            <li>A toolbox (the nuts, bolts and tools) to build your own application such as enterprise search, discovery systems and research data management systems.</li>
+            <li>Batteries included: Comes with strong support for repository APIs, storage systems, authentication system.</li>
+            <li>Free Open Source Product under MIT licence.</li>
+          </ul>
+          <span><a href="{{ '/products/framework'|url }}">Product info</a><span class="blue-separator"> | </span><a href="https://github.com/inveniosoftware">Code</a><span class="blue-separator"> | </span><a href="https://gitter.im/inveniosoftware/invenio">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="instances" class="instances-section section-content-white-bg">
     <div class="container">
       <span class="section-title"><i class="fa fa-check"></i> Built on Invenio</span>
       <div class="row">
@@ -137,6 +132,41 @@
           <a href="{{ '/showcase'|url }}">See showcase gallery</a></div>
       </div>
     </div>
+  </section>
+  <section class="trusted-by-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-heart"></i> Trusted by</span>
+        <div class="row centered">
+          <div class="col">
+            <a href="http://home.cern"><img src="{{ '/static/img/logo-cern.png'|asseturl }}" title="CERN"></a>
+            <a href="https://www.nii.ac.jp/en/"><img src="{{ '/static/img/logo-nii.png'|asseturl }}" title="NII"></a>
+            <a href="https://www.northwestern.edu/"><img src="{{ '/static/img/logo-northwestern-university.png'|asseturl }}" title="Northwestern University"></a>
+            <a href="http://www.bnl.gov/"><img src="{{ '/static/img/logo-bnl.png'|asseturl }}" title="Brookhaven National Laboratory"></a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="col">
+            <a href="http://www.treccani.it/"><img src="{{ '/static/img/logo-treccani.png'|asseturl }}" title="Treccani"></a>
+            <a href="https://www.library.caltech.edu/"><img src="{{ '/static/img/logo-caltechlibrary.png'|asseturl }}" title="Caltech Library"></a>
+            <a href="https://ctsa.ncats.nih.gov/cd2h/"><img src="{{ '/static/img/logo-ctsa.png'|asseturl }}" title="CTSA Program National Center for Data to Health"></a>
+            <a href="https://www.data-futures.org/"><img src="{{ '/static/img/logo-data-futures.png'|asseturl }}" title="Data Futures"></a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="col">
+            <a href="https://www.hzdr.de/"><img src="{{ '/static/img/logo-hzdr.png'|asseturl }}" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
+            <a href="https://www.openaire.eu/"><img src="{{ '/static/img/logo-openaire.png'|asseturl }}" title="OpenAIRE"></a>
+            <a href="https://tind.io/"><img src="{{ '/static/img/logo-tind.png'|asseturl }}" title="TIND"></a>
+            <a href="http://www.tubitak.gov.tr/"><img src="{{ '/static/img/logo-tubitak.png'|asseturl }}" title="Tubitak"></a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="col">
+            <a href="https://www.uni-hamburg.de/"><img src="{{ '/static/img/logo-uni-hamburg.png'|asseturl }}" title="University of Hamburg"></a>
+            <a href="https://www.uni-muenster.de/en/"><img src="{{ '/static/img/logo-uni-munster.png'|asseturl }}" title="University of Münster"></a>
+          </div>
+        </div>
+      </div>
   </section>
   {% include "footer.html" %}
 
