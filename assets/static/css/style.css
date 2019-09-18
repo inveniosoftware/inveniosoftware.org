@@ -322,6 +322,9 @@ h6 {
 .instances-section h6 {
   padding-top: 20px;
 }
+.faq-section {
+  text-align: justify;
+}
 .open-source-section {
   text-align: center;
 }
