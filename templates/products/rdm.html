@@ -12,7 +12,7 @@
         <div class="col">
           <div class="header-section-title">
             <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl }}" title="Invenio RDM" /></h3>
-            <h6>The turn-key open source research data management platform</h6>
+            <h6>The turn-key open source research data management repository</h6>
           </div>
         </div>
       </div>
@@ -20,27 +20,41 @@
 
 {% block page_body %}
     <div class="row welcome-features-row">
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-shield"></i> Safe</h2>
+      <div class="welcome-features-col col-md-2">
+        <h2><i class="fa fa-graduation-cap"></i><a href=""> Roadmap</a></h2>
         <p>
-          Invenio has been created with security and long-term preservation in mind. Build your digital repository and focus only on what is important to you, Invenio will do the rest.
+          The project is on going and will intend to have it ready by mid-2020.
         </p>
       </div>
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-line-chart"></i> Scalable</h2>
+      <div class="welcome-features-col col-md-2">
+        <h2><i class="fa fa-comment"></i><a href="http://invenio-talk.web.cern.ch/"> Talk</a></h2>
         <p>
-          Invenio is fast. We have designed it to manage 100+ million records and petabytes of files. All your research data can now be archived independently of the size.
+          Join our project forum and collaborate.
         </p>
       </div>
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-plug"></i> RESTful</h2>
+      <div class="welcome-features-col col-md-2">
+        <h2><i class="fa fa-keyboard-o"></i><a href="https://gitter.im/inveniosoftware/InvenioRDM"> Chat</a></h2>
         <p>
-          Only a modern framework can create modern digital repositories. Invenio was born for the web, is JSON-native and provides RESTful APIs out of the box that will allow to build apps on top of it.
+          Find all the partners in our official chatroom.
         </p>
       </div>
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-github"></i> Open</h2>
-        <p>Invenio is 100% open source licensed under MIT license. Fork us on <a href="https://github.com/inveniosoftware">GitHub</a> and build your product. Invenio loves open standards for open science.</p>
+      <div class="welcome-features-col col-md-2">
+        <h2><i class="fa fa-github"></i><a href="https://github.com/inveniosoftware/invenio-app-rdm"> Code</a></h2>
+        <p>
+          Have a look at Invenio RDM code evolution.
+        </p>
+      </div>
+      <div class="welcome-features-col col-md-2">
+        <h2><i class="fa fa-video-camera"></i><a href="{{ '/events/'|url }}"> Events</a></h2>
+        <p>
+          We run bootcamps, workshops, team meetings. Join in person or remotely.
+        </p>
+      </div>
+      <div class="welcome-features-col col-md-2">
+        <h2><i class="fa fa-list-alt"></i><a href="#features"> Features</a></h2>
+        <p>
+          Have a quick look at the mean goals for the future Invenio RDM.
+        </p>
       </div>
     </div>
   </div></div>
@@ -74,7 +88,7 @@
     </div>
   </div>
 </section>
-<section class="features-section section-content-light-bg">
+<section id="features" class="features-section section-content-light-bg">
   <div class="container">
     <span class="section-title">Features</span>
     <div class="row features-section-row">
