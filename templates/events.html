@@ -4,22 +4,32 @@
 {% block page_title %}{{this.title}}{% endblock %}
 {% block page_subtitle %}What's happneing on the Invenio world?{% endblock %}
 {% block page_body %}
-<section class="section-content-light-bg">
+<section class="events-section section-content-white-bg">
     <div class="container">
-        <div clas="row">
-            <div class="col-md-12">
-              Fill
-            </div>
+      <div class="row centered">
+        <img class="event-photo" src="{{ '/static/img/inveniobootcamp2019.jpg'|asseturl }}">
+        <span class="event-photo-caption">Last <a href="https://indico.cern.ch/event/773969/">Invenio v3 Bootcamp</a> at CERN - Mar 2019</span>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2><i class="fa fa-video-camera"></i><a href=""> Webinars</a></h2>
+          <p>
+            The project is on going and will intend to have it ready by mid-2020.
+          </p>
         </div>
-    </div>
-</section>
-<section class="section-content-white-bg">
-    <div class="container">
-        <div clas="row">
-            <div class="col-md-12">
-              Fill
-            </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-pencil-square-o"></i><a href="http://invenio-talk.web.cern.ch/"> Training bootcamp</a></h2>
+          <p>
+            Join our project forum and collaborate.
+          </p>
         </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-users"></i><a href="https://indico.cern.ch/category/6240/"> User Group Workshop</a></h2>
+          <p>
+            We run an Invenio User Group Workshop every year. See the full list <a href="https://indico.cern.ch/category/6240/">here</a>.
+          </p>
+        </div>
+      </div>
     </div>
 </section>
 {% endblock %}

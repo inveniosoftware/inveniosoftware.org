@@ -570,6 +570,34 @@ i.large-icon {
   color: #245e79;
 }
 
+/* Get Involved */
+
+.get-involved-section i,
+.events-section i {
+  color: #0377cd;
+}
+
+/* Events */
+
+.event-photo {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  box-shadow: -7px 10px 12px rgba(0, 0, 0, .41);
+  -webkit-box-shadow: -7px 10px 12px rgba(0, 0, 0, .41);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.event-photo-caption {
+  font-style: italic;
+  text-align: center;
+  display: block;
+  margin-bottom: 80px;
+}
+
 /* community.html */
 
 .findus-section {
