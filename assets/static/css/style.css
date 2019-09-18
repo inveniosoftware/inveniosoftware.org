@@ -342,6 +342,13 @@ h6 {
 .features-section-row {
   padding-bottom: 30px;
 }
+.inline-row {
+  text-align: center;
+}
+.inline-row-pane {
+  display: inline-flex;
+  flex-direction: row;
+}
 .contact-section {
   text-align: center;
 }
@@ -497,7 +504,7 @@ footer nav li.title {
 }
 .goto-button {
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
   white-space: nowrap;
 }
 .goto-button a {
