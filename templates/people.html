@@ -4,22 +4,33 @@
 {% block page_title %}{{ this.title }}{% endblock %}
 {% block page_subtitle %}Let's take a look at the faces behind Invenio{% endblock %}
 {% block page_body %}
-<section class="section-content-light-bg">
+<section class="people-section section-content-white-bg">
     <div class="container">
-        <div clas="row">
-            <div class="col-md-12">
-              Fill
+      <div class="row">
+        <div class="people">
+          {%- for card in this.children %}
+          <div class="person">
+            <div class="person-photo">
+              {% if card.photo %}
+                <img src="{{ '/static/img/people/{}'.format(card.photo)|asseturl }}" />
+              {% else %}
+                <i class="fa fa-user-secret"></i>
+              {% endif %}
             </div>
+            <div class="person-name">{{ card.name }}</div>
+            <div class="person-institution">Works at {{ card.institution }}</div>
+            <div class="person-role">{{ ", ".join(card.role) }}</div>
+            <div class="person-bio">{{ card.bio }}</div>
+            {% if card.chat %}
+            <div class="person-github-handle"><a href="{{ card.chat }}"><i class="fa fa-comment"></i> Chat with me</a></div>
+            {% endif %}
+          </div>
+          {%- endfor %}
         </div>
-    </div>
-</section>
-<section class="section-content-white-bg">
-    <div class="container">
-        <div clas="row">
-            <div class="col-md-12">
-              Fill
-            </div>
-        </div>
+      </div>
+      <div class="row">
+        <p class="more-people">If you want to be added to this list, drop us an <a href="mailto:info@inveniosoftware.org?subject=Add me to Invenio People">email</a>.</p>
+      </div>
     </div>
 </section>
 {% endblock %}

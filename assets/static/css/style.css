@@ -640,6 +640,44 @@ i.large-icon {
   margin-bottom: 30px;
 }
 
+/* people */
+.people {
+  text-align: center;
+}
+.person {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 40px;
+}
+.person-photo {
+  margin-bottom: 20px;
+  font-size: 180px;
+  color: #0377cd;
+}
+.person-photo img {
+  border-radius: 50%;
+  height: 180px;
+}
+.person-name {
+  color: #0377cd;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.person-role {
+  font-style: italic;
+  font-weight: 400;
+}
+.person-bio {
+  font-size: 0.8em;
+}
+.person-github-handle i {
+  color: #0377cd;
+}
+.more-people {
+  padding-top: 80px;
+  text-align: center;
+}
 /* showcase.html */
 
 .hidden {
