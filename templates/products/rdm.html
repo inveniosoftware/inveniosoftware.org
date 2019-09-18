@@ -177,7 +177,6 @@
               </div>
           </div>
       </div>
-      </div>
     </div>
   </div>
 </section>
@@ -227,57 +226,6 @@
         <a href="https://ils.test.rero.ch/"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-rero-ils.png'|asseturl }}"/></a>
         <a href="https://zenodo.org">DESY</a>
       </div>
-    </div>
-  </div>
-</section>
-<section class="get-started-section section-content-light-bg">
-  <div class="container">
-    <span class="section-title">Get started</span>
-    <h6 class="section-subtitle">Use Invenio tools to bootstrap your Invenio Project and start building your product!</h6>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="flex-center-vertically">
-          <div class="numbering">1</div>
-        </div>
-        <h3 class="section-title">Scaffold</h3>
-        <div class="command-line">
-              <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
-              <div class="line comment"># scaffold my-site instance</div>
-              <div class="line"><span class="prompt">$</span>cookiecutter \</div>
-              <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="flex-center-vertically">
-            <div class="numbering">2</div>
-        </div>
-        <h3 class="section-title">Install</h3>
-        <div class="command-line">
-              <div class="line"><span class="prompt">$</span>cd my-site</div>
-              <div class="line comment"># start services (db, es, mq, cache)</div>
-              <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
-              <div class="line comment"># build and install my-site instance</div>
-              <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="flex-center-vertically">
-          <div class="numbering">3</div>
-        </div>
-        <h3 class="section-title">Run</h3>
-        <div class="command-line">
-              <div class="line comment"># setup database and indexes</div>
-              <div class="line"><span class="prompt">$</span>./scripts/setup</div>
-              <div class="line comment"># start webserver and task queue</div>
-              <div class="line"><span class="prompt">$</span>./scripts/server</div>
-              <div class="line comment"># your site is running!</div>
-              <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/</div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="goto-button">
-        <a href="{{ '/gettingstarted'|url }}">See guide</a></div>
     </div>
   </div>
 </section>
