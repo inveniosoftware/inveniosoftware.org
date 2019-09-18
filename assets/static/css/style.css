@@ -598,6 +598,31 @@ i.large-icon {
   margin-bottom: 80px;
 }
 
+/* governance */
+
+.governance-section h1,
+.governance-section h2,
+.governance-section h3,
+.governance-section h4,
+.governance-section h5,
+.governance-section h6 {
+  color: #0377cd;
+}
+.governance-section p,
+.governance-section ul {
+  margin: 20px 20px 20px 40px;
+  text-align: justify;
+}
+.note {
+  display: inline-block;
+  background-color: #e4eef3;
+  border: 1px solid #6ba1bb;
+  border-radius: 7px;
+  color: #245e79;
+  padding: 20px;
+  word-wrap: break-word;
+  width: 70%;
+}
 /* community.html */
 
 .findus-section {
