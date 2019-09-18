@@ -1,3 +1,5 @@
 _model: Products
 ---
 title: Products
+---
+_hidden: yes
