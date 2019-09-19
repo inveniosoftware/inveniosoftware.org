@@ -578,11 +578,11 @@ i.large-icon {
 }
 
 /* Events */
-
 .event-photo {
   width: 100%;
   max-width: 800px;
   margin-bottom: 20px;
+  margin-top: 60px;
   box-shadow: -7px 10px 12px rgba(0, 0, 0, .41);
   -webkit-box-shadow: -7px 10px 12px rgba(0, 0, 0, .41);
   -webkit-transform: rotate(5deg);
