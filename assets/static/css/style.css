@@ -648,7 +648,7 @@ i.large-icon {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  margin: 40px;
+  margin: 40px 20px;
 }
 .person-photo {
   margin-bottom: 20px;
@@ -658,6 +658,7 @@ i.large-icon {
 .person-photo img {
   border-radius: 50%;
   height: 180px;
+  width: 180px;
 }
 .person-name {
   color: #0377cd;
@@ -671,7 +672,10 @@ i.large-icon {
 .person-bio {
   font-size: 0.8em;
 }
-.person-github-handle i {
+.person-chat {
+  font-size: 0.9em;
+}
+.person-chat i {
   color: #0377cd;
 }
 .more-people {

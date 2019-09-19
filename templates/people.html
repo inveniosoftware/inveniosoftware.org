@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="people">
-          {%- for card in this.children %}
+          {%- for card in this.children.order_by('name') %}
           <div class="person">
             <div class="person-photo">
               {% if card.photo %}
@@ -18,11 +18,11 @@
               {% endif %}
             </div>
             <div class="person-name">{{ card.name }}</div>
-            <div class="person-institution">Works at {{ card.institution }}</div>
+            <div class="person-institution">{{ card.institution }}</div>
             <div class="person-role">{{ ", ".join(card.role) }}</div>
             <div class="person-bio">{{ card.bio }}</div>
             {% if card.chat %}
-            <div class="person-github-handle"><a href="{{ card.chat }}"><i class="fa fa-comment"></i> Chat with me</a></div>
+            <div class="person-chat"><a href="{{ card.chat }}"><i class="fa fa-comment"></i> Chat with me</a></div>
             {% endif %}
           </div>
           {%- endfor %}

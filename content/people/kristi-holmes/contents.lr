@@ -1,13 +1,13 @@
 _template: people.html
 ---
-name: Kristi L. Holmes, PhD
+name: Kristi Holmes
 ---
-institution: Northwestern University Feinberg School of Medicine
+institution: Northwestern University
 ---
-photo:
+photo: kristi-holmes.jpg
 ---
-role: Director, Galter Health Sciences Library & Learning Center
+role: Outreach coordinator
 ---
 bio: something here
 ---
-chat:
+chat: https://twitter.com/kristiholmes
