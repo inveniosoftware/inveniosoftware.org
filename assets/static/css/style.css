@@ -631,7 +631,26 @@ i.large-icon {
   max-height: 4em;
   margin-bottom: 40px;
 }
-
+/* about */
+.about-section h1,
+.about-section h2,
+.about-section h3,
+.about-section h4,
+.about-section h5,
+.about-section h6 {
+  color: #0377cd;
+}
+.about-section p,
+.about-section ul {
+  margin: 20px 20px 20px 0;
+  text-align: justify;
+}
+.logos-section img {
+  max-height: 4em;
+  width: 100%;
+  margin: 40px;
+}
+.logos {}
 /* people */
 .people {
   text-align: center;
