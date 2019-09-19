@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 348.85825 218.41185"
+   height="61.640678mm"
+   width="98.455551mm"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cottage_web.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1001"
+     id="namedview4216"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="6.5247008"
+     inkscape:cx="264.47473"
+     inkscape:cy="44.164195"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4762">
+      <rect
+         style="opacity:0.51999996;fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect4764"
+         width="359.74948"
+         height="230.14316"
+         x="120.36163"
+         y="1688.1301" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#040100;fill-opacity:0.73333333"
+     d="m 53.040061,218.41185 -0.028,-1.25045 c -0.0154,-0.68775 -0.88613,-8.23736 -1.93501,-16.77692 -1.04887,-8.53955 -2.89013,-23.59188 -4.09169,-33.44962 -1.20156,-9.85774 -2.36977,-19.4237 -2.59603,-21.2577 -0.55923,-4.53304 -3.13575,-25.6738 -4.05126,-33.24123 -0.40908,-3.38143 -0.79028,-6.35339 -0.8471,-6.60433 -0.0811,-0.35834 -0.29327,-0.47884 -0.98825,-0.56141 -0.48672,-0.0578 -8.24699,-0.25174 -17.245036,-0.43091 C 2.6469947,104.46873 -1.5258789e-5,104.36724 -1.5258789e-5,104.02424 -1.5258789e-5,103.8935 17.016465,86.77239 37.812011,65.97493 l 37.81204,-37.81095 33.828499,-2.24425 c 18.60569,-1.23434 45.31704,-2.99807 59.35859,-3.91938 14.04155,-0.92134 26.09279,-1.74668 26.78054,-1.83412 l 1.25045,-0.15898 0.10421,-10.00362 L 197.05054,0 l 9.69101,0 9.69102,0 0.0543,9.26598 c 0.0299,5.09629 0.12365,9.33066 0.20841,9.4097 0.0847,0.079 3.0614,-0.0579 6.61478,-0.30438 l 6.46067,-0.44814 0.1042,-7.81533 0.10421,-7.81533 8.54476,0 8.54476,0 0.0549,7.07831 c 0.0302,3.89306 0.12882,7.1522 0.21912,7.2425 0.0903,0.0903 8.58697,-0.3977 18.88143,-1.08447 10.29446,-0.68679 18.79672,-1.19956 18.89393,-1.13948 0.0972,0.0601 3.24744,4.1153 7.00049,9.01162 11.70268,15.26751 34.47235,44.95633 45.85528,59.78956 9.38876,12.23457 11.16801,14.6387 10.85044,14.66108 -0.0287,0.002 -6.6019,0.41677 -14.60721,0.92169 -8.0053,0.50491 -14.60492,0.96785 -14.66582,1.02874 -0.1457,0.1457 -0.23385,0.62988 -1.95885,10.75884 -2.87209,16.86467 -4.57018,26.82609 -8.20673,48.14246 -2.02392,11.86368 -4.08723,23.96181 -4.58514,26.88474 -0.49791,2.92294 -1.94814,11.43742 -3.22275,18.92109 -1.27461,7.48365 -2.87476,14.00337 -2.80664,14.11362 z"
+     id="path4831"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="csssssccssccssscccccscscccccssscsscscsssscc" />
+  <g
+     id="flowRoot3478"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(-81.127968,-118.1881)" />
+  <g
+     id="flowRoot3488"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(-81.127968,-118.1881)" />
+</svg>
