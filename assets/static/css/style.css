@@ -623,21 +623,13 @@ i.large-icon {
   word-wrap: break-word;
   width: 70%;
 }
-/* community.html */
-
-.findus-section {
-  text-align: center;
+/* support.html */
+.hosting-section .row {
+  margin: 40px auto;
 }
-.shield-big {
-  text-align: center;
-  padding: 2px;
-}
-.shield-big img {
-  height: 30px;
-}
-.support-section img {
+.hosting-section img {
   max-height: 4em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* people */
