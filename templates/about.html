@@ -1,0 +1,52 @@
+{% extends "page.html" %}
+{% set active_page = "about" %}
+
+{% block page_title %}{{ this.title }}{% endblock %}
+{% block page_subtitle %}Some nice text here{% endblock %}
+{% block page_body %}
+<section class="about-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title">About Invenio</span>
+        <div clas="row">
+          <p>
+              Invenio is governed by CERN for the benefit of the community. CERN strives to
+            make Invenio a collaborative, open and transparent project to ensure that
+            everyone can contribute and have their say on the directions of the project.
+            <br/><br/>
+            Invenio governance is in general informal and we try to strike a balance
+            between processes and agreed upon standards vs. the wild west where everyone do
+            as they see fit. The governance model is intended to allow that people
+            progressively take larger and larger responsibilities with support from the
+            existing leadership.
+            <br/><br/>
+            These following sections define the different roles and responsibilities in the
+            project, define how decisions are taken and how people are appointed to
+            different roles. Overall, we expect every person who participates in the
+            project to adhere to our <a href="#code-of-conduct">Code of Conduct</a>.
+          </p>
+        </div>
+    </div>
+</section>
+<section class="logos-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title">Invenio Stationaries</span>
+      <h6 class="section-subtitle">Feel free to use our logos which are available under CC-By licence.</h6>
+      <div clas="row centered">
+        <div class="col-md-6">
+          <a href="{{ '/static/img/logo-invenio-white.svg'|asseturl}}" download><img src="{{ '/static/img/logo-invenio-white.svg'|asseturl}}"></a>
+        </div>
+        <div class="col-md-6">
+          <a href="{{ '/static/img/logo-invenio-framework.svg'|asseturl}}" download><img src="{{ '/static/img/logo-invenio-framework.svg'|asseturl}}"></a>
+        </div>
+      <div clas="row centered">
+        <div class="col-md-6">
+          <a href="{{ '/static/img/logo-invenio-rdm.svg'|asseturl}}" download><img src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl}}"></a>
+
+        </div>
+        <div class="col-md-6">
+          <a href="{{ '/static/img/logo-invenio-ils.svg'|asseturl}}" download><img src="{{ '/static/img/logo-invenio-ils.svg'|asseturl}}"></a>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
