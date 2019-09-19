@@ -2,4 +2,4 @@ _model: Products
 ---
 title: Products
 ---
-_hidden: yes
+_template: page.html
