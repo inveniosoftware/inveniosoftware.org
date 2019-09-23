@@ -2,13 +2,19 @@
 {% set active_page = "community" %}
 
 {% block page_title %}{{ this.title }}{% endblock %}
-{% block page_subtitle %}Some nice text here{% endblock %}
+{% block page_subtitle %}We contribute not because we have to, but because we want to{% endblock %}
 {% block page_body %}
 <section class="governance-section section-content-white-bg">
     <div class="container">
         <div clas="row">
 
 <h1>Governance</h1>
+<div class="centered">
+  <p class="note">
+    <strong>Note:</strong>
+    The current governance model is being revised as part of the <a href="{{'/products/rdm/'|url}}">Invenio RDM project</a>.
+  </p>
+</div>
 <p>
     Invenio is governed by CERN for the benefit of the community. CERN strives to
   make Invenio a collaborative, open and transparent project to ensure that
@@ -25,15 +31,6 @@
   different roles. Overall, we expect every person who participates in the
   project to adhere to our <a href="#code-of-conduct">Code of Conduct</a>.
 </p>
-<div class="centered">
-  <p class="note">
-    <strong>Note:</strong>
-    <br/><br/>
-    The currrent governance model puts in words how the collaboration currently works in practice today and sets a basic framework for  how we collaborate and take decisions in the project.
-    <br/><br/>
-    If the nature of the community or contributors changes this governance model may be reviewed and changed if necessary.
-  </p>
-</div>
 <h1>Roles and responsibilities</h1>
 <p>
   The <strong>product manager</strong>, <strong>coordinators</strong>, <strong>architects</strong> and <strong>maintainers</strong> (as
@@ -41,11 +38,10 @@
   <strong>service people</strong> who:
   <br/>
   <ul>
-    <li>take an active role in driving the project forward,</li>
-    <li>help newcomers as well as long-time contributors have great</li>
-    <li>experience contributing to Invenio,</li>
-    <li>help train members to progressive take larger responsibility in the project,</li>
-    <li>are role models for the remaining community.</li>
+    <li>take an active role in driving the project forward</li>
+    <li>help newcomers as well as long-time contributors have a great experience contributing to Invenio</li>
+    <li>help train members to progressively take larger responsibility in the project</li>
+    <li>are role models for the remaining community</li>
   </ul>
 </p>
 
@@ -154,6 +150,7 @@ collaboration based on our <a href="#code-of-conduct">Code of Conduct</a>.
 </p>
 
 <h1>Working/Interest groups</h1>
+<a name="code-of-conduct"></a>
 <p>
 Working/interest groups may be set up by the product manager on request of any
 group of members who wish to address a particular area of Invenio (say MARC21
@@ -163,7 +160,8 @@ Each working/interest group must have chair that reports to the product
 manager.
 </p>
 
-<h1 id="code-of-conduct">Code of Conduct</h1>
+
+<h1>Code of Conduct</h1>
 <p>
   We endorse the <a href="https://www.python.org/psf/codeofconduct/">Python Community Code of Conduct</a>:
        The Invenio community is made up of members from around the globe
