@@ -102,6 +102,7 @@ h6 {
 }
 .product-link {
   pointer-events: bounding-box;
+  cursor: pointer;
 }
 .product-link:hover {
   opacity: 0.8;
