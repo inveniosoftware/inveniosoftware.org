@@ -301,8 +301,8 @@ h6 {
 }
 .products-section-logo {
   max-height: 80px;
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .3));
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .3));
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .19));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .19));
 }
 .blue-separator {
   color: #0377cd;
