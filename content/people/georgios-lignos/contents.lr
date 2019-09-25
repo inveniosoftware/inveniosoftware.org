@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Georgios Lignos
+---
+institution: CERN
+---
+photo: georgios-lignos.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/Glignos

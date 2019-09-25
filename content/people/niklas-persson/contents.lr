@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Niklas Persson
+---
+institution: CERN
+---
+photo:
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/equadon

@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: François Decourcelle
+---
+institution: CERN
+---
+photo: francois-decourcelle.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/frankois

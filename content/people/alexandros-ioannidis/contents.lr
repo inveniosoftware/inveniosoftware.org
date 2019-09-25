@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Alexandros Ioannidis
+---
+institution: CERN
+---
+photo:
+---
+role: Invenio Architect
+---
+bio: Leads Zenodo Service
+---
+chat: https://gitter.im/slint

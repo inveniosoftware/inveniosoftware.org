@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Diego Rodriguez Rodriguez
+---
+institution: CERN
+---
+photo: diego-rodriguez-rodriguez.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/diegodelemos
