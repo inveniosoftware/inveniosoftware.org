@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Christos Topaloudis
+---
+institution: CERN
+---
+photo: christos-topaloudis.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/topless

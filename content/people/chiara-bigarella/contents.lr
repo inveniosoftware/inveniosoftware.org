@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Chiara Bigarella
+---
+institution: CERN
+---
+photo: chiara-bigarella.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/ChiaraBi

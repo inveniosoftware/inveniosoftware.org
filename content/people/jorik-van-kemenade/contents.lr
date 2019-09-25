@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Jorik van Kemenade
+---
+institution: CERN
+---
+photo: jorik-van-kemenade.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/jorikvankemenade

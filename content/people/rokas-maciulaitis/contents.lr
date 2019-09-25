@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Rokas Maciulaitis
+---
+institution: CERN
+---
+photo:
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/roksys
