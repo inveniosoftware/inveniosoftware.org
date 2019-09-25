@@ -8,15 +8,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h2><i class="fa fa-video-camera"></i><a href=""> Webinars</a></h2>
+          <h2><i class="fa fa-video-camera"></i><a data-toggle="tooltip" data-placement="top"  title="Coming soon!"> Webinars</a></h2>
           <p>
-            The project is on going and will intend to have it ready by mid-2020.
+            We will soon be providing Webinars on our Invenio products. Stay tuned!
           </p>
         </div>
         <div class="col-md-4">
-          <h2><i class="fa fa-pencil-square-o"></i><a href="http://invenio-talk.web.cern.ch/"> Training bootcamp</a></h2>
+          <h2><i class="fa fa-pencil-square-o"></i><a href="https://indico.cern.ch/event/773969/"> Training bootcamp</a></h2>
           <p>
-            Join our project forum and collaborate.
+            We organise bootcamps to show the nuts and bolts of Invenio. Also, we have a nice set of <a href="https://github.com/inveniosoftware/training">tutorials</a> if you want to give it a try.
           </p>
         </div>
         <div class="col-md-4">
@@ -32,4 +32,9 @@
       </div>
     </div>
 </section>
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
 {% endblock %}
