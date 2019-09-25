@@ -478,7 +478,29 @@ footer nav li.title {
   padding-bottom: calc(3*30px);
   font-size: 0.7em;
 }
-
+.invenio-rdm-project-goals i {
+  font-size: 5em;
+  color: #0377cd;
+}
+.invenio-rdm-project-goals h3 {
+  color: #0377cd;
+}
+.invenio-rdm-project-goals {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 80px;
+}
+@media only screen and (max-device-width: 768px) {
+  .invenio-rdm-project-goals {
+    flex-direction: column;
+  }
+}
+.rdm-goal {
+  margin-bottom: 20px;
+}
+.invenio-rdm-deadline i {
+  color: #0377cd;
+}
 /* gettingstarted.html */
 
 .install-section {
