@@ -1,0 +1,508 @@
+<!doctype html>
+<title>InvenioFramework — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/style.css?h=4c5349ca">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  
+<section class="header-section product-header-section product-framework-header-section">
+  <div class="cover-image">
+    
+      <header class="header-nav">
+  <nav class="navbar navbar-fixed-top invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#inv-navbar-collapse" aria-controls="inv-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">
+          <img src="/static/img/logo-invenio-white.svg?h=84611f18" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            
+              <li><a href="/">Home</a></li>
+            
+          
+            
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle active-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="/products/rdm/">Invenio RDM</a></li>
+                  
+                    <li><a href="/products/ils/">Invenio ILS</a></li>
+                  
+                    <li><a href="/products/framework/">Invenio Framework</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li><a href="/showcase/">Examples</a></li>
+            
+          
+            
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Community</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="/roadmap/">Roadmap</a></li>
+                  
+                    <li><a href="/getinvolved/">Get involved</a></li>
+                  
+                    <li><a href="/events/">Events &amp; Training</a></li>
+                  
+                    <li><a href="/support/">Hosting &amp; Support</a></li>
+                  
+                    <li><a href="/governance/">Governance</a></li>
+                  
+                    <li><a href="/people/">People</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li><a href="http://invenio.readthedocs.io">Docs</a></li>
+            
+          
+            
+              <li><a href="/blog/">Blog</a></li>
+            
+          
+            
+              <li><a href="/about/">About</a></li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header-section-title">
+            <h3><img class="product-header-logo" src="/static/img/logo-invenio-framework.svg?h=de9a0f7c" title="Invenio Framework" /></h3>
+            <h6>Open Source framework for large-scale digital repositories</h6>
+          </div>
+        </div>
+      </div>
+
+  
+    <div class="row welcome-features-row">
+      <div class="welcome-features-col col-md-3">
+        <h2><i class="fa fa-shield"></i> Safe</h2>
+        <p>
+          Invenio has been created with security and long-term preservation in mind. Build your digital repository and focus only on what is important to you, Invenio will do the rest.
+        </p>
+      </div>
+      <div class="welcome-features-col col-md-3">
+        <h2><i class="fa fa-line-chart"></i> Scalable</h2>
+        <p>
+          Invenio is fast. We have designed it to manage 100+ million records and petabytes of files. All your research data can now be archived independently of the size.
+        </p>
+      </div>
+      <div class="welcome-features-col col-md-3">
+        <h2><i class="fa fa-plug"></i> RESTful</h2>
+        <p>
+          Only a modern framework can create modern digital repositories. Invenio was born for the web, is JSON-native and provides RESTful APIs out of the box that will allow to build apps on top of it.
+        </p>
+      </div>
+      <div class="welcome-features-col col-md-3">
+        <h2><i class="fa fa-github"></i> Open</h2>
+        <p>Invenio is 100% open source licensed under MIT license. Fork us on <a href="https://github.com/inveniosoftware">GitHub</a> and build your product. Invenio loves open standards for open science.</p>
+      </div>
+    </div>
+    <div class="row centered">
+      <div class="born-at-cern col">
+        <p>Born with <i class="fa fa-heart fa-heart-cern"></i> at <a href="https://home.cern"><img src="/static/img/logo-cern-white.svg?h=a51625b9" title="CERN" /></a></p>
+      </div>
+    </div>
+  </div></div>
+</section>
+<section class="instances-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">What can you build with Invenio Framework?</span>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://zenodo.org"><img class="instances" src="/static/img/inbrowser-screenshot-zenodo.png?h=60ceb8af"/></a>
+        <h6>Digital Repositories</h6>
+        <p>
+          Invenio Framework is currently being used by many generic and institutional repositories. For instance: <a href="http://zenodo.org">Zenodo</a> and <a href="https://videos.cern.ch">CDS Videos</a> have been built using Invenio Framework v3.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img class="instances" src="/static/img/inbrowser-screenshot-cern-search.png?h=53b07174"/></a>
+        <h6>Enterprise Search Engine</h6>
+        <p>
+          You can use Invenio Framework to create your own Enterprise Search Engine. The CERN Search Team has chosen Invenio Framework in order to build a <a href="https://github.com/inveniosoftware-contrib/cern-search/">Generic Search Engine</a> that they have published as FOSS.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://ils.test.rero.ch/"><img class="instances" src="/static/img/inbrowser-screenshot-rero-ils.png?h=8991d516"/></a>
+        <h6>Integrated Library System</h6>
+        <p>
+          Invenio provides specialised modules You can use Invenio Framework to create your own Enterprise Search Engine. The CERN Search Team has chosen Invenio Framework in order to build a <a href="https://github.com/inveniosoftware-contrib/cern-search/">Generic Search Engine</a> that they have published as FOSS.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features-section section-content-white-bg">
+  <div class="container">
+    <span class="section-title">Features</span>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/static/img/icon-data-model.svg?h=9770f1c9"/>
+          </div>
+          <div class="col-md-9">
+            <h6>Flexible data model</h6>
+            <p>Use JSON Schema to describe your articles, books, theses,
+            photos, videos, research data and software. Write serialisers to
+            produce BibTeX, CSL, DataCite, Dublin Core, JSON-LD, or MARCXML.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/static/img/icon-search.svg?h=7d10dafe"/>
+          </div>
+          <div class="col-md-9">
+            <h6>Powerful search engine</h6>
+            <p>Fast search times for repositories of several million records.
+               Confurigurable query language and search facets. Citation
+               networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/static/img/icons8-document-96.png?h=96c20e9f"/>
+          </div>
+          <div class="col-md-9">
+            <h6>Advanced file management</h6>
+            <p>Manage millions of files attached to records. Organise files in
+            buckets. Configure any storage system/protocol.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+          <div class="row">
+              <div class="col-md-3 centered">
+                  <img src="/static/img/icons8-filing-cabinet-96.png?h=0b25d325"/>
+              </div>
+              <div class="col-md-9">
+                  <h6>Preservation friendly</h6>
+                  <p>Mint persistent identifiers (DOI) for repository assets.
+                     Create links between versions. Run fixity checks. Export
+                     BagIt archival packages.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/static/img/icon-community.svg?h=baba0018"/>
+          </div>
+          <div class="col-md-9">
+            <h6>User communities</h6>
+            <p>Organise your documents in community collections. Set up
+            advanced user authentication (OAuth, SSO). Define fine-grained
+            access rights. Collect usage statistics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/static/img/icon-extensible.svg?h=48ef78f9"/>
+          </div>
+          <div class="col-md-9">
+            <h6>REST API</h6>
+            <p>Use more than one hundred independent packages
+               collaborating via rich REST APIs. Pick the packages you
+               want and use the full power of Python to combine and
+               extend them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="open-source-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">The Best of Open Source</span>
+    <h6 class="section-subtitle">Invenio's core is relying on some of the world's top open source products</h6>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="flavour" src="/static/img/logo-elasticsearch.svg?h=54e701f8"/>
+        <h6>Elasticsearch</h6>
+        <p>
+            <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> is an extremely fast JSON-native distributed search engine supporting anything from full-text to geospatial queries.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="flavour" src="/static/img/logo-postgresql.svg?h=f84c6a8e"/>
+        <img class="flavour" src="/static/img/logo-mysql.svg?h=ed70e657"/>
+        <h6>PostgreSQL or MySQL</h6>
+        <p>
+            <a href="https://www.postgresql.org">PostgreSQL</a> and <a href="https://www.mysql.com">MySQL</a> are powerful relational databases with JSON-support as well as a strong reputation for reliability, robustness, and performance.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="flavour" src="/static/img/logo-python.svg?h=54ef2408"/>
+        <img class="flavour" src="/static/img/logo-flask.svg?h=0076fbd8"/>
+        <h6>Python/Flask</h6>
+        <p>
+          Invenio is built using <a href="https://www.python.org">Python 3</a>, the <a href="http://flask.pocoo.org/docs/1.0/">Flask</a> micro webframework and a suite of the best community-built Python libraries.
+        </p>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="get-started-section section-content-white-bg">
+  <div class="container">
+    <span class="section-title">Get started</span>
+    <h6 class="section-subtitle">Use Invenio tools to bootstrap your Invenio Project and start building your product!</h6>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="flex-center-vertically">
+          <div class="numbering">1</div>
+        </div>
+        <h3 class="section-title">Scaffold</h3>
+        <div class="command-line">
+              <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
+              <div class="line comment"># scaffold my-site instance</div>
+              <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+              <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flex-center-vertically">
+            <div class="numbering">2</div>
+        </div>
+        <h3 class="section-title">Install</h3>
+        <div class="command-line">
+              <div class="line"><span class="prompt">$</span>cd my-site</div>
+              <div class="line comment"># start services (db, es, mq, cache)</div>
+              <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
+              <div class="line comment"># build and install my-site instance</div>
+              <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flex-center-vertically">
+          <div class="numbering">3</div>
+        </div>
+        <h3 class="section-title">Run</h3>
+        <div class="command-line">
+              <div class="line comment"># setup database and indexes</div>
+              <div class="line"><span class="prompt">$</span>./scripts/setup</div>
+              <div class="line comment"># start webserver and task queue</div>
+              <div class="line"><span class="prompt">$</span>./scripts/server</div>
+              <div class="line comment"># your site is running!</div>
+              <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/</div>
+        </div>
+      </div>
+    </div>
+    <div class="row inline-row">
+      <div class="inline-row-pane">
+        <div class="goto-button">
+          <a href="http://invenio.readthedocs.io"><i class="fa fa-file-text-o"></i> Docs</a>
+        </div>
+        <div class="goto-button">
+          <a href="https://github.com/inveniosoftware"><i class="fa fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6 footer-logo-centered">
+    <a href="/"><img class="icon-contact" src="/static/img/logo-invenio-white.svg?h=84611f18" /></a>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Products</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="/products/rdm/">Invenio RDM</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products/ils/">Invenio ILS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products/framework/">Invenio Framework</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/#products">Get Started</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/showcase/">Examples</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/about/">About</a></td>
+        </tr>
+        <tr>
+          <td><a href="/about#logos">Logos</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Community</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="/roadmap/">Roadmap</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/getinvolved/">Get Involved</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/events/">Events & Training</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/support/">Hosting & Support</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/governance/">Governance</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/people/">People</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Documentation</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/inveniosoftware">GitHub</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://gitter.im/inveniosoftware/invenio">Chatroom</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://invenio-talk.web.cern.ch">Forum</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">Twitter</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/blog/">Blog</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright &copy; 2016-2019 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
+          <span class="text-muted"><small></small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4535);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://piwik.web.cern.ch/piwik.php?idsite=4535" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+  <script>
+    //Main navigation scroll spy for shadow
+    $(window).scroll(function() {
+      var y = $(window).scrollTop();
+      if (y > 0) {
+        $(".invenio-navbar").addClass('invenio-navbar-not-top');
+      } else {
+        $(".invenio-navbar").removeClass('invenio-navbar-not-top');
+      }
+    });
+  </script>
+</body>
