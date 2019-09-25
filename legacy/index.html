@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license — inveniosoftware.org</title>
+<title>Legacy — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
           
             <li><a href="/roadmap/">Roadmap</a></li>
           
-            <li><a class="active-menu" href="/blog/">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -64,8 +64,8 @@
         <div class="row">
           <div class="col">
             <div class="header-section-title">
-              <h3>Invenio Blog</h3>
-              <h6>Follow news and updates on Invenio world</h6>
+              <h3>Invenio legacy releases</h3>
+              <h6>Invenio 1.x and 2.x release series</h6>
             </div>
           </div>
         </div>
@@ -73,209 +73,78 @@
     </div>
   </section>
   
-  <section id="blog-post-content-section" class="section-content-light-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-xs-12 block-center">
-            
-  <div class="blog-back-button">
-    <a href="/blog">Back</a>
-  </div>
-  <div class="blog-post blog-post-frame">
-    <header class="post-header">
-      <h2>
-        
-          Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license
-        
-      </h2>
-      <p class="post-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Mar 23, 2018</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://gitter.im/inveniosoftware/invenio">Invenio Framework</a></span>
-      </p>
-    </header>
-    <article class="post-content">
-      <p>This sprint was focused on releasing the Invenio v3.0.0 Release Candidate 1.</p>
-<p>As a result of 95 developer days, 485 commits and 88k lines touched (33k additions and 55k deletions):</p>
-<ul>
-<li><em>Invenio v3.0.0 Release Candidate 1</em> was released.</li>
-<li>License has been changed from GPL to MIT for ~30 repositories (part of v3RC1).</li>
-<li>Documentation for API authentication in Invenio was added (in OAuth2Server).</li>
-<li>Elasticsearch v6 support was added.</li>
-</ul>
-<h2>Releases</h2>
-<ul>
-<li>invenio: v3.0.0rc1</li>
-<li>invenio-access: v1.0.0</li>
-<li>invenio-accounts: v1.0.0</li>
-<li>invenio-admin: v1.0.0</li>
-<li>invenio-app: v1.0.0</li>
-<li>invenio-assets: v1.0.0</li>
-<li>invenio-base: v1.0.0</li>
-<li>invenio-cache: v1.0.0</li>
-<li>invenio-celery: v1.0.0</li>
-<li>invenio-config: v1.0.0</li>
-<li>invenio-db: v1.0.0</li>
-<li>invenio-formatter: v1.0.0</li>
-<li>invenio-i18n: v1.0.0</li>
-<li>invenio-indexer: v1.0.0</li>
-<li>invenio-jsonschemas: v1.0.0</li>
-<li>invenio-logging: v1.0.0</li>
-<li>invenio-mail: v1.0.0</li>
-<li>invenio-oaiserver: v1.0.0</li>
-<li>invenio-oauth2server: v1.0.0</li>
-<li>invenio-oauthclient: v1.0.0</li>
-<li>invenio-pidstore: v1.0.0</li>
-<li>invenio-records: v1.0.0</li>
-<li>invenio-records-rest: v1.0.0</li>
-<li>invenio-records-ui: v1.0.0</li>
-<li>invenio-rest: v1.0.0</li>
-<li>invenio-search: v1.0v.0</li>
-<li>invenio-search-ui: v1.0.0</li>
-<li>invenio-theme: v1.0.0</li>
-<li>invenio-userprofiles: v1.0.0</li>
-<li>dcxml: v0.1.1</li>
-<li>citeproc-py-styles: v0.1.1</li>
-<li>pytest-invenio: v1.0.0</li>
-<li>invenio-marc21: v1.0.0a8</li>
-</ul>
-<h3>Backward incompatible changes</h3>
-<ul>
-<li><p>invenio-oauthclient:</p>
-<ul>
-<li>Added creation/modification timestamps to database models. Requires upgrade of database using the included Alembic recipe. The recipe will set the creation/modification timestamp to the current date + time (same value for all rows).</li>
-</ul>
-</li>
-<li><p>invenio-oaiserver:</p>
-<ul>
-<li>XSL stylesheet that allow nice rendering of the OAI-PMH feed have been removed as it was GPL licensed. <a href="https://invenio-oaiserver.readthedocs.io/en/latest/usage.html#xsl-stylesheet">Documentation</a> describes how to add it back.</li>
-</ul>
-</li>
-</ul>
-<h3>List of all changes:</h3>
-<ul>
-<li>All packages:<ul>
-<li>License change and general repository clean up.</li>
-</ul>
-</li>
-<li>cookiecutter-invenio-datamodel:<ul>
-<li>New template for bootstrapping data models in Invenio.</li>
-</ul>
-</li>
-<li>cookiecutter-invenio-instance:<ul>
-<li>New template for bootstrapping new instances.</li>
-</ul>
-</li>
-<li>invenio-accounts:<ul>
-<li>Removed Invenio-Admin dependency.</li>
-</ul>
-</li>
-<li>invenio-base:<ul>
-<li>Documentation for CLI commands.</li>
-</ul>
-</li>
-<li>invenio-config:<ul>
-<li>Documentation for how to set complex values in environment variables.</li>
-</ul>
-</li>
-<li>invenio-db:<ul>
-<li>Changed dependency psycopg2 to psycopg2-binary due to warning message.</li>
-</ul>
-</li>
-<li>invenio-indexer:<ul>
-<li>Elasticsearch v6 support</li>
-</ul>
-</li>
-<li>invenio-jsonschemas:<ul>
-<li>Fixed functools dependency for Python 2</li>
-</ul>
-</li>
-<li>invenio-marc21:<ul>
-<li>Elasticsearch v6 support</li>
-</ul>
-</li>
-<li>invenio-oaiserver:<ul>
-<li>Elasticsearch v6 support</li>
-<li>XSL stylesheet removal and documentation.</li>
-<li>Removal of invenio-query-parser dependency</li>
-</ul>
-</li>
-<li>invenio-oauth2server:<ul>
-<li>Usage documentation</li>
-<li>Fixed missing field length validation in form.</li>
-</ul>
-</li>
-<li>invenio-oauthclient:<ul>
-<li>Added timestamps to all models</li>
-<li>Hide part of access token when displayed.</li>
-</ul>
-</li>
-<li>invenio-pidstore:<ul>
-<li>Allow modifying "control_number" field for recid minter via config.</li>
-</ul>
-</li>
-<li>invenio-records-rest:<ul>
-<li>Usage documentation</li>
-<li>Elasticsearch v6 support</li>
-<li>Removed invenio-query-parser dependency.</li>
-</ul>
-</li>
-<li>invenio-rest:<ul>
-<li>Always install Flask-CORS dependency. Please update your install from <code>invenio-rest[cors]</code> to just <code>invenio-rest</code>.</li>
-<li>Add sentry event ID in error response.</li>
-<li>Change from dicttoxml to xmltodict (to avoid GPL dependency).</li>
-</ul>
-</li>
-<li>invenio-search-js:<ul>
-<li>Upgrade jquery to v3.3.1</li>
-<li>Fixed facet selection with no results</li>
-</ul>
-</li>
-<li>invenio-search-ui:<ul>
-<li>Fixed facet selection with no results</li>
-</ul>
-</li>
-<li>invenio-search:<ul>
-<li>Elasticsearch v6 support</li>
-<li>Removed invenio-query-parser dependency.</li>
-</ul>
-</li>
-<li>invenio:<ul>
-<li>Removed provisioning scripts and docker configuration (in favour of cookiecutter-invenio-instance).</li>
-<li>Bump all dependencies to v1.0.0</li>
-</ul>
-</li>
-<li>pytest-invenio:<ul>
-<li>Fixed click logging output with latest Flask development version.</li>
-</ul>
-</li>
-</ul>
+<section class="section-content-white-bg">
+  <div class="container">
+    <span class="section-title-light-bg">Invenio 1.x</span>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+          <div class="alert alert-warning"><strong>Status:</strong> Invenio v1.x has reached end-of-life and will not receive any further updates.</div>
+          <p>
+              <a href="https://github.com/inveniosoftware/invenio/releases/tag/v1.2.2">Invenio 1.2.2</a> is
+              the last stable release from the old Invenio legacy technology
+              code base. If you have been using one of previous Invenio
+              versions, it is recommended to upgrade to this version. New users
+              should start with <a href="/gettingstarted/">Invenio v3</a>
+              directly.
+          </p>
+          <p>
+              If you would like to check out Invenio 1.2 locally, we recommend to use Docker:
+          </p>
+          <p class="code"> $ <span class="command">docker</span> pull tiborsimko/invenio:1.2.2
+              $ <span class="command">docker</span> run -i -t --rm -p 80:80 -p 443:443 tiborsimko/invenio:1.2.2
+              $ <span class="command">firefox</span> http://0.0.0.0/
+          </p>
+          <p>
+              If you need to work on Invenio 1.2 legacy code base, we recommend to use Vagrant:
+          <p class="code"> $ <span class="command">git</span> clone https://github.com/inveniosoftware/invenio -b maint-1.2
+              $ <span class="command">cd</span> invenio
+              $ <span class="command">for</span> file in $(git ls-files); do \
+              &nbsp;&nbsp;sed -i -E 's,invenio-?software.org/download/,inveniosoftware.web.cern.ch/inveniosoftware/download/,g' $file; \
+              &nbsp;&nbsp;done
+              $ <span class="command">vagrant</span> up && <span class="command">vagrant</span> ssh web
+              web> <span class="command">source .inveniorc</span>
+              web> <span class="command">/vagrant/scripts/create-instance.sh</span>
+              web> <span class="command">/vagrant/scripts/populate-instance.sh</span>
+              $ <span class="command">firefox</span> http://192.168.50.10/record/1
+          </p>
 
-    </article>
-    
-  </div>
-
-        </div>
+          <p>
+              <strong>Important note:</strong> Invenio 1.2 legacy installation
+              and demo site assets that were previously living under <code>invenio-software.org/download/...</code> have
+              been moved to another location. Therefore you will need to run the
+              above <code>for ... do sed ... done</code> shell command in order
+              to replace these URLs by the new location before you start working
+              with Invenio 1.2 legacy code base.
+          </p>
+          <p>
+              For more information on Invenio 1.2 release series, please see the old <a href="https://raw.githubusercontent.com/inveniosoftware/invenio/maint-1.2/INSTALL">installation
+              guide</a> as well as the <a href="http://demo.inveniosoftware.org/help/">user</a>, <a href="http://demo.inveniosoftware.org/help/admin/">administrator</a> and <a href="http://demo.inveniosoftware.org/help/hacking/">developer</a>
+              documentation bundled with each release tarball.
+          </p>
+          <p>
+              If you have questions about Invenio 1.2 release series, please use
+              our <a href="https://gitter.im/inveniosoftware/invenio">chat room</a>.
+          </p>
       </div>
     </div>
-  </section>
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $(document).delegate('*.post-content img', 'click', function(event) {
-            $(this).data('remote', $(this).attr('src'));
-            event.preventDefault(); $(this).ekkoLightbox();
-        });
-    });
-  </script>
-
+  </div>
+</section>
+<section class="section-content-white-bg">
+    <div class="container">
+        <span class="section-title-light-bg">Invenio 2.x</span>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="alert alert-warning"><strong>Status:</strong> Invenio v2.x has reached end-of-life and will not receive any further updates.</div>
+                <p>
+                    Invenio 2.0 and 2.1 release series was transitional releases combining the old Invenio 1.2 legacy
+                    code base with the new technology stack, paving the way
+                    towards the Invenio v3.0 release. We do not recommend using
+                    them and we advise to start with the final <a href="/gettingstarted/">Invenio v3</a> directly.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
   <footer>
   <div class="contact-section section-content-dark-bg">

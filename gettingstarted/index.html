@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license — inveniosoftware.org</title>
+<title>Getting Started — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +40,7 @@
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           
-            <li><a href="/gettingstarted/">Get started</a></li>
+            <li><a class="active-menu" href="/gettingstarted/">Get started</a></li>
           
             <li><a href="/#features">Features</a></li>
           
@@ -52,7 +52,7 @@
           
             <li><a href="/roadmap/">Roadmap</a></li>
           
-            <li><a class="active-menu" href="/blog/">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
           
         </ul>
       </div>
@@ -64,8 +64,8 @@
         <div class="row">
           <div class="col">
             <div class="header-section-title">
-              <h3>Invenio Blog</h3>
-              <h6>Follow news and updates on Invenio world</h6>
+              <h3>Getting started with Invenio</h3>
+              <h6>Installation and first steps</h6>
             </div>
           </div>
         </div>
@@ -73,208 +73,117 @@
     </div>
   </section>
   
-  <section id="blog-post-content-section" class="section-content-light-bg">
+  <section class="section-content-white-bg">
     <div class="container">
+      <span class="section-title-light-bg">Get started</span>
       <div class="row">
-        <div class="col-md-8 col-xs-12 block-center">
-            
-  <div class="blog-back-button">
-    <a href="/blog">Back</a>
-  </div>
-  <div class="blog-post blog-post-frame">
-    <header class="post-header">
-      <h2>
-        
-          Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license
-        
-      </h2>
-      <p class="post-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Mar 23, 2018</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://gitter.im/inveniosoftware/invenio">Invenio Framework</a></span>
-      </p>
-    </header>
-    <article class="post-content">
-      <p>This sprint was focused on releasing the Invenio v3.0.0 Release Candidate 1.</p>
-<p>As a result of 95 developer days, 485 commits and 88k lines touched (33k additions and 55k deletions):</p>
-<ul>
-<li><em>Invenio v3.0.0 Release Candidate 1</em> was released.</li>
-<li>License has been changed from GPL to MIT for ~30 repositories (part of v3RC1).</li>
-<li>Documentation for API authentication in Invenio was added (in OAuth2Server).</li>
-<li>Elasticsearch v6 support was added.</li>
-</ul>
-<h2>Releases</h2>
-<ul>
-<li>invenio: v3.0.0rc1</li>
-<li>invenio-access: v1.0.0</li>
-<li>invenio-accounts: v1.0.0</li>
-<li>invenio-admin: v1.0.0</li>
-<li>invenio-app: v1.0.0</li>
-<li>invenio-assets: v1.0.0</li>
-<li>invenio-base: v1.0.0</li>
-<li>invenio-cache: v1.0.0</li>
-<li>invenio-celery: v1.0.0</li>
-<li>invenio-config: v1.0.0</li>
-<li>invenio-db: v1.0.0</li>
-<li>invenio-formatter: v1.0.0</li>
-<li>invenio-i18n: v1.0.0</li>
-<li>invenio-indexer: v1.0.0</li>
-<li>invenio-jsonschemas: v1.0.0</li>
-<li>invenio-logging: v1.0.0</li>
-<li>invenio-mail: v1.0.0</li>
-<li>invenio-oaiserver: v1.0.0</li>
-<li>invenio-oauth2server: v1.0.0</li>
-<li>invenio-oauthclient: v1.0.0</li>
-<li>invenio-pidstore: v1.0.0</li>
-<li>invenio-records: v1.0.0</li>
-<li>invenio-records-rest: v1.0.0</li>
-<li>invenio-records-ui: v1.0.0</li>
-<li>invenio-rest: v1.0.0</li>
-<li>invenio-search: v1.0v.0</li>
-<li>invenio-search-ui: v1.0.0</li>
-<li>invenio-theme: v1.0.0</li>
-<li>invenio-userprofiles: v1.0.0</li>
-<li>dcxml: v0.1.1</li>
-<li>citeproc-py-styles: v0.1.1</li>
-<li>pytest-invenio: v1.0.0</li>
-<li>invenio-marc21: v1.0.0a8</li>
-</ul>
-<h3>Backward incompatible changes</h3>
-<ul>
-<li><p>invenio-oauthclient:</p>
-<ul>
-<li>Added creation/modification timestamps to database models. Requires upgrade of database using the included Alembic recipe. The recipe will set the creation/modification timestamp to the current date + time (same value for all rows).</li>
-</ul>
-</li>
-<li><p>invenio-oaiserver:</p>
-<ul>
-<li>XSL stylesheet that allow nice rendering of the OAI-PMH feed have been removed as it was GPL licensed. <a href="https://invenio-oaiserver.readthedocs.io/en/latest/usage.html#xsl-stylesheet">Documentation</a> describes how to add it back.</li>
-</ul>
-</li>
-</ul>
-<h3>List of all changes:</h3>
-<ul>
-<li>All packages:<ul>
-<li>License change and general repository clean up.</li>
-</ul>
-</li>
-<li>cookiecutter-invenio-datamodel:<ul>
-<li>New template for bootstrapping data models in Invenio.</li>
-</ul>
-</li>
-<li>cookiecutter-invenio-instance:<ul>
-<li>New template for bootstrapping new instances.</li>
-</ul>
-</li>
-<li>invenio-accounts:<ul>
-<li>Removed Invenio-Admin dependency.</li>
-</ul>
-</li>
-<li>invenio-base:<ul>
-<li>Documentation for CLI commands.</li>
-</ul>
-</li>
-<li>invenio-config:<ul>
-<li>Documentation for how to set complex values in environment variables.</li>
-</ul>
-</li>
-<li>invenio-db:<ul>
-<li>Changed dependency psycopg2 to psycopg2-binary due to warning message.</li>
-</ul>
-</li>
-<li>invenio-indexer:<ul>
-<li>Elasticsearch v6 support</li>
-</ul>
-</li>
-<li>invenio-jsonschemas:<ul>
-<li>Fixed functools dependency for Python 2</li>
-</ul>
-</li>
-<li>invenio-marc21:<ul>
-<li>Elasticsearch v6 support</li>
-</ul>
-</li>
-<li>invenio-oaiserver:<ul>
-<li>Elasticsearch v6 support</li>
-<li>XSL stylesheet removal and documentation.</li>
-<li>Removal of invenio-query-parser dependency</li>
-</ul>
-</li>
-<li>invenio-oauth2server:<ul>
-<li>Usage documentation</li>
-<li>Fixed missing field length validation in form.</li>
-</ul>
-</li>
-<li>invenio-oauthclient:<ul>
-<li>Added timestamps to all models</li>
-<li>Hide part of access token when displayed.</li>
-</ul>
-</li>
-<li>invenio-pidstore:<ul>
-<li>Allow modifying "control_number" field for recid minter via config.</li>
-</ul>
-</li>
-<li>invenio-records-rest:<ul>
-<li>Usage documentation</li>
-<li>Elasticsearch v6 support</li>
-<li>Removed invenio-query-parser dependency.</li>
-</ul>
-</li>
-<li>invenio-rest:<ul>
-<li>Always install Flask-CORS dependency. Please update your install from <code>invenio-rest[cors]</code> to just <code>invenio-rest</code>.</li>
-<li>Add sentry event ID in error response.</li>
-<li>Change from dicttoxml to xmltodict (to avoid GPL dependency).</li>
-</ul>
-</li>
-<li>invenio-search-js:<ul>
-<li>Upgrade jquery to v3.3.1</li>
-<li>Fixed facet selection with no results</li>
-</ul>
-</li>
-<li>invenio-search-ui:<ul>
-<li>Fixed facet selection with no results</li>
-</ul>
-</li>
-<li>invenio-search:<ul>
-<li>Elasticsearch v6 support</li>
-<li>Removed invenio-query-parser dependency.</li>
-</ul>
-</li>
-<li>invenio:<ul>
-<li>Removed provisioning scripts and docker configuration (in favour of cookiecutter-invenio-instance).</li>
-<li>Bump all dependencies to v1.0.0</li>
-</ul>
-</li>
-<li>pytest-invenio:<ul>
-<li>Fixed click logging output with latest Flask development version.</li>
-</ul>
-</li>
-</ul>
-
-    </article>
-    
-  </div>
-
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">1</div><h3 class="section-title-light-bg">Scaffold</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+               First, scaffold the new instance:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># prerequisites: <a href="https://cookiecutter.readthedocs.io/en/latest/installation.html">cookiecutter</a> and <a href="https://pipenv.readthedocs.io/en/latest/#install-pipenv-today">pipenv</a></div>
+                <div class="line comment"># scaffold my-site instance</div>
+                <div class="line"><span class="prompt">$</span>cookiecutter \</div>
+                <div class="line"><div class="tab">gh:inveniosoftware/cookiecutter-invenio-instance -c v3.1</div></div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">2</div><h3 class="section-title-light-bg">Install</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+               Next, start the backend services and install the new instance:
+            </p>
+            <div class="command-line">
+                <div class="line"><span class="prompt">$</span>cd my-site</div>
+                <div class="line comment"># start services (db, es, mq, etc)</div>
+                <div class="line"><span class="prompt">$</span>docker-compose up -d</div>
+                <div class="line comment"># bootstrap my-site instance</div>
+                <div class="line"><span class="prompt">$</span>./scripts/bootstrap</div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">3</div><h3 class="section-title-light-bg">Run</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+               Setup the database and indexes and run your instance:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># setup database and indexes</div>
+                <div class="line"><span class="prompt">$</span>./scripts/setup</div>
+                <div class="line comment"># Run your instance</div>
+                <div class="line"><span class="prompt">$</span>./scripts/server</div>
+                <div class="line comment"># your site is running!</div>
+                <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/</div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div class="flex-center-vertically">
+              <div class="numbering">4</div><h3 class="section-title-light-bg">Use</h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p>
+               We can submit and query records:
+            </p>
+            <div class="command-line">
+                <div class="line comment"># create a new record</div>
+                <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
+                <div class="line"><span class="tab">--request POST \</span></div>
+                <div class="line"><span class="tab">--data '{"title":"Some title", "contributors": [{"name": "Doe, John"}]}' \</span></div>
+                <div class="line"><span class="tab"></span>https://127.0.0.1:5000/api/records/?prettyprint=1</div>
+                <div class="line comment"># view record</div>
+                <div class="line"><span class="prompt">$</span>firefox https://127.0.0.1:5000/records/1</div>
+                <div class="line comment"># download record</div>
+                <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
+                <div class="line"><span class="tab"></span>https://127.0.0.1:5000/api/records/1?prettyprint=1</div>
+                <div class="line comment"># search for records</div>
+                <div class="line"><span class="prompt">$</span>curl -k --header "Content-Type: application/json" \</div>
+                <div class="line"><span class="tab"></span>"https://localhost:5000/api/records/?prettyprint=1&q=title:Some"</div>
+            </div>
+            <p>
+               For more information and comments, please see our <a href="https://invenio.readthedocs.io/en/latest/quickstart/quickstart.html">Quickstart</a> documentation.
+            </p>
+        </div>
+      </div>
+      <div class="row">
+         <div class="col-md-10 col-md-offset-1 alert alert-warning">
+          Looking for Invenio 1.x or 2.x versions? Please see our <a href="/legacy/">legacy releases</a> documentation.
         </div>
       </div>
     </div>
   </section>
-  
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $(document).delegate('*.post-content img', 'click', function(event) {
-            $(this).data('remote', $(this).attr('src'));
-            event.preventDefault(); $(this).ekkoLightbox();
-        });
-    });
-  </script>
+  <section class="documentation-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title-light-bg">Documentation</span>
+      <div class="row">
+        <div class="col-md-3 centered">
+          <i class="large-icon fa fa-book" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-9">
+          <p>All the documentation can be found on <a href="http://invenio.readthedocs.io/">Read The Docs</a>. You can read about the installation and customisation of Invenio instances, the architecture and the technology overview, as well as our development practices.</p>
+          <p>See also our further project related information such as our <a href="/roadmap/">roadmap</a>, <a href="http://invenio.readthedocs.io/en/latest/community/governance.html">governance</a> and <a href="http://invenio.readthedocs.io/en/latest/community/code-of-conduct.html">code of conduct</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <footer>
