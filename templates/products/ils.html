@@ -12,7 +12,8 @@
         <div class="col">
           <div class="header-section-title">
             <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-ils.svg'|asseturl }}" title="Invenio ILS" /></h3>
-            <h6>The turn-key open source research data management platform</h6>
+            <h6>Modern Integrated Library System</h6>
+            <p><i class="fa fa-rocket"></i> Coming soon - beginning of 2020</p>
           </div>
         </div>
       </div>
@@ -20,12 +21,7 @@
 
 {% block page_body %}
     <div class="row welcome-features-row">
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-graduation-cap"></i><a href=""> Roadmap</a></h2>
-        <p>
-          The project is on going and will intend to have it ready by mid-2020.
-        </p>
-      </div>
+      <div class="welcome-features-col col-md-2"></div>
       <div class="welcome-features-col col-md-2">
         <h2><i class="fa fa-comment"></i><a href="http://invenio-talk.web.cern.ch/"> Talk</a></h2>
         <p>
@@ -45,17 +41,12 @@
         </p>
       </div>
       <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-video-camera"></i><a href="{{ '/events/'|url }}"> Events</a></h2>
-        <p>
-          We run bootcamps, workshops, team meetings. Join in person or remotely.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-2">
         <h2><i class="fa fa-list-alt"></i><a href="#features"> Features</a></h2>
         <p>
           Have a quick look at the mean goals for the future Invenio ILS.
         </p>
       </div>
+      <div class="welcome-features-col col-md-2"></div>
     </div>
   </div></div>
 </section>
@@ -162,51 +153,42 @@
     </div>
   </div>
 </section>
-<section class="instances-section section-content-white-bg customisations">
+<section class="open-source-section section-content-white-bg">
   <div class="container">
-    <span class="section-title">Customised to you</span>
+    <span class="section-title">The Best of Open Source</span>
+    <h6 class="section-subtitle">Invenio ILS relies on Invenio Framework's core which uses some of the world's top open source products</h6>
     <div class="row">
-      <div class="col-md-3">
-        <h6>Institutional Repository</h6>
+      <div class="col-md-6">
+        <img class="flavour" src="{{ '/static/img/logo-elasticsearch.svg'|asseturl }}"/>
+        <h6>Elasticsearch</h6>
         <p>
-          Invenio Framework is currently being used by many generic and institutional repositories. For instance: <a href="http://zenodo.org">Zenodo</a> and <a href="https://videos.cern.ch">CDS Videos</a> have been built using Invenio Framework v3.
+            <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> is an extremely fast JSON-native distributed search engine supporting anything from full-text to geospatial queries.
         </p>
       </div>
-      <div class="col-md-3">
-        <h6>Medical</h6>
+      <div class="col-md-6">
+        <img class="flavour" src="{{ '/static/img/logo-postgresql.svg'|asseturl }}"/>
+        <img class="flavour" src="{{ '/static/img/logo-mysql.svg'|asseturl }}"/>
+        <h6>PostgreSQL or MySQL</h6>
         <p>
-          You can use Invenio Framework to create your own Enterprise Search Engine. The CERN Search Team has chosen Invenio Framework in order to build a <a href="https://github.com/inveniosoftware-contrib/cern-search/">Generic Search Engine</a> that they have published as FOSS.
-        </p>
-      </div>
-      <div class="col-md-3">
-        <h6>Catch-all</h6>
-        <p>
-          Invenio provides specialised modules You can use Invenio Framework to create your own Enterprise Search Engine. The CERN Search Team has chosen Invenio Framework in order to build a <a href="https://github.com/inveniosoftware-contrib/cern-search/">Generic Search Engine</a> that they have published as FOSS.
-        </p>
-      </div>
-      <div class="col-md-3">
-        <h6>MARC21</h6>
-        <p>
-          Invenio provides specialised modules You can use Invenio Framework to create your own Enterprise Search Engine. The CERN Search Team has chosen Invenio Framework in order to build a <a href="https://github.com/inveniosoftware-contrib/cern-search/">Generic Search Engine</a> that they have published as FOSS.
+            <a href="https://www.postgresql.org">PostgreSQL</a> and <a href="https://www.mysql.com">MySQL</a> are powerful relational databases with JSON-support as well as a strong reputation for reliability, robustness, and performance.
         </p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
-        <a href="https://zenodo.org"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-zenodo.png'|asseturl }}"/></a>
-        <a href="https://zenodo.org">University of Hamburg</a>
+      <div class="col-md-6">
+        <img class="flavour" src="{{ '/static/img/logo-python.svg'|asseturl }}"/>
+        <img class="flavour" src="{{ '/static/img/logo-flask.svg'|asseturl }}"/>
+        <h6>Python/Flask</h6>
+        <p>
+          Invenio is built using <a href="https://www.python.org">Python 3</a>, the <a href="http://flask.pocoo.org/docs/1.0/">Flask</a> micro webframework and a suite of the best community-built Python libraries.
+        </p>
       </div>
-      <div class="col-md-3">
-        <a href="#"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-cern-search.png'|asseturl }}"/></a>
-        <a href="https://zenodo.org">Northwestern</a>
-      </div>
-      <div class="col-md-3">
-        <a href="https://ils.test.rero.ch/"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-rero-ils.png'|asseturl }}"/></a>
-        <a href="https://zenodo.org">Zenodo</a>
-      </div>
-      <div class="col-md-3">
-        <a href="https://ils.test.rero.ch/"><img class="instances" src="{{ '/static/img/inbrowser-screenshot-rero-ils.png'|asseturl }}"/></a>
-        <a href="https://zenodo.org">DESY</a>
+      <div class="col-md-6">
+        <img class="flavour" src="{{ '/static/img/logo-react.png'|asseturl }}"/>
+        <h6>React</h6>
+        <p>
+          Invenio ILS UIs are built using <a href="https://reactjs.org">React</a>, a well-known JavaScript library.
+        </p>
       </div>
     </div>
   </div>
