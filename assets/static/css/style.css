@@ -651,7 +651,8 @@ i.large-icon {
   margin: 40px auto;
 }
 .hosting-section img {
-  max-height: 4em;
+  max-height: 6em;
+  max-width: 9em;
   margin-bottom: 40px;
 }
 /* about */
