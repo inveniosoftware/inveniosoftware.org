@@ -827,7 +827,7 @@ only screen and (max-width: 993px) {
 }
 .post-header>h2>a,
 .post-header>h2 {
-  color: rgb(61, 104, 125);
+  color: #0377cd;
   font-weight: 500;
   font-size: 2em;
 }
@@ -866,23 +866,29 @@ article img {
   cursor: pointer;
 }
 
+.blog-list-item-content h1,
+.blog-list-item-content h2,
+.blog-list-item-content h3,
 .post-content h1,
 .post-content h2,
 .post-content h3 {
   font-weight: 400;
   line-height: 25px;
-  color: rgb(135, 184, 208);
+  color: #0377cd;
   margin-top: 25px;
 }
 
+.blog-list-item-content h1,
 .post-content h1 {
   font-size: 1.6em;
   margin-top: 35px;
   margin-bottom: 25px;
 }
+.blog-list-item-content h2,
 .post-content h2 {
   font-size: 1.4em;
 }
+.blog-list-item-content h3,
 .post-content h3 {
   font-size: 1.2em;
 }
@@ -978,7 +984,7 @@ a.team-url:hover {
 .blog-top-header>h2>a,
 .blog-list-item-header>h3>a,
 .blog-list-item-header>h3 {
-  color: rgb(61, 104, 125);
+  color: #0377cd;
   font-weight: 500;
   text-align: left;
 }
