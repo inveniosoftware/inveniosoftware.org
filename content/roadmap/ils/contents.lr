@@ -1,15 +1,13 @@
-column: future
+column: current
 ---
 body:
 
-Integrated Library System based on Invenio.
+A Modern Integrated Library System.
 
-(with RERO).
+[Product info](/products/ils/)
 ---
 category: Development
 ---
-title: Invenio Books Flavour
+title: Invenio ILS
 ---
-sort: 3
----
-_hidden: yes
+sort: 2
