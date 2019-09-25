@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Guillaume Viger
+---
+institution: Northwestern University
+---
+photo: guillaume-viger.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/fenekku
