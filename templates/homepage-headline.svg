@@ -425,7 +425,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" /><a
        id="a9728"
-       xlink:href="/products/ils/"
+       xlink:href="{{'/products/ils/'|url}}"
        class="product-link"
        pointer-events="all"><g
          transform="translate(1.7274613,2)"
@@ -464,7 +464,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" /><a
        id="a9715"
-       xlink:href="/products/rdm/"
+       xlink:href="{{'/products/rdm/'|url}}"
        class="product-link"
        pointer-events="all"><g
          transform="translate(0.9420447)"
@@ -564,7 +564,7 @@
        inkscape:label="a5044"><g
          class="product-link"
          id="g37166"><a
-           xlink:href="/products/framework/"
+           xlink:href="{{'/products/framework/'|url}}"
            id="a9415"
            pointer-events="all"><g
              transform="translate(16.796644)"
