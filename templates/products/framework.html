@@ -1,55 +1,46 @@
-{% extends "page.html" %}
-{% set active_page = "products" %}
+{% extends "page-framework.html" %}
 
-{% block header_section %}
-<section class="header-section product-header-section product-framework-header-section">
-  <div class="cover-image">
-    {% with active_page=active_page %}
-      {% include 'header.html' %}
-    {% endwith %}
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="header-section-title">
-            <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-framework.svg'|asseturl }}" title="Invenio Framework" /></h3>
-            <h6>Open Source framework for large-scale digital repositories</h6>
-          </div>
-        </div>
-      </div>
+{% set header_section_classes = "product-header-section product-framework-header-section" %}
+
+
+{% block header_section_title %}
+  <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-framework.svg'|asseturl }}" title="Invenio Framework" /></h3>
+  <h6>Open Source framework for large-scale digital repositories</h6>
+{% endblock %}
+
+{% block header_section_extra %}
+<div class="row welcome-features-row">
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-shield"></i> Safe</h2>
+    <p>
+      Invenio has been created with security and long-term preservation in mind. Build your digital repository and focus only on what is important to you, Invenio will do the rest.
+    </p>
+  </div>
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-line-chart"></i> Scalable</h2>
+    <p>
+      Invenio is fast. We have designed it to manage 100+ million records and petabytes of files. All your research data can now be archived independently of the size.
+    </p>
+  </div>
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-plug"></i> RESTful</h2>
+    <p>
+      Only a modern framework can create modern digital repositories. Invenio was born for the web, is JSON-native and provides RESTful APIs out of the box that will allow to build apps on top of it.
+    </p>
+  </div>
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-github"></i> Open</h2>
+    <p>Invenio is 100% open source licensed under MIT license. Fork us on <a href="https://github.com/inveniosoftware">GitHub</a> and build your product. Invenio loves open standards for open science.</p>
+  </div>
+</div>
+<div class="row centered">
+  <div class="born-at-cern col">
+    <p>Born with <i class="fa fa-heart fa-heart-cern"></i> at <a href="https://home.cern"><img src="{{ '/static/img/logo-cern-white.svg'|asseturl }}" title="CERN" /></a></p>
+  </div>
+</div>
 {% endblock %}
 
 {% block page_body %}
-    <div class="row welcome-features-row">
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-shield"></i> Safe</h2>
-        <p>
-          Invenio has been created with security and long-term preservation in mind. Build your digital repository and focus only on what is important to you, Invenio will do the rest.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-line-chart"></i> Scalable</h2>
-        <p>
-          Invenio is fast. We have designed it to manage 100+ million records and petabytes of files. All your research data can now be archived independently of the size.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-plug"></i> RESTful</h2>
-        <p>
-          Only a modern framework can create modern digital repositories. Invenio was born for the web, is JSON-native and provides RESTful APIs out of the box that will allow to build apps on top of it.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-3">
-        <h2><i class="fa fa-github"></i> Open</h2>
-        <p>Invenio is 100% open source licensed under MIT license. Fork us on <a href="https://github.com/inveniosoftware">GitHub</a> and build your product. Invenio loves open standards for open science.</p>
-      </div>
-    </div>
-    <div class="row centered">
-      <div class="born-at-cern col">
-        <p>Born with <i class="fa fa-heart fa-heart-cern"></i> at <a href="https://home.cern"><img src="{{ '/static/img/logo-cern-white.svg'|asseturl }}" title="CERN" /></a></p>
-      </div>
-    </div>
-  </div></div>
-</section>
 <section class="instances-section section-content-light-bg">
   <div class="container">
     <span class="section-title">What can you build with Invenio Framework?</span>

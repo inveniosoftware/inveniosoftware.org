@@ -4,7 +4,7 @@
 
 {% block body %}
   {% block header_section %}
-    <section class="header-section">
+    <section class="header-section {{header_section_classes}}" >
       <div class="cover-image">
         {% with active_page=active_page %}
           {% include 'header.html' %}
@@ -13,11 +13,14 @@
           <div class="row">
             <div class="col">
               <div class="header-section-title">
+                {% block header_section_title %}
                 <h3>{% block page_title %}{% endblock %}</h3>
                 <h6>{% block page_subtitle %}{% endblock %}</h6>
+                {% endblock %}
               </div>
             </div>
           </div>
+          {% block header_section_extra %}{% endblock %}
         </div>
       </div>
     </section>

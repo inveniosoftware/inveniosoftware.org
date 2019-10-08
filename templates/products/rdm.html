@@ -1,65 +1,55 @@
-{% extends "page.html" %}
-{% set active_page = "products" %}
+{% extends "page-rdm.html" %}
 
-{% block header_section %}
-<section class="header-section product-header-section product-rdm-header-section">
-  <div class="cover-image">
-    {% with active_page=active_page %}
-      {% include 'header.html' %}
-    {% endwith %}
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="header-section-title">
-            <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl }}" title="Invenio RDM" /></h3>
-            <h6>The turn-key research data management repository</h6>
-            <p><i class="fa fa-rocket"></i> Launching in the summer 2020</p>
-          </div>
-        </div>
-      </div>
+{% set header_section_classes = "product-header-section product-rdm-header-section" %}
+
+{% block header_section_title %}
+  <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl }}" title="Invenio RDM" /></h3>
+  <h6>The turn-key research data management repository</h6>
+  <p><i class="fa fa-rocket"></i> Launching in the summer 2020</p>
+{% endblock %}
+
+{% block header_section_extra %}
+  <div class="row welcome-features-row">
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-graduation-cap"></i><a href="{{ '/products/rdm/roadmap'|url}}"> Roadmap</a></h2>
+      <p>
+        The project is ongoing and will intend to have it ready by summer 2020.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-comment"></i><a href="http://invenio-talk.web.cern.ch/"> Talk</a></h2>
+      <p>
+        Join our project forum and collaborate.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-keyboard-o"></i><a href="https://gitter.im/inveniosoftware/InvenioRDM"> Chat</a></h2>
+      <p>
+        Find all the partners in our official chatroom.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-github"></i><a href="https://github.com/inveniosoftware/invenio-app-rdm"> Code</a></h2>
+      <p>
+        Have a look at Invenio RDM code evolution.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-video-camera"></i><a href="{{ '/events/'|url }}"> Events</a></h2>
+      <p>
+        We run bootcamps, workshops, team meetings. Join in person or remotely.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-list-alt"></i><a href="#features"> Features</a></h2>
+      <p>
+        Have a quick look at the mean goals for the future Invenio RDM.
+      </p>
+    </div>
+  </div>
 {% endblock %}
 
 {% block page_body %}
-    <div class="row welcome-features-row">
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-graduation-cap"></i><a href="{{ '/products/rdm/roadmap'|url}}"> Roadmap</a></h2>
-        <p>
-          The project is ongoing and will intend to have it ready by summer 2020.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-comment"></i><a href="http://invenio-talk.web.cern.ch/"> Talk</a></h2>
-        <p>
-          Join our project forum and collaborate.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-keyboard-o"></i><a href="https://gitter.im/inveniosoftware/InvenioRDM"> Chat</a></h2>
-        <p>
-          Find all the partners in our official chatroom.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-github"></i><a href="https://github.com/inveniosoftware/invenio-app-rdm"> Code</a></h2>
-        <p>
-          Have a look at Invenio RDM code evolution.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-video-camera"></i><a href="{{ '/events/'|url }}"> Events</a></h2>
-        <p>
-          We run bootcamps, workshops, team meetings. Join in person or remotely.
-        </p>
-      </div>
-      <div class="welcome-features-col col-md-2">
-        <h2><i class="fa fa-list-alt"></i><a href="#features"> Features</a></h2>
-        <p>
-          Have a quick look at the mean goals for the future Invenio RDM.
-        </p>
-      </div>
-    </div>
-  </div></div>
-</section>
 <section class="invenio-rdm-project-section section-content-light-bg">
   <div class="container">
     <span class="section-title">The Invenio RDM project</span>
