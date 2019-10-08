@@ -1,9 +1,14 @@
 [project]
 name = inveniosoftware.org
 url_style = absolute
+# Uncomment when deploying to ghpages-contrib
+# url = http://inveniosoftware-contrib.github.io/inveniosoftware.org/
 
 [servers.ghpages-dash]
 target = ghpages+https://inveniosoftware/invenio-software.org?cname=invenio-software.org
 
 [servers.ghpages]
 target = ghpages+https://inveniosoftware/inveniosoftware.org?cname=inveniosoftware.org
+
+[servers.ghpages-contrib]
+target = ghpages+https://inveniosoftware-contrib/inveniosoftware.org
