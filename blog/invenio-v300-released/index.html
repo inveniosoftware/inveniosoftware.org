@@ -9,19 +9,19 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
-<link rel="icon" href="/static/img/favicon.ico?h=981ca02e">
+<link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=086c99b7">
+<link rel="stylesheet" href="/static/css/style.css?h=5050131d">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
 <body>
   
-  <section class="header-section">
-    <div class="cover-image">
-      
-        <header>
+  
+    <section class="header-section " >
+      <div class="cover-image">
+        
+          <header class="header-nav">
   <nav class="navbar navbar-fixed-top invenio-navbar">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,45 +33,95 @@
           <span class="icon-bar"></span>
         </button>
         <a href="/" class="navbar-brand">
-          <img src="/static/img/logo-invenio-white.svg?h=8686b0c0" alt="">
+          <img src="/static/img/logo-invenio-white.svg?h=84611f18" alt="">
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="inv-navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           
-            <li><a href="/gettingstarted/">Get started</a></li>
+            
+              <li><a href="/">Home</a></li>
+            
           
-            <li><a href="/#features">Features</a></li>
+            
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="/products/rdm/">InvenioRDM</a></li>
+                  
+                    <li><a href="/products/ils/">InvenioILS</a></li>
+                  
+                    <li><a href="/products/framework/">Invenio Framework</a></li>
+                  
+                </ul>
+              </li>
+            
           
-            <li><a href="/showcase/">Examples</a></li>
+            
+              <li><a href="/showcase/">Examples</a></li>
+            
           
-            <li><a href="http://invenio.readthedocs.io">Documentation</a></li>
+            
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Community</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="/roadmap/">Roadmap</a></li>
+                  
+                    <li><a href="/getinvolved/">Get involved</a></li>
+                  
+                    <li><a href="/events/">Events &amp; Training</a></li>
+                  
+                    <li><a href="/support/">Hosting &amp; Support</a></li>
+                  
+                    <li><a href="/governance/">Governance</a></li>
+                  
+                    <li><a href="/people/">People</a></li>
+                  
+                </ul>
+              </li>
+            
           
-            <li><a href="/community/">Community</a></li>
+            
+              <li><a href="http://invenio.readthedocs.io">Docs</a></li>
+            
           
-            <li><a href="/roadmap/">Roadmap</a></li>
+            
+              <li><a class="active-menu" href="/blog/">Blog</a></li>
+            
           
-            <li><a class="active-menu" href="/blog/">Blog</a></li>
+            
+              <li><a href="https://invenio-talk.web.cern.ch">Talk</a></li>
+            
+          
+            
+              <li><a href="/about/">About</a></li>
+            
           
         </ul>
       </div>
     </div>
   </nav>
 </header>
-      
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="header-section-title">
-              <h3>Invenio Blog</h3>
-              <h6>Follow news and updates on Invenio world</h6>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="header-section-title">
+                
+                <h3>Invenio Blog</h3>
+                <h6>Follow news and updates on Invenio world</h6>
+                
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
   
   <section id="blog-post-content-section" class="section-content-light-bg">
     <div class="container">
@@ -219,49 +269,109 @@ as in most cases only new features are added.</p>
   <div class="contact-section section-content-dark-bg">
     <div class="container">
       <div class="row">
-  <div class="col-md-6">
-    <a href="/"><img class="icon-contact" src="/static/img/logo-invenio-white.svg?h=8686b0c0" /></a>
+  <div class="col-md-6 footer-logo-centered">
+    <a href="/"><img class="icon-contact" src="/static/img/logo-invenio-white.svg?h=84611f18" /></a>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-2">
+    <h3 class="contact-title">Products</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="/products/rdm/">InvenioRDM</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products/ils/">InvenioILS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products/framework/">Invenio Framework</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/#products">Get Started</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/showcase/">Examples</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/about/">About</a></td>
+        </tr>
+        <tr>
+          <td><a href="/about#logos">Logos</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Community</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="/roadmap/">Roadmap</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/getinvolved/">Get Involved</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/events/">Events & Training</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/support/">Hosting & Support</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/governance/">Governance</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/people/">People</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2">
     <h3 class="contact-title">Keep in touch</h3>
     <table class="contact-list">
       <tbody>
         <tr>
-          <td class="contact-list-header">Documentation</td>
-          <td><a href="https://invenio.readthedocs.io/en/latest/">Read The Docs</a></td>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Documentation</a></td>
         </tr>
         <tr>
-          <td class="contact-list-header">GitHub</td>
           <td>
-            <a href="https://github.com/inveniosoftware">@inveniosoftware</a> &middot; <a href="https://github.com/inveniosoftware-contrib">@inveniosoftware-contrib</a>
+            <a href="https://github.com/inveniosoftware">GitHub</a>
           </td>
         </tr>
         <tr>
-          <td class="contact-list-header">Chat room</td>
           <td>
-            <a href="https://gitter.im/inveniosoftware/invenio"><img src="/static/img/gitter.svg?h=e497f3c6"></a>
+            <a href="https://gitter.im/inveniosoftware/invenio">Chatroom</a>
           </td>
         </tr>
         <tr>
-          <td class="contact-list-header">Twitter</td>
           <td>
-            <a href="https://twitter.com/inveniosoftware">@inveniosoftware <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://invenio-talk.web.cern.ch">Talk</a>
           </td>
         </tr>
         <tr>
-          <td class="contact-list-header">Weekly video meetings</td>
-          <td><a href="https://indico.cern.ch/category/6046/">Invenio Developer Forum</a></td>
-        </tr>
-        <tr>
-          <td class="contact-list-header">Yearly workshops</td>
-          <td><a href="https://indico.cern.ch/category/6240/">Invenio User Group Workshop</a></td>
-        </tr>
-        <tr>
-          <td class="contact-list-header">Email<br />
-            <small>(note: no technical support)</small></td>
           <td>
-            <a href="href=mailto:info@inveniosoftware.org?Subject=Hello">info @ inveniosoftware.org</a>
+            <a href="https://twitter.com/inveniosoftware">Twitter</a>
           </td>
+        </tr>
+        <tr>
+          <td><a href="/blog/">Blog</a></td>
         </tr>
       </tbody>
     </table>
@@ -273,9 +383,8 @@ as in most cases only new features are added.</p>
     <div class="container">
       <div class="row">
         <div class="col-md-12 centered">
-          <span>Copyright &copy; 2016-2018 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
+          <span>Copyright &copy; 2016-2019 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
           <span class="text-muted"><small></small></span>
-
         </div>
       </div>
     </div>

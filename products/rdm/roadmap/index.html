@@ -1,0 +1,492 @@
+<!doctype html>
+<title>InvenioRDM Roadmap — inveniosoftware.org</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, memento, oai-pmh, orcid, openaire, rest, zenodo, cds, flask, angular">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+<link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/style.css?h=5050131d">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+<body>
+  
+  
+    <section class="header-section product-rdm-header-section" >
+      <div class="cover-image">
+        
+          <header class="header-nav">
+  <nav class="navbar navbar-fixed-top invenio-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#inv-navbar-collapse" aria-controls="inv-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">
+          <img src="/static/img/logo-invenio-white.svg?h=84611f18" alt="">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inv-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+            
+              <li><a href="/">Home</a></li>
+            
+          
+            
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle active-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="/products/rdm/">InvenioRDM</a></li>
+                  
+                    <li><a href="/products/ils/">InvenioILS</a></li>
+                  
+                    <li><a href="/products/framework/">Invenio Framework</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li><a href="/showcase/">Examples</a></li>
+            
+          
+            
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Community</span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="/roadmap/">Roadmap</a></li>
+                  
+                    <li><a href="/getinvolved/">Get involved</a></li>
+                  
+                    <li><a href="/events/">Events &amp; Training</a></li>
+                  
+                    <li><a href="/support/">Hosting &amp; Support</a></li>
+                  
+                    <li><a href="/governance/">Governance</a></li>
+                  
+                    <li><a href="/people/">People</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li><a href="http://invenio.readthedocs.io">Docs</a></li>
+            
+          
+            
+              <li><a href="/blog/">Blog</a></li>
+            
+          
+            
+              <li><a href="https://invenio-talk.web.cern.ch">Talk</a></li>
+            
+          
+            
+              <li><a href="/about/">About</a></li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="header-section-title">
+                
+                <h3>InvenioRDM Roadmap</h3>
+                <h6>The road to InvenioRDM</h6>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+<section class="roadmap-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">Roadmap</span>
+    <div class="roadmap-year"><h6>2019</h6></div>
+    <div class="roadmap-list-container">
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Oct</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Alpha: First release</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Website update <i class="fa fa-check text-success"></i></li>
+          </ul>
+          <h4>Release (alpha 1)</h4>
+          <ul>
+            <li>Initial prototype of application, data model and permissions.</li>
+            <li>Basic installation experience (docs, install and run).</li>
+            <li>Basic customization experience (change logo and permissions).</li>
+            <li>Demo data</li>
+          </ul>
+          <small><a href="https://github.com/orgs/inveniosoftware/projects/27">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">RFCs</a> | M4</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Nov</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Alpha: Advanced Customizations</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Review of alpha 1</li>
+            <li>Demo site in OpenShift with demo data.</li>
+          </ul>
+          <h4>Release (alpha 2)</h4>
+          <ul>
+            <li>Change layout to match institutional style (CSS and templates)</li>
+            <li>Customize data model (resource type, custom fields, feature flags)</li>
+            <li>Application profiles and plugin architecture</li>
+          </ul>
+          <small><a href="https://github.com/orgs/inveniosoftware/projects/28">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">Upcoming RFCs</a> | M5</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Dec</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Alpha: Deployment</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Review of alpha 2</li>
+            <li>Online user documentation</li>
+            <li>Zenodo/Digital Hub migration test</li>
+          </ul>
+          <h4>Release (alpha 3)</h4>
+          <ul>
+            <li>OpenShift deployment templates</li>
+          </ul>
+          <small>M6</small>
+        </div>
+      </div>
+    </div>
+    <div class="roadmap-year"><h6>2020</h6></div>
+    <div class="roadmap-list-container">
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Jan</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Alpha: period</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Project meeting (Jan 20-24)</li>
+            <li>UX: Search, deposit and curation (wireframes to be discussed during project meeting)</li>
+            <li>RFCs: Deposit, Communities, Migration, S3, LDAP, SAML, Previewers, I18N.</li>
+            <li>Review of alpha 3</li>
+          </ul>
+          <h4>Release (alpha 4)</h4>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <small>M7</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Feb</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Beta period</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Draft governance and sustainability plan</li>
+          </ul>
+          <h4>Release (beta 1)</h4>
+          <ul>
+            <li>Search experience</li>
+            <li>Initial deposit experience</li>
+          </ul>
+          <small>M8</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Mar</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Beta period</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Plugins deadline: S3, SAML, LDAP, Previewers, I18N</li>
+            <li>Zenodo/Digital Hub migration test</li>
+          </ul>
+          <h4>Release (beta 2)</h4>
+          <ul>
+            <li>Deposit experience</li>
+            <li>Initial curation experience</li>
+          </ul>
+          <small>M9</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Apr</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Beta period</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Curation experience</li>
+            <li>Customisable Docker Deployment</li>
+            <li>Release: Beta 3</li>
+          </ul>
+          <small>M10</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>May</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Release Candidate period</h3>
+          <ul>
+            <li>End-user documentation</li>
+            <li>Zenodo/Digital Hub migration test</li>
+            <li>Product roadmap</li>
+            <li>Release: RC1</li>
+          </ul>
+          <small>M11</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Jun</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Final Release</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Migration of Zenodo and Digital Hub to InvenioRDM</li>
+            <li>Outreach: Tracking site, website update, OR2020.</li>
+            <li>Governance and sustainability plan</li>
+            <li>Project meeting</li>
+          </ul>
+          <small>M12</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="roadmap-section section-content-white-bg">
+  <div class="container">
+    <span class="section-title">Past Roadmap</span>
+    <div class="roadmap-year"><h6>2019</h6></div>
+    <div class="roadmap-list-container">
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Jul</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>InvenioRDM begins</h3>
+          <ul>
+            <li>Kick-off meeting</li>
+            <li>Core specifications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Aug</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Specifications phase</h3>
+          <p>Customisation specifications</p>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Sep</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Specifications phase</h3>
+          <p>Extension and Deployment requirements</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+  <div class="contact-section section-content-dark-bg">
+    <div class="container">
+      <div class="row">
+  <div class="col-md-6 footer-logo-centered">
+    <a href="/"><img class="icon-contact" src="/static/img/logo-invenio-white.svg?h=84611f18" /></a>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Products</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="/products/rdm/">InvenioRDM</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products/ils/">InvenioILS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/products/framework/">Invenio Framework</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/#products">Get Started</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/showcase/">Examples</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/about/">About</a></td>
+        </tr>
+        <tr>
+          <td><a href="/about#logos">Logos</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Community</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="/roadmap/">Roadmap</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/getinvolved/">Get Involved</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/events/">Events & Training</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/support/">Hosting & Support</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/governance/">Governance</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/people/">People</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2">
+    <h3 class="contact-title">Keep in touch</h3>
+    <table class="contact-list">
+      <tbody>
+        <tr>
+          <td><a href="https://invenio.readthedocs.io/en/latest/">Documentation</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/inveniosoftware">GitHub</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://gitter.im/inveniosoftware/invenio">Chatroom</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://invenio-talk.web.cern.ch">Talk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://twitter.com/inveniosoftware">Twitter</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="/blog/">Blog</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <span>Copyright &copy; 2016-2019 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
+          <span class="text-muted"><small></small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4535);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript><p><img src="http://piwik.web.cern.ch/piwik.php?idsite=4535" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+  <script>
+    //Main navigation scroll spy for shadow
+    $(window).scroll(function() {
+      var y = $(window).scrollTop();
+      if (y > 0) {
+        $(".invenio-navbar").addClass('invenio-navbar-not-top');
+      } else {
+        $(".invenio-navbar").removeClass('invenio-navbar-not-top');
+      }
+    });
+  </script>
+</body>
