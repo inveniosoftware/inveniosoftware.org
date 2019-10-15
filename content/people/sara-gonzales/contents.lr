@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Sara Gonzales
+---
+institution: Northwestern University
+---
+photo: sara-gonzales.jpg
+---
+role: Data Librarian
+---
+bio:
+---
+chat: https://gitter.im/saragon02
