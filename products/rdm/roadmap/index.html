@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=5050131d">
+<link rel="stylesheet" href="/static/css/style.css?h=007e014e">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -127,6 +127,47 @@
   <div class="container">
     <span class="section-title">Roadmap</span>
     <div class="roadmap-year"><h6>2019</h6></div>
+    <div id="past-roadmap" class="roadmap-list-container" style="display:none">
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Jul</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>InvenioRDM begins</h3>
+          <ul>
+            <li>Kick-off meeting</li>
+            <li>Core specifications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Aug</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Specifications phase</h3>
+          <p>Customisation specifications</p>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Sep</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Specifications phase</h3>
+          <p>Extension and Deployment requirements</p>
+        </div>
+      </div>
+    </div>
+    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toggle-past').click(function() {
+          $("#past-roadmap").toggle();
+          $('.roadmap-past-text').toggle();
+        });
+      });
+    </script>
     <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
@@ -292,45 +333,6 @@
             <li>Project meeting</li>
           </ul>
           <small>M12</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="roadmap-section section-content-white-bg">
-  <div class="container">
-    <span class="section-title">Past Roadmap</span>
-    <div class="roadmap-year"><h6>2019</h6></div>
-    <div class="roadmap-list-container">
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jul</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>InvenioRDM begins</h3>
-          <ul>
-            <li>Kick-off meeting</li>
-            <li>Core specifications</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Aug</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Specifications phase</h3>
-          <p>Customisation specifications</p>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Sep</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Specifications phase</h3>
-          <p>Extension and Deployment requirements</p>
         </div>
       </div>
     </div>
