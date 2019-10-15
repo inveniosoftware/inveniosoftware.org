@@ -1,0 +1,11 @@
+_template: people.html
+---
+name: Werner Greßhoff
+---
+institution: University of Münster
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/wgresshoff
