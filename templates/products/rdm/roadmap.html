@@ -8,6 +8,47 @@
   <div class="container">
     <span class="section-title">Roadmap</span>
     <div class="roadmap-year"><h6>2019</h6></div>
+    <div id="past-roadmap" class="roadmap-list-container" style="display:none">
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Jul</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>InvenioRDM begins</h3>
+          <ul>
+            <li>Kick-off meeting</li>
+            <li>Core specifications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Aug</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Specifications phase</h3>
+          <p>Customisation specifications</p>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Sep</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Specifications phase</h3>
+          <p>Extension and Deployment requirements</p>
+        </div>
+      </div>
+    </div>
+    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toggle-past').click(function() {
+          $("#past-roadmap").toggle();
+          $('.roadmap-past-text').toggle();
+        });
+      });
+    </script>
     <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
@@ -173,45 +214,6 @@
             <li>Project meeting</li>
           </ul>
           <small>M12</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="roadmap-section section-content-white-bg">
-  <div class="container">
-    <span class="section-title">Past Roadmap</span>
-    <div class="roadmap-year"><h6>2019</h6></div>
-    <div class="roadmap-list-container">
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jul</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>InvenioRDM begins</h3>
-          <ul>
-            <li>Kick-off meeting</li>
-            <li>Core specifications</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Aug</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Specifications phase</h3>
-          <p>Customisation specifications</p>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Sep</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Specifications phase</h3>
-          <p>Extension and Deployment requirements</p>
         </div>
       </div>
     </div>

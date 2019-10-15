@@ -626,6 +626,11 @@ footer nav li.title {
   .roadmap-year h6 {
     margin-left: 0;
   }
+  .roadmap-past-text {
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
 }
 
 /* gettingstarted.html */
