@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Carina Antunes
+---
+institution: CERN
+---
+photo: carina-antunes.png
+---
+role: Invenio Developer
+---
+bio: Leads Citadel Search
+---
+chat: https://gitter.im/carantunes
