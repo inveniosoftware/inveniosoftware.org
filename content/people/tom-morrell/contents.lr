@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Tom Morrell
+---
+institution: Caltech Library
+---
+photo: tom-morrell.jpg
+---
+role: Research Data Specialist
+---
+bio:
+---
+chat: https://gitter.im/tmorrell
