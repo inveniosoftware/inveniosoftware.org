@@ -474,6 +474,14 @@
       "screenshot_filename": "zenodo.png",
       "types": ["research-data", "repository"],
       "featured": true
-    }
+    },
+    {
+      "name": "Museum Bollandianum",
+      "country": "BE",
+      "description": "For almost four centuries the Bollandists have been at the forefront of hagiographic research. The Museum Bollandianum provides access to books (including the rare books collection), journals and articles of interest in that field.",
+      "url": "https://museumbollandianum.be",
+      "screenshot_filename": "museumbollandianum.png",
+      "types": ["Library"]
+    },
   ]
 }
