@@ -806,6 +806,10 @@ i.large-icon {
   margin: 40px;
 }
 .logos {}
+.sticker {
+  height: 20em;
+  max-height: none !important;
+}
 /* people */
 .people {
   text-align: center;
