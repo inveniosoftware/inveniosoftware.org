@@ -1,7 +1,9 @@
-column: future
+column: near-term
 ---
 title: Deposit Bundle
 ---
 category: Development
 ---
 sort: 1
+---
+body: Refactoring of the Invenio-Deposit module.
