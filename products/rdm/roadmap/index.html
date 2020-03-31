@@ -128,6 +128,7 @@
     <span class="section-title">Roadmap</span>
     <div class="roadmap-year"><h6>2019</h6></div>
     <div id="past-roadmap" class="roadmap-list-container" style="display:none">
+
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Jul</p>
@@ -198,17 +199,6 @@
           <small><a href="https://github.com/orgs/inveniosoftware/projects/28">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">RFCs</a> | M5</small>
         </div>
       </div>
-    </div>
-    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#toggle-past').click(function() {
-          $("#past-roadmap").toggle();
-          $('.roadmap-past-text').toggle();
-        });
-      });
-    </script>
-    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Dec</p>
@@ -229,9 +219,6 @@
           <small><a href="https://github.com/orgs/inveniosoftware/projects/29">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">Upcoming RFCs</a> | M6</small>
         </div>
       </div>
-    </div>
-    <div class="roadmap-year"><h6>2020</h6></div>
-    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Jan</p>
@@ -289,6 +276,18 @@
           <small>M9</small>
         </div>
       </div>
+    </div>
+    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toggle-past').click(function() {
+          $("#past-roadmap").toggle();
+          $('.roadmap-past-text').toggle();
+        });
+      });
+    </script>
+    <div class="roadmap-year"><h6>2020</h6></div>
+    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Apr</p>
@@ -297,9 +296,8 @@
           <h3>Beta period</h3>
           <h4>Milestones</h4>
           <ul>
-            <li>Curation experience</li>
-            <li>Customisable Docker Deployment</li>
-            <li>Release: Beta 3</li>
+            <li>Basic deposit experience </li>
+            <li>Control and data flow for deposit</li>
           </ul>
           <small>M10</small>
         </div>
@@ -309,12 +307,10 @@
           <p>May</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Release Candidate period</h3>
+          <h3>Beta period</h3>
           <ul>
-            <li>End-user documentation</li>
-            <li>Zenodo/Digital Hub migration test</li>
-            <li>Product roadmap</li>
-            <li>Release: RC1</li>
+            <li>Full deposit experince including versioning, PID minting and access control.</li>
+            <li>Semantic UI migration and search experience</li>
           </ul>
           <small>M11</small>
         </div>
@@ -324,13 +320,40 @@
           <p>Jun</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Final Release</h3>
+          <h3>Release Candidate</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Release Candidate 1</li>
+            <li>Governance and sustainability plan</li>
+            <li>Virtual project meeting</li>
+            <li>Product roadmap</li>
+          </ul>
+          <small>M12</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Sep</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Final release</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Final release including usage statistics, GitHub, REST API documentation, SIP store and NGR features.</li>
+          </ul>
+          <small>M12</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Dec</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Production validation</h3>
           <h4>Milestones</h4>
           <ul>
             <li>Migration of Zenodo and Digital Hub to InvenioRDM</li>
-            <li>Outreach: Tracking site, website update, OR2020.</li>
-            <li>Governance and sustainability plan</li>
-            <li>Project meeting</li>
+            <li>Outreach: Tracking site.</li>
           </ul>
           <small>M12</small>
         </div>
