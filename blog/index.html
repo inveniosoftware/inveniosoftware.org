@@ -135,9 +135,101 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/2020-05-05-april-release/">InvenioRDM April Release</a>
+          <a href="/blog/invenio-v33-released/">Invenio v3.3 released</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Pablo Panero
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>May 20, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are proud to announce the release of Invenio v3.3.0. With this release,
+Invenio v3.1.x reaches end of life, and will no longer be maintained.</p>
+<p><strong>Python compatibility</strong></p>
+<p>Invenio v3.3 supports Python versions 3.6 and 3.7. Python 2 support in Invenio
+ended on January 1st, 2020 with the official end of life for Python 2 on the
+same date.</p>
+<h1>Getting started</h1>
+<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.3/quickstart/quickstart.html">quick start</a> guide.</p>
+<h1>Upgrading</h1>
+<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.3/upgrading.html">upgrade guide</a>.</p>
+<h1>Release notes</h1>
+<p>Please see the full <a href="https://invenio.readthedocs.io/en/maint-3.3/releases/v3.3.0.html">release notes</a> for
+details about minor changes, deprecations etc.</p>
+<h1>Highlights for Invenio v3.3</h1>
+<h2>Python 3.7</h2>
+<p>Python 3.7 is now supported by Invenio!</p>
+<h2>Improved support for Single Page Applications</h2>
+<p>Invenio v3.3 improves the support for Single Page Applications (SPA) by adding
+REST APIs for account management operations such as login, logout, user registration,
+password change, email confirmation and more. The integrated OAuth client
+also adds a new REST API so that you can login via your OAuth providers such
+as GitHub, ORCID and Globus.</p>
+<h2>CSRF Protection</h2>
+<p>Invenio-REST adds a CSRF middleware, called <code>CSRFProtectMiddlewate</code> to protect
+API views against CSRF attacks. The CSRF checks can be skipped in REST API
+calls when using a personal OAuth API token.</p>
+<h2>Dependency management</h2>
+<p>We have revamped management of third-party dependencies. New releases
+of some of the many third-party packages Invenio depends on could often
+cause dependency conflicts. Invenio v3.3 introduces the concept of coordinator
+packages, who are responsible for properly specifying third-party dependencies.</p>
+<p>The <a href="https://invenio.readthedocs.io/en/maint-3.3/releases/v3.3.0.html">release notes</a>
+contain a table with all the current coordinator modules.</p>
+<h2>Helm chart (BETA)</h2>
+<p>Helm-Invenio provides a helm chart to deploy an Invenio application along with
+all its required services: Redis, RabbitMQ, HAProxy, Nginx, Elasticsearch,
+Logstash and PostgreSQL.</p>
+<p>This chart is currently in beta version. Its templates are currently specific
+for OpenShift. However, work is on-going to support bare Kubernetes deployments.</p>
+<h1>Maintenance policy</h1>
+<p>Invenio v3.3 will be supported with bug and security fixes until the release of
+Invenio v3.5 and minimum until 2021-05-18.</p>
+<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.3/releases/maintenance-policy.html">maintenance policy</a>.</p>
+<h1>What's next?</h1>
+<p>In Invenio v3.4 we are planning to release two major new features:</p>
+<ul>
+<li>Theming support and a new Semantic UI theme.</li>
+<li>A statistics bundle that adds support for collecting COUNTER Research Data Usage Metrics compliant statistics.</li>
+<li>Index migration support for migrating between Elasticsearch clusters (aka zero down-time reindexing and index migration).</li>
+</ul>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/invenio-v33-released/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2020-05-05-april-release/">InvenioRDM April Release</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -179,20 +271,14 @@
 <p>Thank you for your interest, take care and stay safe!</p>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-05-05-april-release/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -1003,194 +1089,6 @@ The bootcamp was targeting developers wanting to learn more about Invenio and to
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2019-03-25-bootcamp/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/invenio-v310-released/">Invenio v3.1.0 released</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Mar 11, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are proud to announce the release of Invenio v3.1.0.</p>
-<p>Head over to our <a href="/gettingstarted/">Getting started</a> to see it in action.</p>
-<h3>Python compatibility</h3>
-<p>Invenio v3.1 supports Python 2.7 (until 2019-12-31), Python 3.5 and Python 3.6. We expect to add support for Python 3.7 in the near-term future once Celery v4.3 has been released.</p>
-<h1>What's new in Invenio v3.1?</h1>
-<h2>Webpack build system</h2>
-<p>Invenio v3.1 comes with a new assets build system based on Webpack for building and packaging your JavaScript applications, stylesheets and much more. The system replaces the previous AMD/RequireJS based system which was deprecated in v3.0.</p>
-<p>The old build system is still available to allow users to upgrade to Invenio v3.1 without first migrating to Webpack. The old build system will be removed in Invenio v3.3</p>
-<p>For more information about the new build system, please see:</p>
-<ul>
-<li><a href="https://invenio-assets.readthedocs.io/">Invenio-Assets</a></li>
-<li><a href="https://invenio-assets.readthedocs.io/en/latest/upgrade.html">Upgrade to Webpack</a></li>
-</ul>
-<h2>Simplified scaffolding</h2>
-<p>We have simplified the scaffolding of new Invenio instance by merging the data model template into the main Cookiecutter-Invenio-Instance.</p>
-<p>The previous approach of two separate packages -- one for the application and one for the data model -- caused friction and confusion for new users and we, therefore, decided to merge both.</p>
-<p>This also fits with our <em>long-term</em> goal, where we want to provide standard data models (such as DataCite, Dublin Core, MARC21) so that users don't have write their own data model.</p>
-<h4>Docker base image</h4>
-<p>We have released a new Docker image that can serve as base image for your Invenio instances. The image is based on CentOS 7 and comes with Python 3.6, Node.JS, NPM and some standard libraries often needed by Invenio.</p>
-<p>See <a href="https://cloud.docker.com/u/inveniosoftware/repository/docker/inveniosoftware/centos7-python">inveniosoftware/centos7-python</a> on DockerHub.</p>
-<h4>Pipenv</h4>
-<p>In order to manage Python dependencies more reliable and securely for your Invenio instance we have moved to use <a href="http://pipenv.readthedocs.io">Pipenv</a> which also handles the virtualenv creation. This has all been integrated with the <a href="/gettingstarted/">Getting started</a> guide.</p>
-<h2>Documentation</h2>
-<p>New sections where added to the documentation specifically on:</p>
-<ul>
-<li>Bundles</li>
-<li>Requirements</li>
-<li>Build a repository</li>
-<li>Managing access</li>
-<li>Secure your instance</li>
-<li>Infrastructure architecture</li>
-</ul>
-<p>See <a href="https://invenio.readthedocs.io">https://invenio.readthedocs.io</a>.</p>
-<h2>Request tracing</h2>
-<p>Invenio v3.1 has added new features for improved request tracing to allow for better troubleshooting and auditing of problems. The feature allows logging a request id, session id and user id across multiple services such as Nginx and Invenio error logs. This enables e.g. system administrators to identify exactly which Nginx access log line caused a specific error logged by Invenio.</p>
-<p>If combined with e.g. centralised log aggregation, this can be used for e.g. viewing requests by a user in real-time, request performance statistics and many other metrics. Please note that in order to be compliant with EU General Data Protection Regulation (GDPR), you must ensure that these logs are automatically deleted after 3 months (the same is the case if you only log an IP address).</p>
-<ul>
-<li><strong>Cookiecutter-Invenio-Instance</strong>:<ul>
-<li>Nginx configuration has been updated to automatically generate a random
-request id and add is as <code>X-Request-ID</code> header.</li>
-<li>Nginx log format has been updated to log timing information, request id,
-session id and user id if provided by the application server in the
-<code>X-Session-ID</code> and <code>X-User-ID</code> HTTP headers. Nginx will remove both
-headers prior to sending the response to the client.</li>
-</ul>
-</li>
-<li><strong>Invenio-App</strong>:<ul>
-<li>Extracts the <code>X-Request-ID</code> header (max 200 chars) if set in the HTTP
-request and makes it available on the Flask <code>g</code> object as
-<code>g.request_id</code>.</li>
-</ul>
-</li>
-<li><strong>Invenio-Logging</strong>:<ul>
-<li>The request id is made available to all log handlers.</li>
-<li>The Sentry log handler will add the request ID as a tag if available.</li>
-</ul>
-</li>
-<li><strong>Invenio-Accounts</strong><ul>
-<li>The <code>X-Session-ID</code> and <code>X-User-ID</code> HTTP headers will be added to the
-HTTP repsponse if the configuration variable
-<code>ACCOUNTS_USERINFO_HEADERS</code> is set to <code>True</code>. This makes the session
-and user id available to upstream servers like Nginx.</li>
-</ul>
-</li>
-</ul>
-<h1>Minor changes in v3.1</h1>
-<h4>Token expiration</h4>
-<p>The token expiration was changed from 5 days to 30 minutes for the password reset token and email confirmation token. Using the tokens will as a side-effect login in the user, which means that if the link is leaked (e.g. forwarded by the users themselves), then another person can use the link to access the account. Flask-Security v3.1.0 addresses this issue, but has not yet been released.</p>
-<h4>Globus.org OAuth Login</h4>
-<p>Invenio v3.1 now comes with support for login with your Globus.org account. The feature was contributed by University of Chicago.</p>
-<p>See <a href="https://invenio-oauthclient.readthedocs.io/en/latest/usage.html#module-invenio_oauthclient.contrib.globus">Invenio-OAuthClient</a> for details.</p>
-<h4>Health-check view</h4>
-<p>A <code>/ping</code> view that can be enabled via the <code>APP_HEALTH_BLUEPRINT_ENABLED</code> configuration variable has been added to support load balancers like HAProxy to check if the application server is responsive.</p>
-<h1>Backwards incompatible changes</h1>
-<ul>
-<li><strong>Pytest-Invenio:</strong> The <code>celery_config</code> fixture has been renamed to <code>celery_config_ext</code> due to naming conflict with fixture provided by Celery.</li>
-</ul>
-<h1>Deprecations in v3.1</h1>
-<p>Following list of features have been deprecated and will be removed in either
-Invenio v3.2 or Invenio v3.3:</p>
-<h2>Elasticsearch v2 support</h2>
-<p>Elasticsearch v2 support will be removed in Invenio v3.2. Elasticsearch v2 has reached end of life and no longer receives any bug or security fixes.</p>
-<p>Both the support in Invenio-Search for creating indexes for v2 as well as any v2 Elasticsearch mappings in other Invenio modules will be removed.</p>
-<h2>AMD/RequireJS</h2>
-<p>Invenio's assets build system based on AMD/RequireJS will be removed in Invenio v3.3.</p>
-<p>This involves e.g. the two CLI commands:</p>
-<pre><code class="lang-shell">$ invenio npm
-$ invenio assets build
-</code></pre>
-<p>Several Python modules in Invenio-Assets will be removed, including (but not
-limited to):</p>
-<ul>
-<li><code>invenio_assets.npm</code></li>
-<li><code>invenio_assets.filters</code></li>
-<li><code>invenio_assets.glob</code></li>
-<li><code>invenio_assets.proxies</code></li>
-</ul>
-<p>Also, bundle definitions in other Invenio modules will be removed. These are
-usually located in <code>bundles.py</code> files, e.g.:</p>
-<ul>
-<li><code>invenio_theme.bundles</code></li>
-</ul>
-<p>Also, some static files will be removed from bundles, e.g.:</p>
-<ul>
-<li><code>invenio_theme/static/js/*</code></li>
-<li><code>invenio_theme/static/scss/*</code></li>
-</ul>
-<h2>DynamicPermission class</h2>
-<p>The <code>invenio_access.DynamicPermission</code> class will be removed in Invenio v3.2. It has been superseded by the <code>invenio_access.Permission</code> class. The <code>Permission</code> class by default deny an action in case no user/role is assigned. The <code>DynamicPermission</code> instead allowed an action if no user/role was assigned.</p>
-<h2>Records CLI</h2>
-<p>The following CLI commands will be removed in Invenio v3.2:</p>
-<pre><code class="lang-shell">$ invenio records create
-$ invenio records delete
-$ invenio records patch
-</code></pre>
-<p>Please use the REST API instead to create, patch and delete records.</p>
-<h2>AngularJS (reminder from v3.0)</h2>
-<p>In Invenio v3.0 we deprecated the AngularJS 1.4 application Invenio-Search-JS as AngularJS by that time was already outdated. We have selected React and SemanticUI as the replacement framework for AngularJS.</p>
-<p>The new Webpack build system released in Invenio v3.1 is part of the strategy to move from AngularJS to React (note however that you can use Webpack with your favorite framework, including AngularJS).</p>
-<p>We have started the rewrite of Invenio-Search-JS and have already released the first version of <a href="https://inveniosoftware.github.io/react-searchkit/">React-SearckKit</a> which eventually will replace Invenio-Search-JS.</p>
-<h1>Features removed in v3.1</h1>
-<p>These following already deprecated features have been removed in Invenio v3.1.</p>
-<ul>
-<li><code>invenio_records.tasks</code> was removed from the Invenio-Records module.</li>
-</ul>
-<h1>Maintenance policy</h1>
-<p>Invenio v3.1 will be supported with bug and security fixes until the release of
-Invenio v3.3 and minimum until 2020-03-31.</p>
-<h1>What's next?</h1>
-<p>We originally planned to release the Files and Statistics bundle in Invenio v3.1. We however decided it was more urgent to release the new Webpack build system in order to avoid too much code being written against the old build system.</p>
-<p>In Invenio v3.2 we are planning to release the <strong>Files</strong> bundle including:</p>
-<ul>
-<li><a href="https://invenio-files-rest.readthedocs.io">invenio-files-rest</a><ul>
-<li>Object storage REST API for Invenio with many supported backend storage
-protocols and file integrity checking.</li>
-</ul>
-</li>
-<li><a href="https://invenio-iiif.readthedocs.io">invenio-iiif</a><ul>
-<li>International Image Interoperability Framework (IIIF) server for making
-thumbnails and zooming images.</li>
-</ul>
-</li>
-<li><a href="https://invenio-iiif.readthedocs.io">invenio-previewer</a><ul>
-<li>Previewer for Markdown, JSON/XML, CSV, PDF, JPEG, PNG, TIFF, GIF and ZIP
-files.</li>
-</ul>
-</li>
-<li><a href="https://invenio-iiif.readthedocs.io">invenio-records-files</a><ul>
-<li>Integration layer between object storage and records.</li>
-</ul>
-</li>
-</ul>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/invenio-v310-released/">Read More</a>
       
     </div>
   </div>
