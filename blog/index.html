@@ -135,9 +135,111 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/invenio-v33-released/">Invenio v3.3 released</a>
+          <a href="/blog/2020-06-05-may-release/">InvenioRDM May Release</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen, Lisa O&#39;Keefe, Zacharias Zacharodimos
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jun 5, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are happy to announce InvenioRDM Alpha 7 (May release). Thank you to our team members for their efforts on this significant release.</p>
+<h3>What's new?</h3>
+<p>The May release is a major integration release, with a few rough edges that still need polishing.
+We have integrated a lot of code that was developed in separate branches into the main InvenioRDM
+code base. We have done this now, to ensure we have enough time to iron out integration issues.</p>
+<p>The primary focus for the release was:</p>
+<ul>
+<li>Migrate from Bootstrap to SemanticUI</li>
+<li>Deposit form frontend (JavaScript)</li>
+<li>Integrate new communities prototype.</li>
+<li>Upgrade to Invenio v3.3</li>
+</ul>
+<h3>Known issues (please read!)</h3>
+<p><strong>As a rule of thumb, many features will be broken and not work. Thank you for your continued
+patience and feedback as we work to make improvements.</strong></p>
+<p>A lot of code has changed in this release, and many features have not yet undergone quality control.</p>
+<p><strong>UI Customizations not working</strong></p>
+<p>The existing method for customizing the UI will change slightly, We hope to provide documentation for this in the next release.</p>
+<p><strong>Visual appearance</strong></p>
+<p>You'll notice issues related to the visual appearance, that we have not yet had the time to refine.
+This is with regards to alignment, colors, behaviours, font-sizes, and user experience.</p>
+<p><img src="/blog/2020-06-05-may-release/frontpage.png" alt=""></p>
+<p><strong>Data model and deposit form</strong></p>
+<p>The data model and deposit form is far from complete. We have not yet focused on implementing
+the right data model with the right fields. For instance the access right displayed in the deposit
+form will change, as will many of the other fields displayed.</p>
+<p><img src="/blog/2020-06-05-may-release/deposit.png" alt=""></p>
+<p><strong>Communities</strong></p>
+<p>Communities is in a very initial state and many things will change.</p>
+<p><img src="/blog/2020-06-05-may-release/communities.png" alt=""></p>
+<p><strong>Previewer, OAuth login, Settings pages</strong></p>
+<p>The file previewer and OAuth login still need to be migrated to SemanticUI, and thus
+the modules are likely not to work properly in this release.</p>
+<h3>What do you need to do?</h3>
+<p>You can install the latest invenio-cli v0.14.x, create a new instance from the beginning and see how it looks like!</p>
+<p><strong>Install (TL;DR)</strong></p>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image:</p>
+<pre><code>docker pull inveniosoftware/centos7-python:3.6
+</code></pre>
+<p>To install:</p>
+<pre><code>pip install invenio-cli --upgrade
+invenio-cli init rdm
+cd my-site
+invenio-cli containerize --pre
+invenio-cli demo --containers
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
+<pre><code>cd my-site
+pipenv --rm
+docker-compose -f docker-compose.full.yml down
+</code></pre>
+<p><strong>Communities</strong></p>
+<p>To see the communities click "Communities" menu, then "New community". You'll be prompted to log in. Simply create a new account, and log in with it.</p>
+<p><strong>Deposit form</strong></p>
+<p>To see the deposit click "Uploads" then "New upload"</p>
+<h3>Want to get involved?</h3>
+<p>Follow the documentation site: <a href="https://inveniordm.docs.cern.ch/">https://inveniordm.docs.cern.ch/</a> for an up-to-date
+step-by-step install and usage of InvenioRDM.</p>
+<p>Give us feedback on Discourse: <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-7-may-release/109">https://invenio-talk.web.cern.ch/t/inveniordm-alpha-7-may-release/109</a> for this release.</p>
+<p>Thank you for your patience. We are working hard all the time to improve things. Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/2020-06-05-may-release/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/invenio-v33-released/">Invenio v3.3 released</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -204,20 +306,14 @@ Invenio v3.5 and minimum until 2021-05-18.</p>
 </ul>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/invenio-v33-released/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -1022,73 +1118,6 @@ SVG versions of all logos.</p>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2019-04-29-rdm/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2019-03-25-bootcamp/">Invenio Training Bootcamp 2019</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Nicola Tarocco
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Mar 25, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p><img src="/blog/2019-03-25-bootcamp/bootcamp-group-photo.jpg" alt=""></p>
-<p>The Invenio v3 Bootcamp was held from the 19th to the 21st of March, 2019 at CERN. The event reached the maximum number of 30 participants with attendees from all over the world (Czech Republic, Danmark, Germany, Finland, France, Japan, Norway, Spain, Switzerland, UK and USA).
-The bootcamp was targeting developers wanting to learn more about Invenio and to understand how to create or customize an Invenio repository.</p>
-<p><strong>Format</strong></p>
-<p>The three days of the bootcamp was organised with a succession of talks and practical hands-on sessions, presented by 6 Invenio experts. Participants were able to develop each of the functionality on their laptop with a constant assistant in case of need.</p>
-<p>The objective was to discover the Invenio framework and acquire knowledge on how to build a new repository by progressively introducing new concepts.</p>
-<p>The main topics included:</p>
-<ul>
-<li>Getting started with Invenio</li>
-<li>Tour of functionalities and infrastructure</li>
-<li>Customizations of data models and look &amp; feel</li>
-<li>Deposit of new records and references between data models</li>
-<li>Access control</li>
-<li>Security</li>
-<li>Deployment and application architecture</li>
-</ul>
-<p><strong>Try it yourself</strong></p>
-<p>We've made all the material publicly available for all those who couldn't participate in the event, so you can try out the same exercises at home:</p>
-<ul>
-<li><a href="https://github.com/inveniosoftware/training">Training exercises</a></li>
-<li><a href="https://indico.cern.ch/event/773969/timetable/#all">Presentations on the event website</a></li>
-</ul>
-<p>If you run into troubles, we're happy to <a href="https://invenio.readthedocs.io/en/latest/general/getting-help.html">answer questions</a> you may have.</p>
-<p><strong>Takeaways</strong></p>
-<p>Participants had the opportunity to experience how to work with Invenio thanks to the hands-on sessions and to understand how to apply each of the introduced functionalities to use cases of their organization.</p>
-<p>The bootcamp attracted quite a lot of interest for Invenio and participants were very involved and curious: we were very glad to answer to all of the interesting questions that were asked.</p>
-<p>We would like to thank everyone for their participation and help to have contributed​ to the success of the event.</p>
-<p><strong>Invenio User Group Workshop 2019 @ Open Repositories 2019, June 10th</strong></p>
-<p>Our next event is the Invenio User Group Workshop (IUGW) at the <a href="https://or2019.blogs.uni-hamburg.de/workshops/">Open Repositories 2019</a> conference in Hamburg. The workshop will be held on June 10th with presentations from Invenio users from around the world.</p>
-<p>The call for proposals will be announced early April, so stay tuned.</p>
-<p><em>See you in Hamburg!</em></p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2019-03-25-bootcamp/">Read More</a>
       
     </div>
   </div>
