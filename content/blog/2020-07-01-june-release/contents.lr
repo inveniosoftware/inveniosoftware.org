@@ -36,7 +36,7 @@ Contributors are now optional on the deposit page as well.
 
 #### Python versions
 
-There are now Invenio images for Python 3.7 and Python 3.8! This means that you can use Python 3.6, 3.7 and 3.8 for development and for containerize.
+There are now Invenio images for Python 3.7 and Python 3.8! This means that you can use Python 3.6, 3.7 and 3.8 for local development and the full containerized mode.
 
 #### Backend and REST APIs
 
