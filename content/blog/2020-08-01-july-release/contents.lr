@@ -1,54 +1,51 @@
 title: InvenioRDM July Release
 ---
-author: Lisa O'Keefe, Pablo Panero
+author: Sara Gonzales, Guillaume Viger
 ---
 body:
 
-We are happy to announce InvenioRDM Alpha 8 (June release). Thank you to our team members for their efforts on this release.
+We are happy to announce InvenioRDM Alpha 9 (July release)! Thank you to our team members for their efforts on this release.
 
 ### What's new?
 
-The June release is a major backend development release. We developed three new modules that lay the foundation for the new core data flow of Invenio(RDM). Our work goes far to provide a better developer experience. You will be able to work on and customize Invenio(RDM) in an easier and cleaner way.
+The July release adds translation support and starts integrating the [major backend development of last release](https://invenio-talk.web.cern.ch/t/inveniordm-alpha-8-june-release/115) into InvenioRDM. In particular, draft functionality has been added at the API level and is used under the hood for deposits. To achieve this integration, the hard problems like responsibility separation, error handling, pagination, linking, and internal PID management were solved. Other improvements and more details follow.
 
-The primary focus for the release was:
+Update invenio-cli to version 0.15.0 and follow the [documentation](https://inveniordm.docs.cern.ch/) to get started.
 
-- Continue the migration from Bootstrap to SemanticUI
-- Bug fixes and improvements on the frontend (mainly on deposit)
-- Develop new core modules for Invenio(RDM) backend
 
-#### UI Customization
+#### Module translation
 
-You are able to customize your templates again. The JSX customizations are not functional yet though, which means the search page results are not customizable.
+Thanks to the efforts of [TÜBITAK](https://ulakbim.tubitak.gov.tr/), InvenioRDM was set up for internationalization: all text has been registered for translation and the [Transifex service](https://www.transifex.com/) has been enabled. The team is currently at work on a VSCode extension to help future translators. Turkish was added as a first alternative language! How to go about translating and using the various tools will be laid out next month once we have more experience under our belt!
 
-#### Visual appearance
+![](module_translation.png)
 
-We have migrated the file previewer, the OAuth login, and the settings pages to SemanticUI.
 
-You might still notice some issues related to visual appearance (e.g. the name previewed file is not in a panel as before). We will be working on making all this perfect in the next sprint on SemanticUI (end of August). In the meantime, it is, at least, better.
+#### Library improvements
 
-![](record_page.jpeg)
+Error handling, default MIME type headers, and uniform body + querystring deserialization have been added to [Flask-Resources](https://github.com/inveniosoftware/flask-resources), our Invenio-agnostic Flask REST library.
 
-#### Creators, Contributors and Affiliations Identifiers
+![](flask-resources.png)
 
-The Deposit page now accepts [ORCID iDs](https://orcid.org/) for people (creators and contributors) and [ROR identifiers](https://ror.org/) for organizations (creators, contributors and affiliations). An icon with a link to the respective entity on the record landing page reflects this connection.
+Note that invenio-resources is now [invenio-records-resources](https://github.com/inveniosoftware/invenio-records-resources) (it includes the former invenio-records-agent) and [invenio-drafts-resources](https://github.com/inveniosoftware/invenio-drafts-resources) is the new package that houses the draft functionality.
 
-Contributors are now optional on the deposit page as well.
+Behind the scenes, persistent identifiers have also seen some work.
 
-#### Python versions
 
-There are now Invenio images for Python 3.7 and Python 3.8! This means that you can use Python 3.6, 3.7 and 3.8 for local development and the full containerized mode.
+#### New API integration (including draft functionality)
 
-#### Backend and REST APIs
+The deposit page now uses the new API to create records by creating drafts and publishing them immediately. In the next release, we hope you will be able to save and publish records separately. That being said, you can already do so on the command-line! Make sure to follow the updated documentation to see creation, publication, retrieval, and search in action there.
 
-We have put a significant amount of work in refactoring some of the core API flow of Invenio. This addresses many of the issues that Invenio was facing in this domain. As a result, three modules were created:
+In addition to these tent-pole features, Python 3.7 support and general containerization was further improved thanks to [Cottage Labs](https://cottagelabs.com/) through an updated base image.
 
-- https://github.com/inveniosoftware/flask-resources: A generic Flask module to implement REST APIs and make their customization easy.
-- https://github.com/inveniosoftware/invenio-resources: A module customizing Flask-Resources for Invenio(RDM) APIs.
-- https://github.com/ppanero/invenio-records-agent: An experimental module to bridge the representational and data access worlds in Invenio. This module hosts the business logic and might be merged back into invenio-resources.
+
+#### Community domains vocabulary
+
+The list of available domains/disciplines that can be added to a community is now based on a pre-defined (and configurable) vocabulary.
+
 
 ### What do you need to do?
 
-Follow the documentation site: https://inveniordm.docs.cern.ch/ and install the latest invenio-cli v0.14.2+, create a new instance and see how it looks like!
+Follow the documentation site: https://inveniordm.docs.cern.ch/ and install the latest invenio-cli v0.15.0, create a new instance and see what it looks like!
 
 **Install (TL;DR)**
 
@@ -63,7 +60,7 @@ docker pull inveniosoftware/centos8-python:3.8
 To install:
 
 ```bash
-pip install invenio-cli --upgrade
+pip install --upgrade invenio-cli
 invenio-cli init rdm
 cd my-site
 invenio-cli containerize --pre
@@ -80,7 +77,9 @@ docker-compose -f docker-compose.full.yml down
 
 ### Feedback
 
-As always, we welcome your feedback. We are experimenting with Discourse's built in post template. This means when you [provide feedback on Discourse](https://invenio-talk.web.cern.ch/t/inveniordm-alpha-8-june-release/115) your message should be pre-populated with the classic template:
+As always, we welcome your feedback. When you [provide feedback on Discourse](https://invenio-talk.web.cern.ch/t/inveniordm-alpha-9-july-release/placeholder) your message should be pre-populated with the classic template (bugs, what worked well, what didn't work well, wishes for documentation). 
+
+Here is the template to give feedback if it's not automated:
 
 ```
 ## Bugs
@@ -92,9 +91,9 @@ As always, we welcome your feedback. We are experimenting with Discourse's built
 ## Wishes for documentation
 ```
 
-Thank you for your patience and support. We are working hard all the time to improve things. Take care and stay safe!
+Take care and stay safe!
 
 ---
-pub_date: 2020-07-01
+pub_date: 2020-08-04
 ---
 team: Invenio
