@@ -77,7 +77,7 @@ docker-compose -f docker-compose.full.yml down
 
 ### Feedback
 
-As always, we welcome your feedback. When you [provide feedback on Discourse](https://invenio-talk.web.cern.ch/t/inveniordm-alpha-9-july-release/placeholder) your message should be pre-populated with the classic template (bugs, what worked well, what didn't work well, wishes for documentation). 
+As always, we welcome your feedback. When you [provide feedback on Discourse](https://invenio-talk.web.cern.ch/t/inveniordm-alpha-9-july-release/123) your message should be pre-populated with the classic template (bugs, what worked well, what didn't work well, wishes for documentation). 
 
 Here is the template to give feedback if it's not automated:
 
