@@ -2,7 +2,7 @@
 {% set active_page = "documentation" %}
 
 {% block page_title %}{{ this.title }}{% endblock %}
-{% block page_subtitle %}Centralized documentation page{% endblock %}
+{% block page_subtitle %}Invenio products documentation{% endblock %}
 
 {% block page_body %}
   <section class="documentation-section section-content-light-bg">
@@ -254,6 +254,7 @@
 
   <script type="text/javascript">
     $(document).ready(function () {
+      var ENTER_KEY = 13;
       var searchInput = $('#search-query');
 
       function search(provider) {
@@ -263,7 +264,10 @@
         }
         var url, params;
         if (provider === 'github') {
-          params = {q: 'org:inveniosoftware' + ' ' + query, type: 'Code'};
+          // NOTE:
+          // ideally, it would be better to have type: 'Code', but GitHub requires
+          // the user to be logged in to search in Code
+          params = {q: 'org:inveniosoftware' + ' ' + query, type: 'Commits'};
           url = 'https://github.com/search';
         } else if (provider === 'google') {
           params = {q: 'invenio' + ' ' + query};
@@ -274,8 +278,10 @@
         }
       }
 
-      searchInput.on('search', function () {
-        search('github');
+      searchInput.on('keydown', function (e) {
+        if (e.keyCode === ENTER_KEY) {
+          search('github');
+        }
       });
 
       $('.btn-search').on('click', function (e) {
