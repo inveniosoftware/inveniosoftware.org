@@ -1,0 +1,27 @@
+title: Sprint: sharpen-the-saw
+---
+author: FIXME
+---
+team: Invenio Framework
+---
+team_url: https://discord.gg/8qatqBC
+---
+team_colour: invenio-team
+---
+twitter_handle: FIXME
+---
+body:
+
+This sprint was focused on improving the developer community experience when working with Invenio.
+
+As a result of 58 developer days:
+- A new [central documentation page for the Invenio community](https://inveniosoftware.org/documentation/) has been created.
+- A new tool to reproduce  CI builds locally has been created ([`inveniosoftware/docker-services-cli`](https://github.com/inveniosoftware/docker-services-cli)).
+- The preparation to host the Invenio community chat on Discord has been finalised, join us at https://discord.gg/8qatqBC.
+- Reorganised and improved the [main Invenio documentation page](https://invenio.readthedocs.io/).
+- Kickstarted a new tool to perform changes on multiple Invenio repositories ([`FIXME-PKG-NAME`](https://github.com/inveniosoftware/FIXME-PKG-NAME)).
+- A new solution to run Invenio release builds on GitHub actions has been developed and deployed in a few repositories, change to be propagated to all Invenio modules
+- Tested all Invenio modules for compatibility with [PIP2020 resolver](https://pip.pypa.io/en/latest/user_guide/#changes-to-the-pip-dependency-resolver-in-20-2-2020).
+
+---
+pub_date: 2018-08-28
