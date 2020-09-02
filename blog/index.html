@@ -135,9 +135,124 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/2020-08-01-july-release/">InvenioRDM July Release</a>
+          <a href="/blog/2020-09-01-august-release/">InvenioRDM August Release</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Sara Gonzales, Guillaume Viger
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Sep 1, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are happy to announce InvenioRDM Alpha 10 (August release)! Thank you to our team members for their efforts on this release.</p>
+<h3>What's new?</h3>
+<p>We made some limited changes this month. However, three key areas <em>were</em> tackled.</p>
+<ul>
+<li>The concurrent Invenio Sprint brought the final Semantic-UI updates across all modules! If something does not show up right in your default RDM instance, then it's a legitimate bug now.</li>
+<li>These UI updates complement the updates to Search. The record search page now uses the new API endpoint from the last release. Customization of the search results is back (with documentation forthcoming). Different search pages are easier to set up.</li>
+<li>More library improvements across the board were merged.</li>
+</ul>
+<p>Update <code>invenio-cli</code> to version 0.16.0 and follow the updated <a href="https://inveniordm.docs.cern.ch/">documentation</a> to get started.</p>
+<h4>Semantic UI transition wrap-up</h4>
+<p><img src="/blog/2020-09-01-august-release/SemanticUI.png" alt="">
+<em>One of the many pages that were transitioned to Semantic-UI</em></p>
+<p>The transition to Semantic-UI is for all intents and purposes complete. Future additions will use this framework and have a consistent look with the rest of InvenioRDM. Close to 15 styling issues were closed in the process.</p>
+<h4>Search customization and transition to new API</h4>
+<p>The search page now uses the new API (<code>/api/rdm-records</code> endpoint) we introduced in the last release. The new endpoint supports pagination and sorting, but aggregations were disabled to focus on the transitioning only.</p>
+<p><img src="/blog/2020-09-01-august-release/SearchCustomization.png" alt=""></p>
+<p>Aggregations will be re-enabled soon.</p>
+<p>Custom styling of search results is possible again: documentation to explain the new way is pending however.</p>
+<h4>Library Improvements</h4>
+<p>Finally, various improvements and fixes were made across modules including:</p>
+<ul>
+<li>an overhaul to how links are generated in API responses,</li>
+<li>a way to hook callbacks into action endpoints,</li>
+<li>the convergence of validation for drafts and records, and</li>
+<li>the introduction of record versioning behind the scenes (which will be made more visible in coming releases).</li>
+</ul>
+<p>Some of these changes are visible in the API responses:</p>
+<pre><code class="lang-json">{
+    &quot;links&quot;: {
+        &quot;self&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47&quot;,
+        &quot;self_html&quot;: &quot;https://127.0.0.1/records/jnmmp-51n47&quot;,
+        &quot;files&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47/files&quot;,
+        &quot;edit&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47/draft&quot;
+    },
+    &quot;metadata&quot;: {
+         &quot;conceptrecid&quot;: &quot;5fk5g-mq814&quot;,
+         ...
+    },
+    ...
+}
+</code></pre>
+<h3>What do you need to do?</h3>
+<p>You can install the latest <code>invenio-cli</code> v0.16.0, create a new instance and see what it looks like. Make sure to follow the <a href="https://inveniordm.docs.cern.ch/">updated documentation</a> - there are a couple of caveats to be made aware of.</p>
+<p><strong>Install (TL;DR)</strong></p>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
+<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
+docker pull inveniosoftware/centos8-python:3.7
+docker pull inveniosoftware/centos8-python:3.8
+</code></pre>
+<p>To install:</p>
+<pre><code class="lang-bash">pip install --upgrade invenio-cli
+invenio-cli init rdm
+cd my-site
+invenio-cli containerize --pre
+invenio-cli demo --containers
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
+<pre><code class="lang-bash">cd my-site
+pipenv --rm
+docker-compose -f docker-compose.full.yml down
+</code></pre>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. When you <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-10-august-release/129">provide feedback on Discourse</a> your message should be pre-populated with the classic template (bugs, what worked well, what didn't work well, wishes for documentation).</p>
+<p>Here is the template to give feedback if it's not automated:</p>
+<pre><code>## Bugs
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Take care and stay safe! The next release will be big.</p>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/2020-09-01-august-release/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2020-08-01-july-release/">InvenioRDM July Release</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -203,20 +318,14 @@ docker-compose -f docker-compose.full.yml down
 <p>Take care and stay safe!</p>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-08-01-july-release/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -974,92 +1083,6 @@ SVG versions of all logos.</p>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/security-advisor-20190715/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2019-05-24-sprint-report/">Keeping up with Elasticsearch</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Alex Ioannidis &amp; Lars Holm Nielsen
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>May 24, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p><strong>In our latest Invenio sprint from May 13-24 we've been working on making Elasticsearch upgrades, migration and reindexing simpler and with near zero downtime. Read on, to learn more about how you keep up with Elasticsearch rapid release and deprecation cycles with Invenio and for a preview of what will come of new features in Invenio v3.2.</strong></p>
-<h2>End of life</h2>
-<p>Once you start running a production Invenio instance, you'll quickly notice that your Elasticsearch cluster will become outdated pretty fast, due to Elasticsearch's rapid release and deprecation cycle. Invenio v3 development was started in 2016 against the newly released Elasticsearch v2. When Invenio v3 was finally released in June 2018, Elasticsearch has had two major releases (v5 and v6) and v2 had already reached end of life. As can be seen from <a href="https://www.elastic.co/support/eol">Elastic Product End of Life Dates</a>, you can expect a major Elasticsearch version to be supported for a maximum of 2-3 years. Thus, you should plan to regularly upgrade your Elasticsearch cluster in order to not run on unmaintained software.</p>
-<h2>Index upgrades with downtime</h2>
-<p>Elasticsearch allows an index created in v5 to be read in v6 which combined with rolling cluster upgrades allows you to upgrade a cluster relatively easy with no downtime. However, you are out of luck as soon as you want to upgrade again from v6 to v7 since v7 cannot read an index created in v5.</p>
-<p>The solution is for every major Elasticsearch upgrade to create a new index and reindex content from your old index. This requires you to take offline your Invenio instance to avoid that new content is indexed during the reindexing process. For large-scale production systems with many millions of records, reindexing can take a long time, and thus might require several hours of downtime, which can quickly be a big issue these systems.</p>
-<h2>Fixing Elasticsearch mappings</h2>
-<p>A related problem you may hit when running an Invenio instance is that you would like to tweak the Elasticsearch mappings in order to improve search performance and precision. In Elasticsearch you cannot modify the mapping of an existing index, thus similar to above, you need to create a new index and reindex content from the old index.</p>
-<h2>Use cases</h2>
-<p>All in all, you'll find yourself in need of tools to manage indexes and performing reindexing in order to:</p>
-<ul>
-<li>Upgrade an Elasticsearch cluster between major versions.</li>
-<li>Migrate between two Elasticsearch clusters.</li>
-<li>Change Elasticsearch mappings of existing indexes.</li>
-</ul>
-<h2>Near-zero downtime upgrade, migration and reindexing</h2>
-<p>To solve the above use cases, we've built a new Invenio module named <a href="https://github.com/inveniosoftware/invenio-index-migrator">Invenio-Index-Migrator</a>. The module allows you to synchronize two Elasticsearch indexes (in-cluster or cross-cluster) over an extended time period, and when you are ready, you can roll over the new index. Depending on how you have deployed Invenio, the rollover can happen with either zero downtime or near zero downtime (&lt;5 minutes compared to hours)</p>
-<p>The new module supports migrating records but also any other index you may have in Elasticsearch such as event logging from usage statistics. The new module works by defining <strong>migration recipes</strong> and managing them via a CLI</p>
-<h4>Demo</h4>
-<p><em>Disclaimer: APIs etc may change slightly before the final release.</em></p>
-<p>First, you initialize a migration recipe (here a recipe named <code>records</code>) which will create new indexes to hold the new data:</p>
-<pre><code>$ invenio index migration init "records"
-</code></pre>
-<p>Next, you kick-off the index migration:</p>
-<pre><code>$ invenio index migration run "records"
-</code></pre>
-<p>Index migration happens in two stages:</p>
-<ul>
-<li><strong>Bulk migration:</strong> First a snapshot of the current index is reindexing into the new index. Invenio-Index-Migrator is flexible an supports several methods. By default, we use the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html">Elasticsearch Reindex API</a> which in most cases are orders of magnitudes faster than any other method. Other methods allow you to use Invenio's default record indexing or simply implement your own.</li>
-<li><strong>Synchronization:</strong> Once the first snapshot has been fully indexed, a second job is started to keep the two indexes in sync. Essentially this works by indexing any modifications to the old index in the new one.</li>
-</ul>
-<p>At any point during the migration, you can check the status:</p>
-<pre><code>$ invenio index migration status "records"
-</code></pre>
-<p>Once you're ready, you can roll over the new index:</p>
-<pre><code>$ invenio index migration rollover "records"
-</code></pre>
-<p>In an in-cluster migration, the rollover works by shuffling around index aliases (since Elasticsearch does not support renaming indexes). In a cross-cluster migration you update the Invenio configuration to point to your new Elasticsearch cluster.</p>
-<p>In case something goes wrong during the index migration, you can of course also cancel the job:</p>
-<pre><code>$ invenio index migration cancel "records"
-</code></pre>
-<h2>Bonus</h2>
-<p>During the sprint a number of other issues were addressed that will also be part of Invenio v3.2:</p>
-<ul>
-<li><strong>Elasticsearch v7 support</strong> was added to Invenio-Search, Invenio-Indexer and Invenio-Records-REST. Only Invenio-OAIServer needs to be upgraded to support Elasticsearch 7.</li>
-<li><strong>Search index prefixing</strong> allowing multiple Invenio instances to use the same Elasticsearch cluster. Elasticsearch by default does not support the concept of virtual hosts. With search indexing prefixing, it will be possible to use a single Elasticsearch cluster for multiple Invenio instances, given that the Invenio instances either trust each other, or you have a protection-layer like Elastic X-Pack or ReadonlyREST in front of Elasticsearch.</li>
-</ul>
-<h2>Next steps</h2>
-<p>The Invenio-Index-Migrator is only the first building blocks in order to make Elasticsearch upgrades, migration and reindexing simple. We hope to add assistant-like features that will make it even easier to keep with the latest Elasticsearch releases.</p>
-<p>The Invenio-Index-Migrator will be finally released with Invenio v3.2 which is planned for July-September.</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2019-05-24-sprint-report/">Read More</a>
       
     </div>
   </div>
