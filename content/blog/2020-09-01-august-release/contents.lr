@@ -8,7 +8,7 @@ We are happy to announce InvenioRDM Alpha 10 (August release)! Thank you to our 
 
 ### What's new?
 
-With less resources than usual, we made some limited changes this month. However, three key areas *were* tackled.
+We made some limited changes this month. However, three key areas *were* tackled.
 
 * The concurrent Invenio Sprint brought the final Semantic-UI updates across all modules! If something does not show up right in your default RDM instance, then it's a legitimate bug now.
 * These UI updates complement the updates to Search. The record search page now uses the new API endpoint from the last release. Customization of the search results is back (with documentation forthcoming). Different search pages are easier to set up.
