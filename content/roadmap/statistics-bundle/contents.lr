@@ -1,4 +1,4 @@
-column: current
+column: near-term
 ---
 body:
 
@@ -10,6 +10,6 @@ Document and prepare final releases of the following modules:
 ---
 category: Development
 ---
-title: Statistics Bundle / Invenio v3.3
+title: Statistics Bundle
 ---
 sort: 1
