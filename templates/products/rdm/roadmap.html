@@ -9,7 +9,6 @@
     <span class="section-title">Roadmap</span>
     <div class="roadmap-year"><h6>2019</h6></div>
     <div id="past-roadmap" class="roadmap-list-container" style="display:none">
-
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Jul</p>
@@ -157,18 +156,6 @@
           <small>M9</small>
         </div>
       </div>
-    </div>
-    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#toggle-past').click(function() {
-          $("#past-roadmap").toggle();
-          $('.roadmap-past-text').toggle();
-        });
-      });
-    </script>
-    <div class="roadmap-year"><h6>2020</h6></div>
-    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Apr</p>
@@ -212,9 +199,40 @@
           <small>M12</small>
         </div>
       </div>
+    </div>
+    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toggle-past').click(function() {
+          $("#past-roadmap").toggle();
+          $('.roadmap-past-text').toggle();
+        });
+      });
+    </script>
+    <div class="roadmap-year"><h6>2020</h6></div>
+    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Sep</p>
+        </div>
+        <div class="roadmap-row-content">
+          <h3>Beta release</h3>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Deposit REST API refactoring.</li>
+            <li>Deposit form with data model implemented.</li>
+          </ul>
+          <h4>Milestones</h4>
+          <ul>
+            <li>Governance update</li>
+            <li>Virtual project meeting</li>
+          </ul>
+          <small>M15</small>
+        </div>
+      </div>
+      <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+          <p>Dec</p>
         </div>
         <div class="roadmap-row-content">
           <h3>Final release</h3>
@@ -222,12 +240,12 @@
           <ul>
             <li>Final release including usage statistics, GitHub, REST API documentation, SIP store and NGR features.</li>
           </ul>
-          <small>M12</small>
+          <small>M18</small>
         </div>
       </div>
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
-          <p>Dec</p>
+          <p>Apr</p>
         </div>
         <div class="roadmap-row-content">
           <h3>Production validation</h3>
@@ -236,7 +254,7 @@
             <li>Migration of Zenodo and Digital Hub to InvenioRDM</li>
             <li>Outreach: Tracking site.</li>
           </ul>
-          <small>M12</small>
+          <small>M22</small>
         </div>
       </div>
     </div>
