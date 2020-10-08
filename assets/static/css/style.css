@@ -852,6 +852,22 @@ i.large-icon {
   padding-top: 80px;
   text-align: center;
 }
+
+h4 {
+  border-width: 2px;
+  border-radius: 25px;
+  margin-left: 50px;
+}
+
+header > h4 { display: inline-block; }
+header span { margin-left: 0px; }
+
+h2 {
+  border-width: 2px;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+
 /* showcase.html */
 
 .hidden {

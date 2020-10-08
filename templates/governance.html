@@ -4,203 +4,287 @@
 {% block page_title %}{{ this.title }}{% endblock %}
 {% block page_subtitle %}We contribute not because we have to, but because we want to{% endblock %}
 {% block page_body %}
+
 <section class="governance-section section-content-white-bg">
     <div class="container">
         <div clas="row">
 
+<h1>Invenio Principles and Purpose</h1>
+<div class="centered">
+</div>
+
+Invenio is an open-source community made up of research institutions (very broadly defined) 
+with a need to manage, curate and disseminate digital resources such as scholarly works, research 
+data/software and cultural heritage across disciplines and user communities.
+<br/><br/>
+The two key principles on which Invenio products are developed is:
+
+  <header>
+    <h4>User Experience.</h4>
+    <span>Invenio strives for top of the class user experience so that we can provide services that users love.</span>
+  </header>
+
+  <header>
+    <h4>Scalability.</h4>
+    <span>Invenio focuses on supporting large-scale digital repositories that scale with you from a single record to 100 million records.</span>
+  </header>
+
+<div style="clear:both"></div>
+
 <h1>Governance</h1>
 <div class="centered">
-  <p class="note">
-    <strong>Note:</strong>
-    The current governance model is being revised as part of the <a href="{{'/products/rdm/'|url}}">InvenioRDM project</a>.
-  </p>
 </div>
-<p>
-    Invenio is governed by CERN for the benefit of the community. CERN strives to
-  make Invenio a collaborative, open and transparent project to ensure that
-  everyone can contribute and have their say on the directions of the project.
+  Invenio is a community-driven effort, governed by CERN for the benefit of the community. 
+  CERN strives to make Invenio a collaborative, open and transparent project to ensure that 
+  everyone can contribute and have their say on the directions of the project. Invenio governance 
+  is designed to be lightweight and aims to strike a balance between agreed upon processes and standards 
+  and individual motivations. The governance model is intended to enable people to take on progressively 
+  larger and larger responsibilities with support from the leadership.
   <br/><br/>
-  Invenio governance is in general informal and we try to strike a balance
-  between processes and agreed upon standards vs. the wild west where everyone do
-  as they see fit. The governance model is intended to allow that people
-  progressively take larger and larger responsibilities with support from the
-  existing leadership.
-  <br/><br/>
-  These following sections define the different roles and responsibilities in the
-  project, define how decisions are taken and how people are appointed to
-  different roles. Overall, we expect every person who participates in the
+  This document defines different project roles and responsibilities, establishes the decision making process, 
+  and defines how people are appointed to different roles. Overall, we expect every person who participates in the
   project to adhere to our <a href="#code-of-conduct">Code of Conduct</a>.
-</p>
-<h1>Roles and responsibilities</h1>
+
+<h2>Participating Organisations</h2>
 <p>
+Invenio welcomes the engagement of Participating Organisations. Participating Organisations have a direct interest in
+ advancing the open collaborative principles of the Invenio community or related activities. Participating Organisations 
+ will be recognized on the Invenio website and will receive all the news and announcements coming from the project.
+ <br/><br/>
+ Participating Organisations must make an upfront commitment and confirm their participation on an annual basis through an 
+ annual report and attendance at the annual meeting either in-person or virtually.
+ <br/><br/>
+ For more information or to register your support about becoming a Participating Organisation, please contact <a href="info@inveniosoftware.org​">info@inveniosoftware.org​</a>.
+</p>
+
+<h2>Consultative Board</h2>
+<p>
+  The consultative board is made up of institutions that make meaningful contributions to Invenio. Contributions can include
+   code, support materials, community building, direct contributions of financial support to the project, and much more. Membership
+    of the consultative board is by invitation of CERN among the institutions of the Participating Organizations for terms of two years.
+     The consultative board provides advice to the project and helps identify strategic and community priorities. The board will meet
+      twice per year, one virtual meeting and ideally, one in-person meeting with as many members of the consultative board as available.
+       The consultative board may be called upon by the product manager on an ad hoc basis, should the need arise.
+</p>
+
+<h2>Evaluation process</h2>
+<p>
+  Invenio Governance must be evaluated once a year by the Consultative Board, Participating Organisations and CERN to reflect the current working
+   practices of the Invenio community, as well as to respond to the growth and success of the project.
+   <br/><br/>
+   Organisations and individuals in the roles defined below will be evaluated to ensure they have made a meaningful contribution to the project in
+    the previous year.
+</p>
+
+<h1>Roles and responsibilities</h1>
   The <strong>product manager</strong>, <strong>coordinators</strong>, <strong>architects</strong> and <strong>maintainers</strong> (as
   defined below) make up the leadership of Invenio. The leaders of Invenio are
   <strong>service people</strong> who:
   <br/>
   <ul>
-    <li>take an active role in driving the project forward</li>
-    <li>help newcomers as well as long-time contributors have a great experience contributing to Invenio</li>
-    <li>help train members to progressively take larger responsibility in the project</li>
-    <li>are role models for the remaining community</li>
+    <li>Take an active role in driving the project forward</li>
+    <li>Help newcomers as well as long-time contributors have a great experience contributing to Invenio</li>
+    <li>Train members to progressively take larger responsibility in the project</li>
+    <li>Publicize Invenio products and engage the community to ensure user needs are met by the project</li>
+    <li>Exemplify the Code of Conduct and serve as role models for the community</li>
+  </ul>
+
+<h2>Roles</h2>
+<br/>
+<p>
+  <ul>
+    <li><strong>Contributors</strong>: Anyone actively contributing to Invenio (in its widest possible interpretation).</li>
+    <ul style="margin:0.4;padding:0">
+      <li>Responsible for e.g. contributing code (bug fixes/new features), translations, writing documentation, providing 
+        testing/feedback, gathering user requirements, prioritising issues, making presentations, running outreach/training/networking
+        events and/or helping users of Invenio (via e.g. chat room/forum or other channels).</li>
+    </ul>
+    <li><strong>Maintainers</strong>: Anyone maintaining at least one repository.</li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by Architects in consultation with the Product Manager.</li>
+      <li>Responsible for managing the issues and code base of a repository according to Invenio's standards and helping engage contributors.</li>
+    </ul>
+    <li><strong>Architects</strong>: Maintainers and project managers who have made very large contributions and have broad extensive deep knowledge about
+       Invenio’s technical architecture as well as leading development teams.</li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by the Product Manager.</li>
+      <li>Responsible managing and training maintainers as well as for the overall Invenio technical architecture and release management in accordance with 
+        the vision and roadmap defined by the Product Manager.</li>
+    </ul>
+    <li><strong>Community Ambassadors</strong></li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by the Community Manager in consultation with the Product Manager.</li>
+      <li>Responsible for contributing to community building activities of Invenio by working with the Community Manager. Examples include presentations, 
+        event coordination, requirements gathering, blog posts, and more.</li>
+    </ul>
+    <li><strong>Community Manager</strong></li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by the Product Manager.</li>
+      <li>Responsible for community-based aspects of Invenio, including outreach, engagement, requirements gathering, demonstrations for new users, communication
+          of project news and the development and dissemination of written content about the project.</li>
+    </ul>
+    <li><strong>Product Manager</strong></li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by CERN.</li>
+      <li>Responsible for Invenio's overall vision, strategy and day-to-day management as well as coordination with the Consultative Board and Participating Organisations
+        through yearly vision and roadmap updates as well as communication about major deviations and conflicts.</li>
+    </ul>
+    <li><strong>Product Manager</strong></li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by CERN.</li>
+      <li>Responsible for Invenio's overall vision, strategy and day-to-day management as well as coordination with the Consultative Board and Participating Organisations
+        through yearly vision and roadmap updates as well as communication about major deviations and conflicts.</li>
+    </ul>
+    <li><strong>Consultative Board Member</strong>: Representative from an institution that is a member of the Consultative Board.</li>
+    <ul style="margin:0.4;padding:0">
+      <li>Appointed by the institution. The institution itself is appointed by CERN to become a member of the Consultative Board (see section above).</li>
+      <li>Responsible for representing their institution on the Consultative Board by providing advice to the project and helping to identify strategic and community priorities.</li>
+    </ul>
+  </ul>
+</p>
+<br/>
+<p>
+  
+Commit access (e.g. ability to commit, merge feature branches, manage issues and PRs) on repositories are given to all roles. Only maintainers and architects can commit/merge to master/maintenance
+ branches (meaning also only they can release packages to PyPI and NPM).
+</p>
+
+<h2>Appointments</h2>
+<p>
+In general, appointments are made in an informal way, and usually anyone volunteering that has been showing commitment to the project will get appointed. Anyone can volunteer or suggest others for roles.
+<br/><br/>
+Appointments should be in accordance with the Code of Conduct in an Open, Inclusive, Considerate, and Respectful manner.
+</p>
+
+<h2>Revoking of appointed roles</h2>
+<p>
+The product manager may revoke appointed roles of a member for reasons such as (but not limited to):
+</p>
+<p>
+  <ul>
+    <li>lack of activity and/or lack of meaningful contributions</li>
+    <li>violations to the code of conduct</li>
+    <li>repeated infringements of the contribution, style, or maintainer guides.</li>
   </ul>
 </p>
 
-<h3>Roles</h3>
 <p>
-  <ul>
-    <li><strong>Members</strong>: Anyone using Invenio.</li>
-    <li><strong>Contributors</strong>: Anyone contributing to Invenio (in it widest possible
-  interpretation, i.e. not only programmers).</li>
-    <li><strong>Maintainers</strong>: Anyone maintaining at least one repository. Maintainers are
-  responsible for managing the issues and/or the code base of a repository
-  according to Invenio's standards.</li>
-    <li><strong>Architects</strong>: Anyone maintaining 20+ repositories (though max 10 people).
-  Architects are responsible for the overall Invenio technical architecture as
-  well as managing and training maintainers on their respective repositories.</li>
-    <li><strong>Coordinators</strong>: Representatives of Invenio based services that would like
-  to coordinate their Invenio development efforts with other services and
-  provide input on the product road map.</li>
-    <li><strong>Product manager</strong>: Overall responsible for Invenio's vision, strategy and
-  day-to-day management. Responsible for managing and training architects and
-  coordinators.</li>
-  </ul>
-</p>
-<p>
-  Commit access on repositories are given to contributors, maintainers and
-  architects. Contributors can commit/merge to feature branches while only
-  maintainers and architects can commit/merge to master/maintenance branches
-  (meaning also only they can release packages to PyPI and NPM).
+  The product manager must give a warning to the member to allow them to correct their behavior except in severe cases.
+   Revoking roles should be a last measure, and only serve the purpose to ensure that Invenio has a healthy community and
+    collaboration based on our <a href="#code-of-conduct">Code of Conduct</a>.
 </p>
 
 <h1>Decision making</h1>
-<p>
-We strive to take decisions openly and by consensus, though ultimately CERN
-represented by the Invenio product manager has the final say on all decisions
-in the project. In particular this means that there is no formal voting
-procedure for Invenio.
-</p>
+<br/>
+We strive to make decisions openly and by consensus, though ultimately CERN represented by the Invenio product manager has
+  the final say on all decisions in the project. In particular this means that there is no formal voting procedure for Invenio.
 
-<h3>Leaders drive decision making</h3>
+<h2>Leaders drive decision making</h2>
+
 <p>
 The Invenio product manager, architects, coordinators and maintainers as the
 leaders of the project are responsible for driving decision making in their
-respective domains.
+respective domains. 
+<br>
+This means:
 </p>
 <p>
-Driving decision making means:
   <ul>
-    <li>facilitating an open constructive discussion around a decision that matches
-    the level of importance and impact of a decision,</li>
-    <li>striving for reaching consensus on a decision and ensuring relevant other
-    members are aware and included on the decision,</li>
-    <li>ensuring decisions are in alignment with the overall Invenio vision,
-    strategy, architecture and standards,</li>
-    <li>coordinating the decision with the Invenio leadership (product manager,
-    architects and coordinators),</li>
-    <li>taking the decision.</li>
+    <li>facilitating an open constructive discussion around a decision that matches the level of importance and the impact of a decision;</li>
+    <li>striving to reach consensus on a decision and ensuring all relevant members are aware and included on the decision;</li>
+    <li>ensuring decisions are in alignment with the overall Invenio vision, strategy, architecture and standards;</li>
+    <li>coordinating the decision with the Invenio leadership (product manager, community manager, and architects); and</li>
+    <li>making the decision and communicating it to the project through appropriate project channels.</li>
   </ul>
 </p>
 
-<h3>Leaders implement decisions</h3>
+<h2>Leaders implement decisions</h2>
 
-<p>Leaders are responsible for following up decisions they take by actual
-implementation. Decision should not be considered final unless it is
-actually implemented or documented publicly.</p>
-
-<h3>Disagreements</h3>
 <p>
-Leaders of the project should always strive for consensus. If that is not
-possible the leader taking a decision should alert the Invenio product manager
-prior to taking the decision.
-<br/><br/>
-Members who are disagreeing with a decision may ask the product manager to
-review a specific decision and possible change it.
-<br/><br/>
-Members who are disagreeing with the Invenio product manager may escalate the
-product manager's decision to their hierarchy at CERN.
+Leaders are responsible for following up decisions they take by actual implementation. Decisions should not be considered final
+ unless it is actually implemented or documented publicly.
+
 </p>
 
-<h1>Appointments</h1>
+<h2>Disagreements</h2>
 <p>
-The Invenio product manager is appointed by CERN. Architects, coordinators and
-maintainers are appointed by the Invenio product manager in collaboration with
-existing architects and coordinators.
+Leaders of the project should always strive for consensus. If that is not possible the leader taking a decision should alert the
+ Invenio product manager prior to making the decision. Members who disagree with a decision may ask the product manager to review
+  a specific decision and possibly change it. The product manager should seek advice from the Consultative Board prior to resolving
+   disagreements.
 <br/><br/>
-Maintainers are appointed by the architects (e.g. a new Invenio module) or
-coordinators (e.g. a new special interest group).
-<br/><br/>
-In general, appointments are made in an informal way, and usually anyone
-volunteering that have been showing commitment to the project will get
-appointed. Any member can volunteer or suggest other members for roles.
-</p>
-
-<h3>Revoking of appointed roles</h3>
-<p>
-The product manager may revoke appointed roles of a member for reasons such as
-(but not limitied to):
-<ul>
-  <li>lack of activity</li>
-  <li>violations of the code of conduct</li>
-  <li>repeated infringements of the contribution, style or maintainer guides.</li>
-</ul>
-The product manager must give a warning to the member to allow them to correct
-their behavior except in severe cases. Revoking roles should be a last measure,
-and only serve the purpose to ensure that Invenio has a healthy community and
-collaboration based on our <a href="#code-of-conduct">Code of Conduct</a>.
+Members who disagree with the Invenio product manager may escalate the product manager's decision to their hierarchy at CERN who should
+ seek advice from the Consultative Board prior to resolving the disagreement.
 </p>
 
 <h1>Working/Interest groups</h1>
 <a name="code-of-conduct"></a>
+Working/interest groups may be set up by the product manager on request of any group of members who wish to address a particular facet of 
+the Invenio project, for example: metadata, research data management, features, or the community. Working/interest groups help coordinate 
+the overall vision, strategy and architecture of a specific area of Invenio. Each working/interest group must have a chair that reports to 
+the product manager or community manager, as appropriate.
+
+<h1>Reporting and Communication</h1>
+Good communication is key to a collaborative and vibrant community.
+
+<h2>Milestone reporting</h2>
 <p>
-Working/interest groups may be set up by the product manager on request of any
-group of members who wish to address a particular area of Invenio (say MARC21
-support or research data management). Working/interest groups help coordinate
-the overall vision, strategy and architecture of a specific area of Invenio.
-Each working/interest group must have chair that reports to the product
-manager.
+  The project roadmap as maintained by the product manager, architects, and contributors will remain open to the public and accessible to 
+  project members for comment and contribution. This roadmap is exposed to the Consultative Board as a method of reporting milestones, 
+  demonstrating project progress, and bringing forward any deviations.
 </p>
 
+<h2>Sharing Meaningful Contributions</h2>
+<p>
+  Consultative Board members and Participating Organisations must provide feedback as part of their meaningful contribution to Invenio 
+  in the form of annual reporting on milestones with regard to their implementation. Milestones include the following: successful deployment,
+   reaching a threshold of records, reaching a threshold of active users, reaching a threshold of views, downloads, other metrics, etc.
+</p>
+
+<h2>Annual meeting</h2>
+<p>
+  An annual meeting of the Consultative Board, Participating Organisations, and users will serve as a key medium of communication about the 
+  project. The meeting will be in-person with a virtual attendance option. The Invenio leaders will use this opportunity to provide important 
+  project updates, and Invenio members can use this forum to report on implementations and success stories, and to provide feedback, ask questions,
+   and seek troubleshooting advice.
+</p>
 
 <h1>Code of Conduct</h1>
-<p>
   We endorse the <a href="https://www.python.org/psf/codeofconduct/">Python Community Code of Conduct</a>:
-       The Invenio community is made up of members from around the globe
-       with a diverse set of skills, personalities, and experiences.  It is
-       through these differences that our community experiences great
-       successes and continued growth.  When you're working with members of
-       the community, we encourage you to follow these guidelines which
-       help steer our interactions and strive to keep Invenio a positive,
-       successful, and growing community.
+  The Invenio community is made up of members from around the globe with a diverse set of skills, personalities, 
+  and experiences. It is through these differences that our community experiences great successes and continued growth. 
+  When you're working with members of the community, we encourage you to follow these guidelines which help steer our interactions
+   and strive to keep Invenio a positive, successful, and growing community. A member of the Invenio community is:
+   
+  <br/>
+  <header>
+    <p>
+    <h4>Open and Inclusive.</h4>
+    <span>​ Members of the community are open to collaboration, whether it's on RFCs, patches, problems, or otherwise. We're receptive to constructive
+       comment and criticism, as the experiences and skill sets of other members contribute to the whole of our efforts. We're accepting of all who wish
+        to take part in our activities, fostering an environment where anyone can participate and everyone can make a difference.</span>
+  </header>
+  <br/>
+  <header>
+    <h4>Considerate.</h4>
+    <span>​ Members of the community are considerate of their peers -- other Invenio users. We're thoughtful when addressing the efforts of others, keeping
+       in mind that often times the labor was completed simply for the good of the community. We're attentive in our communications, whether in person or
+        online, and we're tactful when approaching differing views.
+    </span>
+  </header>
+  <br/>
+  <header>
+    <h4>Respectful.</h4>
+    <span> Members of the community are respectful. We're respectful of others, their positions, their skills, their commitments, and their efforts. We're respectful of the volunteer efforts that
+      permeate the Invenio community. We're respectful of the processes set forth in the community, and we work within them. When we disagree, we are courteous in raising our issues.</span>
+  </header>
 
-  A member of the Invenio community is:
-  <ol>
-    <li><strong>Open.</strong> Members of the community are open to collaboration,
-    whether it's on RFCs, patches, problems, or otherwise.  We're
-    receptive to constructive comment and criticism, as the experiences
-    and skill sets of other members contribute to the whole of our
-    efforts.  We're accepting of all who wish to take part in our
-    activities, fostering an environment where anyone can participate
-    and everyone can make a difference.</li>
 
-    <li><strong>Considerate.</strong> Members of the community are considerate of
-    their peers -- other Invenio users.  We're thoughtful when
-    addressing the efforts of others, keeping in mind that often times
-    the labor was completed simply for the good of the community.
-    We're attentive in our communications, whether in person or online,
-    and we're tactful when approaching differing views.</li>
-
-    <li><strong>Respectful.</strong> Members of the community are respectful.  We're
-    respectful of others, their positions, their skills, their
-    commitments, and their efforts.  We're respectful of the volunteer
-    efforts that permeate the Invenio community.  We're respectful of
-    the processes set forth in the community, and we work within them.
-    When we disagree, we are courteous in raising our issues.</li>
-  </ol>
   <br/><br/>
-  Overall, we're good to each other.  We contribute to this community
-  not because we have to, but because we want to.  If we remember
-  that, these guidelines will come naturally.
-</p>
+
+  <h4><i><center>Overall, we're good to each other.  We contribute to this community
+    not because we have to, but because we want to.  If we remember
+    that, these guidelines will come naturally.</center></i></h4>
 
         </div>
     </div>
