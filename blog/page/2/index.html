@@ -140,6 +140,92 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2019-05-24-sprint-report/">Keeping up with Elasticsearch</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Alex Ioannidis &amp; Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>May 24, 2019</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p><strong>In our latest Invenio sprint from May 13-24 we've been working on making Elasticsearch upgrades, migration and reindexing simpler and with near zero downtime. Read on, to learn more about how you keep up with Elasticsearch rapid release and deprecation cycles with Invenio and for a preview of what will come of new features in Invenio v3.2.</strong></p>
+<h2>End of life</h2>
+<p>Once you start running a production Invenio instance, you'll quickly notice that your Elasticsearch cluster will become outdated pretty fast, due to Elasticsearch's rapid release and deprecation cycle. Invenio v3 development was started in 2016 against the newly released Elasticsearch v2. When Invenio v3 was finally released in June 2018, Elasticsearch has had two major releases (v5 and v6) and v2 had already reached end of life. As can be seen from <a href="https://www.elastic.co/support/eol">Elastic Product End of Life Dates</a>, you can expect a major Elasticsearch version to be supported for a maximum of 2-3 years. Thus, you should plan to regularly upgrade your Elasticsearch cluster in order to not run on unmaintained software.</p>
+<h2>Index upgrades with downtime</h2>
+<p>Elasticsearch allows an index created in v5 to be read in v6 which combined with rolling cluster upgrades allows you to upgrade a cluster relatively easy with no downtime. However, you are out of luck as soon as you want to upgrade again from v6 to v7 since v7 cannot read an index created in v5.</p>
+<p>The solution is for every major Elasticsearch upgrade to create a new index and reindex content from your old index. This requires you to take offline your Invenio instance to avoid that new content is indexed during the reindexing process. For large-scale production systems with many millions of records, reindexing can take a long time, and thus might require several hours of downtime, which can quickly be a big issue these systems.</p>
+<h2>Fixing Elasticsearch mappings</h2>
+<p>A related problem you may hit when running an Invenio instance is that you would like to tweak the Elasticsearch mappings in order to improve search performance and precision. In Elasticsearch you cannot modify the mapping of an existing index, thus similar to above, you need to create a new index and reindex content from the old index.</p>
+<h2>Use cases</h2>
+<p>All in all, you'll find yourself in need of tools to manage indexes and performing reindexing in order to:</p>
+<ul>
+<li>Upgrade an Elasticsearch cluster between major versions.</li>
+<li>Migrate between two Elasticsearch clusters.</li>
+<li>Change Elasticsearch mappings of existing indexes.</li>
+</ul>
+<h2>Near-zero downtime upgrade, migration and reindexing</h2>
+<p>To solve the above use cases, we've built a new Invenio module named <a href="https://github.com/inveniosoftware/invenio-index-migrator">Invenio-Index-Migrator</a>. The module allows you to synchronize two Elasticsearch indexes (in-cluster or cross-cluster) over an extended time period, and when you are ready, you can roll over the new index. Depending on how you have deployed Invenio, the rollover can happen with either zero downtime or near zero downtime (&lt;5 minutes compared to hours)</p>
+<p>The new module supports migrating records but also any other index you may have in Elasticsearch such as event logging from usage statistics. The new module works by defining <strong>migration recipes</strong> and managing them via a CLI</p>
+<h4>Demo</h4>
+<p><em>Disclaimer: APIs etc may change slightly before the final release.</em></p>
+<p>First, you initialize a migration recipe (here a recipe named <code>records</code>) which will create new indexes to hold the new data:</p>
+<pre><code>$ invenio index migration init "records"
+</code></pre>
+<p>Next, you kick-off the index migration:</p>
+<pre><code>$ invenio index migration run "records"
+</code></pre>
+<p>Index migration happens in two stages:</p>
+<ul>
+<li><strong>Bulk migration:</strong> First a snapshot of the current index is reindexing into the new index. Invenio-Index-Migrator is flexible an supports several methods. By default, we use the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html">Elasticsearch Reindex API</a> which in most cases are orders of magnitudes faster than any other method. Other methods allow you to use Invenio's default record indexing or simply implement your own.</li>
+<li><strong>Synchronization:</strong> Once the first snapshot has been fully indexed, a second job is started to keep the two indexes in sync. Essentially this works by indexing any modifications to the old index in the new one.</li>
+</ul>
+<p>At any point during the migration, you can check the status:</p>
+<pre><code>$ invenio index migration status "records"
+</code></pre>
+<p>Once you're ready, you can roll over the new index:</p>
+<pre><code>$ invenio index migration rollover "records"
+</code></pre>
+<p>In an in-cluster migration, the rollover works by shuffling around index aliases (since Elasticsearch does not support renaming indexes). In a cross-cluster migration you update the Invenio configuration to point to your new Elasticsearch cluster.</p>
+<p>In case something goes wrong during the index migration, you can of course also cancel the job:</p>
+<pre><code>$ invenio index migration cancel "records"
+</code></pre>
+<h2>Bonus</h2>
+<p>During the sprint a number of other issues were addressed that will also be part of Invenio v3.2:</p>
+<ul>
+<li><strong>Elasticsearch v7 support</strong> was added to Invenio-Search, Invenio-Indexer and Invenio-Records-REST. Only Invenio-OAIServer needs to be upgraded to support Elasticsearch 7.</li>
+<li><strong>Search index prefixing</strong> allowing multiple Invenio instances to use the same Elasticsearch cluster. Elasticsearch by default does not support the concept of virtual hosts. With search indexing prefixing, it will be possible to use a single Elasticsearch cluster for multiple Invenio instances, given that the Invenio instances either trust each other, or you have a protection-layer like Elastic X-Pack or ReadonlyREST in front of Elasticsearch.</li>
+</ul>
+<h2>Next steps</h2>
+<p>The Invenio-Index-Migrator is only the first building blocks in order to make Elasticsearch upgrades, migration and reindexing simple. We hope to add assistant-like features that will make it even easier to keep with the latest Elasticsearch releases.</p>
+<p>The Invenio-Index-Migrator will be finally released with Invenio v3.2 which is planned for July-September.</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2019-05-24-sprint-report/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2019-05-04-iugw2019/">Invenio User Group Workshop 2019, June 10th</a>
         
       </h3>
@@ -1161,199 +1247,6 @@ record endpoints.</li>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2018-03-23-invenio-sprint/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2017-12-01-invenio-sprint/">Sprint: Elasticsearch v5 support</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Dec 1, 2017</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio Framework</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>This sprint was focused on:</p>
-<ul>
-<li>Elasticsearch v5 support</li>
-<li>Preparing to release the metadata bundle.</li>
-<li>Removing remaining Invenio-DB warnings.</li>
-</ul>
-<p>During the sprint 60 developer days were spent, 52 commits were created and 4.3k lines were touched (3.1k additions and 1.2k deletions).</p>
-<h2>List of changes:</h2>
-<ul>
-<li>Cookiecutter-Invenio-Module:<ul>
-<li>Minor various fixes for build issues.</li>
-</ul>
-</li>
-<li>IDUtils (v1.0.0):<ul>
-<li>global: fix DOI Unicode issues</li>
-</ul>
-</li>
-<li>Invenio-Base (v1.0.0b1)<ul>
-<li>Cookiecutter template removal (to be replaced by upcoming cookiecutter-invenio-instance).</li>
-<li>Release checklist, docs build errors, 100% test coverage.</li>
-</ul>
-</li>
-<li>Invenio-DB (v1.0.0b9)<ul>
-<li>Remove annoying warning.</li>
-</ul>
-</li>
-<li>Invenio-I18N (v1.0.0b4)<ul>
-<li>Example app rendering on ReadTheDocs</li>
-</ul>
-</li>
-<li>Invenio-Indexer (v1.0.0b1):<ul>
-<li><strong>New BulkRecordIndexer class with RecordIndexer-compatible API (to be used
-by Invenio-Records-REST).</strong></li>
-<li>Elasticsearch v5 support.</li>
-<li>Release checklist.</li>
-</ul>
-</li>
-<li>Invenio-JSONSchemas (v1.0.0a7)<ul>
-<li>Documentation improvements.</li>
-<li>Release checklist.</li>
-</ul>
-</li>
-<li>Invenio-Mail (v1.0.0b1)<ul>
-<li>Broken docs build fix (related to Celery problem).</li>
-</ul>
-</li>
-<li>Invenio-OAIServer (v1.0.0b1)<ul>
-<li><strong>Description support in Identify verb (eprints, friends etc).</strong></li>
-<li>Elasticsearch v5 support.</li>
-<li>Release checklist + documentation improvements.</li>
-<li>License change PR</li>
-</ul>
-</li>
-<li>Invenio-OAuth2Server (v1.0.0b3)<ul>
-<li>Unpinned oauthlib.</li>
-</ul>
-</li>
-<li>Invenio-PIDStore (v1.0.0b2)<ul>
-<li>Release checklist.</li>
-</ul>
-</li>
-<li>Invenio-Records-REST (v1.0.0b5)<ul>
-<li><strong>Index after create, update and delete record creation (this will later
-impact Invenio-Deposit).</strong></li>
-<li><strong>Serializers refactored to be more easily composable.</strong></li>
-<li><strong>Improved tombstone handling for the REST API (e.g. include removal
-reason).</strong></li>
-<li>Elasticsearch v5 support.</li>
-<li>Improved documentation.</li>
-<li>Dynamic aggregations.</li>
-<li>Release checklist.</li>
-</ul>
-</li>
-<li>Invenio-Records-UI (v1.0.0b2)<ul>
-<li>Release checklist + example app docs fix for RTD.</li>
-</ul>
-</li>
-<li>Invenio-Search (v1.0.0b4)<ul>
-<li><strong>Elasticsearch v5 support (via version-specific mappings).</strong></li>
-<li>Support for creating only specific indexes.</li>
-<li>CLI for listing all indexes and aliases.</li>
-</ul>
-</li>
-<li>Invenio-Search-UI (v1.0.0a9)<ul>
-<li>Release checklist.</li>
-</ul>
-</li>
-<li>Invenio-MARC21 (v1.0.0a6)<ul>
-<li>Elasticsearch v5 support.</li>
-</ul>
-</li>
-</ul>
-<h2>Elasticsearch 5 support</h2>
-<p>Search, Indexer, Records-REST, OAIServer and MARC21 have all been upgraded to
-support Elasticsearch v2 and v5. Elasticsearch v6 is not yet support due to the
-elasticsearch-dsl package not yet supporting v6 (support already merged in master branch but not yet released).</p>
-<p>Other Invenio packages have not yet been upgraded to Elasticsearch v5. E.g.
-Records-Files, OpenAIRE, Stats, Collections, OpenDefinition, Query-Parser have
-not yet been tested with Elasticsearch v5.</p>
-<h3>Choosing version</h3>
-<p>You will need to know at install-time which version of Elasticsearch you'd like
-to use. For instance to use Elasticsearch 5 you need to install Invenio-Search
-like this:</p>
-<pre><code class="lang-console">$ pip install invenio-search[elasticsearch5]
-</code></pre>
-<h3>Mappings</h3>
-<p>Due to the differences between Elasticsearch versions, we have opted for
-<em>version-specific mappings</em>. This means that Invenio modules must provide a
-mapping per Elasticsearch version they wish to support. E.g. today, the mapping
-is placed in a directory like e.g.:</p>
-<pre><code>mappings/records/record-v1.0.0.json
-</code></pre>
-<p>To support Elasticsearch v2 and v5 you now need two mappings:</p>
-<pre><code>mappings/v2/records/record-v1.0.0.json
-mappings/v5/records/record-v1.0.0.json
-</code></pre>
-<p>Note that mappings for Elasticsearch v2 may use either the <code>mappings/v2</code>
-directory or the <code>mappings/</code> directory like previously (for backward
-compatibility).</p>
-<h3>Adding Elasticsearch v5 support to a module</h3>
-<p>In case you have site-specific modules and would like to add Elasticsearch v5
-support here's a rough guide:</p>
-<ul>
-<li>Update <code>travis.yml</code> to test both v2 and v5 (<a href="https://github.com/inveniosoftware/invenio-indexer/pull/75/files#diff-354f30a63fb0907d4ad57269548329e3">example</a>)</li>
-<li>Update <code>setup.py</code> by moving Invenio-Search dependency to <code>extra_require</code> (<a href="https://github.com/inveniosoftware/invenio-records-rest/pull/177/files#diff-2eeaed663bd0d25b7e608891384b7298">example</a>).</li>
-<li>Move existing mappings and add new mappings for v5 (<a href="https://github.com/inveniosoftware/invenio-records-rest/pull/177/files#diff-35e3e3c8ab14c00d11908b83ffa1fc36">example</a>)<ul>
-<li>Most common change from v2 to v5 is the change from <code>string</code> type to either <code>text</code> or <code>keyword</code> type.</li>
-</ul>
-</li>
-<li>Update <code>docs/requirements.txt</code> by adding <code>elasticsearch5</code> as an extra requirement to ensure ReadTheDocs builds will be fine.</li>
-<li>Fix any API specific calls (see below).</li>
-</ul>
-<h3>Canonical way of checking for ES version.</h3>
-<pre><code class="lang-python">from elasticsearch import VERSION as ES_VERSION
-
-if ES_VERSION[0] == 2:
-    # ...
-</code></pre>
-<h3>Completion Suggesters</h3>
-<p>The Completion Suggesters have changed from v2 to v5. In v2, suggesters
-supported an index-time <code>payloads</code> option, which was used to store and
-return metadata with suggestions. In v5, completions are now returned with
-their associated document in the <code>_source</code> field.</p>
-<p>If you have completion suggesters for v2 you will need to make them compatible
-with v5. This involves:</p>
-<ul>
-<li>API clients should read metadata from <code>_source</code> instead of <code>payload</code>. For
-v2 the payload is copied to <code>_source</code> by Records-REST, which allows you to
-already now upgrade API clients to use the new <code>_source</code> field.</li>
-<li>On indexing, you need to add the payload only for v2.</li>
-</ul>
-<h3>Elasticsearch v2 end-of-life</h3>
-<p>Elasticsearch v2 reaches end of life in
-<a href="https://www.elastic.co/support/eol">February 2018</a>. Elasticsearch v2 support in
-Invenio will be removed in Invenio v3.1, thus Invenio v3.0 will be released
-with Elasticsearch v2 support and be maintained until v3.0 end of life
-(currently TBD).</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2017-12-01-invenio-sprint/">Read More</a>
       
     </div>
   </div>
