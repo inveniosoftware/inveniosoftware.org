@@ -1,0 +1,13 @@
+_template: people.html
+---
+name: Rodrigo Lopes de Almeida
+---
+institution: CERN
+---
+photo: rodrigo-lopes-de-almeida.jpg
+---
+role: Invenio Developer
+---
+bio:
+---
+chat: https://gitter.im/cenouralm
