@@ -852,6 +852,22 @@ i.large-icon {
   padding-top: 80px;
   text-align: center;
 }
+
+h4 {
+  border-width: 2px;
+  border-radius: 25px;
+  margin-left: 50px;
+}
+
+header > h4 { display: inline-block; }
+header span { margin-left: 0px; }
+
+h2 {
+  border-width: 2px;
+  border-radius: 25px;
+  margin-left: 40px;
+}
+
 /* showcase.html */
 
 .hidden {
@@ -1316,4 +1332,29 @@ a.team-url:hover {
 }
 .tab-2x {
   padding-left: 40px;
+}
+
+/* Documentation */
+
+.documentation-section i {
+  color: #0377cd;
+}
+
+.documentation-logo {
+  max-height: 50px;
+  margin-bottom: 10px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .1));
+}
+
+.documentation-search-block {
+  padding-top: 50px;
+}
+
+.dropdown-menu-normal {
+  background-color: white !important;
+  color: black !important;
+}
+
+.documentation-icon-dark {
+  color: black !important;
 }

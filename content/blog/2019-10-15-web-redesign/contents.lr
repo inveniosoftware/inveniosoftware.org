@@ -4,7 +4,7 @@ author: Lars Holm Nielsen
 ---
 team: Invenio
 ---
-team_url: https://gitter.im/inveniosoftware/invenio
+team_url: https://discord.gg/8qatqBC
 ---
 team_colour: invenio-team
 ---
@@ -40,7 +40,7 @@ product as well as their current roadmaps.
 We are also launching a <a href="https://invenio-talk.web.cern.ch">new forum</a>
 for both users, administrators and developers, which replaces our current
 [troubleshooting repository](https://github.com/inveniosoftware/troubleshooting) on GitHub
-and compliments the current Gitter-based chatrooms.
+and compliments the current chatrooms.
 
 ![](forum.png)
 

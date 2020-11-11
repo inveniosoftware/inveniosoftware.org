@@ -7,77 +7,94 @@
 <section class="roadmap-section section-content-light-bg">
   <div class="container">
     <span class="section-title">Roadmap</span>
-    <div class="roadmap-year"><h6>2019</h6></div>
-    <div id="past-roadmap" class="roadmap-list-container" style="display:none">
 
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jul</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>InvenioRDM begins</h3>
-          <ul>
-            <li>Kick-off meeting</li>
-            <li>Core specifications</li>
-          </ul>
-        </div>
+    <p>We aim at releasing a <strong>Long-Term Support (LTS)</strong> version by summer 2021.</p>
+
+    <p>From January 2021 until summer 2021, we will be releasing <strong>stable</strong>
+    versions of InvenioRDM on a monthly/bi-monthly basis that you can
+    upgrade between.</p>
+
+    <p>We consider large-scale production validation to have
+    completed as soon as Zenodo is running on top of InvenioRDM (planned
+    after the LTS release).</p>
+
+    <h6>FAQ</h6>
+    <div class="row">
+      <div class="col-md-6">
+      <p>
+        <strong>What does a stable release mean?</strong> <br />
+        A stable release means that we will provide an upgrade path to a
+        subsequent version (manual or automatic). You should assign efforts to
+        upgrade to the latest stable release continuously as we will only
+        provide bug fixes or security updates to the
+        <em>latest stable version</em>.
+      </p>
+      <p>
+        <strong>What will change between stable releases?</strong> <br />
+        Each stable release will usually add new features or improve on
+        existing. We try to limit as much as possible changes to existing
+        features, however we cannot exclude that changes might be needed.
+      </p>
+      <p>
+        <strong>When is the roadmap updated?</strong> <br />
+        We update the roadmap quartly according to the current progress and
+        available resources. Next update: January, 2021.
+      </p>
+      <p>
+        <strong>How did you estimate the required effort?</strong> <br />
+        The detailed tasks and their associated estimated efforts are available
+        in our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a> on GitHub which is tracking the
+        current project progress.
+      </p>
+      <p>
+        <strong>How can I help accelerate the roadmap?</strong> <br />
+        We will be happy to explore with you, how you can best help accelerate the
+        roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>).
+      </p>
       </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Aug</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Specifications phase</h3>
-          <p>Customisation specifications</p>
-        </div>
+      <div class="col-md-6">
+        <p>
+          <strong>What does Long-Term Support mean?</strong> <br />
+          Long-Term Support (LTS) means that we will provide bug fixes and
+          security updates for minimum 1 year or until and including the next
+          the LTS release. If resources allow, support <em>may</em> be extended
+          further.
+        </p>
+        <p>
+          <strong>When can I run InvenioRDM in production?</strong> <br />
+          It depends on your requirements and needs. You can deploy a stable
+          release for a smaller userbase if you have the resources to
+          continuously upgrade the repository and the InvenioRDM feature set
+          satisfies your needs. If you need a fully featured repository, wait
+          until the LTS release. If you need a large-scale production
+          validated repository, wait until Zenodo is running on InvenioRDM.
+        </p>
+        <p>
+          <strong>When is feature X ready?</strong> <br />
+          Please see the roadmap below (for further details please see our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a>). Note that, there is a risk that tasks may
+          be shuffled around between months depending on available resources
+          with each partner. Tasks may also be brought forward if a partner
+          finds resources, or similarly be delayed if a partner pulls out
+          resources.
+        </p>
       </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Sep</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Specifications phase</h3>
-          <p>Extension and Deployment requirements</p>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Oct</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Alpha: First release</h3>
-          <h4>Milestones</h4>
-          <ul>
-            <li>Website update <i class="fa fa-check text-success"></i></li>
-            <li>FORCE2019 poster <i class="fa fa-check text-success"></i></li>
-          </ul>
-          <h4>Release (alpha 1)</h4>
-          <ul>
-            <li>Initial prototype of application, data model and permissions.</li>
-            <li>Basic installation experience (docs, install and run).</li>
-            <li>Basic customization experience (change logo and permissions).</li>
-            <li>Demo data</li>
-          </ul>
-          <small><a href="https://github.com/orgs/inveniosoftware/projects/27">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">RFCs</a> | M4</small>
-        </div>
-      </div>
+    </div>
+
+    <div class="roadmap-year"><h6>2020</h6></div>
+    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Nov</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Alpha: Cross-platform CLI and "cool" recids</h3>
-          <h4>Milestones</h4>
+          <h3>Deposit form</h3>
           <ul>
-            <li>Review of alpha 1 <i class="fa fa-check text-success"></i></li>
+            <li>Metadata model finalised.</li>
+            <li>UX for landing page, search and deposit form.</li>
+            <li>Access control.</li>
+            <li>Files integration</li>
+            <li>Versioning support</li>
           </ul>
-          <h4>Release (alpha 2)</h4>
-          <ul>
-            <li>Make invenio-cli cross-platform via a 100% port to Python</li>
-            <li>Configuration experience (e.g., permission policy)</li>
-            <li>Use "cool" recids for records (e.g., "skyer-9sg46")</li>
-          </ul>
-          <small><a href="https://github.com/orgs/inveniosoftware/projects/28">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">RFCs</a> | M5</small>
         </div>
       </div>
       <div class="roadmap-row">
@@ -85,39 +102,27 @@
           <p>Dec</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Alpha: Default UI and Invenio 3.2 Files</h3>
-          <h4>Milestones</h4>
+          <h3>UX & Custom fields (v1.0)</h3>
           <ul>
-            <li>Review of alpha 2 <i class="fa fa-check text-success"></i></li>
-            <li>Presentation and live demo at CNI <i class="fa fa-check text-success"></i></li>
+            <li>Basic user experience</li>
+            <li>Support for custom fields.</li>
+            <li>Handling of release and upgrades.</li>
           </ul>
-          <h4>Release (alpha 3)</h4>
-          <ul>
-            <li>Initial default front, search and record pages UI</li>
-            <li>Integrate new Invenio 3.2 release</li>
-            <li>Upload a file via the API (see the listed file on UI)</li>
-          </ul>
-          <small><a href="https://github.com/orgs/inveniosoftware/projects/29">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">Upcoming RFCs</a> | M6</small>
         </div>
       </div>
+    </div>
+
+    <div class="roadmap-year"><h6>2021</h6></div>
+    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Jan</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Alpha: period</h3>
-          <h4>Milestones</h4>
+          <h3>Vocabularies</h3>
           <ul>
-            <li>Project meeting (Jan 20-24)</li>
-            <li>UX: Search, deposit and curation (wireframes to be discussed during project meeting)</li>
-            <li>RFCs: Deposit, Communities, Migration, S3, LDAP, SAML, Previewers, I18N.</li>
-            <li>Review of alpha 3</li>
+            <li>Support for license, grants, organisations & funders.</li>
           </ul>
-          <h4>Release (alpha 4)</h4>
-          <ul>
-            <li>TBD</li>
-          </ul>
-          <small><a href="https://github.com/orgs/inveniosoftware/projects/30">Project board</a> | <a href="https://github.com/inveniosoftware/rfcs/pulls">Upcoming RFCs</a> | M7</small>
         </div>
       </div>
       <div class="roadmap-row">
@@ -125,17 +130,11 @@
           <p>Feb</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Beta period</h3>
-          <h4>Milestones</h4>
+          <h3>Persistent identifiers (v2.0)</h3>
           <ul>
-            <li>Draft governance and sustainability plan</li>
+            <li>Support for persistent identifier minting.</li>
+            <li>Usage statistics.</li>
           </ul>
-          <h4>Release (beta 1)</h4>
-          <ul>
-            <li>Search experience</li>
-            <li>Initial deposit experience</li>
-          </ul>
-          <small>M8</small>
         </div>
       </div>
       <div class="roadmap-row">
@@ -143,44 +142,25 @@
           <p>Mar</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Beta period</h3>
-          <h4>Milestones</h4>
+          <h3>Communities (v3.0)</h3>
           <ul>
-            <li>Plugins deadline: S3, SAML, LDAP, Previewers, I18N</li>
-            <li>Zenodo/Digital Hub migration test</li>
+            <li>Integration of the community module.</li>
           </ul>
-          <h4>Release (beta 2)</h4>
-          <ul>
-            <li>Deposit experience</li>
-            <li>Initial curation experience</li>
-          </ul>
-          <small>M9</small>
         </div>
       </div>
-    </div>
-    <div class="roadmap-past-text"><a id="toggle-past">Show past roadmap</a></div>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#toggle-past').click(function() {
-          $("#past-roadmap").toggle();
-          $('.roadmap-past-text').toggle();
-        });
-      });
-    </script>
-    <div class="roadmap-year"><h6>2020</h6></div>
-    <div class="roadmap-list-container">
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
           <p>Apr</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Beta period</h3>
-          <h4>Milestones</h4>
+          <h3>Preservation and export formats (v4.0)</h3>
           <ul>
-            <li>Basic deposit experience </li>
-            <li>Control and data flow for deposit</li>
+            <li>Sharing: access requests</li>
+            <li>Preservation via OCFL support</li>
+            <li>Citation generation</li>
+            <li>Export formats</li>
+            <li>Spatial query support</li>
           </ul>
-          <small>M10</small>
         </div>
       </div>
       <div class="roadmap-row">
@@ -188,12 +168,11 @@
           <p>May</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Beta period</h3>
+          <h3>Validation and reviews (v5.0)</h3>
           <ul>
-            <li>Full deposit experince including versioning, PID minting and access control.</li>
-            <li>Semantic UI migration and search experience</li>
+            <li>Reviews of security, personal data protection and performance.</li>
+            <li>Authenitcation plugins: SAML, LDAP, OAuth/OpenID Conncet</li>
           </ul>
-          <small>M11</small>
         </div>
       </div>
       <div class="roadmap-row">
@@ -201,42 +180,25 @@
           <p>Jun</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Release Candidate</h3>
-          <h4>Milestones</h4>
+          <h3>Third-party integration (v6.0)</h3>
           <ul>
-            <li>Release Candidate 1</li>
-            <li>Governance and sustainability plan</li>
-            <li>Virtual project meeting</li>
-            <li>Product roadmap</li>
+            <li>GitHub integration</li>
+            <li>OpenAIRE integration</li>
+            <li>Documentation</li>
           </ul>
-          <small>M12</small>
         </div>
       </div>
       <div class="roadmap-row">
         <div class="roadmap-row-milestone">
-          <p>Sep</p>
+          <p>Jul</p>
         </div>
         <div class="roadmap-row-content">
-          <h3>Final release</h3>
-          <h4>Milestones</h4>
+          <h3>Long-Term Support (LTS) Release (v7.0)</h3>
           <ul>
-            <li>Final release including usage statistics, GitHub, REST API documentation, SIP store and NGR features.</li>
+            <li>Finalise all remaining documentation.</li>
+            <li>Locking and translation of text strings.</li>
+            <li>Final testing and validation of the release.</li>
           </ul>
-          <small>M12</small>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Dec</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Production validation</h3>
-          <h4>Milestones</h4>
-          <ul>
-            <li>Migration of Zenodo and Digital Hub to InvenioRDM</li>
-            <li>Outreach: Tracking site.</li>
-          </ul>
-          <small>M12</small>
         </div>
       </div>
     </div>

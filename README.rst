@@ -14,23 +14,26 @@ powerful static content management system.
 Install and running Lektor
 --------------------------
 
-Copy/paste the following to your command prompt to install Lektor (or see
-the `downloads <https://www.getlektor.com/downloads/>`_ page for alternative
-ways):
+To install Lektor, first create a new Python 3 virtualenv:
 
 .. code-block:: console
 
-    $ curl -sf https://www.getlektor.com/install.sh | sh
+    $ mkvirtualenv invsite
 
-Next, go into the root directory of the repository and run
-the following command and open
-`localhost:5000 <http://localhost:5000/>`_ in your browser afterwards:
+Next, install Lektor:
+
+.. code-block:: console
+
+    $ (invsite)$ pip install lektor
+
+Launch the web server: go into the root directory of the repository and run
+the following command:
 
 .. code-block:: console
 
     $ lektor server
 
-Lektor provided an installable version on macOS, but it is no longer supported.
+Visit `localhost:5000 <http://localhost:5000/>`_ in your browser.
 
 About
 =====

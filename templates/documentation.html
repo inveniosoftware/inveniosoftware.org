@@ -1,0 +1,293 @@
+{% extends "page.html" %}
+{% set active_page = "documentation" %}
+
+{% block page_title %}{{ this.title }}{% endblock %}
+{% block page_subtitle %}Invenio products documentation{% endblock %}
+
+{% block page_body %}
+  <section class="documentation-section section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3 class="text-center">
+                <a href="https://invenio.readthedocs.io/en/latest/">
+                  <img class="documentation-logo" src="{{ '/static/img/logo-invenio-framework.svg'|asseturl }}"
+                       title="Invenio Framework" alt="Invenio Framework"/>
+                </a>
+              </h3>
+              <div class="panel panel-default">
+                <div class="panel-heading">Invenio Framework</div>
+                <div class="list-group">
+                  <a class="list-group-item" href="https://invenio.readthedocs.io/en/latest/quickstart/index.html">
+                    <i class="fa fa-fw fa-play-circle"></i>
+                    Getting started
+                  </a>
+                  <a class="list-group-item" href="https://invenio.readthedocs.io/en/latest/tutorials/bootcamp.html">
+                    <i class="fa fa-fw fa-graduation-cap"></i>
+                    Tutorials
+                  </a>
+                  <a class="list-group-item" href="https://invenio.readthedocs.io/en/latest/">
+                    <i class="fa fa-fw fa-book"></i>
+                    Documentation
+                  </a>
+                </div>
+              </div>
+              <div class="list-group">
+                <a class="list-group-item" href="https://invenio.readthedocs.io/en/latest/general/bundles.html">
+                  <i class="fa fa-fw fa-cogs"></i>
+                  API reference
+                </a>
+                <a class="list-group-item" href="https://invenio.readthedocs.io/en/latest/releases/index.html">
+                  <i class="fa fa-fw fa-tags"></i>
+                  Releases
+                </a>
+                <a class="list-group-item" href="https://invenio.readthedocs.io/en/latest/upgrading/index.html">
+                  <i class="fa fa-fw fa-angle-double-up"></i>
+                  Upgrading
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="text-center">
+                <a href="https://inveniordm.docs.cern.ch/">
+                  <img class="documentation-logo" src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl }}"
+                       title="InvenioRDM" alt="InvenioRDM"/>
+                </a>
+              </h3>
+              <div class="panel panel-default">
+                <div class="panel-heading">InvenioRDM</div>
+                <div class="list-group">
+                  <a class="list-group-item" href="https://inveniordm.docs.cern.ch/develop/">
+                    <i class="fa fa-fw fa-play-circle"></i>
+                    Getting started
+                  </a>
+                  <a class="list-group-item" href="https://inveniordm.docs.cern.ch/">
+                    <i class="fa fa-fw fa-book"></i>
+                    Documentation
+                  </a>
+                </div>
+              </div>
+              <div class="list-group">
+                <a class="list-group-item" href="https://inveniordm.docs.cern.ch/deployment/">
+                  <i class="fa fa-fw fa-rocket"></i>
+                  Deploy
+                </a>
+                <a class="list-group-item" href="https://inveniordm.docs.cern.ch/extensions/">
+                  <i class="fa fa-fw fa-cubes"></i>
+                  Extend
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="text-center">
+                <a href="https://invenioils.docs.cern.ch/">
+                  <img class="documentation-logo" src="{{ '/static/img/logo-invenio-ils.svg'|asseturl }}"
+                       title="InvenioILS" alt="InvenioILS"/>
+                </a>
+              </h3>
+              <div class="panel panel-default">
+                <div class="panel-heading">InvenioILS</div>
+                <div class="list-group">
+                  <a class="list-group-item" href="https://invenioils.docs.cern.ch/quickstart/">
+                    <i class="fa fa-fw fa-play-circle"></i>
+                    Getting started
+                  </a>
+                  <a class="list-group-item" href="https://invenioils.docs.cern.ch/">
+                    <i class="fa fa-fw fa-book"></i>
+                    Documentation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-2 documentation-search-block">
+          <p class="text-center">
+            Search for anything about Invenio
+          </p>
+          <div class="input-group">
+            <input type="search" required class="form-control" placeholder="Search for code, documentation, issues, ..."
+                   id="search-query">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default btn-search" data-provider="github">
+                <i class="fa fa-fw fa-flip-horizontal fa-search documentation-icon-dark"></i>
+                GitHub
+              </button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-normal">
+                <li class="dropdown-header">Other</li>
+                <li>
+                  <a href="#" class="btn-search" data-provider="google">
+                    <i class="fa fa-fw fa-flip-horizontal fa-search documentation-icon-dark"></i>
+                    Google
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="documentation-section section-content-white-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row centered">
+            <span class="section-title">Getting help</span>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2><i class="fa fa-keyboard-o"></i> <a href="https://discord.gg/8qatqBC">Chat</a>
+                  </h2>
+                  <p>
+                    Chat with Invenio developers
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <h2><i class="fa fa-comment"></i> <a href="https://invenio-talk.web.cern.ch/">Forum</a></h2>
+                  <p>
+                    Ask questions on the forum
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2><i class="fa fa-users"></i> <a href="{{ '/people'|url }}">People</a></h2>
+                  <p>
+                    Review the list of contributors
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row centered">
+            <span class="section-title">Contributing</span>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>
+                    <i class="fa fa-compass"></i>
+                    <a href="https://invenio.readthedocs.io/en/latest/community/contribution-guide.html">
+                      Contribution guide
+                    </a>
+                  </h2>
+                  <p>
+                    Learn how to contribute to the project
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <h2>
+                    <i class="fa fa-users"></i>
+                    <a href="{{ '/governance'|url }}">Governance</a>
+                  </h2>
+                  <p>
+                    Roles and decision making
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>
+                    <i class="fa fa-language"></i>
+                    <a href="https://invenio.readthedocs.io/en/latest/community/translation-guide.html">
+                      Translator guide
+                    </a>
+                  </h2>
+                  <p>
+                    Learn how to contribute as a translator
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <h2>
+                    <i class="fa fa-bookmark"></i>
+                    <a href="https://invenio.readthedocs.io/en/latest/community/code-of-conduct.html">
+                      Code of conduct
+                    </a>
+                  </h2>
+                  <p>
+                    Collaboration on the Invenio project
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>
+                    <i class="fa fa-check-square-o"></i>
+                    <a href="https://github.com/inveniosoftware/rfcs">Design RFC</a>
+                  </h2>
+                  <p>
+                    Propose changes on Invenio with RFC (Request for Comments)
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <h2>
+                    <i class="fa fa-shield"></i>
+                    <a href="https://invenio.readthedocs.io/en/latest/community/security-policy.html">
+                      Security policy
+                    </a>
+                  </h2>
+                  <p>
+                    Reporting and disclosure of security issues
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var ENTER_KEY = 13;
+      var searchInput = $('#search-query');
+
+      function search(provider) {
+        var query = searchInput.val().trim();
+        if (!query) {
+          return;
+        }
+        var url, params;
+        if (provider === 'github') {
+          // NOTE:
+          // ideally, it would be better to have type: 'Code', but GitHub requires
+          // the user to be logged in to search in Code
+          params = {q: 'org:inveniosoftware' + ' ' + query, type: 'Commits'};
+          url = 'https://github.com/search';
+        } else if (provider === 'google') {
+          params = {q: 'invenio' + ' ' + query};
+          url = 'https://www.google.com/search';
+        }
+        if (url && params) {
+          window.location.href = url + '?' + $.param(params);
+        }
+      }
+
+      searchInput.on('keydown', function (e) {
+        if (e.keyCode === ENTER_KEY) {
+          search('github');
+        }
+      });
+
+      $('.btn-search').on('click', function (e) {
+        e.preventDefault();
+        search($(this).data('provider'));
+      })
+    })
+  </script>
+{% endblock %}
