@@ -1,5 +1,5 @@
 <!doctype html>
-<title>InvenioRDM Roadmap — inveniosoftware.org</title>
+<title>InvenioRDM October Release — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
 <body>
   
   
-    <section class="header-section product-rdm-header-section" >
+    <section class="header-section " >
       <div class="cover-image">
         
           <header class="header-nav">
@@ -46,7 +46,7 @@
           
             
               <li class="dropdown-submenu">
-                <a href="#" class="dropdown-toggle active-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   
                     <li><a href="/products/rdm/">InvenioRDM</a></li>
@@ -89,7 +89,7 @@
             
           
             
-              <li><a href="/blog/">Blog</a></li>
+              <li><a class="active-menu" href="/blog/">Blog</a></li>
             
           
             
@@ -111,8 +111,8 @@
             <div class="col">
               <div class="header-section-title">
                 
-                <h3>InvenioRDM Roadmap</h3>
-                <h6>The road to InvenioRDM</h6>
+                <h3>Invenio Blog</h3>
+                <h6>Follow news and updates on Invenio world</h6>
                 
               </div>
             </div>
@@ -123,206 +123,140 @@
     </section>
   
   
-<section class="roadmap-section section-content-light-bg">
-  <div class="container">
-    <span class="section-title">Roadmap</span>
-
-    <p>We aim at releasing a <strong>Long-Term Support (LTS)</strong> version by summer 2021.</p>
-
-    <p>From January 2021 until summer 2021, we will be releasing <strong>stable</strong>
-    versions of InvenioRDM on a monthly/bi-monthly basis that you can
-    upgrade between.</p>
-
-    <p>We consider large-scale production validation to have
-    completed as soon as Zenodo is running on top of InvenioRDM (planned
-    after the LTS release).</p>
-
-    <h6>FAQ</h6>
-    <div class="row">
-      <div class="col-md-6">
-      <p>
-        <strong>What does a stable release mean?</strong> <br />
-        A stable release means that we will provide an upgrade path to a
-        subsequent version (manual or automatic). You should assign efforts to
-        upgrade to the latest stable release continuously as we will only
-        provide bug fixes or security updates to the
-        <em>latest stable version</em>.
-      </p>
-      <p>
-        <strong>What will change between stable releases?</strong> <br />
-        Each stable release will usually add new features or improve on
-        existing. We try to limit as much as possible changes to existing
-        features, however we cannot exclude that changes might be needed.
-      </p>
-      <p>
-        <strong>When is the roadmap updated?</strong> <br />
-        We update the roadmap quartly according to the current progress and
-        available resources. Next update: January, 2021.
-      </p>
-      <p>
-        <strong>How did you estimate the required effort?</strong> <br />
-        The detailed tasks and their associated estimated efforts are available
-        in our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a> on GitHub which is tracking the
-        current project progress.
-      </p>
-      <p>
-        <strong>How can I help accelerate the roadmap?</strong> <br />
-        We will be happy to explore with you, how you can best help accelerate the
-        roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>).
-      </p>
-      </div>
-      <div class="col-md-6">
-        <p>
-          <strong>What does Long-Term Support mean?</strong> <br />
-          Long-Term Support (LTS) means that we will provide bug fixes and
-          security updates for minimum 1 year or until and including the next
-          the LTS release. If resources allow, support <em>may</em> be extended
-          further.
-        </p>
-        <p>
-          <strong>When can I run InvenioRDM in production?</strong> <br />
-          It depends on your requirements and needs. You can deploy a stable
-          release for a smaller userbase if you have the resources to
-          continuously upgrade the repository and the InvenioRDM feature set
-          satisfies your needs. If you need a fully featured repository, wait
-          until the LTS release. If you need a large-scale production
-          validated repository, wait until Zenodo is running on InvenioRDM.
-        </p>
-        <p>
-          <strong>When is feature X ready?</strong> <br />
-          Please see the roadmap below (for further details please see our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a>). Note that, there is a risk that tasks may
-          be shuffled around between months depending on available resources
-          with each partner. Tasks may also be brought forward if a partner
-          finds resources, or similarly be delayed if a partner pulls out
-          resources.
-        </p>
-      </div>
-    </div>
-
-    <div class="roadmap-year"><h6>2020</h6></div>
-    <div class="roadmap-list-container">
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Nov</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Deposit form</h3>
-          <ul>
-            <li>Metadata model finalised.</li>
-            <li>UX for landing page, search and deposit form.</li>
-            <li>Basic user experience</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Dec</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>UX & Custom fields (v1.0)</h3>
-          <ul>
-            <li>Access control.</li>
-            <li>Files integration</li>
-            <li>Handling of release and upgrades.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap-year"><h6>2021</h6></div>
-    <div class="roadmap-list-container">
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jan</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Vocabularies</h3>
-          <ul>
-            <li>Support for license, grants, organisations & funders.</li>
-            <li>Support for custom fields.</li>
-            <li>Versioning support</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Feb</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Persistent identifiers (v2.0)</h3>
-          <ul>
-            <li>Support for persistent identifier minting.</li>
-            <li>Usage statistics.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Mar</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Communities (v3.0)</h3>
-          <ul>
-            <li>Integration of the community module.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Apr</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Preservation and export formats (v4.0)</h3>
-          <ul>
-            <li>Sharing: access requests</li>
-            <li>Preservation via OCFL support</li>
-            <li>Citation generation</li>
-            <li>Export formats</li>
-            <li>Spatial query support</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>May</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Validation and reviews (v5.0)</h3>
-          <ul>
-            <li>Reviews of security, personal data protection and performance.</li>
-            <li>Authenitcation plugins: SAML, LDAP, OAuth/OpenID Conncet</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jun</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Third-party integration (v6.0)</h3>
-          <ul>
-            <li>GitHub integration</li>
-            <li>OpenAIRE integration</li>
-            <li>Documentation</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jul</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Long-Term Support (LTS) Release (v7.0)</h3>
-          <ul>
-            <li>Finalise all remaining documentation.</li>
-            <li>Locking and translation of text strings.</li>
-            <li>Final testing and validation of the release.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <section id="blog-post-content-section" class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+            
+  <div class="blog-back-button">
+    <a href="/blog">Back</a>
   </div>
-</section>
+  <div class="blog-post blog-post-frame">
+    <header class="post-header">
+      <h2>
+        
+          InvenioRDM October Release
+        
+      </h2>
+      <p class="post-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen, Sara Gonzales
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Nov 11, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <article class="post-content">
+      <p>We're happy to announce the InvenioRDM October release. Thank you to our team members for their efforts on this release.</p>
+<p>In early October we held a virtual project workshop. As part of the workshop we have updated the roadmap. The roadmap is now publicly available in two versions, one simplified and one for project tracking. See below:</p>
+<p>1- <a href="https://inveniosoftware.org/products/rdm/roadmap/">Simplified</a></p>
+<p><img src="/blog/2020-11-11-october-release/roadmap_simplified.png" alt=""></p>
+<p>2- <a href="https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&amp;sort=due_date&amp;state=open">GitHub for project tracking</a></p>
+<p><img src="/blog/2020-11-11-october-release/roadmap_tracking.png" alt=""></p>
+<h3>What's new?</h3>
+<h4>Metadata Schema</h4>
+<p>The entire metadata schema for bibliographic records has been updated, and is now ready for a thorough review by all project partners. The update includes changes to the JSONSchema, Elasticsearch mappings, the REST API data validation layer as well as addition of many fields to the deposit form.</p>
+<p>See (<a href="https://inveniordm.docs.cern.ch/reference/metadata/">https://inveniordm.docs.cern.ch/reference/metadata/</a>) for for a full reference of the new metadata schema.</p>
+<h4>User Experience</h4>
+<p>We have done a lot of work on improving the UX of the primary pages such as the frontpage, search results and record landing page. Below you can see some screenshots of before/after:</p>
+<p><strong>Search results</strong></p>
+<p>The search results have been tightened up as well. Also, we’ve added support for nested facets, so you can expand broader categories into subcategories (e.g., Publication and Image).</p>
+<p><img src="/blog/2020-11-11-october-release/search_before_after.png" alt=""></p>
+<p><strong>Landing page</strong></p>
+<p>The landing page you’ll notice now has Edit and New version buttons (only the Edit button currently works). The right column has been tightened up, and most of the new metadata fields are now properly displayed on the landing page.</p>
+<p><img src="/blog/2020-11-11-october-release/landing_before_after.png" alt=""></p>
+<p><strong>Human readable labels</strong></p>
+<p>In the facets you’ll notice we now have human readable labels. Instead of 'publication' it will say 'Publication'; instead of 'open' it will say 'Open Access'.</p>
+<p>Similarly to search results and landing pages, you’ll now see the correct resource type as well as icons on Open Access.</p>
+<p><img src="/blog/2020-11-11-october-release/badges.png" alt=""></p>
+<p><strong>Localization</strong></p>
+<p>Dates, like the publication date which supports Extended Date Time Format is now properly localized as well using the Unicode Common Locale Data Repository. For instance here an English and Turkish localization:</p>
+<p><img src="/blog/2020-11-11-october-release/localization_english.png" alt=""></p>
+<p><img src="/blog/2020-11-11-october-release/localization_turkish.png" alt=""></p>
+<p><strong>Affiliations</strong></p>
+<p>The affiliation display was redone:</p>
+<p><img src="/blog/2020-11-11-october-release/affiliations.png" alt=""></p>
+<p><strong>Manage section</strong></p>
+<p>There’s a new manage section on the record landing page, which allows you to edit a record.</p>
+<p><img src="/blog/2020-11-11-october-release/manage.png" alt=""></p>
+<h4>CLI Improvements</h4>
+<p>We have made it easier to get started with developing InvenioRDM. Partially to make our own developers' life easier, but also to make it easier to customize InvenioRDM.</p>
+<p><strong>Shells</strong></p>
+<p>You can now easily activate the Python virtualenv shell as well start a Python terminal from your instance using the following commands:</p>
+<pre><code class="lang-bash">invenio-cli shell
+invenio-cli pyshell
+</code></pre>
+<p><strong>Watching assets</strong></p>
+<p>We have now simplified how you can change styling via automatic watching of file changes on assets. Previously you had to manually rebuild the assets. Now instead you can simply execute the following commands, and the styling will automatically rebuild once the file changes:</p>
+<pre><code class="lang-bash">invenio-cli assets --force --development
+invenio-cli assets watch
+</code></pre>
+<p><strong>Develop an Invenio module</strong></p>
+<p>Developers often need to install the latest development versions of Invenio modules to work on them. This can now easily be done with:</p>
+<pre><code class="lang-bash">invenio-cli ext module-install ~/src/invenio-app-rdm ~/src/invenio-rdm-records
+invenio-cli assets --force --development
+</code></pre>
+<p><strong>Develop a React module</strong></p>
+<p>The above works only for Python packages. If instead, you are working on one of our React libraries, you can now easily install and watch the module for changes as well:</p>
+<pre><code class="lang-bash">invenio-cli assets watch-module --link ~/src/react-invenio-deposit
+</code></pre>
+<h3>Install</h3>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
+<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
+docker pull inveniosoftware/centos8-python:3.7
+docker pull inveniosoftware/centos8-python:3.8
+</code></pre>
+<p>To install:</p>
+<pre><code class="lang-bash">pip install --upgrade invenio-cli
+invenio-cli init rdm
+cd my-site
+invenio-cli containerize --pre
+invenio-cli demo --containers
+</code></pre>
+<p>To stop the instance without destroying the records that were created, you can just run:</p>
+<pre><code class="lang-bash">cd my-site
+invenio-cli stop
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers, you can now just run:</p>
+<pre><code class="lang-bash">cd my-site
+invenio-cli destroy
+</code></pre>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. When you provide feedback on Discourse your message should be pre-populated with the classic template (bugs, what worked well, what didn’t work well, wishes for documentation).</p>
+<p>Here is the template to give feedback if it’s not automated:</p>
+<pre><code>
+## Bugs
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Take care and stay safe!</p>
+
+    </article>
+    
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).data('remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    });
+  </script>
 
 
   <footer>
