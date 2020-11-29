@@ -135,9 +135,85 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/2020-11-11-october-release/">InvenioRDM October Release</a>
+          <a href="/blog/2020-11-29-november-release/">InvenioRDM November Release</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Alex Ioannidis, Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Nov 29, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We’re excited to announce the InvenioRDM Alpha 13 (November release)!</p>
+<h2>What’s new?</h2>
+<h3>Files support</h3>
+<p>It is now possible to upload files on the draft form and publish them.</p>
+<h4>File uploader</h4>
+<p>When creating a new draft, you can now also upload files that will be included in the published record. The file uploader supports:</p>
+<ul>
+<li>Drag-n-dropping files to be uploaded</li>
+<li>Concurrent uploads (by default up to 4)</li>
+<li>Setting the default preview file</li>
+<li>Completely disabling files to allow for metadata-only records</li>
+</ul>
+<p><img src="/blog/2020-11-29-november-release/file-upload.gif" alt=""></p>
+<h4>New REST API</h4>
+<p>Big part of our efforts went into designing a new files REST API that will allow InvenioRDM to easily support upload workflows depending on third-party storage systems (e.g S3).</p>
+<p>You can check out the documentation of these endpoints in our newly added <a href="https://inveniordm.docs.cern.ch/reference/rest_api/">REST API reference</a>.</p>
+<h4>Files listing and preview</h4>
+<p>Uploaded files are also listed and can be previewed on the record's landing page, using a variety of extensible previewers. We currently support preview of PDFs, images, ZIP files, CSV tables, and some text-based formats like XML, JSON, and Markdown.</p>
+<p>By default, files are listed in alphabetical order and the first previewable file is shown in the preview box. You can specifically set which file you want to be by default previewed in the record's draft form.</p>
+<h3>Reorganized CLI commands</h3>
+<p>Thanks to the community's feedback, in this release we have also updated the existing CLI commands, with the goal of improving the development and operational workflows of an InvenioRDM instance. Our newly added <a href="https://inveniordm.docs.cern.ch/reference/cli/">CLI reference documentation</a> lists and describes in detail the command groups, their sub-commands, and the options they support.</p>
+<p>Make sure to go through our documentation, since many old commands have now new options and different default behavior (e.g. service setup will now also create demo records).</p>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. When you provide feedback on Discourse your message should be pre-populated with the classic template (bugs, what worked well, what didn’t work well, wishes for documentation).</p>
+<p>Here is the template to give feedback if it’s not automated:</p>
+<pre><code>## Bugs
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/2020-11-29-november-release/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2020-11-11-october-release/">InvenioRDM October Release</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -241,20 +317,14 @@ invenio-cli destroy
 <p>Take care and stay safe!</p>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-11-11-october-release/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -957,78 +1027,6 @@ and index migration).</li>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/invenio-v32-released/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2019-10-15-web-redesign/">Introducing RDM, ILS and Framework</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lars Holm Nielsen
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Oct 15, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We're happy to announce a major overhaul of inveniosoftware.org. Some of the
-highlights of the new website include:</p>
-<ul>
-<li>Rebranding of Invenio into three products: InvenioRDM, InvenioILS and
-Invenio Framework</li>
-<li>A new forum</li>
-<li>People in the community</li>
-<li>Logo downloads</li>
-</ul>
-<h2>Framework, RDM and ILS</h2>
-<p>The primary reason for the website overhaul is a rebranding of Invenio
-into three different products:</p>
-<ul>
-<li><a href="/products/rdm/"><strong>InvenioRDM</strong></a> - a turn-key research data management repository.</li>
-<li><a href="/products/ils/"><strong>InvenioILS</strong></a> - an Integrated Library System.</li>
-<li><a href="/products/framework/"><strong>Invenio Framework</strong></a> - a core framework for large-scale digital repositories.</li>
-</ul>
-<p>Both, InvenioRDM and InvenioILS are applications built on top of the Invenio
-Framework. On each product page, you'll find a lot more information about the
-product as well as their current roadmaps.</p>
-<p><img src="/blog/2019-10-15-web-redesign/website-screenshot.png" alt=""></p>
-<h1>Talk - Discourse forum</h1>
-<p>We are also launching a <a href="https://invenio-talk.web.cern.ch">new forum</a>
-for both users, administrators and developers, which replaces our current
-<a href="https://github.com/inveniosoftware/troubleshooting">troubleshooting repository</a> on GitHub
-and compliments the current chatrooms.</p>
-<p><img src="/blog/2019-10-15-web-redesign/forum.png" alt=""></p>
-<h1>People and institutions in the community</h1>
-<p>We have also added a new <a href="/people/">people section</a> to better showcase the
-persons who are making Invenio into a real community. Don't hesitate to email us
-if you'd like to be displayed on the list.</p>
-<p><img src="/blog/2019-10-15-web-redesign/people.png" alt=""></p>
-<h1>New logos</h1>
-<p>Last but not least, we've made some very minor modifications to the Invenio
-logo, as well as made a dedicated <a href="/about/">download page</a> where you can get
-SVG versions of all logos.</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2019-10-15-web-redesign/">Read More</a>
       
     </div>
   </div>
