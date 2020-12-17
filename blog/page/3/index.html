@@ -140,6 +140,288 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/invenio-v300-released/">Invenio v3.0.0 Released</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jun 7, 2018</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>Welcome to Invenio 3!</p>
+<p>We are proud to announce the release of Invenio v3.0.0. Invenio has been completely rewritten from scratch with a radically  improved architecture and technical implementation. Invenio 3 is now a framework, like a Swiss Army knife, complete with battle-tested, safe and secure modules providing all the features you need to build and run a trusted digital repository.</p>
+<p>Whilst Invenio 3 is officially released to the world today, in reality it has already been relied upon in large-scale production systems for more than 1.5 years on sites such as:</p>
+<ul>
+<li><a href="https://www.zenodo.org">Zenodo</a></li>
+<li><a href="http://opendata.cern.ch">CERN Open Data</a></li>
+<li><a href="https://videos.cern.ch">CDS Videos</a></li>
+</ul>
+<p>Also other sites are already in process of being built on Invenio 3:</p>
+<ul>
+<li>INSPIRE HEP - an aggregator for High-Energy Physics.</li>
+<li>WEKO3 - repository platform for 500+ Japanese universities.</li>
+</ul>
+<h1>What's new</h1>
+<p>Invenio functionality is being released in <strong>bundles</strong> of modules. Invenio v3 contains the following bundles totaling more than 27 individual Invenio modules:</p>
+<ul>
+<li><strong>Base:</strong> the core application framework with e.g. distributed task queue support.</li>
+<li><strong>Auth:</strong> accounts management, role-based access control, OAuth 2.0 client and provider, user profiles management.</li>
+<li><strong>Metadata:</strong> record and persistent identifier management including indexing, querying and OAI-PMH server.</li>
+</ul>
+<p>The following bundles are being prepared for release in v3.1:</p>
+<ul>
+<li><strong>Files</strong>: advanced file management with multi-backend support as well as <a href="http://iiif.io/">IIIF Image API</a> support.</li>
+<li><strong>Statistics</strong>: <a href="https://www.projectcounter.org/">COUNTER-compliant</a> statistics.</li>
+</ul>
+<p>See our <a href="/roadmap/">roadmap</a> for further details.</p>
+<h1>Getting started</h1>
+<p>In order to get started developing with Invenio v3 follow our <a href="/gettingstarted/">getting started</a> guide.</p>
+<p>Next, head over <a href="https://invenio.readthedocs.io">https://invenio.readthedocs.io</a> to understand how to develop with Invenio.</p>
+<p>In addition, each Invenio module also has extensive documentation:</p>
+<p><strong>Base bundle</strong></p>
+<ul>
+<li><a href="http://invenio-admin.readthedocs.io">invenio-admin</a></li>
+<li><a href="http://invenio-app.readthedocs.io">invenio-app</a></li>
+<li><a href="http://invenio-assets.readthedocs.io">invenio-assets</a></li>
+<li><a href="http://invenio-base.readthedocs.io">invenio-base</a></li>
+<li><a href="http://invenio-celery.readthedocs.io">invenio-celery</a></li>
+<li><a href="http://invenio-config.readthedocs.io">invenio-config</a></li>
+<li><a href="http://invenio-db.readthedocs.io">invenio-db</a></li>
+<li><a href="http://invenio-formatter.readthedocs.io">invenio-formatter</a></li>
+<li><a href="http://invenio-i18n.readthedocs.io">invenio-i18n</a></li>
+<li><a href="http://invenio-logging.readthedocs.io">invenio-logging</a></li>
+<li><a href="http://invenio-mail.readthedocs.io">invenio-mail</a></li>
+<li><a href="http://invenio-rest.readthedocs.io">invenio-rest</a></li>
+<li><a href="http://invenio-theme.readthedocs.io">invenio-theme</a></li>
+</ul>
+<p><strong>Auth bundle</strong></p>
+<ul>
+<li><a href="http://invenio-access.readthedocs.io">invenio-access</a></li>
+<li><a href="http://invenio-accounts.readthedocs.io">invenio-accounts</a></li>
+<li><a href="http://invenio-oauth2server.readthedocs.io">invenio-oauth2server</a></li>
+<li><a href="http://invenio-oauthclient.readthedocs.io">invenio-oauthclient</a></li>
+<li><a href="http://invenio-userprofiles.readthedocs.io">invenio-userprofiles</a></li>
+</ul>
+<p><strong>Metadata bundle</strong></p>
+<ul>
+<li><a href="http://invenio-indexer.readthedocs.io">invenio-indexer</a></li>
+<li><a href="http://invenio-jsonschemas.readthedocs.io">invenio-jsonschemas</a></li>
+<li><a href="http://invenio-oaiserver.readthedocs.io">invenio-oaiserver</a></li>
+<li><a href="http://invenio-pidstore.readthedocs.io">invenio-pidstore</a></li>
+<li><a href="http://invenio-records.readthedocs.io">invenio-records</a></li>
+<li><a href="http://invenio-records-rest.readthedocs.io">invenio-records-rest</a></li>
+<li><a href="http://invenio-records-ui.readthedocs.io">invenio-records-ui</a></li>
+<li><a href="http://invenio-search.readthedocs.io">invenio-search</a></li>
+<li><a href="http://invenio-search-ui.readthedocs.io">invenio-search-ui</a></li>
+</ul>
+<h1>Compatibilities</h1>
+<h3>Python compatibility</h3>
+<p>Invenio v3.0 supports Python 2.7, 3.5, 3.6. We highly recommend only using the latest official release in each series.</p>
+<p>Python 2.7 end-of-life is scheduled for April 2020. Invenio will only support Python 2.7 until that date. We highly recommend that all new projects are started on the latest available Python 3 version.</p>
+<h3>Elasticsearch compatibility</h3>
+<p>Invenio v3.0 supports Elasticsearch 2, 5 and 6.</p>
+<p>Elasticsearch v2 has reached end-of-life (February 2018) and Invenio v3.0 is the last release to support Elasticsearch v2.</p>
+<h3>PostgreSQL compatibility</h3>
+<p>Invenio v3.0 supports PostgreSQL 9.4, 9.5 and 9.6. We have not yet tested Invenio v3.0 with PostgreSQL 10.</p>
+<h3>MySQL compatibility</h3>
+<p>Invenio v3.0 supports MySQL 5.6+.</p>
+<h1>Deprecations</h1>
+<h3>AMD/RequireJS</h3>
+<p>Invenio v3.0's current static assets management system is based on e.g. RequireJS will be replaced with Webpack.
+We expect this work to be ready for Invenio v3.1, and thus we are already deprecating the current support. Specifically this
+means that Invenio-Assets and Invenio-Theme will change significantly in Invenio v3.1. We would have liked to
+already have this ready for this v3.0 release, but unfortunately it was time-wise not possible.</p>
+<h3>AngularJS</h3>
+<p>Invenio v3.0 comes with one AngularJS 1.4 application (Invenio-Search-JS). AngularJS is by now already outdated, and we are
+planning a rewrite of the application in another JavaScript framework that is currently in process of being selected.
+Essentially this means that you should not extend Invenio-Search-JS at this point, since it will change significantly.</p>
+<h1>Maintenance policy</h1>
+<p>Invenio v3.0 will be supported with bug and security fixes until the release of
+Invenio v3.2 and minimum one year.</p>
+<p>We aim at one Invenio release with new features every 6 months. We expect
+upgrades between minor versions (e.g. v3.1 to v3.2) to be fairly straight-forward
+as in most cases only new features are added.</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/invenio-v300-released/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2018-05-28-invenio-sprint/">Sprint: v3.0.0RC2 + updated website</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>May 28, 2018</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio Framework</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>This sprint (May 14-25) was focused on preparing Invenio for the final v3.0.0
+release so it is ready for launch at the Open Repositories 2018 Conference,
+June 4th-7th in Bozeman, Montana.</p>
+<h2>Overview</h2>
+<p>Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):</p>
+<ul>
+<li>inveniosoftware.org now has shiny new <a href="/blog">blog</a> and <a href="/roadmap">roadmap</a>.</li>
+<li>inveniosoftware.org was moved to <a href="http://getlektor.com">Lektor</a> static CMS
+and is now also hosted on GitHub Pages.</li>
+<li>Cookiecutter templates for Invenio instances and Invenio data models where
+finalised and made part of the "Getting started" guide.</li>
+<li>Invenio v3.0.0 Release Candidate 2 was released.</li>
+<li>Flask v1.0 support</li>
+</ul>
+<h2>Releases</h2>
+<ul>
+<li>invenio-access v1.0.1</li>
+<li>invenio-accounts v1.0.1</li>
+<li>invenio-base v1.0.1</li>
+<li>invenio-db v1.0.1</li>
+<li>invenio-formatter v1.0.1</li>
+<li>invenio-oauth2server v1.0.1</li>
+<li>invenio-records-rest v1.1.0</li>
+<li>invenio-userprofiles v1.0.1</li>
+<li>pytest-invenio v1.0.2</li>
+</ul>
+<h3>List of all changes</h3>
+<ul>
+<li>cookiecutter-invenio-datamodel:<ul>
+<li>Fixing, testing, documenting and cleaning.</li>
+</ul>
+</li>
+<li>cookiecutter-invenio-instance:<ul>
+<li>Fixing, testing, documenting and cleaning.</li>
+<li>The development server is now by default running SSL thanks to the
+recently release Flask v1.0.</li>
+</ul>
+</li>
+<li>invenio-access:<ul>
+<li>Fixed annoying warning message.</li>
+</ul>
+</li>
+<li>invenio-accounts:<ul>
+<li>Fixed build failure due to Flask-CeleryExt version.</li>
+</ul>
+</li>
+<li>invenio-base:<ul>
+<li>Added support for blueprint factory functions in the
+<code>invenio_base.blueprints</code>/<code>invenio_base.api_blueprints</code> entry point
+groups. In addition to specifying an import path to an already created
+blueprint, you can now specify an import path of a blueprint factory
+function with the signature
+<code>create_blueprint(app)</code>, that will create and return a blueprint. This
+allows moving dynamic blueprint creation from the extension
+initialization phase to the blueprint registration phase.</li>
+</ul>
+</li>
+<li>invenio-formatter:<ul>
+<li>Fixed issue where badges would be cached wrongly.</li>
+</ul>
+</li>
+<li>invenio-jsonschemas:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oaiserver:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oauth2server:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oauth2server:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-oauthclient:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-records-rest:<ul>
+<li>Added marshmallow fields used for record deserialization.</li>
+<li>Added support for other Invenio extensions to auto-register REST API
+record endpoints.</li>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-rest:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio-userprofiles:<ul>
+<li>Fixed build error related to Flask v1.0</li>
+</ul>
+</li>
+<li>invenio:<ul>
+<li>Documentation updates.</li>
+</ul>
+</li>
+<li>inveniosoftware.org:<ul>
+<li>Rewritten using Lektor Static CMS system.</li>
+<li>Retargeted website to pass the message that Invenio is now a framework.</li>
+<li>Added a blog.</li>
+<li>Added a roadmap</li>
+<li>Moved all information about legacy releases to separate page.</li>
+<li>Many fixes to design and style.</li>
+<li>Reworked most text sections.</li>
+<li>Moved hosting to GitHub Pages.</li>
+</ul>
+</li>
+<li>pytest-invenio:<ul>
+<li>Fixed problem with the <code>celery_config</code> fixture.</li>
+<li>Fixed issue with elasticsearch import.</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2018-05-28-invenio-sprint/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2018-03-23-invenio-sprint/">Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license</a>
         
       </h3>
