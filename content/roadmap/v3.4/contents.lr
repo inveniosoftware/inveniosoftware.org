@@ -16,3 +16,5 @@ Invenio v3.4 will include:
 
 This will complete the transition from AngularJS to React as the frontend
 framework.
+---
+_hidden: yes
