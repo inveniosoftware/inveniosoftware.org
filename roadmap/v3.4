@@ -1,5 +1,5 @@
 <!doctype html>
-<title>InvenioRDM Roadmap — inveniosoftware.org</title>
+<title>Invenio v3.4 — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
 <body>
   
   
-    <section class="header-section product-rdm-header-section" >
+    <section class="header-section " >
       <div class="cover-image">
         
           <header class="header-nav">
@@ -46,7 +46,7 @@
           
             
               <li class="dropdown-submenu">
-                <a href="#" class="dropdown-toggle active-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   
                     <li><a href="/products/rdm/">InvenioRDM</a></li>
@@ -111,8 +111,8 @@
             <div class="col">
               <div class="header-section-title">
                 
-                <h3>InvenioRDM Roadmap</h3>
-                <h6>The road to InvenioRDM</h6>
+                <h3>Roadmap</h3>
+                <h6></h6>
                 
               </div>
             </div>
@@ -123,167 +123,50 @@
     </section>
   
   
-<section class="roadmap-section section-content-light-bg">
-  <div class="container">
-    <span class="section-title">Roadmap</span>
+<section class="install-section section-content-white-bg">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-4">
+            <span class="section-title">Current</span>
+        </div>
+        <div class="col-sm-4">
+            <span class="section-title">Near-term</span>
+        </div>
+        <div class="col-sm-4">
+            <span class="section-title">Future</span>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                
+<div class="panel panel-default">
+  <div class="panel-heading development">
+    Development
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Invenio v3.4</h3>
+    <div class="card-description">
+    <p>Invenio v3.4 will include:</p>
+<ul>
+<li>Multi-UI framework support.</li>
+<li>SemanticUI integration in Invenio.</li>
+<li>New search interface based on React-SearchKit.</li>
+</ul>
+<p>This will complete the transition from AngularJS to React as the frontend
+framework.</p>
 
-    <p>We aim at releasing a <strong>Long-Term Support (LTS)</strong> version by summer 2021.</p>
-
-    <p>From February 2021 until summer 2021, we will be releasing <strong>stable</strong>
-    versions of InvenioRDM on a monthly/bi-monthly basis that you can
-    upgrade between.</p>
-
-    <p>We consider large-scale production validation to have
-    completed as soon as Zenodo is running on top of InvenioRDM (planned
-    after the LTS release).</p>
-
-    <h6>FAQ</h6>
-    <div class="row">
-      <div class="col-md-6">
-      <p>
-        <strong>What does a stable release mean?</strong> <br />
-        A stable release means that we will provide an upgrade path to a
-        subsequent version (manual or automatic). You should assign efforts to
-        upgrade to the latest stable release continuously as we will only
-        provide bug fixes or security updates to the
-        <em>latest stable version</em>.
-      </p>
-      <p>
-        <strong>What will change between stable releases?</strong> <br />
-        Each stable release will usually add new features or improve on
-        existing. We try to limit as much as possible changes to existing
-        features, however we cannot exclude that changes might be needed.
-      </p>
-      <p>
-        <strong>When is the roadmap updated?</strong> <br />
-        We update the roadmap quartly according to the current progress and
-        available resources. Next update: January, 2021.
-      </p>
-      <p>
-        <strong>How did you estimate the required effort?</strong> <br />
-        The detailed tasks and their associated estimated efforts are available
-        in our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a> on GitHub which is tracking the
-        current project progress.
-      </p>
-      <p>
-        <strong>How can I help accelerate the roadmap?</strong> <br />
-        We will be happy to explore with you, how you can best help accelerate the
-        roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>).
-      </p>
-      </div>
-      <div class="col-md-6">
-        <p>
-          <strong>What does Long-Term Support mean?</strong> <br />
-          Long-Term Support (LTS) means that we will provide bug fixes and
-          security updates for minimum 1 year or until and including the next
-          the LTS release. If resources allow, support <em>may</em> be extended
-          further.
-        </p>
-        <p>
-          <strong>When can I run InvenioRDM in production?</strong> <br />
-          It depends on your requirements and needs. You can deploy a stable
-          release for a smaller userbase if you have the resources to
-          continuously upgrade the repository and the InvenioRDM feature set
-          satisfies your needs. If you need a fully featured repository, wait
-          until the LTS release. If you need a large-scale production
-          validated repository, wait until Zenodo is running on InvenioRDM.
-        </p>
-        <p>
-          <strong>When is feature X ready?</strong> <br />
-          Please see the roadmap below (for further details please see our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a>). Note that, there is a risk that tasks may
-          be shuffled around between months depending on available resources
-          with each partner. Tasks may also be brought forward if a partner
-          finds resources, or similarly be delayed if a partner pulls out
-          resources.
-        </p>
-      </div>
-    </div>
-
-    <div class="roadmap-year"><h6>2021</h6></div>
-    <div class="roadmap-list-container">
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Feb</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Access control (v1.0)</h3>
-          <ul>
-            <li>Implementation of the core access control features (excluding
-            sharing and communities access control).</li>
-            <li>Minimal UX requirements for v1.0</li>
-            <li>Release v1.0 - a minimal first stable release that enables
-            <strong>manual</strong> data migration to v2.0.
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Mar</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Versioning (v2.0)</h3>
-          <ul>
-            <li>Port the record versioning support from Zenodo.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Apr</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Persistent identifers & custom fields (v3.0)</h3>
-          <ul>
-            <li>Support for persistent identifier minting such as DataCite DOIs.</li>
-            <li>Support for custom fields.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>May</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Communities, Authentication, Usage stats (v4.0)</h3>
-          <ul>
-            <li>Integration of the community module.</li>
-            <li>Authenitcation plugins: SAML, LDAP, OAuth/OpenID Conncet</li>
-            <li>COUNTER Usage statistics.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jun</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Preservation and export formats (v5.0)</h3>
-          <ul>
-            <li>Sharing: access requests</li>
-            <li>Preservation via OCFL support</li>
-            <li>Export formats</li>
-            <li>Citation generation</li>
-            <li>Upgrade automation</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Jul</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Long-Term Support (LTS) Release (v6.0)</h3>
-          <ul>
-            <li>Locking and translation of text strings.</li>
-            <li>Finalise all remaining documentation.</li>
-            <li>Final quality assurance and validation of the release.</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
-</section>
+</div>
 
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+</section>
 
   <footer>
   <div class="contact-section section-content-dark-bg">
