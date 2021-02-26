@@ -140,6 +140,100 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2020-07-01-june-release/">InvenioRDM June Release</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lisa O&#39;Keefe, Pablo Panero
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jul 1, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are happy to announce InvenioRDM Alpha 8 (June release). Thank you to our team members for their efforts on this release.</p>
+<h3>What's new?</h3>
+<p>The June release is a major backend development release. We developed three new modules that lay the foundation for the new core data flow of Invenio(RDM). Our work goes far to provide a better developer experience. You will be able to work on and customize Invenio(RDM) in an easier and cleaner way.</p>
+<p>The primary focus for the release was:</p>
+<ul>
+<li>Continue the migration from Bootstrap to SemanticUI</li>
+<li>Bug fixes and improvements on the frontend (mainly on deposit)</li>
+<li>Develop new core modules for Invenio(RDM) backend</li>
+</ul>
+<h4>UI Customization</h4>
+<p>You are able to customize your templates again. The JSX customizations are not functional yet though, which means the search page results are not customizable.</p>
+<h4>Visual appearance</h4>
+<p>We have migrated the file previewer, the OAuth login, and the settings pages to SemanticUI.</p>
+<p>You might still notice some issues related to visual appearance (e.g. the name previewed file is not in a panel as before). We will be working on making all this perfect in the next sprint on SemanticUI (end of August). In the meantime, it is, at least, better.</p>
+<p><img src="/blog/2020-07-01-june-release/record_page.jpeg" alt=""></p>
+<h4>Creators, Contributors and Affiliations Identifiers</h4>
+<p>The Deposit page now accepts <a href="https://orcid.org/">ORCID iDs</a> for people (creators and contributors) and <a href="https://ror.org/">ROR identifiers</a> for organizations (creators, contributors and affiliations). An icon with a link to the respective entity on the record landing page reflects this connection.</p>
+<p>Contributors are now optional on the deposit page as well.</p>
+<h4>Python versions</h4>
+<p>There are now Invenio images for Python 3.7 and Python 3.8! This means that you can use Python 3.6, 3.7 and 3.8 for local development and the full containerized mode.</p>
+<h4>Backend and REST APIs</h4>
+<p>We have put a significant amount of work in refactoring some of the core API flow of Invenio. This addresses many of the issues that Invenio was facing in this domain. As a result, three modules were created:</p>
+<ul>
+<li><a href="https://github.com/inveniosoftware/flask-resources">https://github.com/inveniosoftware/flask-resources</a>: A generic Flask module to implement REST APIs and make their customization easy.</li>
+<li><a href="https://github.com/inveniosoftware/invenio-resources">https://github.com/inveniosoftware/invenio-resources</a>: A module customizing Flask-Resources for Invenio(RDM) APIs.</li>
+<li><a href="https://github.com/ppanero/invenio-records-agent">https://github.com/ppanero/invenio-records-agent</a>: An experimental module to bridge the representational and data access worlds in Invenio. This module hosts the business logic and might be merged back into invenio-resources.</li>
+</ul>
+<h3>What do you need to do?</h3>
+<p>Follow the documentation site: <a href="https://inveniordm.docs.cern.ch/">https://inveniordm.docs.cern.ch/</a> and install the latest invenio-cli v0.14.2+, create a new instance and see how it looks like!</p>
+<p><strong>Install (TL;DR)</strong></p>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
+<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
+docker pull inveniosoftware/centos8-python:3.7
+docker pull inveniosoftware/centos8-python:3.8
+</code></pre>
+<p>To install:</p>
+<pre><code class="lang-bash">pip install invenio-cli --upgrade
+invenio-cli init rdm
+cd my-site
+invenio-cli containerize --pre
+invenio-cli demo --containers
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
+<pre><code class="lang-bash">cd my-site
+pipenv --rm
+docker-compose -f docker-compose.full.yml down
+</code></pre>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. We are experimenting with Discourse's built in post template. This means when you <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-8-june-release/115">provide feedback on Discourse</a> your message should be pre-populated with the classic template:</p>
+<pre><code>## Bugs
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Thank you for your patience and support. We are working hard all the time to improve things. Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2020-07-01-june-release/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2020-06-05-may-release/">InvenioRDM May Release</a>
         
       </h3>
@@ -880,124 +974,6 @@ SVG versions of all logos.</p>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2019-05-24-sprint-report/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2019-05-04-iugw2019/">Invenio User Group Workshop 2019, June 10th</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lars Holm Nielsen
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>May 3, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We would like to announce the 5th Invenio User Group Workshop, IUGW2019, to be held as part of Open Repositories 2019 (OR2019) on Monday, June 10th from 09:00-17:00 at the University of Hamburg (main building).</p>
-<h2>Registration (mandatory)</h2>
-<ol>
-<li><p>First <a href="https://or2019.blogs.uni-hamburg.de/registration/">register</a> to Open Repositories 2019 conference.</p>
-</li>
-<li><p>Next, <a href="https://www.cognitoforms.com/UniversitätHamburg/OpenRepositories2019WorkshopRegistration">register</a> to the Invenio User Group Workshop 2019.</p>
-</li>
-</ol>
-<h2>Call for proposals</h2>
-<p>Invenio User Group Workshop (IUGW) is a biennial workshop where the Invenio repository community meet among current and future users and developers from around the world. The workshop consists of a series of tour de table service presentations and talks from attendees related to the Invenio digital repository framework.</p>
-<p><a href="https://indico.cern.ch/event/818650/abstracts/">Submit abstract</a></p>
-<p><strong>Deadline:</strong> May 22nd at 23:59 CEST</p>
-<p><strong>Acceptance:</strong> Notification on May 27th.</p>
-<p>The Invenio User Group Workshop 2019 will address a wide range of topics related to the overall theme for Open Repositories 2019:</p>
-<h3>All the user needs</h3>
-<h4>1. Understanding user needs and user experience</h4>
-<ul>
-<li>User research and engagement</li>
-<li>User experience design for repository services</li>
-<li>Better user experience through data and workflow integration</li>
-<li>Improving repository user interfaces</li>
-</ul>
-<h4>2. Discovery, use and impact</h4>
-<ul>
-<li>Increasing content visibility in search engines and discovery systems</li>
-<li>Open access discovery, research data discovery</li>
-<li>Tools for researchers, interfaces for machines</li>
-<li>The role of aggregation services</li>
-<li>Measuring use and impact</li>
-</ul>
-<h4>3. Repositories – evolution or revolution?</h4>
-<ul>
-<li>Beyond the repository: using repository platforms for purposes not originally intended</li>
-<li>Convergence with other types of systems (e.g. current research information systems, digital asset management systems, journal publishing platforms, library service platforms)</li>
-<li>Interoperability vs integration: will repositories survive as stand-alone systems?</li>
-<li>The developing role of repositories in the scholarly communications and research information systems ecosystem (e.g. the Next Generation Repositories vision)</li>
-<li>New models for scholarly sharing (e.g. blockchain)</li>
-<li>Data mining, artificial intelligence and machine learning</li>
-</ul>
-<h4>4. Supporting open scholarship and cultural heritage</h4>
-<ul>
-<li>Providing access to different types of materials (e.g. research data, scholarly articles, pre prints and overlay journals, open access monographs, theses and dissertations, educational resources, archival and cultural heritage materials, audiovisual materials, software, interactive publications and emerging formats)</li>
-<li>Workflows and support services for the repository users</li>
-<li>Training, communication and outreach</li>
-<li>Long-term access and preservation</li>
-<li>Repositories as digital humanities and open science platforms</li>
-<li>Working with large and complex data sets</li>
-</ul>
-<h4>5. Open and sustainable</h4>
-<ul>
-<li>Service and business models that meet user needs</li>
-<li>Local systems vs repository as a service</li>
-<li>The expanding role of service providers in the repository landscape, pros and cons?</li>
-<li>Sustainability of the open source community model</li>
-<li>Securing long-term funding for open infrastructures</li>
-<li>Open business models and open governance for open infrastructures</li>
-</ul>
-<h4>6. Policies, licensing and the law</h4>
-<ul>
-<li>Impact of GDPR (General Data Protection Regulation) and copyright laws</li>
-<li>Publisher policies, embargoes and rights retention</li>
-<li>Licenses, use and re-use of content</li>
-<li>‘Closed’ material in ‘open’ repositories</li>
-<li>Compliance and impact of funder policies (e.g. Plan S) on repositories</li>
-</ul>
-<h4>7. How can metadata and standards help our users?</h4>
-<ul>
-<li>Development and standardisation of repository metadata</li>
-<li>Data models and entities</li>
-<li>Linked open data and repositories</li>
-<li>Persistent identifiers (e.g. DOI, Handle, URN, ORCID, ISNI)</li>
-<li>Open citations</li>
-<li>International Image Interoperability Framework (IIIF)</li>
-</ul>
-<h4>8. Repositories and global knowledge</h4>
-<ul>
-<li>Integration with other open knowledge resources (e.g. Wikimedia and Wikidata)</li>
-<li>National vs global solutions</li>
-<li>Repository systems and language barriers</li>
-<li>Repositories in the global south</li>
-<li>User needs in developing countries</li>
-</ul>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2019-05-04-iugw2019/">Read More</a>
       
     </div>
   </div>
