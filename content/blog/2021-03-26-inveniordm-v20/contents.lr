@@ -1,6 +1,6 @@
 title: InvenioRDM v2.0
 ---
-author: Lars Holm Nielsen, Max
+author: Lars Holm Nielsen, Guillaume Viger, Max Moser, Zacharias Zacharodimos
 ---
 pub_date: 2021-03-26
 ---
@@ -10,12 +10,15 @@ body:
 
 We're happy to announce InvenioRDM v2.0!
 
-
 ## Try it
 
 Want to try the new features in v2.0 - just head over to our demo site: https://inveniordm.web.cern.ch/
 
 If you want to install it, follow the installation instructions on https://inveniordm.docs.cern.ch/install/
+
+## Release notes
+
+See the [full release notes](https://inveniordm.docs.cern.ch/releases/versions/version-v2.0.0/) and [upgrade instructions](https://inveniordm.docs.cern.ch/releases/upgrading/upgrade-v2.0/).
 
 ## What's new?
 
