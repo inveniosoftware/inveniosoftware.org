@@ -133,6 +133,168 @@
             
               
             
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2017-08-11-invenio-sprint/">Sprint: Security and annoying warnings</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Aug 11, 2017</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio Framework</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>This sprint was focused on:</p>
+<ul>
+<li>Data model issues (in Invenio-Access and Invenio-OAIServer).</li>
+<li>Security issues (permanent sessions, "remember me", content security policy).</li>
+<li>Working demo site (remove annoying warnings, fixed docs, SSL problems, bugs, admin interfaces, ...).</li>
+</ul>
+<p>As a result of 89 developer days, 126 commits and 6.6k lines touched (4.7k additions and 1.8k deletions) <code>auth bundle</code> has been stabilized and released in beta version (Accounts, Access, Profiles, OAuthClient and OAuth2Server).</p>
+<h2>List of changes:</h2>
+<ul>
+<li>DoJSON (v1.3.2):<ul>
+<li>Remove <code>'Undo' is experimental</code> warning</li>
+</ul>
+</li>
+<li>Flask-Menu (v0.6.0):<ul>
+<li>Python 3 warnings fixes</li>
+</ul>
+</li>
+<li>Invenio<ul>
+<li>Fixed login problem</li>
+</ul>
+</li>
+<li>Invenio-Access (v1.0.0b1):<ul>
+<li>Reviewed module and fixed data model issues.</li>
+<li>Deprecated DynamicPermission in favor of Permission (aligning with Flask-Principal's deny by default behavior)</li>
+<li>Added system roles with support for any user and authenticated user (could be extended to support IP-based access control). <code>ActionUsers</code> was previously used for similar feature by setting <code>user_id</code> to <code>None</code> but this is no longer possible.</li>
+<li>Updated administration interface.</li>
+<li>Added usage documentation (<a href="https://invenio-access.readthedocs.org">https://invenio-access.readthedocs.org</a>).</li>
+<li>Fixed superuser issues.</li>
+</ul>
+</li>
+<li>Invenio-Accounts (v1.0.0b8):<ul>
+<li>Fixed Content Security Policy issues</li>
+<li>Removed remember me login support in favor of using permanent sessions (remember me support could be used to circumvent a revoked session).</li>
+<li>Removed support for login via headers (enabled by Flask-Security by default).</li>
+<li>Fixed Content Security Policy problems in templates.</li>
+<li>Upgraded to Flask-Security v3 (thanks to @jacquire).</li>
+</ul>
+</li>
+<li>Invenio-Admin (v1.0.0b3):<ul>
+<li>Disabled Content Security Policy on admin interface.</li>
+</ul>
+</li>
+<li>Invenio-App (v1.0.0b1):<ul>
+<li>Adds Jinja byte code caching support.</li>
+<li>iPython is now the default shell.</li>
+</ul>
+</li>
+<li>Invenio-App-ILS (v1.0.0a3):<ul>
+<li>Added initial Selenium integration tests.</li>
+<li>Fixed email sending when in debug mode.</li>
+<li>Bumped all packages to latest versions.</li>
+<li>Fixed Celery 4 configuration warnings.</li>
+<li>Clarified force HTTPS behaviour and adapted the user guide.</li>
+</ul>
+</li>
+<li>Invenio-Celery (v1.0.0b3):<ul>
+<li>Fixed Celery 4 configuration warnings.</li>
+</ul>
+</li>
+<li>Invenio-DB (v1.0.0b8):<ul>
+<li>Disabled SQL statement printing when in debug mode (has to be enabled manually now).</li>
+</ul>
+</li>
+<li>Invenio-I18N (v1.0.0b4):<ul>
+<li>Fixed Content Security Policy issues in templates.</li>
+</ul>
+</li>
+<li>Invenio-OAIServer (v1.0.0a13):<ul>
+<li>Fixed selective harvesting by timestamp caused by Marshmallow field parsing bug.</li>
+<li>Removed updated timestamp <code>_oai.updated</code> from record in favor of using the record models updated date (fixes issue with selective datetime harvesting).</li>
+<li>Add support for searching by spec in admin interface.</li>
+</ul>
+</li>
+<li>Invenio-OAuth2Server (v1.0.0b1):<ul>
+<li>Added feature to show scopes related to an authorized application.</li>
+<li>Added client example application to enable easier testing.</li>
+<li>Added new scope <code>user:email</code> which when granted will return the user's email address in the access token.</li>
+<li>Updated "authortize this application" template.</li>
+<li>Fixed security issue that allowed obtaining a session cookie via an access token and thus bypassing scope protection.</li>
+<li>Fixed Content Security Policy issues in templates.</li>
+<li>Fixed issue when strings where not strictly URL encoded (better error message).</li>
+<li>Fixed template rendering issues when no scopes where given and with example URLs.</li>
+</ul>
+</li>
+<li>Invenio-OAuthClient (v1.0.0b2):<ul>
+<li>Added admin interface for UserIdentity.</li>
+<li>Fixed Flask-WTF v0.14/v0.13 CSRF validation issues.</li>
+<li>Reorganized documentation to new structure.</li>
+<li>Removed support for remember me feature.</li>
+<li>Remove "Linked accounts" menu item when no providers where defined.</li>
+<li>Fixed Content Security Policy issues in templates.</li>
+<li>Fixed issue with always redirecting to "Linked accounts" after a login.</li>
+</ul>
+</li>
+<li>Invenio-PIDStore (v1.0.0b2):<ul>
+<li>New release.</li>
+</ul>
+</li>
+<li>Invenio-Search-JS (v1.2.0):<ul>
+<li>Fixed strict URL encoding of query strings.</li>
+<li>Fixed Content Security Policy issues in CSS.</li>
+</ul>
+</li>
+<li>Invenio-Search-UI (v1.0.0a7):<ul>
+<li>Fixed template issue.</li>
+</ul>
+</li>
+<li>Invenio-Theme (v1.0.0b4)<ul>
+<li>Fixed Content Security Policy issues in templates.</li>
+</ul>
+</li>
+<li>Invenio-Cache (v1.0.0b1):<ul>
+<li>New module which provided Redis/Memcahed caching support.</li>
+</ul>
+</li>
+</ul>
+<h2>What's next?</h2>
+<p>Next Invenio Sprint will focus on:</p>
+<ul>
+<li>Metadata bundle:<ul>
+<li>JSONSchemas, PIDStore, Records, Indexer, Records-UI, Search, OAIServer, Records-REST</li>
+</ul>
+</li>
+<li>General documentation</li>
+<li>Framework launch (process, branches, maintenance plan, user experience)</li>
+</ul>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2017-08-11-invenio-sprint/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
           </div>
         </div>
       </div>
