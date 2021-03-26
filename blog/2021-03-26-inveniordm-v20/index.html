@@ -142,39 +142,39 @@
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            Lars Holm Nielsen, Max Moser, Zacharias Zacharodimos, Guillaume Viger
+            Lars Holm Nielsen, Guillaume Viger, Max Moser, Zacharias Zacharodimos
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
         <span>Mar 26, 2021</span>
         <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+        <span class="label invenio-team"><a class="team-url" href=""></a></span>
       </p>
     </header>
     <article class="post-content">
       <h1>InvenioRDM v2.0</h1>
 <p>We're happy to announce InvenioRDM v2.0!</p>
-<p>!!! warning
-    InvenioRDM v2.0 is NOT yet suitable for production services.</p>
 <h2>Try it</h2>
 <p>Want to try the new features in v2.0 - just head over to our demo site: <a href="https://inveniordm.web.cern.ch/">https://inveniordm.web.cern.ch/</a></p>
 <p>If you want to install it, follow the installation instructions on <a href="https://inveniordm.docs.cern.ch/install/">https://inveniordm.docs.cern.ch/install/</a></p>
+<h2>Release notes</h2>
+<p>See the <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v2.0.0/">full release notes</a> and <a href="https://inveniordm.docs.cern.ch/releases/upgrading/upgrade-v2.0/">upgrade instructions</a>.</p>
 <h2>What's new?</h2>
 <h3>Versioning support</h3>
 <p>InvenioRDM now supports versioning for records. By default, InvenioRDM does not allow you to change the files after you have published a record. With the new versioning support, you can the files can now be changed however in <em>new versions</em> of the record.</p>
 <h4>Creating new versions</h4>
 <p>Now, a user can create a new version of the record, add or remove files and publish it by clicking the "New version" button.</p>
 <p>One way to make new versions is from the record's landing page directly by clicking on the "New Version" button. Only allowed users can do so:</p>
-<p><img src="/blog/2021-03-26-inveniordm-v2.0/v2.0/landing-page.png" alt=""></p>
+<p><img src="/blog/2021-03-26-inveniordm-v20/landing-page.png" alt=""></p>
 <p>Another way is while editing a previously published record:</p>
-<p><img src="/blog/2021-03-26-inveniordm-v2.0/v2.0/deposit-form.png" alt=""></p>
+<p><img src="/blog/2021-03-26-inveniordm-v20/deposit-form.png" alt=""></p>
 <h4>Search</h4>
 <p>Search results will by default only display the latest published version of a record. However, toggling the flip switch in the versions facet, allows you to view and search all versions.</p>
-<p><img src="/blog/2021-03-26-inveniordm-v2.0/v2.0/search-results.png" alt=""></p>
+<p><img src="/blog/2021-03-26-inveniordm-v20/search-results.png" alt=""></p>
 <h4>Landing page</h4>
 <p>The landing page for previous versions of a record clearly displays that a newer version exists, with a link to it.</p>
 <p>Also, in the right-hand column you have a link to view all published versions:</p>
-<p><img src="/blog/2021-03-26-inveniordm-v2.0/v2.0/landing-page-old.png" alt=""></p>
+<p><img src="/blog/2021-03-26-inveniordm-v20/landing-page-old.png" alt=""></p>
 <h4>Permissions</h4>
 <p>We manage permissions at two levels when it comes to versioning.</p>
 <p>Each specific version can have its own record/files visibility (e.g. one version can be restricted another not). Embargo dates also apply to specific versions.</p>
@@ -190,8 +190,8 @@
 <p><strong>Note</strong>: One of the current limitations (that will be resolved further down the road) is that each secret link can only grant one permission, and they're not hierarchical (e.g. the permission to read files does not entail the permission to read the metadata).</p>
 <p>In the future, we plan to also allow sharing only a preview of an unsubmitted record. This is particular useful for instance for peer-review scenarios, where a user can prepare a dataset and provide a journal with a link to the unpublished dataset. The peer-reviewer can then anonymously access the dataset, and the researcher can later update the dataset based on feedback from the peer-reviewer.</p>
 <p>We plan to have a first minimal user interface for allowing users to use this new feature in the April release (v3.0). Below you see some of the mockups:</p>
-<p><img src="/blog/2021-03-26-inveniordm-v2.0/v2.0/share-button.png" alt=""></p>
-<p><img src="/blog/2021-03-26-inveniordm-v2.0/v2.0/get-a-link.png" alt=""></p>
+<p><img src="/blog/2021-03-26-inveniordm-v20/share-button.png" alt=""></p>
+<p><img src="/blog/2021-03-26-inveniordm-v20/get-a-link.png" alt=""></p>
 <h4>Usage</h4>
 <p>A secret link can be created by sending a POST request to the record's access/links endpoint, e.g.:</p>
 <pre><code class="lang-bash">curl -H &quot;authorization: bearer &lt;PERSONAL_TOKEN&gt;&quot; -H &quot;content-type: application/json&quot; -d &#39;{&quot;permission&quot;: &quot;read&quot;}&#39; https://&lt;HOSTNAME&gt;/api/records/&lt;RECID&gt;/access/links
