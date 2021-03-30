@@ -1,12 +1,12 @@
 {
   "site_list": [
-{
+    {
       "name": "البوابة التونسية للإعلام العلمي و التقني",
       "country": "TN",
       "description": "Tunisian Technical and Scientific Information Portal .  This digital library is collecting Tunisian academic research and scientific output in order to increase its visibility, accessibility and impact .",
       "url": "http://www.pist.tn",
       "screenshot_filename": "pist.png",
-      "types": ["research-data", "repository","library"]
+      "types": ["research-data", "repository", "library"]
     },
     {
       "name": "Fundación Arte Ciencia y Diálogo",
@@ -14,7 +14,7 @@
       "description": "Fundación Arte Ciencia y Diálogo",
       "url": "http://invenio.ardicia.com",
       "screenshot_filename": "ardicia.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "Aristotle University of Thessaloniki",
@@ -37,7 +37,7 @@
       "description": "Belle II Document Server",
       "url": "https://docs.belle2.org/",
       "screenshot_filename": "belle2.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "Caltech",
@@ -67,7 +67,7 @@
       "description": "CLASSE Electronic Document Management System",
       "url": "https://edms.classe.cornell.edu/",
       "screenshot_filename": "classe.png",
-      "types": ["institutional-repository","library"]
+      "types": ["institutional-repository", "library"]
     },
     {
       "name": "CERN Open Data",
@@ -83,7 +83,7 @@
       "description": "Documents consorzio COMETA",
       "url": "http://documents.ct.infn.it",
       "screenshot_filename": "cometa.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "DESY PUBDB",
@@ -98,7 +98,7 @@
       "description": "The Swiss Document Server in Education aims at collecting and providing electronic documents in the fields of education policy, educational administration, educational planning and educational research and development in Switzerland.",
       "url": "http://edudoc.ch/",
       "screenshot_filename": "edudoc.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "Electrical Engineering Wroclaw University of Technology",
@@ -106,7 +106,7 @@
       "description": "Repository of Wroclaw University of Technology, Poland - Faculty of Electrical Engineering",
       "url": "http://zet10.ipee.pwr.wroc.pl",
       "screenshot_filename": "eewut.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "EKP Publications",
@@ -114,7 +114,7 @@
       "description": "",
       "url": "https://ekp-invenio.physik.uni-karlsruhe.de",
       "screenshot_filename": "ekp.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "EPFL Infoscience",
@@ -137,7 +137,7 @@
       "description": "European XFEL publication database",
       "url": "http://pubdb.xfel.eu",
       "screenshot_filename": "exfel.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "GISELA Documents",
@@ -145,7 +145,7 @@
       "description": "The GISELA Documents Server provides, by categories, all the documents produced by the Project",
       "url": "http://documents.gisela-grid.eu/",
       "screenshot_filename": "gisela.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "GSI Institutional Repository",
@@ -160,7 +160,7 @@
       "description": "University of Applied Sciences of Freiburg (Western Switzerland)",
       "url": "https://multidoc.eia-fr.ch",
       "screenshot_filename": "heiaf.png",
-      "types": ["institutional-repository","library"]
+      "types": ["institutional-repository", "library"]
     },
     {
       "name": "HEPData",
@@ -190,7 +190,7 @@
       "description": "Document server of the African Institute for Economic Development and Planning.",
       "url": "http://unidep.org/library/",
       "screenshot_filename": "idep.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "IFMuC: Inventari dels Fons Musicals de Catalunya",
@@ -198,7 +198,7 @@
       "description": "IFMuC is a new scientific and technical service created to promote and raise awareness of the information contained in the databases of catalogues describing the musical archives of Catalonia that the Chair of Musical Heritage in the Department of Art and Musicology at the UAB has been producing since 2001.",
       "url": "http://ifmuc.uab.cat",
       "screenshot_filename": "ifmuc.png",
-      "types": ["library","multimedia"]
+      "types": ["library", "multimedia"]
     },
     {
       "name": "IHEID",
@@ -206,7 +206,7 @@
       "description": "The institutional repository of the Graduate Institute of International and Development Studies contains research produced by its members, including books, book chapters, journal articles, working papers, theses and more.",
       "url": "http://cdsinvenio.iheid.ch/",
       "screenshot_filename": "iheid.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "iKEE",
@@ -222,7 +222,7 @@
       "description": "The document server of the International Linear Collider. Planning and designing the proposed electron-positron collider will require global participation and global organization. ILCDoc serves as a central repository for project documents and information shared among the hundreds of collaborators, scientists and engineers, at university and laboratories around the world.",
       "url": "http://ilcdoc.linearcollider.org/",
       "screenshot_filename": "ilcdoc.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "INSPIRE",
@@ -238,7 +238,7 @@
       "description": "The Institute of Theoretical and Applied Mechanics",
       "url": "https://invenio.itam.cas.cz",
       "screenshot_filename": "itam.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "International Telecommunication Union",
@@ -253,7 +253,7 @@
       "description": "Open Access repository of article and preprints and other related materials concerning the research activity in JINR.",
       "url": "http://jdsweb.jinr.ru/",
       "screenshot_filename": "jinr.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "JuSER",
@@ -276,7 +276,7 @@
       "description": "Institutional Repository of Kumasi Polytechnic",
       "url": "http://library.kpoly.edu.gh/",
       "screenshot_filename": "kumasi.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "LERSSE",
@@ -313,7 +313,7 @@
       "description": "Institutional Digital Repository of the National Library of Technology. Study library for development research.",
       "url": "http://repozitar.techlib.cz",
       "screenshot_filename": "nltcz.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "NTNU",
@@ -329,7 +329,7 @@
       "description": "This digital repository is a part of the National Repository of Grey Literature (NRGL).\n\nNRGL provides central access to information on grey literature produced in the Czech Republic in the fields of science, research and education.",
       "url": "http://invenio.nusl.cz",
       "screenshot_filename": "nusl.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "Office of the United Nations High Commissioner for Human Rights",
@@ -351,14 +351,14 @@
       "description": "Open Access Repository is an initiative supported by the DCH-RP (Digital Cultural Heritage - Roadmap for Preservation) project as it can fulfil the needs of cultural institutions that want to preserve their data and make them accessible in an Open Access way by means of a digital repository that is compliant with OpenAIRE guidelines.",
       "url": "http://www.openaccessrepository.it/",
       "screenshot_filename": "openaccess.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "RERO DOC",
       "description": "Digital library of RERO, the library Network of Western Switzerland. Created to promote, preserve and provide public access to the grey literature (e-theses, dissertations, e-prints) of institutions participating in the project, as well as to the digitalized collections of RERO libraries.",
       "url": "http://doc.rero.ch",
       "screenshot_filename": "rero.png",
-      "types": ["library","multimedia"]
+      "types": ["library", "multimedia"]
     },
     {
       "name": "RomDoc",
@@ -381,7 +381,7 @@
       "description": "Open Access Repository managed and operated by the Sci-GaIA project",
       "url": "https://oar.sci-gaia.eu/",
       "screenshot_filename": "scigaia.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "SCOAP3 Repository",
@@ -389,7 +389,7 @@
       "description": "Open Access articles sponsored by the international SCOAP3 initiative.",
       "url": "https://repo.scoap3.org/",
       "screenshot_filename": "scoap3.png",
-      "types": ["research-data", "institutional-repository","Library"]
+      "types": ["research-data", "institutional-repository", "Library"]
     },
     {
       "name": "Solano History Database",
@@ -397,7 +397,7 @@
       "description": "Historical articles, photos, books and other content relating to the history of Solano County, CA",
       "url": "http://www.solanohistory.org/",
       "screenshot_filename": "solano.png",
-      "types": ["institutional-repository","library"]
+      "types": ["institutional-repository", "library"]
     },
     {
       "name": "SUDigital",
@@ -413,7 +413,7 @@
       "description": "DTU Fotonik Optical Communication Document Server",
       "url": "http://sysdoc.com.dtu.dk/",
       "screenshot_filename": "sysdoc.png",
-      "types": ["research-data","library"]
+      "types": ["research-data", "library"]
     },
     {
       "name": "TRACES",
@@ -428,7 +428,7 @@
       "description": "Invenio at TRIUMF",
       "url": "http://invenio.triumf.ca/",
       "screenshot_filename": "triumf.png",
-      "types": ["institutional-repository","library"]
+      "types": ["institutional-repository", "library"]
     },
     {
       "name": "Dipòsit Digital de Documents",
@@ -443,7 +443,7 @@
       "description": "University Library in Bratislava",
       "url": "https://issn.issn.sk/",
       "screenshot_filename": "ulbratislava.png",
-      "types": ["institutional-repository","library"]
+      "types": ["institutional-repository", "library"]
     },
     {
       "name": "Trabajos Fin De Estudios",
@@ -451,7 +451,7 @@
       "description": "Universidad Zaragoza - Trabajos Fin De Estudios",
       "url": "https://deposita.unizar.es",
       "screenshot_filename": "unizar.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "United Nations Library Vienna",
@@ -466,7 +466,7 @@
       "description": "",
       "url": "http://knihovna.vugtk.cz/",
       "screenshot_filename": "vogtk.png",
-      "types": ["research-data", "institutional-repository","Library"]
+      "types": ["research-data", "institutional-repository", "Library"]
     },
     {
       "name": "World Food Programme",
@@ -498,6 +498,13 @@
       "url": "https://sceiba.cu",
       "screenshot_filename": "sceiba.png",
       "types": ["repository"]
+    },
+    {
+      "name": "Materials Cloud Archive",
+      "description": "The Materials Cloud Archive is an open and <i>moderated</i> repository for research data relevant to computational materials science. It aims to help replicate the results discussed in scientific publications and thereby provide added value to datasets.",
+      "url": "https://archive.materialscloud.org",
+      "screenshot_filename": "materials_cloud_archive.png",
+      "types": ["research-data", "institutional-repository"]
     }
   ]
 }
