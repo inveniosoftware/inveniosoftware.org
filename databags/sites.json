@@ -490,6 +490,13 @@
       "url": "https://museumbollandianum.be",
       "screenshot_filename": "museumbollandianum.png",
       "types": ["Library"]
+    },
+    {
+      "name": "Materials Cloud Archive",
+      "description": "The Materials Cloud Archive is an open and <i>moderated</i> repository for research data relevant to computational materials science. It aims to help replicate the results discussed in scientific publications and thereby provide added value to datasets.",
+      "url": "https://archive.materialscloud.org",
+      "screenshot_filename": "materials_cloud_archive.png",
+      "types": ["research-data", "institutional-repository"]
     }
   ]
 }
