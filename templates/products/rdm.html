@@ -11,39 +11,40 @@
 {% block header_section_extra %}
   <div class="row welcome-features-row">
     <div class="welcome-features-col col-md-2">
-      <h2><i class="fa fa-road"></i><a href="{{ '/products/rdm/roadmap'|url}}"> Roadmap</a></h2>
+      <h2><i class="fa fa-list-alt"></i><br /><a href="#status">Status</a></h2>
+      <p>
+        Follow the latest project status.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-road"></i><br /><a href="{{ '/products/rdm/roadmap'|url}}"> Roadmap</a></h2>
       <p>
         We intend to be ready with a first release summer 2021.
       </p>
     </div>
     <div class="welcome-features-col col-md-2">
-      <h2><i class="fa fa-comment"></i><a href="https://invenio-talk.web.cern.ch/c/projects/invenio-rdm"> Forum</a></h2>
+      <h2><i class="fa fa-desktop"></i><br /><a href="https://inveniordm.web.cern.ch"> Demo</a></h2>
+      <p>
+        Demo of InvenioRDM showing latest development state.
+      </p>
+    </div>
+
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-comment"></i><br /><a href="https://invenio-talk.web.cern.ch/c/projects/invenio-rdm"> Forum</a></h2>
       <p>
         Join our project forum and collaborate.
       </p>
     </div>
     <div class="welcome-features-col col-md-2">
-      <h2><i class="fa fa-keyboard-o"></i><a href="https://discord.gg/8qatqBC"> Chat</a></h2>
+      <h2><i class="fa fa-keyboard-o"></i><br /><a href="https://discord.gg/8qatqBC"> Chat</a></h2>
       <p>
         Find all the partners in our official chatroom.
       </p>
     </div>
     <div class="welcome-features-col col-md-2">
-      <h2><i class="fa fa-github"></i><a href="https://github.com/inveniosoftware/invenio-app-rdm"> Code</a></h2>
+      <h2><i class="fa fa-github"></i><br /><a href="https://github.com/inveniosoftware/invenio-app-rdm"> Code</a></h2>
       <p>
         Have a look at InvenioRDM code evolution.
-      </p>
-    </div>
-    <div class="welcome-features-col col-md-2">
-      <h2><i class="fa fa-calendar"></i><a href="{{ '/events/'|url }}"> Events</a></h2>
-      <p>
-        InvenioRDM project events for partners
-      </p>
-    </div>
-    <div class="welcome-features-col col-md-2">
-      <h2><i class="fa fa-list-alt"></i><a href="#features"> Features</a></h2>
-      <p>
-        Sneak peak at the future InvenioRDM.
       </p>
     </div>
   </div>
@@ -112,11 +113,12 @@
         <a href="https://tind.io/"><img src="{{ '/static/img/logo-tind.png'|asseturl }}" title="TIND"></a>
         <a href="https://ulakbim.tubitak.gov.tr"><img src="{{ '/static/img/logo-tubitak.svg'|asseturl }}" title="Tubitak"></a>
         <a href="https://www.tugraz.at/en/home/"><img src="{{ '/static/img/logo-tu-graz.svg'|asseturl }}" title="TU Graz"></a>
-        <a href="https://www.uni-hamburg.de/"><img src="{{ '/static/img/logo-uni-hamburg.png'|asseturl }}" title="Universität Hamburg"></a>
       </div>
     </div>
     <div class="row centered">
       <div class="col">
+        <a href="https://www.tuwien.at/"><img src="{{ '/static/img/logo-tu-wien.svg'|asseturl }}" title="TU Wien"></a>
+        <a href="https://www.uni-hamburg.de/"><img src="{{ '/static/img/logo-uni-hamburg.png'|asseturl }}" title="Universität Hamburg"></a>
         <a href="https://www.uni-muenster.de/en/"><img src="{{ '/static/img/logo-uni-munster.png'|asseturl }}" title="University of Münster"></a>
         <a href="https://www.wacren.net"><img src="{{ '/static/img/logo-wacren.png'|asseturl }}" title="West and Central African Research and Education Network"></a>
       </div>
@@ -211,10 +213,11 @@
       <div class="col-md-6">
         <h6>Status Updates</h6>
 
+        2021-03-26: <a href="{{ '/blog/2021-03-26-inveniordm-v20/'|url}}">InvenioRDM v2.0 Release</a><br>
+        2021-02-26: <a href="{{ '/blog/2021-02-26-february-release/'|url}}">InvenioRDM v1.0 (February Release)</a><br>
+        2021-02-01: <a href="{{ '/blog/2021-02-10-onboarding-resource-roundup/'|url}}">InvenioRDM Onboarding Resource Roundup</a><br>
+        2021-02-01: <a href="{{ '/blog/2021-02-01-january-release/'|url}}">InvenioRDM January Release</a><br>
         2021-01-11: <a href="{{ '/blog/2021-01-11-december-release/'|url}}">InvenioRDM December Release</a><br>
-        2020-12-15: <a href="{{ '/blog/2020-12-15-metadata/'|url}}">Metadata: Schema Reference Document and Future Work</a><br>
-        2020-11-29: <a href="{{ '/blog/2020-11-29-november-release/'|url}}">InvenioRDM November Release</a><br>
-        2020-11-11: <a href="{{ '/blog/2020-11-11-october-release/'|url}}">InvenioRDM October release</a><br>
 
         <h6>Demo</h6>
         <p>
@@ -233,7 +236,8 @@
         <h6>Install (Preview)</h6>
         <p>
           <div class="alert alert-warning">
-            <i class="fa fa-exclamation-triangle"></i> <strong>Preview:</strong> InvenioRDM is not production ready.
+            <i class="fa fa-exclamation-triangle"></i> <strong>Preview:</strong> InvenioRDM is <strong>not</strong> production ready. <br>Read <a href="{{ '/blog/2021-02-26-february-release/'|url}}">release notes</a>.
+
           </div>
 
           <p>
@@ -253,7 +257,7 @@
       <div class="col-md-6">
         <h6>Roadmap</h6>
           <p>We aim at releasing a Long-Term Support (LTS) version by summer 2021.</p>
-          <p>From February 2021 until summer 2021, we will be releasing stable
+          <p>Until summer 2021, we will be releasing stable
           versions of InvenioRDM on a monthly/bi-monthly basis that you can
           upgrade between.</p>
 
@@ -267,8 +271,9 @@
         <h6>Development</h6>
         <p>We're an Open Source project and all our development is conducted publicly on GitHub. The primary resources for developers are:</p>
         <p>
-          <li><a href="https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open">Development Roadmap (for developers)</a></li>
-          <li><a href="https://github.com/orgs/inveniosoftware/projects/60">Sprintboard</a></li>
+          <li><a href="https://inveniordm.docs.cern.ch/maintenance/newcomers/">Newcomers guide</a></li>
+          <li><a href="https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open">Development roadmap (for developers)</a></li>
+          <li><a href="https://github.com/orgs/inveniosoftware/projects/">Sprintboard</a></li>
           <li><strong>Standup:</strong> daily at 15:15 UTC on <a href="https://discord.gg/8qatqBC">Discord</a> (#rdm-internal)</li>
         </p>
         <h6>Questions?</h6>
