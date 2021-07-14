@@ -30,6 +30,9 @@ jobs:
         run: lektor build
 
       - name: Deploy pages
+        env:
+          LEKTOR_DEPLOY_USERNAME: lektor-bot
+          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: |
           lektor deploy ghpages
           lektor deploy ghpages-dash
