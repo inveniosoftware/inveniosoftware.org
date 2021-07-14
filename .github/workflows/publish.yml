@@ -35,4 +35,12 @@ jobs:
           LEKTOR_DEPLOY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: |
           lektor deploy ghpages
+
+      # needs to use an org. token here to push to a different repo
+      # invenio-software.git (with dash)
+      - name: Deploy pages-dash
+        env:
+          LEKTOR_DEPLOY_USERNAME: lektor-bot
+          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.LEKTOR_DEPLOY_TOKEN }}
+        run: |
           lektor deploy ghpages-dash
