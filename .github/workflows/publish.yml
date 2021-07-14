@@ -41,6 +41,6 @@ jobs:
       - name: Deploy pages-dash
         env:
           LEKTOR_DEPLOY_USERNAME: lektor-bot
-          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.LEKTOR_DEPLOY_TOKEN }}
+          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.LEKTOR_DEPLOY_TOKEN_INVENIOBOT }}
         run: |
           lektor deploy ghpages-dash
