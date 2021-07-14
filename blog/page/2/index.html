@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=33a341e2">
+<link rel="stylesheet" href="/static/css/style.css?h=e5e31157">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -131,6 +131,115 @@
         <div class="col-md-12 col-xs-12 block-center">
           <div class="blog-post-list">
             
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2020-09-01-august-release/">InvenioRDM August Release</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Sara Gonzales, Guillaume Viger
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Sep 1, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are happy to announce InvenioRDM Alpha 10 (August release)! Thank you to our team members for their efforts on this release.</p>
+<h3>What's new?</h3>
+<p>We made some limited changes this month. However, three key areas <em>were</em> tackled.</p>
+<ul>
+<li>The concurrent Invenio Sprint brought the final Semantic-UI updates across all modules! If something does not show up right in your default RDM instance, then it's a legitimate bug now.</li>
+<li>These UI updates complement the updates to Search. The record search page now uses the new API endpoint from the last release. Customization of the search results is back (with documentation forthcoming). Different search pages are easier to set up.</li>
+<li>More library improvements across the board were merged.</li>
+</ul>
+<p>Update <code>invenio-cli</code> to version 0.16.0 and follow the updated <a href="https://inveniordm.docs.cern.ch/">documentation</a> to get started.</p>
+<h4>Semantic UI transition wrap-up</h4>
+<p><img src="/blog/2020-09-01-august-release/SemanticUI.png" alt="">
+<em>One of the many pages that were transitioned to Semantic-UI</em></p>
+<p>The transition to Semantic-UI is for all intents and purposes complete. Future additions will use this framework and have a consistent look with the rest of InvenioRDM. Close to 15 styling issues were closed in the process.</p>
+<h4>Search customization and transition to new API</h4>
+<p>The search page now uses the new API (<code>/api/rdm-records</code> endpoint) we introduced in the last release. The new endpoint supports pagination and sorting, but aggregations were disabled to focus on the transitioning only.</p>
+<p><img src="/blog/2020-09-01-august-release/SearchCustomization.png" alt=""></p>
+<p>Aggregations will be re-enabled soon.</p>
+<p>Custom styling of search results is possible again: documentation to explain the new way is pending however.</p>
+<h4>Library Improvements</h4>
+<p>Finally, various improvements and fixes were made across modules including:</p>
+<ul>
+<li>an overhaul to how links are generated in API responses,</li>
+<li>a way to hook callbacks into action endpoints,</li>
+<li>the convergence of validation for drafts and records, and</li>
+<li>the introduction of record versioning behind the scenes (which will be made more visible in coming releases).</li>
+</ul>
+<p>Some of these changes are visible in the API responses:</p>
+<pre><code class="lang-json">{
+    &quot;links&quot;: {
+        &quot;self&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47&quot;,
+        &quot;self_html&quot;: &quot;https://127.0.0.1/records/jnmmp-51n47&quot;,
+        &quot;files&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47/files&quot;,
+        &quot;edit&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47/draft&quot;
+    },
+    &quot;metadata&quot;: {
+         &quot;conceptrecid&quot;: &quot;5fk5g-mq814&quot;,
+         ...
+    },
+    ...
+}
+</code></pre>
+<h3>What do you need to do?</h3>
+<p>You can install the latest <code>invenio-cli</code> v0.16.0, create a new instance and see what it looks like. Make sure to follow the <a href="https://inveniordm.docs.cern.ch/">updated documentation</a> - there are a couple of caveats to be made aware of.</p>
+<p><strong>Install (TL;DR)</strong></p>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
+<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
+docker pull inveniosoftware/centos8-python:3.7
+docker pull inveniosoftware/centos8-python:3.8
+</code></pre>
+<p>To install:</p>
+<pre><code class="lang-bash">pip install --upgrade invenio-cli
+invenio-cli init rdm
+cd my-site
+invenio-cli containerize --pre
+invenio-cli demo --containers
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
+<pre><code class="lang-bash">cd my-site
+pipenv --rm
+docker-compose -f docker-compose.full.yml down
+</code></pre>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. When you <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-10-august-release/129">provide feedback on Discourse</a> your message should be pre-populated with the classic template (bugs, what worked well, what didn't work well, wishes for documentation).</p>
+<p>Here is the template to give feedback if it's not automated:</p>
+<pre><code>## Bugs
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Take care and stay safe! The next release will be big.</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2020-09-01-august-release/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
               
             
               
@@ -904,75 +1013,6 @@ SVG versions of all logos.</p>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2019-08-07-sprint-update/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/security-advisor-20190715/">Invenio security releases - XSS and Host header injection</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lars Holm Nielsen
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Jul 15, 2019</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>Two vulnerabilities have been identified in <em>supported</em> Invenio modules.</p>
-<ul>
-<li><strong>Invenio-Records</strong> (<a href="https://github.com/inveniosoftware/invenio-records/security/advisories/GHSA-vxh3-mvv7-265j">security advisory</a>): A Cross-Site Scripting (XSS) vulnerability has been identified in Invenio-Records in the administration interface.</li>
-<li><strong>Invenio-App</strong> (<a href="https://github.com/inveniosoftware/invenio-app/security/advisories/GHSA-94mf-xfg5-r247">security advisory</a>): A Host header injection vulnerability has been identified in Invenio-App.</li>
-</ul>
-<p>In addition, two XSS vulnerabilities have been discovered in <em>unsupported</em> Invenio modules:</p>
-<ul>
-<li><strong>Invenio-Previewer</strong> (<a href="https://github.com/inveniosoftware/invenio-previewer/security/advisories/GHSA-j9m2-6hq2-4r3c">security advisory</a>): An XSS vulnerability affecting the JSON, Markdown and iPython Notebook previewers.</li>
-<li><strong>Invenio-Communities</strong> (<a href="https://github.com/inveniosoftware/invenio-communities/security/advisories/GHSA-mfv8-q39f-mgfg">security advisory</a>): An XSS vulnerability affecting the Jinja templates.</li>
-</ul>
-<p>The vulnerabilities were found after an XSS vulnerability was reported to Zenodo by Ciro Santilli. As a standard measure and after patching Zenodo, we reviewed the Invenio source code for potential similar issues to those identified in the Zenodo source code. This led to the discovery of three additional XSS vulnerabilities. The host header injection vulnerability was discovered after a standard vulnerability scan of another service running at CERN.</p>
-<h3>Releases</h3>
-<p>We have issued two new Invenio releases fixing these issues:</p>
-<ul>
-<li>Invenio v3.0.2 and v3.1.1</li>
-</ul>
-<p>The following individual modules fixing the vulnerabilities have been released:</p>
-<ul>
-<li>Invenio-Records v1.0.2, v1.1.1 and v1.2.2</li>
-<li>Invenio-App v1.0.6 and v1.1.1</li>
-<li>Invenio-Previewer v1.0.0a12 (unsupported)</li>
-<li>Invenio-Communities v1.0.0a20 (unsupported)</li>
-</ul>
-<h3>New security policy</h3>
-<p>We have taken the chance during handling of these vulnerabilities to also clearly define and document Invenio's <a href="https://invenio.readthedocs.io/en/latest/community/security-policy.html">security policy</a>. Please have a look and let us know what you think.</p>
-<p>Previously, we have sometimes privately notified potentially affected services about a security vulnerability. We have however decided to discontinue this practice, and instead, send out an advance notification to everyone about an upcoming security release including only the severity level of the issue. This allows everyone to plan ahead for the upcoming release and ensure they have staff available to handle the release. This partially smoothens the communication process but also ensures that everyone receives the same information in a scalable approach.</p>
-<h3>GitHub security advisors</h3>
-<p>As a new thing, we have also evaluated the new GitHub <a href="https://help.github.com/en/articles/about-maintainer-security-advisories">maintainer security advisories</a> to handle the vulnerabilities. These advisories are reviewed by GitHub and should allow a security alert to be sent to affected repositories.</p>
-<h3>For more information</h3>
-<p>If you have any questions or comments about this security release:</p>
-<ul>
-<li>Email us at <a href="mailto:info@inveniosoftware.org">info@inveniosoftware.org</a></li>
-</ul>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/security-advisor-20190715/">Read More</a>
       
     </div>
   </div>

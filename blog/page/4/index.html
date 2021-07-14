@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=33a341e2">
+<link rel="stylesheet" href="/static/css/style.css?h=e5e31157">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -131,6 +131,104 @@
         <div class="col-md-12 col-xs-12 block-center">
           <div class="blog-post-list">
             
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2017-10-20-invenio-sprint/">Sprint: JSONB, bugs &amp; bouncing search</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Oct 20, 2017</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio Framework</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>This sprint was focused on:</p>
+<ul>
+<li>Metadata bundle: Finalize Invenio-Records, Invenio-Search, Invenio-JSONSchemas.</li>
+<li>Fixing new bugs in Base/Auth bundles.</li>
+</ul>
+<p>As a result of 40 developer days, 37 commits and 2.8k lines touched (2k additions and 0.8k deletions), the following improvements were implemented:</p>
+<ul>
+<li>Fixed bouncing of search results (sorting of the same query could change depending on which Elasticsearch node your query would be answered by).</li>
+<li>JSONB now being used for record storage (Thanks to Javier for the PR).</li>
+<li>Rendering of JSONSchemas, meaning <code>allOf</code> and <code>$refs</code> can now be resolved on-the-fly to generate an self-contained schema for e.g. deposit forms (Thanks to Pamfilos for the PR).</li>
+<li>Boring fixes that makes sure the Base and Auth bundles are stable.</li>
+</ul>
+<h2>List of changes:</h2>
+<ul>
+<li>Invenio-Records (v1.0.0b4):<ul>
+<li>Beta release (release checklist).</li>
+<li>Changed data storage from JSON to JSONB (requires data migration and PostgreSQL v9.4+) Thanks to Javier for PR.</li>
+<li>Changed signals receiver signatures (<strong>backward-incompatible!</strong>).</li>
+<li>Fixed invalid MARC in demo records causing export errors.</li>
+<li>Fixed CLI for deletion of records.</li>
+<li>Fixed fractional seconds problem in MySQL causing tests to fail.</li>
+</ul>
+</li>
+<li>Invenio-Search (v1.0.0b1):<ul>
+<li>Beta release (release checklist, documentation)</li>
+<li>Fix bouncing search results.</li>
+<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
+</ul>
+</li>
+<li>Invenio-JSONScheams (v1.0.0a7):<ul>
+<li>Fixed double registration of schema endpoint on both UI and API app.</li>
+<li>Added support for resolving allOf and JSONRefs in JSONSchemas (thanks to Pamfilos for PR).</li>
+<li>Fixed some documentation issues.</li>
+</ul>
+</li>
+<li>Invenio-Records-REST (v1.0.0b3):<ul>
+<li>Fix bouncing search results.</li>
+<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
+</ul>
+</li>
+<li>Invenio-OAuth2Server (v1.0.0b2):<ul>
+<li>Improved authorization template design (text alignment, cover page usage and display number of users).</li>
+<li>Broken tests fix due to cryptography package changes.</li>
+</ul>
+</li>
+<li>Invenio-DB (v1.0.0b8):<ul>
+<li>Alembic documentation refactored and integrated in docs.</li>
+</ul>
+</li>
+<li>Invenio-Records-UI:<ul>
+<li>Bumped Travis PostgreSQL to v9.4 to support JSONB.</li>
+</ul>
+</li>
+<li>Invenio-OAIServer (v1.0.0a14):<ul>
+<li>Invenio-Records signals signature compatibility.</li>
+</ul>
+</li>
+<li>Invenio-App-ILS:<ul>
+<li>Test for ensuring all records export formats are working.</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2017-10-20-invenio-sprint/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
               
             
               

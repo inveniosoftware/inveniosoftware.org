@@ -1,5 +1,5 @@
 <!doctype html>
-<title>InvenioRDM Events — inveniosoftware.org</title>
+<title>InvenioRDM Community Spotlight: Summer 2021 — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +11,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=33a341e2">
+<link rel="stylesheet" href="/static/css/style.css?h=e5e31157">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
 <body>
   
   
-    <section class="header-section product-rdm-header-section" >
+    <section class="header-section " >
       <div class="cover-image">
         
           <header class="header-nav">
@@ -46,7 +46,7 @@
           
             
               <li class="dropdown-submenu">
-                <a href="#" class="dropdown-toggle active-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">Products</span><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   
                     <li><a href="/products/rdm/">InvenioRDM</a></li>
@@ -89,7 +89,7 @@
             
           
             
-              <li><a href="/blog/">Blog</a></li>
+              <li><a class="active-menu" href="/blog/">Blog</a></li>
             
           
             
@@ -111,8 +111,8 @@
             <div class="col">
               <div class="header-section-title">
                 
-                <h3>InvenioRDM Events</h3>
-                <h6></h6>
+                <h3>Invenio Blog</h3>
+                <h6>Follow news and updates on Invenio world</h6>
                 
               </div>
             </div>
@@ -123,18 +123,62 @@
     </section>
   
   
-
-<section class="roadmap-section section-content-light-bg">
-  <div class="container">
-    <span class="section-title">Call Schedule</span>
+  <section id="blog-post-content-section" class="section-content-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 block-center">
+            
+  <div class="blog-back-button">
+    <a href="/blog">Back</a>
   </div>
-</section>
+  <div class="blog-post blog-post-frame">
+    <header class="post-header">
+      <h2>
+        
+          InvenioRDM Community Spotlight: Summer 2021
+        
+      </h2>
+      <p class="post-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Sara Gonzales
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jun 7, 2021</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href=""></a></span>
+      </p>
+    </header>
+    <article class="post-content">
+      <p><img src="/blog/2021-06-04-community-spotlight/Summer.jpg" alt=""></p>
+<p>Summer 2021 is an exciting time in the development of InvenioRDM, as the team works towards the Long-Term Support (LTS) version. Here are just a few updates we have to share about recent work:</p>
+<h2>Contributions from the community</h2>
+<p>InvenioRDM partners are not only local implementers, but frequently contribute their coding expertise to the project. Read <a href="https://www.tuwien.at/en/research/rti-support/research-data/news/news/tu-wien-contributes-to-inveniordm-development">this recent news item</a> about the efforts of TU Wien developer Maximilian Moser related to the share-by-link feature and the authentication modules.</p>
+<h2>Usability testing</h2>
+<p>One way that the entire community can contribute towards InvenioRDM development is to test the most recent version of the software either through your local implementation or at the <a href="https://inveniordm.web.cern.ch/">CERN sandbox site</a>. Report any bugs you find using this <a href="https://docs.google.com/forms/d/e/1FAIpQLSdExcCjDUMTkaXCU9JHCBqeFfDuCW2kFQGbuZFrr3t77qHOsw/viewform?usp=sf_link">form</a>. Timely and accurate bug reporting gives the entire project a boost!</p>
+<h2>Getting the word out</h2>
+<p>InvenioRDM will be featured in two sessions at <a href="https://or2021.openrepositories.org/">Open Repositories 2021, June 7-10</a>, “Poster Minute Madness” and the “Repository Rodeo”, both taking place on June 9. If you or someone you know would like an introduction to the software, encourage them to attend!</p>
+<p>Are you presenting on InvenioRDM at an upcoming meeting? Please let us know using this <a href="https://docs.google.com/document/d/1HhGtd39TqxleUkK-b5qyPqMjSg8EBqacxSpoDtydmE8/edit?usp=sharing">form</a>.</p>
 
-<section class="roadmap-section section-content-light-bg">
-  <div class="container">
-    <span class="section-title">Project meetings</span>
+    </article>
+    
   </div>
-</section>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).data('remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    });
+  </script>
 
 
   <footer>
