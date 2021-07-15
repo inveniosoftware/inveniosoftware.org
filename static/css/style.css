@@ -526,6 +526,10 @@ footer nav li.title {
 .invenio-rdm-deadline i {
   color: #0377cd;
 }
+.invenio-ils-preview-row {
+  padding-top: calc(3 * 30px);
+  font-size: 0.7em;
+}
 
 /* Product roadmap */
 .roadmap-year {
