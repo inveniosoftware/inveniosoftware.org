@@ -135,9 +135,191 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/2021-06-04-community-spotlight/">InvenioRDM Community Spotlight: Summer 2021</a>
+          <a href="/blog/2021-08-05-inveniordm-lts/">InvenioRDM reaches major milestone - v6.0 released</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Aug 5, 2021</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">InvenioRDM</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p><strong>We're very happy to announce that InvenioRDM v6.0 LTS has been released!!!</strong></p>
+<h3>Try It</h3>
+<p>Want to try InvenioRDM? Just head over to our demo site: <a href="https://inveniordm.web.cern.ch">https://inveniordm.web.cern.ch</a></p>
+<p>If you want to install it, follow the installation instructions on <a href="https://inveniordm.docs.cern.ch/install/">https://inveniordm.docs.cern.ch/install/</a></p>
+<h3>Production ready</h3>
+<p>InvenioRDM v6.0 is the first release to be suitable for production services,
+and therefore the first to receive the Long-Term Support release label. This
+marks the achievement a major milestone for the InvenioRDM.</p>
+<h3>Features</h3>
+<p>Following is a high-level overview of features currently supported by InvenioRDM.
+This is just the beginning as we have a packed road map with exciting features
+ahead of us.</p>
+<h4>Records</h4>
+<ul>
+<li><p><strong>Any resource type</strong> InvenioRDM allows you to store publications, datasets,
+software, images, videos or any other resource type you may have thus can
+serve as a single repository for all your records.</p>
+</li>
+<li><p><strong>Any file format/size</strong> InvenioRDM accepts any file format in any size given
+that your underlying infrastructure can support it.</p>
+</li>
+<li><p><strong>Versioning support</strong> Records and files are all versioned with optimized
+storage for large files.</p>
+</li>
+<li><p><strong>DOI registration via DataCite</strong> InvenioRDM can register DOIs with DataCite
+for all records, and allows you to write plugins for other identifier schemes.</p>
+</li>
+<li><p><strong>DataCite-based metadata</strong> InvenioRDMs internal metadata is based on the
+DataCite Metadata Schema which is a simple yet powerful format for describing
+nearly any research output (paper, data, software, ...).</p>
+</li>
+<li><p><strong>Strong support for persistent identifiers</strong> Authors, affiliations, licenses,
+related papers/datasets etc can all be identified via persistent identifiers
+such as ORCID and RORs.</p>
+</li>
+<li><p><strong>Extended Date Time Format (EDTF) support</strong> Publication dates and other dates
+ support the EDTF format for recording imprecise dates and date ranges such
+ as <code>1939/1945</code>.</p>
+</li>
+<li><p><strong>Previewers</strong> InvenioRDM comes with previewers for common files formats such
+as PDFs, images, CSV, Markdown, XML and JSON.</p>
+</li>
+<li><p><strong>Citation formatting</strong>. InvenioRDM can generate citations strings for your
+records using the Citation Style Language with support for more than 800+
+journal citation styles.</p>
+</li>
+<li><p><strong>Record preview</strong>. Before you publish your record, you can see a preview of
+how it looks like.</p>
+</li>
+<li><p><strong>Metadata-only records</strong> Both records with or without associated files are
+supported.</p>
+</li>
+<li><p><strong>Identifier detection and validation</strong>. InvenioRDM comes with support for
+automatic detection and validation for a large number of persistent identifier
+schemes (i.e. less typing and clicking for end-users).</p>
+</li>
+</ul>
+<h4>Search</h4>
+<ul>
+<li><p><strong>Faceted search</strong>. InvenioRDM supports fully customizable faceted search.</p>
+</li>
+<li><p><strong>Advanced query syntax</strong>. InvenioRDM has support for advanced querying via
+simple term search, phrase search, range search, regular expressions and
+custom ranking/sorting/</p>
+</li>
+<li><p><strong>Auto-complete as you type</strong>. InvenioRDM exposed advanced APIs for
+search-as-you-type scenarios.</p>
+</li>
+</ul>
+<h4>Auth, permissions and security</h4>
+<ul>
+<li><p><strong>Login via institutional account</strong>. InvenioRDM makes it easy to integrate your
+institutional authentication provider such as e.g. Keycloak, OAuth or alternative
+use e.g. ORCID for login.</p>
+</li>
+<li><p><strong>Restricted records</strong>. InvenioRDM supports restricting access to files only
+or to the entire record.</p>
+</li>
+<li><p><strong>Share by link</strong>. Restricted records can be shared with peer-reviewers or
+your colleagues via secret links.</p>
+</li>
+<li><p><strong>Embargo support</strong> Restricted records can be embargoed so that they are
+automatically made publicly on a specific date so that you can comply with
+e.g. funders' Open Access mandates.</p>
+</li>
+<li><p><strong>Logged in devices</strong>. InvenioRDM allows users to see a list of currently
+logged in devices on their account.</p>
+</li>
+</ul>
+<h4>Customizations</h4>
+<ul>
+<li><p><strong>Styling and theming</strong> InvenioRDM can be styled and themed to fit into your
+institutional visual identity.</p>
+</li>
+<li><p><strong>Custom vocabularies</strong> All vocabularies such as types for resources, dates,
+roles, relations, affiliations etc can be customized to your local instance.</p>
+</li>
+<li><p><strong>Subjects</strong> InvenioRDM can load external subjects vocabularies used for
+classifications such as Medial Subject Headings (MeSH) and many others.</p>
+</li>
+<li><p><strong>Permission system</strong> InvenioRDM supports advanced customizations to the
+permission system for e.g. IP-based access control.</p>
+</li>
+</ul>
+<h4>APIs and interoperability</h4>
+<ul>
+<li><p><strong>REST API</strong> InvenioRDM exposes a strong versioned REST API for all operations
+on the repository, that allows you to build your own integrations on top of
+InvenioRDM.</p>
+</li>
+<li><p><strong>Export formats</strong> InvenioRDM supports exporting records metadata in multiple
+formats such as JSON, Citation Style Language JSON, DataCite JSON/XML, Dublin
+Core.</p>
+</li>
+</ul>
+<h4>Infrastructure</h4>
+<ul>
+<li><p><strong>Large file support</strong> InvenioRDM supports uploading and handling TB-sized
+files and can manage from MBs to PBs of data as long as your underlying
+storage systems supports it.</p>
+</li>
+<li><p><strong>Multi-storage systems</strong> InvenioRDM allows you to integrate backend multiple
+storage systems in the same instance such as S3, XRootD and more.</p>
+</li>
+<li><p><strong>Deploy anywhere</strong> InvenioRDM is a Python application and you can deploy
+into your institutional infrastructure wheather it is on bare metal, VMs,
+containers, Kubernetes or OpenShift.</p>
+</li>
+</ul>
+<h3>Partners</h3>
+<p>The development of InvenioRDM is the result of an Open Source project kicked
+of 2 years ago with a diverse set of partners from all over academia and
+research. Most of the development and testing work has been conducted during
+the pandemic making it extra challenging for the people involved but also
+in a fully online environment.</p>
+<h3>Just the start</h3>
+<p>This release is just the start. Our next major milestone is to bring Zenodo.org
+on top of InvenioRDM, which means that most larger features have been shipped
+along the way, and that the system have been fully tested against large-scale
+heavy production loads.</p>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/2021-08-05-inveniordm-lts/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2021-06-04-community-spotlight/">InvenioRDM Community Spotlight: Summer 2021</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -163,20 +345,14 @@
 <p>Are you presenting on InvenioRDM at an upcoming meeting? Please let us know using this <a href="https://docs.google.com/document/d/1HhGtd39TqxleUkK-b5qyPqMjSg8EBqacxSpoDtydmE8/edit?usp=sharing">form</a>.</p>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/2021-06-04-community-spotlight/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -1138,129 +1314,6 @@ $ invenio-cli run
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-11-29-november-release/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2020-11-11-october-release/">InvenioRDM October Release</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lars Holm Nielsen, Sara Gonzales
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Nov 11, 2020</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We're happy to announce the InvenioRDM October release. Thank you to our team members for their efforts on this release.</p>
-<p>In early October we held a virtual project workshop. As part of the workshop we have updated the roadmap. The roadmap is now publicly available in two versions, one simplified and one for project tracking. See below:</p>
-<p>1- <a href="https://inveniosoftware.org/products/rdm/roadmap/">Simplified</a></p>
-<p><img src="/blog/2020-11-11-october-release/roadmap_simplified.png" alt=""></p>
-<p>2- <a href="https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&amp;sort=due_date&amp;state=open">GitHub for project tracking</a></p>
-<p><img src="/blog/2020-11-11-october-release/roadmap_tracking.png" alt=""></p>
-<h3>What's new?</h3>
-<h4>Metadata Schema</h4>
-<p>The entire metadata schema for bibliographic records has been updated, and is now ready for a thorough review by all project partners. The update includes changes to the JSONSchema, Elasticsearch mappings, the REST API data validation layer as well as addition of many fields to the deposit form.</p>
-<p>See (<a href="https://inveniordm.docs.cern.ch/reference/metadata/">https://inveniordm.docs.cern.ch/reference/metadata/</a>) for for a full reference of the new metadata schema.</p>
-<h4>User Experience</h4>
-<p>We have done a lot of work on improving the UX of the primary pages such as the frontpage, search results and record landing page. Below you can see some screenshots of before/after:</p>
-<p><strong>Search results</strong></p>
-<p>The search results have been tightened up as well. Also, we’ve added support for nested facets, so you can expand broader categories into subcategories (e.g., Publication and Image).</p>
-<p><img src="/blog/2020-11-11-october-release/search_before_after.png" alt=""></p>
-<p><strong>Landing page</strong></p>
-<p>The landing page you’ll notice now has Edit and New version buttons (only the Edit button currently works). The right column has been tightened up, and most of the new metadata fields are now properly displayed on the landing page.</p>
-<p><img src="/blog/2020-11-11-october-release/landing_before_after.png" alt=""></p>
-<p><strong>Human readable labels</strong></p>
-<p>In the facets you’ll notice we now have human readable labels. Instead of 'publication' it will say 'Publication'; instead of 'open' it will say 'Open Access'.</p>
-<p>Similarly to search results and landing pages, you’ll now see the correct resource type as well as icons on Open Access.</p>
-<p><img src="/blog/2020-11-11-october-release/badges.png" alt=""></p>
-<p><strong>Localization</strong></p>
-<p>Dates, like the publication date which supports Extended Date Time Format is now properly localized as well using the Unicode Common Locale Data Repository. For instance here an English and Turkish localization:</p>
-<p><img src="/blog/2020-11-11-october-release/localization_english.png" alt=""></p>
-<p><img src="/blog/2020-11-11-october-release/localization_turkish.png" alt=""></p>
-<p><strong>Affiliations</strong></p>
-<p>The affiliation display was redone:</p>
-<p><img src="/blog/2020-11-11-october-release/affiliations.png" alt=""></p>
-<p><strong>Manage section</strong></p>
-<p>There’s a new manage section on the record landing page, which allows you to edit a record.</p>
-<p><img src="/blog/2020-11-11-october-release/manage.png" alt=""></p>
-<h4>CLI Improvements</h4>
-<p>We have made it easier to get started with developing InvenioRDM. Partially to make our own developers' life easier, but also to make it easier to customize InvenioRDM.</p>
-<p><strong>Shells</strong></p>
-<p>You can now easily activate the Python virtualenv shell as well start a Python terminal from your instance using the following commands:</p>
-<pre><code class="lang-bash">invenio-cli shell
-invenio-cli pyshell
-</code></pre>
-<p><strong>Watching assets</strong></p>
-<p>We have now simplified how you can change styling via automatic watching of file changes on assets. Previously you had to manually rebuild the assets. Now instead you can simply execute the following commands, and the styling will automatically rebuild once the file changes:</p>
-<pre><code class="lang-bash">invenio-cli assets --force --development
-invenio-cli assets watch
-</code></pre>
-<p><strong>Develop an Invenio module</strong></p>
-<p>Developers often need to install the latest development versions of Invenio modules to work on them. This can now easily be done with:</p>
-<pre><code class="lang-bash">invenio-cli ext module-install ~/src/invenio-app-rdm ~/src/invenio-rdm-records
-invenio-cli assets --force --development
-</code></pre>
-<p><strong>Develop a React module</strong></p>
-<p>The above works only for Python packages. If instead, you are working on one of our React libraries, you can now easily install and watch the module for changes as well:</p>
-<pre><code class="lang-bash">invenio-cli assets watch-module --link ~/src/react-invenio-deposit
-</code></pre>
-<h3>Install</h3>
-<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
-<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
-docker pull inveniosoftware/centos8-python:3.7
-docker pull inveniosoftware/centos8-python:3.8
-</code></pre>
-<p>To install:</p>
-<pre><code class="lang-bash">pip install --upgrade invenio-cli
-invenio-cli init rdm
-cd my-site
-invenio-cli containerize --pre
-invenio-cli demo --containers
-</code></pre>
-<p>To stop the instance without destroying the records that were created, you can just run:</p>
-<pre><code class="lang-bash">cd my-site
-invenio-cli stop
-</code></pre>
-<p>To destroy the Python virtualenv, and remove the docker containers, you can now just run:</p>
-<pre><code class="lang-bash">cd my-site
-invenio-cli destroy
-</code></pre>
-<h3>Feedback</h3>
-<p>As always, we welcome your feedback. When you provide feedback on Discourse your message should be pre-populated with the classic template (bugs, what worked well, what didn’t work well, wishes for documentation).</p>
-<p>Here is the template to give feedback if it’s not automated:</p>
-<pre><code>
-## Bugs
-
-## What worked well
-
-## What didn't work well
-
-## Wishes for documentation
-</code></pre>
-<p>Take care and stay safe!</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2020-11-11-october-release/">Read More</a>
       
     </div>
   </div>

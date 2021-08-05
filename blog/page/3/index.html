@@ -140,6 +140,75 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/security-advisor-20190715/">Invenio security releases - XSS and Host header injection</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jul 15, 2019</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>Two vulnerabilities have been identified in <em>supported</em> Invenio modules.</p>
+<ul>
+<li><strong>Invenio-Records</strong> (<a href="https://github.com/inveniosoftware/invenio-records/security/advisories/GHSA-vxh3-mvv7-265j">security advisory</a>): A Cross-Site Scripting (XSS) vulnerability has been identified in Invenio-Records in the administration interface.</li>
+<li><strong>Invenio-App</strong> (<a href="https://github.com/inveniosoftware/invenio-app/security/advisories/GHSA-94mf-xfg5-r247">security advisory</a>): A Host header injection vulnerability has been identified in Invenio-App.</li>
+</ul>
+<p>In addition, two XSS vulnerabilities have been discovered in <em>unsupported</em> Invenio modules:</p>
+<ul>
+<li><strong>Invenio-Previewer</strong> (<a href="https://github.com/inveniosoftware/invenio-previewer/security/advisories/GHSA-j9m2-6hq2-4r3c">security advisory</a>): An XSS vulnerability affecting the JSON, Markdown and iPython Notebook previewers.</li>
+<li><strong>Invenio-Communities</strong> (<a href="https://github.com/inveniosoftware/invenio-communities/security/advisories/GHSA-mfv8-q39f-mgfg">security advisory</a>): An XSS vulnerability affecting the Jinja templates.</li>
+</ul>
+<p>The vulnerabilities were found after an XSS vulnerability was reported to Zenodo by Ciro Santilli. As a standard measure and after patching Zenodo, we reviewed the Invenio source code for potential similar issues to those identified in the Zenodo source code. This led to the discovery of three additional XSS vulnerabilities. The host header injection vulnerability was discovered after a standard vulnerability scan of another service running at CERN.</p>
+<h3>Releases</h3>
+<p>We have issued two new Invenio releases fixing these issues:</p>
+<ul>
+<li>Invenio v3.0.2 and v3.1.1</li>
+</ul>
+<p>The following individual modules fixing the vulnerabilities have been released:</p>
+<ul>
+<li>Invenio-Records v1.0.2, v1.1.1 and v1.2.2</li>
+<li>Invenio-App v1.0.6 and v1.1.1</li>
+<li>Invenio-Previewer v1.0.0a12 (unsupported)</li>
+<li>Invenio-Communities v1.0.0a20 (unsupported)</li>
+</ul>
+<h3>New security policy</h3>
+<p>We have taken the chance during handling of these vulnerabilities to also clearly define and document Invenio's <a href="https://invenio.readthedocs.io/en/latest/community/security-policy.html">security policy</a>. Please have a look and let us know what you think.</p>
+<p>Previously, we have sometimes privately notified potentially affected services about a security vulnerability. We have however decided to discontinue this practice, and instead, send out an advance notification to everyone about an upcoming security release including only the severity level of the issue. This allows everyone to plan ahead for the upcoming release and ensure they have staff available to handle the release. This partially smoothens the communication process but also ensures that everyone receives the same information in a scalable approach.</p>
+<h3>GitHub security advisors</h3>
+<p>As a new thing, we have also evaluated the new GitHub <a href="https://help.github.com/en/articles/about-maintainer-security-advisories">maintainer security advisories</a> to handle the vulnerabilities. These advisories are reviewed by GitHub and should allow a security alert to be sent to affected repositories.</p>
+<h3>For more information</h3>
+<p>If you have any questions or comments about this security release:</p>
+<ul>
+<li>Email us at <a href="mailto:info@inveniosoftware.org">info@inveniosoftware.org</a></li>
+</ul>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/security-advisor-20190715/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2019-05-24-sprint-report/">Keeping up with Elasticsearch</a>
         
       </h3>
@@ -1056,197 +1125,6 @@ record endpoints.</li>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2018-05-28-invenio-sprint/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2018-03-23-invenio-sprint/">Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Mar 23, 2018</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio Framework</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>This sprint was focused on releasing the Invenio v3.0.0 Release Candidate 1.</p>
-<p>As a result of 95 developer days, 485 commits and 88k lines touched (33k additions and 55k deletions):</p>
-<ul>
-<li><em>Invenio v3.0.0 Release Candidate 1</em> was released.</li>
-<li>License has been changed from GPL to MIT for ~30 repositories (part of v3RC1).</li>
-<li>Documentation for API authentication in Invenio was added (in OAuth2Server).</li>
-<li>Elasticsearch v6 support was added.</li>
-</ul>
-<h2>Releases</h2>
-<ul>
-<li>invenio: v3.0.0rc1</li>
-<li>invenio-access: v1.0.0</li>
-<li>invenio-accounts: v1.0.0</li>
-<li>invenio-admin: v1.0.0</li>
-<li>invenio-app: v1.0.0</li>
-<li>invenio-assets: v1.0.0</li>
-<li>invenio-base: v1.0.0</li>
-<li>invenio-cache: v1.0.0</li>
-<li>invenio-celery: v1.0.0</li>
-<li>invenio-config: v1.0.0</li>
-<li>invenio-db: v1.0.0</li>
-<li>invenio-formatter: v1.0.0</li>
-<li>invenio-i18n: v1.0.0</li>
-<li>invenio-indexer: v1.0.0</li>
-<li>invenio-jsonschemas: v1.0.0</li>
-<li>invenio-logging: v1.0.0</li>
-<li>invenio-mail: v1.0.0</li>
-<li>invenio-oaiserver: v1.0.0</li>
-<li>invenio-oauth2server: v1.0.0</li>
-<li>invenio-oauthclient: v1.0.0</li>
-<li>invenio-pidstore: v1.0.0</li>
-<li>invenio-records: v1.0.0</li>
-<li>invenio-records-rest: v1.0.0</li>
-<li>invenio-records-ui: v1.0.0</li>
-<li>invenio-rest: v1.0.0</li>
-<li>invenio-search: v1.0v.0</li>
-<li>invenio-search-ui: v1.0.0</li>
-<li>invenio-theme: v1.0.0</li>
-<li>invenio-userprofiles: v1.0.0</li>
-<li>dcxml: v0.1.1</li>
-<li>citeproc-py-styles: v0.1.1</li>
-<li>pytest-invenio: v1.0.0</li>
-<li>invenio-marc21: v1.0.0a8</li>
-</ul>
-<h3>Backward incompatible changes</h3>
-<ul>
-<li><p>invenio-oauthclient:</p>
-<ul>
-<li>Added creation/modification timestamps to database models. Requires upgrade of database using the included Alembic recipe. The recipe will set the creation/modification timestamp to the current date + time (same value for all rows).</li>
-</ul>
-</li>
-<li><p>invenio-oaiserver:</p>
-<ul>
-<li>XSL stylesheet that allow nice rendering of the OAI-PMH feed have been removed as it was GPL licensed. <a href="https://invenio-oaiserver.readthedocs.io/en/latest/usage.html#xsl-stylesheet">Documentation</a> describes how to add it back.</li>
-</ul>
-</li>
-</ul>
-<h3>List of all changes:</h3>
-<ul>
-<li>All packages:<ul>
-<li>License change and general repository clean up.</li>
-</ul>
-</li>
-<li>cookiecutter-invenio-datamodel:<ul>
-<li>New template for bootstrapping data models in Invenio.</li>
-</ul>
-</li>
-<li>cookiecutter-invenio-instance:<ul>
-<li>New template for bootstrapping new instances.</li>
-</ul>
-</li>
-<li>invenio-accounts:<ul>
-<li>Removed Invenio-Admin dependency.</li>
-</ul>
-</li>
-<li>invenio-base:<ul>
-<li>Documentation for CLI commands.</li>
-</ul>
-</li>
-<li>invenio-config:<ul>
-<li>Documentation for how to set complex values in environment variables.</li>
-</ul>
-</li>
-<li>invenio-db:<ul>
-<li>Changed dependency psycopg2 to psycopg2-binary due to warning message.</li>
-</ul>
-</li>
-<li>invenio-indexer:<ul>
-<li>Elasticsearch v6 support</li>
-</ul>
-</li>
-<li>invenio-jsonschemas:<ul>
-<li>Fixed functools dependency for Python 2</li>
-</ul>
-</li>
-<li>invenio-marc21:<ul>
-<li>Elasticsearch v6 support</li>
-</ul>
-</li>
-<li>invenio-oaiserver:<ul>
-<li>Elasticsearch v6 support</li>
-<li>XSL stylesheet removal and documentation.</li>
-<li>Removal of invenio-query-parser dependency</li>
-</ul>
-</li>
-<li>invenio-oauth2server:<ul>
-<li>Usage documentation</li>
-<li>Fixed missing field length validation in form.</li>
-</ul>
-</li>
-<li>invenio-oauthclient:<ul>
-<li>Added timestamps to all models</li>
-<li>Hide part of access token when displayed.</li>
-</ul>
-</li>
-<li>invenio-pidstore:<ul>
-<li>Allow modifying "control_number" field for recid minter via config.</li>
-</ul>
-</li>
-<li>invenio-records-rest:<ul>
-<li>Usage documentation</li>
-<li>Elasticsearch v6 support</li>
-<li>Removed invenio-query-parser dependency.</li>
-</ul>
-</li>
-<li>invenio-rest:<ul>
-<li>Always install Flask-CORS dependency. Please update your install from <code>invenio-rest[cors]</code> to just <code>invenio-rest</code>.</li>
-<li>Add sentry event ID in error response.</li>
-<li>Change from dicttoxml to xmltodict (to avoid GPL dependency).</li>
-</ul>
-</li>
-<li>invenio-search-js:<ul>
-<li>Upgrade jquery to v3.3.1</li>
-<li>Fixed facet selection with no results</li>
-</ul>
-</li>
-<li>invenio-search-ui:<ul>
-<li>Fixed facet selection with no results</li>
-</ul>
-</li>
-<li>invenio-search:<ul>
-<li>Elasticsearch v6 support</li>
-<li>Removed invenio-query-parser dependency.</li>
-</ul>
-</li>
-<li>invenio:<ul>
-<li>Removed provisioning scripts and docker configuration (in favour of cookiecutter-invenio-instance).</li>
-<li>Bump all dependencies to v1.0.0</li>
-</ul>
-</li>
-<li>pytest-invenio:<ul>
-<li>Fixed click logging output with latest Flask development version.</li>
-</ul>
-</li>
-</ul>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2018-03-23-invenio-sprint/">Read More</a>
       
     </div>
   </div>

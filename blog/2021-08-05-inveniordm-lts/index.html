@@ -1,5 +1,5 @@
 <!doctype html>
-<title>InvenioRDM Onboarding Resource Roundup — inveniosoftware.org</title>
+<title>InvenioRDM reaches major milestone - v6.0 released — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=33a341e2">
+<link rel="stylesheet" href="/static/css/style.css?h=25474907">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -135,76 +135,163 @@
     <header class="post-header">
       <h2>
         
-          InvenioRDM Onboarding Resource Roundup
+          InvenioRDM reaches major milestone - v6.0 released
         
       </h2>
       <p class="post-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
           
-            Sara Gonzales
+            Lars Holm Nielsen
           
         </span>
         <i class='fa fa-calendar text-muted'></i>
-        <span>Feb 10, 2021</span>
+        <span>Aug 5, 2021</span>
         <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+        <span class="label invenio-team"><a class="team-url" href="">InvenioRDM</a></span>
       </p>
     </header>
     <article class="post-content">
-      <p>Congratulations! Your team has just joined the InvenioRDM open source project and is eager to contribute as much as possible. With a mixture of dedicated developers, resource curators, subject matter experts, and various leadership stakeholders, your team simply needs to know about the available resources and how to get started. Read on!</p>
-<h3>Developers</h3>
-<p>Whether you would like to install and customize InvenioRDM, contribute on the main project sprints, or take on development of a module locally to contribute back to the project, there are a few important points of entry to participation:</p>
+      <p><strong>We're very happy to announce that InvenioRDM v6.0 LTS has been released!!!</strong></p>
+<h3>Try It</h3>
+<p>Want to try InvenioRDM? Just head over to our demo site: <a href="https://inveniordm.web.cern.ch">https://inveniordm.web.cern.ch</a></p>
+<p>If you want to install it, follow the installation instructions on <a href="https://inveniordm.docs.cern.ch/install/">https://inveniordm.docs.cern.ch/install/</a></p>
+<h3>Production ready</h3>
+<p>InvenioRDM v6.0 is the first release to be suitable for production services,
+and therefore the first to receive the Long-Term Support release label. This
+marks the achievement a major milestone for the InvenioRDM.</p>
+<h3>Features</h3>
+<p>Following is a high-level overview of features currently supported by InvenioRDM.
+This is just the beginning as we have a packed road map with exciting features
+ahead of us.</p>
+<h4>Records</h4>
 <ul>
-<li><p><a href="https://inveniosoftware.org/products/rdm/roadmap/">Roadmap</a>: Familiarize yourself with the overall project timeline and goals. Stable releases will be made through Summer 2021 on a monthly basis</p>
+<li><p><strong>Any resource type</strong> InvenioRDM allows you to store publications, datasets,
+software, images, videos or any other resource type you may have thus can
+serve as a single repository for all your records.</p>
 </li>
-<li><p><a href="https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&amp;sort=due_date&amp;state=open">Development Roadmap</a>: Get to know the specific milestones for 2021</p>
+<li><p><strong>Any file format/size</strong> InvenioRDM accepts any file format in any size given
+that your underlying infrastructure can support it.</p>
 </li>
-<li><p><a href="https://github.com/orgs/inveniosoftware/projects/63">Sprintboard</a>: See the planning board for the current sprint</p>
+<li><p><strong>Versioning support</strong> Records and files are all versioned with optimized
+storage for large files.</p>
 </li>
-<li><p><a href="https://inveniordm.docs.cern.ch/">Documentation</a>: Read the official project documentation</p>
+<li><p><strong>DOI registration via DataCite</strong> InvenioRDM can register DOIs with DataCite
+for all records, and allows you to write plugins for other identifier schemes.</p>
 </li>
-<li><p><a href="https://discord.gg/8qatqBC">Discord</a>: Ask questions in the project Discord (chat/video platform) and introduce yourself in either the general or newcomers-help channels. A daily developer standup takes place on Discord at 15:15 UTC</p>
+<li><p><strong>DataCite-based metadata</strong> InvenioRDMs internal metadata is based on the
+DataCite Metadata Schema which is a simple yet powerful format for describing
+nearly any research output (paper, data, software, ...).</p>
 </li>
-<li><p><a href="https://invenio-talk.web.cern.ch/">Discourse</a>: Want to provide feedback, but in a less time-sensitive manner than a chat? Either join or start a thread in the Discourse discussion forum</p>
+<li><p><strong>Strong support for persistent identifiers</strong> Authors, affiliations, licenses,
+related papers/datasets etc can all be identified via persistent identifiers
+such as ORCID and RORs.</p>
 </li>
-<li><p><a href="https://inveniordm.docs.cern.ch/develop/">Development Setup</a>: Install a development version</p>
+<li><p><strong>Extended Date Time Format (EDTF) support</strong> Publication dates and other dates
+ support the EDTF format for recording imprecise dates and date ranges such
+ as <code>1939/1945</code>.</p>
 </li>
-<li><p><a href="https://inveniordm.docs.cern.ch/maintenance/development_workflow/">Development Workflows</a>: Learn about the development workflows used</p>
+<li><p><strong>Previewers</strong> InvenioRDM comes with previewers for common files formats such
+as PDFs, images, CSV, Markdown, XML and JSON.</p>
+</li>
+<li><p><strong>Citation formatting</strong>. InvenioRDM can generate citations strings for your
+records using the Citation Style Language with support for more than 800+
+journal citation styles.</p>
+</li>
+<li><p><strong>Record preview</strong>. Before you publish your record, you can see a preview of
+how it looks like.</p>
+</li>
+<li><p><strong>Metadata-only records</strong> Both records with or without associated files are
+supported.</p>
+</li>
+<li><p><strong>Identifier detection and validation</strong>. InvenioRDM comes with support for
+automatic detection and validation for a large number of persistent identifier
+schemes (i.e. less typing and clicking for end-users).</p>
 </li>
 </ul>
-<h3>Community Members</h3>
-<p>All stakeholders at your institution are welcome to contribute to InvenioRDM, whether their contribution is code-based or not. To create a tool to best serve the community, outlining stakeholder requirements will be vital:</p>
+<h4>Search</h4>
 <ul>
-<li><p><a href="https://inveniordm.web.cern.ch/">Demo site</a>: Access the latest sandbox version of InvenioRDM here. Create an account to test record creation</p>
+<li><p><strong>Faceted search</strong>. InvenioRDM supports fully customizable faceted search.</p>
 </li>
-<li><p><a href="https://invenio-talk.web.cern.ch/">Discourse</a>: Provide feedback on testing here. Use the <a href="https://invenio-talk.web.cern.ch/c/site-feedback/2">Feedback</a> category or start a new thread wherever you like</p>
+<li><p><strong>Advanced query syntax</strong>. InvenioRDM has support for advanced querying via
+simple term search, phrase search, range search, regular expressions and
+custom ranking/sorting/</p>
 </li>
-<li><p><a href="https://invenio-talk.web.cern.ch/t/metadata-interest-group/144">Metadata Interest Group</a>: This is the first community-focused group organized to help support the InvenioRDM development effort. This group meets about once/month and discusses issues related to the <a href="https://inveniordm.docs.cern.ch/reference/metadata/">InvenioRDM Metadata Model</a>. To join, either make a post on the <a href="https://invenio-talk.web.cern.ch/t/metadata-interest-group/144">Discourse thread</a> or in this dedicated <a href="https://discord.gg/hqvDW9p7Cx">Discord channel</a></p>
-</li>
-<li><p><a href="https://docs.google.com/document/d/1HhGtd39TqxleUkK-b5qyPqMjSg8EBqacxSpoDtydmE8/edit?usp=sharing">Conference Calendar</a>: Are you presenting on InvenioRDM at an upcoming conference? Make a note here so other interested members of the community can attend the session, or perhaps join your poster or presentation effort</p>
-</li>
-<li><p>Welcome, Help and General Questions: Reach out to Community Manager Sara Gonzales via <a href="https://discordapp.com/users/saragon7740">Discord</a> for general questions or to join the Metadata Interest Group</p>
-</li>
-<li><p>Schedule a Demo: Is your site, or a site you know, considering implementing InvenioRDM? Reach out to Community Manager Sara Gonzales via <a href="https://discordapp.com/users/saragon7740">Discord</a> to schedule a one-hour demo and information session about the repository</p>
+<li><p><strong>Auto-complete as you type</strong>. InvenioRDM exposed advanced APIs for
+search-as-you-type scenarios.</p>
 </li>
 </ul>
-<h3>Everyone</h3>
+<h4>Auth, permissions and security</h4>
 <ul>
-<li><p>Project list-serv: Lars will have shared this email address with you upon joining the team. This is the frontline communication tool for the InvenioRDM community. Make this email address a safe sender to receive the latest updates on teleconferences (a.k.a. telecons) and community-based information such as invitations to the Metadata Interest Group meetings. Polls, forms, and additional community tools will be sent to this list-serv</p>
+<li><p><strong>Login via institutional account</strong>. InvenioRDM makes it easy to integrate your
+institutional authentication provider such as e.g. Keycloak, OAuth or alternative
+use e.g. ORCID for login.</p>
 </li>
-<li><p>Telecons (see the list-serv for connection information): All partners of the InvenioRDM community are invited to bi-weekly telecons throughout the year. One telecon per month will focus on development updates, and the other will focus on community-based topics</p>
+<li><p><strong>Restricted records</strong>. InvenioRDM supports restricting access to files only
+or to the entire record.</p>
 </li>
-<li><p><a href="https://docs.google.com/document/d/1Ks5_xEMujd6vdlSmYGrbCsKP_I2hZasMkg-RIjwxbKg/edit?usp=sharing">InvenioRDM Telecon Schedule 2021</a></p>
+<li><p><strong>Share by link</strong>. Restricted records can be shared with peer-reviewers or
+your colleagues via secret links.</p>
 </li>
-<li><p><a href="https://inveniosoftware.org/blog/">Blog</a>: You are reading it! The blog will also alternate between development-based and community-based topics. Would you like to contribute a blog post? <a href="https://docs.google.com/document/d/17Zupy06bKPdJMiLJDsfsgKZLgRJnbuj70AUCY1bOA0w/edit?usp=sharing">Sign up here</a> or contact Sara to get on the schedule</p>
+<li><p><strong>Embargo support</strong> Restricted records can be embargoed so that they are
+automatically made publicly on a specific date so that you can comply with
+e.g. funders' Open Access mandates.</p>
 </li>
-<li><p><a href="https://inveniosoftware.org/governance/#code-of-conduct">Code of Conduct</a></p>
-</li>
-<li><p><a href="https://inveniosoftware.org/governance/">Governance</a></p>
+<li><p><strong>Logged in devices</strong>. InvenioRDM allows users to see a list of currently
+logged in devices on their account.</p>
 </li>
 </ul>
-<p>Welcome to the team, and happy collaborating!</p>
+<h4>Customizations</h4>
+<ul>
+<li><p><strong>Styling and theming</strong> InvenioRDM can be styled and themed to fit into your
+institutional visual identity.</p>
+</li>
+<li><p><strong>Custom vocabularies</strong> All vocabularies such as types for resources, dates,
+roles, relations, affiliations etc can be customized to your local instance.</p>
+</li>
+<li><p><strong>Subjects</strong> InvenioRDM can load external subjects vocabularies used for
+classifications such as Medial Subject Headings (MeSH) and many others.</p>
+</li>
+<li><p><strong>Permission system</strong> InvenioRDM supports advanced customizations to the
+permission system for e.g. IP-based access control.</p>
+</li>
+</ul>
+<h4>APIs and interoperability</h4>
+<ul>
+<li><p><strong>REST API</strong> InvenioRDM exposes a strong versioned REST API for all operations
+on the repository, that allows you to build your own integrations on top of
+InvenioRDM.</p>
+</li>
+<li><p><strong>Export formats</strong> InvenioRDM supports exporting records metadata in multiple
+formats such as JSON, Citation Style Language JSON, DataCite JSON/XML, Dublin
+Core.</p>
+</li>
+</ul>
+<h4>Infrastructure</h4>
+<ul>
+<li><p><strong>Large file support</strong> InvenioRDM supports uploading and handling TB-sized
+files and can manage from MBs to PBs of data as long as your underlying
+storage systems supports it.</p>
+</li>
+<li><p><strong>Multi-storage systems</strong> InvenioRDM allows you to integrate backend multiple
+storage systems in the same instance such as S3, XRootD and more.</p>
+</li>
+<li><p><strong>Deploy anywhere</strong> InvenioRDM is a Python application and you can deploy
+into your institutional infrastructure wheather it is on bare metal, VMs,
+containers, Kubernetes or OpenShift.</p>
+</li>
+</ul>
+<h3>Partners</h3>
+<p>The development of InvenioRDM is the result of an Open Source project kicked
+of 2 years ago with a diverse set of partners from all over academia and
+research. Most of the development and testing work has been conducted during
+the pandemic making it extra challenging for the people involved but also
+in a fully online environment.</p>
+<h3>Just the start</h3>
+<p>This release is just the start. Our next major milestone is to bring Zenodo.org
+on top of InvenioRDM, which means that most larger features have been shipped
+along the way, and that the system have been fully tested against large-scale
+heavy production loads.</p>
 
     </article>
     
