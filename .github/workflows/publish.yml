@@ -1,11 +1,18 @@
-name: Build
+name: Publish
 
 on:
-  pull_request:
-    branches: [ master ]
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason'
+        required: false
+        default: 'Manual trigger'
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,6 +30,17 @@ jobs:
         run: lektor build
 
       - name: Deploy pages
+        env:
+          LEKTOR_DEPLOY_USERNAME: lektor-bot
+          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: |
           lektor deploy ghpages
+
+      # needs to use an org. token here to push to a different repo
+      # invenio-software.git (with dash)
+      - name: Deploy pages-dash
+        env:
+          LEKTOR_DEPLOY_USERNAME: lektor-bot
+          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.LEKTOR_DEPLOY_TOKEN_INVENIOBOT }}
+        run: |
           lektor deploy ghpages-dash

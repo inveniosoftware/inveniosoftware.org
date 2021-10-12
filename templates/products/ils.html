@@ -6,10 +6,19 @@
 {% block header_section_title %}
   <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-ils.svg'|asseturl }}" title="InvenioILS" /></h3>
   <h6>Modern Integrated Library System</h6>
-  <p><i class="fa fa-rocket"></i> Coming soon - March 2020</p>
 {% endblock %}
 
 {% block header_section_extra %}
+  <div class="row invenio-ils-preview-row ">
+    <div class="welcome-features-col col-md-4"></div>
+    <div class="welcome-features-col col-md-4">
+      <h2><i class="fa fa-book"></i><a href="http://catalogue.library.cern" target="_blank" rel="noopener noreferrer"> CERN Library Catalogue</a></h2>
+      <p>
+        A first version of InvenioILS deployed at CERN.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-4"></div>
+  </div>
   <div class="row welcome-features-row">
     <div class="welcome-features-col col-md-2"></div>
     <div class="welcome-features-col col-md-2">

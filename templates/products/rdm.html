@@ -5,7 +5,7 @@
 {% block header_section_title %}
   <h3><img class="product-header-logo" src="{{ '/static/img/logo-invenio-rdm.svg'|asseturl }}" title="InvenioRDM" /></h3>
   <h6>The turn-key research data management repository</h6>
-  <p><i class="fa fa-rocket"></i> Coming soon - summer 2021</p>
+  <p>🚀 <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/">Aug 5, 2021: InvenioRDM v6.0 Long-Term Support Released</a></p>
 {% endblock %}
 
 {% block header_section_extra %}
@@ -19,7 +19,7 @@
     <div class="welcome-features-col col-md-2">
       <h2><i class="fa fa-road"></i><br /><a href="{{ '/products/rdm/roadmap'|url}}"> Roadmap</a></h2>
       <p>
-        We intend to be ready with a first release summer 2021.
+        See our next major milestones
       </p>
     </div>
     <div class="welcome-features-col col-md-2">
@@ -93,17 +93,17 @@
     </div>
     <div class="row centered">
       <div class="col">
-        <a href="https://ctsa.ncats.nih.gov/cd2h/"><img src="{{ '/static/img/logo-cd2h.png'|asseturl }}" title="CTSA Program National Center for Data to Health"></a>
         <a href="https://www.data-futures.org/"><img src="{{ '/static/img/logo-data-futures.png'|asseturl }}" title="Data Futures"></a>
         <a href="https://www.eko-konnect.org.ng"><img src="{{ '/static/img/logo-eko-konnect.png'|asseturl }}" title="Eko Konnect"></a>
         <a href="http://www.earthobservations.org/"><img src="{{ '/static/img/logo-geo.svg'|asseturl }}" title="Group on Earth Observations"></a>
+          <a href="https://www.hzdr.de/"><img src="{{ '/static/img/logo-hzdr.png'|asseturl }}" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
       </div>
     </div>
     <div class="row centered">
       <div class="col">
-        <a href="https://www.hzdr.de/"><img src="{{ '/static/img/logo-hzdr.png'|asseturl }}" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
         <a href="http://home.infn.it/"><img src="{{ '/static/img/logo-infn.svg'|asseturl }}" title="Istituto Nazionale di Fisica Nucleare"></a>
         <a href="https://ec.europa.eu/jrc/"><img src="{{ '/static/img/logo-jrc.svg'|asseturl }}" title="Joint Research Centre"></a>
+        <a href="https://www.nyu.edu/"><img src="{{ '/static/img/logo-nyu.png'|asseturl }}" title="New York University"></a>
         <a href="https://www.northwestern.edu/"><img src="{{ '/static/img/logo-northwestern-university.png'|asseturl }}" title="Northwestern University"></a>
       </div>
     </div>
@@ -120,6 +120,11 @@
         <a href="https://www.tuwien.at/"><img src="{{ '/static/img/logo-tu-wien.svg'|asseturl }}" title="TU Wien"></a>
         <a href="https://www.uni-hamburg.de/"><img src="{{ '/static/img/logo-uni-hamburg.png'|asseturl }}" title="Universität Hamburg"></a>
         <a href="https://www.uni-muenster.de/en/"><img src="{{ '/static/img/logo-uni-munster.png'|asseturl }}" title="University of Münster"></a>
+        <a href="https://uni-tuebingen.de/en/"><img src="{{ '/static/img/logo-uni-tubingen.png'|asseturl }}" title="University of Tübingen"></a>
+      </div>
+    </div>
+    <div class="row centered">
+      <div class="col">
         <a href="https://www.wacren.net"><img src="{{ '/static/img/logo-wacren.png'|asseturl }}" title="West and Central African Research and Education Network"></a>
       </div>
     </div>
@@ -212,42 +217,31 @@
     <div class="row">
       <div class="col-md-6">
         <h6>Status Updates</h6>
-
+        2021-07-23: <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/">InvenioRDM v6.0 LTS Release</a><br>
+        2021-07-23: <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v5.0.0/">InvenioRDM v5.0 Release</a><br>
         2021-03-26: <a href="{{ '/blog/2021-03-26-inveniordm-v20/'|url}}">InvenioRDM v2.0 Release</a><br>
         2021-02-26: <a href="{{ '/blog/2021-02-26-february-release/'|url}}">InvenioRDM v1.0 (February Release)</a><br>
         2021-02-01: <a href="{{ '/blog/2021-02-10-onboarding-resource-roundup/'|url}}">InvenioRDM Onboarding Resource Roundup</a><br>
         2021-02-01: <a href="{{ '/blog/2021-02-01-january-release/'|url}}">InvenioRDM January Release</a><br>
-        2021-01-11: <a href="{{ '/blog/2021-01-11-december-release/'|url}}">InvenioRDM December Release</a><br>
 
         <h6>Demo</h6>
         <p>
-          <div class="alert alert-warning">
-          <i class="fa fa-exclamation-triangle"></i> <strong>Under development</strong><br> The demo site only shows the latest development state. Please check our roadmap for further information what is to come.
-          </div>
-
           <p>We run a small demo site, so that you can see the current state of InvenioRDM in action.
-          The demo site is updated monthly with each new development release.</p>
+          The demo site is updated with new release.</p>
 
           <div class="goto-button">
             <a href="https://inveniordm.web.cern.ch"><i class="fa fa-external-link"></i> Demo site</a>
           </div>
         </p>
 
-        <h6>Install (Preview)</h6>
+        <h6>Install</h6>
         <p>
-          <div class="alert alert-warning">
-            <i class="fa fa-exclamation-triangle"></i> <strong>Preview:</strong> InvenioRDM is <strong>not</strong> production ready. <br>Read <a href="{{ '/blog/2021-02-26-february-release/'|url}}">release notes</a>.
-
-          </div>
 
           <p>
-          InvenioRDM is under heavy development, and we are making monthly releases for the community to provide feedback. New releases are announced on our <a href="{{ '/blog'|url}}">blog</a>.
+          Want to try installing InvenioRDM on your local machine, just head over to our docs.
           </p>
-
-          <p>If you want to try the current <strong>development version</strong>, follow the installation guide in the documentation linked below. Please provide feedback in our <a href="https://invenio-talk.web.cern.ch/c/projects/invenio-rdm">forum</a>.</p>
-
           <div class="goto-button">
-            <a href="https://inveniordm.docs.cern.ch"><i class="fa fa-external-link"></i> Docs</a>
+            <a href="https://inveniordm.docs.cern.ch/install/"><i class="fa fa-external-link"></i> Docs</a>
           </div>
         </p>
 
@@ -256,14 +250,11 @@
 
       <div class="col-md-6">
         <h6>Roadmap</h6>
-          <p>We aim at releasing a Long-Term Support (LTS) version by summer 2021.</p>
-          <p>Until summer 2021, we will be releasing stable
-          versions of InvenioRDM on a monthly/bi-monthly basis that you can
-          upgrade between.</p>
+          <p>August 2021 we have released the first production suitable released of InvenioRDM (v6.0).</p>
 
-          <p>We consider large-scale production validation to have
-          completed as soon as Zenodo is running on top of InvenioRDM (planned
-          after the LTS release - i.e. autumn 2021).</p>
+          <p>Our next major goal is having Zenodo running on top of InvenioRDM (planned for spring 2022). At that point
+          InvenioRDM will have be subject to very heavy production loads and most large features have been shipped
+          a long the way.</p>
 
           <div class="goto-button">
             <a href="{{ '/products/rdm/roadmap'|url}}"><i class="fa fa-road"></i> Roadmap</a>
@@ -274,7 +265,7 @@
           <li><a href="https://inveniordm.docs.cern.ch/maintenance/newcomers/">Newcomers guide</a></li>
           <li><a href="https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open">Development roadmap (for developers)</a></li>
           <li><a href="https://github.com/orgs/inveniosoftware/projects/">Sprintboard</a></li>
-          <li><strong>Standup:</strong> daily at 15:15 UTC on <a href="https://discord.gg/8qatqBC">Discord</a> (#rdm-internal)</li>
+          <li><strong>Standup:</strong> daily at 14:15 UTC on <a href="https://discord.gg/8qatqBC">Discord</a> (#rdm-internal)</li>
         </p>
         <h6>Questions?</h6>
         <p>We're happy to take a chat about InvenioRDM. Please get in touch with us in one of the following manners:
@@ -325,7 +316,12 @@
         <div>
           <h6>Can I see InvenioRDM in action?</h6>
           <p>
-            Not yet, but it will not be far from what Zenodo.org is today.
+            Yes, for instance:
+            <ul>
+              <li><a href="https://inveniordm.web.cern.ch">https://inveniordm.web.cern.ch</a></li>
+              <li><a href="https://repository.tugraz.at">https://repository.tugraz.at</a></li>
+              <li><a href="https://researchdata.tuwien.ac.at">https://researchdata.tuwien.ac.at</a></li>
+            </ul>
           </p>
         </div>
         <div>
@@ -363,14 +359,7 @@
         <div>
           <h6>How do I join the project?</h6>
           <p>
-            To join the project in this initial phase (through Summer 2020), we expect you to commit a minimum of 3 person-months of efforts into the project by Summer 2020. You can commit effort in a variety of ways: development, documentation, requirements gathering, community building, testing, and more. If interested, contact the project manager <a href="mailto:lars.holm.nielsen@cern.ch">Lars Holm Nielsen</a>.
-          </p>
-        </div>
-        <div>
-          <h6>Who are the partners of the project?</h6>
-          <p>
-            Brookhaven National Laboratory, Caltech Library, CERN, the CTSA Program Center for Data to Health, Data Futures, Graz University of Technology, Helmholtz Zentrum Dresden Rossendorf, Northwestern University, OpenAIRE, TUBITAK ULAKBIM
-(Turkish Academic Network and Information Center), TIND, Universität Hamburg and University of Münster.
+            To join the project, we expect you to commit a minimum of 2 person-months of efforts into the project on a yearly basis. You can commit effort in a variety of ways: development, documentation, requirements gathering, community building, testing, and more. If interested, contact the project manager <a href="mailto:lars.holm.nielsen@cern.ch">Lars Holm Nielsen</a>.
           </p>
         </div>
         <div>
@@ -379,7 +368,6 @@
             The InvenioRDM project is funded by the project partners (see above). Also, several funders have provided grants that have funded or still funds part of the development:
             <ul>
               <li>CERN Knowledge Transfer</li>
-              <li>The CTSA Program Center for Data to Health (CD2H) is supported by the National Center for Advancing Translational Sciences (NCATS) at the US National Institutes of Health (Grant U24TR002306).</li>
               <li>European Union’s Horizon 2020 research and innovation programme under the grant agreements OpenAIREplus, OpenAIRE2020, OpenAIRE-Connect & OpenAIRE-Advance.</li>
               <li>Alfred P. Sloan Foundation</li>
               <li>Arcadia Fund</li>
