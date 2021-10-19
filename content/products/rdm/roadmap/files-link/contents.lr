@@ -1,0 +1,12 @@
+column: near-term
+---
+body:
+
+Support linking to files on an external storage system instead of requiring the
+files to be uploaded via InvenioRDM.
+
+*@Caltech*
+---
+category: Files
+---
+title: Linking to files on external storage systems

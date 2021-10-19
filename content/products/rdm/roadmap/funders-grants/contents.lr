@@ -1,0 +1,12 @@
+column: near-term
+---
+body:
+
+Enable the funder/grants field in the deposit form and import the required
+vocabularies in InvenioRDM.
+
+*@CERN*
+---
+category: Vocabularies
+---
+title: Funders and grants

@@ -1,0 +1,11 @@
+column: current
+---
+body:
+
+Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).
+
+*@CERN*
+---
+category: Authentication
+---
+title: EOSC AAI integration

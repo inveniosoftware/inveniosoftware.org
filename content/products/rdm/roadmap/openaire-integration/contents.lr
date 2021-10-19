@@ -1,0 +1,14 @@
+column: near-term
+---
+body:
+
+Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the
+required OAI-PMH sets, export formats as well as allowing direct indexing of
+new records to OpenAIRE.
+
+*@CERN*
+---
+category: Third-party Integrations
+---
+title: OpenAIRE integration
+

@@ -1,0 +1,13 @@
+column: future
+---
+category: Third-party Integrations
+---
+title: ownCloud integration
+---
+body:
+
+Enable selecting files from an ownCloud installation in the deposit form, and
+download the selected files on the server backend. Part of the
+EU-funded project CS3MESH.
+
+*@CERN*

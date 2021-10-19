@@ -1,0 +1,25 @@
+{% from "macros/roadmap-card.html" import render_roadmap_card %}
+
+<div class="row roadmap-table">
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Current</h2>
+        <p>What we work on now</p>
+        {%- for card in this.children if card.column == 'current' %}
+            {{ render_roadmap_card(card) }}
+        {%- endfor %}
+    </div>
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Near-term</h2>
+        <p>What we plan work on next</p>
+        {%- for card in this.children if card.column == 'near-term' %}
+            {{ render_roadmap_card(card) }}
+        {%- endfor %}
+    </div>
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Planned</h2>
+        <p>What we have scheduled</p>
+        {%- for card in this.children if card.column == 'future' %}
+            {{ render_roadmap_card(card) }}
+        {%- endfor %}
+    </div>
+</div>

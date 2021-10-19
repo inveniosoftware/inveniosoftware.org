@@ -18,29 +18,9 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 column">
-                <span class="section-title">Current</span>
-                <p>What we work on now</p>
-                {%- for card in this.children if card.column == 'current' %}
-                    {{ render_roadmap_card(card) }}
-                {%- endfor %}
-            </div>
-            <div class="col-sm-4 column">
-                <span class="section-title">Near-term</span>
-                <p>What we plan work on next</p>
-                {%- for card in this.children if card.column == 'near-term' %}
-                    {{ render_roadmap_card(card) }}
-                {%- endfor %}
-            </div>
-            <div class="col-sm-4 column">
-                <span class="section-title">Future</span>
-                <p>What we investigate</p>
-                {%- for card in this.children if card.column == 'future' %}
-                    {{ render_roadmap_card(card) }}
-                {%- endfor %}
-            </div>
-        </div>
+        
+        {% include "roadmap-table.html" %}
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2 feedback">
                 <h3 class="intro">Feedback or questions on roadmap?</h3>
