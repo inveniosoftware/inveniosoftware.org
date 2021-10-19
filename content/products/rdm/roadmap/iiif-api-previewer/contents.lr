@@ -1,0 +1,12 @@
+column: near-term
+---
+body:
+
+Enables the International Image Interoperability Framework (IIIF) support
+and integrates the Mirador v3 previewer for large images.
+
+*@Data Futures & Uni Hamburg*
+---
+category: IIIF
+---
+title: IIIF image previewer

@@ -1,0 +1,12 @@
+column: future
+---
+body:
+
+Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements the backend first.
+
+*@CERN*
+---
+category: Metadata
+---
+title: Custom fields: REST API support

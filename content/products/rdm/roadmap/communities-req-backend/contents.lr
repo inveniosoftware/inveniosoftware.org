@@ -1,0 +1,14 @@
+column: current
+---
+body:
+
+Implement the REST API and workflows for communities and the requests features.
+This will enable the integration between communities and records as well as the
+general framework for communities submission handling.
+
+*@CERN, Northwestern University & TU Wien*
+---
+category: Communities
+---
+title: Communities REST API: Records/Requests
+

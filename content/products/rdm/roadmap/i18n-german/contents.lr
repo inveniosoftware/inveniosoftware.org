@@ -1,0 +1,13 @@
+column: current
+---
+body:
+
+Finalise the I18N support and provide a german
+translation of InvenioRDM. Further languages to come later.
+
+*@TU Graz & Uni Bamberg*
+---
+category: I18N
+---
+title: Internationalization (I18N)
+
