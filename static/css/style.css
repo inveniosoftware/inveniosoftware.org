@@ -92,6 +92,10 @@ h6 {
   text-align: center;
   margin-bottom: 40px;
 }
+
+h2.section-title {
+  margin-left: 0px;
+}
 #open-source-section {
   margin-bottom: 0px;
 }
@@ -327,15 +331,28 @@ h6 {
 .instances-section p {
   text-align: justify;
 }
+.instances-section ul{
+  text-align: left;
+}
+
+.instances-section dl {
+  text-align: center;
+}
 .instances-section .row {
   padding: 30px 0px;
 }
-.instances-section h6 {
+.instances-section h3 {
   padding-top: 20px;
+  color: #0377cd;
 }
 .faq-section {
   text-align: justify;
 }
+
+.faq-section h3 {
+  color: #0377cd;
+}
+
 .open-source-section {
   text-align: center;
 }
@@ -355,6 +372,11 @@ h6 {
 }
 .features-section-row {
   padding-bottom: 30px;
+}
+
+.features-section h3 {
+  margin-top: 5px;
+  color: #0377cd;
 }
 .inline-row {
   text-align: center;
@@ -445,18 +467,26 @@ footer nav li.title {
   font-weight: 300;
   font-size: 14px;
 }
+.header-section h1,
 .header-section h3 {
   color: white;
   font-size: 2.4em;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
-.header-section h6 {
+
+.header-section h6,
+.header-section .big-sub-title {
   font-size: 1.4em;
   font-weight: 300;
+  font-family: "Oswald", "Open Sans", sans-serif;
 }
 .header-section-title {
   text-align: center;
+}
+
+.header-section-title .sub-title {
+  font-size: 18px;
 }
 
 /* Product pages */
@@ -532,6 +562,17 @@ footer nav li.title {
 }
 
 /* Product roadmap */
+
+.roadmap-table.row .column:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .roadmap-table.row .column:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
 .roadmap-year {
   text-align: left;
   padding-bottom: 0;
@@ -541,8 +582,17 @@ footer nav li.title {
   height: 40px;
   display: contents;
 }
-.roadmap-year h6 {
+.roadmap-section .row.road-map-info .column p {
+  text-align: justify;
+  padding-bottom: 0px;
+}
+.roadmap-section .container:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.roadmap-section .roadmap-year h3 {
   margin-left: 5%;
+  font-size: 1.4em;
 }
 .roadmap-list-container {
   position: relative;
@@ -550,6 +600,10 @@ footer nav li.title {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0.5em 0;
+}
+
+.roadmap-list-container + p {
+  margin-top: 60px;
 }
 .roadmap-list-container::before {
   content: "";
@@ -560,12 +614,17 @@ footer nav li.title {
   width: 4px;
   background: #0377cd;
 }
+
 .roadmap-row:first-child {
   margin-top: 0;
 }
+
 .roadmap-row {
+  display: flex;
+  align-items: flex-start;
   margin: 1em 0;
   position: relative;
+  min-height: 80px;
 }
 .roadmap-row::after {
   content: "";
@@ -575,12 +634,27 @@ footer nav li.title {
 .roadmap-row-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: #d7e4ed;
   border-radius: 0.25em;
   padding: 1em;
-  -webkit-box-shadow: 0 3px 0 #d7e4ed;
-  box-shadow: 0 3px 0 #d7e4ed;
+  transition: 0.3s;
 }
+
+.roadmap-row-content h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.roadmap-row-content h4 ~ p {
+  margin-top: 10px;
+}
+
+.roadmap-row-content.empty {
+  opacity: 0;
+}
+
 .roadmap-row-content::before {
   content: "";
   position: absolute;
@@ -589,7 +663,7 @@ footer nav li.title {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid #d7e4ed;
 }
 .roadmap-row-milestone {
   position: absolute;
@@ -599,6 +673,7 @@ footer nav li.title {
   height: 40px;
   border-radius: 50%;
   background-color: #0377cd;
+  cursor: default;
 }
 .roadmap-row-milestone p {
   margin: 0;
@@ -611,7 +686,12 @@ footer nav li.title {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (min-width: 1140px) {
+
+.roadmap-row-milestone:hover ~ .roadmap-row-content {
+  transform: scale(1.01);
+}
+
+@media only screen and (min-width: 992px) {
   .roadmap-list-container::before {
     left: 50%;
     margin-left: -2px;
@@ -624,22 +704,27 @@ footer nav li.title {
     padding: 1.6em;
     width: 45%;
   }
-  .roadmap-row:nth-child(even) .roadmap-row-content {
-    float: right;
+  .roadmap-row:nth-child(even) {
+    justify-content: flex-end;
   }
   .roadmap-row-content::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: #d7e4ed;
   }
   .roadmap-row:nth-child(even) .roadmap-row-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: #d7e4ed;
   }
+
+  .roadmap-row-content h3 {
+    font-size: 20px;
+  }
+
   .roadmap-row-milestone {
     width: 60px;
     height: 60px;
@@ -652,8 +737,8 @@ footer nav li.title {
   .roadmap-year {
     text-align: center;
   }
-  .roadmap-year h6 {
-    margin-left: 0;
+  .roadmap-section .roadmap-year h3 {
+    margin-left: 0px;
   }
   .roadmap-past-text {
     text-align: center;
@@ -1298,6 +1383,10 @@ a.team-url:hover {
 .roadmap-section .feedback h3 {
   margin-top: 3em;
 }
+.roadmap-section .panel-heading {
+  background-color: #0090e4;
+  color: #fff;
+}
 
 .roadmap-section .panel-heading.development {
   background-color: #0090e4 !important;
@@ -1314,13 +1403,65 @@ a.team-url:hover {
   color: #fff;
 }
 
+.roadmap-section .panel-heading.metadata {
+  background-color: #609ebb;
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.communities {
+  background-color: #b15772;
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.third-party-integrations {
+  background-color: rgb(33, 84, 119);
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.preservation {
+  background-color: #477996;
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.vocabularies {
+  background-color: #915362;
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.files {
+  background-color: rgb(71, 110, 146);
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.authentication {
+  background-color: #2c416e;
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.iiif {
+  background-color: #374058;
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.i18n {
+  background-color: rgb(14, 65, 131);
+  color: #fff;
+}
+
+.roadmap-section .panel-heading.persistent-identifiers {
+  background-color: rgb(13, 55, 80);
+  color: #fff;
+}
+
 .roadmap-section .panel-title {
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 8px;
   color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .roadmap-section .card-description {
@@ -1328,6 +1469,10 @@ a.team-url:hover {
   text-align: left;
   width: 100%;
   margin-bottom: 8px;
+}
+
+.roadmap-section h2 {
+  margin-left: 0px;
 }
 
 /* command-line */

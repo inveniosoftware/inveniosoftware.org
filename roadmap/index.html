@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=25474907">
+<link rel="stylesheet" href="/static/css/style.css?h=af726eb9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -111,8 +111,8 @@
             <div class="col">
               <div class="header-section-title">
                 
-                <h3>Roadmap</h3>
-                <h6>Follow our current, near-term and future plans.</h6>
+                <h1>Roadmap</h1>
+                <p class="sub-title">Follow our current, near-term and future plans.</p>
                 
               </div>
             </div>
@@ -136,11 +136,14 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 column">
-                <span class="section-title">Current</span>
-                <p>What we work on now</p>
-                    
+        
+        
+
+<div class="row roadmap-table">
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Current</h2>
+        <p>What we work on now</p>
+            
 <div class="panel panel-default">
   <div class="panel-heading development">
     Development
@@ -148,14 +151,14 @@
   <div class="panel-body">
     <h3 class="panel-title">Deposit Bundle</h3>
     <div class="card-description">
-    <p>Refactoring of the Invenio-Deposit module.</p>
+      <p>Refactoring of the Invenio-Deposit module.</p>
 <p>The deposit module is being refactored as part of the InvenioRDM project.</p>
 
     </div>
   </div>
 </div>
 
-                    
+            
 <div class="panel panel-default">
   <div class="panel-heading development">
     Development
@@ -163,7 +166,7 @@
   <div class="panel-body">
     <h3 class="panel-title">InvenioRDM Flavour</h3>
     <div class="card-description">
-    <p>Invenio Research Data Management (RDM) system based on Zenodo.</p>
+      <p>Invenio Research Data Management (RDM) system based on Zenodo.</p>
 <p>Funded via the CERN Knowledge Transfer Fund and collaborating institutes.</p>
 <p><a href="/products/rdm/">Product info</a> | <a href="/products/rdm/roadmap/">Roadmap</a></p>
 
@@ -171,7 +174,7 @@
   </div>
 </div>
 
-                    
+            
 <div class="panel panel-default">
   <div class="panel-heading development">
     Development
@@ -179,18 +182,18 @@
   <div class="panel-body">
     <h3 class="panel-title">InvenioILS</h3>
     <div class="card-description">
-    <p>A Modern Integrated Library System.</p>
+      <p>A Modern Integrated Library System.</p>
 <p><a href="/products/ils/">Product info</a></p>
 
     </div>
   </div>
 </div>
 
-            </div>
-            <div class="col-sm-4 column">
-                <span class="section-title">Near-term</span>
-                <p>What we plan work on next</p>
-                    
+    </div>
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Near-term</h2>
+        <p>What we plan work on next</p>
+            
 <div class="panel panel-default">
   <div class="panel-heading development">
     Development
@@ -198,7 +201,7 @@
   <div class="panel-body">
     <h3 class="panel-title">Statistics Bundle</h3>
     <div class="card-description">
-    <p>Document and prepare final releases of the following modules:</p>
+      <p>Document and prepare final releases of the following modules:</p>
 <ul>
 <li>Invenio-Stats</li>
 <li>Invenio-Queues</li>
@@ -209,7 +212,7 @@
   </div>
 </div>
 
-                    
+            
 <div class="panel panel-default">
   <div class="panel-heading development">
     Development
@@ -217,7 +220,7 @@
   <div class="panel-body">
     <h3 class="panel-title">Internationalization (I18N)</h3>
     <div class="card-description">
-    <ul>
+      <ul>
 <li>Translate all v3.0 Invenio modules into at least one other language.</li>
 <li>Develop translation workflow into package release process.</li>
 </ul>
@@ -226,11 +229,11 @@
   </div>
 </div>
 
-            </div>
-            <div class="col-sm-4 column">
-                <span class="section-title">Future</span>
-                <p>What we investigate</p>
-                    
+    </div>
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Planned</h2>
+        <p>What we have scheduled</p>
+            
 <div class="panel panel-default">
   <div class="panel-heading interoperability">
     Interoperability
@@ -238,7 +241,7 @@
   <div class="panel-body">
     <h3 class="panel-title">COAR Next Generation Repositories (NGR)</h3>
     <div class="card-description">
-    <ul>
+      <ul>
 <li><a href="http://swordapp.org/swordv3/">SWORD3</a></li>
 <li><a href="http://www.openarchives.org/rs/toc">ResourceSync</a></li>
 <li><a href="http://signposting.org">Signposting</a></li>
@@ -252,7 +255,7 @@
   </div>
 </div>
 
-                    
+            
 <div class="panel panel-default">
   <div class="panel-heading interoperability">
     Interoperability
@@ -260,14 +263,15 @@
   <div class="panel-body">
     <h3 class="panel-title">Data Citation Roadmap for Scholarly Data Repositories</h3>
     <div class="card-description">
-    <p>Implement recommendations from <a href="https://doi.org/10.1101/097196">https://doi.org/10.1101/097196</a></p>
+      <p>Implement recommendations from <a href="https://doi.org/10.1101/097196">https://doi.org/10.1101/097196</a></p>
 
     </div>
   </div>
 </div>
 
-            </div>
-        </div>
+    </div>
+</div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2 feedback">
                 <h3 class="intro">Feedback or questions on roadmap?</h3>

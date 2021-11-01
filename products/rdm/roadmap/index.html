@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=25474907">
+<link rel="stylesheet" href="/static/css/style.css?h=af726eb9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -111,8 +111,8 @@
             <div class="col">
               <div class="header-section-title">
                 
-                <h3>InvenioRDM Roadmap</h3>
-                <h6>The road to InvenioRDM</h6>
+                <h1>InvenioRDM Roadmap</h1>
+                <p class="sub-title">October 2021 - March 2022</p>
                 
               </div>
             </div>
@@ -123,124 +123,470 @@
     </section>
   
   
+
 <section class="roadmap-section section-content-light-bg">
   <div class="container">
-    <span class="section-title">Roadmap</span>
+    
 
-    <p>We aim at releasing a <strong>Long-Term Support (LTS)</strong> version by summer 2021.</p>
+<div class="row roadmap-table">
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Current</h2>
+        <p>What we work on now</p>
+            
+<div class="panel panel-default">
+  <div class="panel-heading authentication">
+    Authentication
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">EOSC AAI integration</h3>
+    <div class="card-description">
+      <p>Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).</p>
+<p><em>@CERN</em></p>
 
-    <p>From February 2021 until summer 2021, we will be releasing <strong>stable</strong>
-    versions of InvenioRDM on a monthly/bi-monthly basis that you can
-    upgrade between.</p>
-
-    <p>We consider large-scale production validation to have
-    completed as soon as Zenodo is running on top of InvenioRDM (planned
-    after the LTS release).</p>
-
-    <h6>FAQ</h6>
-    <div class="row">
-      <div class="col-md-6">
-      <p>
-        <strong>What does a stable release mean?</strong> <br />
-        A stable release means that we will provide an upgrade path to a
-        subsequent version (manual or automatic). You should assign efforts to
-        upgrade to the latest stable release continuously as we will only
-        provide bug fixes or security updates to the
-        <em>latest stable version</em>.
-      </p>
-      <p>
-        <strong>What will change between stable releases?</strong> <br />
-        Each stable release will usually add new features or improve on
-        existing. We try to limit as much as possible changes to existing
-        features, however we cannot exclude that changes might be needed.
-      </p>
-      <p>
-        <strong>When is the roadmap updated?</strong> <br />
-        We update the roadmap quartly according to the current progress and
-        available resources. Next update: January, 2021.
-      </p>
-      <p>
-        <strong>How did you estimate the required effort?</strong> <br />
-        The detailed tasks and their associated estimated efforts are available
-        in our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a> on GitHub which is tracking the
-        current project progress.
-      </p>
-      <p>
-        <strong>How can I help accelerate the roadmap?</strong> <br />
-        We will be happy to explore with you, how you can best help accelerate the
-        roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>).
-      </p>
-      </div>
-      <div class="col-md-6">
-        <p>
-          <strong>What does Long-Term Support mean?</strong> <br />
-          Long-Term Support (LTS) means that we will provide bug fixes and
-          security updates for minimum 1 year or until and including the next
-          the LTS release. If resources allow, support <em>may</em> be extended
-          further.
-        </p>
-        <p>
-          <strong>When can I run InvenioRDM in production?</strong> <br />
-          It depends on your requirements and needs. You can deploy a stable
-          release for a smaller userbase if you have the resources to
-          continuously upgrade the repository and the InvenioRDM feature set
-          satisfies your needs. If you need a fully featured repository, wait
-          until the LTS release. If you need a large-scale production
-          validated repository, wait until Zenodo is running on InvenioRDM.
-        </p>
-        <p>
-          <strong>When is feature X ready?</strong> <br />
-          Please see the roadmap below (for further details please see our <a href="https://github.com/inveniosoftware/product-rdm">developer roadmap</a>). Note that, there is a risk that tasks may
-          be shuffled around between months depending on available resources
-          with each partner. Tasks may also be brought forward if a partner
-          finds resources, or similarly be delayed if a partner pulls out
-          resources.
-        </p>
-      </div>
     </div>
+  </div>
+</div>
 
-    <div class="roadmap-year"><h6>2021</h6></div>
-    <div class="roadmap-list-container">
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Aug</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Holiday period 🏝 🏖 🏔</h3>
-          <ul>
-            <li>Bug fixes</li>
-            <li>Documentation</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Sep</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>Virtual Project Meeting</h3>
-          <ul>
-            <li>Develop roadmap for the next 6-12 months</li>
-          </ul>
-        </div>
-      </div>
-      <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-          <p>Oct-</p>
-        </div>
-        <div class="roadmap-row-content">
-          <h3>...</h3>
-          The roadmap will be updated after the next virtual project meeting
-          where the partners will meet to determine priorities and available
-          resources.
-        </div>
-      </div>
+            
+<div class="panel panel-default">
+  <div class="panel-heading persistent-identifiers">
+    Persistent identifiers
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">DOI minting support</h3>
+    <div class="card-description">
+      <p>Support for registering DataCite DOIs as well as for developing
+your own plugins for registering other types of persistent identifiers
+(Crossref DOIs, ARKs, Handles, ...).</p>
+<p><em>@CERN</em></p>
+
     </div>
-    <div align="center">
+  </div>
+</div>
 
-    </div
+            
+<div class="panel panel-default">
+  <div class="panel-heading vocabularies">
+    Vocabularies
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
+    <div class="card-description">
+      <p>Enable auto-completion of creators/contributors in the deposit from a local
+names vocabulary that can be filled from e.g. ORCiD or your institutional
+employee database.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Data citation support</h3>
+    <div class="card-description">
+      <p>Improve the data citation support in InvenioRDM according to <a href="https://doi.org/10.1038/s41597-019-0031-8">Fenner et al. (2019) A data citation roadmap for scholarly data repositories</a>.</p>
+<p><em>@Front Matter</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
+    <div class="card-description">
+      <p>Implement the REST API and workflows for communities and the requests features.
+This will enable the integration between communities and records as well as the
+general framework for communities submission handling.</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading i18n">
+    I18N
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Internationalization (I18N)</h3>
+    <div class="card-description">
+      <p>Finalise the I18N support and provide a german
+translation of InvenioRDM. Further languages to come later.</p>
+<p><em>@TU Graz &amp; Uni Bamberg</em></p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Near-term</h2>
+        <p>What we plan work on next</p>
+            
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Members support</h3>
+    <div class="card-description">
+      <p>Adds support for having multiple community owners and members of communities
+with curation capabilities. This task only deals with the REST API and backend
+(i.e. the user interface is a separate task).</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading third-party-integrations">
+    Third-party Integrations
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OpenAIRE integration</h3>
+    <div class="card-description">
+      <p>Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the
+required OAI-PMH sets, export formats as well as allowing direct indexing of
+new records to OpenAIRE.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading vocabularies">
+    Vocabularies
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Funders and grants</h3>
+    <div class="card-description">
+      <p>Enable the funder/grants field in the deposit form and import the required
+vocabularies in InvenioRDM.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading files">
+    Files
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Linking to files on external storage systems</h3>
+    <div class="card-description">
+      <p>Support linking to files on an external storage system instead of requiring the
+files to be uploaded via InvenioRDM.</p>
+<p><em>@Caltech</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading iiif">
+    IIIF
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">IIIF image previewer</h3>
+    <div class="card-description">
+      <p>Enables the International Image Interoperability Framework (IIIF) support
+and integrates the Mirador v3 previewer for large images.</p>
+<p><em>@Data Futures &amp; Uni Hamburg</em></p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="col-sm-4 column">
+        <h2 class="section-title">Planned</h2>
+        <p>What we have scheduled</p>
+            
+<div class="panel panel-default">
+  <div class="panel-heading third-party-integrations">
+    Third-party Integrations
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">ownCloud integration</h3>
+    <div class="card-description">
+      <p>Enable selecting files from an ownCloud installation in the deposit form, and
+download the selected files on the server backend. Part of the
+EU-funded project CS3MESH.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities UI: Members</h3>
+    <div class="card-description">
+      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities UI: Records/requests</h3>
+    <div class="card-description">
+      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OAI-PMH sets support</h3>
+    <div class="card-description">
+      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
+<p><em>@TU Graz</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading preservation">
+    Preservation
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OCFL Backend Support</h3>
+    <div class="card-description">
+      <p>Support for storing records and files according to the
+Oxford Common Filesystem Layout.</p>
+<p><em>@Data Futures</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Custom fields: REST API support</h3>
+    <div class="card-description">
+      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements the backend first.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
   </div>
 </section>
+
+<section class="roadmap-section section-content-white-bg">
+  <div class="container">
+    <h2 class="section-title">Release dates</h2>
+
+    <div class="container">
+      <p>
+        Following is an overview over the upcoming planned releases. For more information, please read our <a href="https://inveniordm.docs.cern.ch/releases/maintenance-policy/" title="InvenioRDM maintenance policy">maintenance policy</a>.
+      </p>
+      <div class="road-map-info row">
+
+        <div class="col-sm-6 column">
+          <h3>Long-Term Support (LTS) - production-ready</h3>
+          <p>
+            LTS are releases that can be used for production services. LTS releases is supported with bug and security fixes for minimum 1 year and maximum until 6 months after the next LTS release has been released.
+          </p>
+        </div>
+        <div class="col-sm-6 column">
+          <h3>Short-Term Support (STS)</h3>
+          <p>
+            STS releases should NOT be used for production services. An STS releases is only supported until the next release.
+            STS releases are used to ship new features fast so that the community can provide feedback.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="roadmap-year">
+    <h3>2021</h3>
+</div>
+
+<div class="roadmap-list-container">
+    <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+            <p>Oct</p>
+        </div>
+        <div class="roadmap-row-content">
+            <h4>v7.0</h4>
+            <p>Maintained until v8.0</p>
+        </div>
+    </div>
+    <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+            <p>Nov</p>
+        </div>
+        <div class="roadmap-row-content empty">
+        </div>
+    </div>
+    <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+            <p>Dec</p>
+        </div>
+        <div class="roadmap-row-content">
+            <h4>v8.0</h4>
+            <p>Maintained until v9.0</p>
+        </div>
+    </div>
+</div>
+
+<div class="roadmap-year">
+    <h3>2022</h3>
+</div>
+
+<div class="roadmap-list-container">
+    <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+            <p>Jan</p>
+        </div>
+        <div class="roadmap-row-content empty">
+        </div>
+    </div>
+    <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+            <p>Feb</p>
+        </div>
+        <div class="roadmap-row-content">
+            <h4>v9.0</h4>
+            <p>Maintained until v10.0</p>
+        </div>
+    </div>
+    <div class="roadmap-row">
+        <div class="roadmap-row-milestone">
+            <p>Mar</p>
+        </div>
+        <div class="roadmap-row-content">
+            <h4>v10.0 LTS</h4>
+            <p>Maintained until the next LTS release.</p>
+        </div>
+    </div>
+</div>
+  </div>
+</section>
+
+<section class="roadmap-section section-content-light-bg">
+  <div class="container">
+    <h2 class="section-title">FAQ</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          <strong>When is the roadmap updated?</strong> <br />
+          We update the roadmap roughly every 3 months. The next update is
+          planned for January 2022.
+        </p>
+        <p>
+          <strong>When will feature X be released?</strong> <br />
+          New features are released as soon as they are ready in the next
+          coming release. We on purpose do not communicate in which
+          release a given feature will be shipped.
+        </p>
+        <p>
+          <strong>Why do you not tie features to release dates?</strong> <br />
+          We want to communicate clearly the inherent uncertainty in our planned
+          schedule coming from developing a product as a large open source
+          collaboration.
+        </p>
+        <p>
+          <strong>What is the inherent uncertainties in your development schedule?</strong> <br />
+          As a large open source collaboration, most our resources comes as opportunistic
+          temporary resources. Partners may contribute developers on a short-term/long-term
+          basis, full-time or part-time. This means the development teams are rarely stable
+          for a longer period, and each team has different velocity and skillset. In addition,
+          a large part of the developers participate in running services for their institution
+          and services may from to time need immediate attention. We see all these challenges
+          as strengths of the InvenioRDM community that helps us sustain the development
+          and build features relevant for the community.
+        </p>
+        <p>
+          <strong>Is your internal development schedule public?</strong> <br />
+          No. Only InvenioRDM partners have access to the internal development
+          schedule.
+        </p>
+
+      </div>
+
+      <div class="col-md-6">
+        <p>
+          <strong>What does current, near-term and planned mean?</strong> <br />
+          Current means that a development team is currently working on the
+          feature.<br />
+          Near-term means that a development team has planned to work on this
+          feature as their next task.<br />
+          Planned means that a development team has allocated time on their schedule to work
+          on the feature.
+        </p>
+        <p>
+          <strong>Will "current" features be released before
+          "near-term" features?</strong> <br />
+          No. It is not guaranteed that a feature currently under development will
+          be released before a feature in the near-term column. Each feature can vary
+          greatly in size and required effort, as can the team that implements the
+          feature.
+        </p>
+        <p>
+          <strong>Can I use your roadmap to make commitments?</strong> <br />
+          Any commitment you make is your own commitment and made at your own risk and
+          you must evaluate the impact of not meeting your commitment. If you
+          need a specific feature, the best you can do is to help accelerate the roadmap.
+        </p>
+        <p>
+          <strong>How can I help accelerate the roadmap?</strong> <br />
+          We will be happy to explore with you, how you can best help accelerate the
+          roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>). Options include anything from contributing developers to contracting
+          out work to other InvenioRDM partners.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <footer>
