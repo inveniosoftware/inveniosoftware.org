@@ -1,3 +1,5 @@
+{% from "macros/roadmap-card.html" import render_roadmap_card %}
+
 {% extends "page-rdm.html" %}
 {% block page_title %}{{ this.title }}{% endblock %}
 {% block page_subtitle %}October 2021 - March 2022{% endblock %}
@@ -7,6 +9,24 @@
 <section class="roadmap-section section-content-light-bg">
   <div class="container">
     {% include "roadmap-table.html" %}
+    <div class="row roadmap-table">
+      <div class="col-sm-4 column">
+      </div>
+      <div class="col-sm-4 column">
+          <h2 class="section-title">Done 🚀</h2>
+          <p>What we have recently completed</p>
+      </div>
+    </div>
+    {%- set done_cards = this.children|selectattr("column", "eq", "done") %}
+    <div class="row roadmap-table">
+    {%- for column in done_cards|slice(3) %}
+      <div class="col-sm-4 column">
+      {% for card in column %}
+        {{ render_roadmap_card(card) }}
+      {%- endfor %}
+      </div>
+    {%- endfor %}
+    </div>
   </div>
 </section>
 
