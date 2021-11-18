@@ -114,7 +114,7 @@
               <div class="header-section-title">
                 
                 <h1>InvenioRDM Roadmap</h1>
-                <p class="sub-title">October 2021 - March 2022</p>
+                <p class="sub-title">October 2021</p>
                 
               </div>
             </div>
@@ -136,13 +136,31 @@
         <p>What we work on now</p>
             
 <div class="panel panel-default">
-  <div class="panel-heading authentication">
-    Authentication
+  <div class="panel-heading i18n">
+    I18N
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">EOSC AAI integration</h3>
+    <h3 class="panel-title">Internationalization (I18N)</h3>
     <div class="card-description">
-      <p>Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).</p>
+      <p>Finalise the I18N support and provide a german
+translation of InvenioRDM. Further languages to come later.</p>
+<p><em>@TU Graz &amp; Uni Bamberg</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading vocabularies">
+    Vocabularies
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
+    <div class="card-description">
+      <p>Enable auto-completion of creators/contributors in the deposit from a local
+names vocabulary that can be filled from e.g. ORCiD or your institutional
+employee database.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -168,16 +186,14 @@ your own plugins for registering other types of persistent identifiers
 
             
 <div class="panel panel-default">
-  <div class="panel-heading vocabularies">
-    Vocabularies
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
+    <h3 class="panel-title">OAI-PMH sets support</h3>
     <div class="card-description">
-      <p>Enable auto-completion of creators/contributors in the deposit from a local
-names vocabulary that can be filled from e.g. ORCiD or your institutional
-employee database.</p>
-<p><em>@CERN</em></p>
+      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
+<p><em>@TU Graz</em></p>
 
     </div>
   </div>
@@ -185,14 +201,14 @@ employee database.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
+  <div class="panel-heading authentication">
+    Authentication
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Data citation support</h3>
+    <h3 class="panel-title">EOSC AAI integration</h3>
     <div class="card-description">
-      <p>Improve the data citation support in InvenioRDM according to <a href="https://doi.org/10.1038/s41597-019-0031-8">Fenner et al. (2019) A data citation roadmap for scholarly data repositories</a>.</p>
-<p><em>@Front Matter</em></p>
+      <p>Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -217,15 +233,14 @@ general framework for communities submission handling.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading i18n">
-    I18N
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Internationalization (I18N)</h3>
+    <h3 class="panel-title">Data citation support</h3>
     <div class="card-description">
-      <p>Finalise the I18N support and provide a german
-translation of InvenioRDM. Further languages to come later.</p>
-<p><em>@TU Graz &amp; Uni Bamberg</em></p>
+      <p>Improve the data citation support in InvenioRDM according to <a href="https://doi.org/10.1038/s41597-019-0031-8">Fenner et al. (2019) A data citation roadmap for scholarly data repositories</a>.</p>
+<p><em>@Front Matter</em></p>
 
     </div>
   </div>
@@ -235,23 +250,6 @@ translation of InvenioRDM. Further languages to come later.</p>
     <div class="col-sm-4 column">
         <h2 class="section-title">Near-term</h2>
         <p>What we plan work on next</p>
-            
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Members support</h3>
-    <div class="card-description">
-      <p>Adds support for having multiple community owners and members of communities
-with curation capabilities. This task only deals with the REST API and backend
-(i.e. the user interface is a separate task).</p>
-<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
-
-    </div>
-  </div>
-</div>
-
             
 <div class="panel panel-default">
   <div class="panel-heading third-party-integrations">
@@ -271,15 +269,16 @@ new records to OpenAIRE.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading vocabularies">
-    Vocabularies
+  <div class="panel-heading communities">
+    Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Funders and grants</h3>
+    <h3 class="panel-title">Communities REST API: Members support</h3>
     <div class="card-description">
-      <p>Enable the funder/grants field in the deposit form and import the required
-vocabularies in InvenioRDM.</p>
-<p><em>@CERN</em></p>
+      <p>Adds support for having multiple community owners and members of communities
+with curation capabilities. This task only deals with the REST API and backend
+(i.e. the user interface is a separate task).</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
 
     </div>
   </div>
@@ -296,6 +295,22 @@ vocabularies in InvenioRDM.</p>
       <p>Support linking to files on an external storage system instead of requiring the
 files to be uploaded via InvenioRDM.</p>
 <p><em>@Caltech</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading vocabularies">
+    Vocabularies
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Funders and grants</h3>
+    <div class="card-description">
+      <p>Enable the funder/grants field in the deposit form and import the required
+vocabularies in InvenioRDM.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -323,6 +338,22 @@ and integrates the Mirador v3 previewer for large images.</p>
         <p>What we have scheduled</p>
             
 <div class="panel panel-default">
+  <div class="panel-heading preservation">
+    Preservation
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OCFL Backend Support</h3>
+    <div class="card-description">
+      <p>Support for storing records and files according to the
+Oxford Common Filesystem Layout.</p>
+<p><em>@Data Futures</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
   <div class="panel-heading third-party-integrations">
     Third-party Integrations
   </div>
@@ -332,6 +363,22 @@ and integrates the Mirador v3 previewer for large images.</p>
       <p>Enable selecting files from an ownCloud installation in the deposit form, and
 download the selected files on the server backend. Part of the
 EU-funded project CS3MESH.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Custom fields: REST API support</h3>
+    <div class="card-description">
+      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements the backend first.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -362,53 +409,6 @@ EU-funded project CS3MESH.</p>
     <h3 class="panel-title">Communities UI: Records/requests</h3>
     <div class="card-description">
       <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OAI-PMH sets support</h3>
-    <div class="card-description">
-      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
-<p><em>@TU Graz</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading preservation">
-    Preservation
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OCFL Backend Support</h3>
-    <div class="card-description">
-      <p>Support for storing records and files according to the
-Oxford Common Filesystem Layout.</p>
-<p><em>@Data Futures</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Custom fields: REST API support</h3>
-    <div class="card-description">
-      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
-The current task implements the backend first.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -466,7 +466,7 @@ The current task implements the backend first.</p>
         <div class="col-sm-6 column">
           <h3>Long-Term Support (LTS) - production-ready</h3>
           <p>
-            LTS are releases that can be used for production services. LTS releases is supported with bug and security fixes for minimum 1 year and maximum until 6 months after the next LTS release has been released.
+            LTS are releases that can be used for production services. LTS releases are supported with bug and security fixes for minimum 1 year and maximum until 6 months after the next LTS release has been released.
           </p>
         </div>
         <div class="col-sm-6 column">
@@ -487,15 +487,6 @@ The current task implements the backend first.</p>
 <div class="roadmap-list-container">
     <div class="roadmap-row">
         <div class="roadmap-row-milestone">
-            <p>Oct</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>v7.0</h4>
-            <p>Maintained until v8.0</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
             <p>Nov</p>
         </div>
         <div class="roadmap-row-content empty">
@@ -506,8 +497,8 @@ The current task implements the backend first.</p>
             <p>Dec</p>
         </div>
         <div class="roadmap-row-content">
-            <h4>v8.0</h4>
-            <p>Maintained until v9.0</p>
+            <h4>v7.0 (STS)</h4>
+            <p>Maintained until v8.0</p>
         </div>
     </div>
 </div>
@@ -529,8 +520,8 @@ The current task implements the backend first.</p>
             <p>Feb</p>
         </div>
         <div class="roadmap-row-content">
-            <h4>v9.0</h4>
-            <p>Maintained until v10.0</p>
+            <h4>v8.0 (STS)</h4>
+            <p>Maintained until v9.0</p>
         </div>
     </div>
     <div class="roadmap-row">
@@ -538,7 +529,7 @@ The current task implements the backend first.</p>
             <p>Mar</p>
         </div>
         <div class="roadmap-row-content">
-            <h4>v10.0 LTS</h4>
+            <h4>v9.0 (LTS)</h4>
             <p>Maintained until the next LTS release.</p>
         </div>
     </div>
@@ -551,6 +542,11 @@ The current task implements the backend first.</p>
     <h2 class="section-title">FAQ</h2>
     <div class="row">
       <div class="col-md-6">
+        <p>
+          <strong>What are your top priorities?</strong> <br />
+          Our top priorities in the coming period is to ship the communities
+          and custom fields features.
+        </p>
         <p>
           <strong>When is the roadmap updated?</strong> <br />
           We update the roadmap roughly every 3 months. The next update is
@@ -576,32 +572,34 @@ The current task implements the backend first.</p>
           for a longer period, and each team has different velocity and skillset. In addition,
           a large part of the developers participate in running services for their institution
           and services may from to time need immediate attention. We see all these challenges
-          as strengths of the InvenioRDM community that helps us sustain the development
-          and build features relevant for the community.
+          as strengths for the InvenioRDM community, that overall helps build a stronger
+          and more resilient community, as well as building features that serve
+          real needs for our community.
         </p>
-        <p>
-          <strong>Is your internal development schedule public?</strong> <br />
-          No. Only InvenioRDM partners have access to the internal development
-          schedule.
-        </p>
+
 
       </div>
 
       <div class="col-md-6">
         <p>
+          <strong>Is your internal development schedule public?</strong> <br />
+          No. Only InvenioRDM partners have access to the internal development
+          schedule.
+        </p>
+        <p>
           <strong>What does current, near-term and planned mean?</strong> <br />
-          Current means that a development team is currently working on the
+          <i>Current</i> means that a development team is currently working on the
           feature.<br />
-          Near-term means that a development team has planned to work on this
+          <i>Near-term</i> means that a development team has planned to work on this
           feature as their next task.<br />
-          Planned means that a development team has allocated time on their schedule to work
-          on the feature.
+          <i>Planned</i> means that a development team has allocated time on their schedule to start work
+          on the feature in the next 6 months.
         </p>
         <p>
           <strong>Will "current" features be released before
           "near-term" features?</strong> <br />
           No. It is not guaranteed that a feature currently under development will
-          be released before a feature in the near-term column. Each feature can vary
+          be released before a feature in the near-term column. Each feature may vary
           greatly in size and required effort, as can the team that implements the
           feature.
         </p>
