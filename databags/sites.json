@@ -490,6 +490,14 @@
       "url": "https://museumbollandianum.be",
       "screenshot_filename": "museumbollandianum.png",
       "types": ["Library"]
+    },
+    {
+      "name": "Sceiba",
+      "country": "CU",
+      "description": "Sceiba collects and manages metadata of Cuban research outputs and links them to systems for identification of people and organizations. Includes an application to evaluation and monitoring of research outputs. Sceiba is currently a Beta product.",
+      "url": "https://sceiba.cu",
+      "screenshot_filename": "sceiba.png",
+      "types": ["repository"]
     }
   ]
 }
