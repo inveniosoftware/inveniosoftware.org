@@ -167,23 +167,6 @@ Oxford Common Filesystem Layout.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading third-party-integrations">
-    Third-party Integrations
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OpenAIRE integration</h3>
-    <div class="card-description">
-      <p>Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the
-required OAI-PMH sets, export formats as well as allowing direct indexing of
-new records to OpenAIRE.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
   <div class="panel-heading communities">
     Communities
   </div>
@@ -194,6 +177,23 @@ new records to OpenAIRE.</p>
 with curation capabilities. This task only deals with the REST API and backend
 (i.e. the user interface is a separate task).</p>
 <p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading third-party-integrations">
+    Third-party Integrations
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OpenAIRE integration</h3>
+    <div class="card-description">
+      <p>Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the
+required OAI-PMH sets, export formats as well as allowing direct indexing of
+new records to OpenAIRE.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -220,15 +220,15 @@ with curation capabilities. This task only deals with the REST API and backend
         <p>A team plans to work on this next</p>
             
 <div class="panel panel-default">
-  <div class="panel-heading iiif">
-    IIIF
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">IIIF image previewer</h3>
+    <h3 class="panel-title">Custom fields: REST API support</h3>
     <div class="card-description">
-      <p>Enables the International Image Interoperability Framework (IIIF) support
-and integrates the Mirador v3 previewer for large images.</p>
-<p><em>@Data Futures &amp; Uni Hamburg</em></p>
+      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements the backend first.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -268,15 +268,15 @@ files to be uploaded via InvenioRDM.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
+  <div class="panel-heading iiif">
+    IIIF
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Custom fields: REST API support</h3>
+    <h3 class="panel-title">IIIF image previewer</h3>
     <div class="card-description">
-      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
-The current task implements the backend first.</p>
-<p><em>@CERN</em></p>
+      <p>Enables the International Image Interoperability Framework (IIIF) support
+and integrates the Mirador v3 previewer for large images.</p>
+<p><em>@Data Futures &amp; Uni Hamburg</em></p>
 
     </div>
   </div>
@@ -318,56 +318,6 @@ EU-funded project CS3MESH.</p>
       
         
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Records/requests</h3>
-    <div class="card-description">
-      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OAI-PMH sets support</h3>
-    <div class="card-description">
-      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
-<p><em>@TU Graz</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading vocabularies">
-    Vocabularies
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
-    <div class="card-description">
-      <p>Enable auto-completion of creators/contributors in the deposit from a local
-names vocabulary that can be filled from e.g. ORCiD or your institutional
-employee database.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-      </div>
-      <div class="col-sm-4 column">
-      
-        
-<div class="panel panel-default">
   <div class="panel-heading metadata">
     Metadata
   </div>
@@ -397,6 +347,23 @@ your own plugins for registering other types of persistent identifiers
   </div>
 </div>
 
+        
+<div class="panel panel-default">
+  <div class="panel-heading vocabularies">
+    Vocabularies
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
+    <div class="card-description">
+      <p>Enable auto-completion of creators/contributors in the deposit from a local
+names vocabulary that can be filled from e.g. ORCiD or your institutional
+employee database.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
       </div>
       <div class="col-sm-4 column">
       
@@ -409,6 +376,39 @@ your own plugins for registering other types of persistent identifiers
     <h3 class="panel-title">EOSC AAI integration</h3>
     <div class="card-description">
       <p>Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OAI-PMH sets support</h3>
+    <div class="card-description">
+      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
+<p><em>@TU Graz</em></p>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="col-sm-4 column">
+      
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities UI: Records/requests</h3>
+    <div class="card-description">
+      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -471,32 +471,6 @@ general framework for communities submission handling.</p>
 <div class="roadmap-list-container">
     <div class="roadmap-row">
         <div class="roadmap-row-milestone">
-            <p>Jan</p>
-        </div>
-        <div class="roadmap-row-content empty">
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Feb</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>v8.0 (STS)</h4>
-            <p>
-            <ul>
-                <li>Maintained until v9.0.</li>
-                <li>Released: March 3rd.</li>
-            </ul>
-            </p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Mar</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
             <p>Apr</p>
         </div>
         <div class="roadmap-row-content">
@@ -504,7 +478,7 @@ general framework for communities submission handling.</p>
             <p>
             <ul>
                 <li>Maintained until the next LTS release.</li>
-                <li>Planned release date: April 15th.</li>
+                <li>Planned release date: April 15th (postponed to end of April).</li>
             </ul>
             </p>
         </div>
@@ -513,18 +487,32 @@ general framework for communities submission handling.</p>
         <div class="roadmap-row-milestone">
             <p>May</p>
         </div>
-        <div class="roadmap-row-content">
-            <p><i>Releases between May to Aug will be announced by March 7th.</i></p>
-        </div>
     </div>
     <div class="roadmap-row">
         <div class="roadmap-row-milestone">
             <p>Jun</p>
         </div>
+        <div class="roadmap-row-content">
+            <h4>OR2022</h4>
+            <p>
+            <ul>
+                <li>InvenioRDM Workshop at Open Repositories 2022</li>
+            </ul>
+            </p>
+        </div>
     </div>
     <div class="roadmap-row">
         <div class="roadmap-row-milestone">
             <p>Jul</p>
+        </div>
+        <div class="roadmap-row-content">
+            <h4>v10.0 (STS)</h4>
+            <p>
+            <ul>
+                <li>Maintained until v11.</li>
+                <li>Planned release date: end of July.</li>
+            </ul>
+            </p>
         </div>
     </div>
     <div class="roadmap-row">
