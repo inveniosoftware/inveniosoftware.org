@@ -1,0 +1,14 @@
+column: near-term
+---
+body:
+
+Implement the core features to enable and make data migration to a new InvenioRDM
+instance easy. The new tools will be tested and progressively enhanced while
+migrating the current Zenodo production instance to a new Zenodo instance
+based on InvenioRDM.
+
+*@CERN*
+---
+category: Metadata
+---
+title: Back office / Admin
