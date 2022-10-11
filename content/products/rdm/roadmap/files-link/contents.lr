@@ -1,11 +1,11 @@
-column: near-term
+column: current
 ---
 body:
 
 Support linking to files on an external storage system instead of requiring the
 files to be uploaded via InvenioRDM.
 
-*@Caltech*
+*@CERN*
 ---
 category: Files
 ---
