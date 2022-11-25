@@ -152,22 +152,6 @@ new records to OpenAIRE.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading i18n">
-    I18N
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Internationalization (I18N)</h3>
-    <div class="card-description">
-      <p>Finalise the I18N support and provide a german
-translation of InvenioRDM. Further languages to come later.</p>
-<p><em>@TU Graz &amp; Uni Bamberg</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
   <div class="panel-heading preservation">
     Preservation
   </div>
@@ -182,10 +166,42 @@ Oxford Common Filesystem Layout.</p>
   </div>
 </div>
 
+            
+<div class="panel panel-default">
+  <div class="panel-heading i18n">
+    I18N
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Internationalization (I18N)</h3>
+    <div class="card-description">
+      <p>Finalise the I18N support and provide a german
+translation of InvenioRDM. Further languages to come later.</p>
+<p><em>@TU Graz &amp; Uni Bamberg</em></p>
+
+    </div>
+  </div>
+</div>
+
     </div>
     <div class="col-sm-4 column">
         <h2 class="section-title">Near-term</h2>
         <p>A team plans to work on this next</p>
+            
+<div class="panel panel-default">
+  <div class="panel-heading files">
+    Files
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Linking to files on external storage systems</h3>
+    <div class="card-description">
+      <p>Support linking to files on an external storage system instead of requiring the
+files to be uploaded via InvenioRDM.</p>
+<p><em>@Caltech</em></p>
+
+    </div>
+  </div>
+</div>
+
             
 <div class="panel panel-default">
   <div class="panel-heading metadata">
@@ -199,22 +215,6 @@ instance easy. The new tools will be tested and progressively enhanced while
 migrating the current Zenodo production instance to a new Zenodo instance
 based on InvenioRDM.</p>
 <p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading files">
-    Files
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Linking to files on external storage systems</h3>
-    <div class="card-description">
-      <p>Support linking to files on an external storage system instead of requiring the
-files to be uploaded via InvenioRDM.</p>
-<p><em>@Caltech</em></p>
 
     </div>
   </div>
@@ -256,6 +256,23 @@ EU-funded project CS3MESH.</p>
       
         
 <div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
+    <div class="card-description">
+      <p>Implement the REST API and workflows for communities and the requests features.
+This will enable the integration between communities and records as well as the
+general framework for communities submission handling.</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
   <div class="panel-heading metadata">
     Metadata
   </div>
@@ -271,13 +288,79 @@ EU-funded project CS3MESH.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
+  <div class="panel-heading iiif">
+    IIIF
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Members</h3>
+    <h3 class="panel-title">IIIF image previewer</h3>
     <div class="card-description">
-      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
+      <p>Enables the International Image Interoperability Framework (IIIF) support
+and integrates the Mirador v3 previewer for large images.</p>
+<p><em>@Data Futures &amp; Uni Hamburg</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Basic OAI-PMH server</h3>
+    <div class="card-description">
+      <p><em>@TU Graz</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading authentication">
+    Authentication
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">EOSC AAI integration</h3>
+    <div class="card-description">
+      <p>Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="col-sm-4 column">
+      
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Back office / Admin</h3>
+    <div class="card-description">
+      <p>Implement a basic an back office administration interface for InvenioRDM.
+The tasks focuses on setting up the main skeleton for the administration
+interface, and add the first couple of administration actions into the form.</p>
+<p><em>@CERN</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Custom fields</h3>
+    <div class="card-description">
+      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements both the backend and frontend.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -303,32 +386,14 @@ employee database.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading vocabularies">
-    Vocabularies
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Funders and grants</h3>
-    <div class="card-description">
-      <p>Enable the funder/grants field in the deposit form and import the required
-vocabularies in InvenioRDM.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
   <div class="panel-heading communities">
     Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Members support</h3>
+    <h3 class="panel-title">Communities UI: Records/requests</h3>
     <div class="card-description">
-      <p>Adds support for having multiple community owners and members of communities
-with curation capabilities. This task only deals with the REST API and backend
-(i.e. the user interface is a separate task).</p>
-<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -339,30 +404,14 @@ with curation capabilities. This task only deals with the REST API and backend
       
         
 <div class="panel panel-default">
-  <div class="panel-heading authentication">
-    Authentication
+  <div class="panel-heading communities">
+    Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">EOSC AAI integration</h3>
+    <h3 class="panel-title">Communities UI: Members</h3>
     <div class="card-description">
-      <p>Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).</p>
+      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
 <p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading iiif">
-    IIIF
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">IIIF image previewer</h3>
-    <div class="card-description">
-      <p>Enables the International Image Interoperability Framework (IIIF) support
-and integrates the Mirador v3 previewer for large images.</p>
-<p><em>@Data Futures &amp; Uni Hamburg</em></p>
 
     </div>
   </div>
@@ -387,35 +436,15 @@ your own plugins for registering other types of persistent identifiers
 
         
 <div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Back office / Admin</h3>
-    <div class="card-description">
-      <p>Implement a basic an back office administration interface for InvenioRDM.
-The tasks focuses on setting up the main skeleton for the administration
-interface, and add the first couple of administration actions into the form.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-      </div>
-      <div class="col-sm-4 column">
-      
-        
-<div class="panel panel-default">
   <div class="panel-heading communities">
     Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
+    <h3 class="panel-title">Communities REST API: Members support</h3>
     <div class="card-description">
-      <p>Implement the REST API and workflows for communities and the requests features.
-This will enable the integration between communities and records as well as the
-general framework for communities submission handling.</p>
+      <p>Adds support for having multiple community owners and members of communities
+with curation capabilities. This task only deals with the REST API and backend
+(i.e. the user interface is a separate task).</p>
 <p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
 
     </div>
@@ -424,43 +453,14 @@ general framework for communities submission handling.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
+  <div class="panel-heading vocabularies">
+    Vocabularies
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Basic OAI-PMH server</h3>
+    <h3 class="panel-title">Funders and grants</h3>
     <div class="card-description">
-      <p><em>@TU Graz</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Records/requests</h3>
-    <div class="card-description">
-      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Custom fields</h3>
-    <div class="card-description">
-      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
-The current task implements both the backend and frontend.</p>
+      <p>Enable the funder/grants field in the deposit form and import the required
+vocabularies in InvenioRDM.</p>
 <p><em>@CERN</em></p>
 
     </div>
