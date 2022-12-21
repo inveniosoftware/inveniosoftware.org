@@ -151,6 +151,22 @@ translation of InvenioRDM. Further languages to come later.</p>
 
             
 <div class="panel panel-default">
+  <div class="panel-heading preservation">
+    Preservation
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OCFL Backend Support</h3>
+    <div class="card-description">
+      <p>Support for storing records and files according to the
+Oxford Common Filesystem Layout.</p>
+<p><em>@Data Futures</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
   <div class="panel-heading third-party-integrations">
     Third-party Integrations
   </div>
@@ -161,22 +177,6 @@ translation of InvenioRDM. Further languages to come later.</p>
 required OAI-PMH sets, export formats as well as allowing direct indexing of
 new records to OpenAIRE.</p>
 <p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading preservation">
-    Preservation
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OCFL Backend Support</h3>
-    <div class="card-description">
-      <p>Support for storing records and files according to the
-Oxford Common Filesystem Layout.</p>
-<p><em>@Data Futures</em></p>
 
     </div>
   </div>
@@ -256,29 +256,15 @@ EU-funded project CS3MESH.</p>
       
         
 <div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
+  <div class="panel-heading vocabularies">
+    Vocabularies
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Custom fields</h3>
+    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
     <div class="card-description">
-      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
-The current task implements both the backend and frontend.</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Members</h3>
-    <div class="card-description">
-      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
+      <p>Enable auto-completion of creators/contributors in the deposit from a local
+names vocabulary that can be filled from e.g. ORCiD or your institutional
+employee database.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -306,9 +292,9 @@ The current task implements both the backend and frontend.</p>
     Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Records/requests</h3>
+    <h3 class="panel-title">Communities UI: Members</h3>
     <div class="card-description">
-      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
+      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
 <p><em>@CERN</em></p>
 
     </div>
@@ -324,6 +310,91 @@ The current task implements both the backend and frontend.</p>
     <h3 class="panel-title">Basic OAI-PMH server</h3>
     <div class="card-description">
       <p><em>@TU Graz</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
+    <div class="card-description">
+      <p>Implement the REST API and workflows for communities and the requests features.
+This will enable the integration between communities and records as well as the
+general framework for communities submission handling.</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="col-sm-4 column">
+      
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Members support</h3>
+    <div class="card-description">
+      <p>Adds support for having multiple community owners and members of communities
+with curation capabilities. This task only deals with the REST API and backend
+(i.e. the user interface is a separate task).</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OAI-PMH sets support</h3>
+    <div class="card-description">
+      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
+<p><em>@TU Graz</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading iiif">
+    IIIF
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">IIIF image previewer</h3>
+    <div class="card-description">
+      <p>Enables the International Image Interoperability Framework (IIIF) support
+and integrates the Mirador v3 previewer for large images.</p>
+<p><em>@Data Futures &amp; Uni Hamburg</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading persistent-identifiers">
+    Persistent identifiers
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">DOI minting support</h3>
+    <div class="card-description">
+      <p>Support for registering DataCite DOIs as well as for developing
+your own plugins for registering other types of persistent identifiers
+(Crossref DOIs, ARKs, Handles, ...).</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -350,57 +421,20 @@ vocabularies in InvenioRDM.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading iiif">
-    IIIF
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">IIIF image previewer</h3>
+    <h3 class="panel-title">Custom fields</h3>
     <div class="card-description">
-      <p>Enables the International Image Interoperability Framework (IIIF) support
-and integrates the Mirador v3 previewer for large images.</p>
-<p><em>@Data Futures &amp; Uni Hamburg</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
-    <div class="card-description">
-      <p>Implement the REST API and workflows for communities and the requests features.
-This will enable the integration between communities and records as well as the
-general framework for communities submission handling.</p>
-<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading vocabularies">
-    Vocabularies
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
-    <div class="card-description">
-      <p>Enable auto-completion of creators/contributors in the deposit from a local
-names vocabulary that can be filled from e.g. ORCiD or your institutional
-employee database.</p>
+      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements both the backend and frontend.</p>
 <p><em>@CERN</em></p>
 
     </div>
   </div>
 </div>
 
-      </div>
-      <div class="col-sm-4 column">
-      
         
 <div class="panel panel-default">
   <div class="panel-heading metadata">
@@ -420,48 +454,14 @@ interface, and add the first couple of administration actions into the form.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading persistent-identifiers">
-    Persistent identifiers
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">DOI minting support</h3>
-    <div class="card-description">
-      <p>Support for registering DataCite DOIs as well as for developing
-your own plugins for registering other types of persistent identifiers
-(Crossref DOIs, ARKs, Handles, ...).</p>
-<p><em>@CERN</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OAI-PMH sets support</h3>
-    <div class="card-description">
-      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
-<p><em>@TU Graz</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
   <div class="panel-heading communities">
     Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Members support</h3>
+    <h3 class="panel-title">Communities UI: Records/requests</h3>
     <div class="card-description">
-      <p>Adds support for having multiple community owners and members of communities
-with curation capabilities. This task only deals with the REST API and backend
-(i.e. the user interface is a separate task).</p>
-<p><em>@CERN, Northwestern University &amp; TU Wien</em></p>
+      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
