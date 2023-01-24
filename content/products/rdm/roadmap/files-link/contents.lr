@@ -1,11 +1,11 @@
-column: current
+column: done
 ---
 body:
 
 Support linking to files on an external storage system instead of requiring the
 files to be uploaded via InvenioRDM.
 
-*@CERN*
+*@CERN, completed November 2022*
 ---
 category: Files
 ---

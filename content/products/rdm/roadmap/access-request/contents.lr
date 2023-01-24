@@ -1,0 +1,12 @@
+column: future
+---
+body:
+
+Add support for requesting, granting and managing access to a restricted
+record.
+
+*@CERN, estimated Q2 2023*
+---
+category: Sharing
+---
+title: Access requests

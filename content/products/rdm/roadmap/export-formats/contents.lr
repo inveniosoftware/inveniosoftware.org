@@ -1,0 +1,11 @@
+column: near-term
+---
+body:
+
+Add support for metadata formats currently supported in Zenodo, including BibTeX, JSON-LD, GeoJSON. This includes adding support for custom and optional metadata fields currently supported by Zenodo, and ability to display badges on record landing pages.
+
+*@CERN, estimated April 2023*
+---
+category: Metadata
+---
+title: Export formats

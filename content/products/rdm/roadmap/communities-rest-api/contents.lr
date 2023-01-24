@@ -6,7 +6,7 @@ Adds support for having multiple community owners and members of communities
 with curation capabilities. This task only deals with the REST API and backend
 (i.e. the user interface is a separate task).
 
-*@CERN, Northwestern University & TU Wien*
+*@CERN, Northwestern University & TU Wien, completed May 2022*
 ---
 category: Communities
 ---

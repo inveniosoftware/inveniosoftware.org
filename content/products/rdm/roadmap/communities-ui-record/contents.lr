@@ -8,4 +8,4 @@ body:
 
 Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.
 
-*@CERN*
+*@CERN, completed May 2022*

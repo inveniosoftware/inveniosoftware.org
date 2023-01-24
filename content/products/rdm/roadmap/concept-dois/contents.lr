@@ -1,0 +1,11 @@
+column: future
+---
+body:
+
+Add support for registering concept DOIs.
+
+*@CERN, estimated Q2 2023*
+---
+category: Development
+---
+title: Concept DOIs

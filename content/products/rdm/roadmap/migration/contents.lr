@@ -1,4 +1,4 @@
-column: near-term
+column: done
 ---
 body:
 
@@ -7,7 +7,7 @@ instance easy. The new tools will be tested and progressively enhanced while
 migrating the current Zenodo production instance to a new Zenodo instance
 based on InvenioRDM.
 
-*@CERN*
+*@CERN, completed December 2022*
 ---
 category: Metadata
 ---

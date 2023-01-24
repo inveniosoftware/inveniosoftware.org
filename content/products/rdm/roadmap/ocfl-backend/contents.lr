@@ -1,4 +1,4 @@
-column: current
+column: done
 ---
 category: Preservation
 ---
@@ -6,7 +6,7 @@ title: OCFL Backend Support
 ---
 body:
 
-Support for storing records and files according to the
-Oxford Common Filesystem Layout.
+Basic demonstrator developed which dumps and InvenioRDM repository into a
+OCFL repository.
 
-*@Data Futures*
+*@Data Futures, completed June 2022*

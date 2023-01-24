@@ -1,11 +1,11 @@
-column: current
+column: done
 ---
 body:
 
 Finalise the I18N support and provide a german
 translation of InvenioRDM. Further languages to come later.
 
-*@TU Graz & Uni Bamberg*
+*@TU Graz & Uni Bamberg, completed January 2023*
 ---
 category: I18N
 ---

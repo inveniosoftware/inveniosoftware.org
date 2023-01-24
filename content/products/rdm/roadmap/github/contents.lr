@@ -1,0 +1,11 @@
+column: future
+---
+body:
+
+Migrate Zenodo's current GitHub integration to InvenioRDM.
+
+*@CERN, estimated Q2 2023*
+---
+category: Third-party integrations
+---
+title: GitHub integration

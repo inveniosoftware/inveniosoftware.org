@@ -1,4 +1,4 @@
-column: current
+column: done
 ---
 category: Third-party Integrations
 ---
@@ -6,8 +6,7 @@ title: ownCloud integration
 ---
 body:
 
-Enable selecting files from an ownCloud installation in the deposit form, and
-download the selected files on the server backend. Part of the
-EU-funded project CS3MESH.
+Added support for integrating [ScieboRDS](https://www.research-data-services.org)
+via server-side file downloading and RO-Crate metadata format.
 
-*@CERN*
+*@CERN, completed November 2022*

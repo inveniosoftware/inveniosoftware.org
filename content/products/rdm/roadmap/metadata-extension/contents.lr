@@ -5,7 +5,7 @@ body:
 Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
 The current task implements both the backend and frontend.
 
-*@CERN*
+*@CERN, completed September 2022*
 ---
 category: Metadata
 ---
