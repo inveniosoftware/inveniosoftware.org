@@ -198,6 +198,10 @@ h2.section-title {
   -webkit-box-shadow: -7px 10px 12px rgba(0, 0, 0, 0.175);
 }
 
+img.flavour {
+  max-width: 100%;
+}
+
 /* Welcome features section */
 
 .welcome-features-col h2 {
