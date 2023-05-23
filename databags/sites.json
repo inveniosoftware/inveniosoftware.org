@@ -155,14 +155,6 @@
       "types": ["library", "institutional-repository"]
     },
     {
-      "name": "University of Applied Sciences of Freiburg (Western Switzerland)",
-      "country": "CH",
-      "description": "University of Applied Sciences of Freiburg (Western Switzerland)",
-      "url": "https://multidoc.eia-fr.ch",
-      "screenshot_filename": "heiaf.png",
-      "types": ["institutional-repository", "library"]
-    },
-    {
       "name": "HEPData",
       "description": "The Durham High Energy Physics Database (HEPData) has been built up over the past four decades as a unique open-access repository for scattering data from experimental particle physics. It currently comprises the data points from plots and tables related to several thousand publications including those from the Large Hadron Collider (LHC).",
       "url": "http://hepdata.net",
@@ -215,14 +207,6 @@
       "url": "http://ikee.lib.auth.gr/",
       "screenshot_filename": "ikee.png",
       "types": ["library", "institutional-repository"]
-    },
-    {
-      "name": "ILC Document Server",
-      "country": "CH",
-      "description": "The document server of the International Linear Collider. Planning and designing the proposed electron-positron collider will require global participation and global organization. ILCDoc serves as a central repository for project documents and information shared among the hundreds of collaborators, scientists and engineers, at university and laboratories around the world.",
-      "url": "http://ilcdoc.linearcollider.org/",
-      "screenshot_filename": "ilcdoc.png",
-      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "INSPIRE",
