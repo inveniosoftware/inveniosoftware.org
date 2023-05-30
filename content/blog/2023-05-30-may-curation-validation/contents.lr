@@ -51,7 +51,9 @@ From ensuring deposited records abide by FAIR principles, to granular access con
 
 - Hand curation by repository administrators for metadata quality assurance
 
-- Versioning of all deposits, each with a permanent identifier (DOI), and one concept DOI for the record entity through all versions
+- Versioning of all deposits, with a per-version permanent identifier and a per-deposit (across all versions) concept permanent identifier
+
+- Configurable registration with external identifier systems e.g., DOI  
 
 - Full-text searching to facilitate data discovery
 
