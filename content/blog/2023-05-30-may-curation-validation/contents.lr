@@ -17,6 +17,8 @@ From ensuring deposited records abide by FAIR principles, to granular access con
 
 - Deposited records check all FAIR principles (Findability, Accessibility, Interoperability, Reusability)
 
+- Configurable confirmation text before deposit to ensure agreement with security and privacy policies
+
 - Long-running record drafts for pre-publication edits
 
 - A wide variety of licensing options
