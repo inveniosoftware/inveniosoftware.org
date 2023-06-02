@@ -56,7 +56,6 @@ From ensuring deposited records abide by FAIR principles, to granular access con
 - Configurable registration with external identifier systems e.g., DOI  
 
 
-
 ## Access, Security, and Quality Control:
 
 - Authentication configurable with institutional credentials or third-parties (e.g., ORCiD, GitHub)
