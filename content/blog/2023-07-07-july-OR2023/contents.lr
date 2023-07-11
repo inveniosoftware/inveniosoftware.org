@@ -1,0 +1,32 @@
+title: Conference Spotlight: InvenioRDM Workshop Day at Open Repositories 2023
+---
+author: Sara Gonzales
+---
+pub_date: 2023-07-10
+---
+team: InvenioRDM
+---
+body:
+
+![](InvenioRDM_Delegates2.jpg)
+
+Last month InvenioRDM project partners convened in Stellenbosch and Cape Town, South Africa for the 18th International [Open Repositories Conference](https://www.conftool.net/or2023/sessions.php) (OR2023). We were thrilled to offer our second InvenioRDM workshop on the 12th of June (see our wrap-up of the first workshop: [OR2022 workshop](https://inveniosoftware.org/blog/2022-07-06-OR2022-spotlight/)). During three eventful hours we spoke with librarians, data managers, administrators, and developers about the basics of joining the InvenioRDM project and standing up an instance. We also shared information on customizations and add-ons for those interested in the platform’s advanced capabilities.
+ 
+Following Nicola Tarocco’s introduction and demo of key InvenioRDM functions and features, our sessions included:
+
+
+- Maximilian Moser’s presentation on customizations for his local InvenioRDM instance [TU Wien Research Data](https://doi.org/10.5281/zenodo.8025768), as well as a CLI command enabling very large file upload
+- Dan Granville’s presentation on [IIIF in InvenioRDM](https://doi.org/10.5281/zenodo.8021740), exemplified through his work with [Data Futures GmbH](https://data-futures.org/)
+- Guillaume Viger’s presentation on the launch of [Northwestern University’s Prism](https://doi.org/10.5281/zenodo.8023551) instance, with a particular focus on successful migration of awkward data
+- Matt Carson’s presentation on [InvenioRDM’s support of the FAIR principles](https://doi.org/10.5281/zenodo.8025605), with additional information on the platform’s support for data policy initiatives
+- Maximilian and Guillaume’s presentation on the details of, and endless possibilities for, [deployment of InvenioRDM instances](https://doi.org/10.5281/zenodo.8025764)
+- Zacharodimos Zacharias’ presentation on his and the CERN team’s iterative and productive efforts to achieve fast and efficient [data migration](https://doi.org/10.5281/zenodo.8023567) as a test for Zenodo’s move to InvenioRDM later this year.
+
+
+The workshop attendees were engaged, brought great questions, and gave us much food for thought. Our conversations with potential new partners were so extensive that we were not able to include all planned presentations! Be on the lookout for future blog posts containing this bonus content.
+ 
+But wait, there’s more! InvenioRDM’s OR2023 representation included Nicola’s fantastic lightning talk on behalf of InvenioRDM in the annual [Repository Rodeo](https://doi.org/10.5281/zenodo.8121201). In addition, Maximilian Moser and David Eckhard of TU Graz presented their work on a communication protocol to connect [machine-actionable DMPs with InvenioRDM](https://doi.org/10.5281/zenodo.8054753), and Zacharodimos Zacharias presented on [InvenioRDM’s mature integration](https://doi.org/10.5281/zenodo.8074996) with [ROR](https://ror.org/) (the Research Organization Registry).
+
+All of the InvenioRDM Workshop Day presentations are now available for download from [Zenodo](https://zenodo.org/communities/inveniordm-workshop-2023/?page=1&size=20). We hope to host another InvenioRDM workshop at the [19th Annual Open Repositories Conference](https://or2024.openrepositories.org/) June 3-6th, 2024 in Gothenburg, Sweden. If we’ve missed you at our previous two workshops, we hope to see you there!
+
+
