@@ -508,7 +508,7 @@
     },
     {
       "name": "Prism",
-      "description": "Prism is an institutional repository for the research and scholarly output of Northwestern Feinberg School of Medicine (FSM). Prism preserves intellectual works created by the Feinberg scholarly community, enhances the visibility of Feinberg scholarship, and promotes authors by enabling discovery and accessibility of works by the international scientific community.",
+      "description": "Prism is an institutional repository for the research and scholarly output of Northwestern University. Prism preserves intellectual works created by the scholarly community, enhances the visibility of scholarship, and promotes authors by enabling discovery and accessibility of works by the international scientific community.",
       "url": "https://prism.northwestern.edu",
       "screenshot_filename": "nu_prism.png",
       "types": [
