@@ -1,0 +1,22 @@
+title: Prism: The New Feinberg Repository for Global Dissemination of Research
+---
+pub_date: 2023-10-10
+---
+team: InvenioRDM
+---
+body:
+
+![](NEW_PICTURE_FILE_NEEDED.jpg)
+
+Feinberg School of Medicine has a newly available institutional repository called Prism. Prism preserves the intellectual works created by the Feinberg scholarly community and holds articles, conference presentations, preprints and other items created by faculty, staff, and students. Prism helps openness, maximizes reproducibility, and enhances research connections in the Feinberg community and globally to anyone with access to the internet. Prism will be available to Feinberg in April 2023.
+ 
+“We are excited to announce the launch of Prism as the institutional repository for Feinberg School of Medicine” says Karen Gutzman, Head of Research Assessment and Communications at Galter Health Sciences Library and Learning Center. Prism replaces the former DigitalHub and includes many much-anticipated features, such as the ability to create metadata-only records for offsite datasets, set embargo dates for releasing content to the public, creating and curating communities of practice, and sharing of private links to view and edit with colleagues. These new features complement existing features such as the ability to assign Digital Object Identifiers that make records citable, indexing by Google to make research widely discoverable, and a responsive staff at Galter Library to answer questions and provide support.
+
+Kristi Holmes, the Director of Galter Health Sciences Library and Learning Center and professor of Preventive Medicine, played a leading role in the development of Prism. According to Holmes, “It is essential to have a robust institutional repository that can keep up with the latest technologies and trends. As models for open access and data sharing continue to evolve, it's clear that institutional repositories will play an increasingly critical role to make research Findable, Accessible, Interoperable, and Reusable (FAIR).”
+
+Prism builds on a strong research foundation first made possible in the DigitalHub repository. “One of the most exciting features of Prism is the ability to create communities on topics, projects, or events” Gutzman says. Communities include open access research from Feinberg on [COVID-19](https://prism.northwestern.edu/communities/covid-19-community?q=&l=list&p=1&s=10&sort=newest), training presentations from the [Biostatistics Collaboration Center](https://prism.northwestern.edu/communities/biostatistics-collaboration-center-lecture-series?q=&l=list&p=1&s=10&sort=newest), and the [NUCATS Grant Repository](https://galter.northwestern.edu/exit?url=https%3A%2F%2Fredcap.nubic.northwestern.edu%2Fredcap%2Fsurveys%2F%3Fs%3DJKT3M84PM9LMPTKL), which is a centralized resource for grant writers and investigators provided by the NUCATS Institute. “Prism is an excellent home for the NUCATS Grants Repository, allowing us to easily share exemplar grant templates and other resources with investigators across the Northwestern University community,” says Dr. Richard D’Aquila, Director of NUCATS.
+
+Prism is built on the InvenioRDM software, which also forms a strong and sustainable foundation for Zenodo. “With its user-friendly interface and advanced features, InvenioRDM is truly a game-changer in the world of repositories. This platform is designed to make research more accessible and open to the public, promoting innovation and collaboration within the academic community,” says Holmes. Over the past several years, CERN and Northwestern have collaborated as core co-developers of the software, partnering with the global Invenio Open Source Community to develop InvenioRDM as a turnkey, scalable, and top-of-the-class user experience software for repositories. The InvenioRDM software offers a reliable environment for science, empowering preservation, credit, discovery, and sharing while maintaining integrity in its responsiveness to the evolving needs of the research community, including data sharing policy compliance. 
+
+
+Notably, Northwestern and CERN recently expanded this collaboration through an award from the [Generalist Repository Ecosystem Initiative (GREI)](https://galter.northwestern.edu/exit?url=https%3A%2F%2Fdatascience.nih.gov%2Fnews%2Fnih-office-of-data-science-strategy-announces-new-initiative-to-improve-data-access) from the NIH Office of Data Science Strategy (ODSS) to Zenodo to help researchers improve discoverability of their data and lead to greater reproducibility and reuse of data.
