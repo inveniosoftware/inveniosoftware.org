@@ -140,6 +140,125 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2019-04-29-rdm/">InvenioRDM: a turn-key open source research data management platform</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Apr 29, 2019</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p><strong>CERN has partnered with 10 multidisciplinary institutions and companies to build a turn-key open source research data management platform called InvenioRDM, and grow a diverse community to sustain the platform.</strong></p>
+<p>The InvenioRDM project is funded by the <a href="https://kt.cern">CERN Knowledge Transfer Fund</a>, as well as all the participating partners,  including:</p>
+<ul>
+<li><a href="http://www.bnl.gov">Brookhaven National Laboratory</a> (US)</li>
+<li><a href="https://www.library.caltech.edu">Caltech Library</a> (US)</li>
+<li><a href="https://ctsa.ncats.nih.gov/cd2h/">CTSA Program National Center for Data to Health</a> (US)</li>
+<li><a href="https://www.data-futures.org">Data Futures</a> (UK)</li>
+<li><a href="https://www.tugraz.at">Graz University of Technology</a> (AT)</li>
+<li><a href="https://www.hzdr.de">Helmholtz Zentrum Dresden-Rossendorf</a> (DE)</li>
+<li><a href="https://www.northwestern.edu">Northwestern University</a> (US)</li>
+<li><a href="https://www.openaire.eu">OpenAIRE</a> (GR)</li>
+<li><a href="https://tind.io">TIND</a> (NO)</li>
+<li><a href="http://www.tubitak.gov.tr">Tubitak</a> (TK)</li>
+<li><a href="https://www.uni-hamburg.de">University of Hamburg</a> (DE)</li>
+<li><a href="https://www.uni-muenster.de/en/">University of Münster</a> (DE)</li>
+</ul>
+<p>The project has an ambitious one year schedule in which it will deliver:</p>
+<ul>
+<li>InvenioRDM - A research data management platform based on <a href="https://zenodo.org">Zenodo</a> and <a href="https://inveniosoftware.org">Invenio v3 Framework</a>.</li>
+<li>A community of public and private institutions to sustain InvenioRDM.</li>
+<li>Minimum two existing repositories migrated to InvenioRDM, with Zenodo being one of them.</li>
+</ul>
+<p>The key to successfully achieving the ambitious schedule is that InvenioRDM will be based on Zenodo that have already been successfully validated over the past 5 years.</p>
+<p>Our vision in the next five-years, is to make InvenioRDM a world-leading extensible research data management platform used by research institutions all around the world and with businesses providing services, support and customizations on top of InvenioRDM.</p>
+<h1>What is a RDM platform?</h1>
+<p>An research data management (RDM) platform allows researchers to share and preserve scientific results. Researchers can share anything from publications, posters, presentations to datasets and software. Once a researcher have shared a result, they get a DOI (Digital Object Identifier), that allow them to properly cite their result.</p>
+<p>There are three primary purposes of RDM is to</p>
+<ul>
+<li><strong>Disseminate and archive</strong></li>
+<li><strong>Enable reproducibility</strong></li>
+<li><strong>Enable reuse</strong></li>
+</ul>
+<p>Most importantly, research funding agencies all over the world have realised the huge potential economic and social benefits of RDM to society and are now demanding solutions.</p>
+<h1>Zenodo</h1>
+<p><a href="http://home.cern">CERN</a> in partnership with <a href="http://www.openaire.eu">OpenAIRE</a> has built one such RDM service with European Union funding called <a href="https://zenodo.org">Zenodo</a>. Zenodo has been highly successful and has in its 5 years of existence become a world-leading general purpose research data repositories.</p>
+<p>In fact, other institutions have already taken Zenodo source code (which is open source), and started building their own local RDM solutions on it. The goal of this project is to join our efforts to build a common RDM-platform from which both CERN, other institutions and private businesses can profit.</p>
+<h1>Multidisciplinary partners</h1>
+<p>The real strength of the project is that it brings together a suite of partners from multidisciplinary domains, that each bring unique knowledge and know-how from their specific domains that will be critical to the success of project:</p>
+<ul>
+<li>Institutional partners:<ul>
+<li>University of Hamburg</li>
+<li>University of Münster</li>
+<li>Caltech Library</li>
+</ul>
+</li>
+<li>Health and medical science partners:<ul>
+<li>Northwestern University</li>
+</ul>
+</li>
+<li>Physics partners:<ul>
+<li>Helmholz Zentrum Dreseden Rossendorf</li>
+<li>Brookhaven National Laboratory</li>
+<li>TUBITAK - The Scientific and Technological Research Council of Turkey</li>
+</ul>
+</li>
+<li>Digital humanities partners:<ul>
+<li>Data Futures</li>
+</ul>
+</li>
+<li>Business partners:<ul>
+<li>TIND Technologies</li>
+</ul>
+</li>
+<li>Community partners:<ul>
+<li>OpenAIRE</li>
+</ul>
+</li>
+</ul>
+<h1>Building InvenioRDM</h1>
+<p>InvenioRDM will include most of the features that Zenodo alreday include today such as e.g. DOI miniting capabilities, versioning support and COUNTER compliant usage statistics to name some few.</p>
+<p>The work in transforming Zenodo into a general purpose RDM-platform will involve three key areas:</p>
+<p><strong>Core repository</strong></p>
+<p>The repository platform will at its core include an extensible metadata model based DataCite metadata schema with support for handling millions of records and peta bytes of data. The repository will further be aligned with the <a href="http://ngr.coar-repositories.org">Next Generation Repositories</a> (NGR) standard.</p>
+<p><strong>Packaging and distribution</strong></p>
+<p>Key for easy adoption of InvenioRDM is to ensure that it is a real turn-key solution requiring minimal experience in installing, operating and administering the platform, or in short getting users started in no time. Thus, a significant part of the efforts will go into simplifing the installation, improving the packaging and distribution, as well as providing excellent end-user documentation.</p>
+<p><strong>Customization and extendability</strong></p>
+<p>A key requirement for InvenioRDM is that it can easily be extended and customized just enough to adapt to each particular institution. This includes for instance defining authentication mechanisms (SAML/LDAP/OAuth), integrating with mutliple storage backend system, and most important of all to make these customizations easy.</p>
+<h2>Contact</h2>
+<p>For more information about the InvenioRDM project, please contact:</p>
+<p>Lars Holm Nielsen</p>
+<p>Invenio Product Manager</p>
+<p>CERN IT Department</p>
+<p>Email: <a href="mailto:info@inveniosoftware.org">info@inveniosoftware.org</a></p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2019-04-29-rdm/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2019-03-25-bootcamp/">Invenio Training Bootcamp 2019</a>
         
       </h3>
@@ -1222,168 +1341,6 @@ with Elasticsearch v2 support and be maintained until v3.0 end of life
                 </div>
               
             
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2017-08-11-invenio-sprint/">Sprint: Security and annoying warnings</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Aug 11, 2017</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="https://discord.gg/8qatqBC">Invenio Framework</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>This sprint was focused on:</p>
-<ul>
-<li>Data model issues (in Invenio-Access and Invenio-OAIServer).</li>
-<li>Security issues (permanent sessions, "remember me", content security policy).</li>
-<li>Working demo site (remove annoying warnings, fixed docs, SSL problems, bugs, admin interfaces, ...).</li>
-</ul>
-<p>As a result of 89 developer days, 126 commits and 6.6k lines touched (4.7k additions and 1.8k deletions) <code>auth bundle</code> has been stabilized and released in beta version (Accounts, Access, Profiles, OAuthClient and OAuth2Server).</p>
-<h2>List of changes:</h2>
-<ul>
-<li>DoJSON (v1.3.2):<ul>
-<li>Remove <code>'Undo' is experimental</code> warning</li>
-</ul>
-</li>
-<li>Flask-Menu (v0.6.0):<ul>
-<li>Python 3 warnings fixes</li>
-</ul>
-</li>
-<li>Invenio<ul>
-<li>Fixed login problem</li>
-</ul>
-</li>
-<li>Invenio-Access (v1.0.0b1):<ul>
-<li>Reviewed module and fixed data model issues.</li>
-<li>Deprecated DynamicPermission in favor of Permission (aligning with Flask-Principal's deny by default behavior)</li>
-<li>Added system roles with support for any user and authenticated user (could be extended to support IP-based access control). <code>ActionUsers</code> was previously used for similar feature by setting <code>user_id</code> to <code>None</code> but this is no longer possible.</li>
-<li>Updated administration interface.</li>
-<li>Added usage documentation (<a href="https://invenio-access.readthedocs.org">https://invenio-access.readthedocs.org</a>).</li>
-<li>Fixed superuser issues.</li>
-</ul>
-</li>
-<li>Invenio-Accounts (v1.0.0b8):<ul>
-<li>Fixed Content Security Policy issues</li>
-<li>Removed remember me login support in favor of using permanent sessions (remember me support could be used to circumvent a revoked session).</li>
-<li>Removed support for login via headers (enabled by Flask-Security by default).</li>
-<li>Fixed Content Security Policy problems in templates.</li>
-<li>Upgraded to Flask-Security v3 (thanks to @jacquire).</li>
-</ul>
-</li>
-<li>Invenio-Admin (v1.0.0b3):<ul>
-<li>Disabled Content Security Policy on admin interface.</li>
-</ul>
-</li>
-<li>Invenio-App (v1.0.0b1):<ul>
-<li>Adds Jinja byte code caching support.</li>
-<li>iPython is now the default shell.</li>
-</ul>
-</li>
-<li>Invenio-App-ILS (v1.0.0a3):<ul>
-<li>Added initial Selenium integration tests.</li>
-<li>Fixed email sending when in debug mode.</li>
-<li>Bumped all packages to latest versions.</li>
-<li>Fixed Celery 4 configuration warnings.</li>
-<li>Clarified force HTTPS behaviour and adapted the user guide.</li>
-</ul>
-</li>
-<li>Invenio-Celery (v1.0.0b3):<ul>
-<li>Fixed Celery 4 configuration warnings.</li>
-</ul>
-</li>
-<li>Invenio-DB (v1.0.0b8):<ul>
-<li>Disabled SQL statement printing when in debug mode (has to be enabled manually now).</li>
-</ul>
-</li>
-<li>Invenio-I18N (v1.0.0b4):<ul>
-<li>Fixed Content Security Policy issues in templates.</li>
-</ul>
-</li>
-<li>Invenio-OAIServer (v1.0.0a13):<ul>
-<li>Fixed selective harvesting by timestamp caused by Marshmallow field parsing bug.</li>
-<li>Removed updated timestamp <code>_oai.updated</code> from record in favor of using the record models updated date (fixes issue with selective datetime harvesting).</li>
-<li>Add support for searching by spec in admin interface.</li>
-</ul>
-</li>
-<li>Invenio-OAuth2Server (v1.0.0b1):<ul>
-<li>Added feature to show scopes related to an authorized application.</li>
-<li>Added client example application to enable easier testing.</li>
-<li>Added new scope <code>user:email</code> which when granted will return the user's email address in the access token.</li>
-<li>Updated "authortize this application" template.</li>
-<li>Fixed security issue that allowed obtaining a session cookie via an access token and thus bypassing scope protection.</li>
-<li>Fixed Content Security Policy issues in templates.</li>
-<li>Fixed issue when strings where not strictly URL encoded (better error message).</li>
-<li>Fixed template rendering issues when no scopes where given and with example URLs.</li>
-</ul>
-</li>
-<li>Invenio-OAuthClient (v1.0.0b2):<ul>
-<li>Added admin interface for UserIdentity.</li>
-<li>Fixed Flask-WTF v0.14/v0.13 CSRF validation issues.</li>
-<li>Reorganized documentation to new structure.</li>
-<li>Removed support for remember me feature.</li>
-<li>Remove "Linked accounts" menu item when no providers where defined.</li>
-<li>Fixed Content Security Policy issues in templates.</li>
-<li>Fixed issue with always redirecting to "Linked accounts" after a login.</li>
-</ul>
-</li>
-<li>Invenio-PIDStore (v1.0.0b2):<ul>
-<li>New release.</li>
-</ul>
-</li>
-<li>Invenio-Search-JS (v1.2.0):<ul>
-<li>Fixed strict URL encoding of query strings.</li>
-<li>Fixed Content Security Policy issues in CSS.</li>
-</ul>
-</li>
-<li>Invenio-Search-UI (v1.0.0a7):<ul>
-<li>Fixed template issue.</li>
-</ul>
-</li>
-<li>Invenio-Theme (v1.0.0b4)<ul>
-<li>Fixed Content Security Policy issues in templates.</li>
-</ul>
-</li>
-<li>Invenio-Cache (v1.0.0b1):<ul>
-<li>New module which provided Redis/Memcahed caching support.</li>
-</ul>
-</li>
-</ul>
-<h2>What's next?</h2>
-<p>Next Invenio Sprint will focus on:</p>
-<ul>
-<li>Metadata bundle:<ul>
-<li>JSONSchemas, PIDStore, Records, Indexer, Records-UI, Search, OAIServer, Records-REST</li>
-</ul>
-</li>
-<li>General documentation</li>
-<li>Framework launch (process, branches, maintenance plan, user experience)</li>
-</ul>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2017-08-11-invenio-sprint/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
           </div>
         </div>
       </div>
@@ -1397,7 +1354,7 @@ with Elasticsearch v2 support and be maintained until v3.0 end of life
     
     | 4 |
     
-      <span class="disabled">Next &raquo;</span>
+      <a href="/blog/page/5/">Next &raquo;</a>
     
   </div>
 
