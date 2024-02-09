@@ -545,13 +545,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 centered">
-          <span>Copyright &copy; 2016-2019 CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
+          <span>Copyright &copy; 2016-<span id="currentYear"></span> CERN &amp; contributors. Icons by <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://icons8.com/">Icons8</a>. Text is licensed under Creative Commons Attribution 4.0 International.<br>
           <span class="text-muted"><small></small></span>
         </div>
       </div>
     </div>
   </div>
 </footer>
+<script>
+  var currentDate = new Date();
+  var currentYear = currentDate.getFullYear();
+  document.getElementById("currentYear").innerText = currentYear;
+</script>
   <!-- Matomo -->
 <script>
     var _paq = window._paq = window._paq || [];
