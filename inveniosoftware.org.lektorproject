@@ -1,5 +1,6 @@
 [project]
 name = inveniosoftware.org
+url = https://inveniosoftware.org
 url_style = absolute
 
 [servers.ghpages-dash]
@@ -7,3 +8,6 @@ target = ghpages+https://inveniosoftware/invenio-software.org?cname=invenio-soft
 
 [servers.ghpages]
 target = ghpages+https://inveniosoftware/inveniosoftware.org?cname=inveniosoftware.org
+
+[packages]
+lektor-atom = 0.4.0
