@@ -142,6 +142,202 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2021-02-26-february-release/">InvenioRDM v1.0 (February release)</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen, Guillaume Viger, Sara Gonzales
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Feb 26, 2021</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We're happy to announce InvenioRDM v1.0!</p>
+<p>VERY IMPORTANT, read the full release notes before you install and run the system! The v1.0 label <strong>does not</strong> mean the system is suitable for <strong>production</strong> use!</p>
+<h1>FAQ (do not skip!)</h1>
+<h3>Can I use v1.0 in production?</h3>
+<p>No. Do not even try, or think it might work out!</p>
+<h3>When can I use InvenioRDM in production?</h3>
+<p>The first release of InvenioRDM that you can use in a production system will be the LTS (Long-Term Support) release due in end-July.</p>
+<h3>Why the v1.0 label?</h3>
+<p>We follow semantic versioning, and in the coming months we'll be releasing v2.0, v3.0, etc. We use the v1.0 label because we're now in a state where the project partners can start running demo systems to demonstrate the progress of the project to their stakeholders. Furthermore, the project partners will be able to start user testing more widely.</p>
+<h3>Can I upgrade from v1.0 to v2.0?</h3>
+<p>Read the upgrade contract below.</p>
+<h1>Upgrade contract (do not skip!)</h1>
+<p>The following "contract" is meant to align expectations on how and what you'll be able to upgrade from v1.0 to v2.0.</p>
+<p>You <strong>MUST</strong> expect <strong>breaking changes</strong> to anything on subsequent releases until the LTS release! REST APIs, programmatic APIs, features, Jinja/React templates, data model, vocabularies, etc.</p>
+<p>We will <strong>ONLY</strong> guarantee that you will be able to upgrade a database created with v1.0 to v2.0. With that, we mean that <strong>through a manual, labour intensive and offline process</strong> you'll be able to upgrade your database. Basically this boils down to, that we will document the steps you need to apply in order to move your data from v1.0 to v2.0 code. In no way do we promise it will be easy! You <strong>MAY</strong> need to apply manual changes to records. We of course plan to make this an easy and smooth process for the LTS release, but for now it's not.</p>
+<h1>What's new?</h1>
+<p>Now that you've hopefully read all the above and are very scared of installing InvenioRDM in production (you should be!), then let's share a bit of the excitement we have for the release this month.</p>
+<p>We have reached a really major milestone for InvenioRDM. We now have a <em>minimal</em> working repository with a <em>minimal</em> acceptable user experience with a <em>very minimal</em> feature set. From now on, we are in a releaseable state! That means that in the coming months we'll be improving the UX, the feature set, the stability and production readiness, and thus we're in a very good position for accomplishing our production-ready LTS release in end-July.</p>
+<p>Below you'll find the specific areas we've been working on this month.</p>
+<h3>Access control</h3>
+<p>The major new feature this month is the support for minimal access control.</p>
+<p>The deposit form now has a new protection widget that allows you to deposit records in the following categories:</p>
+<ul>
+<li>Public records with public files</li>
+<li>Public records with restricted files (with or without embargo)</li>
+<li>Restricted records with restricted files (with or without embargo)</li>
+<li>Public metadata-only records</li>
+<li>Restricted metadata-only records (with or without embargo).</li>
+</ul>
+<p>Below are some examples of how this now looks in the deposit form:</p>
+<p><img src="/blog/2021-02-26-february-release/1_access_control_examples.png" alt=""></p>
+<p><strong>Restricted records and files</strong></p>
+<p>Restricted records and files are only visible for the owner (the user who deposited the material). This means that e.g. a restricted record will not show up in the search results of other users.</p>
+<p>User without access (no files and no edit button visible):</p>
+<p><img src="/blog/2021-02-26-february-release/2_access_control_restricted_files.png" alt=""></p>
+<p>User with access (files and edit button visible):</p>
+<p><img src="/blog/2021-02-26-february-release/3_access_control_owner.png" alt=""></p>
+<p>Note, that the message "Sorry, the files are restricted!" is a temporary message, until we have a solution for the access badge (see next section).</p>
+<p><strong>Limitation: Access status</strong></p>
+<p>We have temporarily removed the access status badge (see before/after screenshot below) until we have found a suitable solution for the badge. The current badge was not easily transferable to the new access control, and is mixing indications about if you can access a record, and/or if files are available.</p>
+<p>Before:</p>
+<p><img src="/blog/2021-02-26-february-release/4_access_badge_before.png" alt=""></p>
+<p>After:</p>
+<p><img src="/blog/2021-02-26-february-release/5_access_badge_after.png" alt=""></p>
+<p><strong>Limitation: Embargo feature</strong></p>
+<p>You can apply an embargo period to restricted files or records. Once an embargo period is over the record/files are supposed to be made automatically publicly accessible. In v1.0 however, we were not able to include the background job responsible for doing this automatically.</p>
+<p>We'll ship this task in the March v2.0 release.</p>
+<p><strong>Limitation: Manage permissions</strong></p>
+<p>Currently, only the owner is able to see a restricted record/files. In future releases, we'll of course add the support for managing permissions, so that restricted records and files can be shared with colleagues, groups and entire institutions.</p>
+<p><strong>Access backend</strong></p>
+<p>Underneath the hood, we have prepared the entire access control system to be able to share access with other users, communities, IP networks, etc. Thus, the backend part for allowing management of permissions is almost done, while we are primarily missing the frontend that allows an end-user to interact with the permission system.</p>
+<h3>Minimal UX</h3>
+<p><strong>Disabled unfinished features</strong></p>
+<p>We have disabled all unfinished features from the user interface. We have for instance disabled the communities module, the version flip-switch in search results, a button to the advanced search and so on.</p>
+<p>The features will be added back, once they have reached sufficient quality to be running in a demo system.</p>
+<p><strong>Deposit form fields</strong></p>
+<p>We have also removed all deposit form fields from the user interface that were not ready. Each of these fields will be added back progressively as they are finished. Most notably we e.g. had to remove the subjects field for this release.</p>
+<p><strong>Field help text</strong></p>
+<p>We have added help text to as many fields as possible. Please provide feedback, if they are understandable.</p>
+<p><strong>Styling issues</strong></p>
+<p>We have fixed a large number of small styling and consistentcy issues. Still some remain, and you're feedback is very much appreciated on anything you find in this respect.</p>
+<p><strong>List uploads</strong></p>
+<p>The list uploads page now has a nice greeting for first time users:</p>
+<p><img src="/blog/2021-02-26-february-release/6_list_uploads_empty.png" alt=""></p>
+<p>Also, the overall styling of the page was improved:</p>
+<p><img src="/blog/2021-02-26-february-release/7_list_uploads_styling.png" alt=""></p>
+<p><strong>Search guide</strong></p>
+<p>We have added a guide (taken from Zenodo) on how to perform advanced queries. See it on <a href="https://inveniordm.web.cern.ch/help/search">https://inveniordm.web.cern.ch/help/search</a>.</p>
+<h3>Release v1.0</h3>
+<p>We have gone through a lot of quality checking to ensure that we'll be able to upgrade data created with the v1.0 release to the coming v2.0 release. This work has focused on ensuring, for example, proper validation and integrity of the data that makes it into the database.</p>
+<p>We have also ensured that all database tables have proper upgrade recipes for our automatic schema upgrade system (Alembic).</p>
+<h1>Known issues</h1>
+<p><strong>Landing page</strong></p>
+<ul>
+<li><p>Preview: The image previewer is not using IIIF and only previews images up to 500kb.</p>
+</li>
+<li><p>Preview: If you e.g. upload a .JPG extension file, you can set the default preview for the file, but the list of files will not have a preview button.</p>
+</li>
+<li><p>Preview: The caption of the preview box does not change when selecting another file for preview.</p>
+</li>
+</ul>
+<p><strong>Deposit form</strong></p>
+<ul>
+<li><p>Validation error messages: The form validation error messages are not displaying correctly. Labels are system names, and sometimes [Object (Object)] is displayed for errors.</p>
+</li>
+<li><p>Missing files: If files are missing to be uploaded, the publish button is disabled, but there no feedback to the end-user that files are missing.</p>
+</li>
+<li><p>Performance: We have seen some slight performance issues when entering information into the form. We're looking into this, to make sure it is not noticeable.</p>
+</li>
+<li><p>Affiliations vocabulary: We have not initialized the affiliation vocabulary, and thus there is no auto-completion for affiliations (creators and contributors).</p>
+</li>
+<li><p>Publish button: It is not enabled when reloading a page with a valid record - you first have to save the record for the publish button to be enabled.</p>
+</li>
+<li><p>Protection: The files restriction in the protection widget only become visible after uploading a file. It should be hidden only for metadata-only records.</p>
+</li>
+<li><p>Languages: The language vocabulary search results are not ranked properly for the query. For instance searching for "english" will show less relevant results first.</p>
+</li>
+<li><p>Creators: The list of creators in the deposit form does not display the role nor identifier if entered.</p>
+</li>
+</ul>
+<p><strong>Search results</strong></p>
+<ul>
+<li>HTML entities (e.g. <code>&amp;nbsp;</code>) in the description fields are not removed from the descriptions displayed in search results, causing them to be printed verbatim.</li>
+</ul>
+<p><strong>List uploads</strong></p>
+<ul>
+<li><p>Facet: The search facet distinguishing between published and drafts on the list uploads page is using system labels instead of human readable labels.</p>
+</li>
+<li><p>The title of a search result item is not clickable even though it looks clickable.</p>
+</li>
+</ul>
+<p><strong>Backend</strong></p>
+<ul>
+<li><p>Embargo records are not automatically published due to the missing background job.</p>
+</li>
+<li><p>The REST API JSON serialization has timestamps that are not in UTC, nor do they have timezone information.</p>
+</li>
+</ul>
+<p><strong>Installation</strong></p>
+<ul>
+<li>Some versions of NPM 7 are <em>known</em> to cause issues -- NPM 6.14.5 is recommended.</li>
+</ul>
+<h1>Install</h1>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
+<pre><code>docker pull inveniosoftware/centos7-python:3.6
+docker pull inveniosoftware/centos8-python:3.7
+docker pull inveniosoftware/centos8-python:3.8
+</code></pre>
+<p>To install:</p>
+<pre><code>pip install --upgrade invenio-cli
+invenio-cli check-requirements
+invenio-cli init rdm
+cd my-site
+invenio-cli containers start --lock --build --setup
+</code></pre>
+<p>This month's version of invenio-cli is v0.22.0.</p>
+<p>To stop the instance without destroying the records that were created, you can just run:</p>
+<pre><code>cd my-site
+invenio-cli containers stop
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers, you can run:</p>
+<pre><code>cd my-site
+invenio-cli destroy
+</code></pre>
+<h1>Feedback</h1>
+<p>First, check if you've hit a known issue.</p>
+<ul>
+<li>Bugs: First check for known issues above, then report them on the <a href="https://github.com/inveniosoftware/invenio-app-rdm/issues/new/choose">Invenio-App-RDM</a> repository on GitHub.</li>
+<li>Feedback: Suggestions for improvements, results of user testing, etc. - please reach out to Lars directly (chat or mail).</li>
+</ul>
+<h1>Credits</h1>
+<p>The development work in this release was done by:</p>
+<ul>
+<li>CERN (Lars &amp; Zach)</li>
+<li>Northwestern University (Guillaume)</li>
+<li>TU Graz (Mojib)</li>
+<li>TU Wien (Max)</li>
+</ul>
+<p>A special thanks goes to Max and Mojib as well as their institutions TU Graz and TU Wien for joining full-time during the February iteration. This made it possible to reach this month's milestone for the regular team from CERN &amp; Northwestern University!</p>
+<p>Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2021-02-26-february-release/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2021-02-10-onboarding-resource-roundup/">InvenioRDM Onboarding Resource Roundup</a>
         
       </h3>
@@ -906,115 +1102,6 @@ invenio-cli destroy
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-10-12-september-release/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2020-09-01-august-release/">InvenioRDM August Release</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Sara Gonzales, Guillaume Viger
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Sep 1, 2020</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are happy to announce InvenioRDM Alpha 10 (August release)! Thank you to our team members for their efforts on this release.</p>
-<h3>What's new?</h3>
-<p>We made some limited changes this month. However, three key areas <em>were</em> tackled.</p>
-<ul>
-<li>The concurrent Invenio Sprint brought the final Semantic-UI updates across all modules! If something does not show up right in your default RDM instance, then it's a legitimate bug now.</li>
-<li>These UI updates complement the updates to Search. The record search page now uses the new API endpoint from the last release. Customization of the search results is back (with documentation forthcoming). Different search pages are easier to set up.</li>
-<li>More library improvements across the board were merged.</li>
-</ul>
-<p>Update <code>invenio-cli</code> to version 0.16.0 and follow the updated <a href="https://inveniordm.docs.cern.ch/">documentation</a> to get started.</p>
-<h4>Semantic UI transition wrap-up</h4>
-<p><img src="/blog/2020-09-01-august-release/SemanticUI.png" alt="">
-<em>One of the many pages that were transitioned to Semantic-UI</em></p>
-<p>The transition to Semantic-UI is for all intents and purposes complete. Future additions will use this framework and have a consistent look with the rest of InvenioRDM. Close to 15 styling issues were closed in the process.</p>
-<h4>Search customization and transition to new API</h4>
-<p>The search page now uses the new API (<code>/api/rdm-records</code> endpoint) we introduced in the last release. The new endpoint supports pagination and sorting, but aggregations were disabled to focus on the transitioning only.</p>
-<p><img src="/blog/2020-09-01-august-release/SearchCustomization.png" alt=""></p>
-<p>Aggregations will be re-enabled soon.</p>
-<p>Custom styling of search results is possible again: documentation to explain the new way is pending however.</p>
-<h4>Library Improvements</h4>
-<p>Finally, various improvements and fixes were made across modules including:</p>
-<ul>
-<li>an overhaul to how links are generated in API responses,</li>
-<li>a way to hook callbacks into action endpoints,</li>
-<li>the convergence of validation for drafts and records, and</li>
-<li>the introduction of record versioning behind the scenes (which will be made more visible in coming releases).</li>
-</ul>
-<p>Some of these changes are visible in the API responses:</p>
-<pre><code class="lang-json">{
-    &quot;links&quot;: {
-        &quot;self&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47&quot;,
-        &quot;self_html&quot;: &quot;https://127.0.0.1/records/jnmmp-51n47&quot;,
-        &quot;files&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47/files&quot;,
-        &quot;edit&quot;: &quot;https://127.0.0.1/api/rdm-records/jnmmp-51n47/draft&quot;
-    },
-    &quot;metadata&quot;: {
-         &quot;conceptrecid&quot;: &quot;5fk5g-mq814&quot;,
-         ...
-    },
-    ...
-}
-</code></pre>
-<h3>What do you need to do?</h3>
-<p>You can install the latest <code>invenio-cli</code> v0.16.0, create a new instance and see what it looks like. Make sure to follow the <a href="https://inveniordm.docs.cern.ch/">updated documentation</a> - there are a couple of caveats to be made aware of.</p>
-<p><strong>Install (TL;DR)</strong></p>
-<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
-<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
-docker pull inveniosoftware/centos8-python:3.7
-docker pull inveniosoftware/centos8-python:3.8
-</code></pre>
-<p>To install:</p>
-<pre><code class="lang-bash">pip install --upgrade invenio-cli
-invenio-cli init rdm
-cd my-site
-invenio-cli containerize --pre
-invenio-cli demo --containers
-</code></pre>
-<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
-<pre><code class="lang-bash">cd my-site
-pipenv --rm
-docker-compose -f docker-compose.full.yml down
-</code></pre>
-<h3>Feedback</h3>
-<p>As always, we welcome your feedback. When you <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-10-august-release/129">provide feedback on Discourse</a> your message should be pre-populated with the classic template (bugs, what worked well, what didn't work well, wishes for documentation).</p>
-<p>Here is the template to give feedback if it's not automated:</p>
-<pre><code>## Bugs
-
-## What worked well
-
-## What didn't work well
-
-## Wishes for documentation
-</code></pre>
-<p>Take care and stay safe! The next release will be big.</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2020-09-01-august-release/">Read More</a>
       
     </div>
   </div>
