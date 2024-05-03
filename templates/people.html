@@ -21,9 +21,6 @@
             <div class="person-institution">{{ card.institution }}</div>
             <div class="person-role">{{ ", ".join(card.role) }}</div>
             <div class="person-bio">{{ card.bio }}</div>
-            {% if card.chat %}
-            <div class="person-chat"><a href="{{ card.chat }}"><i class="fa fa-comment"></i> Chat with me</a></div>
-            {% endif %}
           </div>
           {%- endfor %}
         </div>
