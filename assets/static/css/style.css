@@ -795,6 +795,7 @@ footer nav li.title {
   font-weight: 200;
 }
 .goto-button a:hover,
+.goto-button a:focus,
 .goto-button a:active {
   color: white;
 }
@@ -805,6 +806,7 @@ footer nav li.title {
   display: inline-flex;
 }
 .goto-icon-button-a:hover i,
+.goto-icon-button-a:focus i,
 .goto-icon-button-a:active i {
   color: white !important;
   background-color: #0377cd;
