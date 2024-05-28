@@ -140,6 +140,14 @@
       "types": ["research-data", "institutional-repository", "library"]
     },
     {
+      "name": "Research Data Repository of the University of Bamberg",
+      "country": "DE",
+      "description": "The institutional repository of the University of Bamberg.",
+      "url": "https://fd-repo.uni-bamberg.de",
+      "screenshot_filename": "fd-repo-uni-bamberg.png",
+      "types": ["research-data", "institutional-repository"]
+    },
+    {
       "name": "GISELA Documents",
       "country": "ES",
       "description": "The GISELA Documents Server provides, by categories, all the documents produced by the Project",
