@@ -12,7 +12,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=a6f9df9e">
+<link rel="stylesheet" href="/static/css/style.css?h=29287faf">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -137,9 +137,117 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/2024-07-10-july-OR2024/">Conference Spotlight: InvenioRDM Workshop Day at Open Repositories 2024</a>
+          <a href="/blog/2024-08-20-invenio-rdm-12/">InvenioRDM v12.0 released</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Martin Fenner, Sara Gonzales, Guillaume Viger
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Aug 20, 2024</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">InvenioRDM</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p><img src="/blog/2024-08-20-invenio-rdm-12/invenio-rdm-v12.0-screenshot.png" alt=""></p>
+<p>We are happy to announce the release of InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v12.0.0/">v12.0</a>! Released on August 1, 2024, it is the first InvenioRDM release since <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v11.0.0/">v11.0</a> was released on January 23, 2023, and it includes not only many bug fixes and small improvements but also several major new features listed below.</p>
+<p>Since the v11.0 release several <a href="https://inveniosoftware.org/products/rdm/">InvenioRDM partners</a> have launched InvenioRDM instances in production, including <a href="https://blog.zenodo.org/2023/10/13/2023-10-13-zenodo-rdm/">Zenodo, which migrated to InvenioRDM in October 2023</a>. A number of these partners have migrated already to InvenioRDM v12.0 or plan to do so in the coming months.</p>
+<p>German translations for v12 will be coming in v12.1 targeted for release in October 2024. We hope that other language translations will follow suit. Work on InvenioRDM v13.0 has already started and you can track it <a href="https://github.com/inveniosoftware/invenio-app-rdm">here</a>.</p>
+<h2>Try it</h2>
+<p>Want to try the new features in v12.0? Just head over to the demo site: <a href="https://inveniordm.web.cern.ch">https://inveniordm.web.cern.ch</a>. If you want to install it, follow the installation instructions at <a href="https://inveniordm.docs.cern.ch/install/">https://inveniordm.docs.cern.ch/install/</a>.</p>
+<h2>Release Notes</h2>
+<p>See the full release notes at <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v12.0.0/">https://inveniordm.docs.cern.ch/releases/versions/version-v12.0.0/</a> and the upgrade guide at <a href="https://inveniordm.docs.cern.ch/releases/upgrading/upgrade-v12.0/">https://inveniordm.docs.cern.ch/releases/upgrading/upgrade-v12.0/</a>.</p>
+<h2>What’s new?</h2>
+<h3>Usage statistics compliant with MakeDataCount and COUNTER</h3>
+<p>A major new feature in this release is the integration of <a href="https://github.com/inveniosoftware/invenio-stats">invenio-stats</a>, a powerful and flexible extension for measuring usage statistics of InvenioRDM records. Usage statistics are compliant with the <a href="https://makedatacount.org/">MakeDataCount</a> and <a href="https://www.projectcounter.org/">COUNTER</a> standards. Usage statistics are displayed in the record landing page and record search:</p>
+<p><img src="/blog/2024-08-20-invenio-rdm-12/stats-landing-page.png" alt=""></p>
+<h3>Record inclusion in multiple communities</h3>
+<p>A record can now belong to multiple communities. Including a record in multiple communities will let different curators change the files or metadata of the record.</p>
+<h3>Powerful and reliable record access</h3>
+<p><a href="https://inveniordm.docs.cern.ch/features/features-walk-through/access_requests/">Giving and requesting access</a> to records have seen a complete overhaul in this release. Record owners or curators can share them directly with other users or with groups, as well as control whether, with whom, and how access can be demanded.</p>
+<h3>Notifications</h3>
+<p><a href="https://inveniordm.docs.cern.ch/features/features-walk-through/notifications/">A notification system</a> has been introduced. Users can now receive email notifications depending on their preferences when they are involved in certain activities.</p>
+<h3>Moderation of users and records</h3>
+<p>The administration panel now includes a "User Management" section to suspend, block and delete users, and undo all those actions. Records can also be deleted (with a grace period for appeal or undoing), which empowers administrators to enforce institutional policies and fight spam.</p>
+<h3>DOIs for concept records and no DOIs for restricted records</h3>
+<p>InvenioRDM now mints a concept DOI for every record by default, similar to what Zenodo has done for many years. Along with this update, restricted records will now stop minting a DOI upon publication thus keeping private records truly private.</p>
+<p><img src="/blog/2024-08-20-invenio-rdm-12/concept_doi.png" alt=""></p>
+<h3>Even better previewers</h3>
+<p>Audio and video previewers come by default. Tiling support for the International Image Interoperability Framework (IIIF) API standards <a href="https://github.com/inveniosoftware/invenio-rdm-records/tree/master/invenio_rdm_records/records/processors">is available</a>. Text previewing has been made much more resilient.</p>
+<p><img src="/blog/2024-08-20-invenio-rdm-12/video_previewer.png" alt=""></p>
+<h3>External resources integration (e.g. GitHub)</h3>
+<p>The landing page for a record can now provide nicer visuals for configured related works. A configuration variable can be set to highlight some of the referred platforms.</p>
+<p><img src="/blog/2024-08-20-invenio-rdm-12/external_resources.png" alt=""></p>
+<h3>Skippable community submission review</h3>
+<p>With InvenioRDM v12, you can adjust whether a record review is always required for your community, or if curators, managers, and owners can submit a record without the review process.</p>
+<h3>Banners</h3>
+<p>With the addition of <a href="https://github.com/inveniosoftware/invenio-banners">invenio-banners</a>, you can easily add and manage important alerts and messages on your InvenioRDM instance, such as system maintenance notifications or announcements.</p>
+<h3>Static pages - administration panel</h3>
+<p>Another notable addition is the integration of <a href="https://github.com/inveniosoftware/invenio-pages">invenio-pages</a> with the administration panel. It exposes a convenient UI to create and manage static pages.</p>
+<h2>Breaking changes</h2>
+<p>Make sure to read the <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v12.0.0/#breaking-changes">Breaking Changes</a> section in the release notes.</p>
+<h2>Limitations and known issues</h2>
+<ul>
+<li>Translations for v12 will be coming in v12.1 targeted for release in October 2024.</li>
+<li>Sharing a secret link to a restricted record in a restricted community does not provide access to the record yet. Work on this is <a href="https://github.com/inveniosoftware/invenio-app-rdm/issues/2706">tracked here</a>.</li>
+</ul>
+<h2>Requirements</h2>
+<p>InvenioRDM v12 requires:</p>
+<ul>
+<li>Python 3.9, 3.11 or 3.12</li>
+<li>Node.js 18+</li>
+<li>PostgreSQL 12+</li>
+<li>OpenSearch v2</li>
+</ul>
+<p>Support for older versions of Elasticsearch/Opensearch, PostgreSQL and Node.js has been phased out.</p>
+<h2>Questions</h2>
+<p>If you have questions related to the InvenioRDM v12.0 release, don't hesitate to jump on <a href="https://discord.gg/8qatqBC">Discord</a> and ask us!</p>
+<h2>Credit</h2>
+<p>The development work of this impressive release wouldn't have been possible without the help of these great people:</p>
+<ul>
+<li>CERN: Alex, Anna, Antonio, Carlin, Fatimah, Javier, Jenny, Karolina, Lars, Manuel, Nicola, Pablo G., Pablo P., Pablo T., Yash, Zacharias</li>
+<li>Northwestern University: Guillaume</li>
+<li>TU Graz: Christoph, David, Mojib</li>
+<li>TU Wien: Max</li>
+<li>Uni Bamberg: Christina</li>
+<li>Uni Münster: Werner</li>
+<li>Front Matter: Martin</li>
+<li>KTH Royal Institute of Technology: Sam</li>
+<li>Caltech: Tom</li>
+</ul>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/2024-08-20-invenio-rdm-12/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2024-07-10-july-OR2024/">Conference Spotlight: InvenioRDM Workshop Day at Open Repositories 2024</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -185,20 +293,14 @@
 <p>At the end of the conference, it was announced that the next Open Repositories will be hosted in Chicago from June 15 - 18, 2025. We will aim to host an InvenioRDM workshop once again, and we hope to see you there!</p>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/2024-07-10-july-OR2024/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -779,87 +881,6 @@
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2022-07-06-OR2022-spotlight/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2021-10-12-projectmeeting-update/">InvenioRDM Partner Contributions: Virtual Project Meeting, 2021</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Sara Gonzales
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Oct 12, 2021</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">InvenioRDM</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>On September 28-29 the InvenioRDM project team gathered again (though sadly, again, without fondue) for the Virtual Project meeting. Over 50 partners and team members were present and a great deal of helpful feedback was shared as we worked to develop the roadmap for the next stage of the project. Thanks to everyone for your contributions to the discussion, they are much appreciated!</p>
-<p>The InvenioRDM project team would not be so robust without the thoughtful contribution of each of its members. Thank you to all of you who were able to commit the requested 1.5 person months to the project for the next year, in some cases more. The work of each partner site results in unique and valuable contributions to the team. We’d like to use this post to highlight, in a summarized format, the contributions that each project partner highlighted for us at the meeting. Here’s the amazing compendium of work that you have contributed over the past year:</p>
-<ul>
-<li><p><strong>BNL:</strong> Integrating the keycloak OAuth plugin module a part of the InvenioRDM framework.</p>
-</li>
-<li><p><strong>Caltech:</strong> DataCite 4.3 support and JSON REST API for DOI Registration. Registering very complete metadata records with DataCite.</p>
-</li>
-<li><p><strong>Data Futures GmbH:</strong> IIIF Presentation API record serializer, IIIF powered search view thumbnails, embedded Mirador 3.0 IIIF previewer.</p>
-</li>
-<li><p><strong>EkoKonnect:</strong> InvenioRDM part of Open Science cloud platform.</p>
-</li>
-<li><p><strong>Geo:</strong> Predefined queries for GEO Priority Areas, map preview/reference.</p>
-</li>
-<li><p><strong>HZDR:</strong> Documentation of deployment steps, testing.</p>
-</li>
-<li><p><strong>INFN:</strong> Community survey, requirements gathering, testing functionalities, participating in Metadata Working Group, commitment to REST API testing, writing of guides on how to integrate InvenioRDM APIs with programming languages used by research communities.</p>
-</li>
-<li><p><strong>JRC:</strong> Invenio-records-resources feature to support one of January Release functionalities.</p>
-</li>
-<li><p><strong>Northwestern:</strong> Various core contributions, including implementing OpenID Connect / OAuth at NU (includes SSO and MFA) and sharing local migration process and local implementation rollout.</p>
-</li>
-<li><p><strong>NYU</strong> Contributed usability study findings and presented to Telecon; proof of concept geo previewer / viewer for vector GIS data; working toward extending the concept of index sample metadata records via the command line tool.</p>
-</li>
-<li><p><strong>NII</strong> Testing based on local scenarios; knowledge sharing for InvenioRDM operation on Kubernetes (Monitoring, Logging and Backup strategies, etc.).</p>
-</li>
-<li><p><strong>TIND</strong> Simple k8s demo setup (helm-invenio).</p>
-</li>
-<li><p><strong>Tubitak</strong> Provided Turkish translations to InvenioRDM; will maintain and participate in release testing and Interest Group participation.</p>
-</li>
-<li><p><strong>TU Graz:</strong> Ongoing work: 18n of the python modules; i18n of the react modules; OAI-PMH, core sprint participation.</p>
-</li>
-<li><p><strong>TU Wien:</strong> During development sprints, helped implement Access Control (v1.0), Share-by-Link (v2.0), and Keycloak SSO (v4.0). Would like to contribute to Communities code in future.</p>
-</li>
-<li><p><strong>Universitat Hamburg:</strong> Contribution highlights: S3 plugin, initial SAML integration. Committed to: Help with testing, documentation, dissemination.</p>
-</li>
-<li><p><strong>Universitat Munster:</strong> Development of helm chart, to deploy InvenioRDM inside a Kubernetes infrastructure; implementation/documentation of Kubernetes based architecture (<a href="https://github.com/ulbmuenster/inveniordm-2-production">https://github.com/ulbmuenster/inveniordm-2-production</a>); tests of REST API by automated (OAI-PMH based) import of datasets from the WWU document repository miami (<a href="https://miami.uni-muenster.de">https://miami.uni-muenster.de</a>) into InvenioRDM.</p>
-</li>
-<li><p><strong>Universitat Tubingen:</strong> Contributions planned if production status reached: dissemination, acquiring funding for development needs in interdisciplinary research projects, participation in NFDI’s (nationwide infrastructural developments in domain-related RDM).</p>
-</li>
-<li><p><strong>Universitat Freiburg:</strong> Regular testing of new releases and features; automatic deployment &amp; recovery strategies; basic UI customization.</p>
-</li>
-<li><p><strong>ZHB Luzern:</strong> Testing: usability of setup resources (e.g. invenio-cli) &amp; customization and styling; evaluation of metadata standard.</p>
-</li>
-</ul>
-<p>Thanks again, everyone, for your contributions! Hope to see you in person at the next project meeting.</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2021-10-12-projectmeeting-update/">Read More</a>
       
     </div>
   </div>
