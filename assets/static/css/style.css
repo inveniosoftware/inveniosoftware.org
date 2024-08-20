@@ -1100,6 +1100,7 @@ h2 {
   color: #0377cd;
   font-weight: 500;
   font-size: 2em;
+  margin-left: 0;
 }
 .post-meta {
   color: #777;
@@ -1157,6 +1158,7 @@ article img {
 .blog-list-item-content h2,
 .post-content h2 {
   font-size: 1.4em;
+  margin-left: 0;
 }
 .blog-list-item-content h3,
 .post-content h3 {
@@ -1249,6 +1251,9 @@ a.team-url:hover {
 .blog-list-item-header {
   margin-bottom: 10px;
 }
+.blog-top-header > h2 {
+  margin-left: 0;
+}
 .blog-top-header > h,
 .blog-top-header > h2 > a,
 .blog-list-item-header > h3 > a,
@@ -1260,6 +1265,7 @@ a.team-url:hover {
 .blog-top-header > h,
 .blog-top-header > h2 > a {
   font-size: 1.2em;
+  margin-left: 0;
 }
 .blog-list-item-header > h3 > a,
 .blog-list-item-header > h3 {
