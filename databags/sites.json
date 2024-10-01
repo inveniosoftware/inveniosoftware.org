@@ -381,7 +381,7 @@
       "description": "Open Access articles sponsored by the international SCOAP3 initiative.",
       "url": "https://repo.scoap3.org/",
       "screenshot_filename": "scoap3.png",
-      "types": ["research-data", "institutional-repository", "Library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "Solano History Database",
@@ -397,7 +397,7 @@
       "description": "Digital library in the field of humanitarian studies at University of Sophia.",
       "url": "http://lib.sudigital.org",
       "screenshot_filename": "sudigital.png",
-      "types": ["Library", "institutional-repository"]
+      "types": ["library", "institutional-repository"]
     },
     {
       "name": "SYSDOC",
@@ -412,7 +412,7 @@
       "description": "TRACES: the bibliographical data base on Catalan language and literature. TRACES project born on 1987 by the Grup d'Estudis de Literatura Catalana Contemporània (GELCC) from the Universitat Autònoma de Barcelona.",
       "url": "http://traces.uab.cat/",
       "screenshot_filename": "traces.png",
-      "types": ["Library", "repository"]
+      "types": ["library", "repository"]
     },
     {
       "name": "TRIUMF",
@@ -458,7 +458,7 @@
       "description": "",
       "url": "http://knihovna.vugtk.cz/",
       "screenshot_filename": "vogtk.png",
-      "types": ["research-data", "institutional-repository", "Library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "World Food Programme",
@@ -481,7 +481,7 @@
       "description": "For almost four centuries the Bollandists have been at the forefront of hagiographic research. The Museum Bollandianum provides access to books (including the rare books collection), journals and articles of interest in that field.",
       "url": "https://museumbollandianum.be",
       "screenshot_filename": "museumbollandianum.png",
-      "types": ["Library"]
+      "types": ["library"]
     },
     {
       "name": "Sceiba",
