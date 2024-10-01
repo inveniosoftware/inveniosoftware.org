@@ -40,18 +40,18 @@
       "types": ["research-data", "institutional-repository", "library"]
     },
     {
-      "name": "Caltech",
-      "description": "Caltech is a world-renowned science and engineering Institute that marshals some of the world's brightest minds and most innovative tools to address fundamental scientific questions and pressing societal challenges.",
-      "url": "http://caltech.tind.io",
-      "screenshot_filename": "caltech.png",
-      "types": ["library"]
+      "name": "CaltechAUTHORS",
+      "description": "CaltechAUTHORS contains research publications by Caltech faculty and other Caltech researchers. Most items in CaltechAUTHORS are articles, but there are also books, book chapters, conference papers and more. The repository is updated continuously through library and campus efforts.",
+      "url": "https://authors.library.caltech.edu",
+      "screenshot_filename": "caltechauthors.png",
+      "types": ["library", "institutional-repository"]
     },
     {
       "name": "CaltechDATA",
       "description": "CaltechDATA is an institutional research data repository that shares and preserves the accomplishments of Caltech researchers.",
       "url": "https://data.caltech.edu",
       "screenshot_filename": "caltechdata.png",
-      "types": ["research-data", "repository"]
+      "types": ["research-data", "institutional-repository","library"]
     },
     {
       "name": "CERN Document Server",
