@@ -135,7 +135,7 @@
       "name": "European XFEL",
       "country": "DE",
       "description": "European XFEL publication database",
-      "url": "http://pubdb.xfel.eu",
+      "url": "https://xfel.tind.io/",
       "screenshot_filename": "exfel.png",
       "types": ["research-data", "institutional-repository", "library"]
     },
