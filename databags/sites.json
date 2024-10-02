@@ -204,7 +204,7 @@
       "name": "IHEID",
       "country": "CH",
       "description": "The institutional repository of the Graduate Institute of International and Development Studies contains research produced by its members, including books, book chapters, journal articles, working papers, theses and more.",
-      "url": "http://cdsinvenio.iheid.ch/",
+      "url": "https://repository.graduateinstitute.ch/",
       "screenshot_filename": "iheid.png",
       "types": ["research-data", "institutional-repository", "library"]
     },
