@@ -112,7 +112,7 @@
       "name": "EKP Publications",
       "country": "DE",
       "description": "",
-      "url": "https://ekp-invenio.physik.uni-karlsruhe.de",
+      "url": "https://publish.etp.kit.edu/communities/hep",
       "screenshot_filename": "ekp.png",
       "types": ["research-data", "institutional-repository", "library"]
     },
