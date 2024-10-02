@@ -243,7 +243,7 @@
       "name": "JINR Document Server",
       "country": "RU",
       "description": "Open Access repository of article and preprints and other related materials concerning the research activity in JINR.",
-      "url": "http://jdsweb.jinr.ru/",
+      "url": "https://jds.jinr.ru/",
       "screenshot_filename": "jinr.png",
       "types": ["research-data", "institutional-repository", "library"]
     },
