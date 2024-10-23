@@ -20,7 +20,7 @@ June 4th-7th in Bozeman, Montana.
 
 Result of the sprint (45 developer days, 107 commits, 8.5k lines touched):
 
-- inveniosoftware.org now has shiny new [blog](/blog) and [roadmap](/roadmap).
+- inveniosoftware.org now has shiny new [blog](/blog) and [roadmap](/products/rdm/roadmap).
 - inveniosoftware.org was moved to [Lektor](http://getlektor.com) static CMS
   and is now also hosted on GitHub Pages.
 - Cookiecutter templates for Invenio instances and Invenio data models where

@@ -11,15 +11,15 @@ Congratulations! Your team has just joined the InvenioRDM open source project an
 
 Whether you would like to install and customize InvenioRDM, contribute on the main project sprints, or take on development of a module locally to contribute back to the project, there are a few important points of entry to participation:
 
-- [Roadmap](https://inveniosoftware.org/products/rdm/roadmap/): Familiarize yourself with the overall project timeline and goals. Stable releases will be made through Summer 2021 on a monthly basis
+- [Roadmap](https://inveniosoftware.org/products/rdm/roadmap/): Familiarize yourself with the overall project timeline and goals.
 
-- [Development Roadmap](https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open): Get to know the specific milestones for 2021
+- [Development Roadmap](https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open): Get to know the specific milestones
 
 - [Sprintboard](https://github.com/orgs/inveniosoftware/projects/63): See the planning board for the current sprint
 
 - [Documentation](https://inveniordm.docs.cern.ch/): Read the official project documentation
 
-- [Discord](https://discord.gg/8qatqBC): Ask questions in the project Discord (chat/video platform) and introduce yourself in either the general or newcomers-help channels. A daily developer standup takes place on Discord at 15:15 UTC
+- [Discord](https://discord.gg/8qatqBC): Ask questions in the project Discord (chat/video platform) and introduce yourself in either the general or newcomers-help channels.
 
 - [Discourse](https://invenio-talk.web.cern.ch/): Want to provide feedback, but in a less time-sensitive manner than a chat? Either join or start a thread in the Discourse discussion forum
 
@@ -42,7 +42,7 @@ All stakeholders at your institution are welcome to contribute to InvenioRDM, wh
  - Welcome, Help and General Questions: Reach out to Community Manager Sara Gonzales via [Discord](https://discordapp.com/users/saragon7740) for general questions or to join the Metadata Interest Group
 
  - Schedule a Demo: Is your site, or a site you know, considering implementing InvenioRDM? Reach out to Community Manager Sara Gonzales via [Discord](https://discordapp.com/users/saragon7740) to schedule a one-hour demo and information session about the repository
- 
+
 
  ### Everyone
 
@@ -50,7 +50,7 @@ All stakeholders at your institution are welcome to contribute to InvenioRDM, wh
 
  - Telecons (see the list-serv for connection information): All partners of the InvenioRDM community are invited to bi-weekly telecons throughout the year. One telecon per month will focus on development updates, and the other will focus on community-based topics
 
- - [InvenioRDM Telecon Schedule 2021](https://docs.google.com/document/d/1Ks5_xEMujd6vdlSmYGrbCsKP_I2hZasMkg-RIjwxbKg/edit?usp=sharing)
+ - [InvenioRDM Telecon Schedule](https://docs.google.com/document/d/1Ks5_xEMujd6vdlSmYGrbCsKP_I2hZasMkg-RIjwxbKg/edit?usp=sharing)
 
  - [Blog](https://inveniosoftware.org/blog/): You are reading it! The blog will also alternate between development-based and community-based topics. Would you like to contribute a blog post? [Sign up here](https://docs.google.com/document/d/17Zupy06bKPdJMiLJDsfsgKZLgRJnbuj70AUCY1bOA0w/edit?usp=sharing) or contact Sara to get on the schedule
 
@@ -58,7 +58,7 @@ All stakeholders at your institution are welcome to contribute to InvenioRDM, wh
 
  - [Governance](https://inveniosoftware.org/governance/)
 
- 
+
  Welcome to the team, and happy collaborating!
 
 ---

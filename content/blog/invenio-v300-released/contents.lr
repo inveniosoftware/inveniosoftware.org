@@ -33,7 +33,7 @@ The following bundles are being prepared for release in v3.1:
 - **Files**: advanced file management with multi-backend support as well as [IIIF Image API](http://iiif.io/) support.
 - **Statistics**: [COUNTER-compliant](https://www.projectcounter.org/) statistics.
 
-See our [roadmap](/roadmap/) for further details.
+See our [roadmap](/products/rdm/roadmap/) for further details.
 
 # Getting started
 
