@@ -2,4 +2,4 @@ _model: Products
 ---
 _template: products/rdm/roadmap.html
 ---
-title: InvenioRDM Roadmap
+title: Roadmap

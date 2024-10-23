@@ -1,4 +1,4 @@
-column: current
+column: done
 ---
 body: Migrate Zenodo's current usage statistics module providing record views
 and downloads according to COUNTER Code of Practice for Research Data Usage Metrics.

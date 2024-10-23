@@ -2,16 +2,21 @@
 
 {% extends "page-rdm.html" %}
 {% block page_title %}{{ this.title }}{% endblock %}
-{% block page_subtitle %}January 2023{% endblock %}
+{% block page_subtitle %}October 2024{% endblock %}
 
 {% block page_body %}
 
 <section class="roadmap-section section-content-light-bg">
   <div class="container">
+    <div class="row roadmap-table">
+      <div class="col-sm-12 column" style="text-align:center">
+      Follow our discussion on features on <a href="https://github.com/inveniosoftware/product-rdm/discussions">GitHub Discussions</a>
+      </div>
+    </div>
     {% include "roadmap-table.html" %}
     <div class="row roadmap-table">
-      <div class="col-sm-4 column">
-      </div>
+      <div class="col-sm-4 column"></div>
+
       <div class="col-sm-4 column">
           <h2 class="section-title">Done 🚀</h2>
           <p>What we have recently completed</p>
@@ -36,28 +41,9 @@
 
     <div class="container">
       <p>
-        Following is an overview over the upcoming planned releases. For more information, please read our <a href="https://inveniordm.docs.cern.ch/releases/maintenance-policy/" title="InvenioRDM maintenance policy">maintenance policy</a>.
+        We aim to have a major release once a year. For more information, please read our <a href="https://inveniordm.docs.cern.ch/releases/maintenance-policy/" title="InvenioRDM maintenance policy">maintenance policy</a>.
       </p>
-      <div class="road-map-info row">
-
-        <div class="col-sm-6 column">
-          <h3>Long-Term Support (LTS) - production-ready</h3>
-          <p>
-            LTS are releases that can be used for production services. LTS releases are supported with bug and security fixes for minimum 1 year and maximum until 6 months after the next LTS release has been released.
-          </p>
-        </div>
-        <div class="col-sm-6 column">
-          <h3>Short-Term Support (STS)</h3>
-          <p>
-            STS releases should NOT be used for production services. An STS releases is only supported until the next release.
-            STS releases are used to ship new features fast so that the community can provide feedback.
-          </p>
-        </div>
-      </div>
-
     </div>
-
-    {% include "timeline.html" %}
   </div>
 </section>
 
@@ -66,15 +52,6 @@
     <h2 class="section-title">FAQ</h2>
     <div class="row">
       <div class="col-md-6">
-        <p>
-          <strong>What are your top priorities?</strong> <br />
-          Our top priorities in the coming period is to migrate Zenodo to InvenioRDM.
-        </p>
-        <p>
-          <strong>When is the roadmap updated?</strong> <br />
-          We update the roadmap roughly every 3 months. The next update is
-          planned for April 2023.
-        </p>
         <p>
           <strong>What does current, near-term and planned mean?</strong> <br />
           <ul>
@@ -100,6 +77,11 @@
           coming release. We on purpose do not communicate in which
           release a given feature will be shipped.
         </p>
+
+
+      </div>
+
+      <div class="col-md-6">
         <p>
           <strong>Why do you not tie features to release dates?</strong> <br />
           We want to communicate clearly the inherent uncertainty in our planned
@@ -118,46 +100,11 @@
           and more resilient community, as well as building features that serve
           real needs for our community.
         </p>
-
-      </div>
-
-      <div class="col-md-6">
-        <p>
-          <strong>Is your internal development schedule public?</strong> <br />
-          No. Only InvenioRDM partners have access to the internal development
-          schedule.
-        </p>
-        <p>
-          <strong>Why is the internal development schedule not public?</strong> <br />
-          The public roadmap accurately communicates the uncertaines in the
-          development schedule and ensures we set the proper expectations.
-
-          The internal development schedule on the other is an internal
-          planning tool and therefore does not accurately communicate the
-          inherent uncertaines. The schedule therefore has a high risk of
-          resulting in failed expectations.
-
-          Alternatively, we should communicate features with quite large
-          buffer times, but this would also not accurately communicate the
-          current fast-paced development.
-        </p>
-        <p>
-          <strong>What is the difference between the internal development schedule and the public roadmap?</strong> <br />
-          The only differences between the internal development schedule and the public roadmap
-          is that the internal schedule assigns a feature to a) a release date b) a responsible person c)
-          participating partners and d) a effort estimate.
-        </p>
         <p>
           <strong>Can I use your roadmap to make commitments?</strong> <br />
           Any commitment you make is your own commitment and made at your own risk and
           you must evaluate the impact of not meeting your commitment. If you
           need a specific feature, the best you can do is to help accelerate the roadmap.
-        </p>
-        <p>
-          <strong>How can I help accelerate the roadmap?</strong> <br />
-          We will be happy to explore with you, how you can best help accelerate the
-          roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>). Options include anything from contributing developers to contracting
-          out work to other InvenioRDM partners.
         </p>
       </div>
     </div>
