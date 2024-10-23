@@ -1,7 +1,7 @@
 
 
 <!doctype html>
-<title>InvenioRDM Roadmap — inveniosoftware.org</title>
+<title>Roadmap — inveniosoftware.org</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,8 +115,8 @@
             <div class="col">
               <div class="header-section-title">
                 
-                <h1>InvenioRDM Roadmap</h1>
-                <p class="sub-title">January 2023</p>
+                <h1>Roadmap</h1>
+                <p class="sub-title">October 2024</p>
                 
               </div>
             </div>
@@ -130,6 +130,11 @@
 
 <section class="roadmap-section section-content-light-bg">
   <div class="container">
+    <div class="row roadmap-table">
+      <div class="col-sm-12 column" style="text-align:center">
+      Follow our discussion on features on <a href="https://github.com/inveniosoftware/product-rdm/discussions">GitHub Discussions</a>
+      </div>
+    </div>
     
 <div class="row roadmap-table">
     <div class="col-sm-4 column">
@@ -137,17 +142,14 @@
         <p>A team actively works on this now</p>
             
 <div class="panel panel-default">
-  <div class="panel-heading statistics">
-    Statistics
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Usage statistics</h3>
+    <h3 class="panel-title">COAR Notify for peer-review.</h3>
     <div class="card-description">
-      <p>Migrate Zenodo's current usage statistics module providing record views
-and downloads according to COUNTER Code of Practice for Research Data Usage Metrics.
-The feature supports rolling up views over versions as well as sorting by  most viewed
-records.</p>
-<p><em>@CERN &amp; TU Wien, estimated April 2023</em></p>
+      <p>Implement support for receiving peer review notification events via the COAR Notify protocol.</p>
+<p><em>@Cottage Labs</em></p>
 
     </div>
   </div>
@@ -155,22 +157,14 @@ records.</p>
 
             
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
+  <div class="panel-heading files">
+    Files
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities: Record management</h3>
+    <h3 class="panel-title">Support for multipart file-upload</h3>
     <div class="card-description">
-      <p>Enhance the communities feature with support for:</p>
-<ul>
-<li>Submit a record to multiple communities before/after the record is published.</li>
-<li>Remove a record from a community.</li>
-<li>Publish a record directly to a community without review (for users with appropriate permissions).</li>
-<li>Notifications for communities.</li>
-<li>About page with curation policies.</li>
-<li>Invite members by email.</li>
-</ul>
-<p><em>@CERN, estimated April 2023</em></p>
+      <p>Add support for multipart file upload in InvenioRDM.</p>
+<p><em>@CESNET</em></p>
 
     </div>
   </div>
@@ -186,30 +180,11 @@ records.</p>
     Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Export formats</h3>
+    <h3 class="panel-title">Software Heritage</h3>
     <div class="card-description">
-      <p>Add support for metadata formats currently supported in Zenodo, including BibTeX, JSON-LD, GeoJSON. This includes adding support for custom and optional metadata fields currently supported by Zenodo, and ability to display badges on record landing pages.</p>
-<p><em>@CERN, estimated April 2023</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading development">
-    Development
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Deposit form enhancements</h3>
-    <div class="card-description">
-      <p>Small enhancements to the deposit form to support features currently available
-on Zenodo. This includes adding optional support for:</p>
-<ul>
-<li>Disallowing fully restricted records.</li>
-<li>Require files for a record</li>
-</ul>
-<p><em>@CERN, estimated April 2023</em></p>
+      <p>Document and launch the Software Heritage integration for use in InvenioRDM. The
+integration is currently launched on Zenodo.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -221,90 +196,14 @@ on Zenodo. This includes adding optional support for:</p>
         <p>A team has planed this on their schedule</p>
             
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Subcommunities</h3>
-    <div class="card-description">
-      <p>Add support for creating and managing fully featured subcommunities (i.e. support for records, members, settings etc) .</p>
-<p><em>@CERN, estimated Q2 2024</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Branded communities</h3>
-    <div class="card-description">
-      <p>Add support for styling  communities with their own visual identity.</p>
-<p><em>@CERN, estimated Q1 2024</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading development">
-    Development
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Concept DOIs</h3>
-    <div class="card-description">
-      <p>Add support for registering concept DOIs.</p>
-<p><em>@CERN, estimated Q2 2023</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
   <div class="panel-heading metadata">
     Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Data citation support</h3>
+    <h3 class="panel-title">Metadata curation checks</h3>
     <div class="card-description">
-      <p>Improve the data citation support in InvenioRDM according to <a href="https://doi.org/10.1038/s41597-019-0031-8">Fenner et al. (2019) A data citation roadmap for scholarly data repositories</a>.</p>
-<p><em>@Front Matter</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading third-party-integrations">
-    Third-party integrations
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">GitHub integration</h3>
-    <div class="card-description">
-      <p>Migrate Zenodo's current GitHub integration to InvenioRDM.</p>
-<p><em>@CERN, estimated Q2 2023</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
-  <div class="panel-heading sharing">
-    Sharing
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Access requests</h3>
-    <div class="card-description">
-      <p>Add support for requesting, granting and managing access to a restricted
-record.</p>
-<p><em>@CERN, estimated Q2 2023</em></p>
+      <p>Add support for automated basic curation checks of records per community.</p>
+<p><em>@CERN</em></p>
 
     </div>
   </div>
@@ -313,8 +212,8 @@ record.</p>
     </div>
 </div>
     <div class="row roadmap-table">
-      <div class="col-sm-4 column">
-      </div>
+      <div class="col-sm-4 column"></div>
+
       <div class="col-sm-4 column">
           <h2 class="section-title">Done 🚀</h2>
           <p>What we have recently completed</p>
@@ -387,6 +286,21 @@ The current task implements both the backend and frontend.</p>
 
         
 <div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Subcommunities</h3>
+    <div class="card-description">
+      <p>Add support for creating and managing fully featured subcommunities (i.e. support for records, members, settings etc) .</p>
+<p><em>@CERN, estimated Q2 2024</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
   <div class="panel-heading third-party-integrations">
     Third-party Integrations
   </div>
@@ -396,6 +310,24 @@ The current task implements both the backend and frontend.</p>
       <p>Added support for integrating <a href="https://www.research-data-services.org">ScieboRDS</a>
 via server-side file downloading and RO-Crate metadata format.</p>
 <p><em>@CERN, completed November 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading statistics">
+    Statistics
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Usage statistics</h3>
+    <div class="card-description">
+      <p>Migrate Zenodo's current usage statistics module providing record views
+and downloads according to COUNTER Code of Practice for Research Data Usage Metrics.
+The feature supports rolling up views over versions as well as sorting by  most viewed
+records.</p>
+<p><em>@CERN &amp; TU Wien, estimated April 2023</em></p>
 
     </div>
   </div>
@@ -424,6 +356,21 @@ with curation capabilities. This task only deals with the REST API and backend
     Metadata
   </div>
   <div class="panel-body">
+    <h3 class="panel-title">Harevsting of ROR, ORCID.</h3>
+    <div class="card-description">
+      <p>Recurrent harvesting of ROR and ORCID into the names, affiliations and funders
+vocabulary.</p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
     <h3 class="panel-title">Back office / Admin</h3>
     <div class="card-description">
       <p>Implement a basic an back office administration interface for InvenioRDM.
@@ -435,9 +382,6 @@ interface, and add the first couple of administration actions into the form.</p>
   </div>
 </div>
 
-      </div>
-      <div class="col-sm-4 column">
-      
         
 <div class="panel panel-default">
   <div class="panel-heading vocabularies">
@@ -455,6 +399,9 @@ employee database.</p>
   </div>
 </div>
 
+      </div>
+      <div class="col-sm-4 column">
+      
         
 <div class="panel panel-default">
   <div class="panel-heading vocabularies">
@@ -466,6 +413,21 @@ employee database.</p>
       <p>Enable the funder/grants field in the deposit form and import the required
 vocabularies in InvenioRDM.</p>
 <p><em>@CERN, completed February 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Branded communities</h3>
+    <div class="card-description">
+      <p>Add support for styling  communities with their own visual identity.</p>
+<p><em>@CERN, estimated Q1 2024</em></p>
 
     </div>
   </div>
@@ -505,6 +467,21 @@ new records to OpenAIRE.</p>
 
         
 <div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Export formats</h3>
+    <div class="card-description">
+      <p>Add support for metadata formats currently supported in Zenodo, including BibTeX, JSON-LD, GeoJSON. This includes adding support for custom and optional metadata fields currently supported by Zenodo, and ability to display badges on record landing pages.</p>
+<p><em>@CERN, estimated April 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
   <div class="panel-heading i18n">
     I18N
   </div>
@@ -514,6 +491,20 @@ new records to OpenAIRE.</p>
       <p>Finalise the I18N support and provide a german
 translation of InvenioRDM. Further languages to come later.</p>
 <p><em>@TU Graz &amp; Uni Bamberg, completed January 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Collections: Backend + Browse page</h3>
+    <div class="card-description">
+      <p>See example on <a href="https://zenodo.org/communities/eu/browse">https://zenodo.org/communities/eu/browse</a></p>
 
     </div>
   </div>
@@ -531,6 +522,44 @@ translation of InvenioRDM. Further languages to come later.</p>
 your own plugins for registering other types of persistent identifiers
 (Crossref DOIs, ARKs, Handles, ...).</p>
 <p><em>@CERN, completed May 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading development">
+    Development
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Concept DOIs</h3>
+    <div class="card-description">
+      <p>Add support for registering concept DOIs.</p>
+<p><em>@CERN, estimated Q2 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities: Record management</h3>
+    <div class="card-description">
+      <p>Enhance the communities feature with support for:</p>
+<ul>
+<li>Submit a record to multiple communities before/after the record is published.</li>
+<li>Remove a record from a community.</li>
+<li>Publish a record directly to a community without review (for users with appropriate permissions).</li>
+<li>Notifications for communities.</li>
+<li>About page with curation policies.</li>
+<li>Invite members by email.</li>
+</ul>
+<p><em>@CERN, estimated April 2023</em></p>
 
     </div>
   </div>
@@ -559,6 +588,26 @@ based on InvenioRDM.</p>
 
         
 <div class="panel panel-default">
+  <div class="panel-heading development">
+    Development
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Deposit form enhancements</h3>
+    <div class="card-description">
+      <p>Small enhancements to the deposit form to support features currently available
+on Zenodo. This includes adding optional support for:</p>
+<ul>
+<li>Disallowing fully restricted records.</li>
+<li>Require files for a record</li>
+</ul>
+<p><em>@CERN, estimated April 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
   <div class="panel-heading metadata">
     Metadata
   </div>
@@ -566,6 +615,21 @@ based on InvenioRDM.</p>
     <h3 class="panel-title">Basic OAI-PMH server</h3>
     <div class="card-description">
       <p><em>@TU Graz, completed April 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Data citation support</h3>
+    <div class="card-description">
+      <p>Improve the data citation support in InvenioRDM according to <a href="https://doi.org/10.1038/s41597-019-0031-8">Fenner et al. (2019) A data citation roadmap for scholarly data repositories</a>.</p>
+<p><em>@Front Matter</em></p>
 
     </div>
   </div>
@@ -605,6 +669,21 @@ general framework for communities submission handling.</p>
 
         
 <div class="panel panel-default">
+  <div class="panel-heading third-party-integrations">
+    Third-party integrations
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">GitHub integration</h3>
+    <div class="card-description">
+      <p>Migrate Zenodo's current GitHub integration to InvenioRDM.</p>
+<p><em>@CERN, estimated Q2 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
   <div class="panel-heading files">
     Files
   </div>
@@ -614,6 +693,22 @@ general framework for communities submission handling.</p>
       <p>Support linking to files on an external storage system instead of requiring the
 files to be uploaded via InvenioRDM.</p>
 <p><em>@CERN, completed November 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading sharing">
+    Sharing
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Access requests</h3>
+    <div class="card-description">
+      <p>Add support for requesting, granting and managing access to a restricted
+record.</p>
+<p><em>@CERN, estimated Q2 2023</em></p>
 
     </div>
   </div>
@@ -646,119 +741,9 @@ and integrates the Mirador v3 previewer for large images.</p>
 
     <div class="container">
       <p>
-        Following is an overview over the upcoming planned releases. For more information, please read our <a href="https://inveniordm.docs.cern.ch/releases/maintenance-policy/" title="InvenioRDM maintenance policy">maintenance policy</a>.
+        We aim to have a major release once a year. For more information, please read our <a href="https://inveniordm.docs.cern.ch/releases/maintenance-policy/" title="InvenioRDM maintenance policy">maintenance policy</a>.
       </p>
-      <div class="road-map-info row">
-
-        <div class="col-sm-6 column">
-          <h3>Long-Term Support (LTS) - production-ready</h3>
-          <p>
-            LTS are releases that can be used for production services. LTS releases are supported with bug and security fixes for minimum 1 year and maximum until 6 months after the next LTS release has been released.
-          </p>
-        </div>
-        <div class="col-sm-6 column">
-          <h3>Short-Term Support (STS)</h3>
-          <p>
-            STS releases should NOT be used for production services. An STS releases is only supported until the next release.
-            STS releases are used to ship new features fast so that the community can provide feedback.
-          </p>
-        </div>
-      </div>
-
     </div>
-
-    <div class="roadmap-year">
-    <h3>2023</h3>
-</div>
-
-<div class="roadmap-list-container">
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Jan</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>InvenioRDM v11 STS</h4>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Feb</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Mar</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Apr</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>InvenioRDM v12 beta 1</h4>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>May</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Jun</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>InvenioRDM v12 beta 2</h4>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-content">
-            <h4>OR2023</h4>
-            <p>
-            <ul>
-                <li>InvenioRDM Workshop at Open Repositories 2023</li>
-            </ul>
-            </p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Jul</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Aug</p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Sep</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>Zenodo on InvenioRDM</h4>
-            <p>
-            Zenodo running live on InvenioRDM. See <a href="https://blog.zenodo.org/2022/12/07/2022-12-07-zenodo-on-inveniordm/">details</a>
-            </p>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Oct</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>InvenioRDM v12 beta 3</h4>
-        </div>
-    </div>
-    <div class="roadmap-row">
-        <div class="roadmap-row-milestone">
-            <p>Nov</p>
-        </div>
-        <div class="roadmap-row-content">
-            <h4>InvenioRDM v12 RC1 and Final</h4>
-        </div>
-    </div>
-</div>
   </div>
 </section>
 
@@ -767,15 +752,6 @@ and integrates the Mirador v3 previewer for large images.</p>
     <h2 class="section-title">FAQ</h2>
     <div class="row">
       <div class="col-md-6">
-        <p>
-          <strong>What are your top priorities?</strong> <br />
-          Our top priorities in the coming period is to migrate Zenodo to InvenioRDM.
-        </p>
-        <p>
-          <strong>When is the roadmap updated?</strong> <br />
-          We update the roadmap roughly every 3 months. The next update is
-          planned for April 2023.
-        </p>
         <p>
           <strong>What does current, near-term and planned mean?</strong> <br />
           <ul>
@@ -801,6 +777,11 @@ and integrates the Mirador v3 previewer for large images.</p>
           coming release. We on purpose do not communicate in which
           release a given feature will be shipped.
         </p>
+
+
+      </div>
+
+      <div class="col-md-6">
         <p>
           <strong>Why do you not tie features to release dates?</strong> <br />
           We want to communicate clearly the inherent uncertainty in our planned
@@ -819,46 +800,11 @@ and integrates the Mirador v3 previewer for large images.</p>
           and more resilient community, as well as building features that serve
           real needs for our community.
         </p>
-
-      </div>
-
-      <div class="col-md-6">
-        <p>
-          <strong>Is your internal development schedule public?</strong> <br />
-          No. Only InvenioRDM partners have access to the internal development
-          schedule.
-        </p>
-        <p>
-          <strong>Why is the internal development schedule not public?</strong> <br />
-          The public roadmap accurately communicates the uncertaines in the
-          development schedule and ensures we set the proper expectations.
-
-          The internal development schedule on the other is an internal
-          planning tool and therefore does not accurately communicate the
-          inherent uncertaines. The schedule therefore has a high risk of
-          resulting in failed expectations.
-
-          Alternatively, we should communicate features with quite large
-          buffer times, but this would also not accurately communicate the
-          current fast-paced development.
-        </p>
-        <p>
-          <strong>What is the difference between the internal development schedule and the public roadmap?</strong> <br />
-          The only differences between the internal development schedule and the public roadmap
-          is that the internal schedule assigns a feature to a) a release date b) a responsible person c)
-          participating partners and d) a effort estimate.
-        </p>
         <p>
           <strong>Can I use your roadmap to make commitments?</strong> <br />
           Any commitment you make is your own commitment and made at your own risk and
           you must evaluate the impact of not meeting your commitment. If you
           need a specific feature, the best you can do is to help accelerate the roadmap.
-        </p>
-        <p>
-          <strong>How can I help accelerate the roadmap?</strong> <br />
-          We will be happy to explore with you, how you can best help accelerate the
-          roadmap. Please get in touch with the Product Manager (<a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>). Options include anything from contributing developers to contracting
-          out work to other InvenioRDM partners.
         </p>
       </div>
     </div>
