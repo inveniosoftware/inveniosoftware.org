@@ -13,7 +13,7 @@ body:
 Image by Sandra Meyndt/University of Freiburg
 
 
-When InvenioRDM launched at the University of Freiburg under the label [FreiData](https://freidata.uni-freiburg.de/), campus storage options which minted DOIs for publications already existed. For over a decade, Freiburg has hosted an institutional repository called "FreiDok“, which is also used as a documentation system for the university's publication activity. In its policies for handling research data and for Open Science, the university recommends that researchers prioritize visibility to their key target audience as the most important criterion when publishing research data. This often leads researchers to choose externally operated repositories.
+When InvenioRDM launched on 27th of October 2023 at the University of Freiburg under the label [FreiData](https://freidata.uni-freiburg.de/), campus storage options which minted DOIs for publications already existed. For over a decade, Freiburg has hosted an institutional repository called "FreiDok“, which is also used as a documentation system for the university's publication activity. In its policies for handling research data and for Open Science, the university recommends that researchers prioritize visibility to their key target audience as the most important criterion when publishing research data. This often leads researchers to choose externally operated repositories.
 
 Why did the University of Freiburg still decide to establish its own instance of InvenioRDM? And why did the university's management commit to sustainable operation?
 
