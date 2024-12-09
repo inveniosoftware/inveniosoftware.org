@@ -142,6 +142,62 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2020-12-15-metadata/">Metadata: Schema Reference Document and Future Work</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Sara Gonzales
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Dec 15, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>On 17 and 24 November 2020 the InvenioRDM project partners met in two telecons to discuss the <a href="https://inveniordm.docs.cern.ch/reference/metadata/">Metadata Reference</a> document.</p>
+<p><img src="/blog/2020-12-15-metadata/metadata_reference.png" alt=""></p>
+<p>These conversations were a follow-up to the community's review of the document. Feedback and questions were collected in a <a href="https://docs.google.com/document/d/1djBrPMaeVH4IlpFADMJSpgd5JJ1xIiPY5GwLs87Wwjw/edit?usp=sharing">Google Doc</a> prior to the conversations. The conversations helped to confirm many answers to questions about the data model that had been posed in the Doc, such as: whether ‘role’ is required for Creators (no - only for Contributors), are Resource Types customizable (yes), and which file is shown in the previewer when a record has multiple files (the first, unless otherwise specified). See the Doc for responses to additional questions.</p>
+<p><strong>Use Cases Requested</strong></p>
+<p>For some fields, further feedback is needed in order to make them as useful for the community as possible. In particular, your <code>use cases</code> are requested for the following scenarios:</p>
+<ol>
+<li>Adding a Language tag to Titles</li>
+<li>Records with more than one Publisher (making Publisher a repeatable field)</li>
+<li>Having a built-in “Unknown” option for Contributor type and/or role</li>
+<li>Having more than one Identifier per Affiliation</li>
+</ol>
+<p>Please post your use cases back to the top of the original <a href="https://docs.google.com/document/d/1djBrPMaeVH4IlpFADMJSpgd5JJ1xIiPY5GwLs87Wwjw/edit?usp=sharing">Google Doc</a> or to the new Metadata Interest Group topic at: <a href="https://invenio-talk.web.cern.ch">https://invenio-talk.web.cern.ch</a> (more on this below).</p>
+<p><strong>Subjects</strong></p>
+<p>In addition, the topic of Subjects was brought up for further discussion. The Subjects example in the Metadata Reference document shows the incorporation of one controlled vocabulary, the <a href="https://www.nlm.nih.gov/mesh/meshhome.html">Medical Subject Headings</a>, into the schema.</p>
+<p><img src="/blog/2020-12-15-metadata/subjects_mesh.png" alt=""></p>
+<p>However, there are many controlled vocabularies that we can potentially map to the Subjects field. Which will be most useful to incorporate for the wider community, and what are potential use cases?</p>
+<p>This is one of the first issues we would like to discuss in the Metadata Interest Group, which is set to launch in January 2021. This group welcomes the contributions and insights of developers, users, administrators, decision-makers, and anyone else at participating organizations with metadata experience, interest, and insights. Through the end of 2020 we will work to publicize the group and recruit members. If you’re interested in joining, please either sign up here: <a href="https://invenio-talk.web.cern.ch/t/metadata-interest-group/144">https://invenio-talk.web.cern.ch/t/metadata-interest-group/144</a> or DM me on Discord (see the Welcome channel).</p>
+<p><strong>Community Outreach</strong></p>
+<p>We are committed to serving the entire InvenioRDM community as our family of adopters continues to grow and thrive. This is the first, we hope, of many blog posts that will address topics of interest to the community at large, including developers, administrators, curators, and decision-makers. If there is a topic you would like us to explore, or perhaps even contribute a post on yourself, we’d like to know. If the topic would be best covered at a community-focused telecon (also on the horizon for the coming months!), we’d like to know that as well. Please contribute any and all ideas at my contact listed above.</p>
+<p>Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2020-12-15-metadata/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2020-11-29-november-release/">InvenioRDM November Release</a>
         
       </h3>
@@ -858,67 +914,6 @@ Invenio v3.5 and minimum until 2021-05-18.</p>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/invenio-v33-released/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2020-05-05-april-release/">InvenioRDM April Release</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lars Holm Nielsen, Lisa O&#39;Keefe, Guillaume Viger
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>May 5, 2020</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are pleased to announce the InvenioRDM April release. The Deposit page has been our focus and that meant designing the frontend and the backend based on lessons learned from the beta invenio-deposit python module and from the invenio-records-js and invenio-files-js previous angularjs modules. We will be implementing most of these designs in May.</p>
-<p>Thank you all for testing the last release and for your many contributions.</p>
-<h3>Some Highlights include:</h3>
-<ul>
-<li>Requests for comments (RFCs) from the numerous conversations. These are living and changing documents.<ul>
-<li>Deposit frontend: <a href="https://github.com/inveniosoftware/rfcs/issues/27">https://github.com/inveniosoftware/rfcs/issues/27</a></li>
-<li>Deposit backend: <a href="https://github.com/inveniosoftware/rfcs/issues/22">https://github.com/inveniosoftware/rfcs/issues/22</a></li>
-</ul>
-</li>
-<li>Two new modules have been created to improve the REST API and deal with the deposit backend<ul>
-<li><a href="https://github.com/inveniosoftware/flask-resources">https://github.com/inveniosoftware/flask-resources</a></li>
-<li><a href="https://github.com/inveniosoftware/invenio-resources">https://github.com/inveniosoftware/invenio-resources</a></li>
-</ul>
-</li>
-<li>On the frontend we have added a proof of concept deposit page with 2 fields (title and resource type).</li>
-<li>These are in part powered by an improved controlled vocabulary backend and an all-new React frontend.</li>
-<li>This page is accessible through the Upload link of the search page.</li>
-<li>Invenio-S3 v1.0.3 has been released with better big file upload support</li>
-<li>Various dependency fixes have been applied and the cookiecutter slugification made more solid</li>
-<li>Auto-reloading of webpack has been made possible allowing us to work much more effectively with React</li>
-</ul>
-<h3>Want to get involved?</h3>
-<p>Although in this release, we haven’t made significant visual changes, you are always welcomed to try new releases - invenio-cli v0.12.X, this time around- by following the documentation site: <a href="https://inveniordm.docs.cern.ch/">https://inveniordm.docs.cern.ch/</a> . Give us feedback on Discourse: <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-6-april-release/104">https://invenio-talk.web.cern.ch/t/inveniordm-alpha-6-april-release/104</a> for this release.</p>
-<p>As mentioned, apart from the /deposits/new proof of concept page you won’t see much other differences. Take it easy this time. We will be asking a lot of feedback from you next month!</p>
-<p>Thank you for your interest, take care and stay safe!</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2020-05-05-april-release/">Read More</a>
       
     </div>
   </div>

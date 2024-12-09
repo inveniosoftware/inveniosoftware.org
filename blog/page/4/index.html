@@ -142,6 +142,115 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/invenio-v32-released/">Invenio v3.2 released</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Dec 20, 2019</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are proud to announce the release of Invenio v3.2.0. With this release,
+Invenio v3.0.x reaches end of life, and will no longer be maintained.</p>
+<p><strong>Python compatibility</strong></p>
+<p>Invenio v3.2 supports Python 2.7 (until 2019-12-31), Python 3.5 and Python 3.6.</p>
+<h1>Getting started</h1>
+<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.2/quickstart/quickstart.html">quick start</a> guide.</p>
+<h1>Upgrading</h1>
+<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.2/upgrading.html">upgrade guide</a>.</p>
+<h1>Release notes</h1>
+<p>Please see the full <a href="https://invenio.readthedocs.io/en/maint-3.2/releases/v3.2.0.html">release notes</a> for
+details about minor changes, deprecations etc.</p>
+<h1>Highlights for Invenio v3.2</h1>
+<h2>Files bundle</h2>
+<p>We have released four new modules as part of the new Files bundle:</p>
+<ul>
+<li><a href="http://invenio-files-rest.readthedocs.io">Invenio-Files-REST</a>: Object store REST API for managing files in Invenio.</li>
+<li><a href="http://invenio-records-files.readthedocs.io">Invenio-Records-Files</a>: Integration layer between records and files.</li>
+<li><a href="http://invenio-previewer.readthedocs.io">Invenio-Previewer</a>: File previewers support.</li>
+<li><a href="http://invenio-iiif.readthedocs.io">Invenio-IIIF</a>: IIIF Image API support for thumbnail and zooming on images.</li>
+</ul>
+<p>To understand more about how to use the new Files bundle see our integration
+guide on <a href="https://invenio.readthedocs.io/en/latest/tutorials/handling-files.html">https://invenio.readthedocs.io/en/latest/tutorials/handling-files.html</a>.</p>
+<h2>Elasticsearch v7 support</h2>
+<p>Invenio now supports Elasticsearch v7.</p>
+<h2>Marshmallow 3 compatibility</h2>
+<p>Invenio now support both Marshmallow v2 or v3. The support is done via a
+compatibility layer, that allows Invenio to work with either schemas from v2 or
+v3. This should allow users to upgrade to Invenio v3.2 without being forced to
+upgrade their Marshmallow schemas immediately to v3.</p>
+<p>We advice all users to start planning an upgrade of their Marshmallow schemas
+from v2 to v3 as the upgrade is non-trivial and needs proper testing due to
+significant differences between Marshmallow v2 and v3.</p>
+<p>Invenio will continue support for both Marshmallow v2 and v3 for a transition
+period to allow users to upgrade at their own pace. After the transition period
+Marshmallow v2 support will be deprecated and removed from Invenio.</p>
+<p>For information about how to upgrade see <a href="https://invenio.readthedocs.io/en/latest/tutorials/upgrade-marshmallow.html">https://invenio.readthedocs.io/en/latest/tutorials/upgrade-marshmallow.html</a>.</p>
+<h2>Search index prefixing</h2>
+<p>Elasticsearch does not support the concept of virtual hosts and thus with
+previous versions of Invenio it was not possible to share an Elasticsearch
+cluster between multiple Invenio instances.</p>
+<p>We have now added support for index/alias/template prefixing, so that all
+names can be prefixed with a string and thus allows multiple Invenio instances
+to share an Elasticsearch cluster. Note, that this is only name prefixing, thus
+technically two Invenio instances will can read each other indexes and thus
+must trust each other.</p>
+<p>Read more about the new feature on
+<a href="https://invenio-search.readthedocs.io/en/latest/configuration.html#index-prefixing">https://invenio-search.readthedocs.io/en/latest/configuration.html#index-prefixing</a>.</p>
+<h1>Maintenance policy</h1>
+<p>Invenio v3.2 will be supported with bug and security fixes until the release of
+Invenio v3.4 and minimum until 2020-12-20.</p>
+<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.2/releases/maintenance-policy.html">maintenance policy</a>.</p>
+<h2>What's next?</h2>
+<p>In Invenio v3.3 we are planning to release the <strong>Statistics</strong> bundle including:</p>
+<ul>
+<li><a href="https://invenio-stats.readthedocs.io">invenio-stats</a><ul>
+<li>Invenio module for statistical data processing and querying with support
+for collecting COUNTER Research Data Usage Metrics compliant statistics.</li>
+</ul>
+</li>
+<li><a href="https://counter-robots.readthedocs.io">counter-robots</a><ul>
+<li>Library for COUNTER-compliant detection of machines and robots.</li>
+</ul>
+</li>
+</ul>
+<p>In addition to the Statistics bundle, we will also release final versions of
+the following two modules:</p>
+<ul>
+<li><a href="https://invenio-index-migrator.readthedocs.io">invenio-index-migrator</a><ul>
+<li>Elasticsearch index migrator for Invenio (aka zero down-time reindexing
+and index migration).</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/invenio-v32-released/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2019-10-15-web-redesign/">Introducing RDM, ILS and Framework</a>
         
       </h3>
@@ -1022,76 +1131,6 @@ files.</li>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/invenio-v310-released/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2018-12-21-invenio-bootcamp/">Invenio v3 Training Bootcamp</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Dec 21, 2018</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are pleased to announce the first Invenio v3 Bootcamp taking place at CERN, 19-21 March 2019. The Bootcamp is intended as an introduction to <em>developing</em> digital repositories with the Invenio v3 framework.</p>
-<h3>Website</h3>
-<p><a href="https://indico.cern.ch/e/invenio-bootcamp/">https://indico.cern.ch/e/invenio-bootcamp/</a></p>
-<h3>Planned topics</h3>
-<ul>
-<li>Creating your first Invenio instance.</li>
-<li>Customizing the look and feel.</li>
-<li>Working with data models.</li>
-<li>Managing access to records.</li>
-<li>Managing files.</li>
-<li>Creating a new module from scratch.</li>
-<li>Depositing records.</li>
-<li>Securing your Invenio instance.</li>
-<li>Deploying Invenio.</li>
-</ul>
-<p>The topics will be covered through practical tutorials and presentations. Note, that the final programme is subject to change, based on inputs we receive from you in the registration form.</p>
-<h3>Who can register</h3>
-<ul>
-<li>All registrations are subject to our approval (i.e. don't book flights until we confirm your registration).</li>
-<li>Intended audience: <ul>
-<li>Software developers <em>with some prior Python experience</em>.</li>
-</ul>
-</li>
-<li>Limited capacity:<ul>
-<li>We have limited capacity so we prioritise to have as many different institutions/companies represented as well as people with concrete projects for which they plan to use Invenio v3.</li>
-</ul>
-</li>
-</ul>
-<h3>How to register</h3>
-<p><a href="https://indico.cern.ch/event/773969/registrations/46902/">https://indico.cern.ch/event/773969/registrations/46902/</a></p>
-<h3>Cost</h3>
-<p>The Bootcamp itself is free of charge, but you will need to cover your own expenses during the Bootcamp including (but not limited) to lunches, dinners, coffee, accommodation, transport and social events.</p>
-<h3>Location</h3>
-<p>CERN, Geneva, Switzerland.</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2018-12-21-invenio-bootcamp/">Read More</a>
       
     </div>
   </div>
