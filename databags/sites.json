@@ -507,6 +507,31 @@
         "library",
         "institutional-repository"
       ]
+    },
+    {
+      "name": "TU Wien Research Data",
+      "description": "TU Wien Research Data is the institutional research data repository for TU Wien, the technical university of Vienna, Austria. Its is integrated with other services of TU Wien and focuses on curated datasets.",
+      "url": "https://researchdata.tuwien.ac.at",
+      "screenshot_filename": "tuw_research_data.png",
+      "types": [
+        "research-data",
+        "repository",
+        "institutional-repository",
+        "multimedia"
+      ]
+    },
+    {
+      "name": "TU Graz Repository",
+      "description": "TU Graz Repository is the institutional research data repository for TU Graz, the technical university of Graz, Austria. It has built-in support for several data models alongside the default.",
+      "url": "https://repository.tugraz.at",
+      "screenshot_filename": "tugraz_repository.png",
+      "types": [
+        "research-data",
+        "library",
+        "repository",
+        "institutional-repository",
+        "multimedia"
+      ]
     }
   ]
 }
