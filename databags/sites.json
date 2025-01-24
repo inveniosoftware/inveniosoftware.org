@@ -6,14 +6,6 @@
       "description": "Tunisian Technical and Scientific Information Portal .  This digital library is collecting Tunisian academic research and scientific output in order to increase its visibility, accessibility and impact .",
       "url": "http://www.pist.tn",
       "screenshot_filename": "pist.png",
-      "types": ["research-data", "repository", "library"]
-    },
-    {
-      "name": "Fundación Arte Ciencia y Diálogo",
-      "country": "ES",
-      "description": "Fundación Arte Ciencia y Diálogo",
-      "url": "http://invenio.ardicia.com",
-      "screenshot_filename": "ardicia.png",
       "types": ["research-data", "institutional-repository", "library"]
     },
     {
@@ -62,28 +54,12 @@
       "featured": true
     },
     {
-      "name": "CLASSE Document Databse",
-      "country": "US",
-      "description": "CLASSE Electronic Document Management System",
-      "url": "https://edms.classe.cornell.edu/",
-      "screenshot_filename": "classe.png",
-      "types": ["institutional-repository", "library"]
-    },
-    {
       "name": "CERN Open Data",
       "description": "Discover open Research datasets and software of LHC experiments. Visualise events and run and your own analysis.",
       "url": "http://opendata.cern.ch/",
       "screenshot_filename": "cod.png",
       "types": ["research-data"],
       "featured": true
-    },
-    {
-      "name": "Documents Consorzio COMETA",
-      "country": "IT",
-      "description": "Documents consorzio COMETA",
-      "url": "http://documents.ct.infn.it",
-      "screenshot_filename": "cometa.png",
-      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "DESY PUBDB",
@@ -98,14 +74,6 @@
       "description": "The Swiss Document Server in Education aims at collecting and providing electronic documents in the fields of education policy, educational administration, educational planning and educational research and development in Switzerland.",
       "url": "http://edudoc.ch/",
       "screenshot_filename": "edudoc.png",
-      "types": ["research-data", "institutional-repository", "library"]
-    },
-    {
-      "name": "Electrical Engineering Wroclaw University of Technology",
-      "country": "PL",
-      "description": "Repository of Wroclaw University of Technology, Poland - Faculty of Electrical Engineering",
-      "url": "http://zet10.ipee.pwr.wroc.pl",
-      "screenshot_filename": "eewut.png",
       "types": ["research-data", "institutional-repository", "library"]
     },
     {
@@ -146,14 +114,6 @@
       "url": "https://fd-repo.uni-bamberg.de",
       "screenshot_filename": "fd-repo-uni-bamberg.png",
       "types": ["research-data", "institutional-repository"]
-    },
-    {
-      "name": "GISELA Documents",
-      "country": "ES",
-      "description": "The GISELA Documents Server provides, by categories, all the documents produced by the Project",
-      "url": "http://documents.gisela-grid.eu/",
-      "screenshot_filename": "gisela.png",
-      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "GSI Institutional Repository",
@@ -225,14 +185,6 @@
       "featured": true
     },
     {
-      "name": "The Institute of Theoretical and Applied Mechanics",
-      "country": "CZ",
-      "description": "The Institute of Theoretical and Applied Mechanics",
-      "url": "https://invenio.itam.cas.cz",
-      "screenshot_filename": "itam.png",
-      "types": ["research-data", "institutional-repository", "library"]
-    },
-    {
       "name": "International Telecommunication Union",
       "description": "The ITU library collections include all ITU publications and documents: journals and newsletters, brochures and booklets, council and conference documents, recommendations, reports, workshop and seminar reports, news bulletins and notifications, manuals, handbooks and directories, etc. Please note that most of these publications are not yet included in this online catalogue.",
       "url": "http://itu.tind.io",
@@ -263,14 +215,6 @@
       "types": ["library", "institutional-repository"]
     },
     {
-      "name": "Institutional Repository of Kumasi Polytechnic",
-      "country": "GH",
-      "description": "Institutional Repository of Kumasi Polytechnic",
-      "url": "http://library.kpoly.edu.gh/",
-      "screenshot_filename": "kumasi.png",
-      "types": ["research-data", "institutional-repository", "library"]
-    },
-    {
       "name": "LERSSE",
       "country": "CA",
       "description": "Publications of the Laboratory for Education and Research in Secure Systems Engineering (LERSSE)",
@@ -284,13 +228,6 @@
       "url": "http://impulse.mlz-garching.de",
       "screenshot_filename": "mlz.png",
       "types": ["institutional-repository"]
-    },
-    {
-      "name": "MPE",
-      "description": "Max-Planck-Institut für extraterrestrische Physik.",
-      "url": "http://mpe.tind.io",
-      "screenshot_filename": "mpe.png",
-      "types": ["multimedia"]
     },
     {
       "name": "Museum Zitatelle Jülich - Bibliothek",
@@ -331,13 +268,6 @@
       "types": ["library"]
     },
     {
-      "name": "Olin College of Engineering",
-      "description": "Olin was founded to radically change engineering education with the goal of fueling the technical innovation needed to solve the world’s complex future challenges.",
-      "url": "http://olin.tind.io",
-      "screenshot_filename": "olin.png",
-      "types": ["library"]
-    },
-    {
       "name": "Open Access Repository",
       "country": "IT",
       "description": "Open Access Repository is an initiative supported by the DCH-RP (Digital Cultural Heritage - Roadmap for Preservation) project as it can fulfil the needs of cultural institutions that want to preserve their data and make them accessible in an Open Access way by means of a digital repository that is compliant with OpenAIRE guidelines.",
@@ -353,27 +283,11 @@
       "types": ["library", "multimedia"]
     },
     {
-      "name": "RomDoc",
-      "country": "RO",
-      "description": "Part of RomDoc Project, funded by Swiss National Science Foundation, in the frame of the international cooperation programme SCOPES 2005-2008 (Scientific Co-operation between Eastern Europe and Switzerland).  The aim of the project is to implement a publication platform for scientists in Romania for recording and long-term storage of selected digital born and scanned scientific material. ",
-      "url": "http://romdoc.upb.ro/",
-      "screenshot_filename": "romdoc.png",
-      "types": ["research-data", "library"]
-    },
-    {
       "name": "RWTH Publications",
       "description": "'RWTH Publications' is a central database that documents RWTH Aachen University's scientific performance. It offers all RWTH affiliates the organizational and technical means to electronically publish scientific results and documents any published material. In addition, the database offers to host internal institute documents and data collections (institute collection). RWTH Aachen University is the largest technical university in Germany and one of nine 'German Universities of Excellence' (elite university). The University library Aachen operates RWTH Publications as a member of the join² community.",
       "url": "http://publications.rwth-aachen.de",
       "screenshot_filename": "rwth.png",
       "types": ["institutional-repository"]
-    },
-    {
-      "name": "Sci-GaIA",
-      "country": "IT",
-      "description": "Open Access Repository managed and operated by the Sci-GaIA project",
-      "url": "https://oar.sci-gaia.eu/",
-      "screenshot_filename": "scigaia.png",
-      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "SCOAP3 Repository",
@@ -400,27 +314,11 @@
       "types": ["library", "institutional-repository"]
     },
     {
-      "name": "SYSDOC",
-      "country": "DK",
-      "description": "DTU Fotonik Optical Communication Document Server",
-      "url": "http://sysdoc.com.dtu.dk/",
-      "screenshot_filename": "sysdoc.png",
-      "types": ["research-data", "library"]
-    },
-    {
       "name": "TRACES",
       "description": "TRACES: the bibliographical data base on Catalan language and literature. TRACES project born on 1987 by the Grup d'Estudis de Literatura Catalana Contemporània (GELCC) from the Universitat Autònoma de Barcelona.",
       "url": "http://traces.uab.cat/",
       "screenshot_filename": "traces.png",
-      "types": ["library", "repository"]
-    },
-    {
-      "name": "TRIUMF",
-      "country": "CA",
-      "description": "Invenio at TRIUMF",
-      "url": "http://invenio.triumf.ca/",
-      "screenshot_filename": "triumf.png",
-      "types": ["institutional-repository", "library"]
+      "types": ["library", "institutional-repository"]
     },
     {
       "name": "Dipòsit Digital de Documents",
@@ -428,14 +326,6 @@
       "url": "http://ddd.uab.cat",
       "screenshot_filename": "uab.png",
       "types": ["multimedia", "library", "institutional-repository"]
-    },
-    {
-      "name": "University Library in Bratislava",
-      "country": "SK",
-      "description": "University Library in Bratislava",
-      "url": "https://issn.issn.sk/",
-      "screenshot_filename": "ulbratislava.png",
-      "types": ["institutional-repository", "library"]
     },
     {
       "name": "Trabajos Fin De Estudios",
@@ -472,7 +362,7 @@
       "description": "Zenodo is an open home for the long-tail of science, enabling researchers to share and preserve any research outputs.",
       "url": "http://zenodo.org",
       "screenshot_filename": "zenodo.png",
-      "types": ["research-data", "repository"],
+      "types": ["research-data", "institutional-repository"],
       "featured": true
     },
     {
@@ -482,14 +372,6 @@
       "url": "https://museumbollandianum.be",
       "screenshot_filename": "museumbollandianum.png",
       "types": ["library"]
-    },
-    {
-      "name": "Sceiba",
-      "country": "CU",
-      "description": "Sceiba collects and manages metadata of Cuban research outputs and links them to systems for identification of people and organizations. Includes an application to evaluation and monitoring of research outputs. Sceiba is currently a Beta product.",
-      "url": "https://sceiba.cu",
-      "screenshot_filename": "sceiba.png",
-      "types": ["repository"]
     },
     {
       "name": "Materials Cloud Archive",
@@ -515,7 +397,6 @@
       "screenshot_filename": "tuw_research_data.png",
       "types": [
         "research-data",
-        "repository",
         "institutional-repository",
         "multimedia"
       ]
@@ -528,7 +409,6 @@
       "types": [
         "research-data",
         "library",
-        "repository",
         "institutional-repository",
         "multimedia"
       ]
