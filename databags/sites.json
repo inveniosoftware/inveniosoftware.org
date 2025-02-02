@@ -532,6 +532,13 @@
         "institutional-repository",
         "multimedia"
       ]
+    },
+    {
+      "name": "IAEA International Nuclear Information System",
+      "description": "IAEA INIS hosts over 50 years of nuclear research with close to 5M records using a customized metadata schema and permissions system. Other prominent features are the advanced search and PDF full-text search capabilities.",
+      "url": "https://inis.iaea.org",
+      "screenshot_filename": "iaea-inis.png",
+      "types": ["repository"]
     }
   ]
 }
