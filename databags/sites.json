@@ -1,12 +1,20 @@
 {
   "site_list": [
     {
+      "name": "MSD-LIVE",
+      "country": "US",
+      "description": "MSD-LIVE: a data and code management system combined with an advanced computing platform that enables MSD researchers to document and archive their data, run their models and analysis tools, and share their data, software, and multi-model workflows.",
+      "url": "https://data.msdlive.org",
+      "screenshot_filename": "msdlive.png",
+      "types": ["data", "repository", "compute"]
+    },
+    {
       "name": "البوابة التونسية للإعلام العلمي و التقني",
       "country": "TN",
       "description": "Tunisian Technical and Scientific Information Portal .  This digital library is collecting Tunisian academic research and scientific output in order to increase its visibility, accessibility and impact .",
       "url": "http://www.pist.tn",
       "screenshot_filename": "pist.png",
-      "types": ["research-data", "repository", "library"]
+      "types": ["data", "repository", "library"]
     },
     {
       "name": "Fundación Arte Ciencia y Diálogo",
