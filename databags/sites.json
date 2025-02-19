@@ -1,14 +1,6 @@
 {
   "site_list": [
     {
-      "name": "MSD-LIVE",
-      "country": "US",
-      "description": "MSD-LIVE (MultiSector Dynamics – Living, Intuitive, Value-adding, Environment): data and code management system combined with an advanced computing platform that enables MSD researchers to document and archive their data, run their models and analysis tools, and share their data, software, and multi-model workflows.",
-      "url": "https://data.msdlive.org",
-      "screenshot_filename": "msdlive.png",
-      "types": ["research-data", "institutional-repository"]
-    },
-    {
       "name": "البوابة التونسية للإعلام العلمي و التقني",
       "country": "TN",
       "description": "Tunisian Technical and Scientific Information Portal .  This digital library is collecting Tunisian academic research and scientific output in order to increase its visibility, accessibility and impact .",
@@ -51,7 +43,7 @@
       "description": "CaltechDATA is an institutional research data repository that shares and preserves the accomplishments of Caltech researchers.",
       "url": "https://data.caltech.edu",
       "screenshot_filename": "caltechdata.png",
-      "types": ["research-data", "institutional-repository","library"]
+      "types": ["research-data", "institutional-repository", "library"]
     },
     {
       "name": "CERN Document Server",
@@ -71,7 +63,7 @@
     },
     {
       "name": "DESY PUBDB",
-      "description": "The DESY Publication database (pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts. DESY is one of the world’s leading accelerator centres. Researchers from around the world use the large-scale facilities at DESY to explore the microcosm in all its variety – from the interactions of tiny elementary particles and the behaviour of new types of nanomaterials to biomolecular processes that are essential to life. DESY library operates pubdb as member of the join² community.",
+      "description": "The DESY Publication database (pubdb) contains references for scientific publications as well as open access to many of the corresponding full texts. DESY is one of the world’s leading accelerator centres. Researchers from around the world use the large-scale facilities at DESY to explore the microcosm in all its variety - from the interactions of tiny elementary particles and the behaviour of new types of nanomaterials to biomolecular processes that are essential to life. DESY library operates pubdb as member of the join² community.",
       "url": "http://pubdb.desy.de",
       "screenshot_filename": "desy.png",
       "types": ["library", "institutional-repository"]
@@ -238,6 +230,14 @@
       "types": ["institutional-repository"]
     },
     {
+      "name": "MSD-LIVE",
+      "country": "US",
+      "description": "MSD-LIVE (MultiSector Dynamics - Living, Intuitive, Value-adding, Environment): data and code management system combined with an advanced computing platform that enables MSD researchers to document and archive their data, run their models and analysis tools, and share their data, software, and multi-model workflows.",
+      "url": "https://data.msdlive.org",
+      "screenshot_filename": "msdlive.png",
+      "types": ["research-data", "institutional-repository"]
+    },
+    {
       "name": "Museum Zitatelle Jülich - Bibliothek",
       "description": "The \"Museum Zitadelle Jülich\" has a specialized library - jointly with the \"Jülicher Geschichtsverein 1923 e.V.\" - which is at the same time the seat of the archive of the \"Deutschen Gesellschaft für Festungsforschung e.V.\". The library currently conteins about 20,000 volumes and is further expanded by buying, exchange and donations.",
       "url": "http://invenio.museum-zitadelle.de/",
@@ -393,33 +393,21 @@
       "description": "Prism is an institutional repository for the research and scholarly output of Northwestern University. Prism preserves intellectual works created by the scholarly community, enhances the visibility of scholarship, and promotes authors by enabling discovery and accessibility of works by the international scientific community.",
       "url": "https://prism.northwestern.edu",
       "screenshot_filename": "nu_prism.png",
-      "types": [
-        "library",
-        "institutional-repository"
-      ]
+      "types": ["library", "institutional-repository"]
     },
     {
       "name": "TU Wien Research Data",
       "description": "TU Wien Research Data is the institutional research data repository for TU Wien, the technical university of Vienna, Austria. Its is integrated with other services of TU Wien and focuses on curated datasets.",
       "url": "https://researchdata.tuwien.ac.at",
       "screenshot_filename": "tuw_research_data.png",
-      "types": [
-        "research-data",
-        "institutional-repository",
-        "multimedia"
-      ]
+      "types": ["research-data", "institutional-repository", "multimedia"]
     },
     {
       "name": "TU Graz Repository",
       "description": "TU Graz Repository is the institutional research data repository for TU Graz, the technical university of Graz, Austria. It has built-in support for several data models alongside the default.",
       "url": "https://repository.tugraz.at",
       "screenshot_filename": "tugraz_repository.png",
-      "types": [
-        "research-data",
-        "library",
-        "institutional-repository",
-        "multimedia"
-      ]
+      "types": ["research-data", "library", "institutional-repository", "multimedia"]
     }
   ]
 }
