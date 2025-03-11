@@ -142,6 +142,144 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2020-12-17-invenio-v340-released/">Invenio v3.4.0 released</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            <a href="https://twitter.com/larshankat">Lars Holm Nielsen</a>
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Dec 17, 2020</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are proud to announce the release of Invenio v3.4.0.</p>
+<p>Head over to our <a href="/products/framework/">Getting started</a> to see it in action.</p>
+<p>Read the full <a href="https://invenio.readthedocs.io/en/latest/releases/releases/v3.4.0.html">release notes</a>.</p>
+<h1>What's new in Invenio v3.4?</h1>
+<h2>New UI Framework: Semantic UI</h2>
+<p>The largest new feature in Invenio v3.4 is the release of Semantic UI as the new UI framework. This works has been under way since we released version 3.0 with a deprecation notice on AngularJS 2.5 years ago.</p>
+<p>Semantic UI is now the new default UI framework for Invenio, replacing the existing Bootstrap v3 framework. Most importantly, we have added support in Invenio v3.4 for supporting multiple UI frameworks concurrently. This means that Bootstrap 3 is still supported in v3.4 together with Semantic UI, and that we in the future can support new frameworks.</p>
+<p>UI Frameworks evolve very rapidly and we expect that Invenio eventually will have to go through multiple UI frameworks over it’s life-time. Allowing support for multiple frameworks, isolate future changes, and even allow third-parties to develop custom themes for Invenio without impacting the business logic Invenio.</p>
+<p>Technically the support for multiple UI frameworks works by having specialised Jinja template loading and themable webassets build systems.</p>
+<p>Read more about the new system in <a href="https://invenio.readthedocs.io/en/latest/documentation/main-concepts/user-interface-styling.html#user-interface-styling">User interface styling</a>.</p>
+<h2>Reorganised documentation</h2>
+<p>We have reorganised the Invenio documentation, to make it easier for new developers to get started with Invenio.</p>
+<p>In particular we now have a documentation overview page on <a href="https://inveniosoftware.org/documentation/">https://inveniosoftware.org/documentation/</a> that gathers both Framework, RDM and ILS documentation under one umbrella.</p>
+<p>We have also reorganised the main Invenio Framework documentation on <a href="https://invenio.readthedocs.io/en/latest/">https://invenio.readthedocs.io/en/latest/</a></p>
+<h3>Records improvements</h3>
+<p>Invenio v3.4 marks the start of some larger improvements we want to make to the overall data flow for records in Invenio. With Invenio v3.4 we are releasing new features for Invenio-Records. These improvements are not being used by other Invenio modules yet, but allows us to ensure the backward compatibility of the changes.</p>
+<p>Overall, the changes made to Invenio-Records focuses on having records stored in separate database tables/Elasticsearch indexes and making a simplified programmatic API that is less error prone to use.</p>
+<p>The following only describes the new featuers at a high-level.</p>
+<h4>Dumping/Loading support</h4>
+<p>Records now supports dumping and loading of records. This will eventually replace the using signals for customising the JSON being indexed, as well as standardising the record being loaded from Elasticsearch, database or other sources.</p>
+<h4>Type support</h4>
+<p>Currently, a record only supports native JSON data types. In particular, date/time data types are not supported. We have now added the possiblity to support that certain fields inside your JSON have custom data types (such as datetime).</p>
+<h4>Extensions</h4>
+<p>We have added support record extensions as a mechanism for replacing signals. Overall the signals were causing issues, because you often needed signals per type of record you were dealing with. With the extensions, you can now more easily hook into</p>
+<h4>System fields</h4>
+<p>A typical issue you would deal with in Invenio is to create a record and a persistent identifier. System fields allows you to easily compose a record type with new features, so that e.g. <code>Record.create(...)</code> will also automatically create a persistent identifer.</p>
+<h4>Backward compatibility</h4>
+<p>All changes are backward compatible thus existing source code and stored records will continue to work with the latest release.</p>
+<h3>Testing improvements</h3>
+<h4>GitHub Actions instead of Travis CI</h4>
+<p>We have moved almost all our 100+ repositories from using Travis CI as the continues integration system to GitHub Actions. This was due to Travis CI imposing a migration from .org to .com and lowering the total number of resources availble for open source projects. Overall, this meant very long waiting times for pull-request builds as well as PyPI releases. We have therefore migration to GitHub Actions. We would like to thank Travis CI for the service they have provided through out the years to the open source community.</p>
+<h4>Reprodicible tests</h4>
+<p>We have developed a new tool <a href="http://github.com/inveniosoftware/docker-services-cli">Docker-Services-CLI</a>, that helps bring up/down required services such as databases, Elasticsearch, etc for testing. This makes it easier to investigate specific test failures locally, as well as making it easier to migrate between continuous integration systems.</p>
+<h4>Centralised test dependencies and Pytest-Invenio</h4>
+<p>With the release of Pytest-Invenio v1.4 we have centralised test dependencies to a single module, and can more easily control breaking changes from third-party packages. Previously new version of isort and pytest have been causing wide-spread test failures due to minor changes.</p>
+<h1>Minor changes in v3.4</h1>
+<ul>
+<li><p>Invenio-Accounts:</p>
+<ul>
+<li>Password length validation during login was removed.</li>
+<li>"Log in" instead of "Sign in" is now being used consistently throughout the application. Previously both version could be found.</li>
+</ul>
+</li>
+<li><p>Invenio-App:</p>
+<ul>
+<li>The <code>/ping</code> endpoint (used by e.g. load balancers for aliveness checks) now also supports <code>HEAD</code> and <code>OPTIONS</code> HTTP verbs as recommended by e.g. HAProxy documentation.</li>
+</ul>
+</li>
+<li><p>Invenio-Celery</p>
+<ul>
+<li>Only Celery to 4.4.x to 5.0.x releases are supported. Note, Celery have declared Celery 4.4.x as a Long Term Support release. Note, that Celery changed command line arguments from <code>celery worker -A &lt;app&gt;</code> to <code>celery -A &lt;app&gt; worker</code> between version 4 and 5.</li>
+</ul>
+</li>
+<li><p>Invenio-DB</p>
+<ul>
+<li>Now support SQLAlchemy &lt;1.4 which include e.g. PostgreSQL 12 support.</li>
+<li>Hides the database password from CLI output when running <code>db init</code> or <code>db create</code>.</li>
+</ul>
+</li>
+<li><p>Invenio-Indexer</p>
+<ul>
+<li>Elasticsearch delete requests now uses optimistic concurrency control by providing the the <code>version</code> and <code>version_type</code> in delete requests. The previous behavior can restored by calling <code>RecordIndexer().delete(record, version=None, version_type=None)</code> instead. This fixes an issue where deleting and recreating a document right after would fail.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Invenio-JSONSchemas</p>
+<ul>
+<li>Fixes an issue related to nested <code>allOf</code> being ignored.</li>
+</ul>
+</li>
+<li><p>Invenio-OAuthClient</p>
+<ul>
+<li>Added support for CERN OpenID contrib.</li>
+</ul>
+</li>
+<li><p>Invenio-Records-REST</p>
+<ul>
+<li>The header <code>Cache-Control: 'no-cache'</code> is now sent on successful HTTP 200 responses to ensure that browsers will not cache responses client side and ETag will be evaluated.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Invenio-REST</p>
+<ul>
+<li>Fixes a bug with CSRF checking when the endpoint did not exist.</li>
+</ul>
+</li>
+</ul>
+<h1>Deprecations in v3.4</h1>
+<h2>Bootstrap 3</h2>
+<p>Bootstrap v3 has reached end-of-life and will no longer receive further updates from their maintainers. Migrating to Bootstrap v4 or v5 is as difficult as upgrading to Semantic UI and there are no easy migration paths.</p>
+<p>We will continue to support the Bootstrap v3 integration throughout the maintenance period of Invenio v3.4. Invenio v3.5 <em>may</em> move all Bootstrap 3 templates to a separate Invenio package, that you could install, however v3.5 will not add new Bootstrap 3 templates.</p>
+<p><strong>You should plan allocating time for a migration from Bootstrap 3 to Semantic UI during 2021</strong></p>
+<h1>Features removed in v3.4</h1>
+<h3>Elasticsearch v2 and v5 support</h3>
+<p>We have removed support for Elasticsearch v2 and v5 as announced in v3.3. Elasticsearch v2 and v5 have reached end-of-life and is no longer maintained with security fixes, thus you should strongly consider upgrading in case you have not already done so.</p>
+<h3>AMD/RequireJS</h3>
+<p>The old AMD/RequireJS assets build system, that was deprecated and replaced with Webpack in Invenio v3.1 has now been completely removed from the code base.</p>
+<h1>Maintenance policy</h1>
+<p>Invenio v3.4 will be supported with bug and security fixes until the release of Invenio v3.6 and minimum until 2021-12-17.</p>
+<p>See our <a href="https://invenio.readthedocs.io/en/latest/releases/maintenance-policy.html">Maintenance Policy</a>.</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2020-12-17-invenio-v340-released/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2020-12-15-metadata/">Metadata: Schema Reference Document and Future Work</a>
         
       </h3>
@@ -828,92 +966,6 @@ step-by-step install and usage of InvenioRDM.</p>
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-06-05-may-release/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/invenio-v33-released/">Invenio v3.3 released</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Pablo Panero
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>May 20, 2020</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are proud to announce the release of Invenio v3.3.0. With this release,
-Invenio v3.1.x reaches end of life, and will no longer be maintained.</p>
-<p><strong>Python compatibility</strong></p>
-<p>Invenio v3.3 supports Python versions 3.6 and 3.7. Python 2 support in Invenio
-ended on January 1st, 2020 with the official end of life for Python 2 on the
-same date.</p>
-<h1>Getting started</h1>
-<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.3/quickstart/quickstart.html">quick start</a> guide.</p>
-<h1>Upgrading</h1>
-<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.3/upgrading.html">upgrade guide</a>.</p>
-<h1>Release notes</h1>
-<p>Please see the full <a href="https://invenio.readthedocs.io/en/maint-3.3/releases/v3.3.0.html">release notes</a> for
-details about minor changes, deprecations etc.</p>
-<h1>Highlights for Invenio v3.3</h1>
-<h2>Python 3.7</h2>
-<p>Python 3.7 is now supported by Invenio!</p>
-<h2>Improved support for Single Page Applications</h2>
-<p>Invenio v3.3 improves the support for Single Page Applications (SPA) by adding
-REST APIs for account management operations such as login, logout, user registration,
-password change, email confirmation and more. The integrated OAuth client
-also adds a new REST API so that you can login via your OAuth providers such
-as GitHub, ORCID and Globus.</p>
-<h2>CSRF Protection</h2>
-<p>Invenio-REST adds a CSRF middleware, called <code>CSRFProtectMiddlewate</code> to protect
-API views against CSRF attacks. The CSRF checks can be skipped in REST API
-calls when using a personal OAuth API token.</p>
-<h2>Dependency management</h2>
-<p>We have revamped management of third-party dependencies. New releases
-of some of the many third-party packages Invenio depends on could often
-cause dependency conflicts. Invenio v3.3 introduces the concept of coordinator
-packages, who are responsible for properly specifying third-party dependencies.</p>
-<p>The <a href="https://invenio.readthedocs.io/en/maint-3.3/releases/v3.3.0.html">release notes</a>
-contain a table with all the current coordinator modules.</p>
-<h2>Helm chart (BETA)</h2>
-<p>Helm-Invenio provides a helm chart to deploy an Invenio application along with
-all its required services: Redis, RabbitMQ, HAProxy, Nginx, Elasticsearch,
-Logstash and PostgreSQL.</p>
-<p>This chart is currently in beta version. Its templates are currently specific
-for OpenShift. However, work is on-going to support bare Kubernetes deployments.</p>
-<h1>Maintenance policy</h1>
-<p>Invenio v3.3 will be supported with bug and security fixes until the release of
-Invenio v3.5 and minimum until 2021-05-18.</p>
-<p>See our <a href="https://invenio.readthedocs.io/en/maint-3.3/releases/maintenance-policy.html">maintenance policy</a>.</p>
-<h1>What's next?</h1>
-<p>In Invenio v3.4 we are planning to release two major new features:</p>
-<ul>
-<li>Theming support and a new Semantic UI theme.</li>
-<li>A statistics bundle that adds support for collecting COUNTER Research Data Usage Metrics compliant statistics.</li>
-<li>Index migration support for migrating between Elasticsearch clusters (aka zero down-time reindexing and index migration).</li>
-</ul>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/invenio-v33-released/">Read More</a>
       
     </div>
   </div>
