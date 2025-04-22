@@ -408,6 +408,14 @@
       "url": "https://repository.tugraz.at",
       "screenshot_filename": "tugraz_repository.png",
       "types": ["research-data", "library", "institutional-repository", "multimedia"]
+    },
+    {
+      "name": "KTH Royal Institute of Technology",
+      "country": "SE",
+      "description": "The KTH data repository contains information about KTH research data and related research output.",
+      "url": "https://datarepository.kth.se",
+      "screenshot_filename": "kth-rdm.png",
+      "types": ["research-data", "institutional-repository", "library"]
     }
   ]
 }
