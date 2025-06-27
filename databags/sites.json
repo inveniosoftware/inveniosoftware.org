@@ -120,7 +120,7 @@
       "country": "DE",
       "description": "The catch-all Research Data Repository of the University of Hamburg.",
       "url": "https://www.fdr.uni-hamburg.de",
-      "screenshot_filename": "rdr.png",
+      "screenshot_filename": "fdr.png",
       "types": ["research-data", "institutional-repository"]
     },
     {
