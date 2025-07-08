@@ -27,7 +27,7 @@ When creating a new draft, you can now also upload files that will be included i
 
 Big part of our efforts went into designing a new files REST API that will allow InvenioRDM to easily support upload workflows depending on third-party storage systems (e.g S3).
 
-You can check out the documentation of these endpoints in our newly added [REST API reference](https://inveniordm.docs.cern.ch/reference/rest_api/).
+You can check out the documentation of these endpoints in our newly added [REST API reference](https://inveniordm.docs.cern.ch/reference/rest_api_index/).
 
 #### Files listing and preview
 

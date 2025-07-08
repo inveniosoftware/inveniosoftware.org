@@ -23,9 +23,9 @@ Whether you would like to install and customize InvenioRDM, contribute on the ma
 
 - [Discourse](https://invenio-talk.web.cern.ch/): Want to provide feedback, but in a less time-sensitive manner than a chat? Either join or start a thread in the Discourse discussion forum
 
-- [Development Setup](https://inveniordm.docs.cern.ch/develop/): Install a development version
+- [Local Instance Setup](https://inveniordm.docs.cern.ch/install/): Install a local InvenioRDM instance for development
 
-- [Development Workflows](https://inveniordm.docs.cern.ch/maintenance/development_workflow/): Learn about the development workflows used
+- [Contribute code](https://inveniordm.docs.cern.ch/community/code/process/): Learn about the development process and how to contribute code to the project
 
 ### Community Members
 

@@ -23,7 +23,7 @@ In early October we held a virtual project workshop. As part of the workshop we 
 
 The entire metadata schema for bibliographic records has been updated, and is now ready for a thorough review by all project partners. The update includes changes to the JSONSchema, Elasticsearch mappings, the REST API data validation layer as well as addition of many fields to the deposit form.
 
-See (https://inveniordm.docs.cern.ch/reference/metadata/) for for a full reference of the new metadata schema.
+See (https://inveniordm.docs.cern.ch/reference/metadata/) for a full reference of the new metadata schema.
 
 #### User Experience
 
