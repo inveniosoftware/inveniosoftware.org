@@ -18,7 +18,7 @@ If you want to install it, follow the installation instructions on https://inven
 
 ## Release notes
 
-See the [full release notes](https://inveniordm.docs.cern.ch/releases/versions/version-v2.0.0/) and [upgrade instructions](https://inveniordm.docs.cern.ch/releases/upgrading/upgrade-v2.0/).
+See the [full release notes](https://inveniordm.docs.cern.ch/releases/v2/version-v2.0.0/) and [upgrade instructions](https://inveniordm.docs.cern.ch/releases/v2/upgrade-v2.0/).
 
 ## What's new?
 
@@ -115,7 +115,7 @@ The last major new feature is that you are now able to upgrade an InvenioRDM v1.
 
 Do remember to make a backup of the database and files before performing the upgrade!
 
-Please checkout the full [upgrade instructions](https://inveniordm.docs.cern.ch/releases/upgrading/upgrade-v2.0/).
+Please checkout the full [upgrade instructions](https://inveniordm.docs.cern.ch/releases/v2/upgrade-v2.0/).
 
 #### REST API changes
 
