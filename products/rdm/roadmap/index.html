@@ -142,21 +142,6 @@
         <p>A team actively works on this now</p>
             
 <div class="panel panel-default">
-  <div class="panel-heading files">
-    Files
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Support for multipart file-upload</h3>
-    <div class="card-description">
-      <p>Add support for multipart file upload in InvenioRDM.</p>
-<p><em>@CESNET</em></p>
-
-    </div>
-  </div>
-</div>
-
-            
-<div class="panel panel-default">
   <div class="panel-heading metadata">
     Metadata
   </div>
@@ -165,6 +150,21 @@
     <div class="card-description">
       <p>Implement support for receiving peer review notification events via the COAR Notify protocol.</p>
 <p><em>@Cottage Labs</em></p>
+
+    </div>
+  </div>
+</div>
+
+            
+<div class="panel panel-default">
+  <div class="panel-heading files">
+    Files
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Support for multipart file-upload</h3>
+    <div class="card-description">
+      <p>Add support for multipart file upload in InvenioRDM.</p>
+<p><em>@CESNET</em></p>
 
     </div>
   </div>
@@ -224,14 +224,15 @@ integration is currently launched on Zenodo.</p>
       
         
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
+  <div class="panel-heading third-party-integrations">
+    Third-party Integrations
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Branded communities</h3>
+    <h3 class="panel-title">ownCloud integration</h3>
     <div class="card-description">
-      <p>Add support for styling  communities with their own visual identity.</p>
-<p><em>@CERN, estimated Q1 2024</em></p>
+      <p>Added support for integrating <a href="https://www.research-data-services.org">ScieboRDS</a>
+via server-side file downloading and RO-Crate metadata format.</p>
+<p><em>@CERN, completed November 2022</em></p>
 
     </div>
   </div>
@@ -243,18 +244,28 @@ integration is currently launched on Zenodo.</p>
     Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities: Record management</h3>
+    <h3 class="panel-title">Communities UI: Members</h3>
     <div class="card-description">
-      <p>Enhance the communities feature with support for:</p>
-<ul>
-<li>Submit a record to multiple communities before/after the record is published.</li>
-<li>Remove a record from a community.</li>
-<li>Publish a record directly to a community without review (for users with appropriate permissions).</li>
-<li>Notifications for communities.</li>
-<li>About page with curation policies.</li>
-<li>Invite members by email.</li>
-</ul>
-<p><em>@CERN, estimated April 2023</em></p>
+      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
+<p><em>@CERN, completed June 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading statistics">
+    Statistics
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Usage statistics</h3>
+    <div class="card-description">
+      <p>Migrate Zenodo's current usage statistics module providing record views
+and downloads according to COUNTER Code of Practice for Research Data Usage Metrics.
+The feature supports rolling up views over versions as well as sorting by  most viewed
+records.</p>
+<p><em>@CERN &amp; TU Wien, estimated April 2023</em></p>
 
     </div>
   </div>
@@ -277,31 +288,14 @@ integration is currently launched on Zenodo.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading sharing">
-    Sharing
+  <div class="panel-heading communities">
+    Communities
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Access requests</h3>
+    <h3 class="panel-title">Subcommunities</h3>
     <div class="card-description">
-      <p>Add support for requesting, granting and managing access to a restricted
-record.</p>
-<p><em>@CERN, estimated Q2 2023</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading third-party-integrations">
-    Third-party Integrations
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">ownCloud integration</h3>
-    <div class="card-description">
-      <p>Added support for integrating <a href="https://www.research-data-services.org">ScieboRDS</a>
-via server-side file downloading and RO-Crate metadata format.</p>
-<p><em>@CERN, completed November 2022</em></p>
+      <p>Add support for creating and managing fully featured subcommunities (i.e. support for records, members, settings etc) .</p>
+<p><em>@CERN, estimated Q2 2024</em></p>
 
     </div>
   </div>
@@ -324,14 +318,14 @@ via server-side file downloading and RO-Crate metadata format.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading third-party-integrations">
-    Third-party integrations
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">GitHub integration</h3>
+    <h3 class="panel-title">Export formats</h3>
     <div class="card-description">
-      <p>Migrate Zenodo's current GitHub integration to InvenioRDM.</p>
-<p><em>@CERN, estimated Q2 2023</em></p>
+      <p>Add support for metadata formats currently supported in Zenodo, including BibTeX, JSON-LD, GeoJSON. This includes adding support for custom and optional metadata fields currently supported by Zenodo, and ability to display badges on record landing pages.</p>
+<p><em>@CERN, estimated April 2023</em></p>
 
     </div>
   </div>
@@ -355,15 +349,68 @@ and integrates the Mirador v3 previewer for large images.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading files">
-    Files
+  <div class="panel-heading third-party-integrations">
+    Third-party Integrations
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Linking to files on external storage systems</h3>
+    <h3 class="panel-title">OpenAIRE integration</h3>
     <div class="card-description">
-      <p>Support linking to files on an external storage system instead of requiring the
-files to be uploaded via InvenioRDM.</p>
-<p><em>@CERN, completed November 2022</em></p>
+      <p>Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the
+required OAI-PMH sets, export formats as well as allowing direct indexing of
+new records to OpenAIRE.</p>
+<p><em>@CERN, completed December 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
+    <div class="card-description">
+      <p>Implement the REST API and workflows for communities and the requests features.
+This will enable the integration between communities and records as well as the
+general framework for communities submission handling.</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien, completed May 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">OAI-PMH sets support</h3>
+    <div class="card-description">
+      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
+<p><em>@TU Graz, completed June 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="col-sm-4 column">
+      
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities REST API: Members support</h3>
+    <div class="card-description">
+      <p>Adds support for having multiple community owners and members of communities
+with curation capabilities. This task only deals with the REST API and backend
+(i.e. the user interface is a separate task).</p>
+<p><em>@CERN, Northwestern University &amp; TU Wien, completed May 2022</em></p>
 
     </div>
   </div>
@@ -375,141 +422,12 @@ files to be uploaded via InvenioRDM.</p>
     Vocabularies
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Funders and grants</h3>
+    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
     <div class="card-description">
-      <p>Enable the funder/grants field in the deposit form and import the required
-vocabularies in InvenioRDM.</p>
+      <p>Enable auto-completion of creators/contributors in the deposit from a local
+names vocabulary that can be filled from e.g. ORCiD or your institutional
+employee database.</p>
 <p><em>@CERN, completed February 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Members</h3>
-    <div class="card-description">
-      <p>Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.</p>
-<p><em>@CERN, completed June 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-      </div>
-      <div class="col-sm-4 column">
-      
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Custom fields</h3>
-    <div class="card-description">
-      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
-The current task implements both the backend and frontend.</p>
-<p><em>@CERN, completed September 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading development">
-    Development
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Deposit form enhancements</h3>
-    <div class="card-description">
-      <p>Small enhancements to the deposit form to support features currently available
-on Zenodo. This includes adding optional support for:</p>
-<ul>
-<li>Disallowing fully restricted records.</li>
-<li>Require files for a record</li>
-</ul>
-<p><em>@CERN, estimated April 2023</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Collections: Backend + Browse page</h3>
-    <div class="card-description">
-      <p>See example on <a href="https://zenodo.org/communities/eu/browse">https://zenodo.org/communities/eu/browse</a></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Export formats</h3>
-    <div class="card-description">
-      <p>Add support for metadata formats currently supported in Zenodo, including BibTeX, JSON-LD, GeoJSON. This includes adding support for custom and optional metadata fields currently supported by Zenodo, and ability to display badges on record landing pages.</p>
-<p><em>@CERN, estimated April 2023</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Communities UI: Records/requests</h3>
-    <div class="card-description">
-      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
-<p><em>@CERN, completed May 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading metadata">
-    Metadata
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Basic OAI-PMH server</h3>
-    <div class="card-description">
-      <p><em>@TU Graz, completed April 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading statistics">
-    Statistics
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Usage statistics</h3>
-    <div class="card-description">
-      <p>Migrate Zenodo's current usage statistics module providing record views
-and downloads according to COUNTER Code of Practice for Research Data Usage Metrics.
-The feature supports rolling up views over versions as well as sorting by  most viewed
-records.</p>
-<p><em>@CERN &amp; TU Wien, estimated April 2023</em></p>
 
     </div>
   </div>
@@ -551,24 +469,58 @@ based on InvenioRDM.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
+  <div class="panel-heading sharing">
+    Sharing
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Members support</h3>
+    <h3 class="panel-title">Access requests</h3>
     <div class="card-description">
-      <p>Adds support for having multiple community owners and members of communities
-with curation capabilities. This task only deals with the REST API and backend
-(i.e. the user interface is a separate task).</p>
-<p><em>@CERN, Northwestern University &amp; TU Wien, completed May 2022</em></p>
+      <p>Add support for requesting, granting and managing access to a restricted
+record.</p>
+<p><em>@CERN, estimated Q2 2023</em></p>
 
     </div>
   </div>
 </div>
 
-      </div>
-      <div class="col-sm-4 column">
-      
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities: Record management</h3>
+    <div class="card-description">
+      <p>Enhance the communities feature with support for:</p>
+<ul>
+<li>Submit a record to multiple communities before/after the record is published.</li>
+<li>Remove a record from a community.</li>
+<li>Publish a record directly to a community without review (for users with appropriate permissions).</li>
+<li>Notifications for communities.</li>
+<li>About page with curation policies.</li>
+<li>Invite members by email.</li>
+</ul>
+<p><em>@CERN, estimated April 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Branded communities</h3>
+    <div class="card-description">
+      <p>Add support for styling  communities with their own visual identity.</p>
+<p><em>@CERN, estimated Q1 2024</em></p>
+
+    </div>
+  </div>
+</div>
+
         
 <div class="panel panel-default">
   <div class="panel-heading preservation">
@@ -580,72 +532,6 @@ with curation capabilities. This task only deals with the REST API and backend
       <p>Basic demonstrator developed which dumps and InvenioRDM repository into a
 OCFL repository.</p>
 <p><em>@Data Futures, completed June 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading third-party-integrations">
-    Third-party Integrations
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">OpenAIRE integration</h3>
-    <div class="card-description">
-      <p>Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the
-required OAI-PMH sets, export formats as well as allowing direct indexing of
-new records to OpenAIRE.</p>
-<p><em>@CERN, completed December 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading vocabularies">
-    Vocabularies
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Creator/contributor auto-completion and improved ORCiD integration</h3>
-    <div class="card-description">
-      <p>Enable auto-completion of creators/contributors in the deposit from a local
-names vocabulary that can be filled from e.g. ORCiD or your institutional
-employee database.</p>
-<p><em>@CERN, completed February 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading persistent-identifiers">
-    Persistent identifiers
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">DOI minting support</h3>
-    <div class="card-description">
-      <p>Support for registering DataCite DOIs as well as for developing
-your own plugins for registering other types of persistent identifiers
-(Crossref DOIs, ARKs, Handles, ...).</p>
-<p><em>@CERN, completed May 2022</em></p>
-
-    </div>
-  </div>
-</div>
-
-        
-<div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
-  </div>
-  <div class="panel-body">
-    <h3 class="panel-title">Subcommunities</h3>
-    <div class="card-description">
-      <p>Add support for creating and managing fully featured subcommunities (i.e. support for records, members, settings etc) .</p>
-<p><em>@CERN, estimated Q2 2024</em></p>
 
     </div>
   </div>
@@ -674,10 +560,62 @@ interface, and add the first couple of administration actions into the form.</p>
     Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Harevsting of ROR, ORCID.</h3>
+    <h3 class="panel-title">Custom fields</h3>
     <div class="card-description">
-      <p>Recurrent harvesting of ROR and ORCID into the names, affiliations and funders
-vocabulary.</p>
+      <p>Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page.
+The current task implements both the backend and frontend.</p>
+<p><em>@CERN, completed September 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="col-sm-4 column">
+      
+        
+<div class="panel panel-default">
+  <div class="panel-heading files">
+    Files
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Linking to files on external storage systems</h3>
+    <div class="card-description">
+      <p>Support linking to files on an external storage system instead of requiring the
+files to be uploaded via InvenioRDM.</p>
+<p><em>@CERN, completed November 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading third-party-integrations">
+    Third-party integrations
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">GitHub integration</h3>
+    <div class="card-description">
+      <p>Migrate Zenodo's current GitHub integration to InvenioRDM.</p>
+<p><em>@CERN, estimated Q2 2023</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading persistent-identifiers">
+    Persistent identifiers
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">DOI minting support</h3>
+    <div class="card-description">
+      <p>Support for registering DataCite DOIs as well as for developing
+your own plugins for registering other types of persistent identifiers
+(Crossref DOIs, ARKs, Handles, ...).</p>
+<p><em>@CERN, completed May 2022</em></p>
 
     </div>
   </div>
@@ -689,10 +627,44 @@ vocabulary.</p>
     Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">OAI-PMH sets support</h3>
+    <h3 class="panel-title">Basic OAI-PMH server</h3>
     <div class="card-description">
-      <p>Supports the sets feature of the OAI-PMH harvesting protocol.</p>
-<p><em>@TU Graz, completed June 2022</em></p>
+      <p><em>@TU Graz, completed April 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading communities">
+    Communities
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Communities UI: Records/requests</h3>
+    <div class="card-description">
+      <p>Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.</p>
+<p><em>@CERN, completed May 2022</em></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading development">
+    Development
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Deposit form enhancements</h3>
+    <div class="card-description">
+      <p>Small enhancements to the deposit form to support features currently available
+on Zenodo. This includes adding optional support for:</p>
+<ul>
+<li>Disallowing fully restricted records.</li>
+<li>Require files for a record</li>
+</ul>
+<p><em>@CERN, estimated April 2023</em></p>
 
     </div>
   </div>
@@ -715,16 +687,44 @@ vocabulary.</p>
 
         
 <div class="panel panel-default">
-  <div class="panel-heading communities">
-    Communities
+  <div class="panel-heading metadata">
+    Metadata
   </div>
   <div class="panel-body">
-    <h3 class="panel-title">Communities REST API: Records/Requests</h3>
+    <h3 class="panel-title">Harevsting of ROR, ORCID.</h3>
     <div class="card-description">
-      <p>Implement the REST API and workflows for communities and the requests features.
-This will enable the integration between communities and records as well as the
-general framework for communities submission handling.</p>
-<p><em>@CERN, Northwestern University &amp; TU Wien, completed May 2022</em></p>
+      <p>Recurrent harvesting of ROR and ORCID into the names, affiliations and funders
+vocabulary.</p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading metadata">
+    Metadata
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Collections: Backend + Browse page</h3>
+    <div class="card-description">
+      <p>See example on <a href="https://zenodo.org/communities/eu/browse">https://zenodo.org/communities/eu/browse</a></p>
+
+    </div>
+  </div>
+</div>
+
+        
+<div class="panel panel-default">
+  <div class="panel-heading vocabularies">
+    Vocabularies
+  </div>
+  <div class="panel-body">
+    <h3 class="panel-title">Funders and grants</h3>
+    <div class="card-description">
+      <p>Enable the funder/grants field in the deposit form and import the required
+vocabularies in InvenioRDM.</p>
+<p><em>@CERN, completed February 2022</em></p>
 
     </div>
   </div>
