@@ -12,7 +12,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=022f16ba">
+<link rel="stylesheet" href="/static/css/style.css?h=d421d606">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -133,6 +133,109 @@
         <div class="col-md-12 col-xs-12 block-center">
           <div class="blog-post-list">
             
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2021-01-11-december-release/">InvenioRDM Alpha 14 (December Release)</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Pablo Panero, Guillaume Viger, Sara Gonzales, Lars Holm Nielsen
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jan 11, 2021</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We’re excited to announce the InvenioRDM Alpha 14 (December release)! Thank you to our team members for their efforts on this release.</p>
+<h2>What’s new?</h2>
+<h3>Vocabularies support</h3>
+<p>The focus of the December release was to add support for linking bibliographic records with authority records such as subjects, grants, licenses, languages and more.</p>
+<p>This includes:</p>
+<ul>
+<li>Auto-complete on deposit fields</li>
+<li>Facet searches based on vocabulary values</li>
+<li>Support for internationalization on deposit, on facets, etc.</li>
+<li>REST APIs for vocabularies</li>
+<li>Linking of records in the backend.</li>
+</ul>
+<h3>Deposit form autocompletion</h3>
+<p>The most visible way to see the vocabularies in action is via the deposit form fields.</p>
+<p>The below components were added in the deposit form and they support vocabulary autocompletion:</p>
+<p><strong>Languages</strong></p>
+<p>You can see the autocomplete search help:</p>
+<p><img src="https://codimd.web.cern.ch/uploads/upload_0f6a4248b6ade70453232a3169a0be3e.png" alt=""></p>
+<p>And an example of i18n support, when the instance is in Turkish:</p>
+<p><img src="https://codimd.web.cern.ch/uploads/upload_1162c1cc0d211cd2bb7e4eddde1480fd.png" alt=""></p>
+<p><strong>Licenses (preview)</strong></p>
+<p>We have added support for both standard and custom licenses. Note that we were not able to fully complete this work, and there are known bugs in the license widget. Most notably you'll see:</p>
+<ul>
+<li>Search field does not allow spaces</li>
+<li>Link not working</li>
+<li>UX issues such as over-long page</li>
+<li>Descriptions for licenses not available.</li>
+</ul>
+<p><img src="https://codimd.web.cern.ch/uploads/upload_4f0819814051a1b827815b2894e8d6c9.png" alt="">
+<img src="https://codimd.web.cern.ch/uploads/upload_96aae4a31af9b4a220c21eca566ab7a7.png" alt="">
+<img src="https://codimd.web.cern.ch/uploads/upload_a84cfafab881af6e3019e731bcb7f262.png" alt=""></p>
+<p><strong>Subjects (preview)</strong></p>
+<p>The subjects field autocompletes from a subjects vocabulary that can host multiple different vocabularies at the same time.</p>
+<p>The current version is not yet connected with the API, thus it has some demonstration values instead. Only the values you see in the image below can be selected. Don't save a record with subjects yet either.</p>
+<p><img src="https://codimd.web.cern.ch/uploads/upload_d9b194cd699745641c6eb9060ff62d57.png" alt="">
+<img src="https://codimd.web.cern.ch/uploads/upload_ff0edd020454133a9bdaf08465424103.png" alt=""></p>
+<h3>Invenio v3.4</h3>
+<p>Thanks to the hard work of the December Invenio sprint, Invenio v3.4 was released (see more <a href="https://inveniosoftware.org/blog/2020-12-17-invenio-v340-released/">here</a>). The release of Invenio v3.4 was an important step for InvenioRDM. We now depend on stable releases of Semantic UI.</p>
+<h3>Partial save and error reporting</h3>
+<p>This release includes support for partial validation on draft creation. It also displays partial saves in the uploads page, for example with "No title" if the title was not included in the draft.</p>
+<p>For example, saving an empty draft will tell you precisely what is missing at the top, along with pointers per field (see <code>title</code> at the bottom of the image).</p>
+<p><img src="https://codimd.web.cern.ch/uploads/upload_39a402a38eaa38e8de0b11769e33b121.png" alt=""></p>
+<p>The former error space will update to good (green) once you save a draft that is publication-ready. The publish button will then be enabled.</p>
+<p><img src="https://codimd.web.cern.ch/uploads/upload_b2e7e415ece06d69c9026a1652452683.png" alt=""></p>
+<h3>Install</h3>
+<pre><code>$ invenio-cli init rdm
+$ cd my-site
+$ invenio-cli packages lock --pre
+$ invenio-cli install --pre
+$ invenio-cli services setup
+$ pipenv run invenio vocabularies import languages licenses
+$ invenio-cli run
+</code></pre>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. When you provide feedback on Discourse your message should be pre-populated with the classic template (bugs, what worked well, what didn’t work well, wishes for documentation).</p>
+<p>Here is the template to give feedback if it’s not automated:</p>
+<pre><code>## Bugs
+
+(note, that there's known issues in this release for license and subjects fields)
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2021-01-11-december-release/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
               
             
               
@@ -870,102 +973,6 @@ docker-compose -f docker-compose.full.yml down
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-07-01-june-release/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2020-06-05-may-release/">InvenioRDM May Release</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lars Holm Nielsen, Lisa O&#39;Keefe, Zacharias Zacharodimos
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Jun 5, 2020</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are happy to announce InvenioRDM Alpha 7 (May release). Thank you to our team members for their efforts on this significant release.</p>
-<h3>What's new?</h3>
-<p>The May release is a major integration release, with a few rough edges that still need polishing.
-We have integrated a lot of code that was developed in separate branches into the main InvenioRDM
-code base. We have done this now, to ensure we have enough time to iron out integration issues.</p>
-<p>The primary focus for the release was:</p>
-<ul>
-<li>Migrate from Bootstrap to SemanticUI</li>
-<li>Deposit form frontend (JavaScript)</li>
-<li>Integrate new communities prototype.</li>
-<li>Upgrade to Invenio v3.3</li>
-</ul>
-<h3>Known issues (please read!)</h3>
-<p><strong>As a rule of thumb, many features will be broken and not work. Thank you for your continued
-patience and feedback as we work to make improvements.</strong></p>
-<p>A lot of code has changed in this release, and many features have not yet undergone quality control.</p>
-<p><strong>UI Customizations not working</strong></p>
-<p>The existing method for customizing the UI will change slightly, We hope to provide documentation for this in the next release.</p>
-<p><strong>Visual appearance</strong></p>
-<p>You'll notice issues related to the visual appearance, that we have not yet had the time to refine.
-This is with regards to alignment, colors, behaviours, font-sizes, and user experience.</p>
-<p><img src="/blog/2020-06-05-may-release/frontpage.png" alt=""></p>
-<p><strong>Data model and deposit form</strong></p>
-<p>The data model and deposit form is far from complete. We have not yet focused on implementing
-the right data model with the right fields. For instance the access right displayed in the deposit
-form will change, as will many of the other fields displayed.</p>
-<p><img src="/blog/2020-06-05-may-release/deposit.png" alt=""></p>
-<p><strong>Communities</strong></p>
-<p>Communities is in a very initial state and many things will change.</p>
-<p><img src="/blog/2020-06-05-may-release/communities.png" alt=""></p>
-<p><strong>Previewer, OAuth login, Settings pages</strong></p>
-<p>The file previewer and OAuth login still need to be migrated to SemanticUI, and thus
-the modules are likely not to work properly in this release.</p>
-<h3>What do you need to do?</h3>
-<p>You can install the latest invenio-cli v0.14.x, create a new instance from the beginning and see how it looks like!</p>
-<p><strong>Install (TL;DR)</strong></p>
-<p>If you previously installed InvenioRDM, make sure you have the latest Docker image:</p>
-<pre><code>docker pull inveniosoftware/centos7-python:3.6
-</code></pre>
-<p>To install:</p>
-<pre><code>pip install invenio-cli --upgrade
-invenio-cli init rdm
-cd my-site
-invenio-cli containerize --pre
-invenio-cli demo --containers
-</code></pre>
-<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
-<pre><code>cd my-site
-pipenv --rm
-docker-compose -f docker-compose.full.yml down
-</code></pre>
-<p><strong>Communities</strong></p>
-<p>To see the communities click "Communities" menu, then "New community". You'll be prompted to log in. Simply create a new account, and log in with it.</p>
-<p><strong>Deposit form</strong></p>
-<p>To see the deposit click "Uploads" then "New upload"</p>
-<h3>Want to get involved?</h3>
-<p>Follow the documentation site: <a href="https://inveniordm.docs.cern.ch/">https://inveniordm.docs.cern.ch/</a> for an up-to-date
-step-by-step install and usage of InvenioRDM.</p>
-<p>Give us feedback on Discourse: <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-7-may-release/109">https://invenio-talk.web.cern.ch/t/inveniordm-alpha-7-may-release/109</a> for this release.</p>
-<p>Thank you for your patience. We are working hard all the time to improve things. Take care and stay safe!</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2020-06-05-may-release/">Read More</a>
       
     </div>
   </div>

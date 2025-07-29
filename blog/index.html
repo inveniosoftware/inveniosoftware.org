@@ -12,7 +12,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
 <link rel="icon" href="/static/img/favicon.ico?h=4df2b1b9">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/style.css?h=022f16ba">
+<link rel="stylesheet" href="/static/css/style.css?h=d421d606">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
@@ -137,9 +137,185 @@
     <header class="blog-top-header">
       <h2>
         
-          <a href="/blog/2025-03-11-march-KTH-data-repository/">KTH Data Repository: Launching an InvenioRDM-based Institutional Repository</a>
+          <a href="/blog/2025-07-22-invenio-rdm-13/">InvenioRDM v13.0 released</a>
         
       </h2>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Nicola Tarocco, Alex Ioannidis, Martin Fenner, Sara Gonzales
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Jul 29, 2025</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">InvenioRDM</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>We are excited to announce the release of InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/v13/version-v13.0.0/">v13.0</a> on July 23, 2025! This new version brings a host of new features and improvements, building upon the strong foundation of previous releases.</p>
+<p><img src="/blog/2025-07-22-invenio-rdm-13/invenio-rdm-v13.0-screenshot.jpg" alt=""></p>
+<h2>Try it</h2>
+<p>Want to try the new features in v13.0? Just head over to <a href="https://inveniordm.web.cern.ch">the demo site</a>. If you want to install it, you can follow <a href="https://inveniordm.docs.cern.ch/install/">the installation instructions</a>.</p>
+<h2>Release Notes</h2>
+<p>See the <a href="https://inveniordm.docs.cern.ch/releases/v13/version-v13.0.0/">full release notes</a> for details on all the new features, and the <a href="https://inveniordm.docs.cern.ch/releases/v13/upgrade-v13.0/">upgrade guide</a> for instructions on how to upgrade from your v12 instance to v13.</p>
+<h2>What's new?</h2>
+<p>InvenioRDM v13.0 focuses on enhancing <strong>administrative capabilities</strong>, improving <strong>community features</strong>, and introducing powerful new tools for <strong>data management and organization</strong>.
+Here are some of the <strong>major highlights</strong>, be sure to check the release notes for a comprehensive list of new features and improvements.</p>
+<h3>Communities enhancements</h3>
+<p>The Communities functionality has been significantly expanded with exciting new features:</p>
+<p><strong>Themed communities</strong></p>
+<p>Communities can now be customized with unique fonts, colors, and homepages. These themes apply to all community pages, including records and requests, allowing for a more branded and distinct user experience.</p>
+<p align="center">
+  <img src="themed-communities.png" alt="Themed communities" width="600">
+</p><p><strong>Subcommunities</strong></p>
+<p>InvenioRDM v13.0 introduces hierarchical relationships between communities through subcommunities. This allows for structured organization, where records from child communities are automatically indexed in parent communities.
+A dedicated "Browse" page lists subcommunities and collections, providing a clear overview.</p>
+<p><strong>Collections</strong></p>
+<p>Collections are a powerful new feature enabling dynamic, query-based groupings of records that automatically update. Collections provide dedicated pages for records matching specific criteria and can be organized hierarchically by subject, resource type, funding program, or other metadata fields. This is ideal for grouping content by research disciplines, publication dates, or funding programs.</p>
+<p align="center">
+  <img src="collection-page.png" alt="Collections feature" width="600">
+</p><p><strong>Curation checks</strong></p>
+<p>It is now possible to configure automated checks in your communities to provide instant feedback on draft review and record inclusion requests.
+Checks provide feedback to both the user and reviewer that submissions to your community are compliant with your curation policy.</p>
+<p align="center">
+  <img src="curation-checks-zenodo.jpg" alt="Curation checks" width="600">
+</p><h3>Files uploader &amp; S3-compatible storage</h3>
+<p>The new file uploader delivers a faster, more intuitive, and modern file upload experience. It also enables advanced features such as multipart file transfers with S3-compatible storage backends.</p>
+<p align="center">
+  <img src="upload_form_uppy_files_ui.png" alt="Files uploader" width="600">
+</p><h3>FAIR Signposting</h3>
+<p>With v13, you can now enable support for FAIR Signposting level 1 in addition to the automatically enabled level 2.</p>
+<h3>Sitemaps</h3>
+<p>InvenioRDM v13 introduces the automatic generation of sitemaps to help search engines and other crawlers discover and index your repository's content. Sitemaps are even automatically linked in your robots.txt.</p>
+<h3>DOIs on demand</h3>
+<p>You can now let users to choose if they need a DOI or not when uploading.</p>
+<p align="center">
+  <img src="dois-on-demand.jpg" alt="DOIs on demand" width="600">
+</p><h3>New metadata fields</h3>
+<p>We have introduced new metadata fields that will allow you to capture more useful information when uploading:</p>
+<ul>
+<li>A dedicated <strong>copyright</strong> field is now available, ensuring clear and comprehensive copyright information.</li>
+<li>We've added a new <strong>Thesis</strong> set of optional metadata fields. We've also reorganized the thesis section, grouping thesis fields together.</li>
+<li>The <strong>edition</strong> field has been introduced under the <strong>Imprint</strong> set of optional metadata fields, providing a way to specify the edition of a book.</li>
+<li>A new <strong>identifiers</strong> field, composed of id and scheme, has been added to the <strong>Meeting</strong> set of optional metadata fields.</li>
+</ul>
+<h3>Dashboard: shared with you</h3>
+<p>You can now easily find records and requests shared with you.</p>
+<p align="center">
+  <img src="my-dashboard-shared-with-me.jpg" alt="Dashboard shared with you" width="600">
+</p><h3>Compare revisions</h3>
+<p>A brand new compare revisions feature has been introduced, allowing administrators to audit record updates and track changes over time. This provides a transparent history of modifications, crucial for data integrity and compliance.</p>
+<p align="center">
+  <img src="records-compare-diff.png" alt="Compare revisions" width="600">
+</p><h3>Audit Logs</h3>
+<p>A significant addition is audit logs, a new feature designed for tracking system activities and providing a detailed record of events accessible from the administration panel.</p>
+<h3>Jobs</h3>
+<p>This release introduces a new jobs feature, providing a comprehensive way to manage asynchronous tasks via the UI or REST API.
+Jobs are triggered via the admin UI or REST API, run using Celery, and support logging, argument validation, and result tracking.</p>
+<p align="center">
+  <img src="created-job.jpg" alt="Jobs UI" width="600">
+</p><p>Jobs can be very useful to setup automatic recurrent fetching of ROR and ORCID databases or other vocabularies.</p>
+<h2>Breaking changes</h2>
+<p>Make sure to read the <a href="https://inveniordm.docs.cern.ch/releases/v13/version-v13.0.0/#breaking-changes">Breaking Changes</a> section in the release notes.</p>
+<h2>Requirements</h2>
+<p>InvenioRDM v13 requires:</p>
+<ul>
+<li>Python 3.9 (end of life October 2025), 3.11 and 3.12</li>
+<li>Node.js 18+</li>
+<li>PostgreSQL 12+</li>
+<li>OpenSearch v2.12+</li>
+</ul>
+<h2>Questions</h2>
+<p>If you have questions related to the InvenioRDM v13.0 release, don't hesitate to jump on <a href="https://discord.gg/8qatqBC">Discord</a> and ask us!</p>
+<h2>Credit</h2>
+<p>The development work of this impressive release wouldn't have been possible without the help of these great people (name or GitHub handle, alphabetically sorted):</p>
+<ul>
+<li>Adrian Moennich</li>
+<li>alejandromumo</li>
+<li>Alex Ioannidis</li>
+<li>Alzbeta Pokorna</li>
+<li>Anika Churilova</li>
+<li>Austin Sharp</li>
+<li>Brian Kelly</li>
+<li>Carlin MacKenzie</li>
+<li>Christoph Ladurner</li>
+<li>Cristian Pogolsha MBP</li>
+<li>Dan Granville</li>
+<li>David Eckhard</li>
+<li>David Glueck</li>
+<li>ducica</li>
+<li>Eduard Nitu</li>
+<li>Emil Dandanell Agerschou</li>
+<li>Eric Newman</li>
+<li>Eric Phetteplace</li>
+<li>Esteban J. G. Gabancho</li>
+<li>Fatimah Zulfiqar</li>
+<li>Felipe Carlos</li>
+<li>Florian Gantner</li>
+<li>Furkan Kalkan</li>
+<li>Guillaume Viger</li>
+<li>Hrafn Malmquist</li>
+<li>Ian W. Scott</li>
+<li>Janne Jensen</li>
+<li>Javier Romero Castro</li>
+<li>Karl Krägelin</li>
+<li>Karolina Przerwa</li>
+<li>libremente</li>
+<li>liptakpanna</li>
+<li>Martin Fenner</li>
+<li>Martin Obersteiner</li>
+<li>Matt Carson</li>
+<li>Maximilian Moser</li>
+<li>mb-wali</li>
+<li>Michael Groh</li>
+<li>Mirek Simek</li>
+<li>Miroslav Bauer</li>
+<li>mkloeppe</li>
+<li>Nicola Tarocco</li>
+<li>Pablo Panero</li>
+<li>Pablo Saiz</li>
+<li>Pablo Tamarit</li>
+<li>Panna Liptak</li>
+<li>roll</li>
+<li>Saksham Arora</li>
+<li>Sam Arbid</li>
+<li>Sarah Wiechers</li>
+<li>Tom Morrell</li>
+<li>Werner Greßhoff</li>
+<li>Will Riley</li>
+<li>Yash Lamba</li>
+<li>Zacharias Zacharodimos</li>
+</ul>
+
+    </div>
+    <div class="blog-top-more-link">
+      
+        <a href="/blog/2025-07-22-invenio-rdm-13/">Read More</a>
+      
+    </div>
+  </div>
+
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 col-xs-12 block-center">
+          <div class="blog-post-list">
+            
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
+          <a href="/blog/2025-03-11-march-KTH-data-repository/">KTH Data Repository: Launching an InvenioRDM-based Institutional Repository</a>
+        
+      </h3>
       <p class="blog-list-item-meta">
         <i class='fa fa-user text-muted'></i>
         <span class="author">
@@ -174,20 +350,14 @@ KTH Data Repository - we added <a href="https://docs.datarepository.kth.se/">use
 <p>We have received quite a lot of interest since the launch both from KTH researchers interested in using the repository but also from other universities and research infrastructures in Sweden. We are open for discussions with anyone interested in the KTH data repository - so don't hesitate to <a href="https://www.kth.se/en/biblioteket/publicera-analysera/hantera-forskningsdata/deponera-och-publicera-data-1.861137">contact us</a> if you want to learn more!</p>
 
     </div>
-    <div class="blog-top-more-link">
+    <div class="blog-list-item-more-link">
       
         <a href="/blog/2025-03-11-march-KTH-data-repository/">Read More</a>
       
     </div>
   </div>
 
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12 col-xs-12 block-center">
-          <div class="blog-post-list">
-            
+                </div>
               
             
               
@@ -823,61 +993,6 @@ KTH Data Repository - we added <a href="https://docs.datarepository.kth.se/">use
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2023-07-07-july-OR2023/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2023-06-26-june-inveniordm-github-archiver/">Introducing the InvenioRDM GitHub Archiver (IGA)</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Mike Hucka and Tom Morrell
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Jun 26, 2023</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">InvenioRDM</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p><img src="/blog/2023-06-26-june-inveniordm-github-archiver/CaltechDATA.jpg" alt=""></p>
-<p>The InvenioRDM GitHub Archiver (IGA) is a new software tool created by the Caltech Library. <a href="https://inveniosoftware.org/products/rdm/">InvenioRDM</a> is the basis for many institutional repositories, such as <a href="https://data.caltech.edu/">CaltechDATA</a>, that enable users to preserve software and data sets in a long-term archive. The metadata contained in the record of a deposit is critical to making the record widely discoverable by other people. However, creating detailed records and uploading assets can be a tedious and error-prone process if done manually. This is where our new tool comes in.</p>
-<p>IGA creates metadata records and sends releases automatically from GitHub to an InvenioRDM-based repository server. It constructs a metadata record using information it gathers from the software release, the GitHub repository, the GitHub API, and various other APIs as needed. Here are some of IGA’s other notable features:</p>
-<ul>
-<li>Automatic metadata extraction from GitHub releases, repositories, and <code>codemeta.json</code> and <code>CITATION.cff</code> files</li>
-<li>Thorough coverage of <a href="https://inveniordm.docs.cern.ch/reference/metadata">InvenioRDM record metadata</a> using painstaking procedures</li>
-<li>Recognition of identifiers that appear in CodeMeta and CFF files, including <a href="https://orcid.org/">ORCiD</a>, <a href="https://ror.org/">ROR</a>, <a href="https://www.doi.org/">DOI</a>, <a href="https://arxiv.org/">arXiv</a>, and <a href="https://www.ncbi.nlm.nih.gov/pmc/about/public-access-info/">PMCID</a></li>
-<li>Automatic lookup of publication data in <a href="https://www.doi.org/">DOI.org</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>, Google Books, &amp; other sources if needed</li>
-<li>Automatic lookup of organization names in <a href="https://ror.org/">ROR</a> (assuming ROR id’s are provided)</li>
-<li>Automatic lookup of human names in <a href="https://orcid.org/">ORCiD.org</a> if needed (assuming ORCID id’s are provided)</li>
-<li>Automatic splitting of human names into family and given names using <a href="https://en.wikipedia.org/wiki/Machine_learning">ML</a>-based methods if necessary</li>
-<li>Support for record versioning</li>
-<li>Support for InvenioRDM <a href="https://invenio-communities.readthedocs.io/en/latest/">communities</a></li>
-<li>Support for overriding the metadata record IGA creates, for complete control if you need it</li>
-<li>Ability to use the GitHub API without a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub access token</a> in many cases</li>
-<li>Extensive use of logging so you can see what’s going on under the hood</li>
-</ul>
-<p>Data and software archived in a repository need to be described thoroughly and richly cross-referenced in order to be widely discoverable by other people. Of particular interest to software developers is that a repository like CaltechDATA offers the means to preserve software projects in a long-term archive managed by their institution. IGA helps make the creation of metadata and InvenioRDM records for software and data managed in GitHub as easy as possible.</p>
-<p>More information about the InvenioRDM GitHub Archiver is available at <a href="https://caltechlibrary.github.io/iga/">caltechlibrary.github.io/iga/</a>.</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2023-06-26-june-inveniordm-github-archiver/">Read More</a>
       
     </div>
   </div>
