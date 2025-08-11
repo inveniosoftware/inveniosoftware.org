@@ -142,6 +142,138 @@
     <header class="blog-list-item-header">
       <h3>
         
+          <a href="/blog/2021-02-01-january-release/">InvenioRDM Alpha 15 (January Release)</a>
+        
+      </h3>
+      <p class="blog-list-item-meta">
+        <i class='fa fa-user text-muted'></i>
+        <span class="author">
+          
+            Lars Holm Nielsen, Guillaume Viger, Sara Gonzales
+          
+        </span>
+        <i class='fa fa-calendar text-muted'></i>
+        <span>Feb 1, 2021</span>
+        <i class='fa fa-users text-muted'></i>
+        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
+      </p>
+    </header>
+    <div class="blog-list-item-content">
+      <p>2020 didn't stop us from shipping new releases. 2021 won't either. We’re excited to announce the InvenioRDM Alpha 15 (January release)! Thank you to our team members for their efforts on this release.</p>
+<h2>What’s new?</h2>
+<p>This month was primarily dedicated to improving the user experience of the deposit form.</p>
+<p>We have made significant improvements to the overall user experience of the deposit form. That said, we still have many smaller UX improvements to make. This work will continue throughout February.</p>
+<h3>Creators/Contributors</h3>
+<p><img src="/blog/2021-02-01-january-release/creators_contributors.png" alt=""></p>
+<p>The creators/contributors fields have gotten a complete makeover that significantly reduces the clutter. We have optimized the new creators field for adding basic information (name/affiliation) as well as linking the affiliation field to vocabulary records (e.g. ROR). We postponed the more advanced use case of allowing the user to edit all fields such as identifier scheme and identifiers for affiliations, as this created an overly complex form for the majority of use cases.</p>
+<p>The creator field we imagine can be extended in the future with support for importing authors via predefined files (e.g. BibTex, etc.).</p>
+<p>One particular feature to highlight is that the name identifiers field now does automatic detection of the identifier scheme. You can now paste an ORCID (e.g. an ORCID URL), and the backend will automatically detect it as an ORCID and normalise the stored value.</p>
+<p><img src="/blog/2021-02-01-january-release/creators_names.png" alt=""></p>
+<h3>Coming Soon</h3>
+<p><img src="/blog/2021-02-01-january-release/coming_soon.png" alt=""></p>
+<p>We have decided to hide certain fields that we know need further work. You'll see these as "Coming soon". Also, we have temporarily removed the language field from titles and descriptions as we had last minute issues with these fields.</p>
+<h3>Minor UX Improvements</h3>
+<ul>
+<li><p>Sticky side bar: The side bar with the save/publish buttons, is now sticky so it will follow you when you scroll down the form.</p>
+</li>
+<li><p>Resource type: The drop-down was reduced from two drop-downs to a single drop-down to reduce the number of needed clicks to select a resource type.</p>
+</li>
+<li><p>Delete/discard button: There's now a delete button that you can use to delete your draft or discard edits to a published record.</p>
+</li>
+<li><p>Button consistency: We have applied consistent styling, wording and and naming to most buttons.</p>
+</li>
+<li><p>Errors for inline fields are now consistently displayed.</p>
+</li>
+<li><p>Brand color: We have now made it easier to customize the styling of the field groups via a common brand color. Previously, if your header was purple, the field groups would remain blue.</p>
+</li>
+<li><p>File warning: The warning displayed under the files section was updated to match Semantic UI styling.</p>
+</li>
+<li><p>Field help text: We've added an example of field help text to the Dates field, which will expand to all fields needing it.</p>
+</li>
+<li><p>Array fields styling: dates, related identifiers and titles are now properly using the entire form grid from side to side.</p>
+</li>
+</ul>
+<p><img src="/blog/2021-02-01-january-release/dates.png" alt=""></p>
+<ul>
+<li><p>Consistent naming of related work.</p>
+</li>
+<li><p>Title: The deposit form now has a title.</p>
+</li>
+</ul>
+<h3>Other Changes</h3>
+<ul>
+<li><p>Vocabularies: The vocabularies REST API received some significant backend changes, which means that we can now properly show translated text in auto-completion fields such as languages, license, affiliations, and subjects.</p>
+</li>
+<li><p>Extended Date Time Format indexing: We now have support for searching EDTF date ranges properly (contributed by TU Wien).</p>
+</li>
+<li><p>Geospatial indexing: We are now able to properly index almost any GeoJSON data type (points, boxes, polygons, etc.) so that they  can be searched properly at a later point. They are indexed via their centroid which is computed using the Shapely library (contributed by Cottage Labs).</p>
+</li>
+<li><p>Core API methods needed for reindexing of vocabularies was added as well (contributed by EU JRC).</p>
+</li>
+<li><p>Prettyprint: If you explore the REST API in a browser, you can now add <code>?prettyprint=1</code> to the URL, and the JSON will be nicely formatted for you.</p>
+</li>
+</ul>
+<h3>Known Issues</h3>
+<ul>
+<li>Discarding a change to an edited record doesn't work.</li>
+<li>Licenses cannot be saved.</li>
+<li>Languages cannot be saved and only Danish and English are currently available.</li>
+<li>License data is missing.</li>
+<li>Error messages at the top of the form are not displayed correctly.</li>
+</ul>
+<h3>Install</h3>
+<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
+<pre><code>docker pull inveniosoftware/centos7-python:3.6
+docker pull inveniosoftware/centos8-python:3.7
+docker pull inveniosoftware/centos8-python:3.8
+</code></pre>
+<p>To install:</p>
+<pre><code>pip install --upgrade invenio-cli
+invenio-cli init rdm
+cd my-site
+invenio-cli containerize --pre
+invenio-cli demo --containers
+</code></pre>
+<p>This month's version of invenio-cli is 0.21.0 .</p>
+<p>To stop the instance without destroying the records that were created, you can just run:</p>
+<pre><code>cd my-site
+invenio-cli stop
+</code></pre>
+<p>To destroy the Python virtualenv, and remove the docker containers, you can now just run:</p>
+<pre><code>cd my-site
+invenio-cli destroy
+</code></pre>
+<h3>Feedback</h3>
+<p>As always, we welcome your feedback. When you provide feedback on Discourse your message should be pre-populated with the classic template (bugs, what worked well, what didn’t work well, wishes for documentation).</p>
+<p>Here is the template to give feedback if it’s not automated:</p>
+<pre><code>## Bugs
+
+## What worked well
+
+## What didn't work well
+
+## Wishes for documentation
+</code></pre>
+<p>Take care and stay safe!</p>
+
+    </div>
+    <div class="blog-list-item-more-link">
+      
+        <a href="/blog/2021-02-01-january-release/">Read More</a>
+      
+    </div>
+  </div>
+
+                </div>
+              
+            
+              
+                <div class="blog-list-item col-xs-12 col-md-4">
+                  
+  <div class="blog-list-item blog-list-item-frame">
+    <header class="blog-list-item-header">
+      <h3>
+        
           <a href="/blog/2021-01-11-december-release/">InvenioRDM Alpha 14 (December Release)</a>
         
       </h3>
@@ -879,100 +1011,6 @@ docker-compose -f docker-compose.full.yml down
     <div class="blog-list-item-more-link">
       
         <a href="/blog/2020-08-01-july-release/">Read More</a>
-      
-    </div>
-  </div>
-
-                </div>
-              
-            
-              
-                <div class="blog-list-item col-xs-12 col-md-4">
-                  
-  <div class="blog-list-item blog-list-item-frame">
-    <header class="blog-list-item-header">
-      <h3>
-        
-          <a href="/blog/2020-07-01-june-release/">InvenioRDM June Release</a>
-        
-      </h3>
-      <p class="blog-list-item-meta">
-        <i class='fa fa-user text-muted'></i>
-        <span class="author">
-          
-            Lisa O&#39;Keefe, Pablo Panero
-          
-        </span>
-        <i class='fa fa-calendar text-muted'></i>
-        <span>Jul 1, 2020</span>
-        <i class='fa fa-users text-muted'></i>
-        <span class="label invenio-team"><a class="team-url" href="">Invenio</a></span>
-      </p>
-    </header>
-    <div class="blog-list-item-content">
-      <p>We are happy to announce InvenioRDM Alpha 8 (June release). Thank you to our team members for their efforts on this release.</p>
-<h3>What's new?</h3>
-<p>The June release is a major backend development release. We developed three new modules that lay the foundation for the new core data flow of Invenio(RDM). Our work goes far to provide a better developer experience. You will be able to work on and customize Invenio(RDM) in an easier and cleaner way.</p>
-<p>The primary focus for the release was:</p>
-<ul>
-<li>Continue the migration from Bootstrap to SemanticUI</li>
-<li>Bug fixes and improvements on the frontend (mainly on deposit)</li>
-<li>Develop new core modules for Invenio(RDM) backend</li>
-</ul>
-<h4>UI Customization</h4>
-<p>You are able to customize your templates again. The JSX customizations are not functional yet though, which means the search page results are not customizable.</p>
-<h4>Visual appearance</h4>
-<p>We have migrated the file previewer, the OAuth login, and the settings pages to SemanticUI.</p>
-<p>You might still notice some issues related to visual appearance (e.g. the name previewed file is not in a panel as before). We will be working on making all this perfect in the next sprint on SemanticUI (end of August). In the meantime, it is, at least, better.</p>
-<p><img src="/blog/2020-07-01-june-release/record_page.jpeg" alt=""></p>
-<h4>Creators, Contributors and Affiliations Identifiers</h4>
-<p>The Deposit page now accepts <a href="https://orcid.org/">ORCID iDs</a> for people (creators and contributors) and <a href="https://ror.org/">ROR identifiers</a> for organizations (creators, contributors and affiliations). An icon with a link to the respective entity on the record landing page reflects this connection.</p>
-<p>Contributors are now optional on the deposit page as well.</p>
-<h4>Python versions</h4>
-<p>There are now Invenio images for Python 3.7 and Python 3.8! This means that you can use Python 3.6, 3.7 and 3.8 for local development and the full containerized mode.</p>
-<h4>Backend and REST APIs</h4>
-<p>We have put a significant amount of work in refactoring some of the core API flow of Invenio. This addresses many of the issues that Invenio was facing in this domain. As a result, three modules were created:</p>
-<ul>
-<li><a href="https://github.com/inveniosoftware/flask-resources">https://github.com/inveniosoftware/flask-resources</a>: A generic Flask module to implement REST APIs and make their customization easy.</li>
-<li><a href="https://github.com/inveniosoftware/invenio-resources">https://github.com/inveniosoftware/invenio-resources</a>: A module customizing Flask-Resources for Invenio(RDM) APIs.</li>
-<li><a href="https://github.com/ppanero/invenio-records-agent">https://github.com/ppanero/invenio-records-agent</a>: An experimental module to bridge the representational and data access worlds in Invenio. This module hosts the business logic and might be merged back into invenio-resources.</li>
-</ul>
-<h3>What do you need to do?</h3>
-<p>Follow the documentation site: <a href="https://inveniordm.docs.cern.ch/">https://inveniordm.docs.cern.ch/</a> and install the latest invenio-cli v0.14.2+, create a new instance and see how it looks like!</p>
-<p><strong>Install (TL;DR)</strong></p>
-<p>If you previously installed InvenioRDM, make sure you have the latest Docker image of your choice according to the Python version:</p>
-<pre><code class="lang-bash">docker pull inveniosoftware/centos7-python:3.6
-docker pull inveniosoftware/centos8-python:3.7
-docker pull inveniosoftware/centos8-python:3.8
-</code></pre>
-<p>To install:</p>
-<pre><code class="lang-bash">pip install invenio-cli --upgrade
-invenio-cli init rdm
-cd my-site
-invenio-cli containerize --pre
-invenio-cli demo --containers
-</code></pre>
-<p>To destroy the Python virtualenv, and remove the docker containers run:</p>
-<pre><code class="lang-bash">cd my-site
-pipenv --rm
-docker-compose -f docker-compose.full.yml down
-</code></pre>
-<h3>Feedback</h3>
-<p>As always, we welcome your feedback. We are experimenting with Discourse's built in post template. This means when you <a href="https://invenio-talk.web.cern.ch/t/inveniordm-alpha-8-june-release/115">provide feedback on Discourse</a> your message should be pre-populated with the classic template:</p>
-<pre><code>## Bugs
-
-## What worked well
-
-## What didn't work well
-
-## Wishes for documentation
-</code></pre>
-<p>Thank you for your patience and support. We are working hard all the time to improve things. Take care and stay safe!</p>
-
-    </div>
-    <div class="blog-list-item-more-link">
-      
-        <a href="/blog/2020-07-01-june-release/">Read More</a>
       
     </div>
   </div>
