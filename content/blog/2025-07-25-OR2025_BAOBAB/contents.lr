@@ -1,0 +1,85 @@
+title: Ensuring the Future of Digital Repositories in West and Central Africa: A Case Study on BAOBAB and Sustainable Repository Development
+---
+author: Sefakor Ankora, West and Central African Research and Education Network (WACREN)
+---
+pub_date: 2025-08-11
+---
+team: InvenioRDM
+---
+body:
+
+![](BalmeLibrary.jpg)
+
+In today’s rapidly digitizing research landscape, the ability to preserve and share knowledge openly is not just a technological challenge, it’s a matter of equity and innovation. Yet, across much of West and Central Africa, many institutions still struggle with inadequate infrastructure for digital preservation. As I shared at a recent [OR2025 session](https://doi.org/10.5281/zenodo.15758380), this is where [BAOBAB]([https://baobab.wacren.net) comes in.
+
+### Why Repositories Matter
+
+Open Access repositories are critical tools for fueling collaboration, driving innovation, and reducing information inequality. But for many African universities and research centers, significant barriers, from unreliable digital systems to a lack of preservation strategies, hinder their ability to contribute to and benefit from the global research ecosystem.
+
+
+![](BAOBAB_Service_Network.png)
+
+### Introducing BAOBAB
+
+Launched in 2024 by [WACREN](https://wacren.net), the West and Central African Research and Education Network, BAOBAB is an InvenioRDM-based regional repository service designed to close these gaps. As of now, it supports more than 14 institutions across 8 countries, including public universities, research councils, and technical institutes. What sets BAOBAB apart is its ability to offer a centralized infrastructure while preserving local institutional autonomy, a model that ensures scalability without sacrificing ownership.
+
+### Tackling the Challenges
+
+Before BAOBAB, institutions operated in silos. Many lacked reliable backup systems, and technical capacity varied widely. This often led to duplicated efforts and even loss of valuable data. BAOBAB’s shared, cloud-based platform reduces the technical burden for individual institutions, while a community-driven governance model ensures the service evolves with user needs.
+
+### What’s Inside the Repository?
+
+BAOBAB has quickly become a treasure trove of African research. From PhD theses and conference papers to datasets, the repository ensures materials are enriched with multilingual metadata and accessible through persistent identifiers. That last point is key.
+
+### Why ARKs?
+
+BAOBAB adopts ARKs (Archival Resource Keys) as its persistent identifier system. Why? Because they’re:
+
+- Cost-effective and flexible
+- Free from vendor lock-in
+- Interoperable with existing and future PID systems
+
+Each item in BAOBAB automatically receives an ARK, ensuring it can be reliably found and cited over the long term.
+
+
+![](Digital_Preservation_Lifecycle.png)
+
+### Building for the Long Run
+
+But identifiers alone don’t guarantee preservation. BAOBAB is developing a comprehensive digital preservation strategy, including:
+
+- A formal preservation policy
+- Offsite backup strategies
+- Regular file fixity checks
+- Compliance with international metadata standards
+
+These efforts aim to make the repository resilient, even in the face of funding or infrastructure challenges.
+
+### Learning from Global Peers
+
+BAOBAB didn’t start from scratch. It was inspired by global leaders in repository development, including:
+
+- LA Referencia in Latin America
+- HAL in France
+- The Africa Open Science Platform
+
+These models were carefully studied and adapted to local realities—proving that global solutions can be tailored to local contexts.
+
+### Measurable Impact
+
+Since its launch, BAOBAB has archived over 408 documents, reduced duplication across participating institutions, and improved the visibility of African research on a regional and international scale. That’s not just a technical win, it’s a step toward equity.
+
+### A Blueprint for the Continent
+
+BAOBAB is more than a platform, it’s a blueprint for sustainable repository development across the continent. It shows that with thoughtful design, community involvement, and the right infrastructure, even resource-constrained regions can lead in Open Access.
+
+
+![](Sustainability_Accessibility_Preservation.png)
+
+### Final Thoughts
+
+Sustainable, equitable, and locally owned repositories aren’t just possible, they’re essential. BAOBAB’s success offers hope and a roadmap for other regions aiming to strengthen their research infrastructure. At WACREN, we believe the future of African research lies in collaboration, openness, and resilience.
+
+Let’s build it together.
+
+![](BAOBAB_Logo.png)
