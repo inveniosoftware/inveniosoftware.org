@@ -851,6 +851,7 @@ i.large-icon {
 .events-section i {
   color: #0377cd;
 }
+
 /* Events */
 .event-photo {
   width: 100%;
@@ -897,6 +898,7 @@ i.large-icon {
   word-wrap: break-word;
   width: 70%;
 }
+
 /* support.html */
 .hosting-section .row {
   margin: 40px auto;
@@ -906,6 +908,7 @@ i.large-icon {
   max-width: 100%;
   margin-bottom: 40px;
 }
+
 /* about */
 .about-section h1,
 .about-section h2,
@@ -931,6 +934,7 @@ i.large-icon {
   height: 20em;
   max-height: none !important;
 }
+
 /* people */
 .people {
   text-align: center;
@@ -966,6 +970,20 @@ i.large-icon {
 .more-people {
   padding-top: 80px;
   text-align: center;
+}
+
+.maintainers-section h1,
+.maintainers-section h2,
+.maintainers-section h3,
+.maintainers-section h4,
+.maintainers-section h5,
+.maintainers-section h6 {
+  color: #0377cd;
+  margin-left: 0px;
+}
+.maintainers-section p,
+.maintainers-section ul {
+  text-align: justify;
 }
 
 h4 {
