@@ -1,9 +1,0 @@
-language: python
-python: 3.5
-install: "pip install Lektor"
-script: "lektor build"
-deploy:
-  provider: script
-  script: "lektor deploy ghpages;lektor deploy ghpages-dash"
-  on:
-    branch: master
