@@ -2,8 +2,8 @@
  inveniosoftware.org
 =====================
 
-.. image:: https://github.com/inveniosoftware/inveniosoftware.org/workflows/CI/badge.svg
-        :target: https://github.com/inveniosoftware/inveniosoftware.org/actions?query=workflow%3ACI+branch%3Amaster
+.. image:: https://github.com/inveniosoftware/inveniosoftware.org/workflows/Build/badge.svg
+        :target: https://github.com/inveniosoftware/inveniosoftware.org/actions?query=workflow%3Abuild+branch%3Amaster
 
 Getting Started
 ===============
