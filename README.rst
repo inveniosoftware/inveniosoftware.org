@@ -2,8 +2,8 @@
  inveniosoftware.org
 =====================
 
-.. image:: https://img.shields.io/travis/inveniosoftware/inveniosoftware.org.svg
-        :target: https://travis-ci.org/inveniosoftware/inveniosoftware.org
+.. image:: https://github.com/inveniosoftware/inveniosoftware.org/workflows/CI/badge.svg
+        :target: https://github.com/inveniosoftware/inveniosoftware.org/actions?query=workflow%3ACI+branch%3Amaster
 
 Getting Started
 ===============
@@ -38,5 +38,5 @@ Visit `localhost:5000 <http://localhost:5000/>`_ in your browser.
 About
 =====
 
-This repository contains sources of the http://inveniosoftware.org
+This repository contains sources of the https://inveniosoftware.org
 web site.  Please go there to see the web site in action.
