@@ -1080,6 +1080,20 @@ i.large-icon {
   text-align: center;
 }
 
+.maintainers-section h1,
+.maintainers-section h2,
+.maintainers-section h3,
+.maintainers-section h4,
+.maintainers-section h5,
+.maintainers-section h6 {
+  color: #0377cd;
+  margin-left: 0px;
+}
+.maintainers-section p,
+.maintainers-section ul {
+  text-align: justify;
+}
+
 h4 {
   border-width: 2px;
   border-radius: 25px;
@@ -1109,7 +1123,7 @@ h2 {
 .showcase-nav-menu {
   margin: 40px 0 50px 0;
   padding: 0 20px;
-  
+
   .nav-buttons {
     display: flex;
     justify-content: center;
@@ -1118,7 +1132,7 @@ h2 {
     max-width: 900px;
     margin: 0 auto;
   }
-  
+
   .nav-button {
     display: flex;
     align-items: center;
@@ -1131,40 +1145,40 @@ h2 {
     transition: all 0.2s ease;
     min-width: 160px;
     position: relative;
-    
+
     &:hover {
       border-color: #0377cd;
       box-shadow: 0 2px 8px rgba(3, 119, 205, 0.15);
-      
+
       .nav-icon {
         color: #0377cd;
       }
-      
+
       .nav-title {
         color: #0377cd;
       }
     }
-    
+
     &.active {
       background: #0377cd;
       border-color: #0377cd;
       color: white;
       box-shadow: 0 2px 8px rgba(3, 119, 205, 0.2);
-      
+
       .nav-icon {
         color: white;
       }
-      
+
       .nav-title {
         color: white;
         font-weight: 600;
       }
-      
+
       .nav-subtitle {
         color: rgba(255, 255, 255, 0.8);
       }
     }
-    
+
     .nav-icon {
       margin-right: 12px;
       font-size: 16px;
@@ -1176,14 +1190,14 @@ h2 {
       width: 18px;
       height: 18px;
     }
-    
+
     .nav-text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       flex: 1;
     }
-    
+
     .nav-title {
       font-size: 14px;
       font-weight: 500;
@@ -1191,7 +1205,7 @@ h2 {
       margin-bottom: 2px;
       transition: all 0.2s ease;
     }
-    
+
     .nav-subtitle {
       font-size: 11px;
       color: #6c757d;
@@ -1204,7 +1218,7 @@ h2 {
 /* Section Content Spacing */
 .showcase-section-content {
   margin-bottom: 80px;
-  
+
   &:last-child {
     margin-bottom: 40px;
   }
@@ -1217,22 +1231,22 @@ h2 {
       gap: 6px;
       max-width: 700px;
     }
-    
+
     .nav-button {
       min-width: 140px;
       padding: 10px 16px;
-      
+
       .nav-icon {
         font-size: 14px;
         width: 16px;
         height: 16px;
         margin-right: 10px;
       }
-      
+
       .nav-title {
         font-size: 13px;
       }
-      
+
       .nav-subtitle {
         font-size: 10px;
       }
@@ -1244,30 +1258,30 @@ h2 {
   .showcase-nav-menu {
     margin: 30px 0 40px 0;
     padding: 0 15px;
-    
+
     .nav-buttons {
       flex-direction: column;
       align-items: center;
       gap: 8px;
       max-width: 350px;
     }
-    
+
     .nav-button {
       width: 100%;
       max-width: 280px;
       padding: 12px 16px;
-      
+
       .nav-icon {
         font-size: 14px;
         width: 16px;
         height: 16px;
         margin-right: 10px;
       }
-      
+
       .nav-title {
         font-size: 13px;
       }
-      
+
       .nav-subtitle {
         font-size: 10px;
       }
@@ -1279,18 +1293,18 @@ h2 {
   .showcase-nav-menu {
     .nav-button {
       padding: 10px 14px;
-      
+
       .nav-icon {
         font-size: 13px;
         width: 15px;
         height: 15px;
         margin-right: 8px;
       }
-      
+
       .nav-title {
         font-size: 12px;
       }
-      
+
       .nav-subtitle {
         font-size: 9px;
       }
@@ -1494,25 +1508,25 @@ h2 {
   .showcase-card {
     margin-bottom: 20px;
   }
-  
+
   .showcase-content {
     padding: 20px;
   }
-  
+
   .showcase-content h3 {
     font-size: 18px;
   }
-  
+
   .showcase-description {
     font-size: 14px;
     min-height: auto;
   }
-  
+
   .showcase-section-content .section-title {
     font-size: 28px;
     margin-top: 40px;
   }
-  
+
   .showcase-section-content  .section-description {
     font-size: 16px;
   }

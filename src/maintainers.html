@@ -1,0 +1,132 @@
+---
+title: Maintainers Handbook
+eleventyNavigation:
+  key: 'Maintainers'
+  parent: Community
+  order: 6
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="maintainers-section section-content-white-bg">
+  <div class="container">
+    <h1>Introduction</h1>
+    <p>
+      Maintainers are a key part of the Invenio open source community. They help
+      ensure the health, quality, and sustainability of the codebase while
+      fostering a welcoming environment for contributors. This document defines
+      the role of maintainers, their responsibilities, how to become a
+      maintainer, and related processes.
+    </p>
+
+    <h2>Role of Maintainers</h2>
+    <p>
+      Maintainers are individuals who have demonstrated expertise and commitment
+      to the Invenio project. They maintain at least one Invenio software
+      repository and are appointed by the Principal Architect, in accordance
+      with the Product Manager.
+    </p>
+
+    <h2>Responsibilities</h2>
+    <p>Maintainers have responsibilities across several key areas:</p>
+    <p>
+      <strong>Technical Leadership:</strong> Maintainers participate in
+      architectural discussions, make technical decisions, and evaluate
+      contributions for community reusability. They help shape the technical
+      architecture in coordination with the Principal Architect and manage
+      releases according to the <a href="/governance/">principles</a> and
+      <a href="https://github.com/orgs/inveniosoftware/projects/80">roadmap</a>.
+      They may specialize in specific areas of the framework such as
+      translations, infrastructure, metadata schemas, or UI/UX.
+    </p>
+    <p>
+      <strong>Code Quality and Repository Management</strong>: Maintainers
+      review pull requests, test new changes, manage issues, prepare releases,
+      backport changes when necessary, and address security vulnerabilities.
+      They ensure contributions follow best practices and are aligned with
+      project goals. A minimum of two maintainers should agree before merging
+      significant changes.
+    </p>
+    <p>
+      <strong>Community Support</strong>: Maintainers guide newcomers, answer
+      questions and share their expertise on communication channels (GitHub,
+      Discord, Discourse), help engage contributors, and ensure adequate
+      documentation for repositories. They identify testers and reviewers for
+      complex PRs and participate in merge parties during telecons and events.
+    </p>
+    <p>
+      <strong>Fostering Best Practices:</strong> Maintainers exemplify the Code
+      of Conduct and maintain a supportive environment for contributors. They
+      use GitHub boards to organize work, proactively address technical debt,
+      and seek input from other maintainers when reviewing unfamiliar changes.
+      Regular participation in community events and an active presence in
+      communication channels helps maintain project momentum.
+    </p>
+    <h2>Becoming a Maintainer</h2>
+    <h3>Prerequisites</h3>
+    <ul>
+      <li>Active contributor to Invenio</li>
+      <li>Demonstrated understanding of the codebase</li>
+      <li>Adherence to the Code of Conduct and Maintainers Handbook</li>
+      <li>Track record of quality contributions</li>
+      <li>
+        Association with a participating partner organization is typical but not
+        required
+      </li>
+    </ul>
+    <h3>Application Process</h3>
+    <ol>
+      <li>
+        Applicant – Contact the Product Manager or Principal Architect to
+        express interest, <strong>OR</strong> be nominated by current
+        maintainers
+      </li>
+      <li>
+        Existing maintainers
+        <ul>
+          <li>
+            Review with consideration for diversity, representation and above
+            prerequisites.
+          </li>
+          <li>
+            Vote through anonymous process – 7-day period, requires ≥70%
+            positive votes and &lt;20% negative votes with majority
+            participation
+          </li>
+        </ul>
+      </li>
+      <li>
+        Applicant – Onboard with appropriate GitHub access and introduction to
+        communication channels, tools, and practices
+      </li>
+      <li>
+        Applicant – Formal announcement in official channels and update to
+        public pages
+      </li>
+    </ol>
+
+    <h2>Leaving the Maintainer Role</h2>
+    <ul>
+      <li>
+        <strong>Voluntary Departure:</strong> Notify leadership and assist with
+        transitioning responsibilities when possible.
+      </li>
+      <li>
+        <strong>Involuntary Removal:</strong> Leadership may revoke a maintainer
+        role for lack of activity, Code of Conduct violations, or repeated
+        infringements of project guidelines. A warning will be given, except in
+        severe cases, as revoking roles is considered a last measure.
+      </li>
+    </ul>
+
+    <h2>Communication and Decision-Making</h2>
+    <p>
+      Maintainers communicate through the dedicated "maintainers" Discord
+      channel, GitHub discussions, monthly maintainer calls, and Invenio events.
+      They follow Invenio's decision-making principles by striving for
+      consensus, facilitating open discussions, and ensuring alignment with the
+      overall project vision.
+    </p>
+  </div>
+</section>
+{% endblock %}
