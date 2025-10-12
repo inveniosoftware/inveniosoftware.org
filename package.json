@@ -1,0 +1,23 @@
+{
+  "name": "eleventy-from-scratch",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx @11ty/eleventy && node github-project-screenshot.js",
+    "build-ghpages": "npx @11ty/eleventy && node github-project-screenshot.js",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.3.0",
+    "puppeteer": "^24.9.0"
+  }
+}

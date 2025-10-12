@@ -1,0 +1,24 @@
+{% layout "layouts/base.html" %}
+
+{% block header %}
+<section class="header-section {{header_section_classes | default: ''}}">
+  <div class="cover-image">
+    {% include "partials/nav.html" %}
+    <div class="container">
+      <div class="row centered">
+        <div class="col-12">
+          {% block header_content %}
+          <div class="header-section-title">
+            {% block header_section_title %}
+            <h1>{% block page_title %}{{ title }}{% endblock %}</h1>
+            <p class="sub-title">{% block page_subtitle %}{{ subtitle }}{% endblock %}</p>
+            {% endblock %}
+          </div>
+          {% endblock %}
+        </div>
+      </div>
+      {% block header_section_extra %}{% endblock %}
+    </div>
+  </div>
+</section>
+{% endblock %}

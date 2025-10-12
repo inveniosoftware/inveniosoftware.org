@@ -1,0 +1,64 @@
+---
+title: "InvenioRDM Onboarding Resource Roundup"
+author: Sara Gonzales
+date: 2021-02-10
+team: Invenio
+permalink: "/blog/2021-02-10-onboarding-resource-roundup/"
+---
+
+Congratulations! Your team has just joined the InvenioRDM open source project and is eager to contribute as much as possible. With a mixture of dedicated developers, resource curators, subject matter experts, and various leadership stakeholders, your team simply needs to know about the available resources and how to get started. Read on!
+
+
+### Developers
+
+Whether you would like to install and customize InvenioRDM, contribute on the main project sprints, or take on development of a module locally to contribute back to the project, there are a few important points of entry to participation:
+
+- [Roadmap](https://inveniosoftware.org/products/rdm/roadmap/): Familiarize yourself with the overall project timeline and goals.
+
+- [Development Roadmap](https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open): Get to know the specific milestones
+
+- [Sprintboard](https://github.com/orgs/inveniosoftware/projects/63): See the planning board for the current sprint
+
+- [Documentation](https://inveniordm.docs.cern.ch/): Read the official project documentation
+
+- [Discord](https://discord.gg/8qatqBC): Ask questions in the project Discord (chat/video platform) and introduce yourself in either the general or newcomers-help channels.
+
+- [Discourse](https://invenio-talk.web.cern.ch/): Want to provide feedback, but in a less time-sensitive manner than a chat? Either join or start a thread in the Discourse discussion forum
+
+- [Local Instance Setup](https://inveniordm.docs.cern.ch/install/): Install a local InvenioRDM instance for development
+
+- [Contribute code](https://inveniordm.docs.cern.ch/community/code/process/): Learn about the development process and how to contribute code to the project
+
+### Community Members
+
+All stakeholders at your institution are welcome to contribute to InvenioRDM, whether their contribution is code-based or not. To create a tool to best serve the community, outlining stakeholder requirements will be vital:
+
+ - [Demo site](https://inveniordm.web.cern.ch/): Access the latest sandbox version of InvenioRDM here. Create an account to test record creation
+
+ - [Discourse](https://invenio-talk.web.cern.ch/): Provide feedback on testing here. Use the [Feedback](https://invenio-talk.web.cern.ch/c/site-feedback/2) category or start a new thread wherever you like
+
+ - [Metadata Interest Group](https://invenio-talk.web.cern.ch/t/metadata-interest-group/144): This is the first community-focused group organized to help support the InvenioRDM development effort. This group meets about once/month and discusses issues related to the [InvenioRDM Metadata Model](https://inveniordm.docs.cern.ch/reference/metadata/). To join, either make a post on the [Discourse thread](https://invenio-talk.web.cern.ch/t/metadata-interest-group/144) or in this dedicated [Discord channel](https://discord.gg/hqvDW9p7Cx)
+
+ - [Conference Calendar](https://docs.google.com/document/d/1HhGtd39TqxleUkK-b5qyPqMjSg8EBqacxSpoDtydmE8/edit?usp=sharing): Are you presenting on InvenioRDM at an upcoming conference? Make a note here so other interested members of the community can attend the session, or perhaps join your poster or presentation effort
+
+ - Welcome, Help and General Questions: Reach out to Community Manager Sara Gonzales via [Discord](https://discordapp.com/users/saragon7740) for general questions or to join the Metadata Interest Group
+
+ - Schedule a Demo: Is your site, or a site you know, considering implementing InvenioRDM? Reach out to Community Manager Sara Gonzales via [Discord](https://discordapp.com/users/saragon7740) to schedule a one-hour demo and information session about the repository
+
+
+ ### Everyone
+
+ - Project list-serv: Lars will have shared this email address with you upon joining the team. This is the frontline communication tool for the InvenioRDM community. Make this email address a safe sender to receive the latest updates on teleconferences (a.k.a. telecons) and community-based information such as invitations to the Metadata Interest Group meetings. Polls, forms, and additional community tools will be sent to this list-serv
+
+ - Telecons (see the list-serv for connection information): All partners of the InvenioRDM community are invited to bi-weekly telecons throughout the year. One telecon per month will focus on development updates, and the other will focus on community-based topics
+
+ - [InvenioRDM Telecon Schedule](https://docs.google.com/document/d/1Ks5_xEMujd6vdlSmYGrbCsKP_I2hZasMkg-RIjwxbKg/edit?usp=sharing)
+
+ - [Blog](https://inveniosoftware.org/blog/): You are reading it! The blog will also alternate between development-based and community-based topics. Would you like to contribute a blog post? [Sign up here](https://docs.google.com/document/d/17Zupy06bKPdJMiLJDsfsgKZLgRJnbuj70AUCY1bOA0w/edit?usp=sharing) or contact Sara to get on the schedule
+
+ - [Code of Conduct](https://inveniosoftware.org/governance/#code-of-conduct)
+
+ - [Governance](https://inveniosoftware.org/governance/)
+
+
+ Welcome to the team, and happy collaborating!

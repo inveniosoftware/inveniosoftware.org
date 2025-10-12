@@ -1,9 +1,0 @@
-column: done
----
-body: Add support for creating and managing fully featured subcommunities (i.e. support for records, members, settings etc) .
-
-*@CERN, estimated Q2 2024*
----
-category: Communities
----
-title: Subcommunities

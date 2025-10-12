@@ -1,0 +1,134 @@
+---
+title: 'Roadmap'
+permalink: "/products/rdm/roadmap/"
+eleventyNavigation:
+  key: Roadmap
+  parent: InvenioRDM
+  order: 1
+---
+{% layout 'layouts/page-rdm.html' %}
+
+{% block page_subtitle %}
+Follow our discussion on features on <a href="https://github.com/inveniosoftware/product-rdm/discussions">GitHub Discussions</a>
+{% endblock %}
+
+{% block content %}
+<section class="roadmap-section section-content-light-bg github-board">
+  <p class="centered">See our <a href="https://github.com/orgs/inveniosoftware/projects/80">project board on GitHub</a></p>
+  <a href="https://github.com/orgs/inveniosoftware/projects/80"><img src="/assets/images/github-roadmap.png" alt="GitHub Project Board" /></a>
+</section>
+
+<section class="roadmap-section section-content-light-bg">
+  <div class="container">
+    <div class="row roadmap-table">
+      <div class="col-sm-4 column"></div>
+      <div class="col-sm-4 column">
+          <h2 class="section-title">Done 🚀</h2>
+          <p>What we have recently completed</p>
+      </div>
+      <div class="col-sm-4 column"></div>
+    </div>
+
+    {% assign parts = roadmap.items | divideArrayInParts: 3 %}
+    <div class="row roadmap-table">
+      {% for part in parts %}
+      <div class="col-sm-4 column">
+        {% for item in part %}
+        <div class="panel panel-default">
+          <div class="panel-heading {{ item.category | downcase | replace: ' ', '-' }}">
+            {{ item.category }}
+          </div>
+          <div class="panel-body">
+            <h3 class="panel-title">{{ item.title }}</h3>
+            <div class="card-description">
+              <p>{{ item.body }}</p>
+              {% if item.author.size > 0 %}
+              <p><i>@{{ item.author }}</i></p>
+              {%- endif %}
+            </div>
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="roadmap-section section-content-white-bg">
+  <div class="container">
+    <h2 class="section-title">Release dates</h2>
+
+    <div class="container">
+      <p>
+        We aim to have a major release once a year. For more information, please read our <a href="https://inveniordm.docs.cern.ch/releases/maintenance-policy/" title="InvenioRDM maintenance policy">maintenance policy</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="roadmap-section section-content-light-bg">
+  <div class="container">
+    <h2 class="section-title">FAQ</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          <strong>What does current, near-term and planned mean?</strong> <br />
+          <ul>
+            <li><strong>Current</strong> means that a development team is currently working on the
+          feature.</li>
+            <li><strong>Near-term</strong> means that a development team has planned to work on this
+          feature as their next task.</li>
+            <li><strong>Planned</strong> means that a development team has allocated time on their schedule to start work
+          on the feature.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Will "current" features be released before
+          "near-term" features?</strong> <br />
+          No. It is not guaranteed that a feature currently under development will
+          be released before a feature in the near-term column. Each feature may vary
+          greatly in size and required effort, as can the team that implements the
+          feature.
+        </p>
+        <p>
+          <strong>When will feature X be released?</strong> <br />
+          New features are released as soon as they are ready in the next
+          coming release. We on purpose do not communicate in which
+          release a given feature will be shipped.
+        </p>
+
+
+      </div>
+
+      <div class="col-md-6">
+        <p>
+          <strong>Why do you not tie features to release dates?</strong> <br />
+          We want to communicate clearly the inherent uncertainty in our planned
+          schedule coming from developing a product as a large open source
+          collaboration.
+        </p>
+        <p>
+          <strong>What is the inherent uncertainties in your development schedule?</strong> <br />
+          As a large open source collaboration, most our resources comes as opportunistic
+          temporary resources. Partners may contribute developers on a short-term/long-term
+          basis, full-time or part-time. This means the development teams are rarely stable
+          for a longer period, and each team has different velocity and skillset. In addition,
+          a large part of the developers participate in running services for their institution
+          and services may from to time need immediate attention. We see all these challenges
+          as strengths for the InvenioRDM community, that overall helps build a stronger
+          and more resilient community, as well as building features that serve
+          real needs for our community.
+        </p>
+        <p>
+          <strong>Can I use your roadmap to make commitments?</strong> <br />
+          Any commitment you make is your own commitment and made at your own risk and
+          you must evaluate the impact of not meeting your commitment. If you
+          need a specific feature, the best you can do is to help accelerate the roadmap.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

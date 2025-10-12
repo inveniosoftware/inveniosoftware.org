@@ -1,0 +1,31 @@
+{% assign peopleSorted = people.items | sortBy: 'name', 'status', filterByStatus %}
+{%- for card in peopleSorted %}
+<div class="person" {% if withRoles %}data-role-container="{{ card.invenio-role }}"{% endif %}>
+  <div class="photo">
+    {% if card.photo.size > 0 %}
+      <img src="/assets/images/people/{{ card.photo }}" />
+      {% else %}
+      {% assign initial = card.name | slice: 1 | upcase %}
+      <div class="initial">{{ initial }}</div>
+    {% endif %}
+  </div>
+  <div class="name">{{ card.name }}</div>
+  <div class="institution">{{ card.institution }}</div>
+  <div class="role">{{ card.role | join: ", " }}</div>
+  <div class="bio">{{ card.bio }}</div>
+  {% if card.github or card.linkedin %}
+  <div class="social-links">
+    {% if card.github and card.github != '' %}
+      <a href="{{ card.github }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card.name }} GitHub">
+        <i class="fa fa-github"></i>
+      </a>
+    {% endif %}
+    {% if card.linkedin and card.linkedin != '' %}
+      <a href="{{ card.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card.name }} LinkedIn">
+        <i class="fa fa-linkedin-square"></i>
+      </a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{%- endfor %}

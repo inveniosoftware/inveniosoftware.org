@@ -1,0 +1,163 @@
+---
+title: Showcase
+subtitle: Examples of Invenio installations around the world
+eleventyNavigation:
+  key: Showcase
+  order: 3
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="showcase-section section-content-light-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 centered">
+        <p class="lead">A showcase gallery illustrating a few Invenio instances worldwide. <a href="/showcase-add/">Add yours!</a></p>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="showcase-nav-menu">
+          <div class="nav-buttons">
+            <a href="#rdm-section" class="nav-button active">
+              <div class="nav-icon">
+                <i class="fa fa-database"></i>
+              </div>
+              <div class="nav-text">
+                <span class="nav-title">InvenioRDM</span>
+                <span class="nav-subtitle">Research Data</span>
+              </div>
+            </a>
+            <a href="#ils-section" class="nav-button">
+              <div class="nav-icon">
+                <i class="fa fa-book"></i>
+              </div>
+              <div class="nav-text">
+                <span class="nav-title">InvenioILS</span>
+                <span class="nav-subtitle">Library System</span>
+              </div>
+            </a>
+            <a href="#v3-section" class="nav-button">
+              <div class="nav-icon">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <div class="nav-text">
+                <span class="nav-title">Invenio v3</span>
+                <span class="nav-subtitle">Framework</span>
+              </div>
+            </a>
+            <a href="#v1-section" class="nav-button">
+              <div class="nav-icon">
+                <i class="fa fa-archive"></i>
+              </div>
+              <div class="nav-text">
+                <span class="nav-title">Invenio v1</span>
+                <span class="nav-subtitle">Legacy</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- InvenioRDM Section -->
+    <div id="rdm-section" class="showcase-section-content">
+      {% include "partials/showcase-section.html",
+         data: showcase.rdm,
+         section_title: "InvenioRDM installations",
+         section_description: "Research data repositories built with InvenioRDM for managing and sharing research outputs.",
+         label_class: "rdm",
+         label_text: "InvenioRDM"
+      %}
+    </div>
+
+    <!-- InvenioILS Section -->
+    <div id="ils-section" class="showcase-section-content">
+      {% include "partials/showcase-section.html",
+         data: showcase.ils,
+         section_title: "InvenioILS installations",
+         section_description: "Integrated library systems powered by InvenioILS for comprehensive library management.",
+         label_class: "ils",
+         label_text: "InvenioILS"
+      %}
+    </div>
+
+    <!-- Invenio v3 Framework Section -->
+    <div id="v3-section" class="showcase-section-content">
+      {% include "partials/showcase-section.html",
+         data: showcase.framework_v3,
+         section_title: "Invenio v3 Framework installations",
+         section_description: "Applications and repositories built with the Invenio v3 Framework.",
+         label_class: "v3",
+         label_text: "Invenio v3"
+      %}
+    </div>
+
+    <!-- Invenio v1 Section -->
+    <div id="v1-section" class="showcase-section-content">
+      {% include "partials/showcase-section.html",
+         data: showcase.v1,
+         section_title: "Invenio v1 installations",
+         section_description: "Applications and repositories built with the Invenio v1.",
+         label_class: "v1",
+         label_text: "Invenio v1"
+      %}
+    </div>
+
+  </div>
+</section>
+
+<script>
+$(document).ready(function() {
+  // Handle smooth scrolling to sections
+  $('.nav-button').on('click', function (e) {
+    e.preventDefault();
+
+    // Remove active class from all buttons
+    $('.nav-button').removeClass('active');
+
+    // Add active class to clicked button
+    $(this).addClass('active');
+
+    // Get target section
+    var target = $(this).attr('href');
+    var targetElement = $(target);
+
+    if (targetElement.length) {
+      // Smooth scroll to the target section
+      $('html, body').animate({
+        scrollTop: targetElement.offset().top - 120
+      }, 800, 'easeInOutQuart');
+    }
+  });
+
+  // Handle direct links to sections (e.g., #rdm-section)
+  if (window.location.hash) {
+    var hash = window.location.hash;
+    var button = $('.nav-button[href="' + hash + '"]');
+    if (button.length) {
+      button.click();
+    }
+  }
+
+  // Update active button based on scroll position
+  $(window).on('scroll', function() {
+    var scrollPos = $(window).scrollTop() + 150;
+
+    $('.showcase-section-content').each(function() {
+      var section = $(this);
+      var sectionTop = section.offset().top;
+      var sectionBottom = sectionTop + section.outerHeight();
+      var sectionId = section.attr('id');
+
+      if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+        $('.nav-button').removeClass('active');
+        $('.nav-button[href="#' + sectionId + '"]').addClass('active');
+      }
+    });
+  });
+});
+</script>
+{% endblock %}

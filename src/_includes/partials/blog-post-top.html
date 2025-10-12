@@ -1,0 +1,21 @@
+<div class="blog-top blog-top-frame">
+  <header class="blog-top-header">
+    <h2>
+      <a href="{{ permalink }}">{{ title }}</a>
+    </h2>
+    <p class="blog-list-item-meta">
+      <i class='fa fa-user text-muted'></i>
+      <span class="author">{{ author }}</span>
+      <i class='fa fa-calendar text-muted'></i>
+      <span>{{ date | dateFormat }}</span>
+      <i class='fa fa-users text-muted'></i>
+      <span class="label {{ team_colour | default: 'invenio-team' }}"><a class="team-url" href="{{ team_url }}">{{ team }}</a></span>
+    </p>
+  </header>
+  <div class="blog-list-item-content">
+    {{ content }}
+  </div>
+  <div class="blog-top-more-link">
+    <a href="{{ permalink }}">Read More</a>
+  </div>`
+</div>

@@ -1,0 +1,45 @@
+---
+title: 'Events & Training'
+subtitle: "What's happening on the Invenio world?"
+eleventyNavigation:
+  key: 'Events & Training'
+  parent: Community
+  order: 3
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="events-section section-content-white-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2><i class="fa fa-video-camera"></i><a data-toggle="tooltip" data-placement="top"  title="Coming soon!"> Webinars</a></h2>
+        <p>
+          We will soon be providing Webinars on our Invenio products. Stay tuned!
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2><i class="fa fa-pencil-square-o"></i><a href="https://indico.cern.ch/event/773969/"> Training bootcamp</a></h2>
+        <p>
+          We organise bootcamps to show the nuts and bolts of Invenio. Also, we have a nice set of <a href="https://github.com/inveniosoftware/training">tutorials</a> if you want to give it a try.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2><i class="fa fa-users"></i><a href="https://indico.cern.ch/category/6240/"> User Group Workshop</a></h2>
+        <p>
+          We run an Invenio User Group Workshop every year. See the full list <a href="https://indico.cern.ch/category/6240/">here</a>.
+        </p>
+      </div>
+    </div>
+    <div class="row centered">
+      <img class="event-photo" src="/assets/images/event-inveniobootcamp2019.jpg">
+      <span class="event-photo-caption">Last <a href="https://indico.cern.ch/event/773969/">Invenio v3 Bootcamp</a> at CERN - Mar 2019</span>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+{% endblock %}

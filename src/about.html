@@ -1,0 +1,89 @@
+---
+title: 'About'
+subtitle: 'A brief story of an open source project'
+eleventyNavigation:
+  key: About
+  order: 8
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="about-section section-content-white-bg">
+  <div class="container">
+    <span class="section-title">What is Invenio?</span>
+    <div clas="row">
+      <p>
+        Invenio is an open source project that was initially developed by CERN.
+        The Invenio brand today covers a suite of currently three main products
+        developed by the Invenio community:
+      </p>
+      <ul>
+        <li>InvenioRDM - a repository/document management platform</li>
+        <li>InvenioILS - an integrated library system</li>
+        <li>Invenio Framework - a code library to build large-scale information
+          systems such as InvenioRDM and InvenioILS</li>
+      </ul>
+      <p>
+        In addition to the three main products, a larger number of smaller
+        generic code libraries are also being maintained for the benefit of
+        the open source commuinty independently of Invenio.
+      </p>
+    </div>
+    <span class="section-title">History</span>
+    <div clas="row">
+      <p>
+        Originally, Invenio v1, was a software application that acted as both a
+        digital repository and an integrated library system based on MARC21. The first
+        release of Invenio (named CDSWare back then) was on August 1st, 2002.
+      </p>
+      <p>
+        In 2015, Invenio v3 was rewritten from scratch in order to better support
+        large-scale research data management use cases as well as take advantage
+        of significant developments in open source off-the-shelf solutions which
+        didn't exist back in 2002. Invenio v3 also marked the departure from
+        MARC21 as the core metadata format, towards a fully JSON-based system
+        supporting many different metadata formats and not only MARC21.
+      </p>
+      <p>
+        Invenio v3 further marked the split of Invenio into several separate products
+        each focusing on specific use cases, but all based on the same core
+        Invenio Framework v3.
+      </p>
+      <p>
+        What about Invenio v2? Please don't ask (number 2 is always bad right?) 😀
+      </p>
+    </div>
+  </div>
+</section>
+<section id="logos" class="logos-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">Logo and sticker download</span>
+    <h6 class="section-subtitle">Feel free to use our logos and stickers which are available under CC-BY licence.</h6>
+    <h6 class="centered">Logos</h6>
+    <div clas="row centered">
+      <div class="col-md-6">
+        <a href="/assets/images/logo-invenio-white.svg" download><img src="/assets/images/logo-invenio-white.svg"></a>
+      </div>
+      <div class="col-md-6">
+        <a href="/assets/images/logo-invenio-framework.svg" download><img src="/assets/images/logo-invenio-framework.svg"></a>
+      </div>
+    <div clas="row centered">
+      <div class="col-md-6">
+        <a href="/assets/images/logo-invenio-rdm.svg" download><img src="/assets/images/logo-invenio-rdm.svg"></a>
+      </div>
+      <div class="col-md-6">
+        <a href="/assets/images/logo-invenio-ils.svg" download><img src="/assets/images/logo-invenio-ils.svg"></a>
+      </div>
+    </div>
+    <h6 class="centered" id="stickers">Stickers</h6>
+    <div class="row centered">
+      <div class="col-md-6">
+        <a href="/assets/images/sticker-inveniordm-tail.svg" download><img class="sticker" src="/assets/images/sticker-inveniordm-tail.svg"></a>
+      </div>
+      <div class="col-md-6">
+        <a href="/assets/images/sticker-inveniordm-hex.svg" download><img class="sticker" src="/assets/images/sticker-inveniordm-hex.svg"></a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

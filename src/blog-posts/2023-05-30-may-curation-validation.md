@@ -1,0 +1,67 @@
+---
+title: "How does InvenioRDM support proper resource curation and validation?"
+author: Matt Carson
+date: 2023-05-30
+team: InvenioRDM
+permalink: "/blog/2023-05-30-may-curation-validation/"
+---
+
+With mandates and directives such as the European Union’s [Plan S](https://web.archive.org/web/20180904122211/https://www.scienceeurope.org/wp-content/uploads/2018/09/Plan_S.pdf), the recently-introduced National Institutes of Health [Policy for Data Management and Sharing](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html) in the United States, and the [White House Office of Science and Technology Policy Memo](https://www.whitehouse.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Memo.pdf) requiring free and immediate access to federally funded research in the U.S. by the end of 2025, increased emphasis is being placed on curation, validation, and preservation of research output. In addition, efforts such as the [Generalist Repositories Ecosystem Initiative (GREI)](https://datascience.nih.gov/data-ecosystem/generalist-repository-ecosystem-initiative) aim to bring next-generation generalist repositories into alignment on key features required for discovery and reuse of research outputs. Zenodo has joined this initiative and will migrate to the InvenioRDM platform later this year, which will play a crucial role in helping to support best practices in research data management for this popular service.
+
+From ensuring deposited records abide by FAIR principles, to granular access control, InvenioRDM supports resource curation and validation with a variety of functionalities. Below are some of the key features that make the platform a great option for sharing and preserving your work:
+
+
+## Deposits:
+
+- Deposited records check all FAIR principles (Findability, Accessibility, Interoperability, Reusability)
+
+- Configurable confirmation text before deposit to ensure agreement with security and privacy policies
+
+- Long-running record drafts for pre-publication edits
+
+- A wide variety of licensing options
+
+- Ability to set an embargo period for records or files with automated embargo removal at a specified date
+
+- Contextualization of records via secondary identifiers to publications, project sites, external data, and other associated research outputs
+
+- Citations in multiple formats provided for each record
+
+- Empowers communities to self-curate domain specific records
+
+- Ability to archive software via GitHub integration within records, allowing data to be linked to code [coming soon]
+
+- Usage metrics and analytics (COUNTER-compliant statistics gathering for record access and downloads) [coming soon]
+
+
+## Documentation:
+
+- Extensive support documentation
+
+- Possible addition of informative pages e.g., Terms of Use, Privacy Policy, Deposit Agreement. 
+
+
+## Metadata and Discovery:
+
+- Supports industry standards for interoperability
+
+- Ability to broker metadata to search and discovery services
+
+- Hand curation by repository administrators for metadata quality assurance
+
+- Versioning of all deposits, with a per-version permanent identifier and a per-deposit (across all versions) concept permanent identifier
+
+- Configurable registration with external identifier systems e.g., DOI  
+
+
+## Access, Security, and Quality Control:
+
+- Authentication configurable with institutional credentials or third-parties (e.g., ORCiD, GitHub)
+
+- Checksum for uploaded files ensure file integrity throughout each file's lifetime 
+
+- Restricted access capability
+
+- Can be configured for secure storage
+
+- Automated periodic file audits

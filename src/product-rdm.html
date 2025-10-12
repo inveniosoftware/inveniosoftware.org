@@ -1,0 +1,357 @@
+---
+title: InvenioRDM
+permalink: "/products/rdm/"
+eleventyNavigation:
+  key: InvenioRDM
+  parent: Products
+  order: 1
+---
+{% layout 'layouts/page-rdm.html' %}
+
+{% block header_section_title %}
+  <h1>
+    <img class="product-header-logo" src="/assets/images/logo-invenio-rdm.svg" title="InvenioRDM" alt="InvenioRDM" />
+  </h1>
+  <p class="big-sub-title">The turn-key research data management repository</p>
+  <p>🚀 <a href="https://inveniordm.docs.cern.ch/releases/v12/version-v12.0.0/">August 1, 2024: InvenioRDM v12.0 LTS released</a></p>
+{% endblock %}
+
+{% block header_section_extra %}
+  <div class="row welcome-features-row">
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-list-alt"></i><br /><a href="#status">Status</a></h2>
+      <p>
+        Follow the latest project status.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-road"></i><br /><a href="/products/rdm/roadmap">Roadmap</a></h2>
+      <p>
+        See our next major milestones
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-desktop"></i><br /><a href="https://inveniordm.web.cern.ch">Demo</a></h2>
+      <p>
+        Demo of InvenioRDM showing latest development state.
+      </p>
+    </div>
+
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-comment"></i><br /><a href="https://invenio-talk.web.cern.ch/c/projects/invenio-rdm">Forum</a></h2>
+      <p>
+        Join our project forum and collaborate.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-keyboard-o"></i><br /><a href="https://discord.gg/8qatqBC">Chat</a></h2>
+      <p>
+        Find all the partners in our official chatroom.
+      </p>
+    </div>
+    <div class="welcome-features-col col-md-2">
+      <h2><i class="fa fa-github"></i><br /><a href="https://github.com/inveniosoftware/invenio-app-rdm">Code</a></h2>
+      <p>
+        Have a look at InvenioRDM code evolution.
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<section class="invenio-rdm-project-section section-content-light-bg">
+  <div class="container">
+    <h2 class="section-title">The InvenioRDM project</h2>
+    <div class="row centered">
+      <div class="col-md-8 col-md-offset-2">
+        <p>
+        The InvenioRDM project is an open source collaboration with two main goals:
+        </p>
+        <div class="invenio-rdm-project-goals">
+          <div class="rdm-goal">
+            <i class="fa fa-key"></i>
+            <h3>Repository Platform</h3>
+            <p>Build a turn-key research data management (RDM) repository platform based on <a href="/products/framework/">Invenio Framework</a> and <a href="https://www.zenodo.org">Zenodo</a>.</p>
+          </div>
+          <div class="rdm-goal">
+            <i class="fa fa-users"></i>
+            <h3>Community</h3>
+            <p>Grow a community of research institutions, private companies and individuals to sustain the platform going forward.</p>
+          </div>
+        </div>
+        <br />
+        <div class="goto-button">
+          <a href="#faq"><i class="fa fa-file-text-o"></i> FAQ</a>
+          <a href="#status"><i class="fa fa-file-text-o"></i> Project Information</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="brought-to-you-section section-content-white-bg">
+  <div class="container">
+    <h2 class="section-title">Brought to you by</h2>
+    {% assign parts = rdm-partners.items | sortBy: 'name' | sliceArray: 4 %}
+    {% for part in parts %}
+    <div class="row centered">
+      <div class="col">
+        {% for item in part %}
+        <a href="{{ item.url }}"><img src="/assets/images/{{ item.logo }}" title="{{ item.name  }}"></a>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+<section id="features" class="features-section section-content-light-bg">
+  <div class="container">
+    <h2 class="section-title">Features</h2>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icons8-web-design-80.png"/>
+          </div>
+          <div class="col-md-9">
+            <h3>Top of the class UX</h3>
+            <p>Finally a repository that your users will love! We have thought hard about user experience for everyone: end-users, curators, system administrators, and developers. Expect more of your repository!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icons8-growth-and-flag-128.png"/>
+          </div>
+          <div class="col-md-9">
+            <h3>Scalability</h3>
+            <p>InvenioRDM scales with you! Handle 1 or 100 million records, 1 byte or  several petabytes. It runs on bare-metal, VMs and container platforms such as Kubernetes and OpenShift.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icons8-compare-git-80.png"/>
+          </div>
+          <div class="col-md-9">
+            <h3>Institutional integration</h3>
+            <p>InvenioRDM integrates with your institution. It supports your Single Sign-On (SSO) solution, your storage systems, your public/private clouds, your permissions models as well as your custom fields.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+          <div class="row">
+              <div class="col-md-3 centered">
+                  <img src="/assets/images/icons8-science-fiction-80.png"/>
+              </div>
+              <div class="col-md-9">
+                  <h3>Next Generation Repository</h3>
+                  <p>InvenioRDM implements the Next Generation Repository (NGR) vision and integrates with other Open Science infrastructures such ORCID, DataCite & OpenAIRE.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icons8-adjustment-80.png"/>
+          </div>
+          <div class="col-md-9">
+            <h3>Repository Profiles</h3>
+            <p>InvenioRDM comes with pre-configured repository profiles for institutional repositories (IRs), research data management (RDM) systems as well as domain-specific repositories for health and biomedical sciences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+          <div class="row">
+              <div class="col-md-3 centered">
+                  <img src="/assets/images/icons8-bench-press-80.png"/>
+              </div>
+              <div class="col-md-9">
+                  <h3>Resilient</h3>
+                  <p>Architected from ground up to be resilient to changing business requirements. Stable APIs, easy maintenance and upgrade, as well as an extensible platform to ensure a reliable core on which you can build new innovative features and integrations.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<a name="status"></a>
+<section class="instances-section section-content-white-bg customisations">
+  <div class="container">
+    <h2 class="section-title">Project Information</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Status Updates</h3>
+        <dl>
+          <dd>2025-07-23: <a href="https://inveniordm.docs.cern.ch/releases/v13/version-v13.0.0/">InvenioRDM v13.0 Release</a></dd>
+          <dd>2024-08-01: <a href="https://inveniordm.docs.cern.ch/releases/v12/version-v12.0.0/">InvenioRDM v12.0 Release</a></dd>
+          <dd>2021-02-01: <a href="/blog/2021-02-10-onboarding-resource-roundup/">InvenioRDM Onboarding Resource Roundup</a></dd>
+        </dl>
+
+        <h3>Demo</h3>
+        <p>
+          <p>We run a small demo site, so that you can see the current state of InvenioRDM in action.
+          The demo site is updated with new release.</p>
+
+          <div class="goto-button">
+            <a href="https://inveniordm.web.cern.ch"><i class="fa fa-external-link"></i> Demo site</a>
+          </div>
+        </p>
+
+        <h3>Install</h3>
+        <p>
+
+          <p>
+          Want to try installing InvenioRDM on your local machine, just head over to our docs.
+          </p>
+          <div class="goto-button">
+            <a href="https://inveniordm.docs.cern.ch/install/"><i class="fa fa-external-link"></i> Docs</a>
+          </div>
+        </p>
+
+      </div>
+
+
+      <div class="col-md-6">
+        <h3>Roadmap</h3>
+          <p>We released the first production suitable version in August 2021 (InvenioRDM v6.0).</p>
+
+          <div class="goto-button">
+            <a href="/products/rdm/roadmap"><i class="fa fa-road"></i> Roadmap</a>
+          </div>
+        <h3>Development</h3>
+        <p>We're an Open Source project and all our development is conducted publicly on GitHub. The primary resources for developers are:</p>
+        <ul>
+          <li><a href="https://inveniordm.docs.cern.ch/maintenance/newcomers/">Newcomers guide</a></li>
+          <li><a href="https://inveniordm.docs.cern.ch/develop/">Development guide</a></li>
+          <li><a href="https://github.com/orgs/inveniosoftware/projects/">Sprint boards</a></li>
+        </ul>
+        <h3>Questions?</h3>
+        <p>We're happy to take a chat about InvenioRDM. Please get in touch with us on Discord:
+
+        <div class="goto-button">
+            <a href="https://discord.gg/8qatqBC"><i class="fa fa-keyboard-o"></i> Chat (#rdm-general)</a>
+        </div>
+
+        <p>
+        You can reach the Product Manager <a href="mailto:{{ leadership.pmanager.email }}">{{ leadership.pmanager.name }}</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a name="faq"></a>
+<section class="faq-section section-content-light-bg">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <h3>What is the purpose of Research Data Management (RDM)?</h3>
+          <p>
+            RDM plays an important role in today’s research ecosystem to disseminate & preserve, enable reproducibility and empower reuse.
+          </p>
+        </div>
+        <div>
+          <h3>What are the advantages of using InvenioRDM in my environment?</h3>
+          <p>
+            Open source InvenioRDM has a modern web architecture and standards that make it easy to deploy, maintain, and use. InvenioRDM is being developed with a wide range of features to streamline good data practice and boost value throughout the research lifecycle. Read more about the technical features possible in InvenioRDM through the <a href="/products/framework/">Invenio Framework</a>.
+          </p>
+        </div>
+        <div>
+          <h3>What is the difference between InvenioRDM and Zenodo?</h3>
+          <p>
+            InvenioRDM is a repository <strong>application</strong> that anyone can use. Zenodo is a repository <strong>service</strong> hosted by CERN which is built on top of InvenioRDM.
+          </p>
+        </div>
+        <div>
+          <h3>What is the difference between Invenio Framework and InvenioRDM?</h3>
+          <p>
+            The Invenio Framework is a <strong>toolbox</strong> (a code library) which you can use build a repository <strong>application</strong> like InvenioRDM, an integrated library system application like InvenioILS, or other applications requiring powerful search and document management capabilities.
+          </p>
+        </div>
+        <div>
+          <h3>Can I see InvenioRDM in action?</h3>
+          <p>
+            Yes, for instance:
+            <ul>
+              <li><a href="https://inveniordm.web.cern.ch">https://inveniordm.web.cern.ch</a></li>
+              <li><a href="https://repository.tugraz.at">https://repository.tugraz.at</a></li>
+              <li><a href="https://researchdata.tuwien.ac.at">https://researchdata.tuwien.ac.at</a></li>
+              <li><a href="https://zenodo.org">https://zenodo.org</a></li>
+              <li><a href="https://repository.cern">https://repository.cern</a></li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h3>Is the InvenioRDM project a formal project?</h3>
+          <p>
+            The project is an active open collaboration like other open-source community projects. While there are no formal legal agreements between the project partners, we have taken steps to ensure that collaborators are welcomed to the project and supported with communication and collaboration workflows.
+          </p>
+        </div>
+        <div>
+          <h3>How do you ensure the success of the project?</h3>
+          <p>
+            The project is designed so that it tolerates a loss of partners except for the two core partners CERN and Northwestern University. The project is further purposely kept short in time to quickly deliver the first product release that all partners can run in production.
+          </p>
+        </div>
+        <div>
+          <h3>How did the project come about?</h3>
+          <p>
+            Zenodo is open-source licensed and thus several institutions tried to reuse the Zenodo source code, although it was never meant to be installed elsewhere (it is a service, not an application). Other institutions tried to use the Invenio Framework to build a RDM repository from scratch. Several institutions tried to make the same modifications but had no easy way of sharing their changes. All these institutions came together to create a collaborative open source project and grow a sustainable community.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <h3>What is the development timeline for the next year?</h3>
+          <p>
+            See our <a href="/products/rdm/roadmap/">roadmap</a>.
+          </p>
+        </div>
+        <div>
+          <h3>Can I join the project?</h3>
+          <p>
+            Yes. The InvenioRDM project is an open collaboration where anyone can join. The collaboration is characterized by a common goal and strengthened by open information sharing, public discussions, and robust collaboration. To beome a project partner your instituion must
+            commit a minimum of 1.5 person months per year as contribution to the project. This commitment is made via a letter of support to the project.
+          </p>
+        </div>
+        <div>
+          <h3>How do I join the project?</h3>
+          <p>
+            To join the project, we expect you to commit a minimum of 1.5 person-months of efforts into the project on a yearly basis. You can commit effort in a variety of ways: development, documentation, requirements gathering, community building, testing, and more. If interested, contact the Product Manager <a href="mailto:{{ leadership.pmanager.email }}">{{ leadership.pmanager.name }}</a>.
+          </p>
+        </div>
+        <div>
+          <h3>Who is funding the project?</h3>
+          <p>
+            The InvenioRDM project is funded by the project partners (see above). Also, several funders have provided grants that have funded or still funds part of the development:
+            <ul>
+              <li>CERN Knowledge Transfer</li>
+              <li>European Union's Horizon 2020 research and innovation programme under the grant agreements OpenAIREplus, OpenAIRE2020, OpenAIRE-Connect & OpenAIRE-Advance.</li>
+              <li>Alfred P. Sloan Foundation</li>
+              <li>Arcadia Fund</li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h3>How is the project governed?</h3>
+          <p>
+            The InvenioRDM project is governed according to <a href="/governance">Invenio Governance and Code of Conduct</a>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "category": "Files",
+      "title": "Support for multipart file-upload",
+      "body": "Add support for multipart file upload in InvenioRDM.",
+      "author": "CESNET"
+    },
+    {
+      "category": "Metadata",
+      "title": "Software Heritage",
+      "body": "Document and launch the Software Heritage integration for use in InvenioRDM. The integration is currently launched on Zenodo.",
+      "author": "CERN"
+    },
+    {
+      "category": "Metadata",
+      "title": "Metadata curation checks",
+      "body": "Add support for automated basic curation checks of records per community.",
+      "author": "CERN"
+    },
+    {
+      "category": "Metadata",
+      "title": "Data citation support",
+      "body": "Improve the data citation support in InvenioRDM according to <a href='https://doi.org/10.1038/s41597-019-0031-8'>Fenner et al. (2019) A data citation roadmap for scholarly data repositories.</a>",
+      "author": "Front Matter"
+    },
+    {
+      "category": "Vocabularies",
+      "title": "Funders and grants",
+      "body": "Enable the funder/grants field in the deposit form and import the required vocabularies in InvenioRDM.",
+      "author": "CERN, February 2022"
+    },
+    {
+      "category": "Development",
+      "title": "Deposit form enhancements",
+      "body": "Small enhancements to the deposit form to support features currently available on Zenodo. This includes adding optional support for:<ul><li>Disallowing fully restricted records.</li><li>Require files for a record</li></ul>",
+      "author": "CERN, April 2023"
+    },
+    {
+      "category": "Metadata",
+      "title": "Export formats",
+      "body": "Add support for metadata formats currently supported in Zenodo, including BibTeX, JSON-LD, GeoJSON. This includes adding support for custom and optional metadata fields currently supported by Zenodo, and ability to display badges on record landing pages.",
+      "author": "CERN, April 2023"
+    },
+    {
+      "category": "Metadata",
+      "title": "Data migration",
+      "body": "Implement the core features to enable and make data migration to a new InvenioRDM instance easy. The new tools will be tested and progressively enhanced while migrating the current Zenodo production instance to a new Zenodo instance based on InvenioRDM.",
+      "author": "CERN, December 2022"
+    },
+    {
+      "category": "Communities",
+      "title": "Communities REST API: Members support",
+      "body": "Adds support for having multiple community owners and members of communities with curation capabilities. This task only deals with the REST API and backend (i.e. the user interface is a separate task).",
+      "author": "CERN, Northwestern University & TU Wien, May 2022"
+    },
+    {
+      "category": "Communities",
+      "title": "Communities REST API: Records/Requests",
+      "body": "Implement the REST API and workflows for communities and the requests features. This will enable the integration between communities and records as well as the general framework for communities submission handling.",
+      "author": "CERN, Northwestern University & TU Wien, May 2022"
+    },
+    {
+      "category": "Statistics",
+      "title": "Usage statistics",
+      "body": "Migrate Zenodo's current usage statistics module providing record views and downloads according to COUNTER Code of Practice for Research Data Usage Metrics. The feature supports rolling up views over versions as well as sorting by most viewed records.",
+      "author": "CERN & TU Wien, April 2023"
+    },
+    {
+      "category": "Files",
+      "title": "Linking to files on external storage systems",
+      "body": "Support linking to files on an external storage system instead of requiring the files to be uploaded via InvenioRDM.",
+      "author": "CERN, November 2022"
+    },
+    {
+      "category": "Communities",
+      "title": "Communities UI: Members",
+      "body": "Implements the user interface for managing members of a community as well as inviting members and allow user to request membership.",
+      "author": "CERN, June 2022"
+    },
+    {
+      "category": "Development",
+      "title": "Concept DOIs",
+      "body": "Add support for registering concept DOIs.",
+      "author": "CERN, Q2 2023"
+    },
+    {
+      "category": "Third-party integrations",
+      "title": "ownCloud integration",
+      "body": "Added support for integrating <a href='https://www.research-data-services.org/'>ScieboRDS</a> via server-side file downloading and RO-Crate metadata format.",
+      "author": "CERN, November 2022"
+    },
+    {
+      "category": "IIIF",
+      "title": "IIIF image previewer",
+      "body": "Enables the International Image Interoperability Framework (IIIF) support and integrates the Mirador v3 previewer for large images.",
+      "author": "Data Futures & Uni Hamburg, June 2022"
+    },
+    {
+      "category": "Metadata",
+      "title": "OAI-PMH sets support",
+      "body": "Supports the sets feature of the OAI-PMH harvesting protocol.",
+      "author": "TU Graz, June 2022"
+    },
+    {
+      "category": "Persistent Identifiers",
+      "title": "DOI minting support",
+      "body": "Support for registering DataCite DOIs as well as for developing your own plugins for registering other types of persistent identifiers (Crossref DOIs, ARKs, Handles, ...).",
+      "author": "CERN, May 2022"
+    },
+    {
+      "category": "Vocabularies",
+      "title": "Creator/contributor auto-completion and improved ORCiD integration",
+      "body": "Enable auto-completion of creators/contributors in the deposit from a local names vocabulary that can be filled from e.g. ORCiD or your institutional employee database.",
+      "author": "CERN, February 2022"
+    },
+    {
+      "category": "Communities",
+      "title": "Communities: Record management",
+      "body": "Enhance the communities feature with support for:<ul><li>Submit a record to multiple communities before/after the record is published.</li><li>Remove a record from a community.</li><li>Publish a record directly to a community without review (for users with appropriate permissions).</li><li>Notifications for communities.</li><li>About page with curation policies.</li><li>Invite members by email.</li></ul>",
+      "author": "CERN, April 2023"
+    },
+    {
+      "category": "Metadata",
+      "title": "Custom fields",
+      "body": "Allow instances to configure additional custom fields and make them available in the deposit form and on the landing page. The current task implements both the backend and frontend.",
+      "author": "CERN, September 2022"
+    },
+    {
+      "category": "Third-party integrations",
+      "title": "GitHub integration",
+      "body": "Migrate Zenodo's current GitHub integration to InvenioRDM.",
+      "author": "CERN, Q2 2023"
+    },
+    {
+      "category": "Communities",
+      "title": "Branded communities",
+      "body": "Add support for styling communities with their own visual identity.",
+      "author": "CERN, Q1 2024"
+    },
+    {
+      "category": "Metadata",
+      "title": "Collections: Backend + Browse page",
+      "body": "See example on <a href='https://zenodo.org/communities/eu/browse'>https://zenodo.org/communities/eu/browse</a>",
+      "author": ""
+    },
+    {
+      "category": "Sharing",
+      "title": "Access requests",
+      "body": "Add support for requesting, granting and managing access to a restricted record.",
+      "author": "CERN, Q2 2023"
+    },
+    {
+      "category": "Communities",
+      "title": "Communities UI: Records/requests",
+      "body": "Implements the primary user interface for searching and browsing records associated with a community. Includes the workflow support for submission of new records to a community and the integration into the deposit form.",
+      "author": "CERN, May 2022"
+    },
+    {
+      "category": "Third-party Integrations",
+      "title": "OpenAIRE integration",
+      "body": "Integrate InvenioRDM with the OpenAIRE infrastructure by supporting the required OAI-PMH sets, export formats as well as allowing direct indexing of new records to OpenAIRE.",
+      "author": "CERN, December 2022"
+    },
+    {
+      "category": "Metadata",
+      "title": "Basic OAI-PMH server",
+      "body": "",
+      "author": "TU Graz, April 2022"
+    },
+    {
+      "category": "Authentication",
+      "title": "EOSC AAI integration",
+      "body": "Support logging in via the OpenAIRE Authentication and Authorization Infrastructure (AAI) as part of the European Open Science Cloud (EOSC).",
+      "author": "CERN, February 2022"
+    },
+    {
+      "category": "Metadata",
+      "title": "Harvesting of ROR, ORCID.",
+      "body": "Recurrent harvesting of ROR and ORCID into the names, affiliations and funders vocabulary.",
+      "author": ""
+    },
+    {
+      "category": "Communities",
+      "title": "Subcommunities",
+      "body": "Add support for creating and managing fully featured subcommunities (i.e. support for records, members, settings etc) .",
+      "author": "@CERN, Q2 2024"
+    },
+    {
+      "category": "Preservation",
+      "title": "OCFL Backend Support",
+      "body": "Basic demonstrator developed which dumps and InvenioRDM repository into a OCFL repository.",
+      "author": "Data Futures, June 2022"
+    },
+    {
+      "category": "I18N",
+      "title": "Internationalization (I18N)",
+      "body": "Finalise the I18N support and provide a german translation of InvenioRDM. Further languages to come later.",
+      "author": "TU Graz & Uni Bamberg, January 2023"
+    },
+    {
+      "category": "Metadata",
+      "title": "Back office / Admin",
+      "body": "Implement a basic an back office administration interface for InvenioRDM. The tasks focuses on setting up the main skeleton for the administration interface, and add the first couple of administration actions into the form.",
+      "author": "CERN, September 2023"
+    }
+  ]
+}

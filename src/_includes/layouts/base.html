@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, oai-pmh, orcid, openaire, rest, zenodo, cds, flask">
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <title>{{ title }} - inveniosoftware.org</title>
+    <link rel="icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Oswald|Source+Code+Pro:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    {% block header %}{% endblock %}
+
+    <main tabindex="-1" id="main-content">
+    {% block content %}{{ content }}{% endblock %}
+    </main>
+
+    {% include "partials/footer.html" %}
+    {% include "partials/trackingcode.html" %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"></script>
+    <script>
+      //Main navigation scroll spy for shadow
+      $(window).scroll(function() {
+        var y = $(window).scrollTop();
+        if (y > 0) {
+          $(".invenio-navbar").addClass('invenio-navbar-not-top');
+        } else {
+          $(".invenio-navbar").removeClass('invenio-navbar-not-top');
+        }
+      });
+  </script>
+  </body>
+</html>

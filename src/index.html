@@ -1,0 +1,181 @@
+---
+title: 'Welcome'
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+{% layout 'layouts/home.html' %}
+
+{% block header_content %}
+  <img src="/assets/images/homepage-headline.svg" />
+{% endblock %}
+
+{% block content %}
+<section class="hp-blog-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">New on the blog <i class="fa fa-share fa-share-down" style=""></i></span>
+    <div class="row">
+      <div class="col-md-12 col-xs-12 block-center">
+        <div class="hp-blog-post-list">
+          {% assign recent_posts = collections.posts | reverse %}
+          {% for post in recent_posts limit:3 %}
+            <div class="hp-blog-list-item col-xs-12 col-md-4">
+              {% assign title = post.data.title %}
+              {% assign author = post.data.author %}
+              {% assign date = post.data.date %}
+              {% assign team_colour = post.data.team_colour %}
+              {% assign team_url = post.data.team_url %}
+              {% assign team = post.data.team %}
+              {% assign permalink = post.data.permalink %}
+              {% include "partials/blog-post-homepage.html" %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="powering-open-science-section section-content-white-bg">
+  <div class="container">
+    <span class="section-title"><i class="fa fa-globe"></i> Powering Open Science</span>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/assets/images/icon-open-source.svg" class="svg" />
+        <h6>Free Open Source Software</h6>
+        <p>Invenio is Free Open Source Software supported by a committed community of multidisciplinary institutions.</p>
+        <span><a href="https://github.com/inveniosoftware">Code</a><span class="blue-separator"> | </span><a href="https://invenio.readthedocs.io/en/latest/">Docs</a><span class="blue-separator"> | </span><a href="#instances">Examples</a>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-universal-access"></i>
+        <h6>Friendly and Responsive Community</h6>
+        <p>Although Invenio was born at CERN, its community is growing bigger every day. Talk to the team now in our chatroom or forum.</p>
+        <span><a href="https://discord.gg/8qatqBC">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a><span class="blue-separator"> | </span><a href="/getinvolved/">Get Involved</a><span class="blue-separator"> | </span><a href="/events">Events</a>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-shield"></i>
+        <h6>The "Safe bet"</h6>
+        <p>Invenio community has been around for 20 years. <a href="#instances">Solid services</a> have been built on top of it to ensure long-term confidence.</p>
+        <span><a href="#instances">Live services</a><span class="blue-separator"> | </span><a href="#products">Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="products" class="products-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-user-plus"></i> Choose your product</span>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/products/rdm">
+            <img src="/assets/images/logo-invenio-rdm.svg" class="products-section-logo" />
+            </a>
+        </div>
+        <div class="col-md-6">
+          <h6>Turn-key research data management repository</h6>
+          <ul>
+            <li>Repository platform for institutional repositories (IRs), research data management, and digital assets management.</li>
+            <li>Free Open Source Software under MIT licence.</li>
+          </ul>
+          <span><a href="/products/rdm">Product info</a><span class="blue-separator"> | </span><a href="https://github.com/inveniosoftware/invenio-app-rdm">Code</a><span class="blue-separator"> | </span><a href="https://discord.gg/8qatqBC">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/products/ils">
+            <img src="/assets/images/logo-invenio-ils.svg" class="products-section-logo" />
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h6>Integrated Library System</h6>
+          <ul>
+            <li>Modern ILS with support for cataloging, circulation, acquisitions and interlibrary loans.</li>
+            <li>Comes out of the box with a powerful backoffice, a modern UI and REST APIs.</li>
+            <li>Free Open Source Software under MIT licence.</li>
+          </ul>
+          <span><a href="/products/ils">Product info</a><span class="blue-separator"> | </span><a href="https://github.com/inveniosoftware/invenio-app-ils">Code</a><span class="blue-separator"> | </span><a href="https://discord.gg/8qatqBC">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/products/framework">
+            <img src="/assets/images/logo-invenio-framework.svg" class="products-section-logo" />
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h6>The core - a framework for large-scale digital repositories</h6>
+          <ul>
+            <li>A toolbox (the nuts, bolts, and tools) to build your own application such as digital repositories, enterprise search, discovery systems and research data management systems.</li>
+            <li>Batteries included: Comes with strong support for repository APIs, storage systems, authentication system.</li>
+            <li>Free Open Source Software under MIT licence.</li>
+          </ul>
+          <span><a href="/products/framework">Product info</a><span class="blue-separator"> | </span><a href="https://github.com/inveniosoftware">Code</a><span class="blue-separator"> | </span><a href="http://invenio.readthedocs.io">Docs</a><span class="blue-separator"> | </span><a href="https://discord.gg/8qatqBC">Chatroom</a><span class="blue-separator"> | </span><a href="http://invenio-talk.web.cern.ch">Forum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="instances" class="instances-section section-content-white-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-check"></i> Built on Invenio</span>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://zenodo.org"><img class="instances" src="/assets/images/inbrowser-screenshot-zenodo.png"/></a>
+          <h6><a href="http://zenodo.org">Zenodo</a></h6>
+          <p>
+            Interdisciplinary open research data repository service built and operated by <a href="https://home.cern">CERN</a> and <a href="https://www.openaire.eu">OpenAIRE</a>.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://videos.cern.ch"><img class="instances" src="/assets/images/inbrowser-screenshot-cds-videos.png"/></a>
+          <h6><a href="https://videos.cern.ch">CDS Videos</a></h6>
+          <p>
+            <a href="https://home.cern">CERN</a> institutional repository for videos including transcoding backend.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <a href="http://opendata.cern.ch"><img class="instances" src="/assets/images/inbrowser-screenshot-cod.png"/></a>
+          <h6><a href="http://opendata.cern.ch">CERN Open Data</a></h6>
+          <p>
+            Open Data platform publishing petabytes of CERN physics data from LHC and other experiments.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="goto-button">
+          <a href="/showcase">See showcase gallery</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="trusted-by-section section-content-light-bg">
+    <div class="container">
+      <span class="section-title"><i class="fa fa-heart"></i> Trusted by</span>
+        <div class="row centered">
+          <div class="col">
+            <a href="http://home.cern"><img src="/assets/images/logo-cern.png" title="CERN"></a>
+            <a href="https://www.nii.ac.jp/en/"><img src="/assets/images/logo-nii.png" title="NII"></a>
+            <a href="https://www.northwestern.edu/"><img src="/assets/images/logo-northwestern-university.png" title="Northwestern University"></a>
+            <a href="http://www.bnl.gov/"><img src="/assets/images/logo-bnl.png" title="Brookhaven National Laboratory"></a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="col">
+            <a href="http://www.treccani.it/"><img src="/assets/images/logo-treccani.png" title="Treccani"></a>
+            <a href="https://www.library.caltech.edu/"><img src="/assets/images/logo-caltechlibrary.png" title="Caltech Library"></a>
+            <a href="https://www.data-futures.org/"><img src="/assets/images/logo-data-futures.png" title="Data Futures"></a>
+            <a href="https://www.hzdr.de/"><img src="/assets/images/logo-hzdr.png" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="col">
+            <a href="https://www.openaire.eu/"><img src="/assets/images/logo-openaire.png" title="OpenAIRE"></a>
+            <a href="https://ulakbim.tubitak.gov.tr"><img src="/assets/images/logo-tubitak.svg" title="TUBITAK ULAKBIM (Turkish Academic Network and Information Center)"></a>
+            <a href="https://www.uni-hamburg.de/"><img src="/assets/images/logo-uni-hamburg.png" title="Unversität Hamburg"></a>
+            <a href="https://www.uni-muenster.de/en/"><img src="/assets/images/logo-uni-muenster.svg" title="University of Münster"></a>
+          </div>
+        </div>
+        <div class="row centered">
+          <div class="col">
+            <a href="https://www.kth.se"><img src="/assets/images/logo-kth.svg" title="KTH Royal Institute of Technology"></a>
+          </div>
+        </div>
+      </div>
+  </section>
+{% endblock %}

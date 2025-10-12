@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "name": "Brookhaven National Laboratory",
+      "url": "http://www.bnl.gov/",
+      "logo": "logo-bnl.png"
+    },
+    {
+      "name": "Caltech Library",
+      "url": "https://www.library.caltech.edu/",
+      "logo": "logo-caltechlibrary.png"
+    },
+    {
+      "name": "CERN",
+      "url": "https://home.cern",
+      "logo": "logo-cern.png"
+    },
+    {
+      "name": "CNUDST",
+      "url": "http://www.cnudst.rnrt.tn/",
+      "logo": "logo-CNUDST.png"
+    },
+    {
+      "name": "Cottage Labs",
+      "url": "https://cottagelabs.com",
+      "logo": "logo-cottagelabs.png"
+    },
+    {
+      "name": "Data Futures",
+      "url": "https://www.data-futures.org/",
+      "logo": "logo-data-futures.png"
+    },
+    {
+      "name": "Eko Konnect",
+      "url": "https://www.eko-konnect.org.ng",
+      "logo": "logo-eko-konnect.png"
+    },
+    {
+      "name": "Front Matter",
+      "url": "https://front-matter.io/",
+      "logo": "logo-frontmatter.png"
+    },
+    {
+      "name": "Group on Earth Observations",
+      "url": "http://www.earthobservations.org/",
+      "logo": "logo-geo.svg"
+    },
+    {
+      "name": "Helmholtz Zentrum Dresden-Rossendorf",
+      "url": "https://www.hzdr.de/",
+      "logo": "logo-hzdr.png"
+    },
+    {
+      "name": "Istituto Nazionale di Fisica Nucleare",
+      "url": "http://home.infn.it/",
+      "logo": "logo-infn.svg"
+    },
+    {
+      "name": "Joint Research Centre",
+      "url": "https://ec.europa.eu/jrc/",
+      "logo": "logo-jrc.svg"
+    },
+    {
+      "name": "New York University",
+      "url": "https://www.nyu.edu/",
+      "logo": "logo-nyu.png"
+    },
+    {
+      "name": "Northwestern University",
+      "url": "https://www.northwestern.edu/",
+      "logo": "logo-northwestern-university.png"
+    },
+    {
+      "name": "OpenAIRE",
+      "url": "https://www.openaire.eu/",
+      "logo": "logo-openaire.png"
+    },
+    {
+      "name": "Tubitak",
+      "url": "https://ulakbim.tubitak.gov.tr",
+      "logo": "logo-tubitak.svg"
+    },
+    {
+      "name": "TU Graz",
+      "url": "https://www.tugraz.at/en/home/",
+      "logo": "logo-tu-graz.svg"
+    },
+    {
+      "name": "TU Wien",
+      "url": "https://www.tuwien.at/",
+      "logo": "logo-tu-wien.svg"
+    },
+    {
+      "name": "University of Bamberg",
+      "url": "https://www.uni-bamberg.de/en/",
+      "logo": "logo-uni-bamberg.svg"
+    },
+    {
+      "name": "UUniversität Hamburg",
+      "url": "https://www.uni-hamburg.de",
+      "logo": "logo-uni-hamburg.png"
+    },
+    {
+      "name": "University of Münster",
+      "url": "https://www.uni-muenster.de/en/",
+      "logo": "logo-uni-muenster.svg"
+    },
+    {
+      "name": "University of Tübingen",
+      "url": "https://uni-tuebingen.de/en/",
+      "logo": "logo-uni-tubingen.png"
+    },
+    {
+      "name": "West and Central African Research and Education Network",
+      "url": "https://www.wacren.net",
+      "logo": "logo-wacren.png"
+    },
+    {
+      "name": "KTH Royal Institute of Technology",
+      "url": "https://www.kth.se",
+      "logo": "logo-kth.svg"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+---
+title: Invenio Blog
+subtitle: 'Follow news and updates on Invenio world'
+eleventyNavigation:
+  key: Blog
+  order: 6
+pagination:
+  data: collections.posts
+  size: 9
+  alias: posts
+  reverse: true
+permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber | plus: 1 }}{% endif %}/index.html'
+paginationPrevText: 'Newer posts'
+paginationNextText: 'Older posts'
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="section-content-light-bg">
+  <div class="container">
+    {% if pagination.pageNumber == 0 %}
+    <div class="row">
+      <div class="col-md-12 col-xs-12 block-center">
+        {% assign firstpost = posts[0] %}
+        {% assign title = firstpost.data.title %}
+        {% assign author = firstpost.data.author %}
+        {% assign date = firstpost.data.date %}
+        {% assign team_colour = firstpost.data.team_colour %}
+        {% assign team_url = firstpost.data.team_url %}
+        {% assign team = firstpost.data.team %}
+        {% assign content = firstpost.content %}
+        {% assign permalink = firstpost.data.permalink %}
+        {% include "partials/blog-post-top.html" %}
+      </div>
+    </div>
+    {% endif %}
+    <div class="row">
+      <div class="col-md-12 col-xs-12 block-center">
+        <div class="blog-post-list">
+          {% for post in posts %}
+            {% if pagination.pageNumber > 0 or forloop.index > 1 %}
+            <div class="blog-list-item col-xs-12 col-md-4">
+              {% assign title = post.data.title %}
+              {% assign author = post.data.author %}
+              {% assign date = post.data.date %}
+              {% assign team_colour = post.data.team_colour %}
+              {% assign team_url = post.data.team_url %}
+              {% assign team = post.data.team %}
+              {% assign content = post.content %}
+              {% assign permalink = post.data.permalink %}
+              {% include "partials/blog-post-item.html", isCard: true %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="row">
+      <div class="col-md-12 col-xs-12 block-center">
+        <div class="pagination">
+          {% if pagination.href.previous %}
+          <a href=" {{ pagination.href.previous }}">&laquo; {{paginationPrevText}}</a>
+          {% else %}
+          <span class="disabled">&laquo; {{paginationPrevText}}</span>
+          {% endif %}
+          | {{ pagination.pageNumber | plus: 1 }} |
+          {% if pagination.href.next %}
+          <a href=" {{ pagination.href.next }}">{{paginationNextText}} &raquo;</a>
+          {% else %}
+          <span class="disabled">{{paginationNextText}} &raquo;</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

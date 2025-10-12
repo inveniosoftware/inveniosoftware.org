@@ -1,0 +1,14 @@
+{
+  "pmanager": {
+    "name": "Nicola Tarocco",
+    "email": "ntarocco@cern.ch"
+  },
+  "parchitect": {
+    "name": "Alexandros Ioannidis",
+    "email": "a.ioannidis@cern.ch"
+  },
+  "cmanager": {
+    "name": "Sara Gonzales",
+    "email": "sara.gonzales2@northwestern.edu"
+  }
+}

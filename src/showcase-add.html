@@ -1,0 +1,102 @@
+---
+title: How to add an Invenio installation to the showcase
+subtitle: Follow four easy steps to make a pull request
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="new-site-section section-content-white-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="flex-center-vertically">
+              <div class="numbering">1</div>
+            </div>
+          </div>
+          <div class="col-md-9 col-md-offset-1">
+              <h6>Fork our source code</h6>
+              <p>Fork <a href="https://github.com/inveniosoftware/inveniosoftware.org">inveniosoftware.org</a> source code repository using your GitHub account (e.g. <code>johndoe</code>) and create a new local branch (e.g. <code>johndoelibrary</code>):</p>
+            <p class="code">$ <span class="command">git</span> clone https://github.com/johndoe/inveniosoftware.org
+              $ <span class="command">cd</span> inveniosoftware.org
+              $ <span class="command">git</span> checkout -b johndoelibrary</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="new-site-section section-content-light-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="flex-center-vertically">
+              <div class="numbering">2</div>
+            </div>
+          </div>
+          <div class="col-md-9 col-md-offset-1">
+            <h6>Take a beautiful screenshot</h6>
+            <p>Take a representative screenshot of your site and place it in the <code>src/assets/images/showcase</code> directory. Name the image after your site.</p>
+            <p class="code"># take screenshot
+                            $ <span class="command">mv</span> ~/Screenshots/johndoelibrary.png src/assets/images/showcase/</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="new-site-section section-content-white-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="flex-center-vertically">
+              <div class="numbering">3</div>
+            </div>
+          </div>
+          <div class="col-md-9 col-md-offset-1">
+            <h6>Describe your site</h6>
+            <p>Add a JSON description of your site, such as its full name, the description, the canonical URL, the country, and the screenshot filename, inside the file <code>src/_data/showcase.json</code> in right section between <i>rdm</i> (for InvenioRDM), <i>ils</i> (for InvenioILS), <i>framework_v3</i> (for Invenio v3 Framework) or <i>v1</i> (for Invenio v1).</p>
+            <p class="code"><span class="json">{
+              "name": "John Doe Library",
+              "description": "John Doe's Library.",
+              "country": "CH",
+              "url": "https://example.org/johndoelibrary",
+              "screenshot": "johndoelibrary.png"
+            }</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="new-site-section section-content-light-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="flex-center-vertically">
+              <div class="numbering">4</div>
+            </div>
+          </div>
+          <div class="col-md-9 col-md-offset-1">
+            <h6>Make a pull request</h6>
+            <p>Commit your changes and publish your branch.</p>
+            <p class="code">$ <span class="command">git</span> add src/assets/images/showcase/johndoelibrary.png
+              $ <span class="command">git</span> src/_data/showcase.json
+              $ <span class="command">git</span> commit -s -m "sites: John Doe Library"
+              $ <span class="command">git</span> push origin johndoelibrary</p>
+            <p>Make a <a href="https://help.github.com/articles/creating-a-pull-request/" target="_blank">pull request</a> so that we can add your site.</p>
+            <img class="pull-request" src="/assets/images/pull-request.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

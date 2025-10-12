@@ -1,0 +1,65 @@
+---
+title: 'People'
+subtitle: "Let's take a look at the faces behind Invenio"
+eleventyNavigation:
+  key: 'People'
+  parent: Community
+  order: 6
+---
+{% layout 'layouts/page.html' %}
+
+{% block content %}
+<section class="people-section section-content-white-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mb-30">
+          <div class="btn-group" role="group" aria-label="Filter by role">
+            <button type="button" class="btn btn-primary active" data-role="all">All</button>
+            <button type="button" class="btn btn-primary" data-role="maintainer">Maintainers</button>
+          </div>
+        </div>
+        <div class="people">
+          {% include "partials/people.html", filterByStatus: "current", withRoles: true %}
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="section-title mt-50">Hall of Fame</h2>
+        <div class="people">
+          {% include "partials/people.html", filterByStatus: "former" %}
+        </div>
+      </div>
+      <div class="row">
+        <p class="more-people">If you want to be added to this list, create a pull request <a href="https://github.com/inveniosoftware/inveniosoftware.org">here</a>.</p>
+      </div>
+    </div>
+</section>
+
+<script>
+  const filterButtons = document.querySelectorAll('.btn-group button');
+  const peopleContainers = document.querySelectorAll('[data-role-container]');
+  console.log("peopleContainers", peopleContainers);
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // change btns
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      // get the btn role
+      const selectedRole = this.dataset.role;
+      console.log("selectedRole", selectedRole);
+      // toggle person cards
+      peopleContainers.forEach(personContainer => {
+        const personRole = personContainer.dataset.roleContainer;
+        console.log("personContainer", personContainer);
+        if (selectedRole === 'maintainer') {
+          // show only maintainers
+          personContainer.style.display = personRole === 'maintainer' ? 'inline-block' : 'none';
+        } else {
+          // show all
+          personContainer.style.display = 'inline-block';
+        }
+      });
+    });
+  });
+</script>
+{% endblock %}

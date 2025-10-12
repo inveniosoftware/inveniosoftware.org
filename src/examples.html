@@ -1,0 +1,25 @@
+---
+title: Examples (Redirect)
+permalink: "/examples/"
+---
+{% layout 'layouts/base.html' %}
+
+{% block content %}
+<script>
+  window.location.replace('/showcase/');
+</script>
+
+<noscript>
+  <meta http-equiv="refresh" content="0; url=/showcase/" />
+</noscript>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center" style="padding: 100px 0;">
+      <h2>Redirecting...</h2>
+      <p>This page has moved to <a href="/showcase/">Showcase</a>.</p>
+      <p><a href="/showcase/">Click here if you are not redirected automatically</a>.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

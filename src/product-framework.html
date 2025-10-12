@@ -1,0 +1,200 @@
+---
+title: Invenio Framework
+permalink: "/products/framework/"
+eleventyNavigation:
+  key: Invenio Framework
+  parent: Products
+  order: 3
+---
+{% layout 'layouts/page-framework.html' %}
+
+{% block header_section_title %}
+  <h3><img class="product-header-logo" src="/assets/images/logo-invenio-framework.svg" title="Invenio Framework" /></h3>
+  <h6>Open Source framework for large-scale digital repositories</h6>
+{% endblock %}
+
+{% block header_section_extra %}
+<div class="row welcome-features-row">
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-shield"></i> Safe</h2>
+    <p>
+      Invenio has been created with security and long-term preservation in mind. Build your digital repository and focus only on what is important to you, Invenio will do the rest.
+    </p>
+  </div>
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-line-chart"></i> Scalable</h2>
+    <p>
+      Invenio is fast. We have designed it to manage 100+ million records and petabytes of files. All your research data can now be archived independently of the size.
+    </p>
+  </div>
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-plug"></i> RESTful</h2>
+    <p>
+      Only a modern framework can create modern digital repositories. Invenio was born for the web, is JSON-native and provides RESTful APIs out of the box that will allow to build apps on top of it.
+    </p>
+  </div>
+  <div class="welcome-features-col col-md-3">
+    <h2><i class="fa fa-github"></i> Open</h2>
+    <p>Invenio is 100% open source licensed under MIT license. Fork us on <a href="https://github.com/inveniosoftware">GitHub</a> and build your product. Invenio loves open standards for open science.</p>
+  </div>
+</div>
+<div class="row centered">
+  <div class="born-at-cern col">
+    <p>Born with <i class="fa fa-heart fa-heart-cern"></i> at <a href="https://home.cern"><img src="/assets/images/logo-cern-white.svg" title="CERN" /></a></p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="instances-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">What can you build with Invenio Framework?</span>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://zenodo.org"><img class="instances" src="/assets/images/inbrowser-screenshot-zenodo.png"/></a>
+        <h6>Digital Repositories</h6>
+        <p>
+          Invenio Framework is currently being used by many generic and institutional repositories. For instance: <a href="http://zenodo.org">Zenodo</a> and <a href="https://videos.cern.ch">CDS Videos</a> have been built using Invenio Framework v3.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <a href="http://github.com/inveniosoftware-contrib/citadel-search"><img class="instances" src="/assets/images/inbrowser-screenshot-cern-search.png"/></a>
+        <h6>Enterprise Search Engine</h6>
+        <p>
+          You can use Invenio Framework to create your own Enterprise Search Engine. The CERN Search Team has chosen Invenio Framework in order to build a <a href="http://github.com/inveniosoftware-contrib/citadel-search">Generic Search Engine</a> that they have published as FOSS.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://ils.test.rero.ch/"><img class="instances" src="/assets/images/inbrowser-screenshot-rero-ils.png"/></a>
+        <h6>Integrated Library System</h6>
+        <p>
+          Invenio provides specialised modules for circulation and acquisitions which are being used by e.g. <a href="https://ils.test.rero.ch">RERO ILS</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features-section section-content-white-bg">
+  <div class="container">
+    <span class="section-title">Features</span>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icon-data-model.svg"/>
+          </div>
+          <div class="col-md-9">
+            <h6>Flexible data model</h6>
+            <p>Use JSON Schema to describe your articles, books, theses,
+            photos, videos, research data and software. Write serialisers to
+            produce BibTeX, CSL, DataCite, Dublin Core, JSON-LD, or MARCXML.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icon-search.svg"/>
+          </div>
+          <div class="col-md-9">
+            <h6>Powerful search engine</h6>
+            <p>Fast search times for repositories of several million records.
+               Configurable query language and search facets. Citation
+               networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icons8-document-96.png"/>
+          </div>
+          <div class="col-md-9">
+            <h6>Advanced file management</h6>
+            <p>Manage millions of files attached to records. Organise files in
+            buckets. Configure any storage system/protocol.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+          <div class="row">
+              <div class="col-md-3 centered">
+                  <img src="/assets/images/icons8-filing-cabinet-96.png"/>
+              </div>
+              <div class="col-md-9">
+                  <h6>Preservation friendly</h6>
+                  <p>Mint persistent identifiers (DOI) for repository assets.
+                     Create links between versions. Run fixity checks. Export
+                     BagIt archival packages.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row features-section-row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icon-community.svg"/>
+          </div>
+          <div class="col-md-9">
+            <h6>User communities</h6>
+            <p>Organise your documents in community collections. Set up
+            advanced user authentication (OAuth, SSO). Define fine-grained
+            access rights. Collect usage statistics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-3 centered">
+            <img src="/assets/images/icon-extensible.svg"/>
+          </div>
+          <div class="col-md-9">
+            <h6>REST API</h6>
+            <p>Use more than one hundred independent packages
+               collaborating via rich REST APIs. Pick the packages you
+               want and use the full power of Python to combine and
+               extend them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="open-source-section section-content-light-bg">
+  <div class="container">
+    <span class="section-title">The Best of Open Source</span>
+    <h6 class="section-subtitle">Invenio's core is relying on some of the world's top open source products</h6>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="flavour" src="/assets/images/logo-opensearch.svg"/>
+        <h6>OpenSearch</h6>
+        <p>
+          <a href="https://opensearch.org/">OpenSearch</a> is an extremely fast JSON-native distributed search engine supporting anything from full-text to geospatial queries.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="flavour" src="/assets/images/logo-postgresql.svg"/>
+        <img class="flavour" src="/assets/images/logo-mysql.svg"/>
+        <h6>PostgreSQL or MySQL</h6>
+        <p>
+            <a href="https://www.postgresql.org">PostgreSQL</a> and <a href="https://www.mysql.com">MySQL</a> are powerful relational databases with JSON-support as well as a strong reputation for reliability, robustness, and performance.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="flavour" src="/assets/images/logo-python.svg"/>
+        <img class="flavour" src="/assets/images/logo-flask.svg"/>
+        <h6>Python/Flask</h6>
+        <p>
+          Invenio is built using <a href="https://www.python.org">Python 3</a>, the <a href="http://flask.pocoo.org/docs/1.0/">Flask</a> micro web framework and a suite of the best community-built Python libraries.
+        </p>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

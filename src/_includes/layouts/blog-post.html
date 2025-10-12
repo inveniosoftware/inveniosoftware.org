@@ -1,0 +1,16 @@
+{% layout 'layouts/page.html' %}
+
+{% block page_title %}Invenio Blog{% endblock %}
+{% block page_subtitle %}Follow news and updates on Invenio world{% endblock %}
+
+{% block content %}
+<section id="blog-post-content-section" class="section-content-light-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12 block-center">
+          {% include "partials/blog-post-full.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

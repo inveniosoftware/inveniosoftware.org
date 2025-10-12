@@ -1,0 +1,20 @@
+<!-- {{ section_title }} installations -->
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="section-title">{{ section_title }}</h2>
+    <p class="section-description">{{ section_description }}</p>
+  </div>
+</div>
+
+{% assign installations = data | sortShowcaseItems %}
+{% assign installation_chunks = installations | sliceArray: 3 %}
+{% for chunk in installation_chunks %}
+<div class="row">
+  {% for installation in chunk %}
+    {% include "partials/showcase-card.html", 
+       installation: installation, 
+       label_class: label_class, 
+       label_text: label_text %}
+  {% endfor %}
+</div>
+{% endfor %}

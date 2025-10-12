@@ -1,0 +1,38 @@
+<div class="col-md-4 col-sm-6 showcase-item">
+  <div class="showcase-card {% if installation.featured %}featured{% endif %}">
+    <div class="showcase-image">
+      <a href="{{ installation.url }}" target="_blank">
+        <img src="/assets/images/showcase/{{ installation.screenshot }}"
+             alt="{{ installation.name }}"
+             class="img-responsive">
+      </a>
+    </div>
+    <div class="showcase-divider"></div>
+    <div class="showcase-content">
+      <h3>
+        <a href="{{ installation.url }}" target="_blank">{{ installation.name }}</a>
+      </h3>
+      <p class="showcase-description">{{ installation.description }}</p>
+      <div class="showcase-meta">
+        {% if installation.institution %}
+          <span class="meta-item">
+            <i class="fa fa-university"></i> {{ installation.institution }}
+          </span>
+        {% endif %}
+        {% if installation.country %}
+          <span class="meta-item">
+            <i class="fa fa-globe"></i> {{ installation.country }}
+          </span>
+        {% endif %}
+        {% if installation.launched %}
+          <span class="meta-item">
+            <i class="fa fa-calendar"></i> {{ installation.launched }}
+          </span>
+        {% endif %}
+      </div>
+      <div class="showcase-labels">
+        <span class="label label-{{ label_class }}">{{ label_text }}</span>
+      </div>
+    </div>
+  </div>
+</div>
