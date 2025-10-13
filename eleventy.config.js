@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import eleventyNavigation from "@11ty/eleventy-navigation";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
@@ -103,6 +104,11 @@ export default async function (eleventyConfig) {
     htmlBasePluginOptions: {
       baseHref: "",
     },
+  });
+
+  // embed SVGs
+  eleventyConfig.addShortcode("svgImg", async (filepath) => {
+    return fs.readFileSync(`src/${filepath}`, "utf8");
   });
 }
 
