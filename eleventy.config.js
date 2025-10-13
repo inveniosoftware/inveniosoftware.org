@@ -2,6 +2,10 @@ import fs from "node:fs";
 import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import eleventyNavigation from "@11ty/eleventy-navigation";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { Liquid } from "liquidjs";
+
+// Initialize Liquid engine once at module level
+const liquidEngine = new Liquid();
 
 export default async function (eleventyConfig) {
   // copy all `src/assets` to `_site/static"
@@ -108,7 +112,8 @@ export default async function (eleventyConfig) {
 
   // embed SVGs
   eleventyConfig.addShortcode("svgImg", async (filepath) => {
-    return fs.readFileSync(`src/${filepath}`, "utf8");
+    const svgContent = fs.readFileSync(`src/${filepath}`, "utf8");
+    return await liquidEngine.parseAndRender(svgContent);
   });
 }
 
