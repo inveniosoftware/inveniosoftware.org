@@ -11,12 +11,61 @@ This website is built with [11ty (Eleventy)](https://www.11ty.dev/), a static si
 - **InvenioILS**: An integrated library system for modern libraries
 - **Community**: Resources, documentation, events, and support for the Invenio ecosystem
 
-## Requirements
+## Content Management
+
+### Adding Blog Posts
+
+1. Create a new markdown file in `src/blog-posts/`
+2. Use the naming convention: `YYYY-MM-DD-post-title.md`
+3. Add:
+
+```yaml
+---
+title: "Your Blog Post Title"
+author: Author Name
+date: YYYY-MM-DD
+team: Invenio
+permalink: "/blog/YYYY-MM-DD-post-title/"
+---
+
+Your blog content here...
+```
+
+### Adding Images
+
+Place images in `src/assets/images/` and reference them in markdown:
+
+```markdown
+![Alt text](image-filename.png)
+```
+
+### Update Roadmap
+
+The Roadmap is automatically updated at every deployment, and it is a screenshot of the
+[GitHub Board](https://github.com/orgs/inveniosoftware/projects/80).
+
+Tu update it, trigger a new deployment in GitHub:
+
+1. Go to the [GitHub repository](https://github.com/inveniosoftware/inveniosoftware.org).
+2. Click on [Actions](https://github.com/inveniosoftware/inveniosoftware.org/actions).
+3. On the left menu, click on [Deploy to GitHub Pages](https://github.com/inveniosoftware/inveniosoftware.org/actions/workflows/deploy.yml).
+4. Click on the right button `Run workflow`.
+
+### Site Configuration
+
+Main configuration is in `eleventy.config.js`:
+
+- **Input**: `src/` directory
+- **Output**: `_site/` directory
+- **Template formats**: Markdown, Nunjucks, HTML, Liquid, JS
+- **Asset copying**: Images are copied to build output
+
+## Develop
+
+### Requirements
 
 - **Node.js** (v18 or higher)
 - **npm**
-
-## Getting Started
 
 ### 1. Clone the Repository
 
@@ -58,43 +107,6 @@ The built site will be in the `_site/` directory.
 | `npm start` | Start development server with live reload |
 | `npm run build` | Build site for production (includes screenshot generation) |
 | `npm run debug` | Start server with detailed Eleventy debug information |
-
-## Content Management
-
-### Adding Blog Posts
-
-1. Create a new markdown file in `src/blog-posts/`
-2. Use the naming convention: `YYYY-MM-DD-post-title.md`
-3. Add frontmatter with required fields:
-
-```yaml
----
-title: "Your Blog Post Title"
-author: Author Name
-date: YYYY-MM-DD
-team: Invenio
-permalink: "/blog/YYYY-MM-DD-post-title/"
----
-
-Your blog content here...
-```
-
-### Adding Images
-
-Place images in `src/assets/images/` and reference them in markdown:
-
-```markdown
-![Alt text](image-filename.png)
-```
-
-### Site Configuration
-
-Main configuration is in `eleventy.config.js`:
-
-- **Input**: `src/` directory
-- **Output**: `_site/` directory
-- **Template formats**: Markdown, Nunjucks, HTML, Liquid, JS
-- **Asset copying**: Images are copied to build output
 
 ## Deployment
 
