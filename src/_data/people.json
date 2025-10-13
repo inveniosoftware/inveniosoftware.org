@@ -9,7 +9,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Guillaume Viger",
@@ -20,7 +22,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Matthew Carson",
@@ -31,7 +35,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Lars Holm Nielsen",
@@ -42,7 +48,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "https://github.com/lnielsen",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Peter Cornwell",
@@ -53,7 +61,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Sara Gonzales",
@@ -64,7 +74,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Werner Greßhoff",
@@ -75,7 +87,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Dan Granville",
@@ -86,7 +100,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Zaharias Zaharodimos",
@@ -97,7 +113,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "https://github.com/zzacharo",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Kristi Holmes",
@@ -108,7 +126,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Karolina Przerwa",
@@ -119,7 +139,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "https://github.com/kpsherva",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Nicola Tarocco",
@@ -130,7 +152,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "https://github.com/ntarocco",
-      "linkedin": "https://www.linkedin.com/in/ntarocco/"
+      "linkedin": "https://www.linkedin.com/in/ntarocco/",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Alexandros Ioannidis",
@@ -141,7 +165,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "https://github.com/slint",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Kai Wörner",
@@ -152,7 +178,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Jose Benito Gonzalez Lopez",
@@ -163,7 +191,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Pablo Panero",
@@ -174,7 +204,9 @@
       "status": "former",
       "invenio-role": "",
       "github": "https://github.com/ppanero",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Tom Morrell",
@@ -185,7 +217,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "https://github.com/tmorrell",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Tibor Simko",
@@ -196,7 +230,9 @@
       "status": "former",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Rodrigo Lopes de Almeida",
@@ -207,7 +243,9 @@
       "status": "former",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Hakan Bayındır",
@@ -218,7 +256,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Martin Fenner",
@@ -229,7 +269,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Javier Romero Castro",
@@ -240,7 +282,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "https://github.com/jrcastro2",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Saksham Arora",
@@ -251,7 +295,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "https://github.com/sakshamarora1",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Anika Churilova",
@@ -262,7 +308,9 @@
       "status": "former",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Pablo Tamarit",
@@ -273,7 +321,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "https://github.com/ptamarit",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Carlin Kenneth Mackenzie",
@@ -284,7 +334,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Fatimah Zulfiqar",
@@ -295,7 +347,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Yash Lamba",
@@ -306,7 +360,9 @@
       "status": "current",
       "invenio-role": "",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Christoph Ladurner",
@@ -317,7 +373,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "https://github.com/utnapischtim",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Sam",
@@ -328,7 +386,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     },
     {
       "name": "Max",
@@ -339,7 +399,9 @@
       "status": "current",
       "invenio-role": "maintainer",
       "github": "",
-      "linkedin": ""
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     }
   ]
 }
