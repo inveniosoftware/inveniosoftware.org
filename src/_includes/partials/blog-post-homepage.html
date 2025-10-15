@@ -5,12 +5,19 @@
     </h3>
     <div class="hp-blog-list-item-divider"></div>
     <p class="hp-blog-list-item-meta">
-      <i class='fa fa-user text-muted'></i>
-      <span class="author">{{ author }}</span>
+      <i class='fa fa-users text-muted'></i>
+      <span class="author">
+        {{ post.data.authors | formatAuthors: post_authors }}
+      </span>
       <i class='fa fa-calendar text-muted'></i>
       <span>{{ date | dateFormat }}</span>
-      <i class='fa fa-users text-muted'></i>
-      <span class="label {{ team_colour | default: 'invenio-team' }}"><a class="team-url" href="{{ team_url }}">{{ team }}</a></span>
+      <span>
+      {%- if tags -%}
+        {%- for tag in post.data.tags -%}
+          <a class="tag" href="/blog/tags/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {%- endfor -%}
+      {%- endif -%}
+      </span>
     </p>
   </header>
 </div>

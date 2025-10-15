@@ -1,12 +1,18 @@
 ---
 title: "Zenodo/InvenioRDM participation at GREI Annual Meeting, Chicago"
-author: Sara Gonzales, Kristi Holmes, Martin Fenner
+authors: 
+  - saragon02
+  - kristiholmes
+  - mfenner
 date: 2024-11-19
-team: InvenioRDM
+doi: https://doi.org/10.5555/dhc4s-nx507
+image: /assets/images/MerchandiseMart.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2024-11-19-november-GREI/"
 ---
 
-![](/assets/images/blog-posts/MerchandiseMart.jpg)
+![](/assets/images/MerchandiseMart.jpg)
 
 [Merchandise Mart, River North, Chicago, IL](https://commons.wikimedia.org/wiki/File:Merchandise_Mart,_River_North,_Chicago,_IL.jpg) by w_lemay, CC [BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) via Wikimedia Commons
 

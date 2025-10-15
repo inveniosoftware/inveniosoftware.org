@@ -1,8 +1,11 @@
 ---
 title: "InvenioRDM reaches major milestone - v6.0 released"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2021-08-05
-team: InvenioRDM
+doi: https://doi.org/10.5555/ep4p0-vnx69
+tags:
+  - InvenioRDM
 permalink: "/blog/2021-08-05-inveniordm-lts/"
 ---
 

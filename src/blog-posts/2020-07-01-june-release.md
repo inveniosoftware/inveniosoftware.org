@@ -1,8 +1,12 @@
 ---
 title: "InvenioRDM June Release"
-author: Lisa O'Keefe, Pablo Panero
+authors: 
+  - lkeefe
+  - ppanero
 date: 2020-07-01
-team: Invenio
+doi: https://doi.org/10.5555/ddtx7-4cg23
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-07-01-june-release/"
 ---
 
@@ -28,7 +32,7 @@ We have migrated the file previewer, the OAuth login, and the settings pages to 
 
 You might still notice some issues related to visual appearance (e.g. the name previewed file is not in a panel as before). We will be working on making all this perfect in the next sprint on SemanticUI (end of August). In the meantime, it is, at least, better.
 
-![](/assets/images/blog-posts/record_page.jpeg)
+![](/assets/images/record_page.jpeg)
 
 #### Creators, Contributors and Affiliations Identifiers
 

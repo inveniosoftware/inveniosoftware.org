@@ -1,8 +1,11 @@
 ---
 title: "Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2018-03-23
-team: Invenio Framework
+doi: https://doi.org/10.5555/vbfec-bnb47
+tags: 
+  - Invenio
 permalink: "/blog/2018-03-23-invenio-sprint/"
 ---
 

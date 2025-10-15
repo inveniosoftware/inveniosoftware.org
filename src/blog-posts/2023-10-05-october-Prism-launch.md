@@ -1,12 +1,16 @@
 ---
 title: "Prism: The New Feinberg Repository for Global Dissemination of Research"
-author: Galter Health Sciences Library & Learning Center
+authors: 
+  - saragon02
 date: 2023-11-28
-team: InvenioRDM
+doi: https://doi.org/10.5555/bn0yr-avy74
+image: /assets/images/PrismAnnoucementHeader.png
+tags:
+  - InvenioRDM
 permalink: "/blog/2023-10-05-october-Prism-launch/"
 ---
 
-![](/assets/images/blog-posts/PrismAnnoucementHeader.png)
+![](/assets/images/PrismAnnoucementHeader.png)
 
 The Prism institutional repository has launched at Northwestern University. Prism preserves and makes available articles, conference presentations, preprints, datasets, and other items created by faculty, staff, and students. Prism helps openness, maximizes reproducibility, and enhances research connections within Feinberg School of Medicine and across the globe.
  

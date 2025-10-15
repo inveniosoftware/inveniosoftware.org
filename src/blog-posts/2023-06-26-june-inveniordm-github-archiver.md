@@ -1,12 +1,17 @@
 ---
 title: "Introducing the InvenioRDM GitHub Archiver (IGA)"
-author: Mike Hucka and Tom Morrell
+authors:
+  - mhucka
+  - tmorell
 date: 2023-06-26
-team: InvenioRDM
+doi: https://doi.org/10.5555/pdh57-y9508
+image: /assets/images/CaltechDATA.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2023-06-26-june-inveniordm-github-archiver/"
 ---
 
-![](/assets/images/blog-posts/CaltechDATA.jpg)
+![](/assets/images/CaltechDATA.jpg)
 
 The InvenioRDM GitHub Archiver (IGA) is a new software tool created by the Caltech Library. [InvenioRDM](https://inveniosoftware.org/products/rdm/) is the basis for many institutional repositories, such as [CaltechDATA](https://data.caltech.edu/), that enable users to preserve software and data sets in a long-term archive. The metadata contained in the record of a deposit is critical to making the record widely discoverable by other people. However, creating detailed records and uploading assets can be a tedious and error-prone process if done manually. This is where our new tool comes in. 
 

@@ -1,8 +1,13 @@
 ---
 title: "InvenioRDM May Release"
-author: Lars Holm Nielsen, Lisa O'Keefe, Zacharias Zacharodimos
+authors: 
+  - lnielsen
+  - lkeefe
+  - zzacharodimos
 date: 2020-06-05
-team: Invenio
+doi: https://doi.org/10.5555/cc4wx-7t933
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-06-05-may-release/"
 ---
 
@@ -37,7 +42,7 @@ The existing method for customizing the UI will change slightly, We hope to prov
 You'll notice issues related to the visual appearance, that we have not yet had the time to refine.
 This is with regards to alignment, colors, behaviours, font-sizes, and user experience.
 
-![](/assets/images/blog-posts/frontpage.png)
+![](/assets/images/frontpage.png)
 
 **Data model and deposit form**
 
@@ -45,13 +50,13 @@ The data model and deposit form is far from complete. We have not yet focused on
 the right data model with the right fields. For instance the access right displayed in the deposit
 form will change, as will many of the other fields displayed.
 
-![](/assets/images/blog-posts/deposit.png)
+![](/assets/images/deposit.png)
 
 **Communities**
 
 Communities is in a very initial state and many things will change.
 
-![](/assets/images/blog-posts/communities.png)
+![](/assets/images/communities.png)
 
 **Previewer, OAuth login, Settings pages**
 

@@ -1,11 +1,17 @@
 ---
 title: "InvenioRDM Community Spotlight: Summer 2021"
-author: Sara Gonzales
+authors: 
+  - saragon02
 date: 2021-06-07
+doi: https://doi.org/10.5555/sn6t1-9rq67
+image: /assets/images/Summer.jpg
+tags: 
+  - InvenioRDM
+  - Open Repositories
 permalink: "/blog/2021-06-04-community-spotlight/"
 ---
 
-![](/assets/images/blog-posts/Summer.jpg)
+![](/assets/images/Summer.jpg)
 
 Summer 2021 is an exciting time in the development of InvenioRDM, as the team works towards the Long-Term Support (LTS) version. Here are just a few updates we have to share about recent work:
 

@@ -1,12 +1,16 @@
 ---
 title: "InvenioRDM Partner Meeting Summary, March 2024"
-author: Sara Gonzales
+authors: 
+  - saragon02
 date: 2024-04-23
-team: InvenioRDM
+doi: https://doi.org/10.5555/2wxr8-59z67
+image: /assets/images/2024-03-18-22_InvenioRDM-Workshop_1.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2024-04-23-april-project-meeting-update/"
 ---
 
-![](/assets/images/blog-posts/2024-03-18-22_InvenioRDM-Workshop_1.jpg)
+![](/assets/images/2024-03-18-22_InvenioRDM-Workshop_1.jpg)
 
 The InvenioRDM partner community met in Münster, Germany from March 18 - 22, 2024, for our first in-person annual meeting in over four years. Forty-six attendees from over fifteen institutions spent the five days making connections, planning, and diligently working on all things InvenioRDM.
 

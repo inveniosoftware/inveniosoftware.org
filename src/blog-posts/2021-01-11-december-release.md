@@ -1,8 +1,14 @@
 ---
 title: "InvenioRDM Alpha 14 (December Release)"
-author: Pablo Panero, Guillaume Viger, Sara Gonzales, Lars Holm Nielsen
+authors: 
+  - ppanero
+  - fenokku
+  - saragon02
+  - lnielsen
 date: 2021-01-11
-team: Invenio
+doi: https://doi.org/10.5555/3kjfv-mfr98
+tags: 
+  - InvenioRDM
 permalink: "/blog/2021-01-11-december-release/"
 ---
 

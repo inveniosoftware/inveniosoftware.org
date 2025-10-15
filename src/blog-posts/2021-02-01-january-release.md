@@ -1,8 +1,13 @@
 ---
 title: "InvenioRDM Alpha 15 (January Release)"
-author: Lars Holm Nielsen, Guillaume Viger, Sara Gonzales
+authors: 
+  - lnielsen
+  - fenokku
+  - saragon02
 date: 2021-02-01
-team: Invenio
+doi: https://doi.org/10.5555/5fac3-kaj27
+tags: 
+  - InvenioRDM
 permalink: "/blog/2021-02-01-january-release/"
 ---
 
@@ -17,7 +22,7 @@ We have made significant improvements to the overall user experience of the depo
 
 ### Creators/Contributors
 
-![](/assets/images/blog-posts/creators_contributors.png)
+![](/assets/images/creators_contributors.png)
 
 The creators/contributors fields have gotten a complete makeover that significantly reduces the clutter. We have optimized the new creators field for adding basic information (name/affiliation) as well as linking the affiliation field to vocabulary records (e.g. ROR). We postponed the more advanced use case of allowing the user to edit all fields such as identifier scheme and identifiers for affiliations, as this created an overly complex form for the majority of use cases.
 
@@ -25,12 +30,12 @@ The creator field we imagine can be extended in the future with support for impo
 
 One particular feature to highlight is that the name identifiers field now does automatic detection of the identifier scheme. You can now paste an ORCID (e.g. an ORCID URL), and the backend will automatically detect it as an ORCID and normalise the stored value.
 
-![](/assets/images/blog-posts/creators_names.png)
+![](/assets/images/creators_names.png)
 
 
 ### Coming Soon
 
-![](/assets/images/blog-posts/coming_soon.png)
+![](/assets/images/coming_soon.png)
 
 We have decided to hide certain fields that we know need further work. You'll see these as "Coming soon". Also, we have temporarily removed the language field from titles and descriptions as we had last minute issues with these fields.
 
@@ -55,7 +60,7 @@ We have decided to hide certain fields that we know need further work. You'll se
 
 - Array fields styling: dates, related identifiers and titles are now properly using the entire form grid from side to side.
 
-![](/assets/images/blog-posts/dates.png)
+![](/assets/images/dates.png)
 
 - Consistent naming of related work.
 

@@ -1,8 +1,12 @@
 ---
 title: "InvenioRDM August Release"
-author: Sara Gonzales, Guillaume Viger
+authors:
+  - fenokku
+  - saragon02
 date: 2020-09-01
-team: Invenio
+doi: https://doi.org/10.5555/g55sr-bgn51
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-09-01-august-release/"
 ---
 
@@ -21,7 +25,7 @@ Update `invenio-cli` to version 0.16.0 and follow the updated [documentation](ht
 
 #### Semantic UI transition wrap-up
 
-![](/assets/images/blog-posts/SemanticUI.png)
+![](/assets/images/SemanticUI.png)
 *One of the many pages that were transitioned to Semantic-UI*
 
 The transition to Semantic-UI is for all intents and purposes complete. Future additions will use this framework and have a consistent look with the rest of InvenioRDM. Close to 15 styling issues were closed in the process.
@@ -31,7 +35,7 @@ The transition to Semantic-UI is for all intents and purposes complete. Future a
 
 The search page now uses the new API (`/api/rdm-records` endpoint) we introduced in the last release. The new endpoint supports pagination and sorting, but aggregations were disabled to focus on the transitioning only.
 
-![](/assets/images/blog-posts/SearchCustomization.png)
+![](/assets/images/SearchCustomization.png)
 
 Aggregations will be re-enabled soon.
 

@@ -1,8 +1,11 @@
 ---
 title: "Towards Invenio v3.2 and Elasticsearch 7 support"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2019-08-07
-team: Invenio
+doi: https://doi.org/10.5555/afep7-29828
+tags: 
+  - Invenio
 permalink: "/blog/2019-08-07-sprint-update/"
 ---
 

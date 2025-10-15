@@ -1,8 +1,13 @@
 ---
 title: "InvenioRDM September Release"
-author: Lars Holm Nielsen, Sara Gonzales, Guillaume Viger
+authors:
+  - lnielsen
+  - fenokku
+  - saragon02
 date: 2020-10-12
-team: Invenio
+doi: https://doi.org/10.5555/vt3t9-kky55
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-10-12-september-release/"
 ---
 
@@ -18,7 +23,7 @@ This simple change marks a very big milestone for the backend of InvenioRDM. Dur
 
 A high-level overview of the new flow is shown below:
 
-![](/assets/images/blog-posts/status_platform.png)
+![](/assets/images/status_platform.png)
 
 This new flow is implemented in the following Invenio modules:
 

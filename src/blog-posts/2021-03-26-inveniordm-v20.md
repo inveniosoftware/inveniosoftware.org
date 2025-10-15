@@ -1,7 +1,14 @@
 ---
 title: "InvenioRDM v2.0"
-author: Lars Holm Nielsen, Guillaume Viger, Max Moser, Zacharias Zacharodimos
+authors: 
+  - lnielsen
+  - fenokku
+  - max-moser
+  - zacharias
 date: 2021-03-26
+doi: https://doi.org/10.5555/m3ze1-crc45
+tags:
+  - InvenioRDM
 permalink: "/blog/2021-03-26-inveniordm-v20/"
 ---
 
@@ -31,18 +38,18 @@ Now, a user can create a new version of the record, add or remove files and publ
 
 One way to make new versions is from the record's landing page directly by clicking on the "New Version" button. Only allowed users can do so:
 
-![](/assets/images/blog-posts/landing-page.png)
+![](/assets/images/landing-page.png)
 
 Another way is while editing a previously published record:
 
-![](/assets/images/blog-posts/deposit-form.png)
+![](/assets/images/deposit-form.png)
 
 #### Search
 
 Search results will by default only display the latest published version of a record. However, toggling the flip switch in the versions facet, allows you to view and search all versions.
 
 
-![](/assets/images/blog-posts/search-results.png)
+![](/assets/images/search-results.png)
 
 #### Landing page
 
@@ -50,7 +57,7 @@ The landing page for previous versions of a record clearly displays that a newer
 
 Also, in the right-hand column you have a link to view all published versions:
 
-![](/assets/images/blog-posts/landing-page-old.png)
+![](/assets/images/landing-page-old.png)
 
 #### Permissions
 
@@ -77,9 +84,9 @@ In the future, we plan to also allow sharing only a preview of an unsubmitted re
 
 We plan to have a first minimal user interface for allowing users to use this new feature in the April release (v3.0). Below you see some of the mockups:
 
-![](/assets/images/blog-posts/share-button.png)
+![](/assets/images/share-button.png)
 
-![](/assets/images/blog-posts/get-a-link.png)
+![](/assets/images/get-a-link.png)
 
 
 #### Usage
