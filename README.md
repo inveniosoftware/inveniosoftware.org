@@ -33,10 +33,10 @@ Your blog content here...
 
 ### Adding Images
 
-Place images in `src/assets/images/` and reference them in markdown:
+Place images in `src/assets/images/blog-posts/` and reference them in markdown:
 
 ```markdown
-![Alt text](image-filename.png)
+![Alt text](/assets/images/blog-posts/image-filename.png)
 ```
 
 ### Update Roadmap
