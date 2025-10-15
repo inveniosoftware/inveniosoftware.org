@@ -13,7 +13,7 @@
   <div class="institution">{{ card.institution }}</div>
   <div class="role">{{ card.role | join: ", " }}</div>
   <div class="bio">{{ card.bio }}</div>
-  {% if card.github or card.linkedin or card.x or card.bluesky %}
+  {% if card.github or card.linkedin or card.twitter_x or card.bluesky %}
   <div class="social-links">
     {% if card.github and card.github != '' %}
       <a href="{{ card.github }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card.name }} GitHub">
@@ -25,8 +25,8 @@
         <i class="fa fa-linkedin-square"></i>
       </a>
     {% endif %}
-    {% if card.x and card.x != '' %}
-      <a href="{{ card.x }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card.name }} X">
+    {% if card.twitter_x and card.twitter_x != '' %}
+      <a href="{{ card.twitter_x }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card.name }} X">
         <i>𝕏</i>
         <!-- <i class="fa fa-twitter"></i> -->
         <!-- <i class="fa-brands fa-square-x-twitter"></i> -->
