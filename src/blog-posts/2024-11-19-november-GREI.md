@@ -1,8 +1,14 @@
 ---
 title: "Zenodo/InvenioRDM participation at GREI Annual Meeting, Chicago"
-author: Sara Gonzales, Kristi Holmes, Martin Fenner
+authors: 
+  - saragon02
+  - kristiholmes
+  - mfenner
 date: 2024-11-19
-team: InvenioRDM
+doi: https://doi.org/10.5555/dhc4s-nx507
+image: /assets/images/blog-posts/MerchandiseMart.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2024-11-19-november-GREI/"
 ---
 

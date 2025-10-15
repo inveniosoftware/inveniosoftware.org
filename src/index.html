@@ -21,11 +21,10 @@ eleventyNavigation:
           {% for post in recent_posts limit:3 %}
             <div class="hp-blog-list-item col-xs-12 col-md-4">
               {% assign title = post.data.title %}
-              {% assign author = post.data.author %}
+              {% assign authors = post.data.authors %}
               {% assign date = post.data.date %}
-              {% assign team_colour = post.data.team_colour %}
-              {% assign team_url = post.data.team_url %}
-              {% assign team = post.data.team %}
+              {% assign tags = post.data.tags %}
+              {% assign doi = post.data.doi %}
               {% assign permalink = post.data.permalink %}
               {% include "partials/blog-post-homepage.html" %}
             </div>

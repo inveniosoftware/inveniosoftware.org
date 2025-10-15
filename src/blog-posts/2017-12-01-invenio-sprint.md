@@ -1,10 +1,11 @@
 ---
 title: "Sprint: Elasticsearch v5 support"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2017-12-01
-team: Invenio Framework
-team_colour: invenio-team
-team_url: /product-framework
+doi: https://doi.org/10.5555/t6dvz-0jh43
+tags: 
+  - Invenio
 permalink: "/blog/2017-12-01-invenio-sprint/"
 ---
 

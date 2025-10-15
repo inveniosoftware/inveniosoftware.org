@@ -1,8 +1,11 @@
 ---
 title: "InvenioRDM Onboarding Resource Roundup"
-author: Sara Gonzales
+authors: 
+  - saragon02
 date: 2021-02-10
-team: Invenio
+doi: https://doi.org/10.5555/7rnb5-hmh22
+tags: 
+  - InvenioRDM
 permalink: "/blog/2021-02-10-onboarding-resource-roundup/"
 ---
 

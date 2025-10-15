@@ -1,8 +1,13 @@
 ---
 title: "InvenioRDM v1.0 (February release)"
-author: Lars Holm Nielsen, Guillaume Viger, Sara Gonzales
+authors: 
+  - lnielsen
+  - fenokku
+  - saragon02
 date: 2021-02-26
-team: Invenio
+doi: https://doi.org/10.5555/wysw5-3f019
+tags: 
+  - InvenioRDM
 permalink: "/blog/2021-02-26-february-release/"
 ---
 

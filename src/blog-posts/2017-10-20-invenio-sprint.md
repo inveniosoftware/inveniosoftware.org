@@ -1,10 +1,11 @@
 ---
 title: "Sprint: JSONB, bugs & bouncing search"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2017-10-20
-team: Invenio Framework
-team_colour: invenio-team
-team_url: /product-framework
+doi: https://doi.org/10.5555/g0q4y-02859
+tags: 
+  - Invenio
 permalink: "/blog/2017-10-20-invenio-sprint/"
 ---
 

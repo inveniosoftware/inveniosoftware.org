@@ -1,8 +1,11 @@
 ---
 title: "Invenio v3.4.0 released"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2020-12-17
-team: Invenio
+doi: https://doi.org/10.5555/qbar2-04k33
+tags: 
+  - Invenio
 permalink: "/blog/2020-12-17-invenio-v340-released/"
 ---
 

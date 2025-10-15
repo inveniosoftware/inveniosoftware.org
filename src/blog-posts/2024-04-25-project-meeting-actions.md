@@ -1,12 +1,16 @@
 ---
 title: "InvenioRDM Partner Meeting / Developer Workshop: Action Items"
-author: Sarah Wiechers
+authors: 
+  - SarahW91
 date: 2024-04-24
-team: InvenioRDM
+doi: https://doi.org/10.5555/kqa6g-xgj57
+image: /assets/images/20_workgroup_structure_governance_image01.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2024-04-25-project-meeting-actions/"
 ---
 
-![](/assets/images/blog-posts/20_workgroup_structure_governance_image01.jpg)
+![](/assets/images/20_workgroup_structure_governance_image01.jpg)
 
 From March 18 - 22 the InvenioRDM partner community met in Münster, Germany, to discuss current challenges and plans for the future of the project. While many smaller questions and issues were addressed immediately on-site, e.g. during one of the “merge parties” or in work sessions resulting from and building upon previous discussions, many sessions ended with clear lists of planned actions for the coming weeks and months.
 

@@ -7,14 +7,24 @@
         {{ title }}
       {% endif %}
     </h3>
-    <p class="blog-list-item-meta">
-      <i class='fa fa-user text-muted'></i>
-      <span class="author">{{ author }}</span>
+    <div class="blog-list-item-meta">
+      <i class='fa fa-users text-muted'></i>
+      <span class="author">
+        {{ post.data.authors | formatAuthors: post_authors }}
+      </span>
       <i class='fa fa-calendar text-muted'></i>
       <span>{{ date | dateFormat }}</span>
-      <i class='fa fa-users text-muted'></i>
-      <span class="label {{ team_colour | default: 'invenio-team' }}"><a class="team-url" href="{{ team_url }}">{{ team }}</a></span>
-    </p>
+      <div>
+        <i class='fa fa-tags text-muted'></i>
+        {%- if post.data.tags -%}
+          {%- for tag in post.data.tags -%}
+            {%- unless tag == "posts" -%}
+              <span class="label label-primary">{{ tag }}</span>
+            {%- endunless -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
   </header>
   <div class="blog-list-item-content">
     {{ content }}

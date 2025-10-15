@@ -1,7 +1,14 @@
 ---
 title: "InvenioRDM v2.0"
-author: Lars Holm Nielsen, Guillaume Viger, Max Moser, Zacharias Zacharodimos
+authors: 
+  - lnielsen
+  - fenokku
+  - max-moser
+  - zacharias
 date: 2021-03-26
+doi: https://doi.org/10.5555/m3ze1-crc45
+tags:
+  - InvenioRDM
 permalink: "/blog/2021-03-26-inveniordm-v20/"
 ---
 

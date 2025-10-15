@@ -1,8 +1,11 @@
 ---
 title: "Invenio v3.2 released"
-author: Lars Holm Nielsen
+author: 
+  - lnielsen
 date: 2019-12-20
-team: Invenio
+doi: https://doi.org/10.5555/pt6rt-6mz56
+tags: 
+  - Invenio
 permalink: "/blog/invenio-v32-released/"
 ---
 

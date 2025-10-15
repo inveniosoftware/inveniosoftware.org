@@ -1,8 +1,13 @@
 ---
 title: "InvenioRDM April Release"
-author: Lars Holm Nielsen, Lisa O'Keefe, Guillaume Viger
+authors: 
+  - lnielsen
+  - lkeefe
+  - fenekku
 date: 2020-05-05
-team: Invenio
+doi: https://doi.org/10.5555/mcw20-dng91
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-05-05-april-release/"
 ---
 
@@ -11,7 +16,6 @@ We are pleased to announce the InvenioRDM April release. The Deposit page has be
 Thank you all for testing the last release and for your many contributions.
 
 ### Some Highlights include:
-
 
 - Requests for comments (RFCs) from the numerous conversations. These are living and changing documents.
   * Deposit frontend: https://github.com/inveniosoftware/rfcs/issues/27
