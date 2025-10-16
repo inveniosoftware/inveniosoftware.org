@@ -9,6 +9,7 @@ doi: https://doi.org/10.5555/xzzzj-hk022
 image: /assets/images/blog-posts/ComputerCenter_UniversityFreiburg.jpg
 tags: 
   - InvenioRDM
+  - Showcase
 permalink: "/blog/2024-12-09-december-FreiData/"
 ---
 

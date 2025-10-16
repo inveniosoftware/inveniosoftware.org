@@ -6,7 +6,7 @@ date: 2022-09-21
 doi: https://doi.org/10.5555/sa00p-q9217
 tags: 
   - InvenioRDM
-  - Caltech
+  - Showcase
 permalink: "/blog/2022-09-21-caltechdata-rdm/"
 ---
 
