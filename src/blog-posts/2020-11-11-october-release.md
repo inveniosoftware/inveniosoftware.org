@@ -16,12 +16,12 @@ In early October we held a virtual project workshop. As part of the workshop we 
 
 1- [Simplified](https://inveniosoftware.org/products/rdm/roadmap/)
 
-![](/assets/images/roadmap_simplified.png)
+![](/assets/images/blog-posts/roadmap_simplified.png)
 
 
 2- [GitHub for project tracking](https://github.com/inveniosoftware/product-rdm/milestones?direction=asc&sort=due_date&state=open)
 
-![](/assets/images/roadmap_tracking.png)
+![](/assets/images/blog-posts/roadmap_tracking.png)
 
 ### What's new?
 
@@ -39,13 +39,13 @@ We have done a lot of work on improving the UX of the primary pages such as the 
 
 The search results have been tightened up as well. Also, we’ve added support for nested facets, so you can expand broader categories into subcategories (e.g., Publication and Image).
 
-![](/assets/images/search_before_after.png)
+![](/assets/images/blog-posts/search_before_after.png)
 
 **Landing page**
 
 The landing page you’ll notice now has Edit and New version buttons (only the Edit button currently works). The right column has been tightened up, and most of the new metadata fields are now properly displayed on the landing page.
 
-![](/assets/images/landing_before_after.png)
+![](/assets/images/blog-posts/landing_before_after.png)
 
 **Human readable labels**
 
@@ -53,27 +53,27 @@ In the facets you’ll notice we now have human readable labels. Instead of 'pub
 
 Similarly to search results and landing pages, you’ll now see the correct resource type as well as icons on Open Access.
 
-![](/assets/images/badges.png)
+![](/assets/images/blog-posts/badges.png)
 
 **Localization**
 
 Dates, like the publication date which supports Extended Date Time Format is now properly localized as well using the Unicode Common Locale Data Repository. For instance here an English and Turkish localization:
 
-![](/assets/images/localization_english.png)
+![](/assets/images/blog-posts/localization_english.png)
 
-![](/assets/images/localization_turkish.png)
+![](/assets/images/blog-posts/localization_turkish.png)
 
 **Affiliations**
 
 The affiliation display was redone:
 
-![](/assets/images/affiliations.png)
+![](/assets/images/blog-posts/affiliations.png)
 
 **Manage section**
 
 There’s a new manage section on the record landing page, which allows you to edit a record.
 
-![](/assets/images/manage.png)
+![](/assets/images/blog-posts/manage.png)
 
 #### CLI Improvements
 

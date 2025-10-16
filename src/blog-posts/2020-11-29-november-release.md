@@ -27,7 +27,7 @@ When creating a new draft, you can now also upload files that will be included i
 - Setting the default preview file
 - Completely disabling files to allow for metadata-only records
 
-![](/assets/images/file-upload.gif)
+![](/assets/images/blog-posts/file-upload.gif)
 
 #### New REST API
 

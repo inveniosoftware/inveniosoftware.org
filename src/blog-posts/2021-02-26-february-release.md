@@ -63,7 +63,7 @@ The deposit form now has a new protection widget that allows you to deposit reco
 
 Below are some examples of how this now looks in the deposit form:
 
-![](/assets/images/1_access_control_examples.png)
+![](/assets/images/blog-posts/1_access_control_examples.png)
 
 **Restricted records and files**
 
@@ -71,11 +71,11 @@ Restricted records and files are only visible for the owner (the user who deposi
 
 User without access (no files and no edit button visible):
 
-![](/assets/images/2_access_control_restricted_files.png)
+![](/assets/images/blog-posts/2_access_control_restricted_files.png)
 
 User with access (files and edit button visible):
 
-![](/assets/images/3_access_control_owner.png)
+![](/assets/images/blog-posts/3_access_control_owner.png)
 
 Note, that the message "Sorry, the files are restricted!" is a temporary message, until we have a solution for the access badge (see next section).
 
@@ -85,11 +85,11 @@ We have temporarily removed the access status badge (see before/after screenshot
 
 Before:
 
-![](/assets/images/4_access_badge_before.png)
+![](/assets/images/blog-posts/4_access_badge_before.png)
 
 After:
 
-![](/assets/images/5_access_badge_after.png)
+![](/assets/images/blog-posts/5_access_badge_after.png)
 
 **Limitation: Embargo feature**
 
@@ -129,11 +129,11 @@ We have fixed a large number of small styling and consistentcy issues. Still som
 
 The list uploads page now has a nice greeting for first time users:
 
-![](/assets/images/6_list_uploads_empty.png)
+![](/assets/images/blog-posts/6_list_uploads_empty.png)
 
 Also, the overall styling of the page was improved:
 
-![](/assets/images/7_list_uploads_styling.png)
+![](/assets/images/blog-posts/7_list_uploads_styling.png)
 
 **Search guide**
 

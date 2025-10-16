@@ -23,7 +23,7 @@ This simple change marks a very big milestone for the backend of InvenioRDM. Dur
 
 A high-level overview of the new flow is shown below:
 
-![](/assets/images/status_platform.png)
+![](/assets/images/blog-posts/status_platform.png)
 
 This new flow is implemented in the following Invenio modules:
 

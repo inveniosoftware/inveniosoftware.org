@@ -42,7 +42,7 @@ The existing method for customizing the UI will change slightly, We hope to prov
 You'll notice issues related to the visual appearance, that we have not yet had the time to refine.
 This is with regards to alignment, colors, behaviours, font-sizes, and user experience.
 
-![](/assets/images/frontpage.png)
+![](/assets/images/blog-posts/frontpage.png)
 
 **Data model and deposit form**
 
@@ -50,13 +50,13 @@ The data model and deposit form is far from complete. We have not yet focused on
 the right data model with the right fields. For instance the access right displayed in the deposit
 form will change, as will many of the other fields displayed.
 
-![](/assets/images/deposit.png)
+![](/assets/images/blog-posts/deposit.png)
 
 **Communities**
 
 Communities is in a very initial state and many things will change.
 
-![](/assets/images/communities.png)
+![](/assets/images/blog-posts/communities.png)
 
 **Previewer, OAuth login, Settings pages**
 

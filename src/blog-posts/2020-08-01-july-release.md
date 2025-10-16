@@ -23,14 +23,14 @@ Update invenio-cli to version 0.15.0 and follow the [documentation](https://inve
 
 Thanks to the efforts of [TÜBITAK](https://ulakbim.tubitak.gov.tr/), InvenioRDM was set up for internationalization: all text has been registered for translation and the [Transifex service](https://www.transifex.com/) has been enabled. The team is currently at work on a VSCode extension to help future translators. Turkish was added as a first alternative language! How to go about translating and using the various tools will be laid out next month once we have more experience under our belt!
 
-![](/assets/images/module_translation.png)
+![](/assets/images/blog-posts/module_translation.png)
 
 
 #### Library improvements
 
 Error handling, default MIME type headers, and uniform body + querystring deserialization have been added to [Flask-Resources](https://github.com/inveniosoftware/flask-resources), our Invenio-agnostic Flask REST library.
 
-![](/assets/images/flask-resources.png)
+![](/assets/images/blog-posts/flask-resources.png)
 
 Note that invenio-resources is now [invenio-records-resources](https://github.com/inveniosoftware/invenio-records-resources) (it includes the former invenio-records-agent) and [invenio-drafts-resources](https://github.com/inveniosoftware/invenio-drafts-resources) is the new package that houses the draft functionality.
 

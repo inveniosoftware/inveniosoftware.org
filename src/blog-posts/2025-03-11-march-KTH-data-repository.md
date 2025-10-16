@@ -6,13 +6,13 @@ authors:
   - mfenner
 date: 2025-03-11
 doi: https://doi.org/10.5555/yjyra-pvq62
-image: /assets/images/KTH_Data_Repository.png
+image: /assets/images/blog-posts/KTH_Data_Repository.png
 tags: 
   - InvenioRDM
 permalink: "/blog/2025-03-11-march-KTH-data-repository/"
 ---
 
-![](/assets/images/KTH_Data_Repository.png)
+![](/assets/images/blog-posts/KTH_Data_Repository.png)
 
 KTH Data Repository - we added [user guides](https://docs.datarepository.kth.se/) and updated the [KTH web-pages on research data management](https://www.kth.se/en/biblioteket/publicera-analysera/hantera-forskningsdata/forskningsdata-1.1002828) when the new repository was launched.
 

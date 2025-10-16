@@ -6,13 +6,13 @@ authors:
   - mfenner
 date: 2024-11-19
 doi: https://doi.org/10.5555/dhc4s-nx507
-image: /assets/images/MerchandiseMart.jpg
+image: /assets/images/blog-posts/MerchandiseMart.jpg
 tags: 
   - InvenioRDM
 permalink: "/blog/2024-11-19-november-GREI/"
 ---
 
-![](/assets/images/MerchandiseMart.jpg)
+![](/assets/images/blog-posts/MerchandiseMart.jpg)
 
 [Merchandise Mart, River North, Chicago, IL](https://commons.wikimedia.org/wiki/File:Merchandise_Mart,_River_North,_Chicago,_IL.jpg) by w_lemay, CC [BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) via Wikimedia Commons
 

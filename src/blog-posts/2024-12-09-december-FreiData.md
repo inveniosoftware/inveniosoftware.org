@@ -6,13 +6,13 @@ authors:
   - mfenner
 date: 2024-12-09
 doi: https://doi.org/10.5555/xzzzj-hk022
-image: /assets/images/ComputerCenter_UniversityFreiburg.jpg
+image: /assets/images/blog-posts/ComputerCenter_UniversityFreiburg.jpg
 tags: 
   - InvenioRDM
 permalink: "/blog/2024-12-09-december-FreiData/"
 ---
 
-![](/assets/images/ComputerCenter_UniversityFreiburg.jpg)
+![](/assets/images/blog-posts/ComputerCenter_UniversityFreiburg.jpg)
 
 Image by Sandra Meyndt/University of Freiburg
 
