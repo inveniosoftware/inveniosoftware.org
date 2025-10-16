@@ -1,5 +1,5 @@
 ---
-title: "datasafe : Implementing a Dark Archive with InvenioRDM"
+title: "datasafe: Implementing a Dark Archive with InvenioRDM"
 author: Sarah Wiechers
 date: 2025-10-15
 team: InvenioRDM
@@ -16,13 +16,10 @@ A notable feature of our implementation is the heavily customized frontend, whic
 
 Another significant improvement is the increased upload limit, now up to 5 TB in size. This community-driven feature, which our team helped implement, enables researchers to upload large files directly through their web browser, eliminating the need for an SFTP server. This will greatly benefit researchers working with large datasets, allowing them to archive and preserve their data in a single, convenient location.
 
-By building on the InvenioRDM framework, we're able to leverage a community-driven solution that is actively maintained and developed by a global network of institutions and experts. We're pleased to be part of this community and look forward to sharing our experiences and feedback to help shape the future of the platform.
+By building on InvenioRDM, we're able to leverage a community-driven solution that is actively maintained and developed by a global network of institutions and experts. We're pleased to be part of this community and look forward to sharing our experiences and feedback to help shape the future of the platform.
 
 For those interested in learning more about our implementation of InvenioRDM, you can contact our team at [forschungsdaten@uni-muenster.de](mailto:forschungsdaten@uni-muenster.de)!
 
-Best regards,
-The datasafe team at the University of Münster
+![Customized datasafe dashboard with example records and drafts](/assets/images/blog-posts/datasafe-dashboard.png)
 
-![Customized datasafe dashboard with example records and drafts](datasafe-dashboard.png)
-
-![datasafe deposit form which only contains the sections "Files", "Access" and "Metadata" for simplified usage.](datasafe-depositform.png)
+![datasafe deposit form which only contains the sections "Files", "Access" and "Metadata" for simplified usage.](/assets/images/blog-posts/datasafe-depositform.png)
