@@ -49,6 +49,13 @@ jobs:
         with:
           path: _site
 
+      # Upload for second deployment
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+
   # deploy to inveniosoftware.org
   deploy:
     needs: build
