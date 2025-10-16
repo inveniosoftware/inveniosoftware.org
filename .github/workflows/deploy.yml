@@ -61,25 +61,33 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  # deploy to invenio-software.org
-  deploy-to-dash:
+  # custom: deploy to invenio-software.org
+  deploy-to-dashed:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout target repo
-        run: |
-          git clone --depth=1 https://github.com/inveniosoftware/invenio-software.org dashed
+      - name: Download built site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
 
-      - name: Copy built site
+      - name: Checkout invenio-software.org
+        run: |
+          git clone --depth=1 --branch gh-pages \
+            https://x-access-token:${{ secrets.LEKTOR_DEPLOY_TOKEN_INVENIOBOT }}@github.com/inveniosoftware/invenio-software.org dashed
+
+      - name: Sync built site
         run: |
           rm -rf dashed/*
           cp -r _site/* dashed/
 
       - name: Commit and push to target repo
+        working-directory: dashed
         run: |
-          cd dashed
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add .
-          git commit -m "Deploy from inveniosoftware.org site"
-          git push https://x-access-token:${{ secrets.LEKTOR_DEPLOY_TOKEN_INVENIOBOT }}@github.com/inveniosoftware/invenio-software.org gh-pages
+          git commit -m "Deploy from inveniosoftware site"
+          git push origin gh-pages
