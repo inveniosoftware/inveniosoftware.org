@@ -19,21 +19,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
 
       - name: Persist npm cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
 
       - name: Persist Eleventy .cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
@@ -49,6 +49,7 @@ jobs:
         with:
           path: _site
 
+  # deploy to inveniosoftware.org
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -59,3 +60,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # deploy to invenio-software.org
+  deploy-to-dash:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repo
+        run: |
+          git clone --depth=1 https://github.com/inveniosoftware/invenio-software.org target
+      - name: Copy built site
+        run: |
+          rm -rf target/*
+          cp -r build/* target/
+      - name: Commit and push to target repo
+        run: |
+          cd target
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy from inveniosoftware.org site"
+          git push https://x-access-token:${{ secrets.LEKTOR_DEPLOY_TOKEN_INVENIOBOT  }}@github.com/inveniosoftware/invenio-software.org gh-pages
