@@ -87,8 +87,8 @@ jobs:
       - name: Sync built site
         run: |
           cd dashed
-          # Delete everything except CNAME
-          find . -mindepth 1 ! -name 'CNAME' -exec rm -rf {} +
+          # Delete everything except CNAME and .git
+          find . -mindepth 1 ! -name 'CNAME' ! -name '.git' -exec rm -rf {} +
           # Copy new site
           cp -r ../_site/* .
 
