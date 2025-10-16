@@ -5,7 +5,7 @@
     {% if card.photo.size > 0 %}
       <img src="/assets/images/people/{{ card.photo }}" />
       {% else %}
-      {% assign initial = card.name | slice: 1 | upcase %}
+      {% assign initial = card.name | slice: 0 | upcase %}
       <div class="initial">{{ initial }}</div>
     {% endif %}
   </div>
