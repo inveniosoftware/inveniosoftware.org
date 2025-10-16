@@ -86,8 +86,11 @@ jobs:
 
       - name: Sync built site
         run: |
-          rm -rf dashed/*
-          cp -r _site/* dashed/
+          cd dashed
+          # Delete everything except CNAME
+          find . -mindepth 1 ! -name 'CNAME' -exec rm -rf {} +
+          # Copy new site
+          cp -r ../_site/* .
 
       - name: Commit and push to target repo
         working-directory: dashed
