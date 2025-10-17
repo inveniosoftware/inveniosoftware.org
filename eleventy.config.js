@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import eleventyNavigation from "@11ty/eleventy-navigation";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
 export default async function (eleventyConfig) {
   // copy all `src/assets` to `_site/static"
@@ -83,24 +83,19 @@ export default async function (eleventyConfig) {
     return input.startsWith(prefix);
   });
 
+  // Format authors array with comma separation
+  eleventyConfig.addFilter("formatAuthors", (authorKeys, authorsData) => {
+    if (!Array.isArray(authorKeys) || !authorsData) return "";
+
+    const authorNames = authorKeys
+      .map((key) => authorsData[key]?.name)
+      .filter((name) => name); // Remove empty names
+
+    return authorNames.join(", ");
+  });
+
   // RSS feed
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/feed.xml",
-    collection: {
-      name: "posts", // iterate over `collections.posts`
-      limit: 10, // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "Invenio Blog",
-      subtitle: "Follow news and updates on Invenio world.",
-      base: "https://inveniosoftware.org/blog/",
-      author: {
-        name: "Invenio Software",
-        email: "info@inveniosoftware.org",
-      },
-    },
+  eleventyConfig.addPlugin(pluginRss, {
     htmlBasePluginOptions: {
       baseHref: "",
     },

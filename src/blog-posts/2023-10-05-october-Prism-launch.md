@@ -1,8 +1,13 @@
 ---
 title: "Prism: The New Feinberg Repository for Global Dissemination of Research"
-author: Galter Health Sciences Library & Learning Center
+authors: 
+  - saragon02
 date: 2023-11-28
-team: InvenioRDM
+doi: https://doi.org/10.5555/bn0yr-avy74
+image: /assets/images/blog-posts/PrismAnnoucementHeader.png
+tags:
+  - InvenioRDM
+  - Showcase
 permalink: "/blog/2023-10-05-october-Prism-launch/"
 ---
 

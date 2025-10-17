@@ -1,8 +1,11 @@
 ---
 title: "InvenioRDM Partner Contributions: Virtual Project Meeting, 2021"
-author: Sara Gonzales
+authors: 
+  - saragon02
 date: 2021-10-12
-team: InvenioRDM
+doi: https://doi.org/10.5555/vnr53-pf524
+tags:   
+  - InvenioRDM
 permalink: "/blog/2021-10-12-projectmeeting-update/"
 ---
 

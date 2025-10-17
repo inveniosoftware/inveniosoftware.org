@@ -1,10 +1,11 @@
 ---
 title: "Sprint: Security and annoying warnings"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2017-08-11
-team: Invenio Framework
-team_colour: invenio-team
-team_url: /product-framework
+doi: https://doi.org/10.5555/21bf8-cds33
+tags: 
+  - Invenio
 permalink: "/blog/2017-08-11-invenio-sprint/"
 ---
 

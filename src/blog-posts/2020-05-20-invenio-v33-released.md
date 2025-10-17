@@ -1,8 +1,11 @@
 ---
 title: "Invenio v3.3 released"
-author: Pablo Panero
+authors: 
+  - ppanero
 date: 2020-05-20
-team: Invenio
+doi: https://doi.org/10.5555/zjpvb-xfs59
+tags: 
+  - Invenio
 permalink: "/blog/invenio-v33-released/"
 ---
 

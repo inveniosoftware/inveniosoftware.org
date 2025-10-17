@@ -1,8 +1,13 @@
 ---
 title: "InvenioRDM May Release"
-author: Lars Holm Nielsen, Lisa O'Keefe, Zacharias Zacharodimos
+authors: 
+  - lnielsen
+  - lkeefe
+  - zzacharodimos
 date: 2020-06-05
-team: Invenio
+doi: https://doi.org/10.5555/cc4wx-7t933
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-06-05-may-release/"
 ---
 

@@ -1,8 +1,11 @@
 ---
 title: "Invenio v3.1.0 released"
-author: Lars Holm Nielsen
+author: 
+  - lnielsen
 date: 2019-03-11
-team: Invenio
+doi: https://doi.org/10.5555/cx376-czz04
+tags: 
+  - Invenio
 permalink: "/blog/invenio-v310-released/"
 ---
 

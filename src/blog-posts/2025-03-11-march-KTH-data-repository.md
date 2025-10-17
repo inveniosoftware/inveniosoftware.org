@@ -1,12 +1,19 @@
 ---
 title: "KTH Data Repository: Launching an InvenioRDM-based Institutional Repository"
-author: Rosa Lönneborg, Sara Gonzales, Martin Fenner
+authors: 
+  - RosaLo
+  - saragon02
+  - mfenner
 date: 2025-03-11
-team: InvenioRDM
+doi: https://doi.org/10.5555/yjyra-pvq62
+image: /assets/images/blog-posts/KTH_Data_Repository.png
+tags: 
+  - InvenioRDM
 permalink: "/blog/2025-03-11-march-KTH-data-repository/"
 ---
 
 ![](/assets/images/blog-posts/KTH_Data_Repository.png)
+
 KTH Data Repository - we added [user guides](https://docs.datarepository.kth.se/) and updated the [KTH web-pages on research data management](https://www.kth.se/en/biblioteket/publicera-analysera/hantera-forskningsdata/forskningsdata-1.1002828) when the new repository was launched.
 
 

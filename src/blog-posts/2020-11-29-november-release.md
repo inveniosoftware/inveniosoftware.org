@@ -1,8 +1,12 @@
 ---
 title: "InvenioRDM November Release"
-author: Alex Ioannidis, Lars Holm Nielsen
+authors: 
+  - slint
+  - lnielsen
 date: 2020-11-29
-team: Invenio
+doi: https://doi.org/10.5555/q68ac-02k45
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-11-29-november-release/"
 ---
 

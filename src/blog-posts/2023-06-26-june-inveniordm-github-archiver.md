@@ -1,8 +1,13 @@
 ---
 title: "Introducing the InvenioRDM GitHub Archiver (IGA)"
-author: Mike Hucka and Tom Morrell
+authors:
+  - mhucka
+  - tmorell
 date: 2023-06-26
-team: InvenioRDM
+doi: https://doi.org/10.5555/pdh57-y9508
+image: /assets/images/blog-posts/CaltechDATA.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2023-06-26-june-inveniordm-github-archiver/"
 ---
 

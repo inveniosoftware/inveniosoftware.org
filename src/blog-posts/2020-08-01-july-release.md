@@ -1,8 +1,12 @@
 ---
 title: "InvenioRDM July Release"
-author: Sara Gonzales, Guillaume Viger
+authors:
+  - saragon02
+  - fenokku
 date: 2020-08-04
-team: Invenio
+doi: https://doi.org/10.5555/ap3nt-jh372
+tags:   
+  - InvenioRDM
 permalink: "/blog/2020-08-01-july-release/"
 ---
 
