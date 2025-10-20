@@ -415,6 +415,19 @@
       "linkedin": "",
       "twitter_x": "",
       "bluesky": ""
+    },
+    {
+      "name": "David Horvát",
+      "institution": "CERN",
+      "photo": "david-horvat.jpg",
+      "role": "Invenio Developer",
+      "bio": "",
+      "status": "former",
+      "invenio-role": "",
+      "github": "https://github.com/biscgit",
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     }
   ]
 }
