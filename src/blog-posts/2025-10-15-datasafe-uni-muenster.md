@@ -1,8 +1,12 @@
 ---
 title: "datasafe: Implementing a Dark Archive with InvenioRDM"
-author: Sarah Wiechers
+authors: 
+  - SarahW91
 date: 2025-10-15
-team: InvenioRDM
+doi: https://doi.org/10.5555/744hh-af128
+tags: 
+  - InvenioRDM
+  - Showcase
 permalink: "/blog/2025-10-15-datasafe-uni-muenster.md/"
 ---
 
