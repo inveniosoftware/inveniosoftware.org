@@ -1,8 +1,12 @@
 ---
 title: "New version of CaltechDATA launches on InvenioRDM"
-author: Tom Morrell
+authors:
+  - tmorell
 date: 2022-09-21
-team: Caltech
+doi: https://doi.org/10.5555/sa00p-q9217
+tags: 
+  - InvenioRDM
+  - Showcase
 permalink: "/blog/2022-09-21-caltechdata-rdm/"
 ---
 

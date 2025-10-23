@@ -1,0 +1,57 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "Invenio Blog",
+    "description": "Follow news and updates from the Invenio community",
+    "language": "en",
+    "base": "https://inveniosoftware.org/blog/",
+    "author": {
+      "name": "Invenio Software",
+      "email": "info@inveniosoftware.org"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="{{ metadata.language or page.lang }}">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
+  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- for post in collections.posts | reverse %}
+  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <published>{{ post.date | dateToRfc3339 }}</published>
+    {%- if post.data.authors %}
+    {%- for authorKey in post.data.authors %}
+    <author>
+      <name>{{ post_authors[authorKey].name or authorKey }}</name>
+      {%- if post_authors[authorKey].url %}<uri>{{ post_authors[authorKey].url }}</uri>{% endif %}
+    </author>
+    {%- endfor %}
+    {%- endif %}
+    {%- if post.data.tags %}
+    {%- for tag in post.data.tags %}
+    {%- if tag != "posts" %}
+    <category term="{{ tag }}" />
+    {%- endif %}
+    {%- endfor %}
+    {%- endif %}
+    {%- if post.data.image %}
+    <media:thumbnail url="{{ post.data.image | htmlBaseUrl(metadata.base) }}" />
+    {%- endif %}
+    <id>{% if post.data.doi %}{{ post.data.doi }}{% else %}{{ absolutePostUrl }}{% endif %}</id>
+    <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

@@ -1,8 +1,12 @@
 ---
 title: "InvenioRDM Partner Meeting Summary, March 2024"
-author: Sara Gonzales
+authors: 
+  - saragon02
 date: 2024-04-23
-team: InvenioRDM
+doi: https://doi.org/10.5555/2wxr8-59z67
+image: /assets/images/blog-posts/2024-03-18-22_InvenioRDM-Workshop_1.jpg
+tags: 
+  - InvenioRDM
 permalink: "/blog/2024-04-23-april-project-meeting-update/"
 ---
 

@@ -1,8 +1,11 @@
 ---
 title: "Sprint: v3.0.0RC2 + updated website"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2018-05-28
-team: Invenio Framework
+doi: https://doi.org/10.5555/vwjbt-zez56
+tags: 
+  - Invenio
 permalink: "/blog/2018-05-28-invenio-sprint/"
 ---
 

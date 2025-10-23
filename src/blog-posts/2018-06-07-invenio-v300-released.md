@@ -1,7 +1,11 @@
 ---
 title: "Invenio v3.0.0 Released"
+authors:
+  - lnielsen
 date: 2018-06-07
-team: Invenio
+doi: https://doi.org/10.5555/xkf7p-89h55
+tags: 
+  - Invenio
 permalink: "/blog/invenio-v300-released/"
 ---
 

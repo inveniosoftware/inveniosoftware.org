@@ -1,6 +1,6 @@
 ---
 title: Invenio Blog
-subtitle: 'Follow news and updates on Invenio world'
+subtitle: 'Follow news and updates from the Invenio community'
 eleventyNavigation:
   key: Blog
   order: 6
@@ -23,11 +23,9 @@ paginationNextText: 'Older posts'
       <div class="col-md-12 col-xs-12 block-center">
         {% assign firstpost = posts[0] %}
         {% assign title = firstpost.data.title %}
-        {% assign author = firstpost.data.author %}
+        {% assign authors = firstpost.data.authors %}
         {% assign date = firstpost.data.date %}
-        {% assign team_colour = firstpost.data.team_colour %}
-        {% assign team_url = firstpost.data.team_url %}
-        {% assign team = firstpost.data.team %}
+        {% assign tags = firstpost.data.tags %}
         {% assign content = firstpost.content %}
         {% assign permalink = firstpost.data.permalink %}
         {% include "partials/blog-post-top.html" %}
@@ -41,11 +39,9 @@ paginationNextText: 'Older posts'
             {% if pagination.pageNumber > 0 or forloop.index > 1 %}
             <div class="blog-list-item col-xs-12 col-md-4">
               {% assign title = post.data.title %}
-              {% assign author = post.data.author %}
+              {% assign authors = post.data.authors %}
               {% assign date = post.data.date %}
-              {% assign team_colour = post.data.team_colour %}
-              {% assign team_url = post.data.team_url %}
-              {% assign team = post.data.team %}
+              {% assign tags = post.data.tags %}
               {% assign content = post.content %}
               {% assign permalink = post.data.permalink %}
               {% include "partials/blog-post-item.html", isCard: true %}

@@ -1,8 +1,12 @@
 ---
 title: "InvenioRDM June Release"
-author: Lisa O'Keefe, Pablo Panero
+authors: 
+  - lkeefe
+  - ppanero
 date: 2020-07-01
-team: Invenio
+doi: https://doi.org/10.5555/ddtx7-4cg23
+tags: 
+  - InvenioRDM
 permalink: "/blog/2020-07-01-june-release/"
 ---
 

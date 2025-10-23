@@ -1,8 +1,12 @@
 ---
 title: "Keeping up with Elasticsearch"
-author: Alex Ioannidis & Lars Holm Nielsen
+authors:
+  - slint
+  - lnielsen
 date: 2019-05-24
-team: Invenio
+doi: https://doi.org/10.5555/rc0v6-nfa03
+tags: 
+  - Invenio
 permalink: "/blog/2019-05-24-sprint-report/"
 ---
 

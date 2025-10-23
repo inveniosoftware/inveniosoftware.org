@@ -1,8 +1,13 @@
 ---
 title: "Introducing RDM, ILS and Framework"
-author: Lars Holm Nielsen
+authors:
+  - lnielsen
 date: 2019-10-15
-team: Invenio
+doi: https://doi.org/10.5555/4qqbt-95f30
+tags: 
+  - InvenioRDM
+  - InvenioILS
+  - Invenio
 permalink: "/blog/2019-10-15-web-redesign/"
 ---
 
