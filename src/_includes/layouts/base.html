@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="invenio, library, framework, ils, research, data, multimedia, ir, institutional, repository, cern, foss, open, software, model, search, workflows, marc, marc21, python, api, doi, json, oai-pmh, orcid, openaire, rest, zenodo, cds, flask">
     <meta name="generator" content="{{ eleventy.generator }}">
-    <title>{{ title }} - inveniosoftware.org</title>
+    {%- assign meta_title = title | default: metadata.title | default: site.metadata.title %}
+    {%- assign meta_description = subtitle | default: "Powering Open Science" %}
+    {%- assign meta_type = type | default: metadata.type | default: "website" %}
+    {%- assign meta_image = image | default: metadata.image | default: site.metadata.image %}
+    {%- assign meta_url = permalink | default: metadata.url | default: site.metadata.url %}
+    {%- assign meta_site_name = "Invenio" %}
+    <title>{{ meta_title }} - inveniosoftware.org</title>
+    <meta property="og:title" content="{{ meta_title }}">
+    <meta property="og:type" content="{{ meta_type }}">
+    <meta property="og:image" content="{{ meta_image }}">
+    <meta property="og:url" content="{{ meta_url }}">
+    <meta property="og:site_name" content="{{ meta_site_name }}">
+    <meta property="og:description" content="{{ meta_description }}">
     <link rel="icon" href="/assets/images/favicon.ico">
+    <link rel="canonical" href="{{ meta_url }}">
     <link rel="alternate" type="application/atom+xml" title="Invenio Blog Feed" href="/feed.xml">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

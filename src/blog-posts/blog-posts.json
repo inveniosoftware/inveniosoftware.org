@@ -1,4 +1,5 @@
 {
   "layout": "layouts/blog-post.html",
-  "tags": ["posts"]
+  "tags": ["posts"],
+  "type": "article"
 }
