@@ -61,6 +61,11 @@
       "logo": "logo-jrc.svg"
     },
     {
+      "name": "Knowledge Commons",
+      "url": "https://hcommons.org/",
+      "logo": "logo-kcommons.svg"
+    },
+    {
       "name": "New York University",
       "url": "https://www.nyu.edu/",
       "logo": "logo-nyu.png"
