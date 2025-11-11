@@ -402,6 +402,19 @@
       "linkedin": "",
       "twitter_x": "",
       "bluesky": ""
+    },
+    {
+      "name": "Pablo Saiz",
+      "institution": "CERN",
+      "photo": "pablo-saiz.jpg",
+      "role": "CERN Open Data Service Manager",
+      "bio": "",
+      "status": "current",
+      "invenio-role": "maintainer",
+      "github": "https://github.com/psaiz",
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     }
   ]
 }
