@@ -4,7 +4,7 @@ authors:
   - mhucka
   - tmorell
 date: 2023-06-26
-doi: https://doi.org/10.5555/pdh57-y9508
+doi: https://doi.org/10.63517/pdh57-y9508
 image: /assets/images/blog-posts/CaltechDATA.jpg
 tags: 
   - InvenioRDM

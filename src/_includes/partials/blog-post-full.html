@@ -3,7 +3,7 @@
 </div>
 <div class="blog-post blog-post-frame">
   <header class="post-header">
-    <h2>{{ title }}</h2>
+    <h2 class="post-title">{{ title }}</h2>
     <div class="post-meta">
       <i class='fa fa-users text-muted'></i>
       <span class="author">
@@ -16,11 +16,15 @@
       {%- if tags -%}
         {%- for tag in tags -%}
           {%- unless tag == "posts" -%}
-            <span class="label label-primary">{{ tag }}</span>
+            <span class="label label-primary label-tag">{{ tag }}</span>
           {%- endunless -%}
         {%- endfor -%}
       {%- endif -%}
       </span>
+      <div class="pt-4"> 
+        <i class='fa fa-external-link text-muted'></i>
+        <a href="{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
+      </div>
     </div>
   </header>
   <article class="post-content">

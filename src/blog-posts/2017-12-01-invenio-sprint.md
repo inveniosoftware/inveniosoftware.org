@@ -3,7 +3,7 @@ title: "Sprint: Elasticsearch v5 support"
 authors:
   - lnielsen
 date: 2017-12-01
-doi: https://doi.org/10.5555/t6dvz-0jh43
+doi: https://doi.org/10.63517/t6dvz-0jh43
 tags: 
   - Invenio
 permalink: "/blog/2017-12-01-invenio-sprint/"

@@ -3,7 +3,7 @@ title: "Sprint: JSONB, bugs & bouncing search"
 authors:
   - lnielsen
 date: 2017-10-20
-doi: https://doi.org/10.5555/g0q4y-02859
+doi: https://doi.org/10.63517/g0q4y-02859
 tags: 
   - Invenio
 permalink: "/blog/2017-10-20-invenio-sprint/"

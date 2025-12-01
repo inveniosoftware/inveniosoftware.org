@@ -16,15 +16,24 @@ This website is built with [11ty (Eleventy)](https://www.11ty.dev/), a static si
 ### Adding Blog Posts
 
 1. Create a new markdown file in `src/blog-posts/`
-2. Use the naming convention: `YYYY-MM-DD-post-title.md`
-3. Add:
-
+1. Use the naming convention: `YYYY-MM-DD-post-title.md`
+1. Make sure your authors are included (with name and optional ORCID) in _data/post_authors.json
+1. Add tags as needed (e.g. InvenioRDM, InvenioILS, Invenio Framework, Showcase, Open Repositories, etc.)
+1. Generate a random DOI string with prefix 10.63517 and an Invenio recid, e.g. https://doi.org/10.63517/21bf8-cds33
+1. Add:
+^
 ```yaml
 ---
 title: "Your Blog Post Title"
-author: Author Name
+authors: 
+  - author-username
+  - another-author-username
 date: YYYY-MM-DD
-team: Invenio
+doi: https://doi.org/10.63517/xxxxx
+image: /assets/images/blog-posts/your-image-filename.jpg
+tags:
+  - InvenioRDM
+  - AnotherTag
 permalink: "/blog/YYYY-MM-DD-post-title/"
 ---
 

@@ -3,9 +3,9 @@ title: "InvenioRDM May Release"
 authors: 
   - lnielsen
   - lkeefe
-  - zzacharodimos
+  - zzacharo
 date: 2020-06-05
-doi: https://doi.org/10.5555/cc4wx-7t933
+doi: https://doi.org/10.63517/cc4wx-7t933
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-06-05-may-release/"

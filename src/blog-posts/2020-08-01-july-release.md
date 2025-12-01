@@ -2,9 +2,9 @@
 title: "InvenioRDM July Release"
 authors:
   - saragon02
-  - fenokku
+  - fenekku
 date: 2020-08-04
-doi: https://doi.org/10.5555/ap3nt-jh372
+doi: https://doi.org/10.63517/ap3nt-jh372
 tags:   
   - InvenioRDM
 permalink: "/blog/2020-08-01-july-release/"

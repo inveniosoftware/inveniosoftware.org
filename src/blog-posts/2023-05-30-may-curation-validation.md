@@ -3,6 +3,7 @@ title: "How does InvenioRDM support proper resource curation and validation?"
 authors:
   - carsonicator
 date: 2023-05-30
+doi: https://doi.org/10.63517/ky8g9-yy834
 tags: 
   - InvenioRDM
 permalink: "/blog/2023-05-30-may-curation-validation/"

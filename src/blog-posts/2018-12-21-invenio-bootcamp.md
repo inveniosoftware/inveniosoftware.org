@@ -3,7 +3,7 @@ title: "Invenio v3 Training Bootcamp"
 authors:
   - lnielsen
 date: 2018-12-21
-doi: https://doi.org/10.5555/dbtsc-h2t66
+doi: https://doi.org/10.63517/dbtsc-h2t66
 tags: 
   - Invenio
 permalink: "/blog/2018-12-21-invenio-bootcamp/"

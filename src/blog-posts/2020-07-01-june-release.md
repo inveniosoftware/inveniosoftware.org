@@ -4,7 +4,7 @@ authors:
   - lkeefe
   - ppanero
 date: 2020-07-01
-doi: https://doi.org/10.5555/ddtx7-4cg23
+doi: https://doi.org/10.63517/ddtx7-4cg23
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-07-01-june-release/"
