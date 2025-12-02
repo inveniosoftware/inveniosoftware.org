@@ -4,7 +4,7 @@ authors:
   - slint
   - lnielsen
 date: 2019-05-24
-doi: https://doi.org/10.5555/rc0v6-nfa03
+doi: https://doi.org/10.63517/rc0v6-nfa03
 tags: 
   - Invenio
 permalink: "/blog/2019-05-24-sprint-report/"

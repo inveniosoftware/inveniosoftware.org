@@ -3,7 +3,7 @@ title: "Towards Invenio v3.2 and Elasticsearch 7 support"
 authors:
   - lnielsen
 date: 2019-08-07
-doi: https://doi.org/10.5555/afep7-29828
+doi: https://doi.org/10.63517/afep7-29828
 tags: 
   - Invenio
 permalink: "/blog/2019-08-07-sprint-update/"

@@ -136,6 +136,15 @@
       "screenshot": "cds.jpg",
       "institution": "CERN",
       "launched": "2023"
+    },
+    {
+      "name": "The Rogue Scholar",
+      "description": "The Rogue Scholar is a cross-disciplinary archive of scholarly blog posts.",
+      "url": "https://rogue-scholar.org",
+      "country": "DE",
+      "screenshot": "rogue-scholar.png",
+      "institution": "Front Matter",
+      "launched": "2024"
     }
   ],
   "ils": [

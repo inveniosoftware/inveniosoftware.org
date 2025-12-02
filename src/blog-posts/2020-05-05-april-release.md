@@ -5,7 +5,7 @@ authors:
   - lkeefe
   - fenekku
 date: 2020-05-05
-doi: https://doi.org/10.5555/mcw20-dng91
+doi: https://doi.org/10.63517/mcw20-dng91
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-05-05-april-release/"

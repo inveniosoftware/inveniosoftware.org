@@ -3,7 +3,7 @@ title: "InvenioRDM Partner Meeting / Developer Workshop: Action Items"
 authors: 
   - SarahW91
 date: 2024-04-24
-doi: https://doi.org/10.5555/kqa6g-xgj57
+doi: https://doi.org/10.63517/kqa6g-xgj57
 image: /assets/images/20_workgroup_structure_governance_image01.jpg
 tags: 
   - InvenioRDM

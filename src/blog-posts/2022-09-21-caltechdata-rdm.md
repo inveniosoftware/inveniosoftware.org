@@ -3,7 +3,7 @@ title: "New version of CaltechDATA launches on InvenioRDM"
 authors:
   - tmorell
 date: 2022-09-21
-doi: https://doi.org/10.5555/sa00p-q9217
+doi: https://doi.org/10.63517/sa00p-q9217
 tags: 
   - InvenioRDM
   - Showcase

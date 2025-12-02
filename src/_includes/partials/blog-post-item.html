@@ -8,6 +8,10 @@
       {% endif %}
     </h3>
     <div class="blog-list-item-meta">
+      <div class="pt-4"> 
+        <i class='fa fa-external-link text-muted'></i>
+        <a href="{{ doi }}" target="_blank" rel="noopener noreferrer">{{ post.data.doi }}</a>
+      </div>
       <i class='fa fa-users text-muted'></i>
       <span class="author">
         {{ post.data.authors | formatAuthors: post_authors }}

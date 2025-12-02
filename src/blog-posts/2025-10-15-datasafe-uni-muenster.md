@@ -3,7 +3,7 @@ title: "datasafe: Implementing a Dark Archive with InvenioRDM"
 authors: 
   - SarahW91
 date: 2025-10-15
-doi: https://doi.org/10.5555/744hh-af128
+doi: https://doi.org/10.63517/744hh-af128
 tags: 
   - InvenioRDM
   - Showcase

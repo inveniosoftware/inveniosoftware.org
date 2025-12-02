@@ -3,7 +3,7 @@ title: "InvenioRDM Onboarding Resource Roundup"
 authors: 
   - saragon02
 date: 2021-02-10
-doi: https://doi.org/10.5555/7rnb5-hmh22
+doi: https://doi.org/10.63517/7rnb5-hmh22
 tags: 
   - InvenioRDM
 permalink: "/blog/2021-02-10-onboarding-resource-roundup/"

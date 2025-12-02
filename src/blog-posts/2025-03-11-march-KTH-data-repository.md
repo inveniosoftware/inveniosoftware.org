@@ -5,7 +5,7 @@ authors:
   - saragon02
   - mfenner
 date: 2025-03-11
-doi: https://doi.org/10.5555/yjyra-pvq62
+doi: https://doi.org/10.63517/yjyra-pvq62
 image: /assets/images/blog-posts/KTH_Data_Repository.png
 tags: 
   - InvenioRDM

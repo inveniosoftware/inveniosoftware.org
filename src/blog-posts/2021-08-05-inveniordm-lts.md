@@ -3,7 +3,7 @@ title: "InvenioRDM reaches major milestone - v6.0 released"
 authors:
   - lnielsen
 date: 2021-08-05
-doi: https://doi.org/10.5555/ep4p0-vnx69
+doi: https://doi.org/10.63517/ep4p0-vnx69
 tags:
   - InvenioRDM
 permalink: "/blog/2021-08-05-inveniordm-lts/"

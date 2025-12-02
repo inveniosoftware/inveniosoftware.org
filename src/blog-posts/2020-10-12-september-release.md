@@ -2,10 +2,10 @@
 title: "InvenioRDM September Release"
 authors:
   - lnielsen
-  - fenokku
+  - fenekku
   - saragon02
 date: 2020-10-12
-doi: https://doi.org/10.5555/vt3t9-kky55
+doi: https://doi.org/10.63517/vt3t9-kky55
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-10-12-september-release/"

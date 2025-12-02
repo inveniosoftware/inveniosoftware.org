@@ -3,7 +3,7 @@ title: "InvenioRDM Partner Meeting Summary, March 2024"
 authors: 
   - saragon02
 date: 2024-04-23
-doi: https://doi.org/10.5555/2wxr8-59z67
+doi: https://doi.org/10.63517/2wxr8-59z67
 image: /assets/images/blog-posts/2024-03-18-22_InvenioRDM-Workshop_1.jpg
 tags: 
   - InvenioRDM

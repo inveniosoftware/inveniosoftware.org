@@ -1,10 +1,10 @@
 ---
 title: "InvenioRDM August Release"
 authors:
-  - fenokku
+  - fenekku
   - saragon02
 date: 2020-09-01
-doi: https://doi.org/10.5555/g55sr-bgn51
+doi: https://doi.org/10.63517/g55sr-bgn51
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-09-01-august-release/"

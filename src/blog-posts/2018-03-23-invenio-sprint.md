@@ -3,7 +3,7 @@ title: "Sprint: v3.0.0RC1, Elasticsearch v6 and MIT license"
 authors:
   - lnielsen
 date: 2018-03-23
-doi: https://doi.org/10.5555/vbfec-bnb47
+doi: https://doi.org/10.63517/vbfec-bnb47
 tags: 
   - Invenio
 permalink: "/blog/2018-03-23-invenio-sprint/"

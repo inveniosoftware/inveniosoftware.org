@@ -2,11 +2,11 @@
 title: "InvenioRDM v2.0"
 authors: 
   - lnielsen
-  - fenokku
+  - fenekku
   - max-moser
-  - zacharias
+  - zzacharo
 date: 2021-03-26
-doi: https://doi.org/10.5555/m3ze1-crc45
+doi: https://doi.org/10.63517/m3ze1-crc45
 tags:
   - InvenioRDM
 permalink: "/blog/2021-03-26-inveniordm-v20/"

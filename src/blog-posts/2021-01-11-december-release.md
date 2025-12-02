@@ -2,11 +2,11 @@
 title: "InvenioRDM Alpha 14 (December Release)"
 authors: 
   - ppanero
-  - fenokku
+  - fenekku
   - saragon02
   - lnielsen
 date: 2021-01-11
-doi: https://doi.org/10.5555/3kjfv-mfr98
+doi: https://doi.org/10.63517/3kjfv-mfr98
 tags: 
   - InvenioRDM
 permalink: "/blog/2021-01-11-december-release/"

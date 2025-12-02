@@ -5,7 +5,7 @@ authors:
   - kristiholmes
   - mfenner
 date: 2024-11-19
-doi: https://doi.org/10.5555/dhc4s-nx507
+doi: https://doi.org/10.63517/dhc4s-nx507
 image: /assets/images/blog-posts/MerchandiseMart.jpg
 tags: 
   - InvenioRDM
