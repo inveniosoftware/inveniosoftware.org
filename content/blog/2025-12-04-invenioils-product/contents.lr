@@ -25,7 +25,7 @@ InvenioILS delivers the essential tools libraries rely on:
 
 ## Flexible and extensible by design
 
-InvenioILS is highly modular and, like InvenioRDM, based on InvenioFramework. It becomes easier to share the expertise between these two products.
+InvenioILS is highly modular and, like InvenioRDM, based on Invenio Framework. It becomes easier to share the expertise between these two products.
 Institutions can customize metadata, circulation rules, UI components, and system behaviour - or integrate with external services through the REST API. This flexibility allows libraries to adopt InvenioILS “as is” or tailor it into a specialized solution that fits their workflows and identity.
 
 ## CERN: A Showcase Installation
