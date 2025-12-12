@@ -38,11 +38,11 @@ An example of an advance deployment of InvenioILS is at **CERN** - [CERN Library
 
 InvenioILS connects seamlessly to CERN’s institutional Single Sign-On, providing automatic user provisioning, role synchronization, and a unified login experience across CERN services.
 
-### Bulk e-book importer
+### Bulk e-book importer (CERN customisation)
 
 CERN uses an automated bulk importer to process large vendor MARC packages. Metadata is transformed, validated, and ingested with minimal staff intervention - turning what once took days into an efficient, scalable workflow.
 
-### Mobile self-checkout & campus navigation
+### Mobile self-checkout & campus navigation (CERN customisation)
 
 CERN’s library offers mobile self-checkout, enabling patrons to borrow items directly from their phones. Through InvenioILS APIs, the system also integrates with CERN’s internal navigation app, guiding users to shelf locations and showing real-time item availability.
 
@@ -61,7 +61,7 @@ InvenioILS complements InvenioRDM and the broader Invenio framework, providing a
 
 **Invenio does not only power repositories.**
 
-**It powers libraries as well - with power of FOSS (Free Open-Source Software)**
+**It powers libraries as well - with power of Free Open-Source Software**
 
 
 ## Join the Invenio community
