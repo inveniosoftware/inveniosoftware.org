@@ -1,12 +1,14 @@
-title: Repositories and libraries: Invenio features InvenioILS!
 ---
-author: Karolina Przerwa
+title: "Repositories and libraries: Invenio features InvenioILS!"
+authors: 
+  - Karolina Przerwa
+date: 2026-01-01
+tags: 
+  - InvenioILS
+  - Showcase
+permalink: "/blog/2025-12-04-invenioils-product.md/"
 ---
-pub_date: 2025-12-04
----
-team: CERN
----
-body:
+
 
 For years, the Invenio community has been known for powerful open-source repository solutions - especially InvenioRDM. But many institutions need more than a repository: they need a modern, flexible platform that also supports collections, loans, acquisitions, and patron services.
 
@@ -32,7 +34,7 @@ Institutions can customize metadata, circulation rules, UI components, and syste
 
 An example of an advance deployment of InvenioILS is at **CERN** - [CERN Library Catalogue](https://catalogue.library.cern), where the platform powers daily library operations and serves thousands of users.
 
-![](clc.png)
+![](/assets/images/blog-posts/2025-12-04-invenioils-product/clc.png)
 
 ### Smooth SSO integration
 
@@ -46,14 +48,14 @@ CERN uses an automated bulk importer to process large vendor MARC packages. Meta
 
 CERN’s library offers mobile self-checkout, enabling patrons to borrow items directly from their phones. Through InvenioILS APIs, the system also integrates with CERN’s internal navigation app, guiding users to shelf locations and showing real-time item availability.
 
-![](maps.png)
+![](/assets/images/blog-posts/2025-12-04-invenioils-product/clc_maps.png)
 
-![](self-checkout.png)
+![](/assets/images/blog-posts/2025-12-04-invenioils-product/clc_self-checkout.png)
 
 ### Reliable at scale
 The CERN installation demonstrates how InvenioILS can support large user bases, extensive collections, and demanding operational environments - all while integrating with CERN Institutional repository, based on InvenioRDM.
 
-![](search.png)
+![](/assets/images/blog-posts/2025-12-04-invenioils-product/clc_search.png)
 
 ## Part of a product family
 
