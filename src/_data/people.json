@@ -402,6 +402,19 @@
       "linkedin": "",
       "twitter_x": "",
       "bluesky": ""
+    },
+    {
+      "name": "Panna Liptak",
+      "institution": "CERN",
+      "photo": "panna-liptak.jpg",
+      "role": "Invenio Developer",
+      "bio": "",
+      "status": "current",
+      "invenio-role": "",
+      "github": "https://github.com/liptakpanna",
+      "linkedin": "",
+      "twitter_x": "",
+      "bluesky": ""
     }
   ]
 }

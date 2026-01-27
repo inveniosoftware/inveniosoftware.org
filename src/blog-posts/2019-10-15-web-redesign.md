@@ -3,7 +3,7 @@ title: "Introducing RDM, ILS and Framework"
 authors:
   - lnielsen
 date: 2019-10-15
-doi: https://doi.org/10.5555/4qqbt-95f30
+doi: https://doi.org/10.63517/4qqbt-95f30
 tags: 
   - InvenioRDM
   - InvenioILS

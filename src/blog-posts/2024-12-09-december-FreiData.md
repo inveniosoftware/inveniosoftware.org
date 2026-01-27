@@ -5,7 +5,7 @@ authors:
   - saragon02
   - mfenner
 date: 2024-12-09
-doi: https://doi.org/10.5555/xzzzj-hk022
+doi: https://doi.org/10.63517/xzzzj-hk022
 image: /assets/images/blog-posts/ComputerCenter_UniversityFreiburg.jpg
 tags: 
   - InvenioRDM

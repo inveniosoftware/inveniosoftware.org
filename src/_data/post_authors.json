@@ -1,9 +1,15 @@
 {
+  "avivace": {
+    "name": "Antonio Vivace"
+  },
   "carlinmack": {
     "name": "Carlin MacKenzie"
   },
   "carsonicator": {
     "name": "Matt Carson"
+  },
+  "ChiaraBi": {
+    "name": "Chiara B."
   },
   "chokribr": {
     "name": "Chokri Ben Romdhane"
@@ -13,6 +19,9 @@
   },
   "dfdan": {
     "name": "Dan Granville"
+  },
+  "dinosk": {
+    "name": "Dinos Kousidis"
   },
   "egabancho": {
     "name": "Esteban J.G. Gabancho"
@@ -45,8 +54,7 @@
     "name": "Lisa O'Keefe"
   },
   "lnielsen": {
-    "name": "Lars Holm Nielsen",
-    "url": "https://orcid.org/0000-0001-8135-3489"
+    "name": "Lars Holm Nielsen"
   },
   "max-moser": {
     "name": "Max Moser"
@@ -98,6 +106,9 @@
   "splith": {
     "name": "Brian Kelly"
   },
+  "switowski": {
+    "name": "Sebastian Witowski"
+  },
   "tiborsimko": {
     "name": "Tibor Šimko"
   },
@@ -109,6 +120,9 @@
   },
   "wgresshoff": {
     "name": "Werner Greßhoff"
+  },
+  "zguillen": {
+    "name": "Zoe Guillen"
   },
   "zzacharo": {
     "name": "Zacharias Zacharodimos"

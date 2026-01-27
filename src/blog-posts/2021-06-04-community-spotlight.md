@@ -3,7 +3,7 @@ title: "InvenioRDM Community Spotlight: Summer 2021"
 authors: 
   - saragon02
 date: 2021-06-07
-doi: https://doi.org/10.5555/sn6t1-9rq67
+doi: https://doi.org/10.63517/sn6t1-9rq67
 image: /assets/images/blog-posts/Summer.jpg
 tags: 
   - InvenioRDM

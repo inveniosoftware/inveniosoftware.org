@@ -3,7 +3,7 @@ title: "Sprint: Security and annoying warnings"
 authors:
   - lnielsen
 date: 2017-08-11
-doi: https://doi.org/10.5555/21bf8-cds33
+doi: https://doi.org/10.63517/21bf8-cds33
 tags: 
   - Invenio
 permalink: "/blog/2017-08-11-invenio-sprint/"

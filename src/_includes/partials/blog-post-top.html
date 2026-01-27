@@ -4,6 +4,8 @@
       <a href="{{ permalink }}">{{ title }}</a>
     </h2>
     <p class="blog-list-item-meta">
+      <i class='fa fa-external-link text-muted'></i>
+      <a href="{{ doi }}" target="_blank" rel="noopener noreferrer" class="pr-5">{{ doi }}</a>
       <i class='fa fa-user text-muted'></i>
       <span class="author">
         {{ authors | formatAuthors: post_authors }}
@@ -13,7 +15,7 @@
       {%- if tags -%}
         {%- for tag in tags -%}
           {%- unless tag == "posts" -%}
-            <span class="label label-primary">{{ tag }}</span>
+            <span class="label label-primary label-tag">{{ tag }}</span>
           {%- endunless -%}
         {%- endfor -%}
       {%- endif -%}

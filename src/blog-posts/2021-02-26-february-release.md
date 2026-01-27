@@ -2,10 +2,10 @@
 title: "InvenioRDM v1.0 (February release)"
 authors: 
   - lnielsen
-  - fenokku
+  - fenekku
   - saragon02
 date: 2021-02-26
-doi: https://doi.org/10.5555/wysw5-3f019
+doi: https://doi.org/10.63517/wysw5-3f019
 tags: 
   - InvenioRDM
 permalink: "/blog/2021-02-26-february-release/"

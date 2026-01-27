@@ -4,7 +4,7 @@ authors:
   - slint
   - lnielsen
 date: 2020-11-29
-doi: https://doi.org/10.5555/q68ac-02k45
+doi: https://doi.org/10.63517/q68ac-02k45
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-11-29-november-release/"

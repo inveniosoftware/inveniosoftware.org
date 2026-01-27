@@ -3,7 +3,7 @@ title: "Invenio v3.2 released"
 author: 
   - lnielsen
 date: 2019-12-20
-doi: https://doi.org/10.5555/pt6rt-6mz56
+doi: https://doi.org/10.63517/pt6rt-6mz56
 tags: 
   - Invenio
 permalink: "/blog/invenio-v32-released/"

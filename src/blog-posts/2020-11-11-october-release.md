@@ -4,7 +4,7 @@ authors:
   - lnielsen
   - saragon02
 date: 2020-11-11
-doi: https://doi.org/10.5555/wbm60-xha84
+doi: https://doi.org/10.63517/wbm60-xha84
 tags: 
   - InvenioRDM
 permalink: "/blog/2020-11-11-october-release/"

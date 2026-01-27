@@ -18,7 +18,7 @@ eleventyNavigation:
 
     <!-- Navigation Menu -->
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 centered">
         <div class="showcase-nav-menu">
           <div class="nav-buttons">
             <a href="#rdm-section" class="nav-button active">
@@ -48,16 +48,8 @@ eleventyNavigation:
                 <span class="nav-subtitle">Framework</span>
               </div>
             </a>
-            <a href="#v1-section" class="nav-button">
-              <div class="nav-icon">
-                <i class="fa fa-archive"></i>
-              </div>
-              <div class="nav-text">
-                <span class="nav-title">Invenio v1</span>
-                <span class="nav-subtitle">Legacy</span>
-              </div>
-            </a>
           </div>
+          <label>While there are still installations using Invenio v1, our focus is on InvenioRDM, InvenioILS, and Invenio v3.</label>
         </div>
       </div>
     </div>
@@ -92,17 +84,6 @@ eleventyNavigation:
          section_description: "Applications and repositories built with the Invenio v3 Framework.",
          label_class: "v3",
          label_text: "Invenio v3"
-      %}
-    </div>
-
-    <!-- Invenio v1 Section -->
-    <div id="v1-section" class="showcase-section-content">
-      {% include "partials/showcase-section.html",
-         data: showcase.v1,
-         section_title: "Invenio v1 installations",
-         section_description: "Applications and repositories built with the Invenio v1.",
-         label_class: "v1",
-         label_text: "Invenio v1"
       %}
     </div>
 

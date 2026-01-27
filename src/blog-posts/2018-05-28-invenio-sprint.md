@@ -3,7 +3,7 @@ title: "Sprint: v3.0.0RC2 + updated website"
 authors:
   - lnielsen
 date: 2018-05-28
-doi: https://doi.org/10.5555/vwjbt-zez56
+doi: https://doi.org/10.63517/vwjbt-zez56
 tags: 
   - Invenio
 permalink: "/blog/2018-05-28-invenio-sprint/"

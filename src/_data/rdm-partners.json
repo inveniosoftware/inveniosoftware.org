@@ -37,7 +37,7 @@
     },
     {
       "name": "Front Matter",
-      "url": "https://front-matter.io/",
+      "url": "https://front-matter.de/",
       "logo": "logo-frontmatter.png"
     },
     {
@@ -59,6 +59,11 @@
       "name": "Joint Research Centre",
       "url": "https://ec.europa.eu/jrc/",
       "logo": "logo-jrc.svg"
+    },
+    {
+      "name": "Knowledge Commons",
+      "url": "https://hcommons.org/",
+      "logo": "logo-kcommons.svg"
     },
     {
       "name": "New York University",

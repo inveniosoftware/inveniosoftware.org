@@ -1356,6 +1356,13 @@ h2 {
       transition: all 0.2s ease;
     }
   }
+
+  label {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #666;
+  }
 }
 
 /* Section Content Spacing */
@@ -1608,6 +1615,10 @@ h2 {
   color: #ffffff;
 }
 
+.label-tag {
+  vertical-align: 2px;
+}
+
 .showcase-section-content .section-title {
   color: #333;
   font-size: 32px;
@@ -1747,7 +1758,8 @@ only screen and (max-width: 993px) {
   }
 }
 
-.new-site-section {
+.new-site-section,
+.post-title {
   text-align: left;
 }
 

@@ -3,6 +3,7 @@ title: 'Welcome'
 eleventyNavigation:
   key: Home
   order: 1
+permalink: /
 ---
 {% layout 'layouts/home.html' %}
 
@@ -23,7 +24,7 @@ eleventyNavigation:
               {% assign title = post.data.title %}
               {% assign authors = post.data.authors %}
               {% assign date = post.data.date %}
-              {% assign tags = post.data.tags %}
+              {% assign tags = post.data.tags | where_exp: 'tag', 'tag != "posts"' %}
               {% assign doi = post.data.doi %}
               {% assign permalink = post.data.permalink %}
               {% include "partials/blog-post-homepage.html" %}
