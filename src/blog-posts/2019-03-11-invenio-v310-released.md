@@ -1,6 +1,6 @@
 ---
 title: "Invenio v3.1.0 released"
-author: 
+authors: 
   - lnielsen
 date: 2019-03-11
 doi: https://doi.org/10.63517/cx376-czz04
