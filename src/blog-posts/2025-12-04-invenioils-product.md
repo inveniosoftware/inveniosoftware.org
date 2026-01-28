@@ -1,8 +1,9 @@
 ---
 title: "Repositories and libraries: Invenio features InvenioILS!"
 authors: 
-  - Karolina Przerwa
+  - kpsherva
 date: 2026-01-01
+doi: https://doi.org/10.63517/hwttq-f5r06
 tags: 
   - InvenioILS
   - Showcase

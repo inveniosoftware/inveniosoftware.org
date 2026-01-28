@@ -1,6 +1,6 @@
 ---
 title: "Invenio v3.2 released"
-author: 
+authors: 
   - lnielsen
 date: 2019-12-20
 doi: https://doi.org/10.63517/pt6rt-6mz56
