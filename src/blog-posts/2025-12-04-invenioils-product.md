@@ -1,20 +1,18 @@
 ---
 title: "Repositories and libraries: Invenio features InvenioILS!"
-authors: 
+authors:
   - kpsherva
 date: 2026-01-01
 doi: https://doi.org/10.63517/hwttq-f5r06
-tags: 
+tags:
   - InvenioILS
   - Showcase
-permalink: "/blog/2025-12-04-invenioils-product.md/"
+permalink: "/blog/2025-12-04-invenioils-product/"
 ---
-
 
 For years, the Invenio community has been known for powerful open-source repository solutions - especially InvenioRDM. But many institutions need more than a repository: they need a modern, flexible platform that also supports collections, loans, acquisitions, and patron services.
 
 **InvenioILS brings these capabilities into the Invenio family**, offering a fully open, customizable **Integrated Library System** built on the same modular framework as InvenioRDM.
-
 
 ## A modern, feature-rich ILS (Integrated Library System)
 
@@ -24,7 +22,6 @@ InvenioILS delivers the essential tools libraries rely on:
 - **Cataloguing & metadata**: flexible JSONSchema-based records, holdings, items, and fast discovery powered by Elasticsearch/OpenSearch.
 - **Acquisitions & ILL**: vendor management, orders, budgets, document delivery, and interlibrary loan workflows.
 - **Clean, responsive UI**: a modern interface designed for both librarians and patrons.
-
 
 ## Flexible and extensible by design
 
@@ -54,6 +51,7 @@ CERN’s library offers mobile self-checkout, enabling patrons to borrow items d
 ![](/assets/images/blog-posts/2025-12-04-invenioils-product/clc_self-checkout.png)
 
 ### Reliable at scale
+
 The CERN installation demonstrates how InvenioILS can support large user bases, extensive collections, and demanding operational environments - all while integrating with CERN Institutional repository, based on InvenioRDM.
 
 ![](/assets/images/blog-posts/2025-12-04-invenioils-product/clc_search.png)
@@ -65,7 +63,6 @@ InvenioILS complements InvenioRDM and the broader Invenio framework, providing a
 **Invenio does not only power repositories.**
 
 **It powers libraries as well - with power of Free Open-Source Software**
-
 
 ## Join the Invenio community
 
