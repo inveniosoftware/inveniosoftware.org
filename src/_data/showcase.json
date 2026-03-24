@@ -1,6 +1,13 @@
 {
   "rdm": [
     {
+      "name": "Knowledge Commons Works",
+      "country": "CA",
+      "description": "The open access repository of Knowledge Commons, a non-profit platform for academic communication and collaboration based at Michigan State University and directed by a consortium that includes the Modern Language Association, Association of University Presses, and others.",
+      "url": "https://works.hcommons.org",
+      "screenshot": "kcworks.png"
+    },
+    {
       "name": "Open Access Repository",
       "country": "IT",
       "description": "Open Access Repository is an initiative supported by the DCH-RP (Digital Cultural Heritage - Roadmap for Preservation) project as it can fulfil the needs of cultural institutions that want to preserve their data and make them accessible in an Open Access way by means of a digital repository that is compliant with OpenAIRE guidelines.",
