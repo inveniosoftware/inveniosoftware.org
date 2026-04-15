@@ -3,7 +3,7 @@ title: "datastore: Relaunch of our research data repository"
 authors: 
   - SarahW91
 date: 2026-04-14
-doi: https://doi.org/10.63517/k7m3-p9q2
+doi: https://doi.org/10.63517/312pg-rah44
 tags: 
   - InvenioRDM
   - Showcase
