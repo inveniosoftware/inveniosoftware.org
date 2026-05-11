@@ -1,9 +1,9 @@
 ---
 title: "InvenioRDM Deposit Form Extension"
 authors: 
-  - Ian Scott
+  - monotasker
 date: 2026-05-08
-doi: https://doi.org/10.63517/....
+doi: https://doi.org/10.63517/gx1dx-08q02
 tags: 
   - InvenioRDM
 permalink: "/blog/2026-05-08-deposit-form-extension.md/"
