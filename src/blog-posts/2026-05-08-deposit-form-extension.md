@@ -13,7 +13,7 @@ permalink: "/blog/2026-05-08-deposit-form-extension.md/"
 
 # Extending the InvenioRDM Deposit Form
 
-When I first started work on Knowledge Commons Works, one of the first things I built was an extension to add several layers of functionality to the stock InvenioRDM deposit form: invenio-modular-deposit-form. Three years later, that extension has matured and been rewritten from the ground up to be re-usable by other InvenioRDM instances.
+When I first started work on [Knowledge Commons Works](https://works.hcommons.org), one of the first things I built was an extension to add several layers of functionality to the stock InvenioRDM deposit form: [invenio-modular-deposit-form](https://github.com/MESH-Research/invenio-modular-deposit-form). Three years later, that extension has matured and been rewritten from the ground up to be re-usable by other InvenioRDM instances.
 
 ## Born from our UX research
 
@@ -82,3 +82,5 @@ The ideal goal is to make this layer work with the stock InvenioRDM form field c
 ## An example of the possibilities
 
 Our invenio-modular-deposit-form extension doesn't aim to be the perfect deposit form. Our goal has, instead, been to make the stock InvenioRDM form as flexible as possible, to extend its functionality to meet an even wider variety of needs. Many of us who develop and maintain InvenioRDM instances have made the deposit form our own. I hope our work provides one example of how we might make these kinds of customizations easier to implement and maintain for all of us.
+
+You can find the Knowledge Commons Works instance of InvenioRDM at [https://works.hcommons.org](https://works.hcommons.org) and the invenio-modular-deposit-form extension on Github at [https://github.com/MESH-Research/invenio-modular-deposit-form](https://github.com/MESH-Research/invenio-modular-deposit-form).
