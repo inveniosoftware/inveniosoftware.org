@@ -144,38 +144,19 @@ permalink: /
       </div>
     </div>
   </section>
-  <section class="trusted-by-section section-content-light-bg">
+  <!-- <section class="trusted-by-section section-content-light-bg">
     <div class="container">
-      <span class="section-title"><i class="fa fa-heart"></i> Trusted by</span>
+      <span class="section-title"><i class="fa fa-heart"></i>Trusted by</span>
+        {% assign parts = invenio-trusted-by.items | sortBy: 'name' | sliceArray: 4 %}
+        {% for part in parts %}
         <div class="row centered">
           <div class="col">
-            <a href="http://home.cern"><img src="/assets/images/logo-cern.png" title="CERN"></a>
-            <a href="https://www.nii.ac.jp/en/"><img src="/assets/images/logo-nii.png" title="NII"></a>
-            <a href="https://www.northwestern.edu/"><img src="/assets/images/logo-northwestern-university.png" title="Northwestern University"></a>
-            <a href="http://www.bnl.gov/"><img src="/assets/images/logo-bnl.png" title="Brookhaven National Laboratory"></a>
+            {% for item in part %}
+            <a href="{{ item.url }}"><img src="/assets/images/{{ item.logo }}" title="{{ item.name }}"></a>
+            {%- endfor %}
           </div>
         </div>
-        <div class="row centered">
-          <div class="col">
-            <a href="http://www.treccani.it/"><img src="/assets/images/logo-treccani.png" title="Treccani"></a>
-            <a href="https://www.library.caltech.edu/"><img src="/assets/images/logo-caltechlibrary.png" title="Caltech Library"></a>
-            <a href="https://www.data-futures.org/"><img src="/assets/images/logo-data-futures.png" title="Data Futures"></a>
-            <a href="https://www.hzdr.de/"><img src="/assets/images/logo-hzdr.png" title="Helmholtz Zentrum Dresden-Rossendorf"></a>
-          </div>
-        </div>
-        <div class="row centered">
-          <div class="col">
-            <a href="https://www.openaire.eu/"><img src="/assets/images/logo-openaire.png" title="OpenAIRE"></a>
-            <a href="https://ulakbim.tubitak.gov.tr"><img src="/assets/images/logo-tubitak.svg" title="TUBITAK ULAKBIM (Turkish Academic Network and Information Center)"></a>
-            <a href="https://www.uni-hamburg.de/"><img src="/assets/images/logo-uni-hamburg.png" title="Unversität Hamburg"></a>
-            <a href="https://www.uni-muenster.de/en/"><img src="/assets/images/logo-uni-muenster.svg" title="University of Münster"></a>
-          </div>
-        </div>
-        <div class="row centered">
-          <div class="col">
-            <a href="https://www.kth.se"><img src="/assets/images/logo-kth.svg" title="KTH Royal Institute of Technology"></a>
-          </div>
-        </div>
+        {%- endfor %}
       </div>
-  </section>
+  </section> -->
 {% endblock %}

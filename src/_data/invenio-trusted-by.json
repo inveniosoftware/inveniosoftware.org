@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "name": "CERN",
+      "url": "https://home.cern",
+      "logo": "logo-cern.png"
+    },{
+      "name": "NII",
+      "url": "https://www.nii.ac.jp/en/",
+      "logo": "logo-nii.png"
+    },
+    {
+      "name": "Northwestern University",
+      "url": "https://www.northwestern.edu/",
+      "logo": "logo-northwestern-university.png"
+    },
+    {
+      "name": "Brookhaven National Laboratory",
+      "url": "https://www.bnl.gov/",
+      "logo": "logo-bnl.png"
+    },
+    {
+      "name": "Treccani",
+      "url": "https://www.treccani.it/",
+      "logo": "logo-treccani.png"
+    },
+    {
+      "name": "Caltech Library",
+      "url": "https://www.library.caltech.edu/",
+      "logo": "logo-caltechlibrary.png"
+    },
+    {
+      "name": "Data Futures",
+      "url": "https://www.data-futures.org/",
+      "logo": "logo-data-futures.png"
+    },
+    {
+      "name": "Helmholtz Zentrum Dresden-Rossendorf",
+      "url": "https://www.hzdr.de/",
+      "logo": "logo-hzdr.png"
+    },
+    {
+      "name": "OpenAIRE",
+      "url": "https://www.openaire.eu/",
+      "logo": "logo-openaire.png"
+    },
+    {
+      "name": "Tubitak",
+      "url": "https://ulakbim.tubitak.gov.tr",
+      "logo": "logo-tubitak.svg"
+    },
+    {
+      "name": "UUniversität Hamburg",
+      "url": "https://www.uni-hamburg.de",
+      "logo": "logo-uni-hamburg.png"
+    },
+    {
+      "name": "University of Münster",
+      "url": "https://www.uni-muenster.de/en/",
+      "logo": "logo-uni-muenster.svg"
+    },
+    {
+      "name": "KTH Royal Institute of Technology",
+      "url": "https://www.kth.se",
+      "logo": "logo-kth.svg"
+    }
+  ]
+}

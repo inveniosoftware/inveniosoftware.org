@@ -2,7 +2,7 @@
   "items": [
     {
       "name": "Brookhaven National Laboratory",
-      "url": "http://www.bnl.gov/",
+      "url": "https://www.bnl.gov/",
       "logo": "logo-bnl.png"
     },
     {
@@ -14,6 +14,11 @@
       "name": "CERN",
       "url": "https://home.cern",
       "logo": "logo-cern.png"
+    },
+    {
+      "name": "CESNET",
+      "url": "https://www.cesnet.cz/",
+      "logo": "logo-cesnet.png"
     },
     {
       "name": "CNUDST",
@@ -124,6 +129,11 @@
       "name": "KTH Royal Institute of Technology",
       "url": "https://www.kth.se",
       "logo": "logo-kth.svg"
+    },
+    {
+      "name": "ZBW Leibniz Information Centre for Economics",
+      "url": "https://www.zbw.eu/en/",
+      "logo": "logo-zbw.jpg"
     }
   ]
 }
