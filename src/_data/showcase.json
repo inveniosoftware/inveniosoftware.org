@@ -152,6 +152,15 @@
       "screenshot": "rogue-scholar.png",
       "institution": "Front Matter",
       "launched": "2024"
+    },
+    {
+      "name": "UNESCO Open Science Platform",
+      "description": "The UNESCO Open Science Platform supports the implementation of the 2021 UNESCO Recommendation on Open Science, serving as a central knowledge hub that provides access to research outputs from UNESCO's sciences programmes, awards and fellowship initiatives, offers curated highlights and plain-language summaries that translate complex findings into actionable insights for non-specialist audiences, and features interactive dashboards tracking open science progress across Member States.",
+      "institution": "UNESCO",
+      "country": "FR",
+      "url": "https://open-science.unesco.org",
+      "screenshot": "openscience-portal.png",
+      "launched": "2026"
     }
   ],
   "ils": [
