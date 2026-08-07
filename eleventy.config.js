@@ -53,7 +53,7 @@ export default async function (eleventyConfig) {
       "Nov",
       "Dec",
     ];
-    return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+    return `${months[d.getMonth()]} ${d.getUTCDate()}, ${d.getFullYear()}`;
   });
 
   // Sort showcase items: featured first, then alphabetical, remove duplicates
