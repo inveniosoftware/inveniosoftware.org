@@ -233,6 +233,13 @@
       "description": "For almost four centuries the Bollandists have been at the forefront of hagiographic research. The Museum Bollandianum provides access to books (including the rare books collection), journals and articles of interest in that field.",
       "url": "https://museumbollandianum.be",
       "screenshot": "museumbollandianum.png"
+    },
+    {
+      "name": "BERD@NFDI Data Portal",
+      "country": "DE",
+      "description": "The BERD@NFDI Data Portal is a comprehensive repository for business, economics and social sciences research data.",
+      "url": "https://berd-platform.de/",
+      "screenshot": "berd-nfdi-data-portal.png"
     }
   ]
 }
