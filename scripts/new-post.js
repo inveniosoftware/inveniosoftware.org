@@ -1,3 +1,7 @@
+/*
+ * SPDX-FileCopyrightText: 2026 Frontmatter.
+ * SPDX-License-Identifier: MIT
+ */
 import { encodeDoi } from "commonmeta-ts";
 import fs from "fs";
 import path from "path";
