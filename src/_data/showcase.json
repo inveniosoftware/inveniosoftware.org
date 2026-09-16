@@ -161,6 +161,15 @@
       "url": "https://open-science.unesco.org",
       "screenshot": "openscience-portal.png",
       "launched": "2026"
+    },
+    {
+      "name": "TalTech Data Repository",
+      "description": "The Tallinn University of Technology Data Repository TalTechData is a platform designed to support the secure sharing, long-term preservation, and broad accessibility of research data collected by the university's researchers.",
+      "institution": "TalTech",
+      "country": "EE",
+      "url": "https://data.taltech.ee",
+      "screenshot": "taltech.png",
+      "launched": "2022"
     }
   ],
   "ils": [
