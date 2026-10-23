@@ -10,13 +10,15 @@ tags:
 permalink: "/blog/2026-10-23-publication-workflow-gitlab-inveniordm/"
 ---
 
-
+![Project information in GitLab](/assets/images/blog-posts/2026-10-23_GitLab-Header.png)
 
 The NFDI consortium DataPLANT uses InvenioRDM for the automated publication of research data. DataPLANT focuses on the automated processing of research data; thanks to the interfaces provided by InvenioRDM, data flows can be established that originate from Git  repositories.
 
 ## The project
 
 The connection to GitLab is exemplified by the research project "QUINOA DIVERSITY – Quinoa Phenotypic and Genotypic Diversity for Yield and Composition." In this repository, a data template is used to collect and curate raw data from field studies over time.
+
+![Data overview](/assets/images/blog-posts/2026-10-23_Data-overview.png)
 
 One of Git’s core features is tracking changes in chains of strings. Originating from software development, this is a key factor in the success of open-source projects such as Linux. It allows for the meticulous tracking of who contributed what to a project, and when. This requirement applies analogously to research data, which must be handled according to good scientific practice. GitLab is one implementation for this versioning solution that can be operated using an institution's own resources. It features a web interface with additional functions that allows tasks to be distributed and further automated using tags.
 
